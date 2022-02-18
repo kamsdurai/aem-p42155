@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<workspaceFilter version="1.0">
-    <filter root="/conf/etisalat" mode="merge"/>
-    <filter root="/content/etisalat" mode="merge"/>
-    <filter root="/content/dam/etisalat/asset.jpg" mode="merge"/>
-    <filter root="/content/experience-fragments/etisalat" mode="merge"/>
-</workspaceFilter>

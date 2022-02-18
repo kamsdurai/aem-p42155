@@ -1,5 +1,0 @@
-com\etisalat\core\schedulers\SimpleScheduledTaskTest.class
-com\etisalat\core\listeners\SimpleResourceListenerTest.class
-com\etisalat\core\servlets\SimpleServletTest.class
-com\etisalat\core\filters\LoggingFilterTest.class
-com\etisalat\core\models\HelloWorldModelTest.class
