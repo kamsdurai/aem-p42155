@@ -1,0 +1,4 @@
+com\etisalat\it\tests\HtmlUnitClient.class
+com\etisalat\it\tests\CreatePageIT.class
+com\etisalat\it\tests\PublishPageValidationIT.class
+com\etisalat\it\tests\GetPageIT.class

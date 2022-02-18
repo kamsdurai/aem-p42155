@@ -1,0 +1,76 @@
+{
+  "id":"com.etisalat:aem-etisalat-project.analyse:slingosgifeature:user-aggregated-author.prod:0.0.1-SNAPSHOT",
+  "bundles":[
+    {
+      "id":"com.etisalat:aem-etisalat-project.core:0.0.1-SNAPSHOT",
+      "start-order":"20",
+      "feature-origins":"com.etisalat:aem-etisalat-project.analyse:slingosgifeature:0.0.1-SNAPSHOT"
+    }
+  ],
+  "configurations":  {
+    "org.apache.sling.commons.log.LogManager.factory.config~etisalat":    {
+      "org.apache.sling.commons.log.pattern":"{0,date,yyyy-MM-dd HH:mm:ss.SSS} *{4}* [{2}] {3} {5}",
+      "org.apache.sling.commons.log.names":[
+        "com.etisalat"
+      ],
+      "org.apache.sling.commons.log.level":"info",
+      "org.apache.sling.commons.log.file":"logs/error.log",
+      "org.apache.sling.commons.log.additiv":"false",
+      ":configurator:feature:origins":[
+        "com.etisalat:aem-etisalat-project.analyse:slingosgifeature:prod:0.0.1-SNAPSHOT",
+        "com.etisalat:aem-etisalat-project.analyse:slingosgifeature:0.0.1-SNAPSHOT"
+      ]
+    },
+    "com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider~etisalat":    {
+      "mobile.resourceTypes":[
+        "etisalat/components/page"
+      ],
+      "README":"Indicate which page resource types should display the mobile emulators.",
+      ":configurator:feature:origins":[
+        "com.etisalat:aem-etisalat-project.analyse:slingosgifeature:author:0.0.1-SNAPSHOT"
+      ]
+    }
+  },
+  "assembled-features:ARTIFACTS|TRANSIENT":[
+    "com.etisalat:aem-etisalat-project.analyse:slingosgifeature:prod:0.0.1-SNAPSHOT",
+    "com.etisalat:aem-etisalat-project.analyse:slingosgifeature:0.0.1-SNAPSHOT",
+    "com.etisalat:aem-etisalat-project.analyse:slingosgifeature:author:0.0.1-SNAPSHOT"
+  ],
+  "content-packages:ARTIFACTS|true":[
+    "com.etisalat:aem-etisalat-project.ui.apps:zip:cp2fm-converted:0.0.1-SNAPSHOT",
+    "com.etisalat:aem-etisalat-project.ui.config:zip:cp2fm-converted:0.0.1-SNAPSHOT",
+    "com.etisalat:aem-etisalat-project.ui.content:zip:cp2fm-converted:0.0.1-SNAPSHOT",
+    "com.etisalat:aem-etisalat-project.all:zip:cp2fm-converted:0.0.1-SNAPSHOT"
+  ],
+  "repoinit:TEXT|true":[
+    "",
+    "        create path (sling:OrderedFolder) /content/dam/etisalat",
+    "        create path (nt:unstructured) /content/dam/etisalat/jcr:content",
+    "        set properties on /content/dam/etisalat/jcr:content",
+    "        set cq:conf{String} to /conf/etisalat",
+    "        set jcr:title{String} to \"ETISALAT\"",
+    "        end",
+    "        ",
+    " create path (sling:OrderedFolder) /content/dam/etisalat",
+    "create path (nt:unstructured) /content/dam/etisalat/jcr:content",
+    "set properties on /content/dam/etisalat/jcr:content",
+    "set cq:conf{String} to /conf/etisalat",
+    "set jcr:title{String} to \"ETISALAT\"",
+    "end"
+  ],
+  "api-regions:JSON|false":[
+    {
+      "name":"global",
+      "exports":[
+        "com.etisalat.core.filters",
+        "com.etisalat.core.listeners",
+        "com.etisalat.core.models",
+        "com.etisalat.core.schedulers",
+        "com.etisalat.core.servlets"
+      ],
+      "feature-origins":[
+        "com.etisalat:aem-etisalat-project.analyse:slingosgifeature:0.0.1-SNAPSHOT"
+      ]
+    }
+  ]
+}

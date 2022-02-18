@@ -1,0 +1,7 @@
+#File edited by the Apache Sling Content Package to Sling Feature converter
+#Wed Feb 09 05:24:24 PST 2022
+prod=aem-etisalat-project.all-prod.json
+stage=aem-etisalat-project.all-stage.json
+author=aem-etisalat-project.all-author.json
+publish=aem-etisalat-project.all-publish.json
+(default)=aem-etisalat-project.all.json

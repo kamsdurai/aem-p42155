@@ -1,0 +1,11 @@
+{
+  "id":"com.etisalat:aem-etisalat-project.analyse:slingosgifeature:publish:0.0.1-SNAPSHOT",
+  "configurations":  {
+    "org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl":    {
+      "resource.resolver.mapping":[
+        "/content/etisalat/</",
+        "/:/"
+      ]
+    }
+  }
+}

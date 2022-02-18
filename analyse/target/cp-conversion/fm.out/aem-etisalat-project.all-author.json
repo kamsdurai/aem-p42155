@@ -1,0 +1,11 @@
+{
+  "id":"com.etisalat:aem-etisalat-project.analyse:slingosgifeature:author:0.0.1-SNAPSHOT",
+  "configurations":  {
+    "com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider~etisalat":    {
+      "mobile.resourceTypes":[
+        "etisalat/components/page"
+      ],
+      "README":"Indicate which page resource types should display the mobile emulators."
+    }
+  }
+}
