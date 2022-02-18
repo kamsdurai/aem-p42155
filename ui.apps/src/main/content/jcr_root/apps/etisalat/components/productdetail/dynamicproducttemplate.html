@@ -1,0 +1,26 @@
+<template data-sly-template.dynamicproducts="${ @ properties}">
+
+
+<div id="related-products" data-promoPreText="${properties.offerPreText}"  data-off="${properties.offerPostText}"
+    data-exclusive="${properties.exclusiveProductText}" data-categoryId="${properties.productCategoryId}"  data-vatText="${properties.vatInclude}"
+    data-apiUrlString="/apiurltobeupdated.html" data-buyNowText="${properties.buyNowButton}" data-buyNowUrl="${properties.buttonLink}"
+	data-preOrderText="${properties.preOrderText}" data-aedText="${properties.productCurrency}" data-fromText="${properties.fromText}"
+	data-wasText="${properties.wastext}" data-or="${properties.smilePointPreText}" data-smilePoints="${properties.smilePointPostText}">
+
+</div>
+<sly data-sly-test="${properties.listLayout && properties.listLayout == 'loadmore'}">
+<sly data-sly-use.dynamicproductsloadmoretemplate="/apps/etisalat/components/productdetail/dynamicloadmoretemplate.html"
+         data-sly-call="${dynamicproductsloadmoretemplate.dynamicproduct @ properties=properties}">  
+    </sly>
+
+</sly>
+
+
+
+<sly data-sly-test="${properties.listLayout && properties.listLayout == 'slider'}">
+<sly data-sly-use.dynamicproductsloadmoretemplate="/apps/etisalat/components/productdetail/dynamicslidertemplate.html"
+         data-sly-call="${dynamicproductsloadmoretemplate.dynamicproduct @ properties=properties}">  
+    </sly>
+</sly>
+
+</template>

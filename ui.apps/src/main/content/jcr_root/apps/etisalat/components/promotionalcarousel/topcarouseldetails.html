@@ -1,0 +1,73 @@
+<template data-sly-template.carousel="${ @ properties}">
+   <div data-sly-use.carousel="com.adobe.cq.wcm.core.components.models.Carousel"
+      data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+      data-panelcontainer="${wcmmode.edit && 'Promotional carousel'}" id="${carousel.id}" class="cmp-carousel top-carousel ${properties.theme}" role="group"
+      aria-label="${carousel.accessibilityLabel}" aria-live="polite" aria-roledescription="carousel" data-cmp-is="carousel"
+      data-cmp-autoplay="${(wcmmode.edit || wcmmode.preview) ? '' : carousel.autoplay}" data-cmp-delay="${carousel.delay}"
+      data-cmp-autopause-disabled="${carousel.autopauseDisabled}" data-cmp-data-layer="${carousel.data.json}"
+      data-placeholder-text="${wcmmode.edit && 'Please add Promotional Carousel items here' @ i18n}">
+   <sly data-sly-test.oneTile="${carousel.items.size == 1}"></sly>
+   <sly data-sly-test.twoTile="${carousel.items.size ==2}"></sly>
+   <sly data-sly-test.threeTile="${carousel.items.size ==3}"></sly>
+   <div class="current-promotions-wrraper ${oneTile ? 'one-only' :''} ${twoTile ? 'two-only' : ''} ${threeTile ? 'three-only' : ''} ${!oneTile && !twoTile && !threeTile ? 'three-plus': ''}">
+   <div data-sly-test="${properties.fileReference}" class="background-with-color">
+      <div class="cover"
+         data-sly-resource="${carousel @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="content-detail text-center">
+               <span data-sly-test="${properties.promotionPreTitle}" class="lbl"> ${properties.promotionPreTitle}</span>
+               <div data-sly-test="${properties.promotionTitle}" class="promotions-title-wrap">
+                  <h2>${properties.promotionTitle} </h2>
+               </div>
+               <div data-sly-test="${properties.promotionalDesc}" class="paragraph-styling ul-list-cms">${properties.promotionalDesc @ context='html'}</div>
+               <a data-sly-test="${properties.promotionCTALink}" class="btn-text learn-more learn--more__white" title="${properties.promotionCTATitle}" href="${properties.promotionCTALink @ extension='html'} "
+                  target="${properties.promotionLinkBehavior == '
+                  opennewwindow'?'_blank' : '_self'}">
+               <span>${properties.promotionCTATitle}</span>
+               </a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="left-align s1" data-sly-test="${carousel.items && carousel.items.size > 0}">
+      <div class="container">
+         <div class="row" >
+            <div class="${!wcmmode.edit ? 'swiper-container swiper-container-horizontal': ''}">
+               <div class="${!wcmmode.edit ? 'swiper-wrapper': ''}">
+                  <div data-sly-repeat.item="${carousel.items}" class="${!wcmmode.edit ? 'swiper-slide':''} col-xs-12 col-sm-6 col-md-4 col-lg-4"
+                     data-sly-resource="${item.name @ decorationTagName='div'}" id="${item.id}"></div>
+               </div>
+               <div class="scrollbar swiper-scrollbar ${properties.swiperDisplayBehavior == 'false' ? 'scrollbar-hidden' : '' }">
+                  <div class="swiper-scrollbar-drag"></div>
+               </div>
+            </div>
+            <!-- Control Arrows for carousel-->
+            <div class="controls" data-sly-test="${carousel.items.size >3 && properties.controlDisplayBehavior=='arrow'}">
+               <sly data-sly-use.controlTemplate="/apps/etisalat/components/promotionalcarousel/controls.html"
+                  data-sly-call="${controlTemplate.leftArrow @ properties=properties}">
+               </sly>
+               <sly data-sly-use.controlTemplate="/apps/etisalat/components/promotionalcarousel/controls.html"
+                  data-sly-call="${controlTemplate.rightArrow @ properties=properties}">
+               </sly>
+            </div>
+            <!-- Control Arrows for carousel ends-->
+            <!-- Control Angle for carousel-->
+            <div class="controls" data-sly-test="${carousel.items.size >3 && properties.controlDisplayBehavior=='angle'}">
+               <sly data-sly-use.controlTemplate="/apps/etisalat/components/promotionalcarousel/controls.html"
+                  data-sly-call="${controlTemplate.leftAngle @ properties=properties}">
+               </sly>
+               <sly data-sly-use.controlTemplate="/apps/etisalat/components/promotionalcarousel/controls.html"
+                  data-sly-call="${controlTemplate.rightAngle @ properties=properties}">
+               </sly>
+            </div>
+            <!-- Control Angle for carousel ends-->
+            <sly data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/parsys/newpar',
+               appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}"
+               data-sly-test="${wcmmode.edit || wcmmode.preview}"></sly>
+         </div>
+      </div>
+   </div>
+</template>

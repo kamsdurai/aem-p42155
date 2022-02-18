@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:deviceGroups="[mobile/groups/responsive]"
+        cq:template="/conf/etisalat/settings/wcm/templates/code-block-template"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="etisalat/components/codeblockpage">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="etisalat/components/container"
+            layout="responsiveGrid">
+            <experiencefragment-header
+                cq:styleIds="[1625132940289]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="etisalat/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/etisalat-fragments/consumer/header/master"/>
+            <container
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="etisalat/components/container"
+                editable="{Boolean}true"
+                layout="responsiveGrid"/>
+            <experiencefragment-footer
+                cq:styleIds="[1625132971121]"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="etisalat/components/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/etisalat-fragments/consumer/footer/master"/>
+        </root>
+        <cq:responsive jcr:primaryType="nt:unstructured">
+            <breakpoints jcr:primaryType="nt:unstructured">
+                <xsmall
+                    jcr:primaryType="nt:unstructured"
+                    title="575px Screen"
+                    width="{Long}575"/>
+                <small
+                    jcr:primaryType="nt:unstructured"
+                    title="767 px Screen"
+                    width="{Long}767"/>
+                <medium
+                    jcr:primaryType="nt:unstructured"
+                    title="991px Screen"
+                    width="{Long}991"/>
+                <large
+                    jcr:primaryType="nt:unstructured"
+                    title="1199px Screen"
+                    width="{Long}1199"/>
+            </breakpoints>
+        </cq:responsive>
+    </jcr:content>
+</jcr:root>

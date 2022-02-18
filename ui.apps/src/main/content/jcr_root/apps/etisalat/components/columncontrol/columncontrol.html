@@ -1,0 +1,23 @@
+<div id="${properties.id}"
+    data-placeholder-text="${wcmmode.edit && 'Please drag Column Control item components here' @ i18n}"
+    class="cmp-colctrl">
+   <div class="aem-Grid aem-Grid--12 aem-Grid--default--12 aem-Grid--phone--12 ">
+      <div class="aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6">
+         <div class="cmp-colctrl0">
+            <div class="aem-Grid aem-Grid--6 aem-Grid--default--6 aem-Grid--phone--12 ">
+               <sly data-sly-resource="${'par0' @resourceType = 'wcm/foundation/components/responsivegrid'}"></sly>
+            </div>
+         </div>
+      </div>
+
+      <div class="aem-GridColumn--phone--12 aem-GridColumn aem-GridColumn--default--6">
+         <div class="cmp-colctrl1">
+            <div class="aem-Grid aem-Grid--6 aem-Grid--default--6 aem-Grid--phone--12 ">
+               <sly data-sly-resource="${'par1' @resourceType = 'wcm/foundation/components/responsivegrid'}"></sly>
+            </div>
+         </div>
+      </div>
+
+   </div>
+</div>
+<div data-sly-test="${wcmmode.edit}" class="cq-placeholder" data-emptytext="Column Control"/>

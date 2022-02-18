@@ -1,0 +1,116 @@
+<div class="cmp-blogpost-search" 
+   data-sly-use.blogpost="com.etisalat.core.models.BlogpostSearch" 
+   data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+   data-noOf-items="${properties.numberOfItems}"
+   data-sly-set.blogPostList="${blogpost.pageItems}"
+   id="blogpost-${blogpost.id}">
+   <div data-sly-test="${blogPostList.size >0}" class="main-text-section with-search-field">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               <div data-sly-test="${properties.blogTitle}" class="wst-main-headings">
+                  <h3>${properties.blogTitle}</h3>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 col-md-9 main-text-content-wrapper">
+               <div data-sly-test="${properties.text}" class="paragraph-styling ul-list-cms">
+                  <div class="p2">${properties.text @ context = 'html'}</div>
+               </div>
+            </div>
+            <div class="col-xs-12 col-md-3 main-text-action-wrapper">
+               <div class="search-wrapper">
+                  <form action="${currentPage.path @ extension = 'html'}" class="form" id="search_${blogpost.id}" method="POST" novalidate="" data-active="true">
+                     <div class="form-group floating-label-input input-field ">
+                        <input id="${properties.searchInputID}"
+                           placeholder="${properties.placeholderTxt}"
+                           name="${properties.name}"
+                           value="${properties.value}"                            
+                           type="text">
+                        <label> ${properties.inputLbl}</label>
+                        <span class="search-icon">
+                           <svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                              <!-- Generator: Sketch 52.3 (67297) - http://www.bohemiancoding.com/sketch -->
+                              <title>icon-search-gray</title>
+                              <desc>Created with Sketch.</desc>
+                              <g id="icon-search-gray" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                 <g id="Icon-/-Outline-/-Search-/-x.-Grey-(#6B6B6B)" stroke="#6B6B6B">
+                                    <path d="M36.9638207,36.9638207 L60.0000966,60.0000966" id="Line"></path>
+                                    <path d="M42.6206897,23.3103448 C42.6206897,33.9754483 33.9754483,42.6206897 23.3103448,42.6206897 C12.6452414,42.6206897 4,33.9754483 4,23.3103448 C4,12.6462069 12.6452414,4 23.3103448,4 C33.9754483,4 42.6206897,12.6462069 42.6206897,23.3103448 L42.6206897,23.3103448 Z" id="Line"></path>
+                                 </g>
+                              </g>
+                           </svg>
+                        </span>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   
+   <div class="search-results-wrapper" style="display: none">
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12 search-target">
+               <h3 class="mb-12"> <span class="search-count"></span>${properties.searchResultTxt}</h3>
+               <span class="searchTarget"></span>
+            </div>
+            <div class="col-xs-12 mb-40">
+               <span class="no-result-found" style="display: none;">${properties.noResultLbl}</span>
+               <a data-sly-test="${properties.clearSearchLbl}" href="#" class="clear-search"> ${properties.clearSearchLbl}</a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="blogpost-wrapper" 
+      data-sly-test="${blogPostList.size >0}"
+      data-sly-set.itemsDisplay="${(properties.numberOfItems && properties.numberOfItems > 0) ? properties.numberOfItems : blogPostList.size}">
+      <div class="container">
+         <div class="row" data-sly-list.pageItem="${blogPostList}">
+            <div data-sly-test="${pageItem.tileSize != 'video'}" class="col-xs-12 col-md-${pageItem.tileSize} item" style= "display: ${pageItemList.index < itemsDisplay ? 'block':'none' @ context='styleToken'};">
+               <a href="${pageItem.path @ extension='html'}">
+                  <div class="blog-post-wrapper ${pageItem.tileSize == '6' ? 'video' : ''}">
+                     <div class="tile-box-tile">
+                        <div class="img-cover">
+                           <div data-sly-test="${pageItem.thumbnailResource}" class="cover lazyloaded" data-sly-resource="${pageItem.thumbnailResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+                           <div class="category">
+                              <p data-sly-test="${pageItem.category}"> ${pageItem.category}</p>
+                           </div>
+                        </div>
+                        <div class="tile-box-body">
+                           <div class="box-title">
+                              <h2 data-sly-test="${pageItem.title}">${pageItem.title}</h2>
+                           </div>
+                           <div class="box-details">
+                              <p data-sly-test="${pageItem.description}">${pageItem.description @ context = 'html'}</p>
+                           </div>
+                           <div class="date" data-sly-test="${pageItem.articleDate}">
+                              <p>${'dd MMM yyyy' @ format=pageItem.articleDate}</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </a>
+            </div>
+            <div data-sly-test="${pageItem.tileSize == 'video'}" class="col-xs-12 col-md-6 item" style="display: ${pageItemList.index < itemsDisplay ? 'block':'none' @ context='styleToken'};">
+               <sly data-sly-use.videoTemplate="/apps/etisalat/components/blogsearch/video.html"
+                  data-sly-call="${videoTemplate.blogvideo @ pageItem=pageItem}">  
+               </sly>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-xs-12 col-md-4 col-md-offset-4 text-center pt-8 pb-50">
+            <div class="action" data-sly-test="${properties.loadMore}" style="display: block;">
+               <a href="" class="btn btn-default ripple-effect">${properties.loadMore}</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = blogPostList.size == 0}"></sly>

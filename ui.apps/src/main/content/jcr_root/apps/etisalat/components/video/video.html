@@ -1,0 +1,11 @@
+<div data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+   data-panelcontainer="${wcmmode.edit && 'Video Component'}"
+   class="cover-image__with-play-icon cover-image__with-play-btn-icon"
+   data-placeholder-text="${wcmmode.edit && 'Please add the Video URL and configuration' @ i18n}">
+   <sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'video'}">
+      <sly data-sly-include="video-overlay-on-video.html"></sly>
+   </sly>
+   <sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'image'}">
+      <sly data-sly-include="video-overlay-on-image.html"></sly>
+   </sly>
+</div>

@@ -1,0 +1,78 @@
+<template data-sly-template.xfMobileTemplate="${ @ properties,navItems}">
+        <a class="nav-link ${navItems.containerSubMenuList.size > 0 ? 'nav-expand-link' :''}" href="${navItems.navigationLinkTo}">
+		<img class="nav-link-icon" src="${navItems.navImagePath}"/> ${navItems.navigationLabel}
+		 <img data-sly-test="${navItems.containerSubMenuList.size > 0}" class="nav-link-arrow" src="${properties.linkArrowImage}"/></a>
+         <ul data-sly-test="${!navItems.containerSubMenuList.isEmpty && navItems.containerSubMenuList.size > 0}" class="nav-items nav-expand-content">
+		  <li class="nav-item">
+              <a class="nav-link nav-back-link" href="#">
+              ${properties.menuBack}</a>
+          </li>
+		  <li>
+		    <sly data-sly-list.subMenuItems="${navItems.containerSubMenuList}">
+		      <ul data-sly-test="${!subMenuItems.isFeatureItemExist}">
+		          <sly data-sly-test="${!subMenuItems.active}">
+                    <li  data-sly-test="${subMenuItems.navTitle}" class="nav-item-heading">
+                        ${subMenuItems.navTitle}
+                    </li>
+                  </sly>
+                    
+                    <li data-sly-test="${subMenuItems.active}" class="nav-item-heading mega-dropdown-mob open">
+                        <a href="#">${subMenuItems.navTitle}</a>  <img class="nav-link-arrow" src="${properties.linkArrowImage}"/>                      
+                     </li>
+                    <li data-sly-test="${!subMenuItems.active && !subMenuItems.fixedItems.isEmpty}" 
+							data-sly-repeat.subFixedItems="${subMenuItems.fixedItems}" 
+							class="${subFixedItems.navigationDesc ? 'nav-item-heading' : 'nav-item'}">
+                        <a class="${subFixedItems.navigationDesc ? 'nav-item-heading-link' : 'nav-link'}" href="${subFixedItems.navigationLink}">
+                         ${subFixedItems.navigationTitle}
+                         <img data-sly-test="${subFixedItems.navigationDesc}" class="nav-link-arrow" src="${properties.linkArrowImage}"/> 
+                        </a>
+                    </li>
+                    
+                    <li data-sly-test="${subMenuItems.active && !subMenuItems.fixedItems.isEmpty}" class="mega-dropdown-mob-menu" style="display: list-item;">
+                      <ul data-sly-list.subFixedItems="${subMenuItems.fixedItems}" role="menu">
+                            <li class="nav-item">
+                            <a class="nav-link" href="${subFixedItems.navigationLink}">
+                               ${subFixedItems.navigationTitle}
+                            </a>
+                            </li>
+                       </ul>
+                    </li>
+			   </ul>
+			   <ul data-sly-test="${subMenuItems.isFeatureItemExist && !subMenuItems.featureImageList.isEmpty}">
+				 <li data-sly-test="${subMenuItems.title}" class="nav-item-heading">${subMenuItems.title}</li>
+				 <li data-sly-list.brandItem="${subMenuItems.featureImageList}" class="nav-item menu-brand-wrapper">
+					  <a class="menu-brand-item" href="${brandItem.link}"><img src="${brandItem.fileReference}" loading="lazy"></a>												  
+				 </li>
+			   </ul>		    
+		    </sly>
+		   </li>
+           <ul>
+               <li class="mega-dropdown-mob-promotion">
+                  <div class="menu-promotion-wrapper">
+					 <div data-sly-list.promoObj="${navItems.containerPromotionList}" class="tiles-wrapper">
+						<div class="tile">
+						   <div class="cover">
+							  <img src="${promoObj.fileReference}" loading="lazy" class="cover lazyloaded" alt="m-menu-new-freedom-en-377x325">          
+						   </div>
+						   <div class="tile-content-wrapp">
+							  <div class="content">
+								 <h4>${promoObj.title}</h4>
+								 <a data-sly-test="${promoObj.link}" href="${promoObj.link}" class="btn-text learn-more">
+								 <span class="">${promoObj.text}</span>
+								 </a>
+							  </div>
+						   </div>
+						</div>
+					 </div>
+				  </div>
+                </li>
+              </ul>		
+              <ul  data-sly-test="${!navItems.containerFooterMenuList.isEmpty && navItems.containerFooterMenuList.size > 0}" 
+				  data-sly-list.footerMenuItems="${navItems.containerFooterMenuList}" class="nav-expand-footer">
+			   <li data-sly-test="${!footerMenuItems.fixedItems.isEmpty}"  
+                   data-sly-repeat.items="${footerMenuItems.fixedItems}"   
+                    class="nav-item"><a class="nav-link" href="${items.navigationLink}">${items.navigationTitle}
+                    <img class="nav-link-arrow" src="${properties.linkArrowImage}"/></a></li>
+			 </ul>			  
+		 </ul>
+</template>

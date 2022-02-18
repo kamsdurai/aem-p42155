@@ -1,0 +1,31 @@
+<sly data-sly-use.clientLib="/libs/granite/sightly/templates/clientlib.html"
+   data-sly-call="${clientlib.all @ categories='generlistcss'}" />
+<sly>
+   <div data-sly-use.model="com.etisalat.core.models.GenericListModel"></div>
+      <h2 class="${currentPage.properties.jcr:title != 'Offer Main Page' ? 'return-link' : ''}">${properties.title}</h2>
+
+   <sly data-sly-test="${currentPage.properties.jcr:title == 'Offer Main Page'}">
+      <a class="button" href="${items.path @ extension='html'}">${properties.viewall}</a>
+   </sly>
+   <ul data-sly-list.items="${model.genericListObj}">
+      <li>
+         <img src=${items.thumbnail}>
+         <sly data-sly-test="${properties.showtitle}">
+         <h3>${items.title}</h3>
+         </sly>
+         <sly data-sly-test="${properties.showDescription}">
+            <p>${items.description}</p>
+         </sly>
+         <div class="left-menu-title ${currentPage.path == items.path ? 'highlight' : ''}">
+            <a href="${items.path @ extension='html'}" class="offer-text">${items.title}</a>
+         </div>
+		 <sly data-sly-test="${properties.showDate}">
+            <div class="date">VALID UNTIL ${'dd/MM/yyyy' @ format=items.offTime}</div>
+         </sly>
+
+         <sly data-sly-test="${currentPage.properties.jcr:title != 'Offer Main Page'}">
+            <a class="button" href="${items.path @ extension='html'}">${properties.viewall}</a>
+         </sly>
+      </li>
+   </ul>
+</sly>

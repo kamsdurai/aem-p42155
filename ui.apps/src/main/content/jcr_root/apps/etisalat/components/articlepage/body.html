@@ -1,0 +1,60 @@
+<div data-sly-use.blogpost="com.etisalat.core.models.BlogpostSearch" class="article-header-text-wrapper">
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="article-wrapper">
+               <div class="back-to-insight">
+                  <a data-sly-test="${pageProperties.backToBusinessLbl}" 
+                     href="${blogpost.backToHomeLink}" class="btn-text btn-green back">${pageProperties.backToBusinessLbl}</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="container">
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="article-wrapper">
+               <div data-sly-test="${blogpost.businessCategoryTag}" class="aritcle-category mb-20">
+                  <span class="category">${blogpost.businessCategoryTag}</span>
+               </div>
+            </div>
+         </div>
+         <div class="col-xs-12 col-md-9">
+            <div class="wst-main-headings mb-20">
+               <div data-sly-resource="${'title' @ resourceType='etisalat/components/title'}"></div>
+            </div>
+            <div class="article-wrapper">
+               <div class="read-time-date-wrapper-norm">
+                  <div data-sly-test="${pageProperties.articleDate}" class="date">
+                     <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="20px" viewBox="0 0 20 20" version="1.1" class="read-time-icon replaced-svg">
+								<title>A2B37ADD-ABE8-4BFB-83C6-38762CCC7BF0</title>
+								<g id="BAU_05162021" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+									<g id="Blog_Details_Desktop" transform="translate(-120.000000, -376.000000)" stroke="#242424">
+										<g id="Group-33" transform="translate(120.000000, 376.000000)">
+											<g id="Icon-/-Outline-1pt-/-Schedule-Copy" transform="translate(1.250000, 1.250000)">
+												<path d="M5.34799476,1.5625 L12.1875,1.5625 M14.7215516,1.5625 L16.875,1.5625 C17.220178,1.5625 17.5,1.84232203 17.5,2.1875 L17.5,16.875 C17.5,17.220178 17.220178,17.5 16.875,17.5 L0.625,17.5 C0.279822031,17.5 0,17.220178 0,16.875 L0,2.1875 C0,1.84232203 0.279822031,1.5625 0.625,1.5625 L2.75000006,1.5625" id="Rectangle"></path>
+												<line x1="0.15625" y1="5" x2="17.34375" y2="5" id="Line"></line>
+												<polygon id="Line" points="2.8125 3.125 5.3125 3.125 5.3125 0 2.8125 0"></polygon>
+												<polygon id="Line" points="12.1875 3.125 14.6875 3.125 14.6875 0 12.1875 0"></polygon>
+											</g>
+										</g>
+									</g>
+								</g>
+							</svg>
+					   </span>
+                     <p>${'dd MMM yyyy' @ format=pageProperties.articleDate}</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+
+<sly data-sly-use.templatedContainer="com.day.cq.wcm.foundation.TemplatedContainer"
+   data-sly-repeat.child="${templatedContainer.structureResources}"
+   data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}"></sly>
+   
+   

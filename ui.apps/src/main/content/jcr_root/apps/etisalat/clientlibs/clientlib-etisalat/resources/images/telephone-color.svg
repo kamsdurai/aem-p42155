@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="" height="" viewBox="0 0 19 18" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>telephone</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-286.000000, -568.000000)">
+            <g id="column" transform="translate(120.000000, 424.000000)">
+                <g id="row" transform="translate(0.000000, 132.000000)">
+                    <g id="telephone" transform="translate(164.000000, 9.000000)">
+                        <g id="Group-2">
+                            <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                            <g id="Group-11" transform="translate(3.000000, 3.000000)" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2.5139,7.5141 C3.8059,7.3191 5.3709,6.4761 6.1979,5.5231 C6.2279,5.0671 6.0989,4.0201 5.9749,3.5831 C6.6399,3.1991 7.7639,3.0921 8.8749,3.0881 C9.9879,3.0851 11.1089,3.1831 11.7609,3.5641 C11.6229,4.0001 11.4599,5.0491 11.4749,5.5041 C12.2709,6.4521 13.8089,7.2851 15.0939,7.4711 C15.6889,6.9871 16.8579,5.6131 17.2599,4.2721 C16.3699,2.8991 13.6829,0.5721 8.7519,0.5001 C3.8179,0.6061 1.4339,3.3061 0.4999,4.6861 C0.8589,6.0231 1.9359,7.0341 2.5139,7.5141 Z" id="Stroke-1" stroke="#8BBD29"></path>
+                                <path d="M17.0412,17.4662 C17.0412,13.6442 14.5502,10.2682 10.8982,9.1402 L8.8772,9.1492 L6.8452,9.1432 C3.1902,10.2692 0.6972,13.6462 0.6972,17.4692 L13.0412,17.4692 L13.0412,17.4662" id="Stroke-3" stroke="#777E86"></path>
+                                <path d="M6.8449,9.143 L6.8449,7.694" id="Stroke-5" stroke="#777E86"></path>
+                                <path d="M10.8996,9.143 L10.8996,7.694" id="Stroke-7" stroke="#777E86"></path>
+                                <path d="M10.4572,13.4887 C10.4572,14.3657 9.7462,15.0767 8.8692,15.0767 C7.9922,15.0767 7.2812,14.3657 7.2812,13.4887 C7.2812,12.6117 7.9922,11.9007 8.8692,11.9007 C9.7462,11.9007 10.4572,12.6117 10.4572,13.4887 Z" id="Stroke-9" stroke="#8BBD29"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

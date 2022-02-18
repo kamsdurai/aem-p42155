@@ -1,0 +1,26 @@
+<sly  data-sly-use.template="core/wcm/components/commons/v1/templates.html" 
+      data-sly-use.meganavigation="com.etisalat.core.models.MegaNavigation"></sly>
+
+<sly data-sly-test="${properties.menuLayout && properties.menuLayout == 'xfragment'}">
+    <sly data-sly-use.xfdesktoptemplate="/apps/etisalat/components/global/meganavigation/xfdesktop.html"
+         data-sly-call="${xfdesktoptemplate.xfdesktop @ properties=properties,meganavigation=meganavigation}">  
+    </sly>
+    
+    <sly data-sly-use.xfmobiletemplate="/apps/etisalat/components/global/meganavigation/xfmobile.html"
+         data-sly-call="${xfmobiletemplate.xfmobile @ properties=properties,meganavigation=meganavigation}">  
+    </sly>
+</sly>
+
+
+<sly data-sly-test="${properties.menuLayout && properties.menuLayout == 'fixedmenulist'}">
+    <sly data-sly-use.desktoptemplate="/apps/etisalat/components/global/meganavigation/desktop.html"
+         data-sly-call="${desktoptemplate.desktop @ properties=properties,meganavigation=meganavigation}">  
+    </sly>
+    
+    <sly data-sly-use.mobiletemplate="/apps/etisalat/components/global/meganavigation/mobile.html"
+         data-sly-call="${mobiletemplate.mobile @ properties=properties,meganavigation=meganavigation}">  
+    </sly>
+</sly>
+
+
+<sly data-sly-call="${template.placeholder @ isEmpty=meganavigation.megaNavigationItems.size == 0, classAppend='cmp-languagenavigation'}"></sly>

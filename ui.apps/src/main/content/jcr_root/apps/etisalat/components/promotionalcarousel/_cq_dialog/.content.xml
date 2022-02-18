@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Promotional Carousel"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-carousel__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:hideChildren="[metadata]">
+                    <promotionalcarouseldata
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Promotional Carousel Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <alt
+                                granite:class="cmp-image__editor-alt-text"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Textual alternative of the meaning or function of the image, for visually impaired readers."
+                                fieldLabel="Background Alternative Text"
+                                name="./alt"/>
+                            <carouseltheme
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Carousel Theme"
+                                name="./theme">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <light
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Light"
+                                            value="light"/>
+                                    <dark
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Dark"
+                                        value="dark"/>
+                                </items>
+                            </carouseltheme>
+                            <promotionpretitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Text that will appear for the Promotion Pre Title."
+                                fieldLabel="Promotion Pre Title"
+                                maxlength="{Long}40"
+                                name="./promotionPreTitle"/>
+                            <promotiontitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Text that will appear for the Promotion Title."
+                                fieldLabel="Promotion Title"
+                                maxlength="{Long}40"
+                                name="./promotionTitle"/>
+                            <promotiondescription
+                                jcr:primaryType="nt:unstructured"
+								sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                fieldDescription="Text that will appear for the main product Description."
+                                fieldLabel="Promotional Description"
+                                name="./promotionalDesc"
+                                useFixedInlineToolbar="{Boolean}true"/>
+                            <promotionbuttontitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Promotion CTA title"
+                                fieldLabel="Promotion CTA title"
+                                name="./promotionCTATitle"/>
+                            <promotionbuttonlink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Promotion CTA link"
+                                fieldLabel="Promotion CTA link"
+                                name="./promotionCTALink"
+                                rootPath="/content/etisalat"/>
+                            <promotionLinkBehavior
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Promotion Link Behavior"
+                                name="./promotionLinkBehavior">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <opennewwindow
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Open In New Window"
+                                        value="opennewwindow"/>
+                                    <opensamewindow
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Open in Same Window"
+                                        value="opensamewindow"/>
+                                </items>
+                            </promotionLinkBehavior>
+                        </items>
+                    </promotionalcarouseldata>
+                    <controldata
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Control Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <crouselDetailPosition
+                                granite:class="cq-dialog-dropdown-showhide"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Carousel Details display at"
+                                name="./crouselDetailPosition">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <top
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Top"
+                                        value="top"/>
+                                    <left
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Left"
+                                        value="left"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                            </crouselDetailPosition>
+                            <topcarouselOptions
+                                    granite:class="linkbehavior-showhide-target"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <controldisplaybehavior
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="Controls Display as"
+                                            name="./controlDisplayBehavior">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <arrow
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Arrow"
+                                                    value="arrow"/>
+                                            <angle
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Angle"
+                                                    value="angle"/>
+                                        </items>
+                                    </controldisplaybehavior>
+                                    <swiperdisplaybehavior
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                            fieldLabel="Swiper"
+                                            name="./swiperDisplayBehavior">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <show
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Show"
+                                                    value="true"/>
+                                            <hide
+                                                    jcr:primaryType="nt:unstructured"
+                                                    text="Hide"
+                                                    value="false"/>
+                                        </items>
+                                    </swiperdisplaybehavior>
+                                </items>
+                                <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        showhidetargetvalue="top"/>
+                            </topcarouselOptions>
+                        </items>
+                    </controldata>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

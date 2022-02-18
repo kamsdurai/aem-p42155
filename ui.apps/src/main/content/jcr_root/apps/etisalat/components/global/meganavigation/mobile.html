@@ -1,0 +1,84 @@
+<template data-sly-template.mobile="${ @ properties,meganavigation}">
+  <!-- Mobile Menu Start-->
+ <div class="main-menu-mobile etisalat-carrier hidden-lg hidden-md sticky">
+  <div id="store_locator_mobile_link" class="sub_menu_mobile visible_menu">
+    <div class="panel-group container" 
+         data-sly-test="${!meganavigation.megaNavigationItems.isEmpty}" 
+       data-sly-list.navItems="${meganavigation.megaNavigationItems}" 
+       id="accordion_menu" role="tablist" aria-multiselectable="true">
+     <div class="panel panel-default row">
+        <div class="panel-heading" role="tab" id="heading-4">
+             <h5 class="active panel-title collapsed">
+               <a id="dtsecondlevelmenumob-${navItemsList.count}" class="${navItems.active}" href="${navItems.navigationLinkTo}"
+                 title="${navItems.navigationAltText}">${navItems.navigationLabel}</a>
+               <div data-sly-test="${!navItems.subNavigationList.isEmpty && navItems.subNavigationList.size > 0}" 
+                    class="arrow_accordion collapsed" role="button" data-toggle="collapse" data-parent="#accordion_menu"
+                 href="#collapse-${navItemsList.count}" aria-expanded="false" aria-controls="collapse-${navItemsList.count}">
+               </div>
+             </h5>
+           </div>
+           <div data-sly-test="${!navItems.subNavigationList.isEmpty && navItems.subNavigationList.size > 0}" 
+                 data-sly-list.subItems="${navItems.subNavigationList}"
+                 id="collapse-${navItemsList.count}" 
+                 class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-4"
+                 aria-expanded="false" style="height: 0px;">
+             <div class="panel-body col-xs-12">
+               <a class="item_sub-menu" href="${subItems.subNavLinkTo}" title="${subItems.subNavTitle}">${subItems.subNavLabel}</a>              
+             </div>
+           </div>	     	     
+     </div>
+     </div>
+     <div class="container menu-account">
+         <div class="row">              
+             <div data-sly-test="${!meganavigation.topNavIconMenuItems.isEmpty 
+                 && meganavigation.topNavIconMenuItems.size > 0}" data-sly-list.topRightItems="${meganavigation.topNavIconMenuItems}" class="col-xs-12">
+                 <a class="menu-account-link global-overlay" href="${topRightItems.navigationLink}">
+                    <img data-sly-test="${topRightItems.navigationImage}" src="${topRightItems.navigationImage}"/>
+                    <span> ${topRightItems.navigationTitle}</span>       
+                 </a>
+             </div>                                
+         </div>
+    </div>
+      <!-- For Revamp Menu Group Link -->
+     <div class="nav-footer-inline-wrapper">
+          <ul data-sly-test="${!meganavigation.topNavMenuItems.isEmpty && meganavigation.topNavMenuItems.size > 0}" class="nav-items nav-level-1 nav-footer-wrapper nav-footer-wrapper-inline">
+              <li data-sly-list.topLeftItems="${meganavigation.topNavMenuItems}" 
+                  class="nav-item nav-footer">
+                  <a class="nav-inline-link nav-site-switch ${topLeftItems.active ? 'active' : ''}" 
+                     href="${topLeftItems.navigationLink}">${topLeftItems.navigationTitle}</a>
+               </li>
+           </ul>
+ 
+           <ul data-sly-test="${!meganavigation.languageItems.isEmpty && meganavigation.languageItems.size == 1}" class="nav-items nav-level-1 nav-footer-wrapper nav-footer-wrapper-inline">
+             <li class="nav-item nav-footer white-bg">
+               <a class="nav-inline-link nav-site-switch" href="#">
+                 ${properties.langMobileLabel}
+               </a>
+               <a data-sly-repeat.langItem="${meganavigation.languageItems}" class="nav-inline-link nav-lang" href="${langItem.linkUrl}">
+                 ${langItem.title}
+               </a>
+             </li>
+           </ul>
+           <ul data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page" 
+               data-sly-test="${!meganavigation.languageItems.isEmpty && meganavigation.languageItems.size > 1}" 
+               class="nav-items nav-level-1 mega-lang-dropdown-mob">
+                 <li class="nav-item-heading white-bg mega-dropdown-mob open">
+                     <a class="${page.language == 'ar' ? 'arabic-lang-content' :''}" href="#"> ${properties.langMobileLabel}</a>  <img class="nav-link-arrow" src="${properties.linkArrowImage}"/>                      
+                  </li>
+                 <li class="mega-dropdown-mob-menu" style="display: list-item;">
+                   <ul data-sly-list.langItem="${meganavigation.languageItems}" role="menu">
+                         <li class="nav-item">
+                         <a class="nav-link" href=" ${langItem.linkUrl}">
+                             ${langItem.title}
+                         </a>
+                         </li>
+                    </ul>
+                 </li>
+            </ul>    
+     </div>
+    <!-- For Revamp Menu Group Link  end-->
+    
+   </div>
+ </div>
+ <!-- Mobile Menu End-->
+ </template>

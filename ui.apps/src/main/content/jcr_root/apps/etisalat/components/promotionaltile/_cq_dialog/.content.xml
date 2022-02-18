@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Promotional tile"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-teaser__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:hideChildren="[text,actions]">
+                    <promotiondetails
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Promotion Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <pretitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A pretitle that will be displayed on the Promotion."
+                                                fieldLabel="Pretitle"
+                                                name="./pretitle"/>
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A title to display as the headline for the Promotion."
+                                                fieldLabel="Title"
+                                                name="./title"/>
+                                            <titleType
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Title Type"
+                                                name="./titleType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <def
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="(default)"
+                                                        value=""/>
+                                                    <h1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H1"
+                                                        value="h1"/>
+                                                    <h2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H2"
+                                                        value="h2"/>
+                                                    <h3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H3"
+                                                        value="h3"/>
+                                                    <h4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H4"
+                                                        value="h4"/>
+                                                    <h5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H5"
+                                                        value="h5"/>
+                                                    <h6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H6"
+                                                        value="h6"/>
+                                                </items>
+                                            </titleType>
+                                            <promotionbuttontitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Promotion CTA title"
+                                                fieldLabel="Promotion CTA title"
+                                                name="./promotionCTATitle"/>
+                                            <promotionLinkBehavior
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Promotion Link Behavior"
+                                                name="./promotionLinkBehavior">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <opennewwindow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Open In New Window"
+                                                        value="opennewwindow"/>
+                                                    <opensamewindow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Open in Same Window"
+                                                        value="opensamewindow"/>
+                                                    <modalpopup
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Open In Modal window"
+                                                        value="openmodalwindow"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                                            </promotionLinkBehavior>
+                                            <fragmentlink
+                                                granite:class="linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fragmentVariationPath
+                                                        granite:id="xfPicker"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/experience-fragments/editor/components/xffield"
+                                                        fieldDescription="Choose the experience fragment variation to display."
+                                                        fieldLabel="Experience Fragment Variation Path"
+                                                        filter="folderOrVariant"
+                                                        name="./fragmentVariationPath"
+                                                        propertyFilter="cq:xfShowInEditor"
+                                                        variant="web"/>
+                                                    <modalBehavior
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Popup Behavior"
+                                                        name="./modalBehavior">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <rightpopup
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Right popup"
+                                                                value="right"/>
+                                                            <rightpopup-half-width
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Right popup with 50% width"
+                                                                value="right-50"/>
+                                                            <leftpopup
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Left popup"
+                                                                value="left"/>
+                                                            <bottompopup
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Bottom popup"
+                                                                value="bottom"/>
+                                                        </items>
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                                                    </modalBehavior>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="openmodalwindow"/>
+                                            </fragmentlink>
+                                            <promolinknewwindow
+                                                granite:class="linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <promotionbuttonlink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Promotion CTA link"
+                                                        fieldLabel="Promotion CTA link"
+                                                        name="./promotionCTALinkNewWindow"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="opennewwindow"/>
+                                            </promolinknewwindow>
+                                            <promolinksamewindow
+                                                granite:class="linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <promotionbuttonlink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Promotion CTA link"
+                                                        fieldLabel="Promotion CTA link"
+                                                        name="./promotionCTALinkSameWindow"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="opensamewindow"/>
+                                            </promolinksamewindow>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="etisalat/components/text/cq:dialog/content/items/tabs/items/properties/items/columns/items/column/items/text"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="Text that will appear for the main product Description."
+                                                fieldLabel="Description"
+                                                name="./description"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <textalignment
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Text Alignment"
+                                                name="./textAlignment">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <left
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Left"
+                                                        value="left"/>
+                                                    <center
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Center"
+                                                        value="center"/>
+                                                </items>
+                                            </textalignment>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </promotiondetails>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

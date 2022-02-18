@@ -1,0 +1,53 @@
+/*common classes*/
+
+.container_max {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.container_full {
+  width: 100%;
+}
+
+.text_pt16 {
+  font-size: 16px;
+}
+
+.text_pt20 {
+  font-size: 20px;
+}
+
+
+/* 1st section class*/
+
+.section_overview {
+  padding-top: 38px;
+  padding-bottom: 20px;
+}
+.page_space {
+  padding-bottom: 6px;
+
+  padding-top: 6px;
+}
+.section_overview h1 {
+  padding-bottom: 6px;
+}
+.section_overview h2 {
+  margin-bottom: 14px;
+}
+.secondary_lead {
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 35px;
+}
+
+/*2nd section classes*/
+
+.section_charges {
+  padding-top: 38px;
+}
+
+.grey {
+  background-color: #f3f3f3;
+}

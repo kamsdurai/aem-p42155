@@ -1,0 +1,30 @@
+<sly data-sly-use.iconCardListData="com.etisalat.core.models.IconCardList"></sly>
+
+<div class="row-context-nav swiper-with-4-slides">
+    <div class="container-fluid">
+        <div class="row">
+        <h2  data-sly-test="${properties.title}" class="support-logout-heading">${properties.title}</h2>
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 ${iconCardListData.iconCardSize > 3 ? 'cmp-icon-card-four-item' : 'cmp-icon-card-three-item'}">
+                <div class="spacer grey"></div>
+                <div class="context-nav-box-wrap  swiper-container-horizontal">
+                    <div class="swiper-wrapper" data-sly-list.cardItems="${iconCardListData.iconCardListItems}"
+                        style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                        <div class="swiper-slide col-xs-10 col-sm-3 swiper-slide-active"
+                            style="width: 223.762px; margin-right: 52.65px;">
+                            <div class="rect-responsive">
+                                <div class="context-nav-box content body-standard">
+                                    <a href="${cardItems.cardLink @extension='html'}">
+                                        <div class="icon-area">
+                                         <img data-sly-test="${cardItems.cardIcon}" class="icon-img" src="${cardItems.cardIcon}">
+                                        </div>
+                                        <h5>${cardItems.cardTitle}</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

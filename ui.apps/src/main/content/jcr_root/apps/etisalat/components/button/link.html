@@ -1,0 +1,44 @@
+<template data-sly-template.link="${ @ properties}">
+
+  <sly data-sly-test="${properties.linkBehavior != 'openmodalwindow'}">
+    <a href="${ properties.linkBehavior == 'opensamewindow'? properties.ctaSameWindowLink : properties.ctaNewWindowLink @ extension='html'}"
+       class="btn-text btn-green  learn-more"
+       title="${properties.title}"
+       target="${properties.linkBehavior == 'opennewwindow'?'_blank':'_self'}">
+      <span class="moreg">${properties.title}</span>
+    </a>
+  </sly>
+
+
+  <sly data-sly-test="${properties.linkBehavior == 'openmodalwindow'}">
+    <div class='learn-more-wrap'>
+      <a data-label="${resource.name}" class="btn-text btn-green  learn-more btn-modal"
+         title="${properties.title}">
+        <span class="moreg">${properties.title}</span>
+      </a>
+      <div id="${resource.name}" class="nv-modal fade  ${properties.modalBehavior}-modal">
+
+
+        <div class="nv-modal-dialog">
+          <div class="nv-modal-content nv-py-5">
+            <div class="container">
+              <div class="modal-popup">
+                <sly
+                    data-sly-use.closebuttonTemplate="/apps/etisalat/components/button/closebutton.html"
+                    data-sly-call="${closebuttonTemplate.close}">
+                </sly>
+                <sly
+                    data-sly-resource="${resource @ resourceType='core/wcm/components/experiencefragment/v1/experiencefragment', wcmmode='disabled'}">
+                </sly>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </sly>
+
+</template>

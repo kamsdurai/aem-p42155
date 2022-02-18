@@ -1,0 +1,89 @@
+<template data-sly-template.carousel="${ @ properties}">
+   <div data-sly-use.carousel="com.adobe.cq.wcm.core.components.models.Carousel"
+        data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+        data-panelcontainer="${wcmmode.edit && 'Promotional carousel'}" id="${carousel.id}" class="cmp-carousel" role="group"
+        aria-label="${carousel.accessibilityLabel}" aria-live="polite" aria-roledescription="carousel" data-cmp-is="carousel"
+        data-cmp-autoplay="${(wcmmode.edit || wcmmode.preview) ? '' : carousel.autoplay}" data-cmp-delay="${carousel.delay}"
+        data-cmp-autopause-disabled="${carousel.autopauseDisabled}" data-cmp-data-layer="${carousel.data.json}"
+        data-placeholder-text="${wcmmode.edit && 'Please add Promotional Carousel items here' @ i18n}">
+      <sly data-sly-test.oneTile="${carousel.items.size == 1}"></sly>
+      <sly data-sly-test.twoTile="${carousel.items.size ==2}"></sly>
+      <sly data-sly-test.threeTile="${carousel.items.size ==3}"></sly>
+      <div
+              class="current-promotions-wrraper ${oneTile ? 'one-only' :''} ${twoTile ? 'two-only' : ''} ${threeTile ? 'three-only' : ''} ${!oneTile && !twoTile && !threeTile ? 'three-plus': ''}">
+
+         <div class="background-with-color">
+            <div class="cover"
+                 data-sly-resource="${carousel @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+         </div>
+
+         <div class="container">
+            <div class="row">
+               <div class="col-md-3 col-xs-12">
+                  <span class="lbl">${properties.promotionPreTitle}</span>
+                  <div class="promotions-title-wrap">
+                     <h2>${properties.promotionTitle} </h2>
+                  </div>
+
+                  <div class="paragraph-styling ul-list-cms">${properties.promotionalDesc @ context='html'}</div>
+
+                  <a data-sly-test="${properties.promotionCTALink}" class="btn-text learn-more learn--more__white" title="${properties.promotionCTATitle}" href="${properties.promotionCTALink @ extension='html'} "
+                     target="${properties.promotionLinkBehavior == '
+opennewwindow'?'_blank' : '_self'}">
+                     <span>${properties.promotionCTATitle}</span>
+                  </a>
+                  <!-- Control Arrows for carousel-->
+                  <div class="controls" data-sly-test="${carousel.items.size >3}">
+                     <div class="prev left0 swiper-button-disabled">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                           <g fill="none" fill-rule="evenodd">
+                              <rect width="48" height="48" fill="#000" fill-rule="nonzero" opacity=".2" rx="24"></rect>
+                              <g>
+                                 <path d="M0 0H24V24H0z" transform="translate(12 12)"></path>
+                                 <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M.511 5.28L17.462 5.28M5.281 10.369L.5 5.281 5.588.5"
+                                          transform="translate(12 12) translate(3 7)"></path>
+                                 </g>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                     <div class="next right0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                           <g fill="none" fill-rule="evenodd">
+                              <rect width="48" height="48" fill="#000" fill-rule="nonzero" opacity=".2" rx="24"></rect>
+                              <g>
+                                 <path d="M0 0H24V24H0z" transform="matrix(-1 0 0 1 36 12)"></path>
+                                 <g stroke="#FFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                    <path d="M.511 5.28L17.462 5.28M5.281 10.369L.5 5.281 5.588.5"
+                                          transform="matrix(-1 0 0 1 36 12) translate(3 7)"></path>
+                                 </g>
+                              </g>
+                           </g>
+                        </svg>
+                     </div>
+                  </div>
+               </div>
+
+
+               <div class="col-md-9 col-xs-12" data-sly-test="${carousel.items && carousel.items.size > 0}">
+                  <div class="${!wcmmode.edit ? 'swiper-container swiper-container-horizontal': ''}">
+                     <div class="${!wcmmode.edit ? 'swiper-wrapper': ''}">
+                        <div data-sly-repeat.item="${carousel.items}" class="${!wcmmode.edit ? 'swiper-slide':''}"
+                             data-sly-resource="${item.name @ decorationTagName='div'}" id="${item.id}"></div>
+                     </div>
+                     <div class="scrollbar swiper-scrollbar">
+                        <div class="swiper-scrollbar-drag"></div>
+                     </div>
+                  </div>
+               </div>
+
+               <sly data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/parsys/newpar',
+            appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}"
+                    data-sly-test="${wcmmode.edit || wcmmode.preview}"></sly>
+            </div>
+         </div>
+
+      </div>
+   </div>
+</template>

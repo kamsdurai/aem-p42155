@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
+    jcr:primaryType="cq:Template">
+    <jcr:content
+        cq:lastModified="{Date}2021-07-02T18:53:57.781+05:30"
+        cq:lastModifiedBy="admin"
+        cq:templateType="/conf/etisalat/settings/wcm/template-types/page"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="HiuApp Template"
+        status="enabled"/>
+</jcr:root>

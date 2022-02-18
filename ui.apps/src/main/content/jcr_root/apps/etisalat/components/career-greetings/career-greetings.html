@@ -1,0 +1,57 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2018 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"></sly>
+<div data-sly-use.careerGreetings="com.etisalat.core.models.CareerGreetings">
+  <sly data-sly-call="${templates.placeholder @ isEmpty = !careerGreetings.image && !careerGreetings.cover && !careerGreetings.description}"></sly>
+
+
+
+  <div class="career-greetings container-center">
+    <div class="career-greetings-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-ms-5 col-sm-6 col-md-6 col-lg-6">
+            <div data-sly-test = "${careerGreetings.cover && careerGreetings.cover.imgUrl}" class="career-greetings-cover">
+              <div data-sly-test = "${careerGreetings.image && careerGreetings.image.imgUrl}" class="career-greetings-photo">
+                <img src=" ${careerGreetings.image.imgUrl}" alt="${careerGreetings.image.altText}">
+              </div>
+              <img src="${careerGreetings.cover.imgUrl}" alt="${careerGreetings.cover.altText}">
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-ms-7 col-sm-6 col-md-6 col-lg-6 career-greetings-detail">
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="heading-mini"> ${careerGreetings.preTitle}</p>
+                <h4>${careerGreetings.title}</h4>
+                ${careerGreetings.description @ context='html'}
+
+                <!-- Got in their HTML. Need to find what is the functionality.
+                <div class="ceo-group">
+                  <h4></h4>
+                  <h5></h5>
+                </div> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

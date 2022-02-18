@@ -1,0 +1,85 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2018 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+
+ <h3>${properties.tabTitle}</h3>
+	<div data-sly-use.tabs="com.adobe.cq.wcm.core.components.models.Tabs"
+	     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+	     data-panelcontainer="${wcmmode.edit && 'tabs'}"
+	     id="${tabs.id}"
+	     class="cmp-tabs ${(wcmmode.preview || wcmmode.disabled) ? 'hidden-sm hidden-xs' : ''}"
+	     data-cmp-is="tabs"
+	     data-cmp-data-layer="${tabs.data.json}"
+	     data-placeholder-text="${wcmmode.edit && 'Please drag Tab components here' @ i18n}">      
+	    <ol data-sly-test="${tabs.items && tabs.items.size > 0}"
+	        data-sly-list.tab="${tabs.items}"
+	        role="tablist"
+	        class="cmp-tabs__tablist"
+	        aria-label="${tabs.accessibilityLabel}"
+	        aria-multiselectable="false">
+	        <sly data-sly-test.isActive="${tab.name == tabs.activeItem}"/>
+	        <li role="tab"
+	            id="${tab.id}-tab"
+	            class="cmp-tabs__tab${isActive ? ' cmp-tabs__tab--active' : ''}"
+	            aria-controls="${tab.id}-tabpanel"
+	            tabindex="${isActive ? '0' : '-1'}"
+	            data-cmp-hook-tabs="tab">${tab.title}
+	           <sly data-sly-use.tabimage="com.etisalat.core.models.TabImage"
+	             data-sly-list.imageItem="${tabimage.tabImageItems}">
+	              <span data-sly-test="${tab.title == imageItem.linkText}">
+	                <img src="${imageItem.linkUrl}"/>
+	              </span>
+	           </sly>
+	         </li>
+	    </ol>
+	    <div data-sly-repeat.item="${tabs.items}"
+	         data-sly-resource="${item.name @ decorationTagName='div'}"
+	         id="${item.id}-tabpanel"
+	         role="tabpanel"
+	         aria-labelledby="${item.id}-tab"
+	         tabindex="0"
+	         class="cmp-tabs__tabpanel${item.name == tabs.activeItem ? ' cmp-tabs__tabpanel--active' : ''}"
+	         data-cmp-hook-tabs="tabpanel"
+	         data-cmp-data-layer="${item.data.json}"></div>
+	    <sly data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/parsys/newpar', appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}"
+	         data-sly-test="${(wcmmode.edit || wcmmode.preview) && tabs.items.size < 1}"></sly>
+	</div>
+
+<!--mobile view start-->
+<div data-sly-test="${wcmmode.preview || wcmmode.disabled}" id="Mobile-${tabs.id}" 
+     data-sly-use.accord="com.adobe.cq.wcm.core.components.models.Tabs" 
+     class="hidden-md hidden-lg">
+   <div data-sly-test="${accord.items && accord.items.size > 0}"
+         data-sly-list.tab="${accord.items}" 
+         class="nav-view-wrapp mobile-head panel">   
+     <a class="hidden-md hidden-lg collapsed" 
+		 data-toggle="collapse" data-parent="#Mobile-${tabs.id}" 
+		 href="#Mobile-${tabs.id}-${tabList.count}" aria-expanded="false">      
+           ${tab.title}  
+          <sly data-sly-use.tabimage="com.etisalat.core.models.TabImage"
+               data-sly-list.imageItem="${tabimage.tabImageItems}">
+               <span data-sly-test="${tab.title == imageItem.linkText}">
+                <img src="${imageItem.linkUrl}"/>
+              </span>
+	      </sly>
+      </a>	  
+   <div data-sly-resource="${tab.name @ decorationTagName='div'}"
+         id="Mobile-${tabs.id}-${tabList.count}"
+		 class="panel-collapse collapse ${tabList.first ? 'in' :''}" aria-expanded="false">        
+    </div>
+		 
+   </div>
+</div>
+<!--mobile view end-->

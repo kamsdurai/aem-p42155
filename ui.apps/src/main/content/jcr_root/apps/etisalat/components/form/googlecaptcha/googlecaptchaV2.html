@@ -1,0 +1,13 @@
+<template data-sly-template.captchav2prop="${ @ properties}">
+
+
+<div class="col-md-12">
+
+<input type="hidden" id="gcaptchaKeyV2" name="gcaptchaKeyV2" value="${properties.captchaKeyV2}">
+ <div id="response-div" style="color:red; font-weight: bold;"></div>
+ <script src='https://www.google.com/recaptcha/api.js?onload=reCaptchaCallback&render=explicit' async defer></script>
+ <div id="rcaptcha" class="g-recaptcha" data-sitekey="${properties.captchaKeyV2}"></div>
+ <input type="hidden" value="true" id="recaptchaRequired" name="recaptchaRequired" /> 
+
+ </div>           
+</div>

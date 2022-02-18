@@ -1,0 +1,21 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"></sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.captchaVersion}"></sly>
+
+</sly>
+<sly data-sly-test="${properties.captchaVersion && properties.captchaVersion == 'captchav2'}">
+    <sly data-sly-use.captchav2template="/apps/etisalat/components/form/googlecaptcha/googlecaptchaV2.html"
+         data-sly-call="${captchav2template.captchav2prop @ properties=properties}">  
+    </sly>
+</sly>
+
+<sly data-sly-test="${properties.captchaVersion && properties.captchaVersion == 'captchav3'}">
+    <sly data-sly-use.captchav3template="/apps/etisalat/components/form/googlecaptcha/googlecaptchaV3.html"
+         data-sly-call="${captchav3template.captchav3prop @ properties=properties}">  
+    </sly>
+</sly>
+
+<sly data-sly-test="${properties.captchaVersion && properties.captchaVersion == 'captchaInvisible'}">
+    <sly data-sly-use.captchaInvisiblev3template="/apps/etisalat/components/form/googlecaptcha/googlecaptchaInvisibleV3.html"
+         data-sly-call="${captchaInvisiblev3template.captchaInvisiblev3prop @ properties=properties}">  
+    </sly>
+</sly>

@@ -1,0 +1,47 @@
+<sly data-sly-use.topnavModel="com.etisalat.core.models.TopnavModel"></sly>
+<div class="top-nav-section top-nav hidden-xs hidden-ms hidden-sm">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6 col-lg-5">
+            <div class="top-nav-left">
+               <sly data-sly-use.topnavObj="${resource.path}"
+                  data-sly-list.topItems="${topnavObj.listChildren}">
+                  <ul data-sly-test="${topItems.name == 'topnavlinks'}" data-sly-list.topItemsList="${topItems.listChildren}" class="links">
+                    <li class="${topItemsList.active ? 'active' : ''}">
+                        <a href="${topItemsList.navigationLink @ extension = 'html'}" data-sub-menu="sub-menu-mobile">${topItemsList.navigationTitle}</a>
+                    </li>
+                  </ul>
+               </sly>
+            </div>
+         </div>
+         <div class="col-md-6 col-lg-7">
+            <div class="top-nav-right">
+               <sly data-sly-use.iconsObject="${resource.path}"
+                  data-sly-list.itemss="${iconsObject.listChildren}">
+                  <ul data-sly-test="${itemss.name == 'linkswithicons'}" class="links">
+                    <li data-sly-repeat.itemList="${itemss.listChildren}" class="${currentPage.path == topItemsList.navigationLink ? 'active' : ''}">
+                        <a href="${itemList.navigationLink @ extension = 'html'}" data-sub-menu="sub-menu-mobile">
+                        <span class="text">${itemList.navigationTitle}</span><img data-sly-test="${itemList.navigationImage}" src="${itemList.navigationImage}"/></a>                         
+                    </li>
+                    <li data-sly-test="${topnavModel.languageSize > 1}">
+                        <ul>
+                         <li class="language" data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page">
+                              <a class="${page.language == 'ar' ? 'arabic-lang-content' :''}" href="#">${topnavModel.currentPageLanguageTitle}</a>
+                              <ul class="language-menu" data-sly-list.langItem="${topnavModel.localeList}">
+                                 <li><a class="${langItem.altText == 'ar' ? 'arabic-lang-content' :''}" href="${langItem.linkUrl}">${langItem.title}</a></li>                                 
+                              </ul>
+                           </li>
+                        </ul>
+                    </li>
+                    <li data-sly-test="${topnavModel.languageSize == 1}" data-sly-list.langItem="${topnavModel.localeList}">
+                       <a href = "${langItem.linkUrl}" data-sub-menu="sub-menu-help">
+                        <span class="language-switch-content"> ${langItem.title}</span>
+                        </a>
+                    </li>
+                  </ul>
+               </sly>
+            </div>			 
+         </div>
+      </div>
+   </div>
+</div>

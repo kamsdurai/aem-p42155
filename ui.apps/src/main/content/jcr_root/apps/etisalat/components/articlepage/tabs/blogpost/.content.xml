@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:showOnCreate="{Boolean}false"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Blogpost"
+    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <businesscategory
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                    allowBulkEdit="{Boolean}true"
+                    autocreateTag="{Boolean}true"
+                    fieldDescription="Defines the blogpost meta tags for search."
+                    fieldLabel="Business Category Tags"
+                    name="./businessBlogTag"
+                    rootPath="/content/cq:tags/etisalat/business/smb/category">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="businessBlogTag"/>
+                </businesscategory>
+                <articledate
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                    fieldDescription="Article Date"
+                    fieldLabel="Article Date"
+                    name="./articleDate">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="articleDate"/>
+                </articledate>                
+                <articletime
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                    fieldDescription="Article Time"
+                    fieldLabel="Article Time"
+                    name="./articleTime"
+                    type="time">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="articleTime"/>
+                </articletime>
+                <blogsize
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldDescription="Blog Tile Size"
+                    fieldLabel="Blog Tile Size"
+                    name="./blogsize">
+                    <items jcr:primaryType="nt:unstructured">
+                        <small
+                            jcr:primaryType="nt:unstructured"
+                            text="Small"
+                            value="3"/>
+                        <medium
+                            jcr:primaryType="nt:unstructured"
+                            text="Medium"
+                            value="6"/>
+                        <video
+                            jcr:primaryType="nt:unstructured"
+                            text="Video"
+                            value="video"/>
+                    </items>
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="blogsize"/>
+                </blogsize>
+                <youtubeurl
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldDescription="Enter the Youtube URL."
+                    fieldLabel="Youtube Video URL"
+                    name="./youTubeUrl">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="youTubeUrl"/>
+                 </youtubeurl>
+                 <playicontext
+	                    jcr:primaryType="nt:unstructured"
+	                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+	                    fieldDescription="Enter the Video Play Icon Text."
+	                    fieldLabel="Video Play Icon Text"
+	                    name="./playIconText">
+	              </playicontext>
+                <imageresourcehidden
+                    granite:class="js-browse-activator"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                    name="./image/sling:resourceType"
+                    value="etisalat/components/image"/>
+                <backtobusiness
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                    fieldDescription="Enter Back to Business Blogpost Label"
+                    fieldLabel="Back to Business Label"
+                    name="./backToBusinessLbl"
+                    value="BACK TO BUSINESS BLOG HOME">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="backToBusinessLbl"/>
+                </backtobusiness>
+                <backtobusinesslink
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                    fieldDescription="Enter Back to Business Blogpost Link."
+                    fieldLabel="Back to Business Link"
+                    name="./backToBusinessLink"
+                    rootPath="/content">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="backToBusinessLink"/>
+                 </backtobusinesslink>
+            </items>
+        </column>
+    </items>
+</jcr:root>

@@ -1,0 +1,89 @@
+<template data-sly-template.footerDetails="${ @ properties,footer}">
+  <!-- Desktop Menu Start -->
+
+
+  <div class="quick-links-section flexible-col">
+    <div class="container">
+      <div class="links-wrap" data-sly-list.items="${footer.quickLinks}">
+        <div class="links">
+          <div class="quick-links-head">
+            <span class="links-title hidden-xs hidden-sm">${items.quickLinkTitle}</span>
+
+            <a href="#collape-${itemsList.count}" data-toggle="collapse" class="arrow_accordion link-title-mob hidden-md hidden-lg collapsed" title="${items.quickLinkTitle}"
+               aria-expanded="true">${items.quickLinkTitle}</a>
+            <svg class="hidden-md hidden-lg">
+              <use xlink:href="#arrow_accordion"></use>
+            </svg>
+          </div>
+          <ul class="quick-links-body collapse" id="collape-${itemsList.count}" aria-expanded="true" style="" data-sly-list.linkItems="${items.links}">
+            <li class="links-item"><a href="${linkItems.linkUrl}" class="" title="${linkItems.linkText}">
+              ${linkItems.linkText}
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social-dwonload">
+        <!-- download etisalat icons -->
+        <div class="download-etisalat" >
+          <div class="footer-heading">${properties.downloadTitle}</div>
+          <div class="icons-wrap" data-sly-list.items="${footer.download}">
+            <div class="icon ${items.title}" style="display: block;">
+              <a href="${items.linkUrl}" target="_blank">
+                <img src="${items.imgUrl}" title="${items.title}">
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- download etisalat icons -->
+        <!-- follow-us etisalat icons -->
+        <div class="follow-etisalat">
+          <div class="footer-heading">${properties.followUsTitle}</div>
+          <div class="icons-wrap" data-sly-list.items="${footer.followUs}">
+            <div class="icon">
+              <a href="${items.linkUrl}" target="_blank"><img
+                  src="${items.imgUrl}" title="${items.title}"></a>
+            </div>
+          </div>
+        </div>
+        <!-- follow-us etisalat icons -->
+        <!-- payment etisalat icons -->
+        <div class="payment-etisalat">
+          <div class="footer-heading">${properties.paymentTitle}</div>
+          <div class="icons-wrap" data-sly-list.items="${footer.payment}">
+            <div class="icon">
+              <img src="${items.imgUrl}" title="${items.title}">
+            </div>
+          </div>
+        </div>
+        <!-- payment etisalat icons -->
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-links-logo-section">
+    <div class="row">
+      <div class="flex-container">
+        <div class="col-xs-12 col-md-9">
+
+          <!-- end: footer - quick links -->
+
+          <ul class="footer-links-nav" data-sly-list.items="${footer.footerLinks}">
+            <li><a style="padding-left: 0; border-left: 0" href="${items.linkUrl}" title="${items.linkText}">${items.linkText}</a>
+            </li>
+          </ul>
+          <div class="copyright desktop year"> &copy; <span class="copyright-year" dir="ltr"></span> ${footer.copyrightText}</div>
+
+          <!-- <div class="copyright desktop ">&copy; 2021 Etisalat. All Rights Reserved.</div> -->
+        </div>
+        <div class="col-xs-12 col-md-3">
+          <a class="etisalat-logo" href="${footer.promo.linkUrl}" title="Expo 2020">
+            <img src="${footer.promo.imgUrl}" title="icon-amex-card"/>
+          </a>
+          <div class="copyright">&copy; <span class="copyright-year" dir="ltr"></span> ${footer.copyrightText}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Desktop Menu End -->
+</template>

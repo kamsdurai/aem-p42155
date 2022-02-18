@@ -1,0 +1,31 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"></sly>
+<sly
+    data-sly-call="${templates.placeholder @ isEmpty = !properties.ctaNewWindowLink && !properties.ctaSameWindowLink && !properties.fragmentVariationPath}">
+</sly>
+
+
+<sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'link'}">
+  <sly data-sly-use.linkTemplate="/apps/etisalat/components/button/link.html"
+       data-sly-call="${linkTemplate.link @ properties=properties}">
+  </sly>
+</sly>
+
+
+<sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'primarybutton'}">
+  <sly data-sly-use.primaryButtonTemplate="/apps/etisalat/components/button/primarybutton.html"
+       data-sly-call="${primaryButtonTemplate.primaryButton @ properties=properties}">
+  </sly>
+</sly>
+
+<sly
+    data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'secondarybutton'}">
+  <sly data-sly-use.secondaryButtonTemplate="/apps/etisalat/components/button/secondarybutton.html"
+       data-sly-call="${secondaryButtonTemplate.secondaryButton @ properties=properties}">
+  </sly>
+</sly>
+
+<sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'ctabutton'}">
+  <sly data-sly-use.ctaTemplate="/apps/etisalat/components/button/cta.html"
+       data-sly-call="${ctaTemplate.cta @ properties=properties}">
+  </sly>
+</sly>

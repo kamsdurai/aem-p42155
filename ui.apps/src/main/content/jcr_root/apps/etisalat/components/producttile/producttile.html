@@ -1,0 +1,63 @@
+<div
+	data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+	data-panelcontainer="${wcmmode.edit && 'Product Tile Component'}"
+	data-placeholder-text="${wcmmode.edit && 'Please configure the product tiles component data here' @ i18n}">
+
+	<div class="read-more-${properties.offerText ? 'red' : 'green'}-btn_bg">
+		<div class="tile-table plan-card offer ">
+			<div class="tile-card effect__click">
+				<div class="tile">
+					<div class="tile-card__front">
+						<div class="tiles-box content body-standard">
+							<div class="tiles-box-title">
+								<div data-sly-test="${properties.offerText}"
+									class="special-offer">${properties.offerText}</div>
+								<div class="catagory" data-sly-test="${properties.productTitle}">${properties.productTitle}</div>
+								<h2 data-sly-test="${properties.productSubTitle}">${properties.productSubTitle}</h2>
+							</div>
+							<div class="tiles-box-list">
+								<ul class="featureList">
+									<li>
+										<ul data-sly-test="${properties.productDesc}">${properties.productDesc @ context="html"}
+										</ul>
+									</li>
+								</ul>
+								<div class="detail-info-wrap detail-info-wrap-pricetag">
+									<div class="detail-price-new">
+										<div class="main-part">
+											<div dir="ltr" class="from"></div>
+											<div dir="ltr" class="price" data-sly-test="${properties.productPrice}">
+												${properties.productPrice}</div>
+											<small>${properties.productCurrency}/ month</small>
+										</div>
+									</div>
+								</div>
+								<p class="bottom-text">${properties.vatInclude}</p>
+								<a data-label="popupN110"
+									class="overlay-link learn-more btn-text mt-5 edit btn-green text-center"
+									title="popupN110"> <span class="moreg">${properties.moreInfoLabel}</span>
+								</a>
+							</div>
+							<div class="smile-points">
+								<span>
+									<center>${properties.contract}</center>
+								</span>
+							</div>
+							<div
+								class="read-more select-product-from-grid select-product-from-grid-without-close link"
+								data-extra-container=".extra-options-02">
+								<a
+									href="https://www.etisalat.ae/b2bportal/login.html?next=mobile-plans-discovery&amp;ratePlanId=PKBXBFO1BP0000002RD&amp;productId=prod_PKBXBFO1BP0000002RD&amp;selectedFlow=Mobile%20Plans&amp;displayName=Business%20First%20+%20National%20110%20&amp;showRequestCallBack=true&amp;product=7&amp;subject=Mobile_BFP_Online-Exclusive-National110&amp;productName=Business_First_Plus_National_110_Exclusive_Online_Offer"
+									class="cms-button read-more-link" title="National 110"> <span>
+										${properties.buyNowButton}</span>
+								</a> <a href="" class="b2b-button read-more-link"
+									title="National 110"> <span>Buy Now</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

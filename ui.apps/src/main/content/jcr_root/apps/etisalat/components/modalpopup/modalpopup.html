@@ -1,0 +1,31 @@
+<div data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-panelcontainer="${wcmmode.edit && 'Modal popup'}"
+     data-placeholder-text="${wcmmode.edit && 'Please update Modal popup' @ i18n}">
+
+  <sly
+      data-sly-call="${templates.placeholder @ isEmpty = !properties.fileReference && !properties.title && !properties.preTitle}"></sly>
+
+  <div class="nv-modal-header">
+    <div class="nv-modal-title" data-sly-element="${properties.titleType}"> ${properties.title}</div>
+  </div>
+  <div class="nv-modal-body">
+    <div class="nv-row justify-content-center mb-36">
+      <div class="nv-col-md-11 m-y-auto">
+        <div class="nv-row">
+          <div class="nv-col-md-4">
+            <div class="offer-image">
+              <div class="cover" data-sly-resource="${resource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}">
+              </div>
+            </div>
+          </div>
+          <div class="nv-col-md-7">
+            <div class="offer-details-wrapper">
+
+              ${properties.desc @ context='html'}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

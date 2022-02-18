@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Product detail"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Image"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                allowUpload="{Boolean}false"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                fieldLabel="Image Asset"
+                                                fileNameParameter="./fileName"
+                                                fileReferenceParameter="./fileReference"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./file"
+                                                title="Upload Image Asset"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </image>
+                    <productcategorydata
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Products Category Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <productcategorybuttonlink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Product category CTA link"
+                                fieldLabel="Product category CTA link"
+                                name="./productCTALink"/>
+                            <productcategorybuttontitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Product category CTA title"
+                                fieldLabel="Product category CTA title"
+                                name="./productCTATitle"/>
+                            <mainTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Text that will appear for the main product Title."
+                                fieldLabel="Main Product Title"
+                                maxlength="{Long}40"
+                                name="./mainProductTitle"/>
+                            <maindescription
+                                jcr:primaryType="nt:unstructured"
+								sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                fieldDescription="Text that will appear for the main product Description."
+                                fieldLabel="Main Product Description"
+                                name="./mainProductDesc"
+                                useFixedInlineToolbar="{Boolean}true"/>
+                            <productlisttype
+                                granite:class="cq-dialog-dropdown-showhide"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Build product list using"
+                                name="./productListType">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <dynamic
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Dynamic List"
+                                        value="dynamiclist"/>
+                                    <static
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Static List"
+                                        value="staticlist"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-dialog-dropdown-showhide-target=".productlist-showhide-target"/>
+                            </productlisttype>
+                            <staticlist
+                                granite:class="productlist-showhide-target"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                                        name="./productItems">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <slidecheckbox
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}true"
+                                                fieldDescription="When checked, populate the title with the slider."
+                                                name="./slider"
+                                                text="Activate slider or Not?"
+                                                uncheckedValue="{Boolean}false"
+                                                value="{Boolean}true"/>
+                                        </items>
+                                    </field>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="staticlist"/>
+                            </staticlist>
+                            <dynamiclist
+                                granite:class="productlist-showhide-target"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <productcategoryid
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Product Category ID"
+                                        name="./productCategoryId"/>
+                                    <offerpretext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear as pre text before offer value.."
+                                        fieldLabel="Offer Pre Text"
+                                        maxlength="{Long}40"
+                                        name="./offerPreText"/>
+                                    <offerposttext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear as post text before offer value.."
+                                        fieldLabel="Offer Post Text"
+                                        maxlength="{Long}40"
+                                        name="./offerPostText"/>
+                                    <exclusiveproducttext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear for the online exclusive products"
+                                        fieldLabel="Exclusive Product Text"
+                                        maxlength="{Long}40"
+                                        name="./exclusiveProductText"/>
+                                    <fromtext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear as from text before product price."
+                                        fieldLabel="From Text"
+                                        maxlength="{Long}40"
+                                        name="./fromText"/>
+                                    <productcurrency
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear for product currency."
+                                        fieldLabel="Product Currency"
+                                        maxlength="{Long}40"
+                                        name="./productCurrency"/>
+                                    <wastext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear for was text for products with offer"
+                                        fieldLabel="Was Text"
+                                        maxlength="{Long}40"
+                                        name="./wastext"/>
+                                    <vatinclude
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear for VAT include"
+                                        fieldLabel="VAT Include"
+                                        maxlength="{Long}40"
+                                        name="./vatInclude"/>
+                                    <smilepointpretext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear as pre text before smile points."
+                                        fieldLabel="Smile Point Pre Text"
+                                        name="./smilePointPreText"/>
+                                    <smilepointposttext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear as post text before smile points."
+                                        fieldLabel="Smile Point Post Text"
+                                        name="./smilePointPostText"/>
+                                    <preordertext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear for Pre-order button."
+                                        fieldLabel="Pre Order Text"
+                                        maxlength="{Long}40"
+                                        name="./preOrderText"/>
+                                    <buynowbutton
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Text that will appear for the buy now button."
+                                        fieldLabel="Buy Now Button Text"
+                                        maxlength="{Long}40"
+                                        name="./buyNowButton"/>
+                                    <buttonlink
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldDescription="Buy now button link"
+                                        fieldLabel="Buy now button link"
+                                        name="./buttonLink"
+                                        rootPath="/content"/>
+                                    <listlayout
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Build list layout with"
+                                        name="./listLayout">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <loadmore
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Load more button"
+                                                value="loadmore"/>
+                                            <slider
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Slider"
+                                                value="slider"/>
+                                        </items>
+                                    </listlayout>
+                                    <loadmorectatext
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Load more CTA Text"
+                                        fieldLabel="Load more CTA Text"
+                                        name="./loadMoreCTAText"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="dynamiclist"/>
+                            </dynamiclist>
+                        </items>
+                    </productcategorydata>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

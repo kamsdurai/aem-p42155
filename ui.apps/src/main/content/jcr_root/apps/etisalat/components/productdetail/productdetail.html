@@ -1,0 +1,15 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"></sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.productListType}"></sly>
+
+</sly>
+<sly data-sly-test="${properties.productListType && properties.productListType == 'dynamiclist'}">
+    <sly data-sly-use.dynamicproductstemplate="/apps/etisalat/components/productdetail/dynamicproducttemplate.html"
+         data-sly-call="${dynamicproductstemplate.dynamicproducts @ properties=properties}">  
+    </sly>
+</sly>
+
+<sly data-sly-test="${properties.productListType && properties.productListType == 'staticlist'}">
+    <sly data-sly-use.staticproductstemplate="/apps/etisalat/components/productdetail/staticproducttemplate.html"
+         data-sly-call="${staticproductstemplate.staticproducts @ properties=properties}">  
+    </sly>
+</sly>
