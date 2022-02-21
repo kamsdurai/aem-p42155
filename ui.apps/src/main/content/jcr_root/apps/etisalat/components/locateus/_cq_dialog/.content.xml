@@ -121,9 +121,9 @@
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
                                                 checked="{Boolean}false"
-                                                fieldDescription="Toggle to show/hide for contact us map"
+                                                fieldDescription="Toggle to show/hide the contact us map"
                                                 name="./contactMap"
-                                                text="Show contact us map"
+                                                text="Enable Contact Us"
                                                 uncheckedValue="{Boolean}false"
                                                 value="{Boolean}true"/>
                                             <customercarelabel

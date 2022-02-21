@@ -1,0 +1,21 @@
+<template data-sly-template.lightBlueImageTheme="${ @ properties}">
+	<a href="#" class="add-tile-4-0 default">
+		<div class="add-content">
+			<div data-sly-test="${properties.productTitle}" class="wst-secondary-headings">
+				<h4>${properties.productTitle}</h4>
+			</div>
+			<div data-sly-test="${properties.productSubTitle}" class="wst-main-headings">
+				<h4>${properties.productSubTitle}</h4>
+			</div>
+			<div data-sly-test="${properties.productDesc}" class="paragraph-styling">
+				<div class="p2">
+					${properties.productDesc @ context="html"}</div>
+			</div>
+		</div>
+		<div class="img-wrapp">
+			<div class="cover"
+				data-sly-resource="${carousel @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}" />
+		</div>
+		</div>
+	</a>
+</template>

@@ -1,0 +1,78 @@
+<div data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.notification="com.etisalat.core.models.DigitalNotification" 
+    data-sly-set.notiAlignment="${properties.alignment == 'top' || properties.alignment == 'bottom'}" 
+   class="digital-notifications-wrapper ${wcmmode.edit && notiAlignment ? '': properties.alignment} ${properties.themeColor} ${properties.displayDigitalBehavior && properties.displayDigitalBehavior == 'viewmore' ? 'expand-collapse' : ''}">
+   <div class="container">
+      <div class="noti-icon-dismis">
+         <a href="#">
+           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">                        
+                <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <g>
+                        <g>
+                            <g>
+                                <g transform="translate(-1368 -26) translate(-240) translate(240) translate(120 22)">
+                                    <g>
+                                        <path stroke="#ffffff" d="M15 1L1 15M15 15L1 1" transform="translate(1248 4)"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>                   
+         </a>
+      </div>
+      <div class="mob-tab-bar">
+         <span class="tab-line"></span>
+      </div>
+      <div class="notifications-head">
+         <div class="title">
+            <div class="noti-icon-info"> 
+               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+                  <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                      <g stroke="#FFF">
+                          <g>
+                              <g>
+                                  <g>
+                                      <g>
+                                          <path d="M8.986 8.187L8.986 12.977M8.986 4.982L8.986 6.187M12.99 16.46c2.66-1.42 4.47-4.24 4.47-7.48C17.46 4.3 13.67.5 8.98.5S.5 4.3.5 8.98c0 4.69 3.79 8.49 8.48 8.49h.01" transform="translate(-123 -25) translate(-240) translate(240) translate(120 22) translate(3 3)"/>
+                                      </g>
+                                  </g>
+                              </g>
+                          </g>
+                      </g>
+                  </g>
+              </svg>                    
+            </div>
+            <h3>${properties.notificationTitle} 
+               <a data-sly-test="${properties.titleLinkText && notification.titleLink}" href="${notification.titleLink}">${properties.titleLinkText}</a> 
+            </h3>
+         </div>
+         <div data-sly-test="${properties.displayDigitalBehavior && properties.displayDigitalBehavior == 'learnmore'}" class="more-notifications">
+            <div data-sly-test="${properties.title}" data-sly-resource="${resource @ resourceType='etisalat/components/button'}"></div>
+         </div>
+         <div data-sly-test="${properties.displayDigitalBehavior && properties.displayDigitalBehavior == 'viewmore'}" class="more-notifications">
+            <a data-sly-test="${properties.viewMoreItems && properties.viewLesstems}" href="#"> 
+            <span class="more hidden">${properties.viewMoreItems}</span>
+            <span class="less">${properties.viewLesstems}</span>
+            </a>
+         </div>
+      </div>
+      <div class="notifications-body">
+         <div class="row">
+            <div class="col-xs-12 col-md-10">
+               <div class="description">
+                  ${properties.notificationDesc @ context = 'html'}
+               </div>
+               <div data-sly-test="${properties.displayDigitalBehavior && properties.displayDigitalBehavior == 'learnmore'}" class="more-notifications">
+		            <div data-sly-test="${properties.title}" data-sly-resource="${resource @ resourceType='etisalat/components/button'}"></div>
+		         </div>
+					<a data-sly-test="${properties.actionsEnabled && properties.notificationCTATitle && notification.notificationCTALink}"
+						href="${notification.notificationCTALink}"
+						class="btn btn-green ripple-effect">${properties.notificationCTATitle}</a>
+				</div>
+         </div>
+      </div>
+   </div>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.notificationTitle}"></sly>

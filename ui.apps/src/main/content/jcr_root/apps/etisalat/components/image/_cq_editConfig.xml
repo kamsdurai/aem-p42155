@@ -89,4 +89,11 @@
             </ui>
         </inplaceEditingConfig>
     </cq:inplaceEditing>
+	<cq:listeners
+        jcr:primaryType="cq:EditListenersConfig"
+        aftercopy="REFRESH_PARENT"
+        afterdelete="REFRESH_PARENT"
+        afteredit="REFRESH_PARENT"
+        afterinsert="REFRESH_PARENT"
+        aftermove="REFRESH_PARENT"/>
 </jcr:root>

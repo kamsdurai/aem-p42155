@@ -1,46 +1,19 @@
-<sly data-sly-use.tileModel="com.etisalat.core.models.TilesModelItem"></sly>
-<div class="tile-boxes-section four-slides with-bg t-b-slider0">
-   <div class="container">
-      <div class="row">
-         <div class="col-xs-12">
-            <div class="tile-boxes-title-wrap">
-               <h2>${tileModel.title}</h2>
-            </div>
-         </div>
-      </div>
-      <div class="swiper-container swiper-container-horizontal">
-         <div class="swiper-wrapper" data-sly-list.items="${tileModel.tileList}">
-            <a href="${items.link}" title=""></a>
-            <div class="swiper-slide">
-               <div class="tile-boxes-image-wrapper">
-                  <div class="cover">
-                     <div data-sly-test="${items.labeltext}" class="category">
-                        <p>${items.labeltext}</p>
-                     </div>
-                     <sly data-sly-test="${items.fileReference}">
-                        <img src="${items.fileReference}"/>
-                     </sly>
-                  </div>
-               </div>
-               <div class="tile-box-body">
-                  <div class="tile-boxes-title-small">
-                     <h3>${items.tiletitle}</h3>
-                  </div>
-                  <div class="tile-box-description">
-                     <p>${items.text @ context='html'}</p>
-                  </div>
-                  <div data-sly-test="${items.tiledate}" class="card_date">
-                     ${'dd-MMM-yyyy' @ format= items.tiledate}
-                  </div>
-                  <div data-sly-test="${items.link}" class="learn-more-wrap">
-                     <a href="${items.link}" class="btn-text btn-green learn-more" title="${items.ctatext}">${items.ctatext}</a>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="scrollbar swiper-scrollbar">
-            <div class="swiper-scrollbar-drag" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; width: 956.175px;"></div>
-         </div>
-      </div>
-   </div>
-</div>
+<sly data-sly-use.tileModel="com.etisalat.core.models.TileModel" 
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html">  
+  <sly data-sly-test="${tileModel.tiletitle}">
+	   <sly data-sly-test="${tileModel.tileBoxVariation == '4-tile-boxes'}"
+	        data-sly-use.fourTileTemplate="4-tile.html"
+	        data-sly-call="${fourTileTemplate.fourTile @ tileModel=tileModel,properties=properties}">      
+	   </sly>    
+	   <sly data-sly-test="${tileModel.tileBoxVariation == '3-tile-boxes'}"
+	        data-sly-use.threeTileTemplate="3-tile.html"
+	        data-sly-call="${threeTileTemplate.threeTile @ tileModel=tileModel,properties=properties}">      
+	   </sly>
+	  <sly data-sly-test="${tileModel.tileBoxVariation == 'grid-tile-box'}"
+		   data-sly-use.gridTileTemplate="grid-tile.html"
+		   data-sly-call="${gridTileTemplate.gridtile @ tileModel=tileModel,properties=properties}">
+	  </sly>
+  </sly>
+</sly>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = !tileModel.tiletitle}"></sly>

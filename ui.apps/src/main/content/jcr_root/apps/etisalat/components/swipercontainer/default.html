@@ -1,0 +1,16 @@
+<template data-sly-template.defaultSwiper="${ @ container,properties}">
+   <div class="container-fluid outlet-wrap">
+        <div class="${!wcmmode.edit ? 'swiper-container slider-outlet-brands' : ''}">
+           <!-- Additional required wrapper -->
+           <div class="${!wcmmode.edit ? 'swiper-wrapper' : ''}" >
+              <!-- Slides Start-->
+              <div class="${!wcmmode.edit ? 'swiper-slide' : 'swiper-editor-slide'}  ${properties.noSwapDesktop ? 'no-swap-desktop' : ''}" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+              <!-- Slides End-->
+           </div>            
+           <div data-sly-test="${properties.swiperDisplayBehavior == 'true'}" class="table-swiper-scrollbar">
+              <div class="swiper-scrollbar-drag">
+              </div>
+           </div>            
+        </div>
+     </div>
+</template>

@@ -17,6 +17,12 @@
   </sly>
 </sly>
 
+<sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'promobutton'}">
+  <sly data-sly-use.promoButtonTemplate="/apps/etisalat/components/button/promobutton.html"
+       data-sly-call="${promoButtonTemplate.promoButton @ properties=properties}">
+  </sly>
+</sly>
+
 <sly
     data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'secondarybutton'}">
   <sly data-sly-use.secondaryButtonTemplate="/apps/etisalat/components/button/secondarybutton.html"
@@ -24,8 +30,19 @@
   </sly>
 </sly>
 
+<sly
+    data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'disabledbutton'}">
+  <sly data-sly-use.disabledButtonTemplate="/apps/etisalat/components/button/disabledbutton.html"
+       data-sly-call="${disabledButtonTemplate.disabledButton @ properties=properties}">
+  </sly>
+</sly>
+
 <sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'ctabutton'}">
   <sly data-sly-use.ctaTemplate="/apps/etisalat/components/button/cta.html"
        data-sly-call="${ctaTemplate.cta @ properties=properties}">
   </sly>
+</sly>
+
+<sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'icon'}">
+ <sly data-sly-include="icon_button.html"></sly>
 </sly>

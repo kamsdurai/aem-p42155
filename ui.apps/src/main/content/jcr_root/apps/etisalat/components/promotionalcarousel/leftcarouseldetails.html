@@ -27,14 +27,14 @@
 
                   <div class="paragraph-styling ul-list-cms">${properties.promotionalDesc @ context='html'}</div>
 
-                  <a data-sly-test="${properties.promotionCTALink}" class="btn-text learn-more learn--more__white" title="${properties.promotionCTATitle}" href="${properties.promotionCTALink @ extension='html'} "
+                  <a data-sly-test="${properties.promotionCTALink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=properties.promotionCTALink}"  class="btn-text learn-more learn--more__white" title="${properties.promotionCTATitle}" href="${commonlinkmodel.link} "
                      target="${properties.promotionLinkBehavior == '
 opennewwindow'?'_blank' : '_self'}">
                      <span>${properties.promotionCTATitle}</span>
                   </a>
                   <!-- Control Arrows for carousel-->
                   <div class="controls" data-sly-test="${carousel.items.size >3}">
-                     <div class="prev left0 swiper-button-disabled">
+                     <div class="prev  swiper-button-disabled">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                            <g fill="none" fill-rule="evenodd">
                               <rect width="48" height="48" fill="#000" fill-rule="nonzero" opacity=".2" rx="24"></rect>
@@ -48,7 +48,7 @@ opennewwindow'?'_blank' : '_self'}">
                            </g>
                         </svg>
                      </div>
-                     <div class="next right0">
+                     <div class="next">
                         <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
                            <g fill="none" fill-rule="evenodd">
                               <rect width="48" height="48" fill="#000" fill-rule="nonzero" opacity=".2" rx="24"></rect>

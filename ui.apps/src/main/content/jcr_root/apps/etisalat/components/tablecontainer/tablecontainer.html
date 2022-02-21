@@ -1,0 +1,27 @@
+<sly data-sly-test="${properties.tableType == 'specifications'}">
+   <div class="table-default-section table-collapsed">
+         <div class="default-section-title">
+            <h3 class="pull-left ng-binding"> ${properties.tableTitle}</h3>
+            <a data-sly-test="${properties.viewMoreText}" class="btn-text btn-green view-more" href="#${properties.id ? properties.id : 'benefitsViewMore'}" role="button">
+            <span class="show-more">${properties.viewMoreText}</span>
+            <span class="show-less">${properties.viewLessText}</span>
+            </a>
+         </div>
+         <div class="row">
+            <div class="col-sm-6">
+               <sly  data-sly-resource="${'table1' @ resourceType='etisalat/components/table', decorationTagName='div'}" />
+            </div>
+            <div class="col-sm-6">
+               <sly  data-sly-resource="${'table2' @ resourceType='etisalat/components/table',decorationTagName='div'}" />
+            </div>
+         </div>
+   </div>
+</sly>
+<sly data-sly-test="${properties.tableType == 'default'}">
+   <sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer"
+      data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+      data-placeholder-text="${wcmmode.edit && 'Drag Table Card components here' @ i18n}" >
+      <div data-sly-repeat="${container.items}" data-sly-resource="${item.name @ decorationTagName='div'}"></div>
+      <sly data-sly-test="${wcmmode.edit}" data-sly-resource="${resource.path @ resourceType='core/wcm/components/container/v1/container/new', appendPath='/*', decorationTagName='div', cssClassName='new section'}" />
+   </sly>
+</sly>

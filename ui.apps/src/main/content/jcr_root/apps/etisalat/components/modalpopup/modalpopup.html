@@ -13,7 +13,10 @@
       <div class="nv-col-md-11 m-y-auto">
         <div class="nv-row">
           <div class="nv-col-md-4">
-            <div class="offer-image">
+            <div data-sly-test="${properties.imagePreTitle}" class="image-pretitle">
+                <h5>${properties.imagePreTitle}</h5>
+            </div>
+            <div data-sly-test="${properties.fileReference}" class="offer-image">
               <div class="cover" data-sly-resource="${resource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}">
               </div>
             </div>

@@ -28,14 +28,40 @@
            </div>	     	     
      </div>
      </div>
-     <div class="container menu-account">
+     <div class="container menu-account" data-sly-test="${meganavigation.topNavIconMenuItems.size > 0}">
          <div class="row">              
              <div data-sly-test="${!meganavigation.topNavIconMenuItems.isEmpty 
                  && meganavigation.topNavIconMenuItems.size > 0}" data-sly-list.topRightItems="${meganavigation.topNavIconMenuItems}" class="col-xs-12">
-                 <a class="menu-account-link global-overlay" href="${topRightItems.navigationLink}">
-                    <img data-sly-test="${topRightItems.navigationImage}" src="${topRightItems.navigationImage}"/>
+                 <a data-sly-test="${!(topRightItems.openmodalwindow == 'modalwindow') && !(topRightItems.openmodalwindow == 'accessibilityoverlay')}" class="menu-account-link global-overlay" href="${topRightItems.navigationLink}">
+                    <img alt="${topRightItems.navigationTitle}" data-sly-test="${topRightItems.navigationImage}" src="${topRightItems.navigationImage}"/>
+                    <span> ${topRightItems.navigationTitle}</span>       
+                 </a>   
+                  <a data-sly-test="${topRightItems.openmodalwindow == 'modalwindow'}" data-label="${meganavigation.topNavResource.name}"  class="menu-account-link global-overlay btn-modal">
+                    <img alt="${topRightItems.navigationTitle}" data-sly-test="${topRightItems.navigationImage}" src="${topRightItems.navigationImage}"/>
                     <span> ${topRightItems.navigationTitle}</span>       
                  </a>
+                 <!-- Modal content start-->   
+
+				  <div data-sly-test="${topRightItems.openmodalwindow == 'modalwindow'}"  id="${meganavigation.topNavResource.name}" class="nv-modal fade  black-overlay-modal">
+					<div class="nv-modal-dialog">
+					  <div class="nv-modal-content nv-py-5">
+						<div class="container">
+						  <div class="modal-popup">
+							<sly
+								data-sly-use.closebuttonTemplate="/apps/etisalat/components/button/closebutton.html"
+								data-sly-call="${closebuttonTemplate.close}">
+							</sly>
+							<sly
+								data-sly-resource="${topRightItems.topNavigationXFResource @ resourceType='core/wcm/components/experiencefragment/v1/experiencefragment', wcmmode='disabled'}">
+							</sly>
+						  </div>
+						</div>
+					  </div>
+					</div>
+				  </div>
+
+
+				<!-- Modal content end-->
              </div>                                
          </div>
     </div>
@@ -63,8 +89,10 @@
                data-sly-test="${!meganavigation.languageItems.isEmpty && meganavigation.languageItems.size > 1}" 
                class="nav-items nav-level-1 mega-lang-dropdown-mob">
                  <li class="nav-item-heading white-bg mega-dropdown-mob open">
-                     <a class="${page.language == 'ar' ? 'arabic-lang-content' :''}" href="#"> ${properties.langMobileLabel}</a>  <img class="nav-link-arrow" src="${properties.linkArrowImage}"/>                      
-                  </li>
+                   <a class="${page.language == 'ar' ? 'arabic-lang-content' :''}"
+                      href="#"> ${properties.langMobileLabel}</a>
+                   <img alt="${properties.langMobileLabel}" class="nav-link-arrow" src="${properties.linkArrowImage}"/>
+                 </li>
                  <li class="mega-dropdown-mob-menu" style="display: list-item;">
                    <ul data-sly-list.langItem="${meganavigation.languageItems}" role="menu">
                          <li class="nav-item">

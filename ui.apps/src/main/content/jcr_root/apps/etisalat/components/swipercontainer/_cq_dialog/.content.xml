@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Container"
+    jcr:title="Swiper Container"
     sling:resourceType="cq/gui/components/authoring/dialog"
-    extraClientlibs="[core.wcm.components.container.v1.editor]"
-    helpPath="https://www.adobe.com/go/aem_cmp_container_v1"
-    trackingFeature="core-components:container:v1">
+    extraClientlibs="[cmp.swiper.container.editor]">
     <content
-        granite:class="cmp-container__editor"
+        granite:class="cmp-swiper-container__editor"
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
@@ -15,8 +13,10 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/tabs"
                 maximized="{Boolean}true">
-                <items jcr:primaryType="nt:unstructured">
-                    <properties
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:hideChildren="[image,text,actions]">
+                    <swiperproperties
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Properties"
                         sling:resourceType="granite/ui/components/coral/foundation/container"
@@ -32,112 +32,327 @@
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items
                                             jcr:primaryType="nt:unstructured"
-                                            sling:hideChildren="[layout]">
-                                            <layout
+                                            sling:hideChildren="[layout,roleAttribute]">
+                                            <layouttitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A title to display as the headline for the tile."
+                                                fieldLabel="Title"
+                                                name="./layoutTitle"
+                                                value=""/>
+                                            <gridlayout
+                                                granite:class="cq-dialog-dropdown-showhide swiper-container-content-displaylayout"
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                                fieldLabel="Layout"
-                                                name="./layout">
+                                                defaultValue="default"
+                                                fieldLabel="Display layout as a"
+                                                name="./tileBoxLayout">
                                                 <items jcr:primaryType="nt:unstructured">
                                                     <default
                                                         jcr:primaryType="nt:unstructured"
-                                                        text="(Default)"
-                                                        value=""/>
-                                                    <simple
+                                                        text="Default"
+                                                        value="default"/>
+                                                     <billexplainer
                                                         jcr:primaryType="nt:unstructured"
-                                                        text="Simple"
-                                                        value="simple"/>
-                                                    <responsive
+                                                        text="Bill Explainer"
+                                                        value="bill-explainer"/>
+                                                    <ewalletoffer
                                                         jcr:primaryType="nt:unstructured"
-                                                        text="Responsive Grid"
-                                                        value="responsiveGrid"/>
+                                                        text="Ewallet Offer"
+                                                        value="ewallet-offer"/>
+                                                    <ewalletalloffer
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Ewallet All Offers"
+                                                        value="ewallet-all-offer"/>
+                                                    <ewalletfeature
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Ewallet Offer Feature Content"
+                                                        value="ewallet-feature"/>
                                                 </items>
-                                                <granite:rendercondition
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="granite/ui/components/foundation/renderconditions/simple"
-                                                    expression="${!cqDesign.layoutDisabled}"/>
-                                            </layout>
-                                            <backgroundColor
-                                                granite:hide="${!cqDesign.backgroundColorEnabled || cqDesign.backgroundColorSwatchesOnly}"
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
-                                                fieldLabel="Background Color"
-                                                name="./backgroundColor"
-                                                showDefaultColors="{Boolean}false"
-                                                showProperties="{Boolean}true"
-                                                showSwatches="{Boolean}true">
-                                                <datasource
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="core/wcm/components/commons/datasources/allowedcolorswatches/v1"/>
-                                            </backgroundColor>
-                                            <backgroundColorSwatchesOnly
-                                                granite:hide="${!cqDesign.backgroundColorEnabled || !cqDesign.backgroundColorSwatchesOnly}"
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
-                                                fieldLabel="Background Color"
-                                                name="./backgroundColor"
-                                                showDefaultColors="{Boolean}false"
-                                                showProperties="{Boolean}false"
-                                                showSwatches="{Boolean}true"
-                                                variant="swatch">
-                                                <datasource
-                                                    jcr:primaryType="nt:unstructured"
-                                                    sling:resourceType="core/wcm/components/commons/datasources/allowedcolorswatches/v1"/>
                                                 <granite:data
                                                     jcr:primaryType="nt:unstructured"
-                                                    cmp-container-v1-dialog-edit-hook="backgroundColorSwatchesOnly"/>
-                                            </backgroundColorSwatchesOnly>
-                                            <backgroundImageAsset
-                                                granite:hide="${!cqDesign.backgroundImageEnabled}"
+                                                    cq-dialog-dropdown-showhide-target=".swipergridlayout-showhide-target"/>
+                                            </gridlayout>
+                                            <billExplainerGroup
+                                                granite:class="swipergridlayout-showhide-target"
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-                                                allowUpload="{Boolean}false"
-                                                autoStart="{Boolean}false"
-                                                class="cq-droptarget"
-                                                fieldLabel="Background Image"
-                                                fileNameParameter="./fileName"
-                                                fileReferenceParameter="./backgroundImageReference"
-                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff]"
-                                                multiple="{Boolean}false"
-                                                name="./file"
-                                                title="Upload Image Asset"
-                                                uploadUrl="${suffix.path}"
-                                                useHTML5="{Boolean}true"/>
-                                            <id
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                     <reportcard
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+		                                                defaultValue="default"		                                               
+		                                                fieldLabel="Report Card Type"
+		                                                name="./swiperReportCardType">
+		                                                <items jcr:primaryType="nt:unstructured">		                                                    
+		                                                    <billbreakdown
+		                                                        jcr:primaryType="nt:unstructured"
+		                                                        text="Bill Breakdown"
+		                                                        value="bill-breakdown"/>
+		                                                    <usageservicesbreakdown
+		                                                        jcr:primaryType="nt:unstructured"
+		                                                        text="Usage and Services Breakdown"
+		                                                        value="usage-and-services-breakdown"/>
+		                                                </items>		                                               
+		                                            </reportcard>
+                                                    <previous
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Previous Link Label"
+                                                        fieldLabel="Previous Link Label"
+                                                        name="./prevLinkLbl"/>
+                                                    <next
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Next Link Label"
+                                                        fieldLabel="Next Link Label"
+                                                        name="./nextLinkLbl"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="bill-explainer"/>
+                                            </billExplainerGroup>
+                                            <offerviewall
+                                                granite:class="swipergridlayout-showhide-target"
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="HTML ID attribute to apply to the component."
-                                                fieldLabel="ID"
-                                                name="./id"/>
-                                            <accessibilityLabel
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <viewall
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="View All Label"
+                                                        fieldLabel="View All Label"
+                                                        name="./offerViewAll"/>
+                                                    <viewalllink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Target URL for when the link is clicked."
+                                                        fieldLabel="View All Link"
+                                                        name="./offerViewAllLink"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="ewallet-offer"/>
+                                            </offerviewall>
+                                            <offerall
+                                                granite:class="swipergridlayout-showhide-target"
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Value of an aria-label attribute for the container, which describes the container content."
-                                                fieldLabel="Label"
-                                                name="./accessibilityLabel"
-                                                value=""/>
-                                            <roleAttribute
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <viewall
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="View All Label"
+                                                        fieldLabel="View All Label"
+                                                        name="./offerAllLabel"/>
+                                                    <viewalllink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Target URL for when the link is clicked."
+                                                        fieldLabel="View All Link"
+                                                        name="./offerAllLink"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="ewallet-all-offer"/>
+                                            </offerall>
+                                            <offerfeatureviewall
+                                                granite:class="swipergridlayout-showhide-target"
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="HTML ROLE attribute to apply to the component."
-                                                fieldLabel="Role"
-                                                name="./roleAttribute"
-                                                value=""/>
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <viewall
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="View All Label"
+                                                        fieldLabel="View All Label"
+                                                        name="./offerFeatureViewAll"/>
+                                                    <viewalllink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Target URL for when the link is clicked."
+                                                        fieldLabel="View All Link"
+                                                        name="./offerFeatureViewAllLink"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="ewallet-feature"/>
+                                            </offerfeatureviewall>
                                             <noswapdesktop
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
                                                 checked="{Boolean}false"
                                                 fieldDescription="Toggle to show/hide for swipper on desktop"
                                                 name="./noSwapDesktop"
-                                                text="No Swap Desktop"
+                                                text="Hide Desktop Swiper"
                                                 uncheckedValue="{Boolean}false"
                                                 value="{Boolean}true"/>
+                                            <swiperdisplaybehavior
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Scrollbar"
+                                                name="./swiperDisplayBehavior">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <hide
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Hide"
+                                                        value="false"/>
+                                                    <show
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Show"
+                                                        value="true"/>
+                                                </items>
+                                            </swiperdisplaybehavior>
+                                            <id
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="HTML ID attribute to apply to the component."
+                                                fieldLabel="ID"
+                                                name="./id"/>
                                         </items>
                                     </column>
                                 </items>
                             </columns>
                         </items>
-                    </properties>
+                    </swiperproperties>
+                    <featureimage
+                        granite:class="swiper-container-image-tab"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Image"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                allowUpload="{Boolean}false"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                fieldLabel="Image Asset"
+                                                fileNameParameter="./fileName"
+                                                fileReferenceParameter="./fileReference"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./file"
+                                                required="{Boolean}true"
+                                                title="Upload Image Asset"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </featureimage>
+                    <featurecontent
+                        granite:class="swiper-container-featurecontent-tab"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Feature Offer Content"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <offerlinklabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add Offer Link Label"
+                                                fieldLabel="Offer CTA Label"
+                                                name="./ctatext"
+                                                required="{Boolean}true"/>
+                                            <offerLinkBehavior
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Offer Link Behavior"
+                                                name="./tileLinkBehavior">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <opennewwindow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Open In New Window"
+                                                        value="opennewwindow"/>
+                                                    <opensamewindow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Open in Same Window"
+                                                        value="opensamewindow"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                                            </offerLinkBehavior>
+                                            <offerlinknewwindow
+                                                granite:class="linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <tilebuttonlink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Target URL for when the link is clicked."
+                                                        fieldLabel="Offer CTA link"
+                                                        name="./tileCTALinkNewWindow"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="opennewwindow"/>
+                                            </offerlinknewwindow>
+                                            <offerlinksamewindow
+                                                granite:class="linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <tilebuttonlink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Target URL for when the link is clicked."
+                                                        fieldLabel="Offer CTA link"
+                                                        name="./tileCTALinkSameWindow"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="opensamewindow"/>
+                                            </offerlinksamewindow>
+                                            <validdate
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                fieldDescription="Offer Valid Date"
+                                                fieldLabel="Offer Valid Date"
+                                                name="./articleDate"
+                                                required="{Boolean}true"/>
+                                            <validdatetext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Offer Valid Text"
+                                                fieldLabel="Offer Valid Text"
+                                                name="./validDateText"
+                                                required="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </featurecontent>
                 </items>
             </tabs>
         </items>

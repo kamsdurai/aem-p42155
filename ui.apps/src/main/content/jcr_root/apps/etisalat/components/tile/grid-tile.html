@@ -1,0 +1,32 @@
+<template  data-sly-template.gridtile="${ @ tileModel,properties}">
+    <sly data-sly-test="${properties.tileLinkBehavior != 'openmodalwindow'}">
+        <a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}"
+           class="link-cover"
+           target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"></a>
+    </sly>
+    <div class="box-img" data-sly-test="${properties['image/fileReference']}">
+        <div class="cover">
+            <div data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+        </div>
+    </div>
+    <div class="box-content">
+        <div data-sly-test="${tileModel.tiletitle}"class="wst-main-headings">
+            <h5 data-sly-element="${properties.titleType}">${tileModel.tiletitle}</h5>
+        </div>
+        <div data-sly-test="${tileModel.text}" class="paragraph-styling">
+            <div class="p2">${tileModel.text @ context='html'}</div>
+        </div>
+        <sly data-sly-test="${properties.tileLinkBehavior != 'openmodalwindow'}">
+            <div data-sly-test="${tileModel.ctatext}" class="third-action-wrapper action-link">
+                <a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}"
+                   class="link"
+                   target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"
+                   title="${tileModel.ctatext}">${tileModel.ctatext}</a>
+            </div>
+        </sly>
+        <sly data-sly-test="${properties.tileLinkBehavior == 'openmodalwindow'}"
+             data-sly-use.tileModalTemplate="tilemodal.html"
+             data-sly-call="${tileModalTemplate.modal @ tileModel=tileModel,properties=properties,resource=resource,wcmmode=wcmmode}">
+        </sly>
+    </div>
+</template>

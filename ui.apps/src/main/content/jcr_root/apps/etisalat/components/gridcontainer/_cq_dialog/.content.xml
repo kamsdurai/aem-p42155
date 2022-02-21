@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Grid Container"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <gridcontainerdata
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Grid Container Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <gridtype
+                                granite:class="cq-dialog-dropdown-showhide"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                defaultValue="promocard"
+                                fieldLabel="Grid Container Templates"
+                                name="./gridTemplates">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <promocard
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Promo Cards 4.0 Templates"
+                                        value="promocard"/>
+                                    <wstpromocard
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Promo Cards wst Templates"
+                                        value="wstpromocard"/>
+                                    <benefitsgrid
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Benefits Grid Template"
+                                        value="benefitsgrid"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-dialog-dropdown-showhide-target=".gridBoxLayout-showhide-target"/>
+                            </gridtype>
+                            <promocard
+                                granite:class="gridBoxLayout-showhide-target"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="promocard"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <promocardvariations
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        defaultValue="desktopthreecol"
+                                        fieldDescription="Select Promo Card 4.0 Variations"
+                                        fieldLabel="Select Promo Card 4.0 Variations"
+                                        name="./promocardvariation">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <desktoppromothreecol
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Promo Card Three Column"
+                                                value="desktopthreecol"/>
+                                            <desktoppromotwocol
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Promo Card Two Column"
+                                                value="desktoptwocol"/>
+                                        </items>
+                                    </promocardvariations>
+                                </items>
+                            </promocard>
+                            <wstpromocard
+                                granite:class="gridBoxLayout-showhide-target"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="wstpromocard"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <wstpromocardvariations
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldDescription="Select Promo Card WST Variations"
+                                        fieldLabel="Select Promo Card WST Variations"
+                                        name="./wstpromocardvariation">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <variationtobeadded
+                                                jcr:primaryType="nt:unstructured"
+                                                text="Add variations"
+                                                value=""/>
+                                        </items>
+                                    </wstpromocardvariations>
+                                </items>
+                            </wstpromocard>
+                        <benefitsgrid
+                                granite:class="gridBoxLayout-showhide-target"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="benefitsgrid"/>
+                            <items jcr:primaryType="nt:unstructured">
+                                <benefitsgridtitle
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Text that will appear for the Benefits Container Title."
+                                    fieldLabel="Benefits Container Title"
+                                    maxlength="{Long}40"
+                                    name="./tileTitle"/>
+                                <titleType
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="Title Style"
+                                        name="./titleType">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <def
+                                            jcr:primaryType="nt:unstructured"
+                                            text="(default)"
+                                            value=""/>
+                                        <h2
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H2"
+                                            value="h2"/>
+                                        <h3
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H3"
+                                            value="h3"/>
+                                        <h4
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H4"
+                                            value="h4"/>
+                                        <h5
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H5"
+                                            value="h5"/>
+                                        <h6
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H6"
+                                            value="h6"/>
+                                    </items>
+                                </titleType>
+                                <numberofitems
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                        fieldLabel="Number of Benefit Items to be displayed"
+                                        name="./numberOfItems"
+                                        value="3">
+                                </numberofitems>
+                                <numberofitemsTypeHint
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                        name="./numberOfItems@TypeHint"
+                                        value="Long"/>
+                                <seeallbuttontitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="See All Benefits button Text will appear."
+                                        fieldLabel="See All Benefits button Text"
+                                        name="./seeAllTitle"/>
+                                <hideallbuttontitle
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldDescription="Hide Benefits button Text will appear."
+                                        fieldLabel="Hide Benefits button Text"
+                                        name="./hideAllTitle"/>
+                            </items>
+                        </benefitsgrid>
+                        </items>
+                    </gridcontainerdata>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

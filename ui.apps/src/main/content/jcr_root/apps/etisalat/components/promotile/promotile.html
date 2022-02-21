@@ -1,0 +1,28 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html">  
+<sly data-sly-test.customLink="${properties.cardLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+<sly data-sly-test="${properties.promoTilevariation == 'textonly'}"
+   data-sly-use.TextOnlyTemplate="textonly.html"
+   data-sly-call="${TextOnlyTemplate.TextOnly @ properties=properties , commonlinkmodel=commonlinkmodel}">      
+</sly>
+<sly data-sly-test="${properties.promoTilevariation == 'twocol'}"
+   data-sly-use.TwoColsTemplate="twocolumns.html"
+   data-sly-call="${TwoColsTemplate.TwoCols @ properties=properties,commonlinkmodel=commonlinkmodel}">      
+</sly>
+<sly data-sly-test="${properties.promoTilevariation == 'videowithbg'}"
+   data-sly-use.videoTemplate="videowithbg.html"
+   data-sly-call="${videoTemplate.VideoWithBg @ properties=properties,commonlinkmodel=commonlinkmodel}">      
+</sly>
+<sly data-sly-test="${properties.promoTilevariation == 'textwithbgimg'}"
+   data-sly-use.textWithImgTemplate="textwithimg.html"
+   data-sly-call="${textWithImgTemplate.TextWithImg @ properties=properties,commonlinkmodel=commonlinkmodel}">      
+</sly>
+<sly data-sly-test="${properties.promoTilevariation == 'withgradientpurplebg'}"
+   data-sly-use.textWithPurpleTemplate="withgradientpurplebg.html"
+   data-sly-call="${textWithPurpleTemplate.WithGradientPurpleBg @ properties=properties,commonlinkmodel=commonlinkmodel}">      
+</sly>
+<sly data-sly-test="${properties.promoTilevariation == 'withsolidbg'}"
+   data-sly-use.textWithSolidBgTemplate="withsolidbg.html"
+   data-sly-call="${textWithSolidBgTemplate.WithSolidBg @ properties=properties,commonlinkmodel=commonlinkmodel}">      
+</sly>
+</sly>
+<sly data-sly-test=${wcmmode.edit} data-sly-call="${templates.placeholder @ isEmpty = !properties.promoTilevariation}"></sly>

@@ -1,0 +1,12 @@
+<sly data-sly-use.etisalatBreadcrumbData="com.etisalat.core.models.EtisalatBreadcrumb"></sly>
+<ol data-sly-list.breadcrumbItems="${etisalatBreadcrumbData.etisalatBreadcrumbItems}">
+   <li class = "${breadcrumbItems.breadcrumbLink  ? '' : 'active'}"> 
+   <sly data-sly-test="${breadcrumbItems.breadcrumbLink}">
+      <a href="${breadcrumbItems.breadcrumbLink}" target="${breadcrumbItems.linkBehavior == 'opennewwindow'?'_blank':'_self'}">
+      ${breadcrumbItems.breadcrumbTitle} </a>
+   </sly>
+   <sly data-sly-test="${!breadcrumbItems.breadcrumbLink}">
+      ${breadcrumbItems.breadcrumbTitle}
+   </sly>
+   </li>
+</ol>

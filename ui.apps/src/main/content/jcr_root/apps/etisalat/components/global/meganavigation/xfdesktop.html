@@ -1,73 +1,77 @@
 <template data-sly-template.xfdesktop="${ @ properties,meganavigation}">
-   <!--main menu desktop version: starts -->
-<div class="main-mega-menu-desktop" style="height: 100%; z-index: 999;">
-  <nav class="mega-menu-navbar-default">
-     <div class="mega-menu-navbar">
-	    <div class="container">
-             <div class="nav-wrap">
-		         <div class="logo-container">
-                     <div class="navbar-header">
-                        <a href="${meganavigation.logoMenuLink}" title="${properties.logoAltText}">  
-                        <img src="${meganavigation.imagePath}" class="etisalat-logo-en" width="150" />                         
-                        </a>
-                     </div>
+  <!--main menu desktop version: starts -->
+  <div class="main-mega-menu-desktop" style="height: 100%; z-index: 999;">
+    <nav class="mega-menu-navbar-default">
+      <div class="mega-menu-navbar">
+        <div class="container">
+          <div class="nav-wrap">
+            <div class="logo-container">
+              <div class="navbar-header">
+                <a href="${meganavigation.logoMenuLink}" title="${properties.logoAltText}">
+                  <img alt="${properties.logoAltText}" src="${meganavigation.imagePath}" class="etisalat-logo-en" width="150" />
+                </a>
+              </div>
+            </div>
+            <div class="navbar-items">
+              <ul data-sly-test="${!meganavigation.megaContainerItems.isEmpty}" data-sly-list.navItems="${meganavigation.megaContainerItems}" class="nav navbar-nav nav-left">
+                <sly data-sly-use.xfcontainertemplate="/apps/etisalat/components/global/meganavigation/xfdesktop-container-template.html" data-sly-call="${xfcontainertemplate.xfDesktopContainerTemplate @ properties=properties,navItems=navItems}"></sly>
+              </ul>
+              <ul data-sly-test="${!meganavigation.utilityNavItems.isEmpty || !meganavigation.accountNavigationItems.isEmpty}" class="nav navbar-nav nav-right">
+                <sly data-sly-list.utilityItems="${meganavigation.utilityNavItems}">
+                  <li data-sly-test="${utilityItems.utilityMenuLayout == 'fixedmenulist'}">
+                    <a class="mega-menu-link" data-sub-menu="sub-menu-help">${utilityItems.navigationLabel}</a>
+                    <div data-sly-test="${!utilityItems.subNavigationList.isEmpty}" class="sub-account-menu-wrap">
+                      <ul data-sly-list.subItems="${utilityItems.subNavigationList}" class="sub-account-menu">
+                        <li>
+                          <a href="${subItems.subNavLinkTo}">${subItems.subNavLabel}</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <sly data-sly-test="${utilityItems.utilityMenuLayout == 'xfragment'}">
+                    <sly data-sly-use.xfcontainertemplate="/apps/etisalat/components/global/meganavigation/xfdesktop-container-template.html" data-sly-call="${xfcontainertemplate.xfDesktopContainerTemplate @ properties=properties,navItems=utilityItems}"></sly>
+                  </sly>
+                </sly>
+                <li data-sly-list.accountItems="${meganavigation.accountNavigationItems}">
+                  <a class="mega-menu-link" data-sub-menu="sub-menu-help">${accountItems.navigationLabel}</a>
+                  <div data-sly-test="${!accountItems.subNavigationList.isEmpty}" class="sub-account-menu-wrap">
+                    <ul data-sly-list.subItems="${accountItems.subNavigationList}" class="sub-account-menu">
+                      <li>
+                        <a href="${subItems.subNavLinkTo}">${subItems.subNavLabel}</a>
+                      </li>
+                    </ul>
                   </div>
-				  <div class="navbar-items">
-					 <ul data-sly-test="${!meganavigation.megaContainerItems.isEmpty}"
-						 data-sly-list.navItems="${meganavigation.megaContainerItems}" class="nav navbar-nav nav-left">
-                           <sly data-sly-use.xfcontainertemplate="/apps/etisalat/components/global/meganavigation/xfdesktop-container-template.html"
-                             data-sly-call="${xfcontainertemplate.xfDesktopContainerTemplate @ properties=properties,navItems=navItems}">  
-                          </sly>
-					</ul>
-				    <ul data-sly-test="${!meganavigation.utilityNavItems.isEmpty || !meganavigation.accountNavigationItems.isEmpty}" class="nav navbar-nav nav-right">                       
-                        <sly data-sly-list.utilityItems="${meganavigation.utilityNavItems}">
-						   <li data-sly-test="${utilityItems.utilityMenuLayout == 'fixedmenulist'}">
-							 <a class="mega-menu-link" data-sub-menu="sub-menu-help">${utilityItems.navigationLabel}</a>
-							 <div  data-sly-test="${!utilityItems.subNavigationList.isEmpty}" class="sub-account-menu-wrap">
-								<ul data-sly-list.subItems="${utilityItems.subNavigationList}" class="sub-account-menu">
-								   <li><a href="${subItems.subNavLinkTo}">${subItems.subNavLabel}</a></li>
-								</ul>
-							 </div>
-						   </li>
-                            <sly data-sly-test="${utilityItems.utilityMenuLayout == 'xfragment'}">
-                               <sly data-sly-use.xfcontainertemplate="/apps/etisalat/components/global/meganavigation/xfdesktop-container-template.html"
-                                 data-sly-call="${xfcontainertemplate.xfDesktopContainerTemplate @ properties=properties,navItems=utilityItems}">  
-                              </sly>
-                            </sly>	
-                         </sly>	
-                          <li data-sly-list.accountItems="${meganavigation.accountNavigationItems}">
-							 <a class="mega-menu-link" data-sub-menu="sub-menu-help">${accountItems.navigationLabel}</a>
-							 <div  data-sly-test="${!accountItems.subNavigationList.isEmpty}" class="sub-account-menu-wrap">
-								<ul data-sly-list.subItems="${accountItems.subNavigationList}" class="sub-account-menu">
-								   <li><a href="${subItems.subNavLinkTo}">${subItems.subNavLabel}</a></li>
-								</ul>
-							 </div>
-						  </li>                         
-                          <li data-sly-test="${properties.cart}" class="icon-link">
-							<a href="${properties.cartLink}" class="mega-menu-link"><span class="cart-count hide"></span>
-								<img src="${properties.cartImage}"/>
-							</a>
-                          </li>
-                           <li data-sly-test="${properties.search}" class="icon-link search-link-cms">
-							<a class="mega-menu-link"><img src="${properties.searchIconImage}"/></a>							
-						   </li>						 
-				     </ul>                      		  
-		          </div>
-				  <!--hamburger for mobile view -->
-					<div class="hamburger mobile-view" id="m-hamburger">
-						<span class="line"></span>
-						<span class="line"></span>
-						<span class="line"></span> 
-					</div>
-					<div data-sly-test="${properties.cart}" class="icon-link mobile-view shopping-cart">
-						<a href="${properties.cartLink}" class="mega-menu-link"><span class="cart-count hide"></span>
-						  <img src="${properties.cartImage}"/>
-						</a>
-					</div>
-		     </div>
-		</div>
-	 </div>
-  </nav>
-</div>
-   <!--main menu desktop version: ends  -->
+                </li>
+                <li data-sly-test="${properties.cart}" class="icon-link">
+                  <a href="${properties.cartLink}" class="mega-menu-link">
+                    <span class="cart-count hide"></span>
+                    <img alt="cart" src="${properties.cartImage}" />
+                  </a>
+                </li>
+                <li data-sly-test="${properties.search}" class="icon-link search-link-cms">
+                  <a class="mega-menu-link">
+                    <img alt="search" src="${properties.searchIconImage}" />
+                  </a>
+                  <sly data-sly-resource="${'search1' @ resourceType='etisalat/components/search'}"></sly>
+                </li>
+              </ul>
+            </div>
+            <!--hamburger for mobile view -->
+            <div class="hamburger mobile-view" id="m-hamburger">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+            <div data-sly-test="${properties.cart}" class="icon-link mobile-view shopping-cart">
+              <a href="${properties.cartLink}" class="mega-menu-link">
+                <span class="cart-count hide"></span>
+                <img alt="cart" src="${properties.cartImage}" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--main menu desktop version: ends  -->
 </template>

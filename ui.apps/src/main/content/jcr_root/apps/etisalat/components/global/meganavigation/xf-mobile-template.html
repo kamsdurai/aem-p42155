@@ -1,7 +1,7 @@
 <template data-sly-template.xfMobileTemplate="${ @ properties,navItems}">
         <a class="nav-link ${navItems.containerSubMenuList.size > 0 ? 'nav-expand-link' :''}" href="${navItems.navigationLinkTo}">
-		<img class="nav-link-icon" src="${navItems.navImagePath}"/> ${navItems.navigationLabel}
-		 <img data-sly-test="${navItems.containerSubMenuList.size > 0}" class="nav-link-arrow" src="${properties.linkArrowImage}"/></a>
+		<img alt="${navItems.navigationLabel}" class="nav-link-icon" src="${navItems.navImagePath}"/> ${navItems.navigationLabel}
+		 <img alt="${navItems.navigationLabel}" data-sly-test="${navItems.containerSubMenuList.size > 0}" class="nav-link-arrow" src="${properties.linkArrowImage}"/></a>
          <ul data-sly-test="${!navItems.containerSubMenuList.isEmpty && navItems.containerSubMenuList.size > 0}" class="nav-items nav-expand-content">
 		  <li class="nav-item">
               <a class="nav-link nav-back-link" href="#">
@@ -17,14 +17,14 @@
                   </sly>
                     
                     <li data-sly-test="${subMenuItems.active}" class="nav-item-heading mega-dropdown-mob open">
-                        <a href="#">${subMenuItems.navTitle}</a>  <img class="nav-link-arrow" src="${properties.linkArrowImage}"/>                      
+                        <a href="#">${subMenuItems.navTitle}</a>  <img alt="${subMenuItems.navTitle}" class="nav-link-arrow" src="${properties.linkArrowImage}"/>
                      </li>
                     <li data-sly-test="${!subMenuItems.active && !subMenuItems.fixedItems.isEmpty}" 
 							data-sly-repeat.subFixedItems="${subMenuItems.fixedItems}" 
 							class="${subFixedItems.navigationDesc ? 'nav-item-heading' : 'nav-item'}">
                         <a class="${subFixedItems.navigationDesc ? 'nav-item-heading-link' : 'nav-link'}" href="${subFixedItems.navigationLink}">
                          ${subFixedItems.navigationTitle}
-                         <img data-sly-test="${subFixedItems.navigationDesc}" class="nav-link-arrow" src="${properties.linkArrowImage}"/> 
+                         <img data-sly-test="${subFixedItems.navigationDesc}" alt="${subFixedItems.navigationTitle}" class="nav-link-arrow" src="${properties.linkArrowImage}"/>
                         </a>
                     </li>
                     
@@ -41,7 +41,7 @@
 			   <ul data-sly-test="${subMenuItems.isFeatureItemExist && !subMenuItems.featureImageList.isEmpty}">
 				 <li data-sly-test="${subMenuItems.title}" class="nav-item-heading">${subMenuItems.title}</li>
 				 <li data-sly-list.brandItem="${subMenuItems.featureImageList}" class="nav-item menu-brand-wrapper">
-					  <a class="menu-brand-item" href="${brandItem.link}"><img src="${brandItem.fileReference}" loading="lazy"></a>												  
+					  <a class="menu-brand-item" href="${brandItem.link}"><img alt="${brandItem.title}" src="${brandItem.fileReference}" loading="lazy"></a>
 				 </li>
 			   </ul>		    
 		    </sly>
@@ -72,7 +72,7 @@
 			   <li data-sly-test="${!footerMenuItems.fixedItems.isEmpty}"  
                    data-sly-repeat.items="${footerMenuItems.fixedItems}"   
                     class="nav-item"><a class="nav-link" href="${items.navigationLink}">${items.navigationTitle}
-                    <img class="nav-link-arrow" src="${properties.linkArrowImage}"/></a></li>
+                    <img alt="${items.navigationTitle}" class="nav-link-arrow" src="${properties.linkArrowImage}"/></a></li>
 			 </ul>			  
 		 </ul>
 </template>

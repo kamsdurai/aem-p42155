@@ -1,0 +1,8 @@
+<div 
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.commonsTemplates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.hasContent="${properties.htmltext}"
+     id="${component.id}">
+    <sly data-sly-test="${properties.htmltext}">${properties.htmltext @context = 'unsafe'}</sly>
+</div>
+<sly data-sly-call="${commonsTemplates.placeholder @ isEmpty = !hasContent}"></sly>

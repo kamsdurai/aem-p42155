@@ -1,0 +1,95 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-panelcontainer="${wcmmode.edit && 'Global Footprint tile'}"
+     data-placeholder-text="${wcmmode.edit && 'Please update Global Footprint tile' @ i18n}">
+
+
+<!-- Swiper Content-->
+ <div class="swiper-slide" data-sly-test="${!wcmmode.edit}">
+        <div class="global-slide-content">
+          <div class="container">
+            <div class="global-slide-info">
+              <span class="icon-flag" ><img src="${properties.fileReferenceIcon}" alt=""></span>
+              <h4 data-sly-test="${properties.countryTitle}">${properties.countryTitle}</h4>
+              <ul>
+                <li data-sly-test="${properties.brand}">${properties.brandtitle}<strong>${properties.brand}</strong></li>
+
+                <li data-sly-test="${properties.since}">${properties.sincetitle} <strong>${properties.since}</strong></li>
+
+                <li data-sly-test="${properties.population}">${properties.populationtitle}<strong>${properties.population}</strong></li>
+
+              </ul>
+              <a class="btn-text btn-green learn-more" data-sly-test="${properties.moreInfoLink}"  target="${properties.linkTarget}"  href="${properties.moreInfoLink @ extension = 'html'}">${properties.moreInfoTitle}</a>
+            </div>
+          </div>
+        </div>
+		
+<!-- Swiper Thumb Tiles-->
+		<div class="swiper-slide-container">
+          <div class="slide-thumb-content">
+            <div class="slide-thumb-img">
+              <img src="${properties.fileReference}" alt="">
+            </div>
+            <a href="${properties.moreInfoLink @ extension = 'html'}">
+            <div class="slide-thumb-info">
+
+                <span class="icon-flag" ><img src="${properties.fileReferenceIcon}" alt=""></span>
+                <h4 data-sly-test="${properties.countryTitle}">${properties.countryTitle}</h4>
+             
+            </div>
+          </a>
+            <!-- Thumbs info for Mobile only-->
+            <div class="slide-thumb-info-mobile">
+              <h4 data-sly-test="${properties.countryTitle}">${properties.countryTitle}</h4>
+              <ul>
+                <li data-sly-test="${properties.brand}">${properties.brandtitle}<strong>${properties.brand}</strong></li>
+
+                <li data-sly-test="${properties.since}">${properties.sincetitle} <strong>${properties.since}</strong></li>
+
+                <li data-sly-test="${properties.population}">${properties.populationtitle}<strong>${properties.population}</strong></li>
+
+              </ul>
+              <a class="btn-text btn-green learn-more" data-sly-test="${properties.moreInfoLink}" target="${properties.linkTarget}" href="${properties.moreInfoLink @ extension = 'html'}">${properties.moreInfoTitle}</a>
+           
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+ <div class="current-promotions-box" data-sly-test="${wcmmode.edit}">
+    <div class="icon-wrap">
+     
+       <div class="slide-thumb-img">
+
+ <img src="${properties.fileReferenceIcon}" alt="">
+              <img src="${properties.fileReference}" alt="">
+
+            </div>
+     
+    </div>
+    <div  data-sly-element="${properties.titleType}">
+
+     <h4 data-sly-test="${properties.countryTitle}">${properties.countryTitle}</h4>
+              <ul>
+
+                 <li>  <span class="icon-flag--${properties.countryFlag}"/></li>
+                <li data-sly-test="${properties.brand}">${properties.brandtitle}<strong>${properties.brand}</strong></li>
+
+                <li data-sly-test="${properties.since}">${properties.sincetitle} <strong>${properties.since}</strong></li>
+
+                <li data-sly-test="${properties.population}">${properties.populationtitle}<strong>${properties.population}</strong></li>
+
+              </ul>
+              <a class="btn-text btn-green learn-more" data-sly-test="${properties.moreInfoLink}" target="${properties.linkTarget}" href="${properties.moreInfoLink @ extension = 'html'}">${properties.moreInfoTitle}</a>
+           
+    </div>
+    <div class="learn-more-wrap">
+
+
+
+    
+    </div>
+  </div>
+
+</sly>

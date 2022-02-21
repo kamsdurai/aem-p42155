@@ -1,0 +1,28 @@
+<template data-sly-template.accordion="${ @ accord,tabs}">
+<div data-sly-test="${accord.items && accord.items.size > 0}"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+         data-sly-list.tab="${accord.items}" 
+         class="nav-view-wrapp mobile-head panel">   
+     <a class="hidden-md hidden-lg ${tabList.first ? '' :'collapsed'}" 
+		 data-toggle="collapse" data-parent="#Mobile-${component.id}" 
+		 href="#Mobile-${component.id}-${tabList.count}" aria-expanded="false">      
+           ${tab.title}  
+          <sly data-sly-use.tabimage="com.etisalat.core.models.TabImage"
+               data-sly-list.imageItem="${tabimage.tabImageItems}">
+               <span data-sly-test="${tab.title == imageItem.linkText}">
+                <img alt="${imageItem.linkText}" src="${imageItem.linkUrl}"/>
+              </span>
+	      </sly>
+      </a>	  
+   <div data-sly-resource="${tab.name @ decorationTagName='div'}"
+         id="Mobile-${component.id}-${tabList.count}"
+		 class="panel-collapse collapse ${tabList.first ? 'in' :''}" aria-expanded="false">        
+    </div>
+
+</div>
+<div class="learn-more-wrap learn-more-wrap--tab-cta" data-sly-test="${properties.ctaLinkText}">
+    <a href="${properties.ctaLink}" class="btn-text btn-green learn-more" aria-label="${properties.ctaLinkText}">
+        ${properties.ctaLinkText}
+    </a>
+</div>
+</template>

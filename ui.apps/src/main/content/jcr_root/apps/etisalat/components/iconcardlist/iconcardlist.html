@@ -13,9 +13,9 @@
                             style="width: 223.762px; margin-right: 52.65px;">
                             <div class="rect-responsive">
                                 <div class="context-nav-box content body-standard">
-                                    <a href="${cardItems.cardLink @extension='html'}">
+                                    <a href="${cardItems.cardLink}" target="${cardItems.linkBehavior == 'opennewwindow'?'_blank':'_self'}">
                                         <div class="icon-area">
-                                         <img data-sly-test="${cardItems.cardIcon}" class="icon-img" src="${cardItems.cardIcon}">
+                                         <img alt="${cardItems.cardTitle}" data-sly-test="${cardItems.cardIcon}" class="icon-img" src="${cardItems.cardIcon}">
                                         </div>
                                         <h5>${cardItems.cardTitle}</h5>
                                     </a>

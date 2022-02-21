@@ -2,5 +2,9 @@
      data-sly-repeat.child="${templatedContainer.structureResources}"
      data-sly-resource="${child.path @ resourceType=child.resourceType, decorationTagName='div'}">
 </sly>
+<sly data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page" data-sly-test="${properties.showsharefeedback && properties.showsharefeedback == 'true'}">
+    <sly data-sly-test="${page.language && page.language != 'ar'}" data-sly-include="sharefeedback-section/sharefeedback.html"></sly>
+    <sly data-sly-test="${page.language && page.language == 'ar'}" data-sly-include="sharefeedback-section-rtl/sharefeedback_ar.html"></sly>
+</sly>
 
 <div class="modal-popup-wrapper"></div>

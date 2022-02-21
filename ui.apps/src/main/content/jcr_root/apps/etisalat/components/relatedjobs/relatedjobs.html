@@ -1,0 +1,15 @@
+<sly data-sly-test.customLink="${properties.link}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+<div class="related-jobs">
+   <div class="">
+      <div class="wst-main-headings">
+         <h4>${properties.title}</h4>
+      </div>
+      <div class="row dynamic-cards">
+      </div>
+      <div class="row">
+         <div data-sly-test="${properties.linktext}" class="col-xs-12 col-sm-4 col-sm-offset-4">
+            <a class="btn btn-default ripple-effect"  target="${properties.linkBehavior == 'opennewwindow'?'_blank':'_self'}" href="${commonlinkmodel.link}">${properties.linktext}</a>
+         </div>
+      </div>
+   </div>
+</div>

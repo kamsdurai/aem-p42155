@@ -1,0 +1,36 @@
+<div class="search-input" data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component" data-sly-use.templates="core/wcm/components/commons/v1/templates.html">
+   <div class="search-group">
+      <div class="check-availability-style ">
+         <div class="input-group">
+            <span class="input-group-addon input-icon">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                  <g fill="none" fill-rule="evenodd">
+                     <g>
+                        <g>
+                           <g>
+                              <g>
+                                 <g>
+                                    <g>
+                                       <g>
+                                          <g stroke="#6f6c70" stroke-linecap="round" stroke-linejoin="round">
+                                             <path
+                                                d="M11.645 11.645L7.909 7.909M5.822 9.073c-.338.083-.692.127-1.056.127C2.318 9.2.334 7.215.334 4.767c0-2.45 1.984-4.433 4.432-4.433C7.216.334 9.2 2.318 9.2 4.767 9.2 5.99 8.703 7.099 7.9 7.9"
+                                                transform="translate(-748 -698) translate(0 434) translate(0 64) translate(0 120) translate(0 48) translate(732 16) translate(16 16) translate(2 2)">
+                                             </path>
+                                          </g>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </svg>
+            </span>
+            <input class="form-control" id="searchInput" type="text" placeholder="${properties.placeHolderText}" data-search-target="${properties.targetContainerId}">
+         </div>
+      </div>
+   </div>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !text, classAppend='cmp-text'}"></sly>

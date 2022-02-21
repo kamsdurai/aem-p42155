@@ -1,0 +1,131 @@
+<template data-sly-template.CommonTheme="${ @ properties}">
+
+   <sly data-sly-test.fileReference="${properties.fileReference}" />
+   <div data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component" 
+      class="read-more-${properties.offerText ? 'red' : 'green'}-btn_bg">
+      <div class="tile-table ${properties.fileReference ? 'product-home-card' : 'plan-card'} offer ">
+         <div class="tile-card effect__click">
+            <div class="tile">
+               <div class="tile-card__front">
+                  <div class="tiles-box content body-standard">
+                     <div class="tiles-box-title" data-sly-test="${!properties.fileReference}">
+                        <div data-sly-test="${properties.offerText}"
+                           class="special-offer">${properties.offerText}</div>
+                        <div class="catagory" data-sly-test="${properties.productTitle}">${properties.productTitle}</div>
+                        <h2 data-sly-test="${properties.productSubTitle}"><span class="strikethrough" data-sly-test="${properties.wasproductSubTitle}">${properties.wasproductSubTitle}</span>${properties.productSubTitle}</h2>
+                     </div>
+                     <div class="product" data-sly-test="${properties.fileReference}">
+                        <sly data-sly-resource="${carousel @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"/>
+                        <div class="tiles-box-title">
+                           <div data-sly-test="${properties.offerText}"
+                              class="special-offer">${properties.offerText}</div>
+                           <div class="catagory" data-sly-test="${properties.productTitle}">${properties.productTitle}</div>
+                           <h2 data-sly-test="${properties.productSubTitle}">${properties.productSubTitle}</h2>
+                        </div>
+                     </div>
+                     <div class="tiles-box-list">
+                        <div data-sly-test="${properties.progressBar}" class="internet-config-container">
+                           <div data-sly-test="${properties.packageTitle}" class="internet-text dark-gray">${properties.packageTitle}</div>
+                           <div class="internet-config">
+                              <div data-sly-test="${properties.speedUnits}" class="internet-config-title">${properties.speedUnits}</div>
+                              <div class="interner-config-progressbar">
+                                 <img src="${properties.progressBar}" alt="${properties.packageTitle}" class="interner-config-image">
+                              </div>
+                              <div data-sly-test="${properties.packageDesc}" class="interner-config-desc">${properties.packageDesc}</div>
+                           </div>
+                           <div data-sly-test="${properties.dividerLine}" class="internet-config-divider-line"></div>
+                        </div>
+                        <ul class="featureList">
+                           <li>
+                              <ul data-sly-test="${properties.productDesc}">${properties.productDesc @ context="html"}
+                              </ul>
+                           </li>
+                           <li data-sly-test="${properties.channelLabel && properties.channelLink}">
+                              <div class="view-channel-list">
+                                 <a href="${properties.channelLink @ extension = 'html'}" target="_new">                                         
+                                 <em class="channel-list-icon"></em>${properties.channelLabel} </a>
+                              </div>
+                           </li>
+                        </ul>
+                        <a data-label="${component.id}" class="btn-text btn-green  learn-more btn-modal "
+                           title="${properties.seeAllLabel}" data-sly-test="${properties.seeAllLabel}">
+                        <span class="moreg">${properties.seeAllLabel}</span>
+                        </a>
+                        <span class="${properties.offerText ? 'tiles-box-list__contractDuration tiles-box-list__contractDuration--orange' : 'tiles-box-list__contractDuration'}"  data-sly-test="${properties.commitmentText}">${properties.commitmentText}</span>
+                        <div class="detail-info-wrap detail-info-wrap-pricetag">
+                           <div class="detail-price-new">
+                              <div class="main-part" data-sly-test="${properties.productPrice}">
+                                 <div data-sly-test="${properties.contractText}" dir="ltr" class="from">${properties.contractText}</div>
+                                 <div dir="ltr" class="price" >
+                                    ${properties.productPrice}
+                                 </div>
+                                 <small data-sly-test="${properties.productCurrency}">${properties.productCurrency}</small>
+                              </div>
+                           </div>
+                        </div>
+                        <p class="bottom-text"><span class="${properties.offerText ? 'old-price--orange' : 'old-price'}" data-sly-test="${properties.productOldPrice}">was  <span class="strikethrough">${properties.productOldPrice} ${properties.productCurrency}</span></span>
+                           ${properties.vatInclude}
+                        </p>
+                        <a data-label="${component.id}" class="btn-text btn-green  learn-more btn-modal text-center"
+                           title="${properties.moreInfoLabel}" data-sly-test="${properties.moreInfoLabel && !properties.seeAllLabel}">
+                        <span class="moreg">${properties.moreInfoLabel}</span>
+                        </a>
+                        <div class="offers-popup-wrapper">
+                           <div id="${component.id}" class="nv-modal fade  ${properties.modalBehavior}-modal">
+                              <div class="nv-modal-dialog">
+                                 <div class="nv-modal-content nv-py-5">
+                                    <div class="container">
+                                       <div class="modal-popup">
+                                          <span class="nv-modal-close">
+                                             <!-- svg to be applied by css on nv-modal-close class -->
+                                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px" viewBox="0 0 22 22" version="1.1" class="replaced-svg">
+                                                <g id="eLife-Flows---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                                                   <g id="dd_eLifeConfig-1.0.7" transform="translate(-1297.000000, -629.000000)" stroke="#242424">
+                                                      <g id="verifyEligibility" transform="translate(0.000000, 576.000000)">
+                                                         <g id="title" transform="translate(609.000000, 40.000000)">
+                                                            <g id="closeIcon" transform="translate(675.000000, 0.000000)">
+                                                               <g id="Close-icon-Icon/Outline-1pt/close/close_black" transform="translate(12.000000, 12.000000)">
+                                                                  <line x1="22.5" y1="1.5" x2="1.5" y2="22.5" id="Line"></line>
+                                                                  <line x1="22.5" y1="22.5" x2="1.5" y2="1.5" id="Line"></line>
+                                                               </g>
+                                                            </g>
+                                                         </g>
+                                                      </g>
+                                                   </g>
+                                                </g>
+                                             </svg>
+                                          </span>
+                                          <sly
+                                             data-sly-resource="${resource @ resourceType='core/wcm/components/experiencefragment/v1/experiencefragment', wcmmode='disabled'}">
+                                          </sly>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="smile-points" data-sly-test="${properties.contract}">
+                        <span data-sly-test="${properties.contractAlignment == 'center'}">
+                           <div class="center">${properties.contract}</div>
+                        </span>
+                        <span data-sly-test="${!properties.contractAlignment || properties.contractAlignment == 'left'}">
+                           ${properties.contract}
+                        </span>
+                     </div>
+                     <div
+                        class="read-more select-product-from-grid select-product-from-grid-without-close link"
+                        data-extra-container=".extra-options-02">
+                        <a
+                           href="https://www.etisalat.ae/b2bportal/login.html?next=mobile-plans-discovery&amp;ratePlanId=PKBXBFO1BP0000002RD&amp;productId=prod_PKBXBFO1BP0000002RD&amp;selectedFlow=Mobile%20Plans&amp;displayName=Business%20First%20+%20National%20110%20&amp;showRequestCallBack=true&amp;product=7&amp;subject=Mobile_BFP_Online-Exclusive-National110&amp;productName=Business_First_Plus_National_110_Exclusive_Online_Offer"
+                           class="cms-button read-more-link" title="National 110"> <span data-sly-test="${properties.buyNowButton}">
+                        ${properties.buyNowButton}</span>
+                        </a> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</template>

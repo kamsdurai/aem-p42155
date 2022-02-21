@@ -1,135 +1,117 @@
 <template data-sly-template.xfmobile="${ @ properties,meganavigation}">
-<!--main menu mobile version: starts  -->
-<nav class="nav-drill">
-  <!-- For MyAccount Menu: starts -->
-    <ul data-sly-test="${!meganavigation.accountNavigationItems.isEmpty}" 
-	  data-sly-list.accountItems="${meganavigation.accountNavigationItems}" class="nav-items nav-level-1">
-      <li class="nav-item highlighted ${accountItems.subNavigationList.size > 0 ? 'nav-expand' :''}">
-         <a class="nav-link" href="${accountItems.navigationLinkTo}">
-             <img class="nav-link-icon" src="${accountItems.navImagePath}"/>
+   <!--main menu mobile version: starts  -->
+   <nav class="nav-drill">
+      <!-- For MyAccount Menu: starts -->
+      <ul data-sly-test="${!meganavigation.accountNavigationItems.isEmpty}" data-sly-list.accountItems="${meganavigation.accountNavigationItems}" class="nav-items nav-level-1">
+         <li class="nav-item highlighted ${accountItems.subNavigationList.size > 0 ? 'nav-expand' :''}">
+            <a class="nav-link" href="${accountItems.navigationLinkTo}">
+            <img alt="${accountItems.navigationLabel}" class="nav-link-icon" src="${accountItems.navImagePath}" />
             <span class="accountName">${accountItems.navigationLabel}</span>
-          </a>
-          <ul data-sly-test="${!accountItems.subNavigationList.isEmpty && accountItems.subNavigationList.size > 0}" class="nav-items nav-expand-content">
-            <li class="nav-item">
-              <a class="nav-link nav-back-link" href="#">
-              ${properties.menuBack}</a>
+            </a>
+            <ul data-sly-test="${!accountItems.subNavigationList.isEmpty && accountItems.subNavigationList.size > 0}" class="nav-items nav-expand-content">
+               <li class="nav-item">
+                  <a class="nav-link nav-back-link" href="#"> ${properties.menuBack}</a>
+               </li>
+               <li>
+                  <ul>
+                     <li class="accountName nav-item-heading"> ${accountItems.navigationLabel} </li>
+                     <li data-sly-test="${!accountItems.subNavigationList.isEmpty}" data-sly-list.subItems="${accountItems.subNavigationList}" class="nav-item">
+                        <a class="nav-link" href="${subItems.subNavLinkTo}"> ${subItems.subNavLabel} </a>
+                     </li>
+                     <li class="nav-item loggedInActions hidden">
+                        <a class="nav-link logoutAction" href="#">Sign Out</a>
+                     </li>
+                  </ul>
+               </li>
+            </ul>
+         </li>
+         <li class="nav-spacer spacer-32"></li>
+      </ul>
+      <!-- For MyAccount Menu: ends -->
+      <ul data-sly-test="${properties.search}" class="nav-items nav-level-1">
+         <li class="nav-item nav-expand">
+            <a class="nav-link search-link" href="#">
+            <img alt="${properties.searchLabel}" class="nav-link-icon" src="${properties.searchIconImage}" /> ${properties.searchLabel} </a>
+            <ul class="nav-items nav-expand-content">
+               <li class="nav-item">
+                  <a class="nav-link nav-back-link" href="#">${properties.menuBack}</a>
+               </li>
+               <li>
+                  <sly data-sly-resource="${'search1' @ resourceType='etisalat/components/search'}"></sly>
+               </li>
+            </ul>
+         </li>
+      </ul>
+      <ul data-sly-test="${!meganavigation.megaContainerItems.isEmpty}" data-sly-list.navItems="${meganavigation.megaContainerItems}" class="nav-items nav-level-1">
+         <li class="nav-item nav-expand">
+            <sly data-sly-use.xfMobileObj="/apps/etisalat/components/global/meganavigation/xf-mobile-template.html" data-sly-call="${xfMobileObj.xfMobileTemplate @ properties=properties,navItems=navItems}"></sly>
+         </li>
+      </ul>
+      <ul data-sly-test="${!meganavigation.utilityNavItems.isEmpty}" class="nav-items nav-level-1">
+         <li class="nav-spacer spacer-32"></li>
+         <sly data-sly-list.utilityItems="${meganavigation.utilityNavItems}">
+            <li class="nav-item nav-quick-links ${utilityItems.subNavigationList.size > 0 ? 'nav-expand' :''}" data-sly-test="${utilityItems.utilityMenuLayout == 'fixedmenulist'}">
+               <a class="nav-link ${utilityItems.subNavigationList.size > 0 ? 'nav-expand-link' :''}" href="${utilityItems.navigationLinkTo}">
+               <img alt="${utilityItems.navigationLabel}" class="nav-link-icon" src="${utilityItems.navImagePath}" /> ${utilityItems.navigationLabel} <img alt="link-arrow" data-sly-test="${utilityItems.subNavigationList.size > 0}" class="nav-link-arrow" src="${properties.linkArrowImage}" />
+               </a>
+               <ul data-sly-test="${!utilityItems.subNavigationList.isEmpty && utilityItems.subNavigationList.size > 0}" class="nav-items nav-expand-content">
+                  <li class="nav-item">
+                     <a class="nav-link nav-back-link" href="#"> ${properties.menuBack}</a>
+                  </li>
+                  <li>
+                     <ul data-sly-repeat.subMenuItems="${utilityItems.subNavigationList}">
+                        <li data-sly-repeat.subFixedItems="${subMenuItems.subNavigationList}" class="nav-item">
+                           <a class="nav-link" href="${subFixedItems.navigationLink}"> ${subFixedItems.navigationTitle} </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
             </li>
-            <li>
-              <ul>
-                <li class="accountName nav-item-heading">
-                  ${accountItems.navigationLabel}
-                </li>                
-                 <li data-sly-test="${!accountItems.subNavigationList.isEmpty}" 
-			         data-sly-list.subItems="${accountItems.subNavigationList}" class="nav-item">
-                  <a class="nav-link" href="${subItems.subNavLinkTo}">
-                   ${subItems.subNavLabel}
-                  </a>
-                 </li>
-
-               <li class="nav-item loggedInActions hidden"><a class="nav-link logoutAction" href="#">Sign Out</a></li>
-              </ul>
+            <sly data-sly-test="${utilityItems.utilityMenuLayout == 'xfragment'}">
+               <li class="nav-item ${utilityItems.containerSubMenuList.size > 0 ? 'nav-expand' :''} nav-quick-links">
+                  <sly data-sly-use.xfMobileObj="/apps/etisalat/components/global/meganavigation/xf-mobile-template.html" data-sly-call="${xfMobileObj.xfMobileTemplate @ properties=properties,navItems=utilityItems}"></sly>
+               </li>
+            </sly>
+            <li data-sly-test="${!meganavigation.topNavIconMenuItems.isEmpty 
+               && meganavigation.topNavIconMenuItems.size > 0}" data-sly-list.topRightItems="${meganavigation.topNavIconMenuItems}" class="nav-item nav-quick-links">
+               <sly data-sly-test="${!(topRightItems.openmodalwindow == 'modalwindow') && !(topRightItems.openmodalwindow == 'accessibilityoverlay')}">
+                  <a class="nav-link" href="${topRightItems.navigationLink} ">
+                  <img alt="${topRightItems.navigationTitle}" data-sly-test="${topRightItems.navigationImage}" class="nav-link-icon" src="${topRightItems.navigationImage}" /> ${topRightItems.navigationTitle} </a>
+               </sly>
+               <sly data-sly-test="${topRightItems.openmodalwindow == 'accessibilityoverlay'}">
+                  <a class="nav-link open-accessibility-popup mobile-accessibility-popup" >
+                  <img alt="${topRightItems.navigationTitle}" data-sly-test="${topRightItems.navigationImage}" class="nav-link-icon" src="${topRightItems.navigationImage}" /> ${topRightItems.navigationTitle} </a>
+               </sly>              
             </li>
-          </ul>
-     </li>
-  <li class="nav-spacer spacer-32"></li>
-  </ul>
-  <!-- For MyAccount Menu: ends -->
-  
- <ul data-sly-test="${properties.search}"  class="nav-items nav-level-1">
-        <li class="nav-item">
-            <a class="nav-link search-link" href="#">                
-                <img  class="nav-link-icon" src="${properties.searchIconImage}"/> ${properties.searchLabel}
-            </a>      
-        </li>
-  </ul>
-
-<ul data-sly-test="${!meganavigation.megaContainerItems.isEmpty}" data-sly-list.navItems="${meganavigation.megaContainerItems}" 
-     class="nav-items nav-level-1">
-  <li class="nav-item nav-expand">
-    <sly data-sly-use.xfMobileObj="/apps/etisalat/components/global/meganavigation/xf-mobile-template.html"
-          data-sly-call="${xfMobileObj.xfMobileTemplate @ properties=properties,navItems=navItems}">  
-     </sly>       
-  </li>
-</ul>
-
-
-<ul data-sly-test="${!meganavigation.utilityNavItems.isEmpty}" class="nav-items nav-level-1">   
-   <li class="nav-spacer spacer-32"></li>                    
-	<sly data-sly-list.utilityItems="${meganavigation.utilityNavItems}">
-	   <li class="nav-item nav-quick-links ${utilityItems.subNavigationList.size > 0 ? 'nav-expand' :''}" data-sly-test="${utilityItems.utilityMenuLayout == 'fixedmenulist'}">
-		 <a class="nav-link ${utilityItems.subNavigationList.size > 0 ? 'nav-expand-link' :''}" href="${utilityItems.navigationLinkTo}">
-		 <img class="nav-link-icon" src="${navItems.navImagePath}"/> ${utilityItems.navigationLabel}
-		 <img data-sly-test="${utilityItems.subNavigationList.size > 0}" class="nav-link-arrow" src="${properties.linkArrowImage}"/></a>
-
-         <ul data-sly-test="${!utilityItems.subNavigationList.isEmpty && utilityItems.subNavigationList.size > 0}" class="nav-items nav-expand-content">
-          <li class="nav-item">
-              <a class="nav-link nav-back-link" href="#">
-              ${properties.menuBack}</a>
-          </li>
-		  <li>
-		      <ul data-sly-repeat.subMenuItems="${utilityItems.subNavigationList}">                    
-                    <li data-sly-repeat.subFixedItems="${subMenuItems.subNavigationList}" class="nav-item">
-                        <a class="nav-link" href="${subFixedItems.navigationLink}">
-                         ${subFixedItems.navigationTitle}
-                        </a>
-                    </li>
-			   </ul>
-		   </li>
-         </ul>		
-	   </li>
-		<sly data-sly-test="${utilityItems.utilityMenuLayout == 'xfragment'}">
-          <li class="nav-item ${utilityItems.containerSubMenuList.size > 0 ? 'nav-expand' :''} nav-quick-links">
-              <sly data-sly-use.xfMobileObj="/apps/etisalat/components/global/meganavigation/xf-mobile-template.html"
-                data-sly-call="${xfMobileObj.xfMobileTemplate @ properties=properties,navItems=utilityItems}">  
-              </sly> 
-          </li>  
-		</sly>	
-           <li data-sly-test="${!meganavigation.topNavIconMenuItems.isEmpty 
-                    && meganavigation.topNavIconMenuItems.size > 0}" data-sly-list.topRightItems="${meganavigation.topNavIconMenuItems}" class="nav-item nav-quick-links">
-               <a class="nav-link" href="${topRightItems.navigationLink}">
-                <img data-sly-test="${topRightItems.navigationImage}" class="nav-link-icon" src="${topRightItems.navigationImage}"/> ${topRightItems.navigationTitle} </a>
-            </li>        
-	 </sly>	
-</ul>  
-
-<div class="nav-footer-inline-wrapper">
-  <ul data-sly-test="${!meganavigation.topNavMenuItems.isEmpty && meganavigation.topNavMenuItems.size > 0}" class="nav-items nav-level-1 nav-footer-wrapper nav-footer-wrapper-inline">
-    <li data-sly-list.topLeftItems="${meganavigation.topNavMenuItems}" class="nav-item nav-footer">
-      <a class="nav-inline-link nav-site-switch ${topLeftItems.active ? 'active' : ''}" href="${topLeftItems.navigationLink}">
-        ${topLeftItems.navigationTitle}<img class="nav-link-arrow" src="${properties.linkArrowImage}"/>
-      </a>      
-    </li>
-  </ul>
-
-   <ul data-sly-test="${!meganavigation.languageItems.isEmpty && meganavigation.languageItems.size == 1}" class="nav-items nav-level-1 nav-footer-wrapper nav-footer-wrapper-inline">
-    <li class="nav-item nav-footer white-bg">
-      <a class="nav-inline-link nav-site-switch" href="#">
-        ${properties.langMobileLabel}
-      </a>
-      <a data-sly-repeat.langItem="${meganavigation.languageItems}" class="nav-inline-link nav-lang" href="${langItem.linkUrl}">
-        ${langItem.title}
-      </a>
-    </li>
-  </ul>
-  <ul data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page" 
-      data-sly-test="${!meganavigation.languageItems.isEmpty && meganavigation.languageItems.size > 1}" 
-      class="nav-items nav-level-1 mega-lang-dropdown-mob">
-		<li class="nav-item-heading white-bg mega-dropdown-mob open">
-			<a class="${page.language == 'ar' ? 'arabic-lang-content' :''}" href="#"> ${properties.langMobileLabel}</a>  <img class="nav-link-arrow" src="${properties.linkArrowImage}"/>                      
-		 </li>
-		<li class="mega-dropdown-mob-menu" style="display: list-item;">
-		  <ul data-sly-list.langItem="${meganavigation.languageItems}" role="menu">
-				<li class="nav-item">
-				<a class="nav-link" href=" ${langItem.linkUrl}">
-					${langItem.title}
-				</a>
-				</li>
-		   </ul>
-		</li>
-   </ul>
-</div> 
- 
-
-</nav>
-<!--main menu mobile version: ends-->
+         </sly>
+      </ul>
+      <div class="nav-footer-inline-wrapper">
+         <ul data-sly-test="${!meganavigation.topNavMenuItems.isEmpty && meganavigation.topNavMenuItems.size > 0}" class="nav-items nav-level-1 nav-footer-wrapper nav-footer-wrapper-inline">
+            <li data-sly-list.topLeftItems="${meganavigation.topNavMenuItems}" class="nav-item nav-footer">
+               <a class="nav-inline-link nav-site-switch ${topLeftItems.active ? 'active' : ''}" href="${topLeftItems.navigationLink}"> ${topLeftItems.navigationTitle}
+               </a>
+            </li>
+         </ul>
+         <ul data-sly-test="${!meganavigation.languageItems.isEmpty && meganavigation.languageItems.size == 1}" class="nav-items nav-level-1 nav-footer-wrapper nav-footer-wrapper-inline">
+            <li class="nav-item nav-footer white-bg">
+               <a class="nav-inline-link nav-site-switch" href="#"> ${properties.langMobileLabel} </a>
+               <a data-sly-repeat.langItem="${meganavigation.languageItems}" class="nav-inline-link nav-lang" href="${langItem.linkUrl}"> ${langItem.title} </a>
+            </li>
+         </ul>
+         <ul data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page" data-sly-test="${!meganavigation.languageItems.isEmpty && meganavigation.languageItems.size > 1}" class="nav-items nav-level-1 mega-lang-dropdown-mob">
+            <li class="nav-item-heading white-bg mega-dropdown-mob open">
+               <a class="${page.language == 'ar' ? 'arabic-lang-content' :''}" href="#"> ${properties.langMobileLabel}</a>
+               <img alt="${properties.langMobileLabel}" class="nav-link-arrow" src="${properties.linkArrowImage}" />
+            </li>
+            <li class="mega-dropdown-mob-menu" style="display: list-item;">
+               <ul data-sly-list.langItem="${meganavigation.languageItems}" role="menu">
+                  <li class="nav-item">
+                     <a class="nav-link" href=" ${langItem.linkUrl}"> ${langItem.title} </a>
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <!--main menu mobile version: ends-->
 </template>

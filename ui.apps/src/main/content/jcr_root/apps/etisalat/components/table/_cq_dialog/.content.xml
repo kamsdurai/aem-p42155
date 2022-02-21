@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Table"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:hideChildren="[metadata]">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <tableoptions
+                                granite:class="cq-dialog-dropdown-showhide"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Create Table"
+                                name="./tableSource">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <rte
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Using RTE"
+                                        value="rte"/>
+                                    <simplecsv
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Using CSV"
+                                        value="simplecsv"/>
+                                    <csv
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Using CSV [Channel Tables With Sorting/Filtering]"
+                                        value="csv"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                            </tableoptions>
+                            <rte
+                                granite:class="linkbehavior-showhide-target"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="Table"
+                                        name="./text"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <sorting
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Make all columns sortable?"
+                                        name="./doSorting"
+                                        text="Make all columns sortable?"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                    <enableSearch
+                                        granite:class="cq-dialog-checkbox-showhide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Enable Search"
+                                        name="./enableSearch"
+                                        text="Enable Search"
+                                        uncheckedValue="false"
+                                        value="true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-dialog-checkbox-showhide-target=".togglefield"/>
+                                    </enableSearch>
+                                    <searchOptions
+                                        granite:class="togglefield"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <enterColumnNumberToSort
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Search Placeholder Text"
+                                                fieldLabel="Search Placeholder Text"
+                                                name="./searchPlaceholderText"/>
+                                            <nosearchresultstext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="No Search Results Message"
+                                                fieldLabel="No Search Results Message"
+                                                name="./noSearchResultsText"/>
+                                        </items>
+                                    </searchOptions>
+                                    <enableSeeMore
+                                        granite:class="cq-dialog-checkbox-showhide"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="When checked, It will enable see more / see less feature"
+                                        name="./enableSeeMore"
+                                        text="Enable see more/less feature for Stripped Tables"
+                                        uncheckedValue="{Boolean}false"
+                                        value="{Boolean}true">
+                                        <granite:data
+                                            jcr:primaryType="nt:unstructured"
+                                            cq-dialog-checkbox-showhide-target=".togglefieldseemore"/>
+                                    </enableSeeMore>
+                                    <seeMoreOptions
+                                        granite:class="togglefieldseemore"
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <seeMoreText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="See More Text"
+                                                fieldLabel="See More Text"
+                                                name="./seeMoreText"/>
+                                            <seeLessText
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="See Less Text"
+                                                fieldLabel="See Less Text"
+                                                name="./seeLessText"/>
+                                        </items>
+                                    </seeMoreOptions>
+                                    <enablespecificationstable
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                        fieldDescription="Enable this checkbox to load correct responsive view for Specifications RTE Table"
+                                        name="./enablespecificationstable"
+                                        text="Enable Specifications Table HTML Structure"
+                                        uncheckedValue="false"
+                                        value="true"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="rte"/>
+                            </rte>
+                            <csv
+                                granite:class="linkbehavior-showhide-target"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <csvPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="CSV Path"
+                                        name="./csvPath"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        rootPath="/content/dam/etisalat"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <filterPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="Filter CSV Path"
+                                        name="./filterCsvPath"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        rootPath="/content/dam/etisalat"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                    <text
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                        fieldLabel="No Results Found Text"
+                                        name="./errorText"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="csv"/>
+                            </csv>
+                            <simplecsv
+                                granite:class="linkbehavior-showhide-target"
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <csvPath
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                        fieldLabel="CSV Path"
+                                        name="./simplecsvPath"
+                                        removeSingleParagraphContainer="{Boolean}true"
+                                        rootPath="/content/dam/etisalat"
+                                        useFixedInlineToolbar="{Boolean}true"/>
+                                </items>
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    showhidetargetvalue="simplecsv"/>
+                            </simplecsv>
+                            <pageLimit
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                fieldDescription="Enter the number of results per page. If left empty all records will be visible"
+                                fieldLabel="Number Of Results (Pagination will be enabled)"
+                                name="./pageLimit"/>
+                            <resposivetable
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                fieldDescription="Mobile Accordion View Not Required? This is implemented for any future case,if checked it sends false to HTML attribute"
+                                name="./mobileView"
+                                text="Mobile Accordion View Not Required?"
+                                uncheckedValue="true"
+                                value="false"/>
+                            <id
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="HTML ID attribute to apply to the component."
+                                fieldLabel="ID"
+                                name="./id"/>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

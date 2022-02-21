@@ -17,7 +17,7 @@
                   <div class="logo-container">
                      <div class="navbar-header">
                         <a href="${meganavigation.logoMenuLink}" title="${properties.logoAltText}">  
-                        <img src="${meganavigation.imagePath}" class="etisalat-logo-en" width="150" />                         
+                        <img alt="${properties.logoAltText}" src="${meganavigation.imagePath}" class="etisalat-logo-en" width="150" />
                         </a>
                      </div>
                   </div>
@@ -34,12 +34,12 @@
                   </div>
                </div>
                <!--main menu links for desktop view -->
-               <div class="col-sm-6 col-md-6 hidden-xs hidden-sm">
+               <div class="col-sm-6 col-md-10 hidden-xs hidden-sm">
                   <div class="navbar-links">
                      <div class="navbar-collapse collapse">
                         <ul data-sly-test="${!meganavigation.megaNavigationItems.isEmpty}"
                            data-sly-list.navItems="${meganavigation.megaNavigationItems}" class="nav navbar-nav navbar-left">
-                           <li id="dtsecondlevelmenu-${navItemsList.count}" class="${navItems.active}">
+                           <li id="dtsecondlevelmenu-${navItemsList.count}" class="${navItems.active} ${currentPage.path in navItems.navigationLinkTo ? 'mega-nav_active' : ''}">
                               <a href="${navItems.navigationLinkTo}" class="desktop-menu-link" data-sub-menu="sub-menu-mobile" title="${navItems.navigationAltText}">${navItems.navigationLabel}</a>    
                               <div class="sub-account-menu-wrap">
                                  <ul data-sly-test="${!navItems.subNavigationList.isEmpty}" 

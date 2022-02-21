@@ -1,0 +1,350 @@
+<sly data-sly-template.csv="${ @ tableModel}">
+   <sly data-sly-include="filter-sorting.html"></sly>
+   <!-- [Filter and sorting starts] -->
+   <div class="sorting-filter-wrapper">
+      <div class="container">
+         <div class="filters-wrapper">
+            <div class="filter-tags">
+               <ul class="list-wrapper">
+                  <li class="clear-all">
+                     <a href="#">clear all</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="filters">
+               <div class="filter-lable" data-label="filters" role="button">
+                  <span class="icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g fill="none" fill-rule="evenodd">
+                           <g stroke="#242424" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M7.503 17.44L7.503 4.501M2.503 17.44L2.503 10.991M2.503 6.99L2.503.5M12.503 13.47L12.503.5M14.5 15.472c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2zM4.5 8.988c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .895 2 2zM9.5 2.503c0 1.104-.896 2-2 2s-2-.896-2-2 .896-2 2-2 2 .896 2 2z" transform="translate(-763 -2208) translate(120 1363) translate(600 725) translate(0 44) translate(0 64) translate(43 12) translate(5 3)"></path>
+                           </g>
+                        </g>
+                     </svg>
+                     <span class="circle-count">
+                     2
+                     </span>
+                  </span>
+                  <span class="label">
+                  FILTER
+                  </span>
+               </div>
+               <!-- [ Sorting starts] -->
+               <div class="sort-label mobile-view" data-label="sortByFilter" role="button" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <span class="icon">
+                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <g fill="none" fill-rule="evenodd">
+                           <g>
+                              <g>
+                                 <g>
+                                    <g>
+                                       <path d="M0 0H20V20H0z" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18)"></path>
+                                       <g stroke="#242424" stroke-linecap="round" stroke-linejoin="round">
+                                          <path d="M8.319 9.083L10.329 9.083" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18) rotate(90 6.667 9.583)"></path>
+                                          <g>
+                                             <path d="M.424 3.276L6.732 3.276 8.497 3.276M3.211 6.25L.416 3.277 3.39.482" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18) rotate(90 6.667 9.583) translate(0 5.807)"></path>
+                                          </g>
+                                          <path d="M10.117 4.224L8.319 4.224 4.652 4.224" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18) rotate(90 6.667 9.583)"></path>
+                                          <g>
+                                             <path d="M5.391 3.417L.756 3.417M2.596.443L5.391 3.415 2.417 6.21" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18) rotate(90 6.667 9.583) translate(9.167 .807)"></path>
+                                          </g>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </svg>
+                  </span>
+                  <span class="label"> SORT <span class="sub-label"> A to Z</span></span>
+               </div>
+               <div class="dropdown desktop-view">
+                  <div class="sort-label" data-label="sortByFilter" role="button" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <span class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                           <g fill="none" fill-rule="evenodd">
+                              <g>
+                                 <g>
+                                    <g>
+                                       <g>
+                                          <path d="M0 0H20V20H0z" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18)"></path>
+                                          <g stroke="#242424" stroke-linecap="round" stroke-linejoin="round">
+                                             <path d="M8.319 9.083L10.329 9.083" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18) rotate(90 6.667 9.583)"></path>
+                                             <g>
+                                                <path d="M.424 3.276L6.732 3.276 8.497 3.276M3.211 6.25L.416 3.277 3.39.482" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18) rotate(90 6.667 9.583) translate(0 5.807)"></path>
+                                             </g>
+                                             <path d="M10.117 4.224L8.319 4.224 4.652 4.224" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18) rotate(90 6.667 9.583)"></path>
+                                             <g>
+                                                <path d="M5.391 3.417L.756 3.417M2.596.443L5.391 3.415 2.417 6.21" transform="translate(-1119 -306) translate(949 288) translate(146) translate(24 18) rotate(90 6.667 9.583) translate(9.167 .807)"></path>
+                                             </g>
+                                          </g>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </svg>
+                     </span>
+                     <span class="label"> SORT BY: <span class="sub-label"> A to Z</span></span>
+                  </div>
+                  <ul class="dropdown-menu" aria-labelledby="dLabel">
+                     <li>
+                        <a class="active" href="#" data-sort="asc">
+                           A to Z
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                 <defs>
+                                    <filter id="one" width="120.9%" height="157.8%" x="-10.5%" y="-28.9%" filterUnits="objectBoundingBox">
+                                       <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                       <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"></feGaussianBlur>
+                                       <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+                                       <feMerge>
+                                          <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                                       </feMerge>
+                                    </filter>
+                                 </defs>
+                                 <g fill="none" fill-rule="evenodd">
+                                    <g>
+                                       <g>
+                                          <g>
+                                             <g>
+                                                <g filter="url(#one)" transform="translate(-1280 -8820) translate(0 2930) translate(0 5644) translate(0 44) translate(1038 189)">
+                                                   <g>
+                                                      <path d="M0 0H24V24H0z" transform="translate(242 13)"></path>
+                                                      <g stroke="#719E19" stroke-linecap="round" stroke-linejoin="round">
+                                                         <path d="M4.532 9.417L7.143 12.128 13.428 5.835" transform="translate(242 13) translate(3 3)"></path>
+                                                         <path d="M12.99 16.46c2.66-1.42 4.47-4.24 4.47-7.48C17.46 4.3 13.67.5 8.98.5S.5 4.3.5 8.98c0 4.69 3.79 8.49 8.48 8.49h.01" transform="translate(242 13) translate(3 3)"></path>
+                                                      </g>
+                                                   </g>
+                                                </g>
+                                             </g>
+                                          </g>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </svg>
+                           </span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#" data-sort="desc">
+                           Z to A
+                           <span>
+                              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                 <defs>
+                                    <filter id="two" width="120.9%" height="157.8%" x="-10.5%" y="-28.9%" filterUnits="objectBoundingBox">
+                                       <feOffset dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                       <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="5"></feGaussianBlur>
+                                       <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"></feColorMatrix>
+                                       <feMerge>
+                                          <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                                          <feMergeNode in="SourceGraphic"></feMergeNode>
+                                       </feMerge>
+                                    </filter>
+                                 </defs>
+                                 <g fill="none" fill-rule="evenodd">
+                                    <g>
+                                       <g>
+                                          <g>
+                                             <g>
+                                                <g filter="url(#two)" transform="translate(-1280 -8820) translate(0 2930) translate(0 5644) translate(0 44) translate(1038 189)">
+                                                   <g>
+                                                      <path d="M0 0H24V24H0z" transform="translate(242 13)"></path>
+                                                      <g stroke="#719E19" stroke-linecap="round" stroke-linejoin="round">
+                                                         <path d="M4.532 9.417L7.143 12.128 13.428 5.835" transform="translate(242 13) translate(3 3)"></path>
+                                                         <path d="M12.99 16.46c2.66-1.42 4.47-4.24 4.47-7.48C17.46 4.3 13.67.5 8.98.5S.5 4.3.5 8.98c0 4.69 3.79 8.49 8.48 8.49h.01" transform="translate(242 13) translate(3 3)"></path>
+                                                      </g>
+                                                   </g>
+                                                </g>
+                                             </g>
+                                          </g>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </svg>
+                           </span>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+               <!-- [ Sorting ends] -->
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- [Filter and sorting ends] -->
+   <!-- [Sorting mobile starts] -->
+   <div class="e-life-modal nv-modal fade full-height-mob right-modal" id="sortByFilter">
+      <div class="nv-modal-dialog">
+         <div class="nv-modal-content">
+            <div class="nv-plan-details-modal">
+               <div class="nv-modal-header">
+                  <h4 class="nv-modal-title">Sort by</h4>
+                  <span class="nv-modal-close">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px" viewBox="0 0 22 22" version="1.1" class="replaced-svg">
+                        <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+                        <title>7B83D072-3E0D-49AE-A875-1911086F328B</title>
+                        <desc>Created with sketchtool.</desc>
+                        <g id="eLife-Flows---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                           <g id="dd_eLifeConfig-1.0.7" transform="translate(-1297.000000, -629.000000)" stroke="#242424">
+                              <g id="verifyEligibility" transform="translate(0.000000, 576.000000)">
+                                 <g id="title" transform="translate(609.000000, 40.000000)">
+                                    <g id="closeIcon" transform="translate(675.000000, 0.000000)">
+                                       <g id="Close-icon-Icon/Outline-1pt/close/close_black" transform="translate(12.000000, 12.000000)">
+                                          <line x1="22.5" y1="1.5" x2="1.5" y2="22.5" id="Line"></line>
+                                          <line x1="22.5" y1="22.5" x2="1.5" y2="1.5" id="Line"></line>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </svg>
+                  </span>
+               </div>
+               <div class="nv-modal-body" style="height: 438px;">
+                  <div class="nv-row nv-mt-3 ng-scope">
+                     <div class="nv-col-12 nv-mb-0 nv-mb-lg-2">
+                        <strong>
+                           Sort by
+                        </strong>
+                     </div>
+                     <div class="nv-col-12">
+                        <div class="d-flex nv-py-3">
+                           <div class="nv-checkboxes-wrap sm">
+                              <input name="sorting" type="radio" id="a_z" checked>
+                              <label for="a_z"> </label>
+                           </div>
+                           <div class="nv-checkboxes-text gray-color flex-fill">
+                              A to Z
+                           </div>
+                        </div>
+                     </div>
+                     <div class="nv-col-12">
+                        <div class="d-flex nv-py-3">
+                           <div class="nv-checkboxes-wrap sm">
+                              <input name="sorting" type="radio" id="z_a">
+                              <label for="z_a"> </label>
+                           </div>
+                           <div class="nv-checkboxes-text gray-color flex-fill">
+                              Z to A
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="nv-row nv-mt-32 nv-mt-lg-40 filter-button-wrap">
+                  <div class="nv-col-12 nv-mb-3">
+                     <a href="#" class="btn btn-green apply-sorting-filter">
+                        apply
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- [Sorting mobile ends] -->
+   <!-- [Filter popup starts] -->
+   <div class="e-life-modal nv-modal fade full-height-mob right-modal" id="filters" >
+      <div class="nv-modal-dialog">
+         <div class="nv-modal-content">
+            <div class="nv-plan-details-modal">
+               <div class="nv-modal-header">
+                  <h4 class="nv-modal-title">Filter</h4>
+                  <span class="nv-modal-close">
+                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px" viewBox="0 0 22 22" version="1.1" class="replaced-svg">
+                        <!-- Generator: sketchtool 59.1 (101010) - https://sketch.com -->
+                        <title>7B83D072-3E0D-49AE-A875-1911086F328B</title>
+                        <desc>Created with sketchtool.</desc>
+                        <g id="eLife-Flows---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                           <g id="dd_eLifeConfig-1.0.7" transform="translate(-1297.000000, -629.000000)" stroke="#242424">
+                              <g id="verifyEligibility" transform="translate(0.000000, 576.000000)">
+                                 <g id="title" transform="translate(609.000000, 40.000000)">
+                                    <g id="closeIcon" transform="translate(675.000000, 0.000000)">
+                                       <g id="Close-icon-Icon/Outline-1pt/close/close_black" transform="translate(12.000000, 12.000000)">
+                                          <line x1="22.5" y1="1.5" x2="1.5" y2="22.5" id="Line"></line>
+                                          <line x1="22.5" y1="22.5" x2="1.5" y2="1.5" id="Line"></line>
+                                       </g>
+                                    </g>
+                                 </g>
+                              </g>
+                           </g>
+                        </g>
+                     </svg>
+                  </span>
+               </div>
+               <div class="nv-modal-body" style="height: 384px;" data-sly-test.filtersMap="${tableModel.allFiltersForChannelsTable}" data-sly-list.filtersItem="${filtersMap}">
+                  <div class="nv-row nv-mt-3 ng-scope" data-sly-test.myMap="${filtersMap[filtersItem]}">
+                     <div class="nv-col-12 nv-mb-0 nv-mb-lg-2" data-sly-list.mapItem="${myMap}" >
+                        <strong class="ng-binding" data-sly-test="${mapItemList.index == 0}">
+                           ${mapItem}
+                        </strong>
+                     </div>
+                     <div class="nv-col-12" data-sly-repeat.mapItem="${myMap @ begin = 1}">
+                        <div class="d-flex nv-py-3">
+                           <div class="nv-checkboxes-wrap sm">
+                              <sly data-sly-test="${mapItemList.index == 1}" >
+                                 <input name="${filtersItem}" type="radio" id="${myMap[mapItem]}" data-filter="${myMap[mapItem]}" checked>
+                              </sly>
+                              <sly data-sly-test="${mapItemList.index >= 2}" >
+                                 <input name="${filtersItem}" type="radio" id="${myMap[mapItem]}" data-filter="${myMap[mapItem]}" >
+                              </sly>
+                              <label for="${myMap[mapItem]}"> </label>
+                           </div>
+                           <div class="nv-checkboxes-text gray-color flex-fill">
+                              ${mapItem}
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="d-flex nv-mt-32 nv-mt-lg-40 filter-button-wrap">
+                  <div class="nv-col-6">
+                     <div class="text-center nv-pt-2">
+                        <a href="#" class="nv-btn-link green"> Reset <span class="hide-on-mobile">filters</span> </a>
+                     </div>
+                  </div>
+                  <div class="nv-col-6 nv-mb-3">
+                     <button class="btn btn-green" role="button">apply <span class="hide-on-mobile">filters</span>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <!-- [Filter popup ends] -->
+   <!-- [Error Message Starts] -->
+   <div class="not-found" >
+      ${properties.errorText @ context = 'html'}
+   </div>
+   <!-- [Error Message Starts] -->
+
+ <sly data-sly-test.sixcol="${tableModel.headerListForChannelsTable.size == 12}"></sly>
+
+ <sly data-sly-test.fivecol="${tableModel.headerListForChannelsTable.size == 10}"></sly>
+
+ <sly data-sly-test.fourcol="${tableModel.headerListForChannelsTable.size == 8}"></sly>
+
+ <sly data-sly-test.threecol="${tableModel.headerListForChannelsTable.size == 6}"></sly>
+
+ <sly data-sly-test.twocol="${tableModel.headerListForChannelsTable.size == 4}"></sly>
+
+
+   <div class="tables-4-0">
+      <table aria-label="error-table" class="${sixcol? 'six-col':''} ${fivecol? 'five-col':''} ${fourcol? 'four-col':''} ${threecol? 'three-col':''} ${twocol? 'two-col':''}">
+         <thead>
+         <tr data-sly-list="${tableModel.headerListForChannelsTable}">
+            <th id="${itemList.index}" data-sly-test="${item != 'data-filter'}">${item}</th>
+         </tr>
+         </thead>
+         <tbody data-sly-list.allrows="${tableModel.allRowsForChannelsTable}">
+         <tr>
+            <td data-sly-test.myMap="${allrows}" data-sly-repeat.mapItem="${myMap}" data-filter="${myMap[mapItem]}">${mapItem}</td>
+         </tr>
+         </tbody>
+      </table>
+   </div>
+</sly>

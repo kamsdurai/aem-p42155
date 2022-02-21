@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+          fieldLabel="Popup Behavior"
+          name="./modalBehavior">
+    <items jcr:primaryType="nt:unstructured">
+        <rightpopup
+                jcr:primaryType="nt:unstructured"
+                text="Right popup"
+                value="right"/>
+        <rightpopup-half-width
+                jcr:primaryType="nt:unstructured"
+                text="Right popup with 50% width"
+                value="right-50"/>
+        <leftpopup
+                jcr:primaryType="nt:unstructured"
+                text="Left popup"
+                value="left"/>
+        <bottompopup
+                jcr:primaryType="nt:unstructured"
+                text="Bottom popup"
+                value="bottom"/>
+    </items>
+</jcr:root>

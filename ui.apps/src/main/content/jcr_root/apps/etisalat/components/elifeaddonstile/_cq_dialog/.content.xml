@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Elife Addons Tile"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    width="{Long}750">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <elifeaddonsdata
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <elifeaddonslist
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <field
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <elife
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for the Brand Text."
+                                                fieldLabel="Brand Text"
+                                                maxlength="{Long}40"
+                                                name="./brandText"/>
+                                            <producttitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for the product Title."
+                                                fieldLabel="Product Title"
+                                                maxlength="{Long}40"
+                                                name="./productTitle"/>
+                                            <pricetag
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Price Tag"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <productprice
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product price."
+                                                        fieldLabel="Product Price"
+                                                        maxlength="{Long}40"
+                                                        name="./productPrice"/>
+                                                    <oldproductpricetext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product old price text."
+                                                        fieldLabel="Product Old Price Text"
+                                                        maxlength="{Long}40"
+                                                        name="./productOldPriceText"/>
+                                                    <oldproductprice
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product old price."
+                                                        fieldLabel="Product Old Price"
+                                                        maxlength="{Long}40"
+                                                        name="./productOldPrice"/>
+                                                    <productcurrency
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product currency."
+                                                        fieldLabel="Product Currency"
+                                                        maxlength="{Long}40"
+                                                        name="./productCurrency"/>
+                                                    <vatinclude
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for VAT include"
+                                                        fieldLabel="VAT Include Text"
+                                                        maxlength="{Long}40"
+                                                        name="./vatInclude"/>
+                                                </items>
+                                            </pricetag>
+                                            <buynow
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for the buy now button text"
+                                                fieldLabel="Buy Now Text"
+                                                maxlength="{Long}40"
+                                                name="./availabilityButtonText"/>
+                                            <buynowlink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Buy Now Button Link"
+                                                fieldLabel="Buy Now Button Link"
+                                                name="./availabilityButtonLink"
+                                                rootPath="/content"/>
+                                            <buynowlinktarget
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}false"
+                                                fieldDescription="If checked, the URL will open in new tab."
+                                                fieldLabel="Open in new tab"
+                                                name="./linktarget"
+                                                text="Open in new tab"
+                                                uncheckedValue="false"
+                                                value="true"/>
+                                            <buynowalttext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The alt text for Accessibility. This text will appear when the mouse hovers over the link."
+                                                fieldLabel="BuyNow Link Alt Text"
+                                                maxlength="{Long}40"
+                                                name="./buyNowAltText"/>
+                                        </items>
+                                    </field>
+                                </items>
+                            </elifeaddonslist>
+                        </items>
+                    </elifeaddonsdata>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

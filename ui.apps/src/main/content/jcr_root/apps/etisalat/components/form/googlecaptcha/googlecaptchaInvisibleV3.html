@@ -1,10 +1,8 @@
-<template data-sly-template.captchaInvisiblev3prop="${ @ properties}">
-
-
+<template data-sly-template.captchaInvisiblev3prop="${ @ properties,captchaObj}">
 <script src="https://www.google.com/recaptcha/api.js"></script>
 
-
-<button class="g-recaptcha" 
-        data-sitekey="${properties.captchaKeyInvisibleV3}" 
+<button class="g-recaptcha invisible" 
+        data-sitekey="${captchaObj.captchaInvisible}" 
         data-callback='onSubmit' 
         data-action='submit'></button>
+</template>

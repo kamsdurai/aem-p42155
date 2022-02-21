@@ -1,0 +1,24 @@
+<template data-sly-template.blogTile="${ @ container,properties}">
+<div class="cmp-blogpost-search"	   
+	   data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"	   
+	   id="${component.id}">
+	   <div class="main-text-section center-align">
+	      <div class="container">
+	         <div class="row">
+	            <div class="col-xs-12">
+	               <div data-sly-test="${properties.tileTitle}" class="wst-main-headings">
+	                  <h3>${properties.tileTitle}</h3>
+	               </div>
+	            </div>
+	         </div>
+	      </div>	      
+	   </div>
+	   <div class="blogpost-wrapper">
+	      <div class="container">
+	         <div class="row">
+	           <sly data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></sly>
+	         </div>
+	      </div>	   
+	   </div>
+</div>
+</template>

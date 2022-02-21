@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Etisalat Hero Banner"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-tab-dialog-content__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:hideChildren="[image,text,actions]">
+                    <heroimage
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/include"
+                        path="/mnt/overlay/etisalat/components/etisalatherobanner/tabs/heroimage"/>
+				    <herotext
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                           <heroalignment
+					                          jcr:primaryType="nt:unstructured"
+					                          sling:resourceType="granite/ui/components/coral/foundation/form/select"
+					                          fieldDescription="Select Hero Banner Text Alignment"
+					                          fieldLabel="Hero Banner Text Alignment"
+					                          name="./heroAlignment">
+					                          <items jcr:primaryType="nt:unstructured">
+					                              <left
+					                                  jcr:primaryType="nt:unstructured"
+					                                  text="Left"
+					                                  value="slide-left"/>
+					                              <right
+					                                  jcr:primaryType="nt:unstructured"
+					                                  text="Right"
+					                                  value="slide-right"/>
+					                              <center
+					                                  jcr:primaryType="nt:unstructured"
+					                                  text="Center"
+					                                  value="slide-center"/>
+					                          </items>
+					                      </heroalignment>
+					                      <taglinegroup
+					                          jcr:primaryType="nt:unstructured"
+					                          jcr:title="Tagline Details"
+					                          sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+					                          <items jcr:primaryType="nt:unstructured">
+					                              <tagtitle
+					                                  jcr:primaryType="nt:unstructured"
+					                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+					                                  fieldDescription="Enter Tagline Text."
+					                                  fieldLabel="Tagline Text"
+					                                  name="./pretitle"/>
+					                              <tagcolor
+					                                  jcr:primaryType="nt:unstructured"
+					                                  sling:resourceType="granite/ui/components/coral/foundation/form/select"
+					                                  fieldDescription="Select Tagline Background color"
+					                                  fieldLabel="Tagline background color"
+					                                  name="./tagColor">
+					                                  <items jcr:primaryType="nt:unstructured">
+														  <selectvalue
+																  jcr:primaryType="nt:unstructured"
+																  text="Select tagcolor"
+																  value=""/>
+					                                      <orange
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Orange"
+					                                          value="bg-orange"/>
+					                                      <teal
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Teal"
+					                                          value="bg-teal"/>
+					                                      <green
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Green"
+					                                          value="bg-green"/>
+					                                      <violet
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Violet"
+					                                          value="bg-violet"/>
+					                                      <golden
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Golden"
+					                                          value="bg-golden"/>
+					                                      <silver
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Silver"
+					                                          value="bg-silver"/>
+					                                  </items>
+					                              </tagcolor>
+					                              <tagalignment
+					                                  jcr:primaryType="nt:unstructured"
+					                                  sling:resourceType="granite/ui/components/coral/foundation/form/select"
+					                                  fieldDescription="Select Tagline alignment"
+					                                  fieldLabel="Tagline alignment"
+					                                  name="./tagAlignment">
+					                                  <items jcr:primaryType="nt:unstructured">
+					                                      <beforetitle
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Before Title"
+					                                          value="beforetitle"/>
+					                                      <aftertitle
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="After Title"
+					                                          value="aftertitle"/>
+					                                  </items>
+					                              </tagalignment>
+					                              <file
+					                                  jcr:primaryType="nt:unstructured"
+					                                  sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+					                                  allowUpload="{Boolean}false"
+					                                  autoStart="{Boolean}false"
+					                                  class="cq-droptarget"
+					                                  fieldLabel="Tagline Image Asset"
+					                                  fileNameParameter="./tagline/fileName"
+					                                  fileReferenceParameter="./tagline/fileReference"
+					                                  mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+					                                  multiple="{Boolean}false"
+					                                  name="./tagline/file"
+					                                  title="Upload Speed Image Asset"
+					                                  uploadUrl="${suffix.path}"
+					                                  useHTML5="{Boolean}true"/>
+					                          </items>
+					                      </taglinegroup>
+					                      <titleGroup
+					                          jcr:primaryType="nt:unstructured"
+					                          jcr:title="Title and Description"
+					                          sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+					                          <items jcr:primaryType="nt:unstructured">
+					                              <title
+					                                  jcr:primaryType="nt:unstructured"
+					                                  sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+					                                  fieldDescription="A title to display as the headline for the herobanner."
+					                                  fieldLabel="Title"
+					                                  name="./heroTitle"/>
+					                              <titlefonttype
+					                                  jcr:primaryType="nt:unstructured"
+					                                  sling:resourceType="granite/ui/components/coral/foundation/form/select"
+													  fieldDescription="Select Title Font Style"
+					                                  fieldLabel="Title Font Style"
+					                                  name="./titleFontStyle">
+					                                  <items jcr:primaryType="nt:unstructured">
+														  <regular
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Regular"
+					                                          value="regular"/>
+					                                      <long
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Long"
+					                                          value="long"/>
+					                                      <short
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Short"
+					                                          value="short"/>
+					                                      <shortTruncate
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Short without truncate"
+					                                          value="short-without-trunc"/>                                                           
+					                                  </items>
+					                              </titlefonttype>
+					                              <titlefontcolor
+					                                  jcr:primaryType="nt:unstructured"
+					                                  sling:resourceType="granite/ui/components/coral/foundation/form/select"
+													  fieldDescription="Select Title Font Color"
+					                                  fieldLabel="Title Font Color"
+					                                  name="./titleFontColor">
+					                                  <items jcr:primaryType="nt:unstructured">
+					                                      <long
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="White"
+					                                          value="light-color"/>
+					                                      <short
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Black"
+					                                          value="bg-dark"/>                                                            
+					                                  </items>
+					                              </titlefontcolor>
+					                              <description
+					                                  jcr:primaryType="nt:unstructured"
+					                                  sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+					                                  sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+					                                  fieldDescription="A description to display as the subheadline for the herobanner."
+					                                  fieldLabel="Description"
+					                                  name="./jcr:description"
+					                                  useFixedInlineToolbar="{Boolean}true"/>
+					                          </items>
+					                      </titleGroup>
+					                      <id
+					                          jcr:primaryType="nt:unstructured"
+					                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+					                          fieldDescription="HTML ID attribute to apply to the component."
+					                          fieldLabel="ID"
+					                          name="./id"/>  
+                                          <viewportlayouthidden
+                                              jcr:primaryType="nt:unstructured"
+                                              sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                              name="./viewPortLayout"
+                                              value="6-viewport"/>                   											  
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </herotext>
+                    <heroactions
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Link &amp; Actions"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                          <heroCTAGroup
+					                         jcr:primaryType="nt:unstructured"
+					                         jcr:title="Call-To-Action"
+					                         sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+					                         <items jcr:primaryType="nt:unstructured">
+					                             <herobannerctatitle
+					                                 jcr:primaryType="nt:unstructured"
+					                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+					                                 fieldDescription="Enter Herobanner CTA Title"
+					                                 fieldLabel="Herobanner CTA Title"
+					                                 name="./bannerCTATitle"/>
+					                             <actionbehaviour
+					                                 jcr:primaryType="nt:unstructured"
+					                                 sling:resourceType="granite/ui/components/coral/foundation/container">
+					                                 <items jcr:primaryType="nt:unstructured">
+					                                     <linkbehavior
+					                                         granite:class="cq-dialog-dropdown-showhide"
+					                                         jcr:primaryType="nt:unstructured"
+					                                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
+															 fieldDescription="Select CTA Link Behavior"
+					                                         fieldLabel="CTA Link Behavior"
+					                                         name="./linkBehavior">
+					                                         <items jcr:primaryType="nt:unstructured">
+					                                             <opennewwindow
+					                                                 jcr:primaryType="nt:unstructured"
+					                                                 text="Open In New Window"
+					                                                 value="opennewwindow"/>
+					                                             <opensamewindow
+					                                                 jcr:primaryType="nt:unstructured"
+					                                                 text="Open in Same Window"
+					                                                 value="opensamewindow"/>
+					                                             <modalpopup
+					                                                 jcr:primaryType="nt:unstructured"
+					                                                 text="Open In Modal window"
+					                                                 value="openmodalwindow"/>
+					                                         </items>
+					                                         <granite:data
+					                                             jcr:primaryType="nt:unstructured"
+					                                             cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+					                                     </linkbehavior>
+					                                     <fragmentlink
+					                                         granite:class="linkbehavior-showhide-target"
+					                                         jcr:primaryType="nt:unstructured"
+					                                         sling:resourceType="granite/ui/components/coral/foundation/container">
+					                                         <items jcr:primaryType="nt:unstructured">
+					                                             <fragmentVariationPath
+					                                                 granite:id="xfPicker"
+					                                                 jcr:primaryType="nt:unstructured"
+					                                                 sling:resourceType="cq/experience-fragments/editor/components/xffield"
+					                                                 fieldDescription="Choose the experience fragment variation to display."
+					                                                 fieldLabel="Experience Fragment Variation Path"
+					                                                 filter="folderOrVariant"
+					                                                 name="./fragmentVariationPath"
+					                                                 propertyFilter="cq:xfShowInEditor"
+					                                                 variant="web"/>
+					                                             <modalBehavior
+					                                                 jcr:primaryType="nt:unstructured"
+					                                                 sling:resourceSuperType="etisalat/components/commons/modal-popup-variations/modalBehavior"
+					                                                 sling:resourceType="granite/ui/components/coral/foundation/form/select"
+																	 fieldDescription="Select Popup Behavior"
+					                                                 fieldLabel="Popup Behavior"
+					                                                 name="./modalBehavior">
+					                                                 <granite:data
+					                                                     jcr:primaryType="nt:unstructured"
+					                                                     cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+					                                             </modalBehavior>
+					                                         </items>
+					                                         <granite:data
+					                                             jcr:primaryType="nt:unstructured"
+					                                             showhidetargetvalue="openmodalwindow"/>
+					                                     </fragmentlink>
+					                                     <linknewwindow
+					                                         granite:class="linkbehavior-showhide-target"
+					                                         jcr:primaryType="nt:unstructured"
+					                                         sling:resourceType="granite/ui/components/coral/foundation/container">
+					                                         <items jcr:primaryType="nt:unstructured">
+					                                             <buttonlink
+					                                                 jcr:primaryType="nt:unstructured"
+					                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+					                                                 fieldDescription="Select Herobanner CTA Link"
+					                                                 fieldLabel="Herobanner CTA Link"
+					                                                 name="./ctaNewWindowLink"
+					                                                 rootPath="/content"/>
+					                                         </items>
+					                                         <granite:data
+					                                             jcr:primaryType="nt:unstructured"
+					                                             showhidetargetvalue="opennewwindow"/>
+					                                     </linknewwindow>
+					                                     <linksamewindow
+					                                         granite:class="linkbehavior-showhide-target"
+					                                         jcr:primaryType="nt:unstructured"
+					                                         sling:resourceType="granite/ui/components/coral/foundation/container">
+					                                         <items jcr:primaryType="nt:unstructured">
+					                                             <buttonlink
+					                                                 jcr:primaryType="nt:unstructured"
+					                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+					                                                 fieldDescription="Herobanner CTA Link"
+					                                                 fieldLabel="Learn More Link"
+					                                                 name="./ctaSameWindowLink"
+					                                                 rootPath="/content"/>
+					                                         </items>
+					                                         <granite:data
+					                                             jcr:primaryType="nt:unstructured"
+					                                             showhidetargetvalue="opensamewindow"/>
+					                                     </linksamewindow>
+					                                     <displaylinkhidden
+					                                         jcr:primaryType="nt:unstructured"
+					                                         sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+					                                         name="./displayBehavior"
+					                                         value="link"/>
+					                                 </items>
+					                             </actionbehaviour>
+					                             <actioncolor
+					                                 jcr:primaryType="nt:unstructured"
+					                                 sling:resourceType="granite/ui/components/coral/foundation/form/select"
+					                                 fieldDescription="Select CTA Color"
+					                                 fieldLabel="CTA Color"
+					                                 name="./ctaColor">
+					                                 <items jcr:primaryType="nt:unstructured">
+					                                     <green
+					                                         jcr:primaryType="nt:unstructured"
+					                                         text="Green"
+					                                         value="btn-green"/>
+					                                     <orange
+					                                         jcr:primaryType="nt:unstructured"
+					                                         text="Orange"
+					                                         value="btn-orange"/>
+					                                 </items>
+					                             </actioncolor>
+					                         </items>
+					                     </heroCTAGroup>
+					                     <heroImageCTA
+					                         jcr:primaryType="nt:unstructured"
+					                         jcr:title="HeroImages-Call-To-Action"
+					                         sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+					                         <items jcr:primaryType="nt:unstructured">
+					                             <heroimagetitle
+					                                 jcr:primaryType="nt:unstructured"
+					                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+					                                 fieldDescription="Enter Heroimage Title"
+					                                 fieldLabel="HeroImage Title"
+					                                 name="./heroImageTitle"/>
+					                              <heroimagedescription
+					                                 jcr:primaryType="nt:unstructured"
+					                                 sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+					                                 sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+					                                 fieldDescription="A description to display as the subheadline for the hero image."
+					                                 fieldLabel="Heroimage Description"
+					                                 name="./heroImageDesc"
+					                                 useFixedInlineToolbar="{Boolean}true"/>
+					                              <heroimagectatitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Enter Heroimage CTA Title"
+                                                        fieldLabel="HeroImage CTA Title"
+                                                        name="./heroImageCTATitle"/>
+                                                  <heroimagectalink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Enter Heroimage CTA Link."
+                                                        fieldLabel="Heroimage CTA Link"
+                                                        name="./heroImageLinkURL"
+                                                        rootPath="/content"/>                                                                         
+					                         </items>
+					                     </heroImageCTA>    
+					                     <backToLink
+					                         jcr:primaryType="nt:unstructured"
+					                         jcr:title="Back-To-Link"
+					                         sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+					                         <items jcr:primaryType="nt:unstructured">
+					                             <backtolabel
+					                                 jcr:primaryType="nt:unstructured"
+					                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+					                                 fieldDescription="Enter Back to Link Label"
+					                                 fieldLabel="Back to Link Label"
+					                                 name="./backToLinkLbl"/>
+					                             <backtolink
+					                                 jcr:primaryType="nt:unstructured"
+					                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+					                                 fieldDescription="Enter Back to Link."
+					                                 fieldLabel="Back-To-Link"
+					                                 name="./backToLinkURL"
+					                                 rootPath="/content"/>
+					                         </items>
+					                     </backToLink>        					                                                              
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </heroactions>
+                    <image414px
+                        granite:class="cq-dialog-editor-showhide-target-tab"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="414px Image"
+                        sling:resourceSuperType="etisalat/components/imageetisalatviewport/cq:dialog/content/items/tabs/items/image414px"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true"/>
+                    <image768px
+                        granite:class="cq-dialog-editor-showhide-target-tab"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="768px Image"
+                        sling:resourceSuperType="etisalat/components/imageetisalatviewport/cq:dialog/content/items/tabs/items/image768px"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true"/>
+                    <image1024px
+                        granite:class="cq-dialog-editor-showhide-target-tab"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="1024px Image"
+                        sling:resourceSuperType="etisalat/components/imageetisalatviewport/cq:dialog/content/items/tabs/items/image1024px"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true"/>
+                    <image1366px
+                        granite:class="cq-dialog-editor-showhide-target-tab"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="1366px Image"
+                        sling:resourceSuperType="etisalat/components/imageetisalatviewport/cq:dialog/content/items/tabs/items/image1366px"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true"/>
+                    <image1440px
+                        granite:class="cq-dialog-editor-showhide-target-tab"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="1440px Image"
+                        sling:resourceSuperType="etisalat/components/imageetisalatviewport/cq:dialog/content/items/tabs/items/image1440px"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true"/>
+                    <image1920px
+                        granite:class="cq-dialog-editor-showhide-target-tab"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="1920px Image"
+                        sling:resourceSuperType="etisalat/components/imageetisalatviewport/cq:dialog/content/items/tabs/items/image1920px"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true"/>
+                </items>
+            </tabs>
+        </items>
+        <granite:data
+            jcr:primaryType="nt:unstructured"
+            tab-dropdown-selector-name="heroDisplayBehavior"
+            tab-target-dropdown-value="image-viewports"/>
+    </content>
+</jcr:root>

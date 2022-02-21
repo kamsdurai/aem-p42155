@@ -1,0 +1,37 @@
+<template  data-sly-template.benefitsgrid="${ @ container,properties}"
+           data-sly-use.tileModel="com.etisalat.core.models.TileModel">
+   <sly data-sly-set.itemsDisplay="${properties.numberOfItems}"></sly>
+
+   <div class="benefit-section" data-sly-set.itemsDisplay="${properties.numberOfItems}">
+         <div data-sly-test="${properties.tileTitle}" class="benefits-main-title">
+            <h2 data-sly-element="${properties.titleType}">${properties.tileTitle}</h2>
+         </div>
+
+         <div class="top">
+            <div class="tiles">
+               <!--/* benefits Start */-->
+               <div class="benefits-tile" data-sly-repeat="${container.items @ begin = 1, end = properties.numberOfItems}" data-sly-resource="${item.name  @ decorationTagName=wcmmode.edit ? 'div' : ''}"></div>
+               <!--/* benefits End */-->
+            </div>
+         </div>
+
+      <div data-sly-test="${container.items.size > tileModel.numberOfItems}" class="${!wcmmode.edit ? 'benefits-view-more' : ''}">
+         <a class="btn-text btn-green view-more collapsed" data-toggle="collapse" href="#${container.id}" role="button" aria-expanded="false" aria-controls="${container.id}">
+            <span data-sly-test="${properties.seeAllTitle}" class="show-more">${properties.seeAllTitle}</span>
+            <span data-sly-test="${properties.hideAllTitle}" class="show-less">${properties.hideAllTitle}</span>
+         </a>
+      </div>
+
+      <div class="bottom ${!wcmmode.edit ? 'collapse' : ''}" id="${container.id}" aria-expanded="false">
+
+         <div class="tiles">
+
+            <!--/* benefits Start */-->
+            <div class="benefits-tile" data-sly-repeat="${container.items @ begin = tileModel.numberOfItems, end = container.items.size}" data-sly-resource="${item.name  @ decorationTagName=wcmmode.edit ? 'div' : ''}"></div>
+            <!--/* benefits End */-->
+
+         </div>
+      </div>
+   </div>
+<sly data-sly-test="${wcmmode.edit}" data-sly-resource="${resource.path @ resourceType='core/wcm/components/container/v1/container/new', appendPath='/*', decorationTagName='div', cssClassName='new section'}" />
+</template>

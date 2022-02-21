@@ -1,0 +1,35 @@
+<template data-sly-template.ImageTheme="${ @ properties}">
+
+	<sly data-sly-test.darkbluePattern="${properties.bluebgBehavior == 'darkbgPattern' ? 'bg-cards' : ''}"></sly>
+	<sly data-sly-test.darkblueNoPattern="${properties.bluebgBehavior == 'darkbgNoPattern' ? 'bg-cards dark-bluebg-no-patterns' : ''}"></sly>
+
+	<div class="read-more-red-btn_bg">
+		<div class="tile-table plan-card product-tile-section product-plan-card ${darkbluePattern}${darkblueNoPattern}">
+			<div class="tile-card effect__click row-tiles-table">
+				<div class="tile-table plan-card">
+					<div class="tile-card effect__click">
+						<a href="https://www.etisalat.ae/en/smb/digital-solutions/estore.jsp"
+							class="tile">
+							<div class="tile-card__front">
+								<div class="tiles-box content body-standard">
+									<div class="tiles-box-title">
+										<div class="catagory"
+											data-sly-test="${properties.productTitle}">${properties.productTitle}</div>
+										<h2 data-sly-test="${properties.productSubTitle}">${properties.productSubTitle}</h2>
+										<div class="bottom-text"
+											data-sly-test="${properties.productDesc}">${properties.productDesc
+											@ context="html"}</div>
+									</div>
+									<div class="cover"
+										data-sly-resource="${carousel @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}">
+
+									</div>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>

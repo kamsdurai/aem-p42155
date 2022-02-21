@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Media CTA Plans"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:hideChildren="[text,actions]">
+                   <image
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Image"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                allowUpload="{Boolean}false"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                required="{Boolean}true"
+                                                fieldLabel="Image Asset"
+                                                fileNameParameter="./fileName"
+                                                fileReferenceParameter="./fileReference"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./file"
+                                                title="Upload Image Asset"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </image>
+                     <mediabackground
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Background Image"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                allowUpload="{Boolean}false"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                fieldLabel="Background Image Asset"
+                                                fileNameParameter="./image/fileName"
+                                                fileReferenceParameter="./image/fileReference"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./image/file"
+                                                title="Upload Image Asset"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                            <imageresourcehidden
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                name="./image/sling:resourceType"
+                                                value="etisalat/components/image"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </mediabackground>
+                     <mediaplan
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Plans"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured">
+                                             <mediasmalltitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for the media plan small Title."
+                                                fieldLabel="Small Title"
+                                                name="./mediaSubTitle"/>
+                                            <mediactatitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for the media Title."
+                                                fieldLabel="Title"
+                                                name="./mediaCTATitle"/>
+                                            <titleType
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Title Style"
+                                                name="./titleType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <def
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="(default)"
+                                                        value=""/>
+                                                    <h1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H1"
+                                                        value="h1"/>
+                                                    <h2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H2"
+                                                        value="h2"/>
+                                                    <h3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H3"
+                                                        value="h3"/>
+                                                    <h4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H4"
+                                                        value="h4"/>
+                                                    <h5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H5"
+                                                        value="h5"/>
+                                                    <h6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H6"
+                                                        value="h6"/>
+                                                </items>
+                                            </titleType>                                          
+                                            <exclusively
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Exclusively Details"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <file
+                                                       jcr:primaryType="nt:unstructured"
+                                                       sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                       allowUpload="{Boolean}false"
+                                                       autoStart="{Boolean}false"
+                                                       class="cq-droptarget"
+                                                       fieldLabel="Flag Image Asset"
+                                                       fileNameParameter="./plan/fileName"
+                                                       fileReferenceParameter="./plan/fileReference"
+                                                       mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                       multiple="{Boolean}false"
+                                                       name="./plan/file"
+                                                       title="Upload Flag Image Asset"
+                                                       uploadUrl="${suffix.path}"
+                                                       useHTML5="{Boolean}true"/>
+                                                   <exclusivelytext
+                                                       jcr:primaryType="nt:unstructured"
+                                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                       fieldDescription="Text that will appear for media cta plan."
+                                                       fieldLabel="Exclusively Text"
+                                                       maxlength="{Long}100"
+                                                       name="./excText"/>
+                                                </items>
+                                            </exclusively>
+                                            <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="Add Media CTA Description"
+                                                fieldLabel="Description"
+                                                name="./text"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                             <smile
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Smile Details"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <smileimage
+                                                       jcr:primaryType="nt:unstructured"
+                                                       sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                       allowUpload="{Boolean}false"
+                                                       autoStart="{Boolean}false"
+                                                       class="cq-droptarget"
+                                                       fieldLabel="Smile Image Asset"
+                                                       fileNameParameter="./smile/fileName"
+                                                       fileReferenceParameter="./smile/fileReference"
+                                                       mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                       multiple="{Boolean}false"
+                                                       name="./smile/file"
+                                                       title="Upload Smile Image Asset"
+                                                       uploadUrl="${suffix.path}"
+                                                       useHTML5="{Boolean}true"/>
+                                                   <smiletext
+                                                       jcr:primaryType="nt:unstructured"
+                                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                       fieldDescription="Text that will appear for media cta plan."
+                                                       fieldLabel="Smile Text"
+                                                       maxlength="{Long}100"
+                                                       name="./smileText"/>
+                                                </items>
+                                            </smile>                                            
+                                            <pricetag
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Price Tag"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fromtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product price."
+                                                        fieldLabel="From Text"
+                                                        maxlength="{Long}40"
+                                                        name="./fromText"/>
+                                                    <productprice
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product price."
+                                                        fieldLabel="Product Price"
+                                                        maxlength="{Long}40"
+                                                        name="./productPrice"/>
+                                                    <productcurrency
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product currency."
+                                                        fieldLabel="Product Currency"
+                                                        maxlength="{Long}40"
+                                                        name="./productCurrency"/>
+                                                    <pricefontcolor
+					                                  jcr:primaryType="nt:unstructured"
+					                                  sling:resourceType="granite/ui/components/coral/foundation/form/select"
+													  fieldDescription="Select Title Font Color"
+					                                  fieldLabel="Price Font Color"
+					                                  name="./priceFontColor">
+					                                  <items jcr:primaryType="nt:unstructured">
+					                                      <long
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Black"
+					                                          value=""/>
+					                                      <short
+					                                          jcr:primaryType="nt:unstructured"
+					                                          text="Green"
+					                                          value="green"/>                                                            
+					                                  </items>
+					                              </pricefontcolor>
+                                                </items>
+                                            </pricetag>
+                                            <autorenewaltext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for auto renewal labeltext. "
+                                                fieldLabel="Auto Renewal Text"
+                                                name="./autoRenewalText"/>                                            
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </mediaplan>
+                    <planactions
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Link &amp; Actions"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                          <viewallbenefitslabel
+				                              jcr:primaryType="nt:unstructured"
+				                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+				                              fieldDescription="Text that will appear for see all label."
+				                              fieldLabel="See All Benefits Label"
+				                              name="./ctatext"/>				                            				                        
+				                            <linkbehavior
+		                                         granite:class="cq-dialog-dropdown-showhide"
+		                                         jcr:primaryType="nt:unstructured"
+		                                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
+												 fieldDescription="Select See All Benefits Link Behavior"
+		                                         fieldLabel="See All Benefits Link Behavior"
+		                                         name="./tileLinkBehavior">
+		                                         <items jcr:primaryType="nt:unstructured">
+		                                             <opennewwindow
+		                                                 jcr:primaryType="nt:unstructured"
+		                                                 text="Open In New Window"
+		                                                 value="opennewwindow"/>
+		                                             <opensamewindow
+		                                                 jcr:primaryType="nt:unstructured"
+		                                                 text="Open in Same Window"
+		                                                 value="opensamewindow"/>
+		                                             <modalpopup
+		                                                 jcr:primaryType="nt:unstructured"
+		                                                 text="Open In Modal window"
+		                                                 value="openmodalwindow"/>
+		                                         </items>
+		                                         <granite:data
+		                                             jcr:primaryType="nt:unstructured"
+		                                             cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+		                                     </linkbehavior>
+		                                    <fragmentlink
+		                                         granite:class="linkbehavior-showhide-target"
+		                                         jcr:primaryType="nt:unstructured"
+		                                         sling:resourceType="granite/ui/components/coral/foundation/container">
+		                                         <items jcr:primaryType="nt:unstructured">
+		                                             <fragmentVariationPath
+		                                                 granite:id="xfPicker"
+		                                                 jcr:primaryType="nt:unstructured"
+		                                                 sling:resourceType="cq/experience-fragments/editor/components/xffield"
+		                                                 fieldDescription="Choose the experience fragment variation to display."
+		                                                 fieldLabel="Experience Fragment Variation Path"
+		                                                 filter="folderOrVariant"
+		                                                 name="./fragmentVariationPath"
+		                                                 propertyFilter="cq:xfShowInEditor"
+		                                                 variant="web"/>
+		                                             <modalBehavior
+		                                                 jcr:primaryType="nt:unstructured"
+		                                                 sling:resourceSuperType="etisalat/components/commons/modal-popup-variations/modalBehavior"
+		                                                 sling:resourceType="granite/ui/components/coral/foundation/form/select"
+														 fieldDescription="Select Popup Behavior"
+		                                                 fieldLabel="Popup Behavior"
+		                                                 name="./modalBehavior">
+		                                                 <granite:data
+		                                                     jcr:primaryType="nt:unstructured"
+		                                                     cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+		                                             </modalBehavior>
+		                                         </items>
+		                                         <granite:data
+		                                             jcr:primaryType="nt:unstructured"
+		                                             showhidetargetvalue="openmodalwindow"/>
+		                                     </fragmentlink>
+		                                     <linknewwindow
+		                                         granite:class="linkbehavior-showhide-target"
+		                                         jcr:primaryType="nt:unstructured"
+		                                         sling:resourceType="granite/ui/components/coral/foundation/container">
+		                                         <items jcr:primaryType="nt:unstructured">
+		                                             <buttonlink
+		                                                 jcr:primaryType="nt:unstructured"
+		                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+		                                                 fieldDescription="See All Benefits Link"
+		                                                 fieldLabel="See All Benefits Link"
+		                                                 name="./tileCTALinkNewWindow"
+		                                                 rootPath="/content"/>
+		                                         </items>
+		                                         <granite:data
+		                                             jcr:primaryType="nt:unstructured"
+		                                             showhidetargetvalue="opennewwindow"/>
+		                                     </linknewwindow>
+		                                     <linksamewindow
+		                                         granite:class="linkbehavior-showhide-target"
+		                                         jcr:primaryType="nt:unstructured"
+		                                         sling:resourceType="granite/ui/components/coral/foundation/container">
+		                                         <items jcr:primaryType="nt:unstructured">
+		                                             <buttonlink
+		                                                 jcr:primaryType="nt:unstructured"
+		                                                 sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+		                                                 fieldDescription="See All Benefits Link"
+		                                                 fieldLabel="See All Benefits Link"
+		                                                 name="./tileCTALinkSameWindow"
+		                                                 rootPath="/content"/>
+		                                         </items>
+		                                         <granite:data
+		                                             jcr:primaryType="nt:unstructured"
+		                                             showhidetargetvalue="opensamewindow"/>
+		                                     </linksamewindow>					                        
+                                           <mediaplanlinks
+						                       jcr:primaryType="nt:unstructured"
+						                       jcr:title="Call-To-Action"
+						                       sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+						                       <items jcr:primaryType="nt:unstructured">						                               
+						                          <viewplan
+						                              jcr:primaryType="nt:unstructured"
+						                              sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+						                              fieldDescription="Text that will appear for the view plans button text"
+						                              fieldLabel="View Plan CTA Text"
+						                              name="./viewPlanButtonText"/>
+						                          <viewplanlink
+						                              jcr:primaryType="nt:unstructured"
+						                              sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+						                              fieldDescription="View Plan CTA Link"
+						                              fieldLabel="View Plan CTA Link"
+						                              name="./viewPlanButtonLink"
+						                              rootPath="/content"/>						                                                                
+						                       </items>
+						                   </mediaplanlinks>                                              			                                                              
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </planactions>				                                 
+                </items>
+            </tabs>
+        </items>       
+    </content>
+</jcr:root>

@@ -1,129 +1,175 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-          jcr:primaryType="nt:unstructured"
-          jcr:title="Video"
-          sling:resourceType="cq/gui/components/authoring/dialog">
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Video"
+    sling:resourceType="cq/gui/components/authoring/dialog">
     <content
-            jcr:primaryType="nt:unstructured"
-            sling:resourceType="granite/ui/components/foundation/container">
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
         <layout
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
-                margin="{Boolean}false"/>
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"
+            margin="{Boolean}false"/>
         <items jcr:primaryType="nt:unstructured">
             <column
-                    jcr:primaryType="nt:unstructured"
-                    sling:resourceType="granite/ui/components/foundation/container">
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
                     <disaplaybehavior
-                            granite:class="cq-dialog-dropdown-showhide"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                            defaultValue="video"
-                            fieldLabel="Select Variation"
-                            name="./displayBehavior">
+                        granite:class="cq-dialog-dropdown-showhide"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        defaultValue="video"
+                        fieldLabel="Select Variation"
+                        name="./displayBehavior">
                         <items jcr:primaryType="nt:unstructured">
                             <video
-                                    jcr:primaryType="nt:unstructured"
-                                    text="Video in background"
-                                    value="video"/>
+                                jcr:primaryType="nt:unstructured"
+                                text="Video in background"
+                                value="video"/>
                             <image
-                                    jcr:primaryType="nt:unstructured"
-                                    text="Image in background"
-                                    value="image"/>
+                                jcr:primaryType="nt:unstructured"
+                                text="Image in background"
+                                value="image"/>
+                            <play-inplace
+                                jcr:primaryType="nt:unstructured"
+                                text="Play Video in place"
+                                value="play-inplace"/>
                         </items>
                         <granite:data
-                                jcr:primaryType="nt:unstructured"
-                                cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                            jcr:primaryType="nt:unstructured"
+                            cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
                     </disaplaybehavior>
                     <youtube
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/foundation/form/textfield"
-                            fieldDescription="Enter the video embed URL."
-                            fieldLabel="Youtube Video Embed URL"
-                            name="./youTubeUrl"/>
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/form/textfield"
+                        fieldDescription="Enter the video embed URL."
+                        fieldLabel="Youtube Video Embed URL"
+                        name="./youTubeUrl"/>
                     <video
-                            granite:class="linkbehavior-showhide-target"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        granite:class="linkbehavior-showhide-target"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
                         <items jcr:primaryType="nt:unstructured">
                             <playbuttontext
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                    fieldDescription="Enter the Play Button Text."
-                                    fieldLabel="Play Button Text"
-                                    name="./playButton"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Enter the Play Button Text."
+                                fieldLabel="Play Button Text"
+                                name="./playButton"/>
                             <videolink
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                    fieldDescription="Browse the Video Link URL."
-                                    fieldLabel="Video Link URL"
-                                    name="./videoLink"
-                                    rootPath="/content/dam/etisalat"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Browse the Video Link URL."
+                                fieldLabel="Video Link URL"
+                                name="./videoLink"
+                                rootPath="/content/dam"/>
                             <overlaytext
-                                    jcr:primaryType="nt:unstructured"
-									sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
-                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
-                                    fieldDescription="Enter the Video Overlay Text."
-                                    fieldLabel="Overlay Text"
-                                    name="./overlayText"
-                                    useFixedInlineToolbar="{Boolean}true"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                fieldDescription="Enter the Video Overlay Text."
+                                fieldLabel="Overlay Text"
+                                name="./overlayText"
+                                useFixedInlineToolbar="{Boolean}true"/>
                             <poster
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                    fieldDescription="Browse the poster image."
-                                    fieldLabel="Poster Image"
-                                    name="./poster"
-                                    rootPath="/content/dam/etisalat"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Browse the poster image."
+                                fieldLabel="Poster Image"
+                                name="./poster"
+                                rootPath="/content/dam"/>
                             <buttontext
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                    fieldDescription="Enter the CTA Button Text"
-                                    fieldLabel="CTA Button Text"
-                                    name="./ctaButton"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Enter the CTA Button Text"
+                                fieldLabel="CTA Button Text"
+                                name="./ctaButton"/>
                             <buttonlink
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                    fieldDescription="Enter the CTA Button Link."
-                                    fieldLabel="CTA Button Link"
-                                    name="./ctaLink"
-                                    rootPath="/content/etisalat"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="Enter the CTA Button Link."
+                                fieldLabel="CTA Button Link"
+                                name="./ctaLink"
+                                rootPath="/content/etisalat"/>
                         </items>
                         <granite:data
-                                jcr:primaryType="nt:unstructured"
-                                showhidetargetvalue="video"/>
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="video"/>
                     </video>
                     <image
-                            granite:class="linkbehavior-showhide-target"
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                        granite:class="linkbehavior-showhide-target"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
                         <granite:data
-                                jcr:primaryType="nt:unstructured"
-                                showhidetargetvalue="image"/>
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="image"/>
                         <items jcr:primaryType="nt:unstructured">
                             <file
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-                                    allowUpload="{Boolean}false"
-                                    autoStart="{Boolean}false"
-                                    class="cq-droptarget"
-                                    fieldLabel="Background Image"
-                                    fileNameParameter="./fileName"
-                                    fileReferenceParameter="./fileReference"
-                                    mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
-                                    multiple="{Boolean}false"
-                                    name="./file"
-                                    title="Upload Image Asset"
-                                    uploadUrl="${suffix.path}"
-                                    useHTML5="{Boolean}true"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldLabel="Background Image"
+                                fileNameParameter="./fileName"
+                                fileReferenceParameter="./fileReference"
+                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                multiple="{Boolean}false"
+                                name="./file"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
                             <playicontext
-                                    jcr:primaryType="nt:unstructured"
-                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
-                                    fieldDescription="Enter the Play Icon Text."
-                                    fieldLabel="Play Icon Text"
-                                    name="./playIconText"/>
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                fieldDescription="Enter the Play Icon Text."
+                                fieldLabel="Play Icon Text"
+                                name="./playIconText"/>
                         </items>
                     </image>
+                    <play-inplace
+                        granite:class="linkbehavior-showhide-target"
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            showhidetargetvalue="play-inplace"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <imagefile
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="Drag &amp; drop the image to be used as cover image for the video."
+                                fieldLabel="Cover Image"
+                                fileNameParameter="./imageName"
+                                fileReferenceParameter="./imageReference"
+                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                multiple="{Boolean}false"
+                                name="./coverImage"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                            <playicon
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                allowUpload="{Boolean}false"
+                                autoStart="{Boolean}false"
+                                class="cq-droptarget"
+                                fieldDescription="Drag &amp; drop the play icon image."
+                                fieldLabel="Play Icon"
+                                fileNameParameter="./playIconName"
+                                fileReferenceParameter="./playIconReference"
+                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                multiple="{Boolean}false"
+                                name="./playIcon"
+                                title="Upload Image Asset"
+                                uploadUrl="${suffix.path}"
+                                useHTML5="{Boolean}true"/>
+                        </items>
+                    </play-inplace>
                 </items>
             </column>
         </items>

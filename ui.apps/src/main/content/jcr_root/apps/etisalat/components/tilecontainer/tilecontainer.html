@@ -1,0 +1,28 @@
+<sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer">   
+   <div class="cmp-tilecontainer"
+       data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+       data-placeholder-text="${wcmmode.edit && 'Drag Tile components here' @ i18n}"       
+       id="${container.id}">  
+      <h4 data-sly-test="${properties.tileBoxLayout == 'main-text-grid' && properties.tileTitle}">${properties.tileTitle}</h4>   
+        <sly data-sly-test.tileLayout="${properties.tileBoxLayout}" data-sly-use.tileContainerTemplate="${tileLayout}.html">
+          <sly data-sly-test="${tileLayout == 'non-action-box'}" 
+               data-sly-call="${tileContainerTemplate.nonActionBox @ container=container,properties=properties}" />
+          
+          <sly data-sly-test="${tileLayout == 'context-navigation'}" 
+               data-sly-call="${tileContainerTemplate.contextNav @ container=container,properties=properties}" />
+          
+          <sly data-sly-test="${tileLayout == 'blogpost'}" 
+               data-sly-call="${tileContainerTemplate.blogTile @ container=container,properties=properties}" />
+         
+          <sly data-sly-test="${tileLayout == 'main-text-grid'}" 
+               data-sly-call="${tileContainerTemplate.mainTextGrid @ container=container,properties=properties}" />
+         
+          <sly data-sly-test="${tileLayout == 'tile-box'}"
+               data-sly-call="${tileContainerTemplate.tilebox @ container=container,properties=properties}" />
+               
+          <sly data-sly-test="${tileLayout == 'mediacta'}" 
+               data-sly-call="${tileContainerTemplate.mediaCTA @ container=container,properties=properties}" />
+      </sly>
+      <sly data-sly-test="${wcmmode.edit}" data-sly-resource="${resource.path @ resourceType='core/wcm/components/container/v1/container/new', appendPath='/*', decorationTagName='div', cssClassName='new section'}" />
+   </div>
+</sly>

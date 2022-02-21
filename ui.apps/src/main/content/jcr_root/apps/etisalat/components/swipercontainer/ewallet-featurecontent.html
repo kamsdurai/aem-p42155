@@ -1,0 +1,51 @@
+<template data-sly-template.featureContent="${ @ container,properties}">
+<div class="offers-main-wrap">
+   <div class="container action-head">
+      <h2 data-sly-test="${!wcmmode.edit}">${properties.layoutTitle}</h2>
+      <a data-sly-test="${properties.offerFeatureViewAll}" 
+         data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=properties.offerFeatureViewAllLink}" 
+         class="btn btn-default active ripple-effect hidden-xs" href="${commonlinkmodel.link}">${properties.offerFeatureViewAll}</a>
+   </div>
+   <div data-sly-use.tileModel="com.etisalat.core.models.TileModel" class="container slider-offer hidden-xs">
+      <div class="row">
+         <div data-sly-test="${properties.fileReference}" class="col-sm-6 col-lg-5 offer-content">
+            <sly data-sly-resource="${resource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></sly>
+            <div class="offer-txt extra-pad">
+               <a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}"             
+                  target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"
+                  title="${tileModel.ctatext}">${tileModel.ctatext}</a>
+               <label>${tileModel.validDateText} ${'dd/MM/yyyy' @ format=properties.articleDate}</label>
+            </div>
+         </div>
+         <div class="col-sm-6 col-lg-7 small-tiles">
+            <div class="row">
+               <div class="col-sm-6 col-lg-4 offer-content" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div data-sly-test="${!wcmmode.edit}" class="container slider-offer visible-xs">
+      <div class="${!wcmmode.edit ? 'swiper-container slider-featureOffer swiper-container-horizontal': ''}">
+         <div class="${!wcmmode.edit ? 'swiper-wrapper': ''}">
+            <div class="swiper-slide ${properties.noSwapDesktop ? 'no-swap-desktop-feature' : ''}">
+               <div class="offer-content">
+                  <sly data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></sly>
+                  <div class="offer-txt extra-pad">
+                     <a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}"             
+                        target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"
+                        title="${tileModel.ctatext}">${tileModel.ctatext}</a>
+                     <label>${tileModel.validDateText} ${'dd/MM/yyyy' @ format=properties.articleDate}</label>
+                  </div>
+               </div>
+            </div>
+            <div class="swiper-slide ${properties.noSwapDesktop ? 'no-swap-desktop-feature' : ''}" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+         </div>
+      </div>
+      <div class="container action-footer visible-xs">
+         <a data-sly-test="${properties.offerFeatureViewAll}"
+            data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=properties.offerFeatureViewAllLink}" 
+            class="btn btn-default active ripple-effect" href="${commonlinkmodel.link}">${properties.offerFeatureViewAll}</a>
+      </div>
+   </div>
+</div>
+</template>

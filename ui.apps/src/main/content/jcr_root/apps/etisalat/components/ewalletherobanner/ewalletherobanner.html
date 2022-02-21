@@ -1,0 +1,18 @@
+<div data-sly-use.tileModel="com.etisalat.core.models.TileModel" 
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html" 
+     class="${properties.bannerLayout}">
+
+<sly data-sly-set.coverStyle3Offers="${properties.bannerLayout == 'hero-heaer-01 faq-header no-content no-offer-head no-illustration'? 'cover-style3 back-sm' : ''}" />
+<sly data-sly-set.coverStyle3="${properties.bannerLayout == 'hero-heaer-01 news-header contact-us-header' ? 'cover-style3' : ''}" />
+<sly data-sly-set.coverStyle1="${properties.bannerLayout == 'hero-heaer-01 faq-header offers-head no-illustration' || 'hero-heaer-01 faq-header no-content no-illustration' ? 'cover-style1' : ''}" />
+<sly data-sly-set.coverStyle2="${properties.bannerLayout == 'hero-heaer-01 faq-header about-us' ? 'cover-style2' : ''}" />
+
+<div data-sly-test="${properties['image/fileReference']}" class="cover ${coverStyle3Offers} ${coverStyle3} ${coverStyle2} ${coverStyle1}">
+     <img src="${properties['image/fileReference']}" alt="${properties.bannerAltText}" />
+</div>
+  <sly data-sly-test="${properties.columnOptions == 'one-column'}" data-sly-use.oneColTemplate="onecolumncomponents.html" 
+       data-sly-call="${oneColTemplate.oneColumn @ properties=properties,resource=resource}"></sly>
+  <sly data-sly-test="${properties.columnOptions == 'two-column'}" data-sly-use.twoColTemplate="twocolumncomponents.html" 
+       data-sly-call="${twoColTemplate.twoColumn @ properties=properties,resource=resource}"></sly>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties['leftColComponent']}"></sly>

@@ -71,11 +71,47 @@
                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                                 fieldDescription="Text that will appear for the main product Title."
                                 fieldLabel="Main Product Title"
-                                maxlength="{Long}40"
+                                maxlength="{Long}60"
                                 name="./mainProductTitle"/>
+                            <maintitlestyle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Main Product Title Style"
+                                name="./mainTitleStyle">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <def
+                                        jcr:primaryType="nt:unstructured"
+                                        text="(default)"
+                                        value=""/>
+                                    <h1
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H1"
+                                        value="h1"/>
+                                    <h2
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H2"
+                                        value="h2"/>
+                                    <h3
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H3"
+                                        value="h3"/>
+                                    <h4
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H4"
+                                        value="h4"/>
+                                    <h5
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H5"
+                                        value="h5"/>
+                                    <h6
+                                        jcr:primaryType="nt:unstructured"
+                                        text="H6"
+                                        value="h6"/>
+                                </items>
+                            </maintitlestyle>
                             <maindescription
                                 jcr:primaryType="nt:unstructured"
-								sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
                                 sling:resourceType="cq/gui/components/authoring/dialog/richtext"
                                 fieldDescription="Text that will appear for the main product Description."
                                 fieldLabel="Main Product Description"
@@ -88,14 +124,14 @@
                                 fieldLabel="Build product list using"
                                 name="./productListType">
                                 <items jcr:primaryType="nt:unstructured">
-                                    <dynamic
-                                        jcr:primaryType="nt:unstructured"
-                                        text="Dynamic List"
-                                        value="dynamiclist"/>
                                     <static
                                         jcr:primaryType="nt:unstructured"
                                         text="Static List"
                                         value="staticlist"/>
+                                    <dynamic
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Dynamic List"
+                                        value="dynamiclist"/>
                                 </items>
                                 <granite:data
                                     jcr:primaryType="nt:unstructured"
@@ -111,15 +147,56 @@
                                         sling:resourceType="granite/ui/components/coral/foundation/container"
                                         name="./productItems">
                                         <items jcr:primaryType="nt:unstructured">
+                                          <gridlayout
+                                                jcr:primaryType="nt:unstructured"                                                
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                defaultValue="producttile"
+                                                fieldLabel="Display layout as a"
+                                                name="./tileBoxLayout">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <producttile
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Product Tile"
+                                                        value="producttile"/>
+                                                    <elife
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="ELife Plan Tile"
+                                                        value="elifeplan"/>
+                                                    <devicetile
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Device Tile"
+                                                        value="devicetile"/>
+                                                    <elifeaddonstile
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="ELife AddonsTile"
+                                                        value="elifeaddonstile"/>                                                                                                
+                                                </items>                                                
+                                            </gridlayout>
                                             <slidecheckbox
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
-                                                checked="{Boolean}true"
-                                                fieldDescription="When checked, populate the title with the slider."
+                                                checked="{Boolean}false"
+                                                fieldDescription="When checked, populate the tile with the slider."
                                                 name="./slider"
-                                                text="Activate slider or Not?"
+                                                text="Checked for Enable the slider"
                                                 uncheckedValue="{Boolean}false"
                                                 value="{Boolean}true"/>
+                                            <buttoncheckbox
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                checked="{Boolean}false"
+                                                fieldDescription="When checked, the hide/show button will be visible."
+                                                name="./enableButton"
+                                                text="Checked for Enable the hide/show Button"
+                                                uncheckedValue="{Boolean}false"
+                                                value="{Boolean}true"/>
+                                            <buttonshowhidelabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear on the hide/show button."
+                                                fieldLabel="Hide/Show Button Label"
+                                                maxlength="{Long}50"
+                                                name="./hideShowLabel"/>
                                         </items>
                                     </field>
                                 </items>

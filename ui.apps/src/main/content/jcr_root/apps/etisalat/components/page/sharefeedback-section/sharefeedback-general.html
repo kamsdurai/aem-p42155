@@ -1,0 +1,52 @@
+<!-- model header end -->
+<div class="nv-modal-body p-0">
+  <!--START MAIN SCREEN -->
+  <!-- General -->
+  <div class="row feedback-type long-survey">
+    <div class="col-sm-12">
+      <div class=" mh-main-screen-container d-flex align-items-center justify-content-between">
+        <div class="pr-16">
+          <h2 class="fs-16 m-0">General</h2>
+          <p class="nv-description mt-4">
+            How can we improve our services?
+          </p>
+        </div>
+        <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+          <path d="m4.5 15 7-7-7-7" stroke="#242424" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- website Feedback -->
+  <div class="row feedback-type short-survey">
+    <div class="col-sm-12">
+      <div class="mh-main-screen-container d-flex align-items-center justify-content-between">
+        <div class="mh-main-screen-content pr-16 ">
+          <h2 class="fs-16 m-0">Website Feedback</h2>
+          <p class="nv-description mt-4">
+            Take a short survey to rate your recent interaction with Etisalat.
+          </p>
+        </div>
+        <div class="mh-main-screen-icon">
+          <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+            <path d="m4.5 15 7-7-7-7" stroke="#242424" fill="none" fill-rule="evenodd" stroke-linecap="round"
+                  stroke-linejoin="round" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END MAIN SCREEN -->
+  <div class="row h-100 questions-row">
+    <!--FEEDBACK QUESTIONNAIRE -->
+    <sly>
+      <sly data-sly-include="sharefeedback-section/sharefeedback-one.html"></sly>
+      <sly data-sly-include="sharefeedback-section/sharefeedback-two.html"></sly>
+      <sly data-sly-include="sharefeedback-section/sharefeedback-three.html"></sly>
+      <sly data-sly-include="sharefeedback-section/sharefeedback-four.html"></sly>
+      <sly data-sly-include="sharefeedback-section/sharefeedback-final.html"></sly>
+    </sly>
+  </div>
+</div>
+<!-- model body end -->

@@ -28,36 +28,62 @@
                                         jcr:primaryType="nt:unstructured"
                                         sling:resourceType="granite/ui/components/coral/foundation/container">
                                         <items jcr:primaryType="nt:unstructured">
-                                            <googletitle
+                                            <StoreItems
                                                 jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Google Store Title"
-                                                name="./btnGoogleTitle"/>
-                                            <googledesc
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Google Store Description"
-                                                name="./btnGoogleDesc"/>
-                                            <googlelink
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Google Store Link"
-                                                name="./btnGoogleLink"/>
-                                            <appletitle
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Apple Store Title"
-                                                name="./btnAppleTitle"/>
-                                            <appledesc
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldLabel="Apple Store Description"
-                                                name="./btnAppleDesc"/>
-                                            <applelink
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldLabel="Apple Store Link"
-                                                name="./btnAppleLink"/>
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldDescription="Click on &quot;Add&quot; to add Button store"
+                                                fieldLabel="Add Button Store"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/foundation/form/fieldset"
+                                                    name="./storeitems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <storetitle
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Enter Title for the Button Store"
+                                                            fieldLabel="Title"
+                                                            name="./btnTitle"
+                                                            required="{Boolean}true"/>
+                                                        <icon
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Icon Class Name such as: &quot;fa fa-facebook&quot; ,&quot;icon apple&quot;, &quot;icon android&quot; ,&quot;icon huawei&quot;"
+                                                            fieldLabel="Icon Class Name"
+                                                            name="./icon"/>
+                                                        <file
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            class="cq-droptarget"
+                                                            fieldLabel="Icon Image"
+                                                            fileNameParameter="./fileName"
+                                                            fileReferenceParameter="./fileReference"
+                                                            mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./file"
+                                                            title="Icon Image Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <storedesc
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Enter description for Button Store"
+                                                            fieldLabel="Description"
+                                                            name="./btnDesc"/>
+                                                        <storelink
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Enter the link path"
+                                                            fieldLabel="Link"
+                                                            name="./btnLink"
+                                                            required="{Boolean}true"/>
+                                                    </items>
+                                                </field>
+                                            </StoreItems>
                                         </items>
                                     </column>
                                 </items>

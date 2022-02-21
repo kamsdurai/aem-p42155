@@ -1,0 +1,94 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html">  
+  <sly data-sly-use.parentRes="${resource.parent.path}" data-sly-set.heroBannerClass="${parentRes && 
+   parentRes.sling:resourceType == 'etisalat/components/carousel' ? '' : 'hero-banner-section single-slide-only'}" />
+  <div data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component" 
+       data-sly-test="${properties.heroDisplayBehavior}" class="${!wcmmode.edit ? heroBannerClass : ''}"
+       data-sly-unwrap="${heroBannerClass ? false : true}">
+     <!-- background images -->
+	<div class="hero-bg-images">
+	    <sly data-sly-use.heroImagesTemplate="heroimages.html"
+			             data-sly-call="${heroImagesTemplate.heroImages @ properties=properties}"/>
+	</div>
+	<!-- all hero content -->
+		<div class="hero-content-wrapper ${properties.heroAlignment} ${properties.titleFontColor == 'light-color' ? 'light-color' : ''}">
+		  <!-- banner click area  -->
+		  <div class="container">
+		    <!-- hero details div contains -> video link - headings - description - thumbnails - offers etc in below container  -->
+		    <div class="hero-details">		     
+		       <sly data-sly-test.heroBannerCTALink="${properties.heroBannerImageLinkURL}" 
+	               data-sly-use.heroBannerLink="${'com.etisalat.core.models.CommonLinkModel' @link=heroBannerCTALink}"/>
+		      	<div class="hero-bg-cta" data-label="${heroBannerLink.link}"></div>
+				<div data-sly-test="${properties.heroDisplayBehavior == 'video' && properties.youTubeUrl}" class="ele-margin hero-play-video">
+					<sly data-sly-use.heroVideoModelTemplate="herovideo.html"
+				             data-sly-call="${heroVideoModelTemplate.heroVideoModel @ component=component,properties=properties}"/>
+				</div>
+		      <div data-sly-test="${properties.pretitle && properties.tagAlignment == 'beforetitle'}" class="ele-margin hero-offer-tags-wrapper ${properties.tagColor}">
+			      <sly data-sly-use.tagObj="${resource.path}" data-sly-list.tagItems="${tagObj.listChildren}">
+			         <sly data-sly-test="${tagItems.name == 'tagline'}">
+			               <img data-sly-test="${tagItems.fileReference}" class="icon" src="${tagItems.fileReference}" alt=""/>
+			         </sly>	      
+			      </sly>	      	        
+		        <div class="text"> ${properties.pretitle}</div>
+		      </div>
+				<div data-sly-test="${properties.backToLinkLbl}" class="go-back">
+				<sly data-sly-test.customLink="${properties.backToLinkURL}" 
+	                data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+					<div class="third-action-wrapper action-link">
+						<a data-sly-test="${commonlinkmodel.link}" href="${commonlinkmodel.link}" class="link">${properties.backToLinkLbl}</a>
+					</div>
+				</div>
+		      <div data-sly-test="${properties.heroTitle}" class="ele-margin hero-title ${properties.titleFontStyle}">
+		        <h2>${properties.heroTitle}</h2>
+		      </div>
+		      <div data-sly-test="${properties.pretitle && properties.tagAlignment == 'aftertitle'}" class="ele-margin hero-offer-tags-wrapper ${properties.tagColor}">
+			      <sly data-sly-use.tagObj="${resource.path}" data-sly-list.tagItems="${tagObj.listChildren}">
+			         <sly data-sly-test="${tagItems.name == 'tagline'}">
+			               <img data-sly-test="${tagItems.fileReference}" class="icon" src="${tagItems.fileReference}" alt=""/>
+			         </sly>	      
+			      </sly>	      	        
+		        <div class="text"> ${properties.pretitle}</div>
+		      </div>
+			  <div class="ele-margin hero-thumbnails" data-sly-test="${properties.thumbnailText}">
+			  <sly data-sly-use.thumbnailObj="${resource.path}" data-sly-list.thumbnailItems="${thumbnailObj.listChildren}">
+			     <div data-sly-test="${thumbnailItems.name == 'thumbnailItems'}" data-sly-repeat.thumbItem="${thumbnailItems.listChildren}" class="thumbnail-icon">
+			       <img data-sly-test="${thumbItem.fileReference}" src="${thumbItem.fileReference}" alt=""/>		    
+			     </div>
+			  </sly>			
+				<div data-sly-test="${properties.thumbnailText}" class="thumbnail-text">
+				  ${properties.thumbnailText}
+				</div>
+			  </div>
+		      <div data-sly-test="${properties.jcr:description}" class="ele-margin hero-description">
+	                ${properties.jcr:description @ context = 'html'}
+	          </div>          
+		      <div data-sly-test="${properties.bannerCTATitle && properties.linkBehavior != 'openmodalwindow'}" class="ele-margin hero-cta">
+		        <sly data-sly-test.heroCTALink="${properties.linkBehavior == 'opensamewindow'? properties.ctaSameWindowLink : properties.ctaNewWindowLink}" 
+	               data-sly-use.heroModelLink="${'com.etisalat.core.models.CommonLinkModel' @link=heroCTALink}"/>
+		        <a href="${heroModelLink.link}" target="${properties.linkBehavior == 'opennewwindow'?'_blank':'_self'}" class="btn ${properties.ctaColor} ripple-effect"> ${properties.bannerCTATitle} </a>
+		      </div>	      
+			   <sly data-sly-use.heroCTAModelTemplate="modalpopup.html"
+				             data-sly-call="${heroCTAModelTemplate.ctaModelPopup @ component=component,properties=properties}"/>          		 
+		    </div>
+			<!--hero call to action sign in start -->
+			<div data-sly-test="${properties.heroImageTitle || properties.heroImageDesc}" class="hero-images-call-to-action-section">
+				<div class="container">
+					<div class="call-to-action-box">
+						<h3 data-sly-test="${properties.heroImageTitle}" class="heading">${properties.heroImageTitle} </h3>
+						<div data-sly-test="${properties.heroImageDesc}" class="description"> ${properties.heroImageDesc @ context =
+							'html'}</div>
+					    <sly data-sly-test.heroImageCTALink="${properties.heroImageLinkURL}" 
+	               data-sly-use.heroImageLink="${'com.etisalat.core.models.CommonLinkModel' @link=heroImageCTALink}"/>
+					    <a href="${heroImageLink.link}" data-sly-test="${properties.heroImageCTATitle && heroImageLink.link}" 
+					         class="btn-text  learn-more" title="${properties.heroImageCTATitle}">
+					      ${properties.heroImageCTATitle}</a>                                                           
+					</div>
+				</div>
+			</div>
+			<!--hero call to action sign in ends -->
+		  </div>
+		</div>	
+    </div>
+</sly>     
+
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.heroDisplayBehavior}"></sly>

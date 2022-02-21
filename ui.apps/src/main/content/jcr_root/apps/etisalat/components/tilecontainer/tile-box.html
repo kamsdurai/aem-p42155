@@ -1,0 +1,89 @@
+<template data-sly-template.tilebox="${ @ container,properties}">
+
+	<!--/* variation for three tiles */-->
+	<sly data-sly-test="${properties.tileBoxVariation == '3-tile-boxes'}">
+		<sly data-sly-set.oneTile="${container.items.size == 1 ? 'col-md-12' : ''}"></sly>
+		<sly data-sly-test.twoTile="${container.items.size == 2 ? 'col-md-6' : ''}"></sly>
+		<sly data-sly-test.threeTile="${container.items.size >= 3 ? 'col-md-4' : ''}"></sly>
+
+		<div class="container">
+			<div class="row">
+				<div class="tile-boxes-section ${container.items.size == 1 ? 'horizontal-tile single-tile' : ''}">
+					<h4 data-sly-test="${properties.tileTitle}">${properties.tileTitle}</h4>
+					<div class="tileBoxMobCarWrap">
+						<div class="tileboxCarousal">
+							<div class="${!wcmmode.edit ? 'swiper-wrapper' : '' }">
+								<!-- Slides Start-->
+								<div class="${!wcmmode.edit ? 'swiper-slide' : ''} col-xs-12 ${oneTile}${twoTile}${threeTile}" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+								<!-- Slides End-->
+							</div>
+							<div class="${!wcmmode.edit ? 'table-swiper-scrollbar swiper-scrollbar' : ''} ${properties.swiperDisplayBehavior == 'false' ? 'scrollbar--hidden' : '' }"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</sly>
+
+	<!--/* variation for four tiles */-->
+	<sly data-sly-test="${properties.tileBoxVariation == '4-tile-boxes'}">
+		<sly data-sly-set.oneTile="${container.items.size == 1 ? 'one-slides' : ''}"></sly>
+		<sly data-sly-test.twoTile="${container.items.size == 2 ? 'two-slides' : ''}"></sly>
+		<sly data-sly-test.threeTile="${container.items.size == 3 ? 'three-slides' : ''}"></sly>
+		<sly data-sly-test.fourTile="${container.items.size == 4 ? 'four-slides' : ''}"></sly>
+		<sly data-sly-test.fourPlusTiles="${container.items.size > 4 ? 'four-plus-slides' : ''}"></sly>
+
+		<div class="tile-boxes-section ${oneTile} ${twoTile} ${threeTile} ${fourTile} ${fourPlusTiles} with-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div data-sly-test="${properties.tileTitle}" class="tile-boxes-title-wrap">
+							<h2>${properties.tileTitle}</h2>
+						</div>
+					</div>
+				</div>
+				<div class="${!wcmmode.edit ? 'swiper-container swiper-container-horizontal' : ''}">
+					<div class="${!wcmmode.edit ? 'swiper-wrapper' : ''}">
+						<!-- Slides Start-->
+						<div class="${!wcmmode.edit ? 'swiper-slide' : ''}" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+						<!-- Slides End-->
+					</div>
+					<div class="${!wcmmode.edit ? 'scrollbar swiper-scrollbar' : ''} ${properties.swiperDisplayBehavior == 'false' ? 'scrollbar--hidden' : '' }"></div>
+				</div>
+			</div>
+		</div>
+	</sly>
+
+	<!--/* variation for grid tiles */-->
+	<sly data-sly-test="${properties.tileBoxVariation == 'grid-tile-box'}">
+
+		<div class="tile-boxes-4-0 with-main-text ${container.items.size == 1 ? 'with-single-tile' : ''}">
+			<div class="container">
+				<sly data-sly-test="${properties.mainGridTitle || properties.gridtileboxDesc}">
+					<div class="content-wrapper">
+						<div class="content">
+							<div data-sly-test="${properties.mainGridTitle}" class="wst-main-headings">
+								<h3>${properties.mainGridTitle}</h3>
+							</div>
+							<div  data-sly-test="${properties.gridtileboxDesc}" class="paragraph-styling ul-list-cms">
+								<div class="p2">${properties.gridtileboxDesc @ context="html"}</div>
+							</div>
+						</div>
+						<div class="tiles-wrapper tile-box-main-text">
+							<!--/* tilesbox Start */-->
+							<div class="tile" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName=wcmmode.edit ? 'div' : ''}"></div>
+							<!--/* tilesbox End */-->
+						</div>
+					</div>
+				</sly>
+				<sly data-sly-test="${!properties.mainGridTitle || !properties.gridtileboxDesc}">
+					<div class="tiles-wrapper tile-box-main-text">
+						<!--/* tilesbox Start */-->
+						<div class="tile" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName=wcmmode.edit ? 'div' : ''}"></div>
+						<!--/* tilesbox End */-->
+					</div>
+				</sly>
+			</div>
+		</div>
+	</sly>
+</template>

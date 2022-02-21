@@ -1,6 +1,8 @@
 <sly  data-sly-use.template="core/wcm/components/commons/v1/templates.html"
       data-sly-use.footer="com.etisalat.core.models.Footer"></sly>
-
+	  
+<sly data-sly-test="${!pageProperties.hidefooter}">
 <sly data-sly-use.footerTemplate="/apps/etisalat/components/global/footer/footerDetails.html"
      data-sly-call="${footerTemplate.footerDetails @ properties=properties,footer=footer}">
+</sly>
 </sly>

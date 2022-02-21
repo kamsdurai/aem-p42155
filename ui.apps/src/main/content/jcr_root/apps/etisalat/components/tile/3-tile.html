@@ -1,0 +1,23 @@
+<template  data-sly-template.threeTile="${ @ tileModel,properties}">
+  <div class="tile-box-tile">
+   <div class="img-cover" data-sly-test="${properties['image/fileReference']}">
+      <div class="cover lazyloaded" data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+   </div>
+   <div class="tile-box-body">
+      <h2 data-sly-element="${properties.titleType}">${tileModel.tiletitle}</h2>
+      ${tileModel.text @ context='html'}                        
+   </div>
+   <sly data-sly-test="${properties.tileLinkBehavior != 'openmodalwindow'}">
+      <div data-sly-test="${tileModel.ctatext}" class="learn-more-wrap">
+         <a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}" 
+            class="btn-text btn-green learn-more"
+            target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"
+            title="${tileModel.ctatext}">${tileModel.ctatext}</a>
+      </div>
+   </sly>
+   <sly data-sly-test="${properties.tileLinkBehavior == 'openmodalwindow'}" 
+      data-sly-use.tileModalTemplate="tilemodal.html"
+      data-sly-call="${tileModalTemplate.modal @ tileModel=tileModel,properties=properties,resource=resource,wcmmode=wcmmode}">                
+   </sly>
+</div>
+</template>

@@ -1,4 +1,4 @@
-<sly data-sly-test="${properties.crouselDetailPosition != 'top'}">
+<sly data-sly-test="${properties.crouselDetailPosition == 'left'}">
    <sly data-sly-use.carouselRightTemplate="/apps/etisalat/components/promotionalcarousel/leftcarouseldetails.html"
       data-sly-call="${carouselRightTemplate.carousel @ properties=properties}">
    </sly>
@@ -6,5 +6,11 @@
 <sly data-sly-test="${properties.crouselDetailPosition == 'top'}">
    <sly data-sly-use.carouselTopTemplate="/apps/etisalat/components/promotionalcarousel/topcarouseldetails.html"
       data-sly-call="${carouselTopTemplate.carousel @ properties=properties}">
+   </sly>
+</sly>
+
+<sly data-sly-test="${properties.crouselDetailPosition == 'leftsingletile'}">
+   <sly data-sly-use.singleCarouselLeftTemplate="/apps/etisalat/components/promotionalcarousel/leftsinglecarousel.html"
+      data-sly-call="${singleCarouselLeftTemplate.singleCarousel @ properties=properties}">
    </sly>
 </sly>

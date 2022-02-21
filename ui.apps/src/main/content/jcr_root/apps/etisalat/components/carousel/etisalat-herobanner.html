@@ -1,0 +1,36 @@
+<template data-sly-template.hero="${ @ carousel,properties}">
+<div id="${carousel.id}" class="${!wcmmode.edit ? 'hero-banner-section' : ''} ${carousel.items.size > 1 ? 'multi-slides' : 'single-slide-only'}">
+    <div class="${!wcmmode.edit ? 'swiper-hero-container' : ''}">
+        <div class="${!wcmmode.edit ? 'swiper-wrapper' : ''}">
+            <div role="tabpanel"
+             data-sly-repeat.item="${carousel.items}"
+             data-sly-resource="${item.name @ decorationTagName='div'}"
+             id="${item.id}-tabpanel"
+             aria-labelledby="${item.id}-tab"
+             aria-roledescription="slide"
+             aria-label="${'Slide {0} of {1}' @ format=[itemList.count, carousel.items.size], i18n}"
+             class="swiper-slide">
+            </div>
+        </div>
+		<div class="swiper-pagination hidden-md hidden-lg"></div>
+        <div class="hero-prev" data-sly-test="${carousel.items.size > 1}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <g fill="none" fill-rule="evenodd">
+                    <rect width="48" height="48" fill="#FFF" fill-rule="nonzero" opacity=".2" rx="24" />
+                    <path stroke="#B2B2B2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 4.5L8 11.5 1 4.5" transform="rotate(90 8 24)" />
+                </g>
+            </svg>
+        </div>
+        <div class="hero-next" data-sly-test="${carousel.items.size > 1}">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                <g fill="none" fill-rule="evenodd">
+                    <rect width="48" height="48" fill="#FFF" fill-rule="nonzero" opacity=".2" rx="24" />
+                    <path stroke="#B2B2B2" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 4.5L8 11.5 1 4.5" transform="matrix(0 1 1 0 16 16)" />
+                </g>
+            </svg>
+        </div>
+     </div>
+</div>
+</template>

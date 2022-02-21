@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:showOnCreate="{Boolean}false"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Navigation"
+    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <hidemegamenu
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="When checked, It will hide the Mega Menu from Header on the Specific Page"
+                    name="./hideMegaMenu"
+                    text="Hide Mega Menu from Header Navigation "
+                    uncheckedValue="{Boolean}false"
+                    value="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="hideMegaMenu"/>
+                </hidemegamenu>
+                <hidefooter
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                    fieldDescription="When checked, It will hide the footer on the Specific Page"
+                    name="./hidefooter"
+                    text="Hide footer from Page"
+                    uncheckedValue="{Boolean}false"
+                    value="{Boolean}true">
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="hidefooter"/>
+                </hidefooter>
+                <showsharefeedback
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                        fieldDescription="When checked, It will show the Share Feedback section on the specific Page"
+                        name="./showsharefeedback"
+                        text="Show Share Feedback Section on Page"
+                        uncheckedValue="{Boolean}false"
+                        value="{Boolean}true">
+                    <granite:data
+                            jcr:primaryType="nt:unstructured"
+                            cq-msm-lockable="showsharefeedback"/>
+                </showsharefeedback>
+            </items>
+        </column>
+    </items>
+</jcr:root>

@@ -8,4 +8,8 @@
    <sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'image'}">
       <sly data-sly-include="video-overlay-on-image.html"></sly>
    </sly>
+
+<sly data-sly-test="${properties.displayBehavior && properties.displayBehavior == 'play-inplace'}">
+      <sly data-sly-include="video-inplace.html"></sly>
+   </sly>
 </div>

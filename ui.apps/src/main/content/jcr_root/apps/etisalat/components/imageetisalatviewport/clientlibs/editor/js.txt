@@ -1,0 +1,3 @@
+#base=js
+dropdown-showhide-imagetab.js
+

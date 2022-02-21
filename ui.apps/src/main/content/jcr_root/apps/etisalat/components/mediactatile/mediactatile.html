@@ -1,0 +1,66 @@
+<sly data-sly-use.tileModel="com.etisalat.core.models.TileModel"          
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html">  
+   <sly data-sly-test="${tileModel.tiletitle}">
+       <a data-sly-test="${properties.tileLinkBehavior != 'openmodalwindow'}" 
+          href=" ${properties.tileLinkBehavior=='opensamewindow' ? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}"
+		  class="link-cover"
+		  target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"></a>
+	  <div class="media-content">
+	    <div data-sly-test="${properties['image/fileReference']}" class="img-container">	
+	       <div class="cover" data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>	        	              	        
+	    </div>
+	    <div class="body-wrapper">
+	      <div class="body">
+	        <div data-sly-test="${tileModel.tiletitle}" class="wst-main-headings">
+	          <h4 data-sly-element="${properties.titleType}">${tileModel.tiletitle}</h4>
+	        </div>
+            <div data-sly-test="${properties.eventDate}" class="event">
+                 <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+					  <g fill="none" fill-rule="evenodd">
+					    <g>
+					      <g>
+					        <g>
+					          <g>
+					            <g>
+					              <g transform="translate(-544 -2764) translate(0 1266) translate(120 1152) translate(408) translate(16 266) translate(0 80)">
+					                <rect width="48" height="48" fill="#F7F8F4" fill-rule="nonzero" rx="8" />
+					                <path d="M12 12H36V36H12z" />
+					                <g>
+					                  <path stroke="#777E86" stroke-linecap="round" stroke-linejoin="round" d="M16.077 23.41H2.667c-1.106 0-2-.896-2-2V5.333c0-1.104.894-2 2-2H21.41c1.104 0 2 .896 2 2V21.41c0 1.104-.896 2-2 2" transform="translate(12 12)" />
+					                  <path stroke="#8BBD29" stroke-linecap="square" d="M23.411 10.914L0.667 10.914" transform="translate(12 12)" />
+					                  <path stroke="#8BBD29" stroke-linecap="round" stroke-linejoin="round" d="M6.705 6.708L6.705.727M17.369 6.706L17.372.667" transform="translate(12 12)" />
+					                </g>
+					              </g>
+					            </g>
+					          </g>
+					        </g>
+					      </g>
+					    </g>
+					  </g>
+					</svg>
+                 </div>
+                 <div class="draw-details">
+                     <div data-sly-test="${properties.nextDrawTitle}" class="next-draw">${properties.nextDrawTitle}</div>
+                     <div data-sly-test="${properties.eventDate}" class="date">${'MMM dd, yyyy' @ format=properties.eventDate}</div>
+                 </div>
+             </div>
+	        <div class="paragraph-styling">
+	          <div class="p2"> ${tileModel.text @ context='html'} </div>
+	        </div>
+	      </div>
+	      <sly data-sly-test="${properties.tileLinkBehavior != 'openmodalwindow'}">
+	        <div data-sly-test="${tileModel.ctatext}" class="third-action-wrapper action-link">
+	          <a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}" 
+	          class="link" target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}">${tileModel.ctatext}</a>
+	        </div>
+	      </sly>
+	      <sly data-sly-test="${properties.tileLinkBehavior == 'openmodalwindow'}" 
+	        data-sly-use.tileModalTemplate="/apps/etisalat/components/tile/tilemodal.html" 
+	        data-sly-call="${tileModalTemplate.modal @ tileModel=tileModel,properties=properties,resource=resource,wcmmode=wcmmode}"></sly>
+	    </div>
+	  </div>	  
+   </sly>     
+</sly>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = !tileModel.tiletitle}"></sly>

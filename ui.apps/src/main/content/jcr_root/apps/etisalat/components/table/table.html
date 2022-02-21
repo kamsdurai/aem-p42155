@@ -1,0 +1,25 @@
+<div data-sly-use.tableModel="com.etisalat.core.models.TableModel"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     id="${component.id}"
+     class="cmp-text custom-datatable ${properties.enablespecificationstable ? 'specification-with-striped': ' '} ${properties.enableSeeMore ? 'show-more-less': ' '} ${properties.pageLimit ? 'table-with-pagination' : ''} ${properties.tableSource == 'csv' ? 'tables-etisalat' : ''}" data-page-limit="${properties.pageLimit}" data-column-sort="${tableModel.sorting}"  data-class="${properties.cssClass}" data-column-filter="[]" data-mobile-view="${properties.mobileView}" data-see-more="${properties.enableSeeMore}" data-no-search-results-text="${properties.noSearchResultsText ? properties.noSearchResultsText : 'No matching records found'}">
+   <!-- [When source is RTE or Simple CSV starts] -->
+   <sly data-sly-test.isRte="${properties.tableSource == 'rte'}"></sly>
+   <sly data-sly-test.isSimplecsv="${properties.tableSource == 'simplecsv'}"></sly>
+   <sly data-sly-test="${isRte || isSimplecsv}">
+      <sly data-sly-use.manualCsvSimpleTemplate="manual-simplecsv.html" data-sly-call="${manualCsvSimpleTemplate.manualSimplecsv @ tableModel=tableModel}"></sly>
+   </sly>
+   <!-- [When source is RTE or Simple CSV ends] -->
+   <!-- [When source is CSV with Sorting and filtering starts] -->
+   <sly data-sly-test="${properties.tableSource == 'csv'}" data-sly-use.csvTemplate="csv.html" data-sly-call="${csvTemplate.csv @ tableModel=tableModel}"></sly>
+   <!-- [When source is CSV with Sorting and filtering ends] -->
+   <div class="data-table__info"></div>
+   <div class="data-table__pagination"></div>
+   <sly data-sly-test="${properties.enableSeeMore}">
+     <span class="see-more-table">
+     <span class="see-more">${properties.seeMoreText}</span>
+     <span class="see-less">${properties.seeLessText}</span>
+    </span>
+   </sly>
+</div>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !text, classAppend='cmp-text'}"></sly>

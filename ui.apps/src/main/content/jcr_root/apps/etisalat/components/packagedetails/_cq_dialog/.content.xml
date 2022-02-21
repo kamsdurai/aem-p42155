@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Package Details"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <packagedata
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Package Data"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <packagevariation
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                defaultValue="pack-without-text"
+                                                fieldLabel="Select Package Variation"
+                                                name="./packageVariation">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <packwithouttext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Package without text"
+                                                        value="pack-without-text"/>
+                                                    <packwithtext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Package with text"
+                                                        value="pack-with-text"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".packagevariation-showhide-target"/>
+                                            </packagevariation>
+                                            <packwithtext
+                                                granite:class="packagevariation-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <packtextitems
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        validation="multifield-max-4"
+                                                        fieldLabel="Add Package Text Item(s)">
+                                                        <field
+                                                            granite:class="coral-Well"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./packTextItems">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <file
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                    allowUpload="{Boolean}false"
+                                                                    autoStart="{Boolean}false"
+                                                                    class="cq-droptarget"
+                                                                    fieldLabel="Package Image"
+                                                                    fileNameParameter="./fileName"
+                                                                    fileReferenceParameter="./fileReference"
+                                                                    mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                                    multiple="{Boolean}false"
+                                                                    name="./file"
+                                                                    required="{Boolean}true"
+                                                                    title="Package Image Asset"
+                                                                    uploadUrl="${suffix.path}"
+                                                                    useHTML5="{Boolean}true"/>
+                                                                <tiletitle
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Add Title"
+                                                                    fieldLabel="Title"
+                                                                    name="./tiletitle"
+                                                                    required="{Boolean}true"/>
+                                                                <text
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                                    sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                    fieldDescription="Add Description"
+                                                                    fieldLabel="Description"
+                                                                    name="./text"
+                                                                    required="{Boolean}true"
+                                                                    useFixedInlineToolbar="{Boolean}true"/>
+                                                                <imageresourcehidden
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                    name="./sling:resourceType"
+                                                                    value="etisalat/components/image"/>
+                                                            </items>
+                                                        </field>
+                                                        <granite:data
+							                              jcr:primaryType="nt:unstructured"
+							                              max-items="4"/>
+                                                    </packtextitems>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="pack-with-text"/>
+                                            </packwithtext>
+                                            <packwithouttext
+                                                granite:class="packagevariation-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <packitems
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        validation="multifield-max-4"
+                                                        fieldLabel="Add Package Image Item(s)">
+                                                        <field
+                                                            granite:class="coral-Well"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./packImageItems">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <file
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                                    allowUpload="{Boolean}false"
+                                                                    autoStart="{Boolean}false"
+                                                                    class="cq-droptarget"
+                                                                    fieldLabel="Package Image"
+                                                                    fileNameParameter="./fileName"
+                                                                    fileReferenceParameter="./fileReference"
+                                                                    mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                                    multiple="{Boolean}false"
+                                                                    name="./file"
+                                                                    required="{Boolean}true"
+                                                                    title="Package Image Asset"
+                                                                    uploadUrl="${suffix.path}"
+                                                                    useHTML5="{Boolean}true"/>
+                                                                <imageresourcehidden
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                                    name="./sling:resourceType"
+                                                                    value="etisalat/components/image"/>
+                                                            </items>
+                                                        </field>
+                                                        <granite:data
+							                              jcr:primaryType="nt:unstructured"
+							                              max-items="4"/>
+                                                    </packitems>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="pack-without-text"/>
+                                            </packwithouttext>
+                                            <footernote
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                                fieldDescription="Footer Note"
+                                                fieldLabel="Footer Note"
+                                                name="./footerNote"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </packagedata>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

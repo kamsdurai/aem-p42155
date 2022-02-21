@@ -1,0 +1,15 @@
+<sly data-sly-use.tileModel="com.etisalat.core.models.TileModel" 
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html">  
+ <div data-sly-test="${properties['image/fileReference']}" class="${tileModel.tileBoxContainerLayout == 'ewallet-offer' ? 'single-offer-row' : 'offer-content'}">
+      <sly data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></sly>
+       <div class="offer-txt">
+           <a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}"             
+            target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"
+            title="${tileModel.ctatext}">${tileModel.ctatext}</a>
+           
+           <label>${tileModel.validDateText} ${'dd/MM/yyyy' @ format=properties.articleDate}</label>
+      </div>
+ </div>   
+</sly>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties['image/fileReference']}"></sly>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Global Footprint tile"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        granite:class="cmp-teaser__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:hideChildren="[text,actions]">
+                    <footprintdetails
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Global Footprint Tile Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <maintitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A Country Title will appear."
+                                                fieldLabel="Global Country Title"
+                                                name="./countryTitle"/>
+                                            <svgimage
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <file
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                        allowUpload="{Boolean}false"
+                                                        autoStart="{Boolean}false"
+                                                        class="cq-droptarget"
+                                                        fieldLabel="Country Flag Icon SVG"
+                                                        fileNameParameter="./fileName"
+                                                        fileReferenceParameter="./fileReferenceIcon"
+                                                        mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                        multiple="{Boolean}false"
+                                                        name="./file"
+                                                        title="Upload Image Asset"
+                                                        uploadUrl="${suffix.path}"
+                                                        useHTML5="{Boolean}true"/>
+                                                </items>
+                                            </svgimage>
+                                            <brandtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A Country Brand titlewill appear."
+                                                fieldLabel="Brand Title"
+                                                name="./brandtitle"/>
+                                            <brand
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A Country Brand will appear."
+                                                fieldLabel="Brand Name"
+                                                name="./brand"/>
+                                            <sincetitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Year from since title will appear."
+                                                fieldLabel="Since From Title"
+                                                name="./sincetitle"/>
+                                            <since
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Year from since will appear."
+                                                fieldLabel="Since From"
+                                                name="./since"/>
+                                            <populationtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The population Title for country will appear on tile data."
+                                                fieldLabel="Population Title"
+                                                name="./populationtitle"/>
+                                            <population
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="The population of country will appear on tile data."
+                                                fieldLabel="Population"
+                                                name="./population"/>
+                                            <moreinfotitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A more info Title will appear."
+                                                fieldLabel="More Info Title"
+                                                name="./moreInfoTitle"/>
+                                            <moreinfollink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="More Information Link."
+                                                fieldLabel="More Info Link"
+                                                name="./moreInfoLink"
+                                                rootPath="/content"/>
+                                            <linkTarget
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="Check to open link in new tab"
+                                                name="./linkTarget"
+                                                text="Open link in new tab?"
+                                                uncheckedValue="_self"
+                                                value="_blank"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </footprintdetails>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

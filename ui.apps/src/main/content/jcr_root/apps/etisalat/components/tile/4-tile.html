@@ -1,0 +1,27 @@
+<template data-sly-template.fourTile="${ @ tileModel,properties}">
+     <div class="tile-boxes-image-wrapper" data-sly-test="${properties['image/fileReference']}">
+         <div class="cover">            
+             <div data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>        
+         </div>
+      </div>
+      <div class="tile-box-body">
+         <div class="tile-boxes-title-small">
+            <h3 data-sly-element="${properties.titleType}">${tileModel.tiletitle}</h3>
+         </div>
+         <div class="tile-box-description">
+            <p>${tileModel.text @ context='html'}</p>
+         </div>         
+          <sly data-sly-test="${properties.tileLinkBehavior != 'openmodalwindow'}">
+	         <div data-sly-test="${tileModel.ctatext}" class="learn-more-wrap">
+	            <a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}" 
+	               class="btn-text btn-green learn-more"
+	               target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"
+	               title="${tileModel.ctatext}">${tileModel.ctatext}</a>
+	         </div>
+         </sly>
+         <sly data-sly-test="${properties.tileLinkBehavior == 'openmodalwindow'}" 
+              data-sly-use.tileModalTemplate="tilemodal.html"
+              data-sly-call="${tileModalTemplate.modal @ tileModel=tileModel,properties=properties,resource=resource,wcmmode=wcmmode}">                
+         </sly>
+      </div>
+</template>

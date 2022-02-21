@@ -1,0 +1,85 @@
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.imageTemplate="image.html" 
+     data-sly-use.tileModel="com.etisalat.core.models.TileModel" 
+     data-sly-test="${properties.fileReference}"
+     data-sly-set.moduleClass="${(properties['plan/fileReference'] || properties.excText || properties.seeAllLabel) ? 'cms-module-4-0' : ''}"
+     class="media-cta-module-section ${moduleClass} ${properties['image/fileReference'] ? 'with-background-image' : ''}">
+     <!-- main background image  -->
+    <div data-sly-test="${properties['image/fileReference']}" class="background-image">
+        <div class="cover">
+                <div class="lazyloaded" data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>                             
+        </div>
+    </div>
+    <div class="container">
+        <div class="mod-wrap">
+            <div class="mod-img">
+                <div class="cover">
+                     <sly data-sly-call="${imageTemplate.image @ teaser=teaser}"></sly>
+                </div>
+            </div>
+            <div class="mod-content">
+                <div class="content-top">
+                    <div data-sly-test="${properties.mediaSubTitle}" class="media-cta-4-small-title">${properties.mediaSubTitle}</div>
+                    <div data-sly-test="${properties.mediaCTATitle}" class="media-cta-4-title">
+                       <h2 data-sly-element="${properties.titleType}">${properties.mediaCTATitle}</h2>
+                    </div>                    
+                    <!-- flag icon and title  -->
+                    <div data-sly-test="${properties['plan/fileReference'] || properties.excText}" class="media-cta-4-lists">
+                        <ul class="flag-icon">
+                            <li>
+                                <span data-sly-test="${properties['plan/fileReference']}">
+                                    <img src="${properties['plan/fileReference']}" alt="">  
+                                </span>
+                                ${properties.excText}
+                            </li>
+                        </ul>
+                    </div>                    
+                    <div class="media-cta-4-desc media-cta-4-lists"> 
+                       ${properties.text @ context='html'}
+                       <ul data-sly-test="${properties['smile/fileReference'] || properties.smileText}" class="smiles-icon">
+                            <li>
+                                <span data-sly-test="${properties['smile/fileReference']}">
+                                    <img src="${properties['smile/fileReference']}" alt="">
+                                </span>
+                                 ${properties.smileText}
+                            </li>
+                        </ul>
+                    </div>
+
+                    <sly data-sly-test="${properties.tileLinkBehavior != 'openmodalwindow'}">
+			         <div data-sly-test="${tileModel.ctatext}" class="third-action-wrapper action-link">
+			           <a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}" 
+			           class="link" target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}">${tileModel.ctatext}</a>
+			         </div>
+			        </sly>
+			        <sly data-sly-use.mediaCTATemplate="modalpopup.html"
+				             data-sly-call="${mediaCTATemplate.ctaModelPopup @ component=component,properties=properties}"/>
+
+                    <div data-sly-test="${properties.autoRenewalText}" class="paragraph-styling">
+                        <div class="p2">
+                            <p>${properties.autoRenewalText}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-bottom">                    
+                    <div class="media-cta-4-price ${properties.priceFontColor}">
+                        <div data-sly-test="${properties.fromText}" class="from"> ${properties.fromText} </div>
+                        <div class="price">
+                            <div data-sly-test="${properties.productPrice}" class="value">${properties.productPrice}</div>
+                            <div data-sly-test="${properties.productCurrency}" class="aed">${properties.productCurrency}</div>
+                        </div>
+                    </div>
+                    <div data-sly-test="${properties.viewPlanButtonText}" class="media-cta-4-btn">
+                     <sly data-sly-test.planCTALink="${properties.viewPlanButtonLink}" 
+	               data-sly-use.viewPlanCTALink="${'com.etisalat.core.models.CommonLinkModel' @link=planCTALink}"/>
+                        <a href="${viewPlanCTALink.link}" class="btn btn-green ripple-effect"> ${properties.viewPlanButtonText}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</div>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.fileReference}"></sly>

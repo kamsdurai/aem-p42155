@@ -1,0 +1,24 @@
+<sly data-sly-use.model="com.etisalat.core.models.HeroLinkSection" data-sly-test.mylist="${model.heroLinkSectionList}">
+   <div class="links-wrapper ${mylist.size == 2 ? 'config-section-column' : ''}" data-behaviour="${properties.heroLinksSectionBehaviour}" id="${properties.heroLinksSectionBehaviour}-wrapper">
+      <div class="row">
+         <div class="col-xs-12">
+            <div class="hero-links-secton show-hide show-span ">
+               <div class="container-fluid">
+                  <div class="row">
+                     <div class="col-xs-12">
+                        <ul data-sly-list.child="${mylist}">
+                           <li>
+                              <a href="${child.iconLink}" target="${child.linkTarget}">
+                              <img alt="${child.iconText}" src="${child.iconImage}">
+                                  <p>${child.iconText}</p>
+                              </a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</sly>

@@ -1,0 +1,43 @@
+<div class="col-xs-12 col-md-3 main-text-action-wrapper">
+	<div class="action share fix">
+		<ul class="panel-body no-padding">
+			<li class="share-link"> <strong>${properties.title ? properties.title : "Share this design"}</strong>
+				<ul class="icon-list">
+					<li class="links-item" data-sly-test="${properties.facebook}">
+						<a href="#" class="shareFacebookk">
+           					<img alt="facebook" src= "/content/dam/etisalat/social-media/facebook.svg"/>
+						</a>
+					</li>
+					<li class="links-item">
+						<a href="#" class="shareTwitter" data-sly-test="${properties.twitter}">
+							<img alt="twitter" src= "/content/dam/etisalat/social-media/twitter.svg"/>
+						</a>
+					</li>
+					<li class="links-item">
+						<a href="#" class="shareLinkedIn" data-sly-test="${properties.linkedin}">
+							<img alt="linkedin" src= "/content/dam/etisalat/social-media/linkedin.svg"/>
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="copy-link">
+				<label class="link-label">${properties.linkTitle ? properties.linkTitle : "OR COPY LINK"}</label>
+				<form class="form-inline form-share" data-active="true">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" id="linkShareText" placeholder="Amount">
+							<div class="input-group-addon copyLink">
+								<div class="copied-icon">
+									<img alt="copied" src= "/content/dam/etisalat/social-media/Copied%20Icon.svg"/>
+								</div>
+								<div class="copy-icon">
+									<img alt="copy" src= "/content/dam/etisalat/social-media/Copy%20Link.svg"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</li>
+		</ul>
+	</div>
+</div>

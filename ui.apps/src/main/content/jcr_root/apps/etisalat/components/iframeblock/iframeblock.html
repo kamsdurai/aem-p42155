@@ -1,0 +1,17 @@
+<div 
+     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+     data-sly-use.commonsTemplates="core/wcm/components/commons/v1/templates.html"
+     data-sly-test.hasContent="${properties.iframeSrcURL}"
+     id="${component.id}">
+    <sly data-sly-test="${properties.iframeSrcURL}">
+        <iframe src="${properties.iframeSrcURL}"
+                id= "${properties.iframeId ? properties.iframeId : 'iframe-item'}"
+                scrolling="${!properties.hideiframeScrollbar || properties.hideiframeScrollbar == 'false' ? 'yes' : 'no'}"
+                width="${properties.iframeWidth ? properties.iframeWidth : 100}%"
+                height="${properties.iframeHeight ? properties.iframeHeight :1500}px"
+                border="0"
+                aria-label="Iframe">
+        </iframe>
+    </sly>
+</div>
+<sly data-sly-call="${commonsTemplates.placeholder @ isEmpty = !hasContent}"></sly>

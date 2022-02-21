@@ -17,7 +17,7 @@
 </div>
 
 <!-- End - hero-main-contents wrapper -->
-<div data-sly-test="${properties.fileReference}">
+<div class="media-cta-image" data-sly-test="${properties.fileReference}">
    <img src="${properties.fileReference}" alt="eStore_video4_588x250px">
 </div>
 <div data-sly-test="${properties.youTubeUrl}" id="heroVideo" class="modal fade" role="dialog">
@@ -25,7 +25,7 @@
       <!-- Modal content-->
       <div class="modal-content">
          <iframe width="560" height="315" src="${properties.youTubeUrl}"
-                 frameborder="0"
+                 title="heroVideo"
                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                  allowfullscreen=""></iframe>
       </div>

@@ -74,6 +74,12 @@
                             </columns>
                         </items>
                     </properties>
+                    <heroLinks
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Hero Links Section"
+                            sling:resourceSuperType="etisalat/components/commons/editor/dialog/herosection/heroLinks"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true"/>
                 </items>
             </tabs>
         </items>

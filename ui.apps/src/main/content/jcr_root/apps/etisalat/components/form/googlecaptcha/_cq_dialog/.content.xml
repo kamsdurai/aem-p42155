@@ -30,71 +30,13 @@
                                     <captchav2
                                         jcr:primaryType="nt:unstructured"
                                         text="Captcha V2"
-                                        value="captchav2"/>
-                                    <captchav3
-                                        jcr:primaryType="nt:unstructured"
-                                        text="Captcha V3"
-                                        value="captchav3"/>
+                                        value="captchav2"/>                                    
                                     <captchainvisible
                                         jcr:primaryType="nt:unstructured"
                                         text="Captcha Invisible"
                                         value="captchaInvisible"/>
-                                </items>
-                                <granite:data
-                                    jcr:primaryType="nt:unstructured"
-                                    cq-dialog-dropdown-showhide-target=".productlist-showhide-target"/>
+                                </items>                               
                             </captchaversion>
-                            <captchav2
-                                granite:class="productlist-showhide-target"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <captchakeyv2
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldDescription=" Google Captcha Key for Version 2."
-                                        fieldLabel="Google Captcha Key V2"
-                                        maxlength="{Long}10000"
-                                        name="./captchaKeyV2"/>
-                                </items>
-                                <granite:data
-                                    jcr:primaryType="nt:unstructured"
-                                    showhidetargetvalue="captchav2"/>
-                            </captchav2>
-                            <captchav3
-                                granite:class="productlist-showhide-target"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <captchakeyv3
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldDescription=" Google Captcha Key for Version 3."
-                                        fieldLabel="Google Captcha Key V3"
-                                        maxlength="{Long}10000"
-                                        name="./captchaKeyV3"/>
-                                </items>
-                                <granite:data
-                                    jcr:primaryType="nt:unstructured"
-                                    showhidetargetvalue="captchav3"/>
-                            </captchav3>
-                            <captchainvisiblev3
-                                granite:class="productlist-showhide-target"
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/container">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <captchakeyv3
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldDescription=" Google Captcha Key for Version 3 Invesible."
-                                        fieldLabel="Google Captcha Key V3 Invisible"
-                                        maxlength="{Long}10000"
-                                        name="./captchaKeyInvisibleV3"/>
-                                </items>
-                                <granite:data
-                                    jcr:primaryType="nt:unstructured"
-                                    showhidetargetvalue="captchaInvisible"/>
-                            </captchainvisiblev3>
                         </items>
                     </captchadata>
                 </items>

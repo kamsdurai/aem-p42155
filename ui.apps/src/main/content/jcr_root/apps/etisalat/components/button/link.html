@@ -1,10 +1,12 @@
 <template data-sly-template.link="${ @ properties}">
 
   <sly data-sly-test="${properties.linkBehavior != 'openmodalwindow'}">
-    <a href="${ properties.linkBehavior == 'opensamewindow'? properties.ctaSameWindowLink : properties.ctaNewWindowLink @ extension='html'}"
+    <sly data-sly-test.customLink="${properties.linkBehavior == 'opensamewindow'? properties.ctaSameWindowLink : properties.ctaNewWindowLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+    <a href="${commonlinkmodel.link}"
        class="btn-text btn-green  learn-more"
        title="${properties.title}"
        target="${properties.linkBehavior == 'opennewwindow'?'_blank':'_self'}">
+	   <img data-sly-test="${properties.buttonImage}" src="${properties.buttonImage}" alt="${properties.title}"/>
       <span class="moreg">${properties.title}</span>
     </a>
   </sly>

@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Digital Notification"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[ae.cmp.digital.notifications.editor]"
+    helpPath="https://www.adobe.com/go/aem_cmp_title_v2">
+    <content
+        granite:class="cmp-digitalnotifications__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A title to display as the headline for the notification"
+                                                fieldLabel="Title"
+                                                name="./notificationTitle"
+                                                required="{Boolean}true"/>
+                                            <titlewithlink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Title with link"
+                                                fieldLabel="Title Link"
+                                                name="./titleLink"
+                                                rootPath="/content"/>
+                                            <titlewithlinktext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Title with link text"
+                                                fieldLabel="Title Link Text"
+                                                name="./titleLinkText"/>
+                                            <description
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="A description to display as the subheadline for the blog search."
+                                                fieldLabel="Description"
+                                                name="./notificationDesc"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <notificationalignment
+                                                granite:class="swiperbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <alignment
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Notification Alignment"
+                                                        name="./alignment">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <top
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Top"
+                                                                value="top"/>
+                                                            <center
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Center"
+                                                                value="mid-page"/>
+                                                            <bottom
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Bottom"
+                                                                value="bottom"/>
+                                                        </items>
+                                                    </alignment>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="digitalnotifications"/>
+                                            </notificationalignment>
+                                            <notificationtheme
+                                                granite:class="swiperbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <theme
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Notification Theme Color"
+                                                        name="./themeColor">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <black
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Black"
+                                                                value="bg-black"/>
+                                                            <yellow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Yellow"
+                                                                value="bg-yellow"/>
+                                                        </items>
+                                                    </theme>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="digitalnotifications"/>
+                                            </notificationtheme>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <actions
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Link &amp; Actions"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <actionsEnabled
+                                                granite:class="digital-notification-actionenabled"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="When checked, enables definition of Call-To-Actions. The linked page of the first Call-To-Action is used when populating title and description."
+                                                name="./actionsEnabled"
+                                                text="Enable Call-To-Action"
+                                                uncheckedValue="{Boolean}false"
+                                                value="{Boolean}true"/>
+                                            <ctatext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Notification CTA title"
+                                                fieldLabel="Notification CTA title"
+                                                name="./notificationCTATitle"/>
+                                            <ctalink
+                                                granite:class="digital-notification-ctalink"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                                                fieldDescription=""
+                                                fieldLabel="Notification CTA Link"
+                                                name="./notificationCTALink"
+                                                rootPath="/content"/>
+                                            <disaplaybehavior
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Display Link as a"
+                                                name="./displayDigitalBehavior">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <viewmore
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="View More"
+                                                        value="viewmore"/>
+                                                    <learnmore
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Learn More"
+                                                        value="learnmore"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".digital-linkbehavior-showhide-target"/>
+                                            </disaplaybehavior>
+                                            <title
+                                                granite:class="digital-linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Learn More Text and  Link"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <text
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="The text to display on the Link."
+                                                        fieldLabel="Learn More Text"
+                                                        name="./title"/>
+                                                    <linkbehavior
+                                                        granite:class="cq-dialog-dropdown-showhide"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Learn More Link Behavior"
+                                                        name="./linkBehavior">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <opennewwindow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Open In New Window"
+                                                                value="opennewwindow"/>
+                                                            <opensamewindow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Open in Same Window"
+                                                                value="opensamewindow"/>
+                                                            <modalpopup
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Open In Modal window"
+                                                                value="openmodalwindow"/>
+                                                        </items>
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                                                    </linkbehavior>
+                                                    <fragmentlink
+                                                        granite:class="linkbehavior-showhide-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <fragmentVariationPath
+                                                                granite:id="xfPicker"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="cq/experience-fragments/editor/components/xffield"
+                                                                fieldDescription="Choose the experience fragment variation to display."
+                                                                fieldLabel="Experience Fragment Variation Path"
+                                                                filter="folderOrVariant"
+                                                                name="./fragmentVariationPath"
+                                                                propertyFilter="cq:xfShowInEditor"
+                                                                variant="web"/>
+                                                            <modalBehavior
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                fieldLabel="Popup Behavior"
+                                                                name="./modalBehavior">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <toppopup
+		                                                                jcr:primaryType="nt:unstructured"
+		                                                                text="Top popup"
+		                                                                value="top"/>
+                                                                </items>
+                                                                <granite:data
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                                                            </modalBehavior>
+                                                        </items>
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            showhidetargetvalue="openmodalwindow"/>
+                                                    </fragmentlink>
+                                                    <linknewwindow
+                                                        granite:class="linkbehavior-showhide-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <buttonlink
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Learn More Link"
+                                                                fieldLabel="Learn More Link"
+                                                                name="./ctaNewWindowLink"
+                                                                rootPath="/content"/>
+                                                        </items>
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            showhidetargetvalue="opennewwindow"/>
+                                                    </linknewwindow>
+                                                    <linksamewindow
+                                                        granite:class="linkbehavior-showhide-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <buttonlink
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                                fieldDescription="Learn More Link"
+                                                                fieldLabel="Learn More Link"
+                                                                name="./ctaSameWindowLink"
+                                                                rootPath="/content"/>
+                                                        </items>
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            showhidetargetvalue="opensamewindow"/>
+                                                    </linksamewindow>
+                                                    <displaylinkhidden
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                        name="./displayBehavior"
+                                                        value="link"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="learnmore"/>
+                                            </title>
+                                            <viewmoretext
+                                                granite:class="digital-linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <viewmore
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription=""
+                                                        fieldLabel="Label for view more items"
+                                                        name="./viewMoreItems"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="viewmore"/>
+                                            </viewmoretext>
+                                            <viewlesstext
+                                                granite:class="digital-linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <viewless
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription=""
+                                                        fieldLabel="Label for view less items"
+                                                        name="./viewLesstems"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="viewmore"/>
+                                            </viewlesstext>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </actions>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

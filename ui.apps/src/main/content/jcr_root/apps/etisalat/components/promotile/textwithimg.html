@@ -1,0 +1,26 @@
+<template  data-sly-template.TextWithImg="${ @ properties,commonlinkmodel}">
+   <div class="promo-grid-tile-4-0 with-image">
+      <a data-sly-test="${properties.cardLink}" href="${commonlinkmodel.link}" target="${properties.linkBehavior == 'opennewwindow'?'_blank':'_self'}" class="link-cover"></a>
+      <sly
+         data-sly-use.ImageTemplate="image.html"
+         data-sly-call="${ImageTemplate.Image @ properties=properties , commonlinkmodel=commonlinkmodel}">      </sly>
+      <div class="promo-content">
+         <div class="content-only">
+            <div data-sly-test="${properties.promopretitle}" class="wst-secondary-headings">
+               <h4>${properties.promopretitle}</h4>
+            </div>
+            <div data-sly-test="${properties.promotitle}"  class="wst-main-headings">
+              <h4 data-sly-element="${properties.titleType}">${properties.promotitle}</h4>
+            </div>
+            <div  data-sly-test="${properties.jcr:description}" class="paragraph-styling ul-list-cms">
+               <div class="p2">
+                  <p>${properties.jcr:description @context='html'}</p>
+               </div>
+            </div>
+         </div>
+         <sly data-sly-test="${properties.cardLink}"
+            data-sly-use.ButtonTemplate="button.html"
+            data-sly-call="${ButtonTemplate.Button @ properties=properties , commonlinkmodel=commonlinkmodel}">      </sly>
+      </div>
+   </div>
+</template>

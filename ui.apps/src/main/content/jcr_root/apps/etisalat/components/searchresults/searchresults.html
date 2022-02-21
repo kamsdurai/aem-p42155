@@ -1,0 +1,70 @@
+<sly data-sly-use.siteSearch="com.etisalat.core.models.SiteSearch">
+<!-- SEARCH RESULT HEADER START -->
+    <div class="search-result-header-4-0 gradient-color">
+        <div class="container">
+            <div class="wave-pattern"></div>
+            <div class="search-result-content">
+                <div class="search-result-headings">
+                    <h2>${properties.headerTitle} <strong class="d-none"></strong></h2>
+                    <span class="d-none">Showing<span class="first-rec"></span>-<span class="last-rec"></span>
+                        of <span class="total-rec"></span></span>
+                </div>
+                <div class="search-filter-wrap d-none">
+                    <h2>${properties.filterText}</h2>
+                    <div class="selector-toggle-container">
+                        <div class="selector-toggle-carousel">
+                            <div class="swiper-wrapper selector-toggle-wapper">                                                              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- SEARCH RESULT HEADER END -->
+
+<!-- LOADER START -->
+    <div class="search-results-loader-4-0"></div>
+<!-- LOADER END -->
+
+<!-- SEARCH RESULT WRAPER START -->
+    <div class="search-results-wrapper-4-0">
+        <div class="search-4-0-component">
+            <div class="container">
+     
+            </div>
+        </div>
+    </div>
+<!-- SEARCH RESULT WRAPER END  -->
+
+<!-- PAGINATION START  -->
+<div class="container s-pagination">
+    <div class="search-pagination-4-0 d-none">
+       <sly data-sly-use.paginationTemplate="search-pagination.html"
+	        data-sly-call="${paginationTemplate.pagination @ properties=properties}">      
+	   </sly>            
+    </div>
+</div>
+<!-- PAGINATION END  -->
+
+<!-- NOT FOUND START  -->
+<div class="container">
+  <div class="not-found-wrapper-4-0 d-none">
+    <sly data-sly-use.notFoundTemplate="search-not-found.html"
+	     data-sly-call="${notFoundTemplate.notFound @ properties=properties}">      
+	 </sly>
+  </div>
+</div>
+<!-- NOT FOUND END -->
+
+<!-- DEFAULT VIEW START -->
+    <div class="search-items-wrapper-4-0 result-default-view d-none">
+       <div class="container">
+          <sly data-sly-use.defaultViewTemplate="/apps/etisalat/components/search/search-default-view.html"
+	        data-sly-call="${defaultViewTemplate.defaultView @ siteSearch=siteSearch,properties=properties}">      
+	      </sly> 
+       </div>
+    </div>
+<!-- DEFAULT VIEW END -->
+
+</sly>

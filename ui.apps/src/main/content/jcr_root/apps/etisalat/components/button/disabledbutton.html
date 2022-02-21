@@ -1,0 +1,34 @@
+<template data-sly-template.disabledButton="${ @ properties}">
+  <div data-sly-test="${properties.linkBehavior != 'openmodalwindow'}" class="button">
+    <sly data-sly-test.customLink="${properties.linkBehavior == 'opensamewindow'? properties.ctaSameWindowLink : properties.ctaNewWindowLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+    <a class="cmp-button  cmp-button--disabled"
+       href="${commonlinkmodel.link}"
+       target="${properties.linkBehavior == 'opennewwindow'?'_blank':'_self'}">
+      <span class="cmp-button__text">${properties.title}</span>
+    </a>
+  </div>
+  <div data-sly-test="${properties.linkBehavior == 'openmodalwindow'}"
+       class="button">
+    <a data-label="${resource.name}" class="cmp-button btn-modal cmp-button--disabled"
+       title="${properties.title}">
+      <span class="cmp-button__text">${properties.title}</span>
+    </a>
+    <div id="${resource.name}" class="nv-modal fade  ${properties.modalBehavior}-modal">
+      <div class="nv-modal-dialog">
+        <div class="nv-modal-content nv-py-5">
+          <div class="container">
+            <div class="modal-popup">
+              <sly
+                      data-sly-use.closebuttonTemplate="/apps/etisalat/components/button/closebutton.html"
+                      data-sly-call="${closebuttonTemplate.close}">
+              </sly>
+              <sly
+                      data-sly-resource="${resource @ resourceType='core/wcm/components/experiencefragment/v1/experiencefragment', wcmmode='disabled'}">
+              </sly>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

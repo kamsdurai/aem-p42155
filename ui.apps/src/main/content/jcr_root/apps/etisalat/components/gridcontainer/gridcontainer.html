@@ -1,0 +1,14 @@
+<sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer">
+   <div class="cmp-gridcontainer"
+        data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+        data-placeholder-text="${wcmmode.edit && 'Drag Grid components here' @ i18n}"
+        id="grid${container.id}">
+       <sly data-sly-test.gridTemplates="${properties.gridTemplates}" data-sly-use.gridContainerTemplate="${gridTemplates}.html">
+           <sly data-sly-test="${gridTemplates == 'benefitsgrid'}"
+                data-sly-call="${gridContainerTemplate.benefitsgrid @ container=container,properties=properties}" />
+           <sly data-sly-test="${gridTemplates == 'promocard'}"
+            data-sly-call="${gridContainerTemplate.promocard @ container=container,properties=properties}" />
+        </sly>
+       </sly>
+   </div>
+ </sly>

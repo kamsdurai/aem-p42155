@@ -1,0 +1,23 @@
+<template data-sly-template.ctaModelPopup="${ @ component,properties}">
+<div data-sly-test="${properties.tileLinkBehavior == 'openmodalwindow' && properties.ctatext}" class="third-action-wrapper action-link">
+     <a data-label="mediactaplan-${component.id}" class="btn-modal link">${properties.ctatext}</a>			      			    
+  <div id="mediactaplan-${component.id}"
+        class="nv-modal fade  ${properties.modalBehavior}-modal">	             
+        <div class="nv-modal-dialog">
+           <div class="nv-modal-content nv-py-5">
+              <div class="container">
+                 <div class="modal-popup">
+                    <sly
+                       data-sly-use.closebuttonTemplate="/apps/etisalat/components/button/closebutton.html"
+                       data-sly-call="${closebuttonTemplate.close}">
+                    </sly>
+                    <sly
+                       data-sly-resource="${resource @ resourceType='core/wcm/components/experiencefragment/v1/experiencefragment', wcmmode='disabled'}">
+                    </sly>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+ </div>
+</template>

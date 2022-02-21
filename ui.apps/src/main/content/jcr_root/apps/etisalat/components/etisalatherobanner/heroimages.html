@@ -1,0 +1,25 @@
+<template data-sly-template.heroImages="${ @ properties}">
+ <div  data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"
+       data-sly-use.imageTemplate="image.html" class="${!wcmmode.edit ? 'cover' : ''}">
+	 <sly data-sly-test="${properties.heroDisplayBehavior == 'image'}">
+		<div class="bg-overlay" style="background-color:#000; opacity:${properties.heroImageOpacity ? properties.heroImageOpacity : 0 @ context='styleToken'};"></div>
+	         <sly data-sly-call="${imageTemplate.image @ teaser=teaser}"></sly>
+	 </sly>	     
+	 <div data-sly-test="${properties.heroDisplayBehavior == 'video' && properties.videoLink}" class="${!wcmmode.edit ? 'video_ctn' : ''}">
+	   <video muted="muted" loop="" playsinline="" class="video_cover"
+	          autoplay="" tabindex="0" autobuffer="autobuffer" preload="preload"
+	          poster="${properties['video/fileReference']}" >
+	      <source type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;"
+	              src="${properties.videoLink}">
+	      <source type="video/webm; codecs=&quot;vp8, vorbis&quot;"
+	              src="${properties.videoLink}">
+	      <source type="video/ogg; codecs=&quot;theora, vorbis&quot;"
+	              src="${properties.videoLink}">
+	      <track label="" kind="" srclang="" src="">
+	   </video>
+	</div>	  
+	<div data-sly-test="${properties.heroDisplayBehavior == 'image-viewports'}">	   
+	  <sly data-sly-resource="${resource @ resourceType='etisalat/components/imageetisalatviewport'}"></sly>
+	</div>	         
+ </div>	
+</template>

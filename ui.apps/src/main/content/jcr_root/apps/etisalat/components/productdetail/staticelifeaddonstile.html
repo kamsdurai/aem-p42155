@@ -1,0 +1,46 @@
+<template  data-sly-template.elifeAddons="${ @ carousel,properties}">
+    <div class="product-grid-container elife-addon-slider container-fix__width ptb-50 gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <section class="content-section">
+                        <div class="row">
+                            <div data-sly-test="${properties.mainProductTitle}" class="col-xs-12">
+                                <div class="benefits-box">
+                                    <div class="default-section-title text-center">
+                                        <h3 class="margin-bottom-small">${properties.mainProductTitle}</h3>
+                                        <div data-sly-test="${properties.mainProductDesc}" class="col-lg-8 col-center">${properties.mainProductDesc @ context="html"}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="${carousel.items.size >= 2 ? 'col-xs-12' : ''}">
+                                <div class="bg-cards elife-plan mt-30 elife-addons">
+                                    <div class="row row-tiles-table">
+                                        <div class="${!wcmmode.edit && properties.slider && carousel.items.size >= 2 ? 'swiper-container' : ''}">
+                                            <div class="${!wcmmode.edit && properties.slider && carousel.items.size >= 2 ? 'swiper-wrapper' : ''}" id="product">
+                                                <div data-sly-repeat.item="${carousel.items}" class="swiper-slide col-xs-12 col-sm-6 col-md-4 col-lg-3" data-sly-resource="${item.name @ decorationTagName='div'}" id="${item.id}"></div>
+                                            </div>
+                                            <div class="table-swiper-scrollbar swiper-scrollbar"></div>
+                                        </div>
+                                        <div class="${!wcmmode.edit && properties.slider && carousel.items.size > 2 ? '' : 'hide'} table-swiper-button-prev">
+
+                                        </div>
+                                        <div class="${!wcmmode.edit && properties.slider && carousel.items.size > 2 ? '' : 'hide'} table-swiper-button-next">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <sly
+            data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/parsys/newpar',
+            appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}"
+            data-sly-test="${wcmmode.edit || wcmmode.preview}"
+        ></sly>
+    </div>
+</template>

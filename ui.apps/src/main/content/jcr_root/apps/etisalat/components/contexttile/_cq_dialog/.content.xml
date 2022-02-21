@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Context Navigation Tile"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_title_v2">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <image
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Image"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <file
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                allowUpload="{Boolean}false"
+                                                autoStart="{Boolean}false"
+                                                class="cq-droptarget"
+                                                fieldDescription="Add icon for the Context Navigation tile."
+                                                fieldLabel="Image Asset"
+                                                fileNameParameter="./image/fileName"
+                                                fileReferenceParameter="./image/fileReference"
+                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                multiple="{Boolean}false"
+                                                name="./image/file"
+                                                title="Upload Image Asset"
+                                                uploadUrl="${suffix.path}"
+                                                useHTML5="{Boolean}true"/>
+                                            <imageresourcehidden
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                name="./image/sling:resourceType"
+                                                value="etisalat/components/image"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </image>
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <tiletitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Add Tile Title"
+                                                fieldLabel="Tile Title"
+                                                name="./tiletitle"/>
+                                            <titleType
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Add Tile Heading tag"
+                                                fieldLabel="Title Style"
+                                                name="./titleType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <def
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="(default)"
+                                                        value=""/>
+                                                    <h1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H1"
+                                                        value="h1"/>
+                                                    <h2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H2"
+                                                        value="h2"/>
+                                                    <h3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H3"
+                                                        value="h3"/>
+                                                    <h4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H4"
+                                                        value="h4"/>
+                                                    <h5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H5"
+                                                        value="h5"/>
+                                                    <h6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H6"
+                                                        value="h6"/>
+                                                </items>
+                                            </titleType>
+                                            <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="Add Tile Description"
+                                                fieldLabel="Tile Description"
+                                                name="./text"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <titletextspace
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Control padding between title and description"
+                                                fieldLabel="Space between Title and Text"
+                                                name="./titletextspace">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <def
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="None"
+                                                        value="none"/>
+                                                    <h1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Padding 1"
+                                                        value="heading1"/>
+                                                    <h2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Padding 2"
+                                                        value="heading2"/>
+                                                    <h3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Padding 3"
+                                                        value="heading3"/>
+                                                    <h4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Padding 4"
+                                                        value="heading4"/>
+                                                    <h5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Padding 5"
+                                                        value="heading5"/>
+                                                    <h6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Padding 6"
+                                                        value="heading6"/>
+                                                    <h7
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Padding 7"
+                                                        value="heading7"/>
+													<h8
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Padding 8"
+                                                        value="heading8"/>
+                                                </items>
+                                            </titletextspace>
+                                            <tilelinklabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                emptyText="Text"
+                                                fieldDescription="Add Tile Link Label"
+                                                fieldLabel="Tile CTA Label"
+                                                name="./ctatext"/>
+                                            <displayCTABehaviour
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select link display as: Link or Button"
+                                                fieldLabel="Display CTA as a"
+                                                name="./displayCTABehaviour">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <link
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Link"
+                                                        value="link"/>
+                                                    <button
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Button"
+                                                        value="button"/>
+                                                    <buttonfullwidth
+                                                        jcr:primaryType="nt:unstructured"
+                                                        fieldDescription="Select if full width button is required in Ipad and lower resolutions"
+                                                        text="Button Full width(in Ipad and lower resolutions)"
+                                                        value="w-100"/>
+                                                </items>
+                                            </displayCTABehaviour>
+                                            <tileLinkBehavior
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Select Tile Link Behavior."
+                                                fieldLabel="Tile Link Behavior"
+                                                name="./tileLinkBehavior">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <opennewwindow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Open In New Window"
+                                                        value="opennewwindow"/>
+                                                    <opensamewindow
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Open in Same Window"
+                                                        value="opensamewindow"/>
+                                                    <modalpopup
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Open In Modal window"
+                                                        value="openmodalwindow"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                                            </tileLinkBehavior>
+                                            <fragmentlink
+                                                granite:class="linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fragmentVariationPath
+                                                        granite:id="xfPicker"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/experience-fragments/editor/components/xffield"
+                                                        fieldDescription="Choose the experience fragment variation to display."
+                                                        fieldLabel="Experience Fragment Variation Path"
+                                                        filter="folderOrVariant"
+                                                        name="./fragmentVariationPath"
+                                                        propertyFilter="cq:xfShowInEditor"
+                                                        variant="web"/>
+                                                    <modalBehavior
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="etisalat/components/commons/modal-popup-variations/modalBehavior"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Popup Behavior"
+                                                        name="./modalBehavior">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-dropdown-showhide-target=".linkbehavior-showhide-target"/>
+                                                    </modalBehavior>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="openmodalwindow"/>
+                                            </fragmentlink>
+                                            <tilelinknewwindow
+                                                granite:class="linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <tilebuttonlink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Target URL for when the link is clicked."
+                                                        fieldLabel="Tile CTA link"
+                                                        name="./tileCTALinkNewWindow"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="opennewwindow"/>
+                                            </tilelinknewwindow>
+                                            <tilelinksamewindow
+                                                granite:class="linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <tilebuttonlink
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Target URL for when the link is clicked."
+                                                        fieldLabel="Tile CTA link"
+                                                        name="./tileCTALinkSameWindow"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="opensamewindow"/>
+                                            </tilelinksamewindow>
+                                            <tileHeight
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Restricting the text in tile (Use it along with title and text spacing)"
+                                                fieldLabel="Restrict Tile Content"
+                                                name="./tileHeight">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <def
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="None"
+                                                        value="none"/>
+                                                    <ph1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tile Height 1"
+                                                        value="ph1"/>
+                                                    <ph2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tile Height 2"
+                                                        value="ph2"/>
+                                                    <ph3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tile Height 3"
+                                                        value="ph3"/>
+                                                    <ph4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tile Height 4"
+                                                        value="ph4"/>
+                                                </items>
+                                            </tileHeight>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,77 @@
+<div data-sly-use.carousel="com.adobe.cq.wcm.core.components.models.Carousel"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-panelcontainer="${wcmmode.edit && 'Promotional carousel'}" id="${carousel.id}" class="cmp-carousel" role="group"
+     aria-label="${carousel.accessibilityLabel}" aria-live="polite" aria-roledescription="carousel" data-cmp-is="carousel"
+     data-cmp-autoplay="${(wcmmode.edit || wcmmode.preview) ? '' : carousel.autoplay}" data-cmp-delay="${carousel.delay}"
+     data-cmp-autopause-disabled="${carousel.autopauseDisabled}" data-cmp-data-layer="${carousel.data.json}"
+     data-placeholder-text="${wcmmode.edit && 'Please add Global Footprints Tile items here' @ i18n}">
+ 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+<div class="main-text-section">
+	<div class="container" data-sly-test="${properties.globalFootPreTitle}">
+        	<div class="row">
+            	<div class="col-xs-12">
+                	<div class="wst-main-headings" >
+							<h3>${properties.globalFootPreTitle}</h3>
+					</div>
+            	</div>
+        	</div>
+    </div>
+    <div class="container" data-sly-test="${properties.globalFootTitle}">
+    		<div class="row">
+            	<div class="col-xs-12 col-md-9 main-text-content-wrapper">
+                	<div class="paragraph-styling anchor ul-list-cms">
+							<div class="main-text-section__textContent"><p>${properties.globalFootTitle}</p> </div>
+					</div>
+            	</div>
+        </div>
+    </div>
+</div>
+   
+              <div class="global-footprint-swiper" data-sly-test="${!wcmmode.edit}">
+  <div class="global-slide-img">
+    <sly data-sly-resource="${resource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></sly>
+  </div>
+  <!-- Swiper -->
+  <div class="swiper-container swiper-gallery-slide">
+    <div class="swiper-wrapper">     
+              <sly data-sly-repeat.item="${carousel.items}" 
+                   data-sly-resource="${item.name }" id="${item.id}"></sly>    
+    </div>
+
+    <!-- Arrows -->
+    <div class="swiper-button-wrapper">
+      <div class="swiper-button-next"><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 27 44'><path d='M27 22L5 44l-2.1-2.1L22.8 22 2.9 2.1 5 0l22 22z' fill='none'/></svg></div>
+      <div class="swiper-button-prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M0 22L22 0l2.1 2.1L4.2 22l19.9 19.9L22 44 0 22z" fill="none"/></svg></div>
+    </div>
+    
+  </div>
+
+  <!-- Thumbs -->
+  <div class="swiper-container swiper-gallery-thumbs"> 
+    <div class="swiper-wrapper">
+      
+              <sly data-sly-repeat.item="${carousel.items}" 
+                   data-sly-resource="${item.name }" id="${item.id}"></sly>
+    </div>
+
+  </div>
+
+</div>
+
+ <div class="col-md-9 col-xs-12" data-sly-test="${wcmmode.edit}">
+          <div >
+            <div >
+              <div data-sly-repeat.item="${carousel.items}"
+                   data-sly-resource="${item.name @ decorationTagName='div'}" id="${item.id}"></div>
+            </div>
+           
+          </div>
+        </div>
+
+        <sly data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/parsys/newpar',
+            appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}"
+             data-sly-test="${wcmmode.edit || wcmmode.preview}"></sly>
+
+  
+</div>

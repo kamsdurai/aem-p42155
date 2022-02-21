@@ -1,0 +1,17 @@
+<template data-sly-template.mainTextGrid="${ @ container,properties}">
+<div class="main-text-grid-4-0">
+   <div class="container">
+      <div class="grid-wrapper">
+         <div class="grid-tile" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+      </div>
+       <!-- static button --> 
+      <div class="hidden-md hidden-lg hidden-sm">
+            <div class="main-text-action-wrapper">
+                <div class="action">
+                    <a href="# " class="btn btn-default ripple-effect">${properties.mainTextLoadMore}</a>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+</template>

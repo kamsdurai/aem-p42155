@@ -1,0 +1,40 @@
+<template  data-sly-template.defaultView="${ @ siteSearch,properties}">
+	<div class="search-items-wrapper">
+	     <div class="search-items">
+	         <div class="list recent d-none">
+	             <div class="list-item-heading">${properties.recentSearchTitle}</div>
+	             <ul class="m-0 recentItemList"></ul>             
+	         </div>
+	         <div class="list quick-links">
+	             <div class="list-item-heading">${properties.quickLinkTitle}</div>
+	             <ul data-sly-test="${!siteSearch.quickLinksItems.isEmpty}" class="m-0">
+				     <li data-sly-repeat.linkItem="${siteSearch.quickLinksItems}" class="list-item">
+				     <a target="${linkItem.linkBehavior == 'opennewwindow' ?'_blank':'_self'}" href="${linkItem.linkUrl}">${linkItem.linkText}</a></li>			 
+				 </ul> 
+	         </div>
+	         <div class="list trends">
+	             <div class="list-item-heading">${properties.brandTitle}</div>
+	             <ul class="m-0">
+	                 <li class="menu-brand-wrapper">
+	                     <div data-sly-test="${!siteSearch.brandItems.isEmpty}" class="tiles-wrapper">
+	                         <div data-sly-repeat.brandItem="${siteSearch.brandItems}" class="tile">
+	                             <div class="cover">
+	                                 <div class="cover lazyloaded" data-sly-resource="${brandItem.imageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+	                             </div>
+	                             <div class="tile-content-wrapp">
+	                                 <div class="content">
+	                                     <h4>${brandItem.title}</h4>
+	                                     <a target="${brandItem.linkBehavior == 'opennewwindow' ?'_blank':'_self'}"  
+	                                        href="${brandItem.linkUrl}" class="btn-text learn-more">
+	                                         <span class=""> ${brandItem.linkText} </span>
+	                                     </a>
+	                                 </div>
+	                             </div>
+	                         </div>                                                                           
+	                     </div>
+	                 </li>
+	             </ul>
+	         </div>
+	     </div>
+	 </div>
+</template>

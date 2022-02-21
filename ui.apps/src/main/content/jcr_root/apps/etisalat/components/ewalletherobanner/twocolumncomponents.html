@@ -1,0 +1,23 @@
+<template  data-sly-template.twoColumn="${ @ properties,resource}">
+  <sly data-sly-use.bannerObj="${resource.path}" data-sly-list.leftItems="${bannerObj.listChildren}">
+    <sly data-sly-test="${leftItems.name == 'left-parsys'}" data-sly-list.leftPar="${leftItems.listChildren}">
+      <sly data-sly-resource="${leftPar.path @ decoration=true}"></sly>
+    </sly>
+  </sly>
+  <div data-sly-test="${wcmmode.edit}" data-sly-use.templates="core/wcm/components/commons/v1/templates.html" 
+       data-placeholder-text="${wcmmode.edit && 'Drag Hero Banner Left Column components here' @ i18n}">
+    <sly data-sly-resource="${'left-parsys' @ resourceType='core/wcm/components/container/v1/container/new', appendPath='/*', decorationTagName='div', cssClassName='new section'}" />
+  </div>
+  <div class="right_block">
+    <sly data-sly-use.bannerObj="${resource.path}" data-sly-list.rightItems="${bannerObj.listChildren}">
+      <sly data-sly-test="${rightItems.name == 'right-parsys'}" data-sly-list.rightPar="${rightItems.listChildren}">
+        <sly data-sly-resource="${rightPar.path @ decoration=true}"></sly>
+      </sly>
+    </sly>	
+    <div data-sly-test="${wcmmode.edit}" data-sly-use.templates="core/wcm/components/commons/v1/templates.html" 
+        data-placeholder-text="${wcmmode.edit && 'Drag Hero Banner Right Column components here' @ i18n}">
+	  <sly data-sly-resource="${'right-parsys' @ resourceType='core/wcm/components/container/v1/container/new', appendPath='/*', decorationTagName='div', cssClassName='new section'}" />
+    </div>
+  </div>
+</template>
+

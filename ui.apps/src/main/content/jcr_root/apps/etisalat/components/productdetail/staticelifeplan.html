@@ -1,0 +1,59 @@
+<template  data-sly-template.elifePlan="${ @ carousel,properties}">
+       <div class="smart-home-elife-slider plans more-info-wrapper product-grid-text-section">
+          <div class="row">
+            <div data-sly-test="${properties.mainProductTitle}" class="col-xs-12 col-md-${carousel.items.size >= 2 ? '3' : '6'}">
+              <div class="main-text-section">
+                <a data-sly-test="${properties.productCTALink && properties.productCTATitle}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=properties.productCTALink}" href="${commonlinkmodel.link}" class="btn-text btn-green  learn-more">
+                  <span> ${properties.productCTATitle} </span>
+                </a>
+                <div class="wst-main-headings">
+                  <h4 data-sly-element="${properties.mainTitleStyle}">${properties.mainProductTitle}</h4>
+                </div>
+                <div class="main-text-content-wrapper">
+                  <div class="paragraph-styling ul-list-cms">
+                    <div class="p2">
+                      <p>${properties.mainProductDesc @ context="html"}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="${!wcmmode.edit && properties.slider && carousel.items.size > 2 ? '' : 'hide'} table-swiper-button-prev swiper-button-prev swiper-button-black"></div>
+              <div class="${!wcmmode.edit && properties.slider && carousel.items.size > 2 ? '' : 'hide'} table-swiper-button-next swiper-button-next swiper-button-black"></div>
+            </div>
+            <sly data-sly-test="${properties.mainProductTitle}">
+              <div class="col-xs-12 col-md-8 col-md-offset-1" data-sly-test="${carousel.items && carousel.items.size > 0}">
+            </sly>
+            <sly data-sly-test="${!properties.mainProductTitle}">
+              <div class="col-xs-12 col-md-12" data-sly-test="${carousel.items && carousel.items.size > 0}">
+            </sly>
+            <div class="cmp__bg-cards_product-grid">
+              <div class="row">
+                <div class="${carousel.items.size >= 2 ? 'col-xs-12' : ''}">
+                  <div class="bg-cards related-products">
+                    <div class="row row-tiles-table ">
+                      <div class="${!wcmmode.edit && properties.slider && carousel.items.size >= 2 ? 'swiper-container swiper-container-horizontal' : ''}">
+                        <div class="${!wcmmode.edit && properties.slider && carousel.items.size >= 2 ? 'swiper-wrapper' : ''}" id="product">
+                          <sly data-sly-test="${properties.mainProductTitle}">
+                            <div data-sly-repeat.item="${carousel.items}" class="swiper-slide col-lg-6 col-md-4 col-xs-12 col-sm-6 mb-3" data-sly-resource="${item.name @ decorationTagName='div'}" id="${item.id}"></div>
+                          </sly>
+                          <sly data-sly-test="${!properties.mainProductTitle}">
+                            <div data-sly-repeat.item="${carousel.items}" class="swiper-slide col-lg-4 col-md-4 col-xs-12 col-sm-6" data-sly-resource="${item.name @ decorationTagName='div'}" id="${item.id}"></div>
+                          </sly>
+                        </div>
+                        <div class="table-swiper-scrollbar swiper-scrollbar">
+                          <div class="swiper-scrollbar-drag" style="width: 449.5px;"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 btn-container-noContract">
+                  <a href="#" class="btn btn-default showNoContract" data-sly-test="${properties.enableButton}"> ${properties.hideShowLabel}</a>
+                </div>
+              </div>
+            </div>           
+          </div>
+          <sly data-sly-resource="${resource.path @ resourceType='wcm/foundation/components/parsys/newpar',
+            appendPath='/*', decorationTagName='div', cssClassName='new section aem-Grid-newComponent'}" data-sly-test="${wcmmode.edit || wcmmode.preview}"></sly>
+      </div>
+</template>

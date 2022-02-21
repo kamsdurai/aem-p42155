@@ -1,0 +1,40 @@
+<template data-sly-template.swiper="${ @ tabs,properties}">
+   <div class="cmp_tabs-swipper">
+     <div class="container container-center">
+        <div class="row">
+           <div data-sly-test="${properties.tabTitle}" class="col-xs-12 col-md-3 tabs-title">
+                  <div class="config-section-main-label-top">
+                      ${properties.tabTitle}
+                  </div>
+              </div>
+           <div class="col-xs-12 col-md-9">
+              <div class="swiper-container edc-swiper-tabs">
+                 <ul data-sly-test="${tabs.items && tabs.items.size > 0}"
+                    data-sly-list.tab="${tabs.items}"
+                    role="tablist"
+                    class="swiper-wrapper page-nav nav nab-tabs"
+                    aria-label="${tabs.accessibilityLabel}"
+                    aria-multiselectable="false">
+                    <sly data-sly-test.isActive="${tab.name == tabs.activeItem}"/>
+                    <li role="tab"
+                       id="${tab.id}-tab"
+                       class="swiper-slide ${isActive ? ' active' : ''}"
+                       aria-controls="${tab.id}-tabpanel"
+                       tabindex="${isActive ? '0' : '-1'}"
+                       data-cmp-hook-tabs="tab">
+                       ${tab.title}
+                       <sly data-sly-use.tabimage="com.etisalat.core.models.TabImage"
+                          data-sly-list.imageItem="${tabimage.tabImageItems}">
+                          <span data-sly-test="${tab.title == imageItem.linkText}">
+                          <img alt="${imageItem.linkText}" src="${imageItem.linkUrl}"/>
+                          </span>
+                       </sly>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+  
+ </template>

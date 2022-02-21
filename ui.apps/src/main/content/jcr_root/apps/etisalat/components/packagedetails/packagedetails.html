@@ -1,0 +1,46 @@
+<sly data-sly-use.packObj="${resource.path}" 
+     data-sly-set.packItemsSize="0" 
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html" 
+     data-sly-set.packVariation="${properties.packageVariation == 'pack-without-text' ? 'packImageItems' : 'packTextItems'}">	       
+ <sly data-sly-list.packItems="${packObj.listChildren}">
+    <sly data-sly-test="${packItems.name == packVariation}" 
+					data-sly-repeat.packItem="${packItems.listChildren}">
+       <sly data-sly-set.packItemsSize="${packItemList.count}"/>
+    </sly>
+ </sly> 
+ <div data-sly-test="${resource.hasChildren}" 
+      class="package-details-4-0 ${properties.packageVariation == 'pack-with-text' ? 'with-text' : ''} ${packItemsSize >=4 ? 'with-four-tiles' : ''}">      
+    <div class="container">
+        <div class="package-tiles">
+		  <sly data-sly-list.packItems="${packObj.listChildren}">
+			 <div class="tile-wrapper" data-sly-test="${packItems.name == packVariation}" 
+					data-sly-repeat.packItem="${packItems.listChildren}">
+				<sly data-sly-set.packImageRes="${packItem.path}" />
+				<div data-sly-test="${packImageRes}" class="tile-image">					
+				  <div class="img" data-sly-resource="${packImageRes @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>											
+				</div>
+				<div data-sly-test="${packVariation == 'packTextItems'}" class="content-wrapper">
+					<div data-sly-test="${packItem.tiletitle}" class="wst-main-headings">
+						<div class="h7">${packItem.tiletitle}</div>
+					</div>
+					<div class="paragraph-styling">
+						<div class="p2">
+							${packItem.text @ context='html'}
+						</div>
+					</div>
+				</div>			 
+			 </div>
+		   </sly>
+        </div>
+        <div data-sly-test="${properties.footerNote}" class="tile-foot-note">
+            <div class="paragraph-styling">
+                <div class="p4">
+                    <p>${properties.footerNote}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+ </div>
+</sly>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.packageVariation || !resource.hasChildren}"></sly>

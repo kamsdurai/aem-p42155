@@ -4,5 +4,6 @@
     cq:styleElements="[div,section,article,main,aside,header,footer]"
     jcr:primaryType="cq:Component"
     jcr:title="Swiper Container"
-    sling:resourceSuperType="core/wcm/components/container/v1/container"
-    componentGroup="ETISALAT - Content"/>
+    sling:resourceSuperType="core/wcm/components/teaser/v1/teaser"
+    componentGroup="ETISALAT - Content"
+    imageDelegate="etisalat/components/image"/>

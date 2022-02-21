@@ -1,0 +1,119 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+	 data-sly-use.tileModel="com.etisalat.core.models.TileModel"
+	 data-panelcontainer="${wcmmode.edit && 'Features Card'}"
+	 data-placeholder-text="${wcmmode.edit && 'Please update Features Component' @ i18n}">
+
+	<sly data-sly-test.watch="${properties.featuresBehavior == 'featureswatch' ?'watch-': ''}"></sly>
+
+	<div class="features-${watch}outer-wrapper ${properties.flipimage ? 'flipped' : ''}">
+		<div class="features-${watch}4-0">
+			<div class="container">
+				<div class="content-wrapper">
+					<!--/* features mobile */-->
+					<sly data-sly-test="${properties.featuresBehavior == 'featuresmobile'}">
+
+						<div class="content">
+							<div data-sly-test="${properties.featurePretitle}" class="wst-secondary-headings">
+								<h3>${properties.featurePretitle}</h3>
+							</div>
+							<div data-sly-test="${properties.featureTitle}" class="wst-main-headings">
+								<h3 data-sly-element="${properties.titleType}">${properties.featureTitle}</h3>
+							</div>
+
+							<sly  data-sly-test="${properties.aligntarget}">
+								<sly  data-sly-list.multifieldObj="${resource.getChildren}">
+									<div class="download-etisalat" data-sly-test="${multifieldObj.name == 'storeitems'}">
+										<div data-sly-list.gsItems="${multifieldObj.getChildren}" class="icons-wrap">
+											<div class="${gsItems.icon}">
+												<sly data-sly-test.customLink="${gsItems.btnLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+												<a href="${commonlinkmodel.link}"><img data-sly-test="${gsItems.fileReference}" alt="${gsItems.btnTitle}" title="${gsItems.btnTitle}" src="${gsItems.fileReference}"/></a>
+											</div>
+										</div>
+									</div>
+								</sly>
+							</sly>
+
+
+							<sly data-sly-test="${properties.aligntarget == 'false'}">
+								<sly  data-sly-list.multifieldObj="${resource.getChildren}">
+								<div data-sly-test="${multifieldObj.name == 'storeitems'}" data-sly-list.gsItems="${multifieldObj.getChildren}" class="icons-wrap">
+									<sly data-sly-test="${gsItems.icon}">
+										<div class="${gsItems.icon}">
+											<sly data-sly-test.customLink="${gsItems.btnLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+											<a href="${commonlinkmodel.link}"><img data-sly-test="${gsItems.fileReference}" alt="${gsItems.btnTitle}" title="${gsItems.btnTitle}" src="${gsItems.fileReference}"/></a>
+										</div>
+									</sly>
+									<sly data-sly-test="${!gsItems.icon}">
+										<sly data-sly-test.customLink="${gsItems.btnLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+										<a href="${commonlinkmodel.link}"><img data-sly-test="${gsItems.fileReference}" alt="${gsItems.btnTitle}" title="${gsItems.btnTitle}" src="${gsItems.fileReference}"/></a>
+									</sly>
+								</div>
+								</sly>
+								</sly>
+
+
+						</div>
+						<div class="img-wrap">
+							<div data-sly-test="${properties['image/fileReference']}" class="mobile-img">
+								<div data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+							</div>
+							<div data-sly-test="${properties['qrimage/fileReference']}" class="scan-img">
+								<div data-sly-resource="${tileModel.qrImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+								<div data-sly-test="${properties.qrtext}" class="paragraph-styling">
+									<div class="p2">
+										<p>${properties.qrtext @ context='html'}</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</sly>
+
+					<!--/* features watch */-->
+					<sly data-sly-test="${properties.featuresBehavior == 'featureswatch'}">
+						<div data-sly-test="${properties['image/fileReference']}" class="img-wrap">
+							<div data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+						</div>
+
+						<div class="content">
+							<sly data-sly-list.multifieldObj="${resource.getChildren}">
+								<div data-sly-test="${multifieldObj.name == 'storeitems'}" data-sly-list.gsItems="${multifieldObj.getChildren}" class="feature-logo">
+									<sly data-sly-test.customLink="${gsItems.btnLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+									<a href="${commonlinkmodel.link}"><img data-sly-test="${gsItems.fileReference}" alt="${gsItems.btnTitle}" title="${gsItems.btnTitle}" src="${gsItems.fileReference}"/></a>
+								</div>
+							</sly>
+							<div data-sly-test="${properties.featureTitle}" class="wst-main-headings">
+								<h3 data-sly-element="${properties.titleType}">${properties.featureTitle}</h3>
+							</div>
+							<div data-sly-test="${tileModel.text}" class="paragraph-styling anchor ul-list-cms">
+								<div class="p2">
+									${tileModel.text @ context='html'}
+								</div>
+							</div>
+
+							<div class="third-action-desktop">
+								<div  data-sly-test="${tileModel.ctatext}" class="third-action-wrapper ${properties.showlink ?'action-link':'action-btn-default'}">
+									<a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}"
+									   target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"
+									   class="${properties.showlink ?'link':'btn btn-default ripple-effect'}">${tileModel.ctatext}</a>
+								</div>
+							</div>
+
+						</div>
+						<div class="third-action-mobile">
+							<div data-sly-test="${tileModel.ctatext}"
+								 class="third-action-wrapper ${properties.showlink ?'action-link':'action-btn-default'}">
+								<a href="${properties.tileLinkBehavior == 'opensamewindow'? tileModel.tileCTALinkSameWindow : tileModel.tileCTALinkNewWindow}"
+								   target="${properties.tileLinkBehavior == 'opennewwindow'?'_blank':'_self'}"
+								   class="${properties.showlink ?'link':'btn btn-default ripple-effect'}">${tileModel.ctatext}</a>
+							</div>
+						</div>
+					</sly>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.featureTitle && !properties.featurePretitle}"></sly>

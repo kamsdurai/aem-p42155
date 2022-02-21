@@ -1,0 +1,28 @@
+<template data-sly-template.mediaCTA="${ @ container,properties}">
+ <sly data-sly-set.oneTile="${container.items.size == 1 ? 'with-single-col' : ''}"></sly>
+ <sly data-sly-test.twoTile="${container.items.size >= 2 ? 'with-two-cols' : ''}"></sly>
+   
+ <div class="cta-with-main-text-4-0 ${oneTile} ${twoTile} with-events">
+   <div class="container">
+     <div class="content-wrapper">
+       <div data-sly-test="${properties.mediaCTAMainTitle || properties.mediaCTAMainDescription}" class="content">
+         <!--  left side info text area     -->
+         <div data-sly-test="${properties.mediaCTAMainTitle}" class="wst-main-headings">
+           <h3>${properties.mediaCTAMainTitle}</h3>
+         </div>
+         <div data-sly-test="${properties.mediaCTAMainDescription}" class="paragraph-styling ul-list-cms">
+           <div class="p2">
+             ${properties.mediaCTAMainDescription @ context='html'}
+           </div>
+         </div>
+       </div>
+       <!--  left side info text area     -->
+       <div class="cta">
+         <div class="media-cta-text-4-0 ${container.items.size >= 2 ? 'with-up-down' : ''}" 
+            data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName=''}"></div>
+       </div>
+     </div>
+   </div>
+ </div>
+ 
+</template>

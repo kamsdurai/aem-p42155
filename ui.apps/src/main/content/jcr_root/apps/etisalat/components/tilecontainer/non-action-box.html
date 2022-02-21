@@ -1,0 +1,110 @@
+<template data-sly-template.nonActionBox="${ @ container,properties}">
+
+    <sly data-sly-set.oneTileCheck="${container.items.size == 1 ? 'single-tile' : 'testimonialSlider'}"></sly>
+
+    <sly data-sly-test.withquotes="${properties.nonactionboxbehavior == 'with-quotes' ? 'testimonial-module testimonialSlider' : ''}"></sly>
+    <sly data-sly-test.withpretitle="${properties.nonactionboxbehavior == 'with-pretitle' ? 'non-action-boxes-two-cols-4-0' : ''}"></sly>
+    <sly data-sly-test.withtitle="${properties.nonactionboxbehavior == 'with-title' ? 'cta-with-main-text-4-0 with-two-cols' : ''}"></sly>
+
+    <!--not testimonials container-->
+    <sly data-sly-test="${properties.nonactionboxbehavior != 'with-quotes'}">
+    <div class="${withpretitle}${withtitle}">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="content">
+                    <div data-sly-test="${properties.tileTitle}" class="wst-main-headings">
+                        <h3>${properties.tileTitle}</h3>
+                    </div>
+                    <div class="paragraph-styling ul-list-cms">
+                        <div class="p2">${properties.nonactionboxDesc @ context="html"}</div>
+                    </div>
+                </div>
+                <div class="${properties.nonactionboxbehavior == 'with-title' ? 'cta' :'' } ${properties.nonactionboxbehavior == 'with-pretitle' ? 'two-cols-wrapper' :'' }">
+                    <!-- boxes Start-->
+                    <div class="nonactionboxtile ${properties.nonactionboxbehavior == 'with-title' ? 'media-cta-text-4-0 with-up-down' :'' } ${properties.nonactionboxbehavior == 'with-pretitle' ? 'non-action-boxes-4-0' :'' }"  data-sly-repeat="${container.items}"
+                         data-sly-resource="${item.name  @ decorationTagName=wcmmode.edit ? 'div' : ''}"></div>
+                    <!-- boxes End-->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </sly>
+
+    <!--testimonials container-->
+    <sly data-sly-test="${properties.nonactionboxbehavior == 'with-quotes'}">
+        <div class="testimonial-module container-fix__width ${oneTileCheck}">
+            <div class="testimonial-box">
+                <div class="pattern-wrapper">
+                    <!--?xml version="1.0" encoding="UTF-8"?-->
+                    <svg width="399px" height="422px" viewBox="0 0 399 422" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+                        <title>background-pattern</title>
+                        <desc>Created with Sketch.</desc>
+                        <defs>
+                            <linearGradient x1="26.0742073%" y1="69.7025727%" x2="217.862078%" y2="-57.5305737%" id="linearGradient-1">
+                                <stop stop-color="#719E19" offset="0%"></stop>
+                                <stop stop-color="#FFFFFF" offset="100%"></stop>
+                            </linearGradient>
+                        </defs>
+                        <g id="background-pattern" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <path d="M88,173.768592 C86.375163,175.922722 84.8166458,179.949289 82.1306907,180.993214 C79.3949957,182.037138 74.7028643,181.125775 72.3816685,179.236769 C69.2480543,176.668383 67.1092382,172.558965 65.3186014,168.747811 C50.3468888,136.999243 31.2965036,107.935054 7.9353263,81.7209442 C3.69085406,76.9321467 2.06601703,71.9445064 7.2223876,66.9900065 C12.0637388,62.3172006 17.2201093,63.9079431 21.1495622,68.1996336 C48.3075525,97.7775005 69.2812142,131.431645 86.2591032,167.670746 C86.9554619,169.128926 87.1710015,170.80252 88,173.768592 Z M256.308662,422.064439 C249.244842,418.702293 242.082686,415.467824 235.133591,411.921256 C229.561204,409.069816 224.431331,405.225337 228.413948,399.096869 C232.314619,393.096077 238.362298,394.826801 244.524702,397.139163 C264.355844,404.572769 284.350879,411.651717 304.263968,418.929274 C306.591259,419.78045 308.754656,421.014655 311,422.064439 L256.308662,422.064439 Z M399,70.1599045 C379.968013,52.3004082 360.737021,34.6090804 342.030676,16.4468808 C337.182223,11.7213455 333.961982,5.5159273 330,0 L353.717619,0 C368.823807,15.3706023 383.911904,30.7243877 399,46.09499 L399,70.1599045 Z M236.002356,0 C258.811858,36.9945672 277.238288,76.7113123 308.375624,108.565866 C328.765671,129.396445 352.013479,146.727081 377.715807,160.963565 C384.605995,164.767851 391.899425,167.878911 399,171.311222 L399,193.460621 C359.762749,175.572023 324.435197,152.458872 294.36733,121.940045 C270.137713,97.3897198 253.131398,68.3587912 236.353002,39.0573356 C228.831652,25.8860523 220.801866,13.0191119 213,0 L236.002356,0 Z M296.502867,0 C320.927423,44.7232374 354.141379,81.7772678 399,108.594646 L399,130.310263 C372.821004,116.942984 350.150888,99.0371247 330.009229,78.3816146 C307.459516,55.2911728 288.951895,29.3351309 276,0 L296.502867,0 Z M399,401.957041 C372.208328,396.826563 344.469829,394.188494 318.870456,385.918229 C287.870668,375.93241 258.676862,361.188356 228.746636,348.402623 C225.625617,347.059312 222.767605,345.100991 219.979728,343.191223 C214.526711,339.484979 210.336129,334.872405 215.035192,328.625199 C219.348511,322.879711 225.274941,324.498159 230.815627,327.443732 C241.07291,332.86553 251.102253,338.708125 261.587476,343.725311 C298.846837,361.657706 338.069986,374.41107 379.590065,380.917227 C386.095111,381.936849 392.530022,383.361082 399,384.607287 L399,401.957041 Z M172.887672,0 C184.461309,16.6316523 196.40043,33.0490217 207.50416,49.9608902 C225.01255,76.5979072 240.362848,104.652488 259.454999,130.185124 C292.957634,175.003224 339.878727,204.07977 392.960824,224.700381 C394.823048,225.44213 396.98114,225.54103 399,225.936629 L399,245.584726 C373.224726,234.112347 346.161559,224.634448 321.952642,210.722541 C274.317986,183.343775 240.310637,143.717915 213.386701,97.4987349 C193.789835,63.8563143 169.946401,32.4226562 148,0 L172.887672,0 Z M102.907981,0 C140.586103,43.1130248 170.881467,90.7378778 196.625578,141.203511 C227.511563,201.728851 277.227923,242.836619 341.275519,268.353514 C359.949554,275.789675 379.735345,280.735976 399,286.818588 L399,306.720764 C361.49559,297.546713 325.120308,285.682276 291.732871,266.264704 C244.709046,238.909657 206.770356,202.998847 181.96429,155.658072 C156.637087,107.314669 128.930031,60.54205 93.0063999,18.6321793 C87.5344735,12.248778 81.6630096,6.19958613 76,0 L102.907981,0 Z M31.0111715,0 C48.9969572,19.8531421 67.8152576,39.0760258 84.795088,59.7086982 C111.0193,91.6030944 132.473897,126.516097 150.477027,163.270118 C196.542839,257.377661 277.279418,308.212983 379.904195,331.83109 C386.252119,333.290636 392.634732,334.667253 399,336.077042 L399,355.847255 C367.069594,346.65875 334.0812,339.941522 303.416909,327.833924 C230.277027,298.941549 173.527277,251.390205 138.128059,182.791545 C115.962356,139.834454 92.565225,97.5739643 60.461378,60.6706716 C41.8165181,39.2418833 20.257857,20.1516856 0,0 L31.0111715,0 Z" id="Fill" fill="url(#linearGradient-1)" transform="translate(199.500000, 211.032220) scale(-1, -1) translate(-199.500000, -211.032220) "></path>
+                        </g>
+                    </svg>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-4">
+                            <div data-sly-test="${properties.tileTitle}" class="wst-main-headings">
+                                <h3>${properties.tileTitle}</h3>
+                            </div>
+                            <div class="paragraph-styling ul-list-cms">
+                                <div class="p2">
+                                    ${properties.nonactionboxDesc @ context="html"}
+                                </div>
+                            </div>
+                            <div class="controls">
+                                <div class="prev">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <rect width="48" height="48" fill="#fff" fill-rule="nonzero" opacity=".8" rx="24"></rect>
+                                            <g>
+                                                <path d="M0 0H24V24H0z" transform="translate(12 12)"></path>
+                                                <g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                    <path d="M.511 5.28L17.462 5.28M5.281 10.369L.5 5.281 5.588.5" transform="translate(12 12) translate(3 7)"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="next">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+                                        <g fill="none" fill-rule="evenodd">
+                                            <rect width="48" height="48" fill="#fff" fill-rule="nonzero" opacity=".8" rx="24"></rect>
+                                            <g>
+                                                <path d="M0 0H24V24H0z" transform="matrix(-1 0 0 1 36 12)"></path>
+                                                <g stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                                    <path d="M.511 5.28L17.462 5.28M5.281 10.369L.5 5.281 5.588.5" transform="matrix(-1 0 0 1 36 12) translate(3 7)"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-8">
+                            <div class="${!wcmmode.edit ? 'swiper-container swiper-container-horizontal' : ''}">
+                                <div class="${!wcmmode.edit ? 'swiper-wrapper' : ''}">
+                                    <div class="nonactionboxtile swiper-slide" data-sly-repeat="${container.items}"
+                                         data-sly-resource="${item.name  @ decorationTagName=wcmmode.edit ? 'div' : ''}"></div>
+                                </div>
+                            </div>
+                            <div class="${!wcmmode.edit ? 'swiper-scrollbar' : ''}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </sly>
+
+</template>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Product detail"
+    jcr:title="Product Tile"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -12,42 +12,6 @@
                 sling:resourceType="granite/ui/components/coral/foundation/tabs"
                 maximized="{Boolean}true">
                 <items jcr:primaryType="nt:unstructured">
-                    <image
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Image"
-                        sling:resourceType="granite/ui/components/coral/foundation/container"
-                        margin="{Boolean}true">
-                        <items jcr:primaryType="nt:unstructured">
-                            <columns
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
-                                margin="{Boolean}true">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <column
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/container">
-                                        <items jcr:primaryType="nt:unstructured">
-                                            <file
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
-                                                allowUpload="{Boolean}false"
-                                                autoStart="{Boolean}false"
-                                                class="cq-droptarget"
-                                                fieldLabel="Image Asset"
-                                                fileNameParameter="./fileName"
-                                                fileReferenceParameter="./fileReference"
-                                                mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
-                                                multiple="{Boolean}false"
-                                                name="./file"
-                                                title="Upload Image Asset"
-                                                uploadUrl="${suffix.path}"
-                                                useHTML5="{Boolean}true"/>
-                                        </items>
-                                    </column>
-                                </items>
-                            </columns>
-                        </items>
-                    </image>
                     <productcategorydata
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Products Tile Details"
@@ -64,6 +28,47 @@
                                         sling:resourceType="granite/ui/components/coral/foundation/container"
                                         name="./productItems">
                                         <items jcr:primaryType="nt:unstructured">
+                                            <bottomimagecheck
+                                                    jcr:primaryType="nt:unstructured"
+                                                    granite:class="cq-dialog-checkbox-showhide"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                    checked="{Boolean}false"
+                                                    fieldDescription="When checked, The tile show with Blue Image Theme."
+                                                    name="./blueBgCheck"
+                                                    text="Check and select for Blue BG Image theme"
+                                                    uncheckedValue="{Boolean}false"
+                                                    value="{Boolean}true">
+                                                <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        cq-dialog-checkbox-showhide-target=".bottomimagecheck"/>
+                                            </bottomimagecheck>
+                                            <bluebgselectedbehavior
+                                                    granite:class="bottomimagecheck"
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                <bluebgBehavior
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Blue Background Behavior"
+                                                        name="./bluebgBehavior">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <bgwithpattern
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Dark Blue Background With Pattern"
+                                                            value="darkbgPattern"/>
+                                                        <withoutpatter
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Dark Blue Background Without Pattern"
+                                                            value="darkbgNoPattern"/>
+                                                        <lightblue
+                                                            jcr:primaryType="nt:unstructured"
+                                                            text="Light Blue Background"
+                                                            value="lightBluebg"/>
+                                                    </items>
+                                                </bluebgBehavior>
+                                                </items>
+                                            </bluebgselectedbehavior>
                                             <offer
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -85,69 +90,62 @@
                                                 fieldLabel="Product Sub Title"
                                                 maxlength="{Long}40"
                                                 name="./productSubTitle"/>
+                                            <wasproductsubtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for the was product sub Title."
+                                                fieldLabel="Was Product Sub Title"
+                                                maxlength="{Long}40"
+                                                name="./wasproductSubTitle"/>
+                                            <internetpackage
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Package Details"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <packagetitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for package title."
+                                                        fieldLabel="Package Title"
+                                                        maxlength="{Long}40"
+                                                        name="./packageTitle"/>
+                                                    <packagedescription
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for package description."
+                                                        fieldLabel="Package Description"
+                                                        maxlength="{Long}40"
+                                                        name="./packageDesc"/>
+                                                    <speedunits
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for Speed Units."
+                                                        fieldLabel="Speed Units"
+                                                        maxlength="{Long}40"
+                                                        name="./speedUnits"/>
+                                                    <progressbar
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Progress Bar Asset"
+                                                        fieldLabel="Progress Bar Asset"
+                                                        name="./progressBar"
+                                                        rootPath="/content/dam/etisalat/progress-bar"/>
+												   <dividerline														
+														jcr:primaryType="nt:unstructured"
+														sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+														fieldDescription="When checked, The divider line will be shown below of the progress bar"
+														name="./dividerLine"
+														text="Show Divider Line"
+														uncheckedValue="{Boolean}false"
+														value="{Boolean}true"/>
+                                                </items>
+                                            </internetpackage>
                                             <productdescription
                                                 jcr:primaryType="nt:unstructured"
-												sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
                                                 sling:resourceType="cq/gui/components/authoring/dialog/richtext"
                                                 fieldDescription="A description to display as the product description."
                                                 fieldLabel="Product Description"
                                                 name="./productDesc"
-                                                useFixedInlineToolbar="{Boolean}true"/>
-                                            <viewallbenefitslabel
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Text that will appear for view all label."
-                                                fieldLabel="See All Benefits Label"
-                                                maxlength="{Long}40"
-                                                name="./viewAllLabel"/>
-                                            <viewallbenefitslink
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                                                fieldDescription="View All Label link"
-                                                fieldLabel="See All Benefits Link"
-                                                name="./viewAllLink"
-                                                rootPath="/content/experience-fragments"/>
-                                            <productprice
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Text that will appear for product price."
-                                                fieldLabel="Product Price"
-                                                maxlength="{Long}40"
-                                                name="./productPrice"/>
-                                            <oldproductprice
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Text that will appear for product old price."
-                                                fieldLabel="Product Old Price"
-                                                maxlength="{Long}40"
-                                                name="./productOldPrice"/>
-                                            <productcurrency
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Text that will appear for product currency."
-                                                fieldLabel="Product Currency"
-                                                maxlength="{Long}40"
-                                                name="./productCurrency"/>
-                                            <vatinclude
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Text that will appear for VAT include"
-                                                fieldLabel="VAT Include Text"
-                                                maxlength="{Long}40"
-                                                name="./vatInclude"/>
-                                            <moreinfolabel
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                fieldDescription="Text that will appear for more info label."
-                                                fieldLabel="More Info Label"
-                                                maxlength="{Long}40"
-                                                name="./moreInfoLabel"/>
-                                            <moreinfodescription
-                                                jcr:primaryType="nt:unstructured"
-                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
-                                                fieldDescription="A description to display as the more info description."
-                                                fieldLabel="More Info Description"
-                                                name="./moreInfoDesc"
                                                 useFixedInlineToolbar="{Boolean}true">
                                                 <rtePlugins jcr:primaryType="nt:unstructured">
                                                     <format
@@ -161,7 +159,46 @@
                                                         features="*"/>
                                                     <paraformat
                                                         jcr:primaryType="nt:unstructured"
-                                                        features="*"/>
+                                                        features="*">
+                                                        <formats jcr:primaryType="nt:unstructured">
+                                                            <default_p
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Paragraph"
+                                                                tag="p"/>
+                                                            <default_h1
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 1"
+                                                                tag="h1"/>
+                                                            <default_h2
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 2"
+                                                                tag="h2"/>
+                                                            <default_h3
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 3"
+                                                                tag="h3"/>
+                                                            <default_h4
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 4"
+                                                                tag="h4"/>
+                                                            <default_h5
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 5"
+                                                                tag="h5"/>
+                                                            <default_h6
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Heading 6"
+                                                                tag="h6"/>
+                                                            <default_blockquote
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Quote"
+                                                                tag="blockquote"/>
+                                                            <default_pre
+                                                                jcr:primaryType="nt:unstructured"
+                                                                description="Preformatted"
+                                                                tag="pre"/>
+                                                        </formats>
+                                                    </paraformat>
                                                     <links
                                                         jcr:primaryType="nt:unstructured"
                                                         features="*"/>
@@ -200,6 +237,10 @@
                                                                 <nbsp
                                                                     jcr:primaryType="nt:unstructured"
                                                                     entity="&amp;#160;"/>
+																<infinity
+																	jcr:primaryType="nt:unstructured"
+																	entity="&amp;infin;"
+																	name="infinity"/>
                                                             </chars>
                                                         </specialCharsConfig>
                                                     </misctools>
@@ -207,18 +248,146 @@
                                                         jcr:primaryType="nt:unstructured"
                                                         features="*">
                                                         <styles jcr:primaryType="nt:unstructured">
-                                                            <plainSpan
-                                                                jcr:primaryType="nt:unstructured"
-                                                                cssName="defaultSpan"
-                                                                text="Default (add span tag)"/>
-                                                            <lead
-                                                                jcr:primaryType="nt:unstructured"
-                                                                cssName="lead"
-                                                                text="Lead"/>
                                                             <strikethrough
                                                                 jcr:primaryType="nt:unstructured"
                                                                 cssName="strikethrough"
                                                                 text="strikethrough"/>
+                                                            <deviderline
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="divider-line"
+                                                                text="divider line"/>
+                                                            <fontgoldbluetile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="font--productdesc"
+                                                                text="Font-small gold/blue tile"/>
+                                                            <bluecheck
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="icon-checkbox-platinum"
+                                                                text="icon check blue"/>
+                                                            <goldcheck
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="icon-checkbox-gold"
+                                                                text="icon check gold"/>
+                                                            <iconsmile
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="icon-smiles"
+                                                                text="smile icon"/>
+                                                            <iconswitch
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="icon-switch"
+                                                                text="switch icon"/>
+                                                            <iconunlimited
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="icon-unlimited"
+                                                                text="unlimited icon"/>
+                                                            <iconimageadjust
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="iconimage"
+                                                                text="icon image adjust 20x20"/>
+                                                            <oldprice
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="old-price"
+                                                                text="Old Price"/>
+                                                            <oldpricevalue
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="old-price-value"
+                                                                text="Old Price Value"/>
+                                                            <spacebottom
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="space-bottom"
+                                                                text="Space Botttom"/>
+                                                            <spaceleft
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="space-left"
+                                                                text="Space Left"/>
+                                                            <spaceright
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="space-right"
+                                                                text="Space Right"/>
+                                                            <spacetop
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="space-top"
+                                                                text="Space Top"/>
+                                                            <buttondisabled
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-button--disabled"
+                                                                text="Button Disabled"/>
+                                                            <buttongrey
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-button--grey"
+                                                                text="Button Grey"/>
+                                                            <buttonprimary
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-button--primary"
+                                                                text="Button Primary"/>
+                                                            <buttonsecondary
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-button--secondary"
+                                                                text="Button Secondary"/>
+                                                            <fullwidthbutton
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-button--width_100"
+                                                                text="Secondary Button Full Width"/>
+															<fontxsmall
+																jcr:primaryType="nt:unstructured"
+																cssName="font-size--12"
+																text="Font 12"/>
+															<fontsmall
+																jcr:primaryType="nt:unstructured"
+																cssName="font-size--14"
+																text="Font 14"/>
+															<fontmedium
+																jcr:primaryType="nt:unstructured"
+																cssName="font-size--16"
+																text="Font 16"/>
+															<fontbig
+																jcr:primaryType="nt:unstructured"
+																cssName="font-size--20"
+																text="Font 20"/>
+                                                            <fontcolorblack
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text--black"
+                                                                text="Font Color Black"/>
+                                                            <fontcolorgray
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text--gray"
+                                                                text="Font Color Gray"/>
+                                                            <fontcolorgreen
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text--green"
+                                                                text="Font Color Green"/>
+                                                            <fontcolororange
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text--orange"
+                                                                text="Font Color Orange"/>
+                                                            <fontcolorwhite
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="text--white "
+                                                                text="Font Color White"/>
+                                                            <linkarrow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-link__arrow"
+                                                                text="Link Arrow"/>
+                                                            <whitelinkarrow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-link__arrow cmp-link__arrow--white"
+                                                                text="White Link Arrow "/>
+                                                            <linkarrowlefticon
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-link__arrow_left"
+                                                                text="Link Arrow Left Icon"/>
+                                                            <linktext
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-link__text"
+                                                                text="Link Text"/>
+                                                            <listarrow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="cmp-text--arrow"
+                                                                text="List Style Arrow"/>
+                                                            <number
+                                                                jcr:primaryType="nt:unstructured"
+                                                                cssName="font--number"
+                                                                text="Number"/>
                                                         </styles>
                                                     </styles>
                                                     <table
@@ -264,7 +433,108 @@
                                                             toolbar="[table#insertcolumn-before,table#insertcolumn-after,table#removecolumn,-,table#insertrow-before,table#insertrow-after,table#removerow,-,table#mergecells-right,table#mergecells-down,table#mergecells,table#splitcell-horizontal,table#splitcell-vertical,-,table#selectrow,table#selectcolumn,-,table#ensureparagraph,-,table#modifytableandcell,table#removetable,-,undo#undo,undo#redo,-,table#exitTableEditing,-]"/>
                                                     </cui>
                                                 </uiSettings>
-                                            </moreinfodescription>
+                                            </productdescription>
+                                            <viewchannellistlabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for channel List  label."
+                                                fieldLabel="View Channel List Label"
+                                                maxlength="{Long}40"
+                                                name="./channelLabel"/>
+                                            <viewchannellink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="View Channel List Link."
+                                                fieldLabel="View Channel List Link"
+                                                name="./channelLink"
+                                                rootPath="/content"/>
+                                            <viewallbenefitslabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for view all label."
+                                                fieldLabel="See All Benefits Label"
+                                                maxlength="{Long}40"
+                                                name="./seeAllLabel"/>
+                                            <commitmenttext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for commitment labeltext. "
+                                                fieldLabel="Commitment Text "
+                                                maxlength="{Long}40"
+                                                name="./commitmentText"/>
+                                            <contracttext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for contract labeltext. "
+                                                fieldLabel="Contract Text "
+                                                maxlength="{Long}40"
+                                                name="./contractText"/>
+                                            <pricetag
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Price Tag"
+                                                sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <productprice
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product price."
+                                                        fieldLabel="Product Price"
+                                                        maxlength="{Long}40"
+                                                        name="./productPrice"/>
+                                                    <oldproductprice
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product old price."
+                                                        fieldLabel="Product Old Price"
+                                                        maxlength="{Long}40"
+                                                        name="./productOldPrice"/>
+                                                    <productcurrency
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for product currency."
+                                                        fieldLabel="Product Currency"
+                                                        maxlength="{Long}40"
+                                                        name="./productCurrency"/>
+                                                    <vatinclude
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for VAT include"
+                                                        fieldLabel="VAT Include Text"
+                                                        maxlength="{Long}40"
+                                                        name="./vatInclude"/>
+                                                </items>
+                                            </pricetag>
+                                            <moreinfolabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Text that will appear for more info label."
+                                                fieldLabel="More Info Label"
+                                                maxlength="{Long}40"
+                                                name="./moreInfoLabel"/>
+                                            <fragmentlink
+                                                granite:class="linkbehavior-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <fragmentVariationPath
+                                                        granite:id="xfPicker"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="cq/experience-fragments/editor/components/xffield"
+                                                        fieldDescription="Choose the experience fragment variation to display the modal pop for View all link / More Info link."
+                                                        fieldLabel="Experience Fragment Variation Path (View all Benefits/More Info Description)"
+                                                        filter="folderOrVariant"
+                                                        name="./fragmentVariationPath"
+                                                        propertyFilter="cq:xfShowInEditor"
+                                                        variant="web"/>
+                                                    <modalBehavior
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Popup Behavior"
+                                                        sling:resourceSuperType="etisalat/components/commons/modal-popup-variations/modalBehavior"
+                                                        name="./modalBehavior">
+                                                    </modalBehavior>
+                                                </items>
+                                            </fragmentlink>
                                             <contract
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
@@ -272,6 +542,28 @@
                                                 fieldLabel="Contract Period"
                                                 maxlength="{Long}40"
                                                 name="./contract"/>
+                                            <contractperiodalignment                                               
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <alignment
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Contract Period Alignment"
+                                                        name="./contractAlignment">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <left
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Left"
+                                                                value="left"/>
+                                                            <center
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Center"
+                                                                value="center"/>                                                            
+                                                        </items>
+                                                    </alignment>
+                                                </items>                                                
+                                            </contractperiodalignment>
                                             <buynowbutton
                                                 jcr:primaryType="nt:unstructured"
                                                 sling:resourceType="granite/ui/components/coral/foundation/form/textfield"

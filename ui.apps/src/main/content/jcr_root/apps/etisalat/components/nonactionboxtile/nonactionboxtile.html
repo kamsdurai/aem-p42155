@@ -1,0 +1,108 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+   data-sly-use.tileModel="com.etisalat.core.models.TileModel"
+   data-panelcontainer="${wcmmode.edit && 'Non Action Box Tile'}"
+   data-placeholder-text="${wcmmode.edit && 'Please update Non Action Box Tile' @ i18n}">
+   <!-- quotes -false and no pretitle - media-->
+   <sly data-sly-test="${!properties.enableQuotes && !properties.pretitle}">
+      <div class="media-content">
+         <div class="img-container">
+            <div data-sly-test="${properties['image/fileReference']}" class="cover">
+               <div data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}" alt="${properties.accAltText}"></div>
+            </div>
+         </div>
+         <div class="body-wrapper">
+            <div class="body">
+               <div data-sly-test="${properties.title}" class="wst-main-headings">
+                  <h4 data-sly-element="${properties.titleType}">${properties.title}</h4>
+               </div>
+               <div data-sly-test="${properties.description}" class="paragraph-styling">
+                  <div class="p2">
+                     ${properties.description @ context='html'}
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </sly>
+   <!-- quotes -false and  pretitle - non action-->
+   <sly data-sly-test="${!properties.enableQuotes && properties.pretitle }">
+      <div class="nab-wrapper">
+         <div class="nab-content">
+            <div data-sly-test="${properties.pretitle}" class="wst-secondary-headings">
+               <h4>${properties.pretitle}</h4>
+            </div>
+            <div data-sly-test="${properties.title}" class="wst-main-headings">
+               <h5 data-sly-element="${properties.titleType}" >${properties.title}</h5>
+            </div>
+            <div class="clickable-area">
+               <div data-sly-test="${properties.description}" class="paragraph-styling">
+                  <div class="p2">
+                     ${properties.description @ context='html'}
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="nab-image">
+            <sly data-sly-test="${properties.youTubeUrl}">
+               <!-- youtube link  -->
+               <a href="#" class="youtube-video-link">
+                  <div class="icon">
+                     <img src="${properties.playIconReference}" alt="Play Video"/>
+                  </div>
+               </a>
+               <!-- Modal start -->
+               <div class="youtube-popup-container modal fade mediaCtaVideo" id="mediaCtaVideo_1" role="dialog" style="display: none;">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <iframe width="560" height="315" src="${properties.youTubeUrl}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                     </div>
+                  </div>
+               </div>
+               <!-- Modal end -->
+            </sly>
+            <div data-sly-test="${properties['image/fileReference']}" class="cover">
+               <div data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}" alt="${properties.accAltText}"></div>
+            </div>
+         </div>
+      </div>
+   </sly>
+   <!--quotes = true testimonials-->
+   <sly data-sly-test="${properties.enableQuotes && !properties.title  && !properties.pretitle }">
+      <div class="with-image-banner">
+         <!-- tile image  -->
+         <div class="img-banner">
+            <div data-sly-test="${properties['image/fileReference']}" class="cover">
+               <div data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}" alt="${properties.accAltText}"></div>
+            </div>
+         </div>
+         <!-- tile content -->
+         <div class="testimonial-tile ">
+            <div class="qoutes">
+               <svg xmlns="http://www.w3.org/2000/svg" width="34" height="25" viewBox="0 0 34 25">
+                  <g fill="none" fill-rule="evenodd">
+                     <g fill="#F1F1EB" fill-rule="nonzero">
+                        <g>
+                           <g>
+                              <g>
+                                 <path d="M0 1.4v9.7c0 .773.627 1.4 1.4 1.4h7.1c0 4.594-3.81 8.333-8.5 8.333V25c7.03 0 12.75-5.607 12.75-12.5V1.4c0-.773-.627-1.4-1.4-1.4H1.4C.627 0 0 .627 0 1.4zM21.25 1.4v9.7c0 .773.627 1.4 1.4 1.4h7.1c0 4.594-3.81 8.333-8.5 8.333V25C28.28 25 34 19.393 34 12.5V1.4c0-.773-.627-1.4-1.4-1.4h-9.95c-.773 0-1.4.627-1.4 1.4z" transform="translate(-552.000000, -634.000000) translate(-1.000000, 543.286486) translate(529.000000, 66.708862) translate(24.000000, 24.000000)"></path>
+                              </g>
+                           </g>
+                        </g>
+                     </g>
+                  </g>
+               </svg>
+            </div>
+            <div data-sly-test="${properties.description}" class="paragraph-styling ul-list-cms">
+               <div class="p2">
+                  ${properties.description @ context='html'}
+               </div>
+            </div>
+            <div class="user-profile">
+               <div data-sly-test="${properties.userName}"  class="name">${properties.userName}</div>
+               <div data-sly-test="${properties.userDesignation}"  class="designation">${properties.userDesignation}</div>
+            </div>
+         </div>
+      </div>
+   </sly>
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty =  !properties.fileReference && !properties.description}"></sly>

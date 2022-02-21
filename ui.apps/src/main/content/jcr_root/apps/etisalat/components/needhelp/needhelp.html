@@ -1,0 +1,47 @@
+<!--/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  ~ Copyright 2018 Adobe
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~     http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/-->
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"></sly>
+
+<div data-sly-use.needHelpIcon="com.etisalat.core.models.NeedHelpIconList">
+  <sly data-sly-call="${templates.placeholder @ isEmpty = !needHelpIcon.title && !needHelpIcon.description}"></sly>
+
+<div class="need-help-section">
+    <div class="container">
+        <div class="row need-help-row">
+            <div class="col-xs-12 col-md-4">
+                <div class="need-help-content">                
+                    <h2>${needHelpIcon.title}</h2>                                 
+                    <p data-sly-test="${needHelpIcon.description}">${needHelpIcon.description}</p>                                                                                         
+ 					<a data-sly-test="${needHelpIcon.buttonText}"href="${needHelpIcon.buttonLink}" class="btn btn-default">${needHelpIcon.buttonText}</a>
+                 </div>
+            </div>
+            <div class="col-xs-12 col-md-8">
+				<sly data-sly-test="${needHelpIcon.iconListSize  >= 2}">
+					<div data-sly-list.item="${needHelpIcon.iconDetailsWithBean}" class="row">
+					<div class="col-xs-6 col-md-3">
+					   <a href="${item.cardLink}">
+						 <div class="need-help-icons">                       
+								<img src="${item.cardIcon}"  alt="${item.iconAltText}" />                                                                 
+								<span class="heading-sub">${item.cardTitle}</span>                              
+						 </div> 
+					   </a>
+					</div>
+					</div>
+				</sly>
+            </div>
+         </div>
+    </div>
+</div>

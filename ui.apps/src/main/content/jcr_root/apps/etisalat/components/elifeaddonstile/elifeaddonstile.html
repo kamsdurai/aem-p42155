@@ -1,0 +1,34 @@
+<sly data-sly-use.elifeAddonsTile="com.etisalat.core.models.ElifeAddonsTileModel" data-sly-use.templates="core/wcm/components/commons/v1/templates.html" />
+
+    <div class="tile-table product-grid">
+        <div class="tile-card effect__click">
+            <a href="${elifeAddonsTile.availabilityButtonLink}" target="${properties.linktarget?'_blank':'_self'}" class="tile" alt="${elifeAddonsTile.buyNowAltText}">
+                <div class="tile-card__front">
+                    <div class="tiles-box content body-standard">
+                        <div class="tiles-box-title">
+                            <div data-sly-test="${elifeAddonsTile.brandText}" class="catagory">${elifeAddonsTile.brandText}</div>
+                            <h2 data-sly-test="${elifeAddonsTile.productTitle}">${elifeAddonsTile.productTitle}</h2>
+                        </div>
+                        <div class="tiles-box-list">
+                            <div data-sly-test="${elifeAddonsTile.productPrice}" class="detail-info-wrap detail-info-wrap-pricetag">
+                                <div class="detail-price-new">
+                                    <div class="main-part">
+                                        <div dir="ltr" class="price">${elifeAddonsTile.productPrice}</div>
+                                        <small>${elifeAddonsTile.productCurrency}</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <p data-sly-test="${elifeAddonsTile.vatInclude}" class="bottom-text">
+                                ${elifeAddonsTile.vatInclude}
+                            </p>
+                        </div>
+                        <div data-sly-test="${elifeAddonsTile.availabilityButtonText}" class="read-more select-product-from-grid select-product-from-grid-without-close" data-extra-container=".extra-options-02">
+                            <span>${elifeAddonsTile.availabilityButtonText}</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+<sly data-sly-call="${templates.placeholder @ isEmpty = !elifeAddonsTile.brandText}"></sly>

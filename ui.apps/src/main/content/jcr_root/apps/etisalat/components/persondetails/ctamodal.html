@@ -1,0 +1,41 @@
+<template data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component" 
+          data-sly-template.modal="${ @ properties,resource,wcmmode}">
+    <div class="action">
+        <a data-label="${component.id}" class="link btn-text btn-green  learn-more btn-modal "
+           title="${properties.ctatext}"> ${properties.ctatext}</a>
+    </div>
+	<div class="offers-popup-wrapper">
+	   <div id="${component.id}" class="nv-modal fade  ${properties.modalBehavior}-modal">
+	      <div class="nv-modal-dialog">
+	         <div class="nv-modal-content nv-py-5">
+	            <div class="container">
+	               <div class="modal-popup">
+	                  <span class="nv-modal-close">
+	                     <!-- svg to be applied by css on nv-modal-close class -->
+	                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px" viewBox="0 0 22 22" version="1.1" class="replaced-svg">
+	                        <g id="eLife-Flows---Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+	                           <g id="dd_eLifeConfig-1.0.7" transform="translate(-1297.000000, -629.000000)" stroke="#242424">
+	                              <g id="verifyEligibility" transform="translate(0.000000, 576.000000)">
+	                                 <g id="title" transform="translate(609.000000, 40.000000)">
+	                                    <g id="closeIcon" transform="translate(675.000000, 0.000000)">
+	                                       <g id="Close-icon-Icon/Outline-1pt/close/close_black" transform="translate(12.000000, 12.000000)">
+	                                          <line x1="22.5" y1="1.5" x2="1.5" y2="22.5" id="Line"></line>
+	                                          <line x1="22.5" y1="22.5" x2="1.5" y2="1.5" id="Line"></line>
+	                                       </g>
+	                                    </g>
+	                                 </g>
+	                              </g>
+	                           </g>
+	                        </g>
+	                     </svg>
+	                  </span>
+	                  <sly
+	                     data-sly-resource="${resource @ resourceType='core/wcm/components/experiencefragment/v1/experiencefragment', wcmmode='disabled'}">
+	                  </sly>
+	               </div>
+	            </div>
+	         </div>
+	      </div>
+	   </div>
+	</div>
+</template>

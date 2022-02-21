@@ -1,0 +1,18 @@
+<template  data-sly-template.usageServices="${ @ billModel,properties,billPageLocale}">
+ <sly data-sly-test="${properties.usageServiceSlideType == 'usage-service-slide1'}"
+	  data-sly-use.usageSlideOneTemplate="usageserivceslides/usage-services-slide1${billPageLocale}.html"
+	  data-sly-call="${usageSlideOneTemplate.usageSlideOne @ billModel=billModel,properties=properties}"> 
+ </sly> 
+  <sly data-sly-test="${properties.usageServiceSlideType == 'usage-service-slide2'}"
+	  data-sly-use.usageSlideTwoTemplate="usageserivceslides/usage-services-slide2${billPageLocale}.html"
+	  data-sly-call="${usageSlideTwoTemplate.usageSlideTwo @ billModel=billModel,properties=properties}"> 
+ </sly> 
+  <sly data-sly-test="${properties.usageServiceSlideType == 'usage-service-slide3'}"
+	  data-sly-use.usageSlideThreeTemplate="usageserivceslides/usage-services-slide3${billPageLocale}.html"
+	  data-sly-call="${usageSlideThreeTemplate.usageSlideThree @ billModel=billModel,properties=properties}"> 
+ </sly> 
+  <sly data-sly-test="${properties.usageServiceSlideType == 'usage-service-slide4'}"
+	  data-sly-use.usageSlideFourTemplate="usageserivceslides/usage-services-slide4${billPageLocale}.html"
+	  data-sly-call="${usageSlideFourTemplate.usageSlideFour @ billModel=billModel,properties=properties}"> 
+ </sly> 
+</template>

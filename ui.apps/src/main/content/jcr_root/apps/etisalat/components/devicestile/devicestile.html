@@ -1,0 +1,39 @@
+ <div class="product-card product-card--device ${properties.offerText ? 'product-card--offer' :''}"> 
+      <a href="${properties.buyNowButtonLink @ extension = 'html'}" alt="${properties.buyNowAltText}" class="link-cover"></a>
+        <div class="product-card__header">
+          <figure class="product-card__header__figure">
+            <div class="product-card__image" data-sly-resource="${resource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+          </figure>
+        </div>
+        <div class="product-card__body d-flex flex-column py-3 px-4">
+          <div data-sly-test="${properties.offerText}" class="product-card__special-offer">${properties.offerText}</div>
+          <div class="product-card__header__title d-flex flex-column">
+            <span data-sly-test="${properties.categoryText}" class="product-card__header__title__primary">${properties.categoryText}</span>
+            <span data-sly-test="${properties.categorySubTitle}" class="product-card__header__title__secondary">${properties.categorySubTitle}</span>
+          </div>
+          <div  data-sly-test="${properties.colorList}" class="product-card__feature-list product-card__color-list mt-1 mb-4">
+            <ul data-sly-list="${properties.colorList}">
+              <li class="product-card__color-list__${item}">${item}</li>             
+            </ul>
+          </div>
+        </div> <!-- product-card__body -->
+        <div class="product-card__footer mt-auto">
+          <div class="py-3 px-4 pr-wrapper">
+            <div class="product-card__price-wrapper p-0">
+              <div data-sly-test="${properties.fromText}" class="product-card__price-from">${properties.fromText}</div>
+              <div class="product-card__price">
+                <span data-sly-test="${properties.productPrice}" class="price-value">${properties.productPrice}</span>
+                <span data-sly-test="${properties.productCurrency}" class="price-currency">${properties.productCurrency} </span>
+              </div>
+              <div class="product-card__price-vat">
+                <span data-sly-test="${properties.productOldPrice}" class="product-card__old-price">
+                  ${properties.productOldPriceText}
+                  <span class="old-price-value"> ${properties.productOldPrice} </span>
+                </span> ${properties.vatInclude}
+              </div>
+            </div>
+          </div>
+          <div class="product-card__smile-points"> ${properties.smilePointsLabel}</div>
+         <div role="button" class="product-card__cta"> ${properties.buyNowButtonText}</div>
+        </div><!-- product-card__footer -->
+    </div> <!-- product-card -->

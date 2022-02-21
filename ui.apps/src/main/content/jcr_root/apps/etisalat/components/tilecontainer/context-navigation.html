@@ -1,0 +1,74 @@
+<template data-sly-template.contextNav="${ @ container,properties}">
+   <sly data-sly-set.oneTile="${container.items.size == 1 ? 'single-tile' : ''}"></sly>
+   <sly data-sly-test.twoTile="${container.items.size == 2 ? 'two-tiles' : ''}"></sly>
+   <sly data-sly-test.threeTile="${container.items.size == 3 ? 'three-tiles' : ''}"></sly>
+   <sly data-sly-test.threeTilePlus="${container.items.size > 3 ? 'three-plus-tiles' : ''}"></sly>
+   <sly data-sly-test.typeOfSwiper="${properties.swiperbehaviour == 'with-loop'? 'with-loop' : ''}"></sly>
+   <sly data-sly-test.arrowAlign="${properties.arrowAlignBottom == 'true'? 'arrow-position-bottom' : ''}"></sly> 
+   <sly data-sly-set.withSlider="${typeOfSwiper} with-slider ${oneTile} ${twoTile} ${threeTile} ${threeTilePlus} ${arrowAlign}"></sly>
+   
+   <div class="context-navigation-4-0 ${properties.mainContextTitle ? 'with-main-text' : withSlider}">
+	  <div class="container">
+	    <div data-sly-test="${!properties.mainContextTitle}" class="${!wcmmode.edit ? 'swiper-container' : ''}">
+	      <div class="${!wcmmode.edit ? 'swiper-wrapper' : ''} ${!wcmmode.edit ? 'all-tiles' : 'all-tiles-cq-editable'} ${properties.contextNavAlignment} ${properties.leftinIpad == 'true' ? 'content-left': ''}">
+
+			<sly data-sly-test.linkAlign="${properties.linkwrtText == 'true'? 'swiper-slide btn-align-baseline' : 'swiper-slide'}"></sly>
+	        <div class="context-tile ${!wcmmode.edit ? linkAlign : ''}" data-sly-repeat="${container.items}" 
+	             data-sly-resource="${item.name  @ decorationTagName=wcmmode.edit ? 'div' : ''}"></div>
+	      </div>
+	    </div>
+	    <div data-sly-test="${properties.mainContextTitle}" class="row">
+	      <div class="content col-xs-12 col-md-3">
+	        <div class="wst-main-headings">
+	          <h3>${properties.mainContextTitle}</h3>
+	        </div>
+	        <div data-sly-test="${properties.mainContextDesc}" class="paragraph-styling ul-list-cms">
+	          <div class=""> ${properties.mainContextDesc @ context="html"} </div>
+	        </div>
+	      </div>
+	      <div class="all-tiles col-xs-12 col-md-9">
+	        <div class="context-tile" data-sly-repeat="${container.items}" 
+	             data-sly-resource="${item.name  @ decorationTagName=wcmmode.edit ? 'div' : ''}"></div>
+	      </div>
+	    </div>
+	    <sly data-sly-test="${!properties.mainContextTitle}">
+	       <!-- Control Arrows for context nav-->
+                  <sly data-sly-test="${properties.controlDisplayBehavior=='arrow'}">
+                     <sly data-sly-use.controlTemplate="/apps/etisalat/components/tilecontainer/controls.html"
+                          data-sly-call="${controlTemplate.leftArrow @ properties=properties}">
+                     </sly>
+                     <sly data-sly-use.controlTemplate="/apps/etisalat/components/tilecontainer/controls.html"
+                          data-sly-call="${controlTemplate.rightArrow @ properties=properties}">
+                     </sly>
+                  </sly>
+                  <!-- Control Arrows for context nav ends-->
+
+					<sly data-sly-test="${properties.controlDisplayBehavior=='anglewithbg'}">
+                     <sly data-sly-use.controlTemplate="/apps/etisalat/components/tilecontainer/controls.html"
+                          data-sly-call="${controlTemplate.leftAngleBG @ properties=properties}">
+                     </sly>
+                     <sly data-sly-use.controlTemplate="/apps/etisalat/components/tilecontainer/controls.html"
+                          data-sly-call="${controlTemplate.rightAngleBG @ properties=properties}">
+                     </sly>
+                  </sly>
+                  <!-- Control Angle for context nav-->
+                  <sly data-sly-test="${properties.controlDisplayBehavior=='angle'}">
+                     <sly data-sly-use.controlTemplate="/apps/etisalat/components/tilecontainer/controls.html"
+                          data-sly-call="${controlTemplate.leftAngle @ properties=properties}">
+                     </sly>
+                     <sly data-sly-use.controlTemplate="/apps/etisalat/components/tilecontainer/controls.html"
+                          data-sly-call="${controlTemplate.rightAngle @ properties=properties}">
+                     </sly>
+                  </sly>
+	      <div class="${!wcmmode.edit ? 'scrollbar swiper-scrollbar' : ''}"></div>
+	    </sly>
+	    <div class="hidden-md hidden-lg hidden-sm">
+	      <div data-sly-test="${properties.contextNavLoadMore}" class="load-more">
+	        <div class="action">
+	          <a href="#" class="btn btn-default ripple-effect">${properties.contextNavLoadMore}</a>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+</div>
+</template>

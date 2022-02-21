@@ -16,10 +16,11 @@
             ${properties.title}
         </div>
         <div class="description" data-sly-test="${properties.description}">${properties.description @ context='html'}</div>
-        <div data-sly-test="${properties.promotionCTATitle}" class="learn-more-wrap">
+        <div data-sly-test="${properties.promotionCTATitle}" class="learn-more-wrap third-action-wrapper ${properties.displayCTABehaviour == 'button' ? 'action-btn-default' : 'action-link'}">
             <sly data-sly-test="${properties.promotionLinkBehavior != 'openmodalwindow'}">
-                <a href="${ properties.promotionLinkBehavior == 'opensamewindow'? properties.promotionCTALinkSameWindow : properties.promotionCTALinkNewWindow}"
-                   class="btn-text btn-green learn-more "
+                <sly data-sly-test.link="${properties.promotionLinkBehavior == 'opensamewindow'? properties.promotionCTALinkSameWindow : properties.promotionCTALinkNewWindow}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=link}"/>
+                <a href="${commonlinkmodel.link}"
+                   class="${properties.displayCTABehaviour == 'button' ? 'btn btn-default ripple-effect' : 'link  btn-text btn-green learn-more'}"
                    title="${properties.promotionCTATitle}"
                    target="${properties.promotionLinkBehavior == 'opennewwindow'?'_blank':'_self'}">
                     <span class="moreg">${properties.promotionCTATitle}</span>

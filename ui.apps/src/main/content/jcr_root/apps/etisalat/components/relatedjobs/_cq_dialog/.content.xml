@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Related Jobs"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_title_v2">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <relatedjobsdata
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Related Jobs"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter the related jobs section title"
+                                fieldLabel="Related Jobs Title"
+                                name="./title"/>
+                            <linktext
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Enter CTA Text"
+                                fieldLabel="CTA Title"
+                                name="./linktext"/>
+                            <link
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="CTA Link"
+                                fieldLabel="See All CTA"
+                                name="./link"
+                                rootPath="/content"/>
+                            <linkbehavior
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="Link Behavior"
+                                name="./linkBehavior">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <opennewwindow
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Open In New Window"
+                                        value="opennewwindow"/>
+                                    <opensamewindow
+                                        jcr:primaryType="nt:unstructured"
+                                        text="Open in Same Window"
+                                        value="opensamewindow"/>
+                                </items>
+                            </linkbehavior>
+                        </items>
+                    </relatedjobsdata>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

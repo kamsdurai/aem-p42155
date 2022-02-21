@@ -1,0 +1,34 @@
+<div data-sly-use.siteSearch="com.etisalat.core.models.SiteSearch" class="mega-dropdown search-4-0">
+    <!-- SEARCH FORM STARTS -->
+     <div class="search-form" >
+         <form action="${properties.autoSuggestEndpoint}" data-secondary-search="${properties.searchEndPoint}"                
+             class="form wst-form" id="searchForm" name="searchForm" data-redirect-url="${siteSearch.redirectPage}" method="POST" novalidate="">
+             <div class="form-group floating-label-input input-field search-field">
+                 <input name="${properties.name}" class="search-input" id="searchInput" placeholder="${properties.placeholderTxt}" type="text">                        
+                 <a class="clearSearch"></a>
+             </div>
+         </form>
+     </div>
+    <!-- SEARCH FORM ENDS -->
+
+    <!-- LOADER ANIMATION STARTS -->
+      <sly data-sly-use.loaderTemplate="search-result-loader.html"
+	        data-sly-call="${loaderTemplate.resultLoader @ properties=properties}">      
+	  </sly>  
+    <!-- LOADER ANIMATION ENDS-->
+
+    <!-- SEARCH NOT fOUND STARTS -->
+       <sly data-sly-use.notFoundTemplate="search-not-found.html"
+	        data-sly-call="${notFoundTemplate.notFound @ properties=properties}">      
+	    </sly>
+    <!-- SEARCH NOT FOUND ENDS-->
+    
+    <div class="search-items-wrapper-4-0">
+      <!-- SEARCH DEFAULT VIEW STARTS -->
+        <sly data-sly-use.defaultViewTemplate="search-default-view.html"
+	        data-sly-call="${defaultViewTemplate.defaultView @ siteSearch=siteSearch,properties=properties}">      
+	   </sly>        
+      <!-- SEARCH DEFAULT VIEW ENDS-->
+    </div>
+</div>
+<!-- MEGA SEARCH DESKTOP ENDS -->

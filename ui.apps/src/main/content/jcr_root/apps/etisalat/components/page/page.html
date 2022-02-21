@@ -20,18 +20,80 @@
       data-sly-use.footer="footer.html"
       data-sly-use.redirect="redirect.html">
     <head data-sly-call="${head.head @ page = page, pwa = pwa}"></head>
-    <body class="${page.cssClassNames}"
-          dir="${page.language == 'ar' ? 'rtl' :''}"
+    <title></title>
+	<sly data-sly-set.consumerTemplate="${properties['cq:template'] && 
+         properties['cq:template'] == '/conf/etisalat/settings/wcm/templates/etisalat-consumer-content-page'}" />
+    <body class="${page.cssClassNames} ${pageProperties.hideMegaMenu ? 'topnav--margin' : 'meganavigation--margin'} ${consumerTemplate ? 'consumer__page' : '' }"
+          dir="${page.language == 'ar' ? 'rtl' : 'ltr' }"
           id="${page.id}"
-          data-cmp-data-layer-enabled="${page.data ? true : false}">
+          data-cmp-data-layer-enabled="${page.data ? true : false}"
+          data-page-title="${currentPage.title}">
         <script data-sly-test.dataLayerEnabled="${page.data}">
+          const dataLayerEle = document.querySelector('body'),
+              siteLangElement = document.querySelector('html'),
+              serverName = window.location.hostname,
+              dataLayerUrl = window.location.href
+              pagePathName = window.location.pathname;
+              dataLayerPathName = pagePathName.split('.html')[0];
+
+          let siteLang = siteLangElement.getAttribute('lang'),
+              pageTitle = dataLayerEle.dataset.pageTitle.toLowerCase(),
+              pageName;
+
+          if (dataLayerPathName.includes('/ewallet/')) {
+              if (dataLayerPathName.includes('/personal/')) {
+                populatePageName('personal:home');
+              } else if (dataLayerPathName.includes('/business/')) {
+                populatePageName('business:home');
+              } else {
+                populatePageName('home');
+              }
+          } else {
+              populatePageName('home');
+          }
+          
+          if (siteLang.includes("-")) {
+              let langArr = [];
+              langArr = siteLang.split("-");
+              siteLang = langArr[0];
+          }
+          pageName = siteLang + '-ae:' + pageTitle;
+
+          function populatePageName(title) {
+            let lastSegment = dataLayerPathName.split('/').pop();
+            if (lastSegment === 'index') {
+              pageTitle = title;
+            }
+          }
+
+          function urlExists(url) {
+            var http = new XMLHttpRequest();
+            http.open('HEAD', url, false);
+            http.send();
+            if (http.status != 404)
+              return false;
+            else
+              return true;
+          };
+
+          const isErrorFlg = urlExists(dataLayerUrl);
+
           window.adobeDataLayer = window.adobeDataLayer || [];
           adobeDataLayer.push({
-              page: JSON.parse("${page.data.json @ context='scriptString'}"),
-              event:'cmp:show',
-              eventInfo: {
-                  path: 'page.${page.id @ context="scriptString"}'
+            "event": "pageLoaded",
+            "xdmPageLoad": {
+              "web": {
+                "webPageDetails": {
+                  "name": pageName,
+                  "server": serverName,
+                  "siteSection": pageTitle,
+                  "isErrorPage": isErrorFlg,
+                  "pageViews": {
+                    "value": 1
+                  }
+                }
               }
+            }
           });
         </script>
         <sly data-sly-test.isRedirectPage="${page.redirectTarget && (wcmmode.edit || wcmmode.preview)}"

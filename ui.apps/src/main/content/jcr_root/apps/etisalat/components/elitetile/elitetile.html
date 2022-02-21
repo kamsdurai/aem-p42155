@@ -1,0 +1,55 @@
+ <div class="product-card product-card--elife-lite">
+   <a href="${properties.availabilityButtonLink @ extension = 'html'}" alt="${properties.buyNowAltText}" class="link-cover"></a>
+     <div class="product-card__header">
+       <figure class="product-card__header__figure">
+         <div class="product-card__image" data-sly-resource="${resource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>         
+       </figure>
+       <div class="product-card__header__title d-flex flex-column">
+         <span class="product-card__header__title__primary">${properties.brandText}</span>
+         <span class="product-card__header__title__secondary">${properties.productTitle}</span>
+       </div>
+     </div>
+     <div class="product-card__body d-flex flex-column py-3 px-4">
+       <div class="product-card__item-top d-flex justify-content-center align-items-start">
+         <sly data-sly-use.eliteObj="${resource.path}" data-sly-list.eLiteItems="${eliteObj.listChildren}">
+           <div data-sly-test="${eLiteItems.name == 'packageItems'}" data-sly-repeat.packItem="${eLiteItems.listChildren}" class="package">
+             <sly data-sly-list.imageRes="${packItem.listChildren}">
+               <img alt="${properties.buyNowAltText}" data-sly-test="${imageRes.fileReference}" class="icon" src="${imageRes.fileReference}" />
+             </sly>
+             <span>${packItem.packageText}<small>${packItem.packageUnit}</small>
+             </span>
+             <p> ${packItem.packageSubTitle}</p>
+           </div>
+         </sly>
+       </div>
+       <div data-sly-test="${properties.featureDesc}" class="product-card__feature-list product-card__feature-list--small"> ${properties.featureDesc @ context = 'html'} </div>
+     </div>
+     <!-- product-card__body -->
+     <div class="product-card__footer mt-auto">
+              <div class="py-3 px-4">
+                <div data-sly-test="${properties.viewChannelsText}" class="nv-channel-list">
+                  <a class="ng-binding">
+                    <img alt="${properties.viewChannelsText}" data-sly-test="${properties.fileReference1}"
+                      src="${properties.fileReference1}" />
+                    ${properties.viewChannelsText}
+                  </a>
+                </div>
+                <div class="product-card__price-wrapper p-0">
+                  <div class="product-card__price">
+                    <span data-sly-test="${properties.productPrice}" class="price-value">${properties.productPrice}</span>
+                    <span data-sly-test="${properties.productCurrency}" class="price-currency">${properties.productCurrency} </span>
+                  </div>
+                  <div class="product-card__price-vat">
+                    <span data-sly-test="${properties.productOldPrice}" class="product-card__old-price">
+                      ${properties.productOldPriceText} <span class="old-price-value"> ${properties.productOldPrice} </span>
+                    </span> ${properties.vatInclude}
+                  </div>
+                </div>
+              </div>
+       <div class="product-card__smile-points">${properties.smilePointsLabel}</div>
+       <div role="button" class="product-card__cta">${properties.availabilityButtonText}</div>
+     </div>
+     <!-- product-card__footer -->
+   <!-- a tag wrapper -->
+ </div>
+ <!-- product-card -->

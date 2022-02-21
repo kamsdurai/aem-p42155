@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Image"
+    margin="{Boolean}true"
+    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+   <items jcr:primaryType="nt:unstructured">
+       <columns
+           jcr:primaryType="nt:unstructured"
+           sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+           margin="{Boolean}true">
+           <items jcr:primaryType="nt:unstructured">
+               <column
+                   jcr:primaryType="nt:unstructured"
+                   sling:resourceType="granite/ui/components/coral/foundation/container">
+                   <items jcr:primaryType="nt:unstructured">
+                       <bannerImageCTA		                          
+                           jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/container">
+                           <items jcr:primaryType="nt:unstructured">
+                             <heroimagectalink
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                fieldDescription="HeroBanner Background CTA Link"
+                                fieldLabel="HeroBanner Background CTA Link"
+                                name="./heroBannerImageLinkURL"
+                                rootPath="/content"/> 
+                           </items>
+                       </bannerImageCTA>
+                       <imageDisplaybehavior
+                           granite:class="cq-dialog-dropdown-showhide cq-dialog-editor-dropdown-tab-showhide"
+                           jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                           defaultValue="image"
+						   fieldDescription="Select Variation"
+                           fieldLabel="Select Variation"
+                           name="./heroDisplayBehavior">
+                           <items jcr:primaryType="nt:unstructured">
+                               <image
+                                   jcr:primaryType="nt:unstructured"
+                                   text="Image in background"
+                                   value="image"/>
+                               <imageviewport
+                                   jcr:primaryType="nt:unstructured"
+                                   text="Image viewports"
+                                   value="image-viewports"/>
+                               <video
+                                   jcr:primaryType="nt:unstructured"
+                                   text="Video in background"
+                                   value="video"/>
+                           </items>
+                           <granite:data
+                               jcr:primaryType="nt:unstructured"
+                               cq-dialog-dropdown-showhide-target=".heroimagebehavior-showhide-target"/>
+                       </imageDisplaybehavior>
+                       <imageSection
+                           granite:class="heroimagebehavior-showhide-target"
+                           jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/container">
+                           <items jcr:primaryType="nt:unstructured">
+                               <file
+                                   jcr:primaryType="nt:unstructured"
+                                   sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                   allowUpload="{Boolean}false"
+                                   autoStart="{Boolean}false"
+                                   class="cq-droptarget"
+                                   fieldLabel="Image Asset"
+                                   fileNameParameter="./fileName"
+                                   fileReferenceParameter="./fileReference"
+                                   mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                   multiple="{Boolean}false"
+                                   name="./file"                                   
+                                   title="Upload Image Asset"
+                                   uploadUrl="${suffix.path}"
+                                   useHTML5="{Boolean}true"/>
+                               <imageopacity
+                                   jcr:primaryType="nt:unstructured"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                   fieldDescription="Enter Image Opacity (range between 0.1 to 0.9)"
+                                   fieldLabel="Image Opacity"
+                                   name="./heroImageOpacity"/>                               
+	                            <thumbnail
+		                            jcr:primaryType="nt:unstructured"
+		                            jcr:title="Thumbnail Image Details"
+		                            sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+			                           <items jcr:primaryType="nt:unstructured">
+			                             <thumbnailtext
+				                          jcr:primaryType="nt:unstructured"
+				                          sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+				                          fieldDescription="Enter Thumbnail Text"
+				                          fieldLabel="Thumbnail Text"
+				                          name="./thumbnailText"/>
+					                      <thumbnaildata
+					                          jcr:primaryType="nt:unstructured"
+					                          sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+					                          composite="{Boolean}true"
+					                          fieldDescription="Click on 'Add' button to add thumbnail image"
+					                          fieldLabel="Thumbnail Image(s)"
+					                          validation="multifield-max-3">
+					                          <field
+					                              jcr:primaryType="nt:unstructured"
+					                              sling:resourceType="granite/ui/components/foundation/form/fieldset"
+					                              name="./thumbnailItems">
+					                              <items jcr:primaryType="nt:unstructured">
+					                                  <file
+					                                      jcr:primaryType="nt:unstructured"
+					                                      sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+					                                      allowUpload="{Boolean}false"
+					                                      autoStart="{Boolean}false"
+					                                      class="cq-droptarget"
+					                                      fieldLabel="Icon Image"
+					                                      fileNameParameter="./fileName"
+					                                      fileReferenceParameter="./fileReference"
+					                                      mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+					                                      multiple="{Boolean}false"
+					                                      name="./file"
+					                                      required="{Boolean}true"
+					                                      title="Icon Image Asset"
+					                                      uploadUrl="${suffix.path}"
+					                                      useHTML5="{Boolean}true"/>
+					                              </items>
+					                          </field>
+					                          <granite:data
+					                              jcr:primaryType="nt:unstructured"
+					                              max-items="3"/>
+					                      </thumbnaildata>
+			                           </items>
+			                        </thumbnail>
+		                           </items>
+                           <granite:data
+                               jcr:primaryType="nt:unstructured"
+                               showhidetargetvalue="image"/>
+                       </imageSection>                                           
+                       <videoSection
+                           granite:class="heroimagebehavior-showhide-target"
+                           jcr:primaryType="nt:unstructured"
+                           sling:resourceType="granite/ui/components/coral/foundation/container">
+                           <items jcr:primaryType="nt:unstructured">
+                               <videolink
+                                   jcr:primaryType="nt:unstructured"
+                                   sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                   fieldDescription="Browse the Video Link URL."
+                                   fieldLabel="Video Link URL"
+                                   name="./videoLink"                                   
+                                   rootPath="/content/dam"/>
+                                <youtube
+                                   jcr:primaryType="nt:unstructured"
+                                   sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                   fieldDescription="Enter the video embed URL."
+                                   fieldLabel="Youtube Video Embed URL"
+                                   name="./youTubeUrl"/>
+                                <posterfile
+                                  jcr:primaryType="nt:unstructured"
+                                  sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                  allowUpload="{Boolean}false"
+                                  autoStart="{Boolean}false"
+                                  class="cq-droptarget"
+                                  fieldLabel="Poster Image Asset"
+                                  fileNameParameter="./video/fileName"
+                                  fileReferenceParameter="./video/fileReference"
+                                  mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                  multiple="{Boolean}false"
+                                  name="./video/file"
+                                  title="Upload Poster Image Asset"
+                                  uploadUrl="${suffix.path}"
+                                  useHTML5="{Boolean}true"/>
+                                <playbuttontext
+                                   jcr:primaryType="nt:unstructured"
+                                   sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                   fieldDescription="Enter the Play Button Text."
+                                   fieldLabel="Play Button Text"
+                                   name="./playButton"/>
+                           </items>
+                           <granite:data
+                               jcr:primaryType="nt:unstructured"
+                               showhidetargetvalue="video"/>
+                       </videoSection>
+                   </items>
+               </column>
+           </items>
+       </columns>
+   </items>
+</jcr:root>

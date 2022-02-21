@@ -1,0 +1,33 @@
+<template  data-sly-template.promocard="${ @ properties}">
+   <sly data-sly-test="${properties.promocardvariation=='desktopthreecol'}" >
+      <div class="promo-grid-wrapper">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12 col-sm-6 col-md-4 grid-spacing pad-left-15 pad-right-12">
+                  <sly data-sly-resource="${'par0' @ resourceType='etisalat/components/container'}"> </sly>
+               </div>
+               <div class="col-xs-12 col-sm-6 col-md-3 grid-spacing pad-left-12 pad-right-12">
+                  <sly data-sly-resource="${'par1' @ resourceType='etisalat/components/container'}"> </sly>
+               </div>
+               <div class="col-xs-12 col-md-5 grid-spacing pad-left-12 pad-right-15">
+                  <sly data-sly-resource="${'par2' @ resourceType='etisalat/components/container'}"> </sly>
+               </div>
+            </div>
+         </div>
+      </div>
+   </sly>
+   <sly data-sly-test="${properties.promocardvariation=='desktoptwocol'}">
+      <div class="promo-grid-wrapper two-cols">
+         <div class="container">
+            <div class="row">
+               <div class="col-xs-12 col-md-6 grid-spacing pad-left-15 pad-right-12">
+                  <sly data-sly-resource="${'par4' @ resourceType='etisalat/components/container'}"> </sly>
+               </div>
+               <div class="col-xs-12 col-md-6 grid-spacing pad-left-12 pad-right-15">
+                  <sly data-sly-resource="${'par5' @ resourceType='etisalat/components/container'}"> </sly>
+               </div>
+            </div>
+         </div>
+      </div>
+   </sly>
+</template>

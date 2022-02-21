@@ -1,0 +1,22 @@
+<sly data-sly-template.manualSimplecsv="${ @ tableModel}">
+    <div data-sly-test="${properties.enableSearch == 'true'}" id="channels_filter" class="table-inline--search input-field search-field cms-search"><input type="search" required="" class="advanced-table-search" placeholder="" aria-controls="channels"><label>${!properties.searchPlaceholderText ? 'Search by channel name' : properties.searchPlaceholderText}</label></div>
+    <table data-sly-test="${properties.tableSource == 'simplecsv'}" data-sly-test.rows="${tableModel.allRowsSimpleCSV}">
+        <thead>
+        <sly  data-sly-list.row="${rows}" >
+            <tr  data-sly-test="${rowList.index == 0}">
+                <th id="${item}" data-sly-repeat="${row}"> ${item} </th>
+            </tr>
+        </sly>
+        </thead>
+        <tbody>
+        <sly  data-sly-list.row="${rows}">
+            <tr data-sly-test="${rowList.index > 0}">
+                <td data-sly-repeat="${row}"> ${item}</td>
+            </tr>
+        </sly>
+        </tbody>
+    </table>
+    <p data-sly-use.textModel="com.adobe.cq.wcm.core.components.models.Text"
+       data-sly-test.text="${textModel.text}" data-sly-test="${properties.tableSource == 'rte'}" class="cmp-text__paragraph"
+       data-sly-unwrap="${textModel.isRichText}">${text @ context = textModel.isRichText ? 'html' : 'text'}</p>
+</sly>

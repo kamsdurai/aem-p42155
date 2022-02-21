@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Search Results"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <header
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Header"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <search
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <header
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Search Results Header Text"
+                                                        fieldLabel="Search Results Header Text"
+                                                        name="./headerTitle"/>
+                                                    <filtertext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Filter Text"
+                                                        fieldLabel="Filter Text"
+                                                        name="./filterText"/>                                                   
+                                                </items>
+                                            </search>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </header>
+                    <quicklinks
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Quick Links"
+                        sling:resourceSuperType="etisalat/components/search/cq:dialog/content/items/tabs/items/quicklinks"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true"/>
+                    <brand
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Brand Details"
+                        sling:resourceSuperType="etisalat/components/search/cq:dialog/content/items/tabs/items/brand"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true"/>
+                    <searchnotfound
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Search Not Found"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <container
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <searchnotfound
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"		                                                	                                               
+                                                name="./searchNotFoundMsg"
+                                                fieldLabel="Not Found Message"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <didyoumean
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Did you mean text"
+                                                fieldLabel="Did You Mean Text"
+                                                name="./didYouMeanText"/>
+                                            <relatedtext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Did you mean text"
+                                                fieldLabel="Related Keywords Text"
+                                                name="./relatedText"/>                                            
+                                        </items>
+                                    </container>
+                                </items>
+                            </columns>
+                        </items>
+                    </searchnotfound>          
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

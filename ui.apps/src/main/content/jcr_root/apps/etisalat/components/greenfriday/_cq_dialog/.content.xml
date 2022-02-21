@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Green Friday"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items
+                    jcr:primaryType="nt:unstructured"
+                    sling:orderBefore="properties">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <layout
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Display layout as a"
+                                                name="./goodFridayLayout">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <smallbanner
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Small Banner"
+                                                        value="and-small"/>
+                                                    <mediumbanner
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Medium Banner"
+                                                        value=""/>
+                                                    <innerpagebanner
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Inner Page Banner"
+                                                        value="inner-page-banner"/>
+                                                </items>
+                                            </layout>
+                                            <content
+                                                jcr:primaryType="nt:unstructured"
+                                                jcr:title="Title and Description"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/fieldset">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <text
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        name="./text"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                </items>
+                                            </content>
+                                            <clockdate
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                                                fieldDescription="Select Future Date for Green Friday"
+                                                fieldLabel="Future Date"
+                                                name="./clockDate"
+                                                required="{Boolean}true"/>
+                                            <ctalabel
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Enter Good Friday CTA Label"
+                                                fieldLabel="CTA Label"
+                                                name="./ctatext"/>
+                                            <ctalink
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldDescription="Target URL for when the link is clicked."
+                                                fieldLabel="CTA link"
+                                                name="./ctaLink"
+                                                rootPath="/content"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

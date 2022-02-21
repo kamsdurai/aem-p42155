@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Search"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <search
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <form
+		                                                jcr:primaryType="nt:unstructured"
+		                                                jcr:title="Form"
+		                                                sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+		                                                <items jcr:primaryType="nt:unstructured">                                                                                                       
+		                                                   <name
+		                                                       jcr:primaryType="nt:unstructured"
+		                                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                       fieldDescription="The name of the field, which is submitted with the form data."
+		                                                       fieldLabel="Name"
+		                                                       name="./name"
+		                                                       required="{Boolean}true"/>
+		                                                   <placeholder
+		                                                       jcr:primaryType="nt:unstructured"
+		                                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                       fieldDescription="Place Holder Value"
+		                                                       fieldLabel="Place holder Value"
+		                                                       name="./placeholderTxt"/>
+		                                                   <autoSuggestEndpoint
+		                                                       jcr:primaryType="nt:unstructured"
+		                                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                       fieldDescription="Endpoint URL of the Auto Suggest RESTful service"
+		                                                       fieldLabel="Auto Suggest Endpoint"
+		                                                       name="./autoSuggestEndpoint"
+		                                                       required="{Boolean}true"/>
+		                                                   <endpoint
+		                                                       jcr:primaryType="nt:unstructured"
+		                                                       sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                       fieldDescription="Endpoint URL of the RESTful service"
+		                                                       fieldLabel="Endpoint"
+		                                                       name="./searchEndPoint"
+		                                                       required="{Boolean}true"/>
+		                                                     <id
+				                                                jcr:primaryType="nt:unstructured"
+				                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+				                                                fieldDescription="HTML ID attribute to apply to the component."
+				                                                fieldLabel="ID"
+				                                                name="./id"/>                                                 
+		                                                </items>
+		                                            </form>
+		                                            <searchnotfound
+		                                                jcr:primaryType="nt:unstructured"
+		                                                jcr:title="Search Not Found Message"
+		                                                sling:resourceType="granite/ui/components/foundation/layouts/collapsible">
+		                                                <items jcr:primaryType="nt:unstructured">                                                                                                       
+		                                                     <searchnotfound
+				                                                jcr:primaryType="nt:unstructured"
+				                                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+				                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"		                                                	                                               
+				                                                name="./searchNotFoundMsg"
+				                                                useFixedInlineToolbar="{Boolean}true"/>                                                    
+		                                                </items>
+		                                            </searchnotfound> 	                                                                                             
+                                                    <recentlabel
+		                                                jcr:primaryType="nt:unstructured"
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+		                                                fieldDescription="Recent Search Title"
+		                                                fieldLabel="Recent Search Title"
+		                                                name="./recentSearchTitle"/>
+		                                            <redirectpage
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                        fieldDescription="Search Results Page URL for when the form is submitted"
+                                                        fieldLabel="Search Results Page"
+                                                        name="./redirectPage"                                                        
+                                                        rootPath="/content"/>
+                                                </items>
+                                            </search>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <quicklinks
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Quick Links"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <label
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Title"
+                                                fieldLabel="Title"
+                                                name="./quickLinkTitle"/>
+                                            <linksection
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./quicklinks">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <linktext
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Link Text"
+                                                            fieldLabel="Link Text"
+                                                            name="./linkText"
+                                                            required="{Boolean}true"/>
+                                                        <linkurl
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Link URL"
+                                                            fieldLabel="Link URL"
+                                                            name="./linkUrl"
+                                                            required="{Boolean}true"
+                                                            rootPath="/content"/>
+                                                        <quickLinkBehavior			                                               
+			                                                jcr:primaryType="nt:unstructured"
+			                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+			                                                fieldLabel="Link Behavior"
+			                                                name="./linkBehavior">
+			                                                <items jcr:primaryType="nt:unstructured">
+			                                                    <opensamewindow
+			                                                        jcr:primaryType="nt:unstructured"
+			                                                        text="Open in Same Window"
+			                                                        value="opensamewindow"/>  
+			                                                    <opennewwindow
+			                                                        jcr:primaryType="nt:unstructured"
+			                                                        text="Open In New Window"
+			                                                        value="opennewwindow"/>			                                                                                            
+			                                                </items>			                                                
+			                                            </quickLinkBehavior>
+                                                    </items>
+                                                </field>
+                                            </linksection>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </quicklinks>
+                    <brand
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Brand Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <container
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <brandtitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Brand Title"
+                                                fieldLabel="Brand Title"
+                                                name="./brandTitle"/>
+                                            <brandection
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                composite="{Boolean}true"
+                                                fieldLabel="Brand section"
+                                                required="{Boolean}false">
+                                                <field
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                    name="./brandItems">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <file
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="cq/gui/components/authoring/dialog/fileupload"
+                                                            allowUpload="{Boolean}false"
+                                                            autoStart="{Boolean}false"
+                                                            class="cq-droptarget"
+                                                            fieldLabel="Trend Cover Image"
+                                                            fileNameParameter="./image/fileName"
+                                                            fileReferenceParameter="./image/fileReference"
+                                                            mimeTypes="[image/gif,image/jpeg,image/png,image/tiff,image/svg+xml]"
+                                                            multiple="{Boolean}false"
+                                                            name="./file"
+                                                            title="Upload Image Asset"
+                                                            uploadUrl="${suffix.path}"
+                                                            useHTML5="{Boolean}true"/>
+                                                        <imageresourcehidden
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                                                            name="./image/sling:resourceType"
+                                                            value="etisalat/components/image"/>
+                                                        <title
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Title"
+                                                            fieldLabel="Trend Title"
+                                                            name="./title"
+                                                            required="{Boolean}true"/>
+                                                        <linktext
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                            fieldDescription="Add Tile Link Label"
+                                                            fieldLabel="Trend CTA Label"
+                                                            name="./linkText"
+                                                            required="{Boolean}true"/>
+                                                        <linkurl
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                                            fieldDescription="Target URL for when the link is clicked."
+                                                            fieldLabel="Trend CTA link"
+                                                            name="./linkUrl"
+                                                            required="{Boolean}true"
+                                                            rootPath="/content"/>
+                                                        <brandLinkBehavior			                                               
+			                                                jcr:primaryType="nt:unstructured"
+			                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+			                                                fieldLabel="Link Behavior"
+			                                                name="./linkBehavior">
+			                                                <items jcr:primaryType="nt:unstructured">
+			                                                    <opensamewindow
+			                                                        jcr:primaryType="nt:unstructured"
+			                                                        text="Open in Same Window"
+			                                                        value="opensamewindow"/> 
+			                                                    <opennewwindow
+			                                                        jcr:primaryType="nt:unstructured"
+			                                                        text="Open In New Window"
+			                                                        value="opennewwindow"/>			                                                                                            
+			                                                </items>			                                                
+			                                            </brandLinkBehavior>
+                                                    </items>
+                                                </field>
+                                            </brandection>
+                                        </items>
+                                    </container>
+                                </items>
+                            </columns>
+                        </items>
+                    </brand>                                     
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Tile Container"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.dropdown.dialog.multi.values]">
+    <content
+        granite:class="cmp-container__editor"
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:hideChildren="[layout]">
+                                            <tiletitle
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A title to display as the headline for the tile."
+                                                fieldLabel="Title"
+                                                name="./tileTitle"
+                                                value=""/>
+                                            <tilegridlayout
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                defaultValue="Default"
+                                                fieldDescription="Select Tile Layout."
+                                                fieldLabel="Display tile as a"
+                                                name="./tileBoxLayout">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <tilebox
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Tile Box"
+                                                        value="tile-box"/>
+                                                    <maintextgrid
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Main Text Grid"
+                                                        value="main-text-grid"/>
+                                                    <blogpost
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Blogpost"
+                                                        value="blogpost"/>
+                                                    <contextnavigation
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Context Navigation"
+                                                        value="context-navigation"/>
+                                                    <nonactionbox
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Non Action Box"
+                                                        value="non-action-box"/>
+                                                    <mediacta
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Media CTA"
+                                                        value="mediacta"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".tilegridlayout-showhide-target"/>
+                                            </tilegridlayout>
+                                            <maintextlearnmore
+                                                granite:class="tilegridlayout-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <learmore
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Load More Label for Mobile View"
+                                                        fieldLabel="Load More Label"
+                                                        name="./mainTextLoadMore"
+                                                        required="{Boolean}true"
+                                                        rootPath="/content"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="main-text-grid"/>
+                                            </maintextlearnmore>
+                                            <contextnavigation
+                                                granite:class="tilegridlayout-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <contextnavAlignment
+                                                        granite:class="cq-dialog-dropdown-showhide"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        defaultValue="align-left"
+                                                        fieldDescription="Choose Content Alignment for Context Navigation Tile."
+                                                        fieldLabel="Context Navigation Alignment"
+                                                        name="./contextNavAlignment">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <alignleft
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Left"
+                                                                value="align-left"/>
+                                                            <alignmiddle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Middle"
+                                                                value="align-middle"/>
+                                                        </items>
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-dropdown-showhide-target=".contextnavalignment-showhide-target"/>
+                                                    </contextnavAlignment>
+                                                    <leftinIpad
+                                                        granite:class="contextnavalignment-showhide-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        fieldDescription="Unselect for last tile alignment at center in Ipad view. Select for last odd tile to be left aligned in Ipad view."
+                                                        name="./leftinIpad"
+                                                        text="Incase of odd no. of tiles, align left"
+                                                        uncheckedValue="{Boolean}false"
+                                                        value="{Boolean}true">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            showhidetargetvalue="align-middle"/>
+                                                    </leftinIpad>
+                                                    <mainTitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Add Title for Context Navigation Tiles to appear in grid format."
+                                                        fieldLabel="Main Text Title"
+                                                        maxlength="{Long}100"
+                                                        name="./mainContextTitle"/>
+                                                    <maindescription
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldDescription="Text for context navigation Description."
+                                                        fieldLabel="Main Text Description"
+                                                        name="./mainContextDesc"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                    <linkwrttext
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        fieldDescription="Select for Button/Link to stick to the content."
+                                                        name="./linkwrtText"
+                                                        text="Link alignment relative to Text"
+                                                        uncheckedValue="{Boolean}false"
+                                                        value="{Boolean}true"/>
+                                                    <swiperbehaviour
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldDescription="Slider behavior to be infinite loop or finite loop."
+                                                        fieldLabel="Swiper Behaviour"
+                                                        name="./swiperbehaviour">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <without-loop
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Swiper Finite Loop"
+                                                                value="without-loop"/>
+                                                            <with-loop
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Swiper Infinite Loop"
+                                                                value="with-loop"/>
+                                                        </items>
+                                                    </swiperbehaviour>
+                                                    <loadmore
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Load More Functionality for Mobile View"
+                                                        fieldLabel="Load More Label"
+                                                        name="./contextNavLoadMore"
+                                                        rootPath="/content"/>
+                                                    <controldisplaybehavior
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldDescription="Icons for the left and right arrows."
+                                                        fieldLabel="Controls Display as"
+                                                        name="./controlDisplayBehavior">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <arrow
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Arrow"
+                                                                value="arrow"/>
+                                                            <angle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Angle"
+                                                                value="angle"/>
+                                                            <anglewithbackground
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Angle with Background"
+                                                                value="anglewithbg"/>
+                                                        </items>
+                                                    </controldisplaybehavior>
+                                                    <arrowAlignBottom
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                        fieldDescription="Select for arrow icons to be aligned near the bottom."
+                                                        name="./arrowAlignBottom"
+                                                        text="Align Controls near Bottom"
+                                                        uncheckedValue="{Boolean}false"
+                                                        value="{Boolean}true"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="context-navigation"/>
+                                            </contextnavigation>
+                                            <mediacta
+                                                granite:class="tilegridlayout-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <mediaCTAMainTitle
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Text that will appear for the main text Title."
+                                                        fieldLabel="Main Text Title"
+                                                        maxlength="{Long}100"
+                                                        name="./mediaCTAMainTitle"/>
+                                                    <mediaCTAMainDescription
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldDescription="Text that will appear for the main text Description."
+                                                        fieldLabel="Main Text Description"
+                                                        name="./mediaCTAMainDescription"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="mediacta"/>
+                                            </mediacta>
+                                            <nonactionboxdesc
+                                                granite:class="tilegridlayout-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <nonactionboxbehavior
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        defaultValue="align-left"
+                                                        fieldLabel="Non Action Box Tile Behavior"
+                                                        name="./nonactionboxbehavior">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <withquote
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="With Quotes"
+                                                                value="with-quotes"/>
+                                                            <withpretitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="With Pretitle"
+                                                                value="with-pretitle"/>
+                                                            <withtitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="With Title"
+                                                                value="with-title"/>
+                                                        </items>
+                                                    </nonactionboxbehavior>
+                                                    <nonactionboxdescription
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                        sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                        fieldDescription="Text that will appear for the Non Action Box Description."
+                                                        fieldLabel="Non Action Box Description"
+                                                        name="./nonactionboxDesc"
+                                                        useFixedInlineToolbar="{Boolean}true"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="non-action-box"/>
+                                            </nonactionboxdesc>
+                                            <tilebehavior
+                                                granite:class="tilegridlayout-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <tileboxvariation
+                                                        granite:class="cq-dialog-dropdown-showhide"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                        fieldLabel="Select Tile Variation"
+                                                        name="./tileBoxVariation">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <threetilebox
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="3 Tile Box"
+                                                                value="3-tile-boxes"/>
+                                                            <fourtilebox
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="4 Tile Box"
+                                                                value="4-tile-boxes"/>
+                                                            <gridtilebox
+                                                                jcr:primaryType="nt:unstructured"
+                                                                text="Tile Box With Grid"
+                                                                value="grid-tile-box"/>
+                                                        </items>
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            cq-dialog-dropdown-showhide-target=".tileboxvariation-showhide-target"/>
+                                                    </tileboxvariation>
+                                                    <griddetails_container
+                                                        granite:class="tileboxvariation-showhide-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            showhidetargetvalue="grid-tile-box"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <gridTitle
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                fieldDescription="Text that will appear for the Tile Title."
+                                                                fieldLabel="Main Text Title"
+                                                                maxlength="{Long}100"
+                                                                name="./mainGridTitle"/>
+                                                            <griddescription
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                                fieldDescription="Text that will appear for the Grid View Tile Description."
+                                                                fieldLabel="Main Text  Box Description"
+                                                                name="./gridtileboxDesc"
+                                                                useFixedInlineToolbar="{Boolean}true"/>
+                                                        </items>
+                                                    </griddetails_container>
+                                                    <tileswiper_container
+                                                        granite:class="tileboxvariation-showhide-target"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            showhidetargetvalue="3-tile-boxes"
+                                                            showhidetargetvalue1="4-tile-boxes"/>
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <swipercheckbox
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                                checked="{Boolean}false"
+                                                                fieldDescription="When checked, tile container will have swiper view"
+                                                                name="./swiperDisplayBehavior"
+                                                                text="Check to Enable the slider"
+                                                                uncheckedValue="{Boolean}false"
+                                                                value="{Boolean}true"/>
+                                                        </items>
+                                                    </tileswiper_container>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="tile-box"/>
+                                            </tilebehavior>
+                                            <id
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="HTML ID attribute to apply to the component."
+                                                fieldLabel="ID"
+                                                name="./id"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

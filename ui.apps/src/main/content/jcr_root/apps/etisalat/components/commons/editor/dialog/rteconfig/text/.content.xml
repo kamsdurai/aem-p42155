@@ -49,10 +49,10 @@
                     jcr:primaryType="nt:unstructured"
                     description="Quote"
                     tag="blockquote"/>
-                <default_pre
+                <default_hr
                     jcr:primaryType="nt:unstructured"
-                    description="Preformatted"
-                    tag="pre"/>
+                    description="Horizontal Rule (visual line break)"
+                    tag="hr"/>
             </formats>
         </paraformat>
         <links
@@ -93,6 +93,9 @@
                     <nbsp
                         jcr:primaryType="nt:unstructured"
                         entity="&amp;#160;"/>
+					<item4
+						jcr:primaryType="nt:unstructured"
+						entity="&amp;infin;"/>
                 </chars>
             </specialCharsConfig>
         </misctools>
@@ -104,38 +107,46 @@
                     jcr:primaryType="nt:unstructured"
                     cssName="cmp-button--disabled"
                     text="Button Disabled"/>
-                <buttongrey
-                    jcr:primaryType="nt:unstructured"
-                    cssName="cmp-button--grey"
-                    text="Button Grey"/>
                 <buttonprimary
                     jcr:primaryType="nt:unstructured"
                     cssName="cmp-button--primary"
                     text="Button Primary"/>
+                <buttonpromo
+                    jcr:primaryType="nt:unstructured"
+                    cssName="cmp-button--promo"
+                    text="Button Promo"/>
                 <buttonsecondary
                     jcr:primaryType="nt:unstructured"
                     cssName="cmp-button--secondary"
                     text="Button Secondary"/>
+				<buttontransparent
+                    jcr:primaryType="nt:unstructured"
+                    cssName="cmp-button--transparent"
+                    text="Button Transparent"/>
+				<configuratorheader
+                    jcr:primaryType="nt:unstructured"
+                    cssName="configurator-header"
+                    text="Configurator Header"/>
                 <fullwidthbutton
                     jcr:primaryType="nt:unstructured"
                     cssName="cmp-button--width_100"
                     text="Secondary Button Full Width"/>
-                <fontbig
-                    jcr:primaryType="nt:unstructured"
-                    cssName="font--big"
-                    text="Font Big"/>
-                <fontmedium
-                    jcr:primaryType="nt:unstructured"
-                    cssName="font--med"
-                    text="Font Medium"/>
-                <fontsmall
-                    jcr:primaryType="nt:unstructured"
-                    cssName="font--small"
-                    text="Font Small"/>
                 <fontxsmall
                     jcr:primaryType="nt:unstructured"
-                    cssName="font--xsmall"
-                    text="Font X-Small"/>
+                    cssName="font-size--12"
+                    text="Font 12"/>
+                <fontsmall
+                    jcr:primaryType="nt:unstructured"
+                    cssName="font-size--14"
+                    text="Font 14"/>
+                <fontmedium
+                    jcr:primaryType="nt:unstructured"
+                    cssName="font-size--16"
+                    text="Font 16"/>
+                <fontbig
+                    jcr:primaryType="nt:unstructured"
+                    cssName="font-size--20"
+                    text="Font 20"/>
                 <fontcolorblack
                     jcr:primaryType="nt:unstructured"
                     cssName="text--black"
@@ -148,14 +159,58 @@
                     jcr:primaryType="nt:unstructured"
                     cssName="text--green"
                     text="Font Color Green"/>
+				<fontcolorlightgrey
+                    jcr:primaryType="nt:unstructured"
+                    cssName="text--light_grey"
+                    text="Font Color Light Grey"/>
+				<fontcolorlightsand
+                    jcr:primaryType="nt:unstructured"
+                    cssName="text--light_sand"
+                    text="Font Color Light Sand"/>
+				<fontcolormediumgrey
+                    jcr:primaryType="nt:unstructured"
+                    cssName="text--medium_grey "
+                    text="Font Color Medium Grey"/>
                 <fontcolororange
                     jcr:primaryType="nt:unstructured"
                     cssName="text--orange"
                     text="Font Color Orange"/>
-                <fontcolorwhite
+				<fontcolororangetag
+                    jcr:primaryType="nt:unstructured"
+                    cssName="text--orange_tag"
+                    text="Font Color Orange Tag"/>
+				<fontcolorrederror
+                    jcr:primaryType="nt:unstructured"
+                    cssName="text--red_error"
+                    text="Font Color Red Error"/>
+				<fontcolortextblack
+                    jcr:primaryType="nt:unstructured"
+                    cssName="text--text_black "
+                    text="Font Color Text Black"/>
+				<fontcolorwhite
                     jcr:primaryType="nt:unstructured"
                     cssName="text--white "
                     text="Font Color White"/>
+				<fontcoloryellowwarning
+                    jcr:primaryType="nt:unstructured"
+                    cssName="text--yellow_warning "
+                    text="Font Color Yellow Warning"/>								
+				<header7
+					jcr:primaryType="nt:unstructured"
+					cssName="header-small"
+					text="Header 7"/>
+				<header8
+					jcr:primaryType="nt:unstructured"
+					cssName="header-xsmall "
+					text="Header 8"/>
+				<heroheadingbig
+					jcr:primaryType="nt:unstructured"
+					cssName="hero-heading-big"
+					text="Hero Heading Big(54px)"/>
+				<heroheadingsmall
+					jcr:primaryType="nt:unstructured"
+					cssName="hero-heading-small"
+					text="Hero Heading Small(32px)"/>
                 <linkarrow
                     jcr:primaryType="nt:unstructured"
                     cssName="cmp-link__arrow"
@@ -174,7 +229,7 @@
                     text="Link Text"/>
                 <listarrow
                     jcr:primaryType="nt:unstructured"
-                    cssName="cmp-icon__arrow__list"
+                    cssName="cmp-text--arrow"
                     text="List Style Arrow"/>
                 <number
                     jcr:primaryType="nt:unstructured"
@@ -184,10 +239,50 @@
                     jcr:primaryType="nt:unstructured"
                     cssName="old-price"
                     text="Old Price"/>
+				<oldpricewhite
+                    jcr:primaryType="nt:unstructured"
+                    cssName="old-price old-price--white"
+                    text="Old Price White"/>
+                <oldpriceorange
+                    jcr:primaryType="nt:unstructured"
+                    cssName="old-price old-price--orange"
+                    text="Old Price Orange"/>
                 <oldpricevalue
                     jcr:primaryType="nt:unstructured"
                     cssName="old-price-value"
                     text="Old Price Value"/>
+				<bodycopy1
+                    jcr:primaryType="nt:unstructured"
+                    cssName="body-copy1"
+                    text="P1"/>
+                <bodycopy2
+                    jcr:primaryType="nt:unstructured"
+                    cssName="body-copy2"
+                    text="P2"/>
+                <bodycopy3
+                    jcr:primaryType="nt:unstructured"
+                    cssName="body-copy3"
+                    text="P3"/>
+                <bodycopy4
+                    jcr:primaryType="nt:unstructured"
+                    cssName="body-copy4"
+                    text="P4"/>
+                <secondaryheader1
+                    jcr:primaryType="nt:unstructured"
+                    cssName="secondary-header1"
+                    text="Secondary Header 1"/>
+                <secondaryheader2
+                    jcr:primaryType="nt:unstructured"
+                    cssName="secondary-header2"
+                    text="Secondary Header 2"/>
+                <secondaryheader3
+                    jcr:primaryType="nt:unstructured"
+                    cssName="secondary-header3"
+                    text="Secondary Header 3"/>
+                <secondaryheader4
+                    jcr:primaryType="nt:unstructured"
+                    cssName="secondary-header4"
+                    text="Secondary Header 4"/>
                 <spacebottom
                     jcr:primaryType="nt:unstructured"
                     cssName="space-bottom"
@@ -204,6 +299,14 @@
                     jcr:primaryType="nt:unstructured"
                     cssName="space-top"
                     text="Space Top"/>
+                <error-message
+                    jcr:primaryType="nt:unstructured"
+                    cssName="message"
+                    text="Error Message"/>
+                <error-message
+                     jcr:primaryType="nt:unstructured"
+                     cssName="notFoundTerm"
+                     text="Search Term Not Found"/>
             </styles>
         </styles>
         <table
@@ -242,6 +345,10 @@
                         jcr:primaryType="nt:unstructured"
                         items="paraformat:getFormats:paraformat-pulldown"
                         ref="paraformat"/>
+					<styles
+                        jcr:primaryType="nt:unstructured"
+                        items="styles:getStyles:styles-pulldown"
+                        ref="styles"/>
                 </popovers>
             </dialogFullScreen>
             <tableEditOptions

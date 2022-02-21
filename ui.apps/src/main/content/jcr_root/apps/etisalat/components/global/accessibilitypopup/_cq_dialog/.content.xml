@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Accessibility Popup"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    helpPath="https://www.adobe.com/go/aem_cmp_title_v2">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <textData
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Text"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <modalHeaderTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Modal Header Title"
+                                fieldLabel="Modal Header Title"
+                                name="./modalHeaderTitle"/>
+                            <mainTitle
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Title text"
+                                fieldLabel="Title"
+                                maxlength="{Long}40"
+                                name="./mainTitle"/>
+                            <maindescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                fieldDescription="Description Text"
+                                fieldLabel="Description"
+                                name="./mainDesc"
+                                useFixedInlineToolbar="{Boolean}true"/>
+                        </items>
+                    </textData>
+                    <fontData
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Text Size Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <fontDefaultTextValue
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Font Default Text Label."
+                                fieldLabel="Font Default Text Label"
+                                maxlength="{Long}40"
+                                name="./fontDefaultTextValue"/> 
+                            <fontDefaultTextType
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Font Default Text Type."
+                                fieldLabel="Font Default Text Type"
+                                maxlength="{Long}40"
+                                name="./fontDefaultTextType"/> 								
+                            <fontLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Font label."
+                                fieldLabel="Font Text Label"
+                                maxlength="{Long}40"
+                                name="./fontLabel"/>
+                        </items>
+                    </fontData>
+                    <colourData
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Colour Details"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <colourDataDescription
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                fieldDescription="Description Text"
+                                fieldLabel="Description"
+                                name="./colourDesc"
+                                useFixedInlineToolbar="{Boolean}true"/>
+                            <etisalatColourLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Colour label."
+                                fieldLabel="Etisalat colours label"
+                                maxlength="{Long}40"
+                                name="./etisalatColourLabel"/>
+                            <colourBlindLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Colour label."
+                                fieldLabel="Colour Blind Label"
+                                maxlength="{Long}40"
+                                name="./colorBlindLabel"/>
+                            <greenWeaknessLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Colour label."
+                                fieldLabel="GreenWeaknessLabel"
+                                maxlength="{Long}40"
+                                name="./greenWeaknessLabel"/>
+                            <redWeaknessLabel
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldDescription="Colour label."
+                                fieldLabel="Red weakness Label"
+                                maxlength="{Long}40"
+                                name="./redWeaknessLabel"/>
+                        </items>
+                    </colourData>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

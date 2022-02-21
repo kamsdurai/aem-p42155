@@ -1,0 +1,45 @@
+<template data-sly-template.offers="${ @ container,properties}">
+   <div class="offers-main-wrap">
+      <div data-sly-test="${properties.tileBoxLayout == 'ewallet-offer'}" class="container slider-offer slider-offer-new">
+         <div class="container action-head">
+           <h2 data-sly-test="${!wcmmode.edit}">${properties.layoutTitle}</h2>
+           <a data-sly-test="${properties.offerViewAll}" 
+             data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=properties.offerViewAllLink}" 
+             class="btn btn-default active ripple-effect hidden-xs" href="${commonlinkmodel.link}">${properties.offerViewAll}</a>
+         </div>
+         <div data-sly-test="${!wcmmode.edit}" class="${!wcmmode.edit ? 'swiper-container slider-offerNew swiper-container-horizontal': ''}">
+            <div class="${!wcmmode.edit ? 'swiper-wrapper': ''}">
+               <div class="swiper-slide ${properties.noSwapDesktop ? 'no-swap-desktop-new' : ''}" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+            </div>
+         </div>
+          <div data-sly-test="${wcmmode.edit}" class="slider-alloffers">
+            <div class="all-offers">
+               <div class="no-swap-desktop-offers" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+            </div>
+          </div>
+         <div class="container action-footer visible-xs">
+           <a data-sly-test="${properties.offerViewAll}"
+              data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=properties.offerViewAllLink}" 
+              class="btn btn-default active ripple-effect" href="${commonlinkmodel.link}">${properties.offerViewAll}</a>
+         </div>
+      </div>
+      <div data-sly-test="${properties.tileBoxLayout == 'ewallet-all-offer'}" class="container">
+         <div class="container action-head">
+           <h2 data-sly-test="${!wcmmode.edit}">${properties.layoutTitle}</h2>
+           <a data-sly-test="${properties.offerAllLabel}" 
+             data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=properties.offerAllLink}" 
+             class="btn btn-default active ripple-effect hidden-xs" href="${commonlinkmodel.link}">${properties.offerAllLabel}</a>
+         </div>
+         <div class="slider-alloffers">
+            <div class="all-offers">
+               <div class="no-swap-desktop-offers" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+            </div>
+         </div>
+         <div class="container action-footer visible-xs">
+           <a data-sly-test="${properties.offerViewAll}"
+              data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=properties.offerViewAllLink}" 
+              class="btn btn-default active ripple-effect" href="${commonlinkmodel.link}">${properties.offerViewAll}</a>
+         </div>
+      </div>
+   </div>
+   </template>
