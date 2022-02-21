@@ -1,0 +1,45 @@
+<sly data-sly-use.container="com.adobe.cq.wcm.core.components.models.LayoutContainer"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-placeholder-text="${wcmmode.edit && 'Drag Accessory Card components here' @ i18n}" >
+
+    <sly data-sly-test.accessoryCard="${properties.tileBoxLayout == 'accessoriesCard' ? 'accessories-wrapper with-slider' : ''}"></sly>
+    <sly data-sly-test.brandlogoCard="${properties.tileBoxLayout == 'brandLogoCard' ? 'brands-logo with-slider with-slider' : ''}"></sly>
+    <sly data-sly-test.recommbigCard="${properties.tileBoxLayout == 'recommBigCard' ? 'eti-recommendation-big-card with-slider' : ''}"></sly>
+    <sly data-sly-test.recommCard="${properties.tileBoxLayout == 'recommCard' ? 'eti-recommendation-wrapper with-slider' : ''}"></sly>
+
+    <sly data-sly-test.accessoryConCard="${properties.tileBoxLayout == 'accessoriesCard' ? 'card-list-wrapper' : ''}"></sly>
+    <sly data-sly-test.brandlogoConCard="${properties.tileBoxLayout == 'brandLogoCard' ? 'logo-list' : ''}"></sly>
+    <sly data-sly-test.recommbigConCard="${properties.tileBoxLayout == 'recommBigCard' ? 'eti-big-card-list' : ''}"></sly>
+    <sly data-sly-test.recommConCard="${properties.tileBoxLayout == 'recommCard' ? 'eti-card-list-wrapper' : ''}"></sly>
+
+    <div class="${accessoryCard}${brandlogoCard}${recommbigCard}${recommCard} container-fix__width">
+        <div class="container container-center">
+            <div class="wst-main-headings">
+                <h4 data-sly-element="${properties.titleType}">${properties.accessoriescardPreTitle}</h4>
+            </div>
+            <div class="row">
+                <div class="${accessoryConCard}${brandlogoConCard}${recommbigConCard}${recommConCard}">
+                    <div  class="${!wcmmode.edit ? 'swiper-container' : ''}">
+                        <div class="${!wcmmode.edit ? 'swiper-wrapper' : ''}">
+                            <!-- Slides Start-->
+                            <div class="swiper-slide" data-sly-repeat="${container.items}" data-sly-resource="${item.name  @ decorationTagName='div'}"></div>
+                            <!-- Slides End-->
+                        </div>
+                    </div>
+                    <div class="prev">
+                    </div>
+                    <div class="next">
+                    </div>
+                </div>
+                <div class="scrollbar"></div>
+            </div>
+            <div data-sly-test="${properties.tileBoxLayout && properties.tileBoxLayout == 'recommBigCard'}" class="third-action-wrapper text-center action-btn-default">
+                <sly data-sly-test.customLink="${properties.containerViewAllLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}"/>
+                <a data-sly-test="${properties.containerViewAllTitle}" class="btn btn-default ripple-effect"
+                   href="${commonlinkmodel.link}"
+                   target="${properties.linktarget?'_blank':'_self'}">${properties.containerViewAllTitle}</a>
+            </div>
+        </div>
+        <sly data-sly-test="${wcmmode.edit}" data-sly-resource="${resource.path @ resourceType='core/wcm/components/container/v1/container/new', appendPath='/*', decorationTagName='div', cssClassName='new section'}" />
+    </div>
+</sly>

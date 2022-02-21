@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="Accessories Card Container"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+            granite:class="cmp-carousel__editor"
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                    maximized="{Boolean}true">
+                <items
+                        jcr:primaryType="nt:unstructured">
+                    <accessoriescarddata
+                            jcr:primaryType="nt:unstructured"
+                            jcr:title="Accessories Card Details"
+                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                            margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <accessoriescardpretitle
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Text that will appear for the Accessories Card Pre Title."
+                                    fieldLabel="Accessories Card Main Title"
+                                    maxlength="{Long}40"
+                                    name="./accessoriescardPreTitle"/>
+                            <titleType
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Title Style"
+                                    name="./titleType">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <def
+                                            jcr:primaryType="nt:unstructured"
+                                            text="(default)"
+                                            value=""/>
+                                    <h1
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H1"
+                                            value="h1"/>
+                                    <h2
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H2"
+                                            value="h2"/>
+                                    <h3
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H3"
+                                            value="h3"/>
+                                    <h4
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H4"
+                                            value="h4"/>
+                                    <h5
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H5"
+                                            value="h5"/>
+                                    <h6
+                                            jcr:primaryType="nt:unstructured"
+                                            text="H6"
+                                            value="h6"/>
+                                </items>
+                            </titleType>
+                            <accessorycardtype
+                                    granite:class="cq-dialog-dropdown-showhide"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                    fieldLabel="Accessory Card Type"
+                                    defaultValue="accessoriesCard"
+                                    name="./tileBoxLayout">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <accessoriescard
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Accessories Cards"
+                                            value="accessoriesCard"/>
+                                    <brandlogocard
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Brand Logo Cards"
+                                            value="brandLogoCard"/>
+                                    <recommbigcard
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Recommended Big Cards"
+                                            value="recommBigCard"/>
+                                    <recommcard
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Recommended Cards"
+                                            value="recommCard"/>
+                                </items>
+                                <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-dialog-dropdown-showhide-target=".tileBoxLayout-showhide-target"/>
+                            </accessorycardtype>
+                            <viewalltitle_container
+                                    granite:class="tileBoxLayout-showhide-target"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        showhidetargetvalue="recommBigCard"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <viewalltitle
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="A View all Title will appear."
+                                            fieldLabel="View All Text"
+                                            name="./containerViewAllTitle"/>
+                                </items>
+                            </viewalltitle_container>
+                            <viewalllink_container
+                                    granite:class="tileBoxLayout-showhide-target"
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        showhidetargetvalue="recommBigCard"/>
+                                <items jcr:primaryType="nt:unstructured">
+                                    <viewalllink
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                                            fieldDescription="Link for view All ."
+                                            fieldLabel="View All Link"
+                                            name="./containerViewAllLink"
+                                            rootPath="/content"/>
+                                    <linktarget
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                            checked="{Boolean}false"
+                                            fieldDescription="If checked, the URL will open in new tab."
+                                            fieldLabel="Open in new tab"
+                                            name="./linktarget"
+                                            text="Open in new tab"
+                                            uncheckedValue="false"
+                                            value="true"/>
+                                </items>
+                            </viewalllink_container>
+                        </items>
+                    </accessoriescarddata>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>
