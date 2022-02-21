@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_mauritania</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_mauritania" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-129" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <circle id="Oval" fill="#1EB53A" cx="28" cy="28" r="27.63"></circle>
+                        <path d="M28,34 C19.5829846,33.9868009 12.4428364,27.8162499 11.21,19.49 C10.3415404,25.7658867 13.0456681,32.0021892 18.2204681,35.6576536 C23.3952682,39.313118 30.1767289,39.7774089 35.8014479,36.8613306 C41.4261668,33.9452524 44.9550115,28.1356887 44.95,21.8 C44.9485256,21.0272834 44.8950716,20.2555411 44.79,19.49 C43.5571636,27.8162499 36.4170154,33.9868009 28,34 Z" id="Shape" fill="#FCD116"></path>
+                        <polygon id="Shape" fill="#FCD116" points="28 11.35 29.43 15.74 34.05 15.74 30.31 18.46 31.74 22.85 28 20.14 24.26 22.85 25.69 18.46 21.95 15.74 26.57 15.74"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

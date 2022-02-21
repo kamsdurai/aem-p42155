@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_morocco</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_morocco" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-137" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <circle id="Oval" fill="#E70013" cx="28" cy="28" r="27.63"></circle>
+                        <polygon id="Shape" fill="#008400" points="24.72 24.73 14.13 24.73 26.19 33.91 28 32.54 20.69 27 24 27"></polygon>
+                        <path d="M14.13,24.71 L24.73,24.71 L24.73,24.71 L24.73,24.71 L24,27 L20.7,27 L28,32.56 L26.17,33.94 L14.17,24.72 L14.13,24.71 Z M26.13,33.9 L28,32.56 L20.69,27 L24,27 L24.69,24.79 L14.13,24.79 L26.13,33.97 L26.13,33.9 Z" id="Shape" fill="#000000"></path>
+                        <polygon id="Shape" fill="#008400" points="31.28 24.73 28 14.18 23.39 29 25.2 30.38 27.99 21.38 28.99 24.7"></polygon>
+                        <path d="M23.37,29 L28,14.18 L31.28,24.73 L31.28,24.73 L31.28,24.73 L29,24.73 L28,21.41 L25.18,30.41 L23.37,29 Z M23.37,29 L25.15,30.39 L27.98,21.39 L28.98,24.7 L31.2,24.7 L28,14.19 L23.4,29 L23.37,29 Z" id="Shape" fill="#000000"></path>
+                        <polygon id="Shape" fill="#008400" points="33.3 31.27 41.86 24.74 27 24.74 26.27 27 35.27 27 32.61 29"></polygon>
+                        <path d="M33.3,31.27 L33.3,31.27 L32.59,29 L35.3,27 L26.25,27 L27,24.72 L41.92,24.72 L33.36,31.25 L33.3,31.27 Z M26.3,26.95 L35.3,26.95 L32.61,28.95 L33.29,31.16 L41.84,24.68 L27,24.68 L26.29,26.89 L26.3,26.95 Z" id="Shape" fill="#000000"></path>
+                        <polygon id="Shape" fill="#008400" points="28 35.3 36.58 41.81 32 27 29.72 27 32.51 36 29.8 34"></polygon>
+                        <path d="M28,35.31 L28,35.31 L28,35.31 L29.84,33.93 L32.5,36 L29.73,27 L32,27 L36.57,41.86 L28,35.31 Z M36.57,41.81 L32,27 L29.78,27 L32.54,36 L29.86,34 L28,35.29 L36.52,41.81 L36.57,41.81 Z" id="Shape" fill="#000000"></path>
+                        <polygon id="Shape" fill="#008400" points="22.69 31.26 19.43 41.82 31.48 32.64 30.79 30.41 23.48 36 24.48 32.67"></polygon>
+                        <path d="M22.67,31.25 L22.67,31.25 L24.49,32.66 L23.47,36 L30.81,30.44 L31.49,32.69 L19.41,41.81 L22.67,31.26 L22.67,31.25 Z M19.42,41.8 L31.42,32.64 L30.76,30.42 L23.47,36 L24.47,32.69 L22.7,31.3 L19.42,41.8 Z" id="Shape" fill="#000000"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
