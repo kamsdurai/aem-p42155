@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_united_arab_emirates</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_united_arab_emirates" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-206" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <path d="M28,55.63 C38.8057223,55.6331152 48.6208762,49.3345371 53.12,39.51 L2.88,39.51 C7.37912381,49.3345371 17.1942777,55.6331152 28,55.63 L28,55.63 Z" id="Shape" fill="#000000"></path>
+                        <path d="M28,0.37 C17.1950138,0.369395963 7.38109991,6.66717832 2.88,16.49 L53.12,16.49 C48.6189001,6.66717832 38.8049862,0.369395963 28,0.37 L28,0.37 Z" id="Shape" fill="#009A00"></path>
+                        <path d="M0.37,28 C0.365099832,31.9729673 1.22142662,35.8997885 2.88,39.51 L53.12,39.51 C56.4652829,32.2082546 56.4652829,23.8117454 53.12,16.51 L2.88,16.51 C1.22485064,20.1142853 0.368619716,24.0338444 0.37,28 L0.37,28 Z" id="Shape" fill="#FFFFFF"></path>
+                        <path d="M0.37,28 C0.369395963,38.8049862 6.66717832,48.6189001 16.49,53.12 L16.49,2.88 C6.66717832,7.38109991 0.369395963,17.1950138 0.37,28 L0.37,28 Z" id="Shape" fill="#CE1126"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

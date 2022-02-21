@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_chad</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_chad" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-46" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <path d="M0.37,28 C0.373305679,38.801366 6.67046875,48.6104085 16.49,53.11 L16.49,2.88 C6.66889233,7.38307387 0.371904556,17.1957496 0.37,28 L0.37,28 Z" id="Shape" fill="#002569"></path>
+                        <path d="M55.63,28 C55.6280954,17.1957496 49.3311077,7.38307387 39.51,2.88 L39.51,53.11 C49.3295312,48.6104085 55.6266943,38.801366 55.63,28 L55.63,28 Z" id="Shape" fill="#D21034"></path>
+                        <path d="M28,0.37 C24.0271685,0.366366204 20.1006153,1.22263455 16.49,2.88 L16.49,53.11 C23.7917454,56.4552829 32.1882546,56.4552829 39.49,53.11 L39.49,2.88 C35.8855136,1.22545204 31.9660876,0.369250199 28,0.37 L28,0.37 Z" id="Shape" fill="#FFCE00"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

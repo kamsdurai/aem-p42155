@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_benin</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_benin" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-30" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <path d="M28,55.63 C43.2596276,55.63 55.63,43.2596276 55.63,28 L0.37,28 C0.37,43.2596276 12.7403724,55.63 28,55.63 L28,55.63 Z" id="Shape" fill="#E8112D"></path>
+                        <path d="M28,0.37 C12.7403724,0.37 0.37,12.7403724 0.37,28 L55.63,28 C55.63,12.7403724 43.2596276,0.37 28,0.37 L28,0.37 Z" id="Shape" fill="#FCD116"></path>
+                        <path d="M0.37,28 C0.371955004,42.1970692 11.1329116,54.0821112 25.26,55.49 L25.26,0.51 C11.1329116,1.91788875 0.371955004,13.8029308 0.37,28 L0.37,28 Z" id="Shape" fill="#008751"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

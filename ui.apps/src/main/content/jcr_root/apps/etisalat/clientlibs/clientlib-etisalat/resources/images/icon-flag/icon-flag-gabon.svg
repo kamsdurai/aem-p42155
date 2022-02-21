@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_gabon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_gabon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-76" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <path d="M28,55.63 C38.8049862,55.630604 48.6189001,49.3328217 53.12,39.51 L2.88,39.51 C7.38109991,49.3328217 17.1950138,55.630604 28,55.63 L28,55.63 Z" id="Shape" fill="#3A75C4"></path>
+                        <path d="M28,0.37 C17.1950138,0.369395963 7.38109991,6.66717832 2.88,16.49 L53.12,16.49 C48.6189001,6.66717832 38.8049862,0.369395963 28,0.37 L28,0.37 Z" id="Shape" fill="#009E60"></path>
+                        <path d="M0.37,28 C0.367313456,31.9727298 1.22353814,35.8990828 2.88,39.51 L53.12,39.51 C56.4666162,32.2085455 56.4666162,23.8114545 53.12,16.51 L2.88,16.51 C1.22635245,20.1147875 0.370194125,24.0340143 0.37,28 L0.37,28 Z" id="Shape" fill="#FCD116"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
