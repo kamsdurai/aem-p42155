@@ -54,6 +54,13 @@
                     <group>com.etisalat</group>
                     <name>aem-etisalat-project.ui.apps</name>
                     <packageType>application</packageType>
+                    <validatorsSettings>
+                        <jackrabbit-filter>
+                            <options>
+                                <validRoots>/apps,/apps/msm,/apps/workflow</validRoots>
+                            </options>
+                        </jackrabbit-filter>
+                    </validatorsSettings>
                     <repositoryStructurePackages>
                         <repositoryStructurePackage>
                             <groupId>com.etisalat</groupId>

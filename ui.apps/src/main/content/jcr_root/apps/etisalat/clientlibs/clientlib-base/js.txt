@@ -1,3 +1,11 @@
 #base=js
 
 base.js
+bootstrap-tour.js
+bootstrap.min.js
+flipclock.min.js
+intlTelInput.min.js
+jquery-ui.min.js
+jquery.validate.js
+select2.min.js
+swiper.min.js
