@@ -1,0 +1,147 @@
+
+.context-navigation.one-col-static .row-tiles-table.row,
+.context-navigation.three-col-static .row-tiles-table.row,
+.context-navigation.two-col-static .row-tiles-table.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.context-navigation.with-bg {
+  background-color: #fafaf7;
+  padding: 3.5rem 0;
+}
+
+.context-navigation .content-detail h3 {
+  font-size: 2rem;
+  color: #353738;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 1.5rem;
+}
+
+.context-navigation .content-detail p {
+  margin-bottom: 50px;
+  color: #767676;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  @include font-family-Neotech-ge;
+  text-align: center;
+}
+
+.context-navigation .view-accessories {
+  padding: 0 1rem;
+  margin-top: 2.5rem;
+  display: none;
+}
+
+.context-navigation.no-icon {
+  padding: 60px 0 80px;
+}
+
+.context-navigation.no-icon > h3 {
+  margin: 0 0 90px;
+}
+
+.context-navigation-cards.context-navigation-swiper2 .justify-center {
+  justify-content: center;
+}
+
+.context-navigation-cards.context-navigation-swiper2 .justify-center .swiper-slide {
+  width: auto;
+}
+
+.context-navigation-cards .row-tiles-table {
+  position: relative;
+}
+
+.context-navigation-cards .row-tiles-table .table-swiper-button-next,
+.context-navigation-cards .row-tiles-table .table-swiper-button-prev {
+  bottom: 30%;
+  width: 1.3rem;
+  height: 1.3rem;
+}
+
+.context-navigation-cards .row-tiles-table .table-swiper-button-next svg,
+.context-navigation-cards .row-tiles-table .table-swiper-button-prev svg {
+  stroke: #242424;
+}
+
+@media (max-width: 768px) {
+  
+  .context-navigation .swiper-container.destroyed .table-swiper-button-next,
+  .context-navigation .swiper-container.destroyed .table-swiper-button-prev {
+    display: none;
+  }
+  .context-navigation .swiper-container.destroyed .swiper-wrapper {
+    display: block;
+  }
+  .context-navigation .swiper-container.destroyed .swiper-wrapper .swiper-slide {
+    margin-bottom: 40px;
+  }
+  .context-navigation .swiper-container.destroyed .swiper-wrapper .swiper-slide:last-child {
+    margin-bottom: 0;
+  }
+  .context-navigation,
+  .context-navigation.more-value {
+    margin: 0 0 20px;
+  }
+  .context-navigation.more-value > .pt-100 {
+    padding-top: 40px;
+  }
+  .context-navigation.one-col-static .row-tiles-table.row,
+  .context-navigation.three-col-static .row-tiles-table.row,
+  .context-navigation.two-col-static .row-tiles-table.row {
+    display: block;
+  }
+  .context-navigation.one-col-static .row-tiles-table.row .swiper-slide,
+  .context-navigation.three-col-static .row-tiles-table.row .swiper-slide,
+  .context-navigation.two-col-static .row-tiles-table.row .swiper-slide {
+    margin-bottom: 40px;
+  }
+  .context-navigation.one-col-static .row-tiles-table.row .swiper-slide:last-child,
+  .context-navigation.three-col-static .row-tiles-table.row .swiper-slide:last-child,
+  .context-navigation.two-col-static .row-tiles-table.row .swiper-slide:last-child {
+    margin-bottom: 0;
+  }
+  .context-navigation .content-detail h3 {
+    font-size: 26px;
+    line-height: 33px;
+    margin-bottom: 1rem;
+  }
+  .context-navigation .content-detail p {
+    margin-bottom: 1.5rem;
+  }
+  .context-navigation-cards .row-tiles-table .table-swiper-button-next {
+    right: 1rem !important;
+  }
+  .context-navigation-cards .row-tiles-table .table-swiper-button-prev {
+    left: 1rem !important;
+  }
+}
+@media (min-width: 768px) {
+  
+  .context-navigation .content-detail > h3 {
+    margin-bottom: 125px;
+  }
+  .context-navigation .content-detail > h3 + p {
+    margin-top: -100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .context-navigation .view-accessories {
+    display: block;
+  }
+  .context-navigation-cards .swiper-wrapper .swiper-slide:nth-child(1n + 4) {
+    display: none;
+  }
+}
+@media (max-width: 1024px) {
+  .context-navigation-cards.context-navigation-swiper2 .justify-center {
+    justify-content: start;
+  }
+  .context-navigation-cards.context-navigation-swiper2 .justify-center .swiper-slide {
+    width: auto;
+  }
+}

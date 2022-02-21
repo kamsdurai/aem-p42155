@@ -1,0 +1,208 @@
+/* stylelint-disable no-descending-specificity */
+/* stylelint-disable selector-max-compound-selectors */
+/* stylelint-disable max-nesting-depth */
+.cmp-experiencefragment--footer-2 {
+  // padding: toRem(128) 0 0;
+
+  @include respond-to-max($desktop) {
+    padding-left: toRem(60);
+    padding-right: toRem(60);
+  }
+
+  @include respond-to-max($tablet) {
+    padding-left: toRem(32);
+    padding-right: toRem(32);
+    padding-top: 0;
+  }
+
+  @include respond-to-min($desktop-wide) {
+    padding: 0 toRem(95);
+  }
+
+  > .cmp-container {
+    margin: 0 auto;
+    max-width: toRem(1140);
+
+    > .aem-Grid {
+      border-top: toRem(1) solid $light-gray;
+      padding: toRem(48) 0;
+
+      p {
+        font-family: $font-Roboto;
+        margin-bottom: toRem(16);
+      }
+
+      ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+      }
+
+      ul li {
+        margin-left: toRem(32);
+      }
+
+      ul a {
+        color: $link-color;
+        font-family: $font-Quicksand;
+        font-size: toRem(16);
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        line-height: normal;
+        text-align: right;
+      }
+
+      @include respond-to-max($tablet) {
+        ul {
+          justify-content: flex-start;
+        }
+
+        ul li {
+          margin: 0 toRem(32) 0 0;
+        }
+      }
+    }
+  }
+}
+
+.cmp-experiencefragment--footer-1 {
+  color: $black-color;
+  padding-top: toRem(128);
+  position: relative;
+
+  &::before {
+    background: $white-color url("../resources/images/footer-bg.png") no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+
+  @include respond-to-max($desktop) {
+    padding-left: toRem(24);
+    padding-right: toRem(24);
+  }
+
+  @include respond-to-max($tablet) {
+    padding-left: toRem(15);
+    padding-right: toRem(15);
+    padding-top: toRem(48);
+  }
+
+  > .cmp-container {
+    margin: 0 auto;
+    max-width: toRem(1140);
+    position: relative;
+
+    > .aem-Grid {
+      .container {
+        &:first-child {
+          margin-bottom: toRem(132);
+
+          .cmp-text h2 {
+            color: $black-color;
+            font-family: $font-Quicksand;
+            font-size: toRem(36);
+            font-weight: bold;
+            padding: toRem(16) 0 toRem(10);
+            position: relative;
+          }
+
+          .cmp-text h2::before {
+            background-color: $light-gray;
+            border-radius: toRem(1);
+            content: "";
+            display: block;
+            height: toRem(2);
+            left: 0;
+            position: absolute;
+            top: 0;
+            width: toRem(80);
+          }
+
+          .cmp-text p {
+            color: $black-color;
+            font-family: $font-Roboto;
+            font-size: toRem(20);
+            font-weight: normal;
+            letter-spacing: 0.5px;
+            line-height: 1.75;
+
+            a {
+              color: $link-color;
+              text-decoration: underline;
+            }
+          }
+        }
+
+        @include respond-to-max($tablet) {
+          &:first-child {
+            margin-bottom: toRem(48);
+          }
+
+          &:first-child .cmp-text h2 {
+            font-size: toRem(20);
+            padding: toRem(16) 0;
+            text-align: center;
+          }
+
+          &:first-child .cmp-text h2::before {
+            left: 50%;
+            transform: translateX(-50%);
+          }
+
+          &:first-child .cmp-text p {
+            font-size: toRem(12);
+            letter-spacing: 0.3px;
+            text-align: center;
+          }
+        }
+
+        &:last-child {
+          border-top: toRem(1) solid $light-gray;
+          padding: toRem(48) 0;
+
+          ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+          }
+
+          ul li {
+            margin-left: toRem(32);
+          }
+
+          ul a {
+            color: $link-color;
+            font-family: $font-Quicksand;
+            font-size: toRem(16);
+            font-weight: 500;
+            letter-spacing: 0.4px;
+            line-height: normal;
+            text-align: right;
+          }
+
+          @include respond-to-max($tablet) {
+            ul {
+              justify-content: flex-start;
+            }
+
+            ul li {
+              margin: 0 toRem(32) 0 0;
+            }
+          }
+        }
+
+        @include respond-to-max($tablet) {
+          padding: toRem(48) 0 toRem(16);
+        }
+      }
+    }
+  }
+}

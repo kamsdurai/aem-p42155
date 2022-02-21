@@ -1,0 +1,67 @@
+#about.cmp-container {
+  @extend .container-block;
+  background-color: $white;
+  text-align: center;
+  padding: 0;
+  @include respond-to-min($desktop) {
+    padding: 50px 20px 0 20px;
+  }
+  @include respond-to-max($desktop) {
+    padding: 0 20px 50px 20px;
+  }
+  h2 {
+    font-size: toRem(32);
+    @include respond-to-min($desktop) {
+      font-size: toRem(45);
+    }
+    &:after {
+      content: "";
+      display: block;
+      background: $blue-color;
+      height: 4px;
+      width: 80px;
+      margin-top: 15px;
+      margin-left: calc(50% - 40px);
+    }
+  }
+}
+
+.cmp_box_shadow {
+  clear: both;
+  min-height: 270px;
+  @include respond-to-min($desktop) {
+    clear: none;
+    margin-bottom: 40px;
+  }
+  @include respond-to-max($desktop) {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .cmp-text {
+    position: relative;
+    padding: toRem(72) toRem(40);
+    width: 100%;
+    border: 0.13rem solid $shade-white;
+    border-radius: toRem(10);
+    margin: 0;
+    display: block;
+    min-height: 270px;
+    font-family: $font-family;
+    width: 100%;
+    transition: all 0.8s ease-out;
+    &:hover {
+      box-shadow: 0 10px 90px rgb(0 0 0 / 8%);
+    }
+
+    @include respond-to-min($desktop) {
+      width: 94%;
+      clear: none;
+      margin-bottom: 15px;
+    }
+  }
+  h4 {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+  }
+}

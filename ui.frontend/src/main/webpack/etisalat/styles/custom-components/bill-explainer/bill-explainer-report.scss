@@ -1,0 +1,681 @@
+.billing-report-section{
+  padding-bottom: 5rem;
+  @media (max-width: 768px) {
+    padding: 1.6rem;
+  }
+  p{
+    @include font-family-lato;
+    &.paragraph{
+      letter-spacing: .2px;
+      font-size: 16px;
+      color: inherit;
+    }
+  }
+  a{
+    &.link{
+      letter-spacing: 3px;
+      padding: 0px !important;
+      margin: 0px !important;
+      border:none !important;
+      &::before{
+        display: none !important;
+        border:none !important;
+      }
+      &::after{
+        display: none !important;
+      }
+    }
+  }
+
+  .billing-report-card{
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    border: 2px solid #ddd;
+    height: 1315px;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+    z-index:9;
+    background: #FFF;
+    margin-bottom: 40px;
+    padding-left:15px;
+    padding-right: 15px;
+    @media screen and (min-width: 768px) {
+       padding:0;
+    }
+    @media screen and (min-width: 992px) {
+      padding:0;
+    }
+    &.billing-report-card-usage{
+      // height: 1100px;
+      @media (max-width: 1024px) {
+        height: 875px;
+      }
+      @media (max-width: 768px) {
+        height: 1250px;
+      }
+      @media (max-width: 767px) {
+        height: 775px;
+      }
+    }
+    // @media (max-width: 1440px) {
+    //   height:1180px;
+    // }
+
+    // @media (max-width: 768px) {
+    //     height:1115px;
+    // }
+
+    // @media (max-width: 767px) {
+    //     height:775px;
+    // }
+
+    // @media (max-width: 420px) {
+    //     height:490px;
+    // }
+
+    // @media (max-width: 375px) {
+    //     height:430px;
+    // }
+  }
+}
+@media (max-width: 1440px) {
+    .section-exp-1 .billing-report-section .billing-report-card {
+        height:1180px
+    }
+}
+
+@media (max-width: 768px) {
+    .section-exp-1 .billing-report-section .billing-report-card {
+        height:1115px
+    }
+}
+
+@media (max-width: 767px) {
+    .section-exp-1 .billing-report-section .billing-report-card {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    .section-exp-1 .billing-report-section .billing-report-card {
+        height:490px
+    }
+}
+
+@media (max-width: 375px) {
+    .section-exp-1 .billing-report-section .billing-report-card {
+        height:430px
+    }
+}
+
+@media (max-width: 1440px) {
+    .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1115px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        // height:775px;
+        height: 1150px;
+    }
+}
+
+@media (max-width: 420px) {
+    .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:490px
+    }
+}
+
+@media (max-width: 375px) {
+    .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        // height:430px;
+        height:500px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:890px
+    }
+}
+
+@media (max-width: 767px) {
+    .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        // height:775px;
+        height:890px;
+    }
+}
+
+@media (max-width: 420px) {
+    .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        // height:420px;
+         height:500px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1150px
+    }
+}
+
+@media (max-width: 768px) {
+    .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:890px;
+    }
+}
+
+@media (max-width: 767px) {
+    .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        // height:775px;
+        height: 880px;
+    }
+}
+
+@media (max-width: 420px) {
+    .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:467px;
+    }
+}
+
+@media (max-width: 375px) {
+    .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        // height:420px;
+         height:500px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .section-exp-4 .billing-report-section .billing-report-card {
+        // height:1100px
+    }
+}
+
+@media (max-width: 768px) {
+    .section-exp-4 .billing-report-section .billing-report-card {
+        height:890px
+    }
+}
+
+@media (max-width: 767px) {
+    .section-exp-4 .billing-report-section .billing-report-card {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    .section-exp-4 .billing-report-section .billing-report-card {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    .section-exp-4 .billing-report-section .billing-report-card {
+        height:410px
+    }
+}
+
+@media (max-width: 1440px) {
+    .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1100px
+    }
+}
+
+@media (max-width: 768px) {
+    .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:890px
+    }
+}
+
+@media (max-width: 767px) {
+    .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:410px
+    }
+}
+
+@media (max-width: 1440px) {
+    .section-exp-5 .billing-report-section .billing-report-card {
+        height:1040px
+    }
+}
+
+@media (max-width: 768px) {
+    .section-exp-5 .billing-report-section .billing-report-card {
+        height:990px
+    }
+}
+
+@media (max-width: 767px) {
+    .section-exp-5 .billing-report-section .billing-report-card {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    .section-exp-5 .billing-report-section .billing-report-card {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    .section-exp-5 .billing-report-section .billing-report-card {
+        height:420px
+    }
+}
+
+@media (max-width: 1440px) {
+    .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        // height:1040px
+    }
+}
+
+@media (max-width: 768px) {
+    .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:990px
+    }
+}
+
+@media (max-width: 767px) {
+    .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:420px
+    }
+}
+
+@media (max-width: 420px) {
+    .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:475px
+    }
+
+    .tab-boxes-section .body-desktop.billing-report-wrapper .collapse {
+        margin-bottom: 0
+    }
+
+    .tab-boxes-section .body-desktop {
+        margin-bottom: 20px
+    }
+
+    .tab-boxes-section .billing-report-section .row-tiles-table .table-swiper-button-next {
+        right: 0!important;
+        font-size: .7rem!important
+    }
+
+    .tab-boxes-section .billing-report-section .row-tiles-table .table-swiper-button-prev {
+        left: 0!important;
+        font-size: .7rem!important
+    }
+}
+
+@media (max-width: 350px) {
+    .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:350px
+    }
+}
+@media (max-width: 1024px) {
+    .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:875px
+    }
+}
+
+@media (max-width: 768px) {
+    .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1250px
+    }
+}
+
+@media (max-width: 767px) {
+    .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:775px
+    }
+}
+
+@media (min-width: 1441px) {
+    .section-exp-2 .billing-report-card,.section-exp-3 .billing-report-card,.section-exp-4 .billing-report-card {
+        height:1125px
+    }
+}
+
+@media (min-width: 1441px) {
+    .section-exp-5 .billing-report-card {
+        height:1147px
+    }
+}
+@media (max-width: 425px){
+.section-exp-4 .bill-breakdown {
+    height: 500px;
+}
+}
+
+
+@media (max-width: 420px)
+{
+  .bill-breakdown {
+    height: 450px;
+}
+}
+@media (max-width: 768px)
+{
+  .bill-breakdown {
+    // height: 990px;
+}
+}
+@media (max-width: 320px) {
+    .section-exp-4 .bill-breakdown {
+        height:450px
+    }
+
+    .section-exp-4 .billing-report-section .billing-report-card {
+        height: 380px
+    }
+}
+
+@media (max-width: 1440px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card {
+        height:1210px
+    }
+}
+
+@media (max-width: 768px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card {
+        height:1175px
+    }
+}
+
+@media (max-width: 767px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card {
+        height:490px
+    }
+}
+
+@media (max-width: 375px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card {
+        height:430px
+    }
+}
+
+@media (max-width: 1440px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1210px
+    }
+}
+
+@media (max-width: 768px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1175px
+    }
+}
+
+@media (max-width: 767px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:490px
+    }
+}
+
+@media (max-width: 375px) {
+    [lang=ar] [dir=rtl] .section-exp-1 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:430px
+    }
+}
+
+@media (max-width: 1440px) {
+    [lang=ar] [dir=rtl] .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1115px
+    }
+}
+
+@media (max-width: 768px) {
+    [lang=ar] [dir=rtl] .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:880px
+    }
+}
+
+@media (max-width: 767px) {
+    [lang=ar] [dir=rtl] .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    [lang=ar] [dir=rtl] .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    [lang=ar] [dir=rtl] .section-exp-2 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:420px
+    }
+}
+
+@media (max-width: 1440px) {
+    [lang=ar] [dir=rtl] .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:1115px
+    }
+}
+
+@media (max-width: 768px) {
+    [lang=ar] [dir=rtl] .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:880px
+    }
+}
+
+@media (max-width: 767px) {
+    [lang=ar] [dir=rtl] .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    [lang=ar] [dir=rtl] .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    [lang=ar] [dir=rtl] .section-exp-3 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:420px
+    }
+}
+
+@media (max-width: 1440px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card {
+        height:1100px
+    }
+}
+
+@media (max-width: 768px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card {
+        height:890px
+    }
+}
+
+@media (max-width: 767px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card {
+        height:410px
+    }
+}
+
+@media (max-width: 1440px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        // height:1100px
+    }
+}
+
+@media (max-width: 768px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:890px
+    }
+}
+
+@media (max-width: 767px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    [lang=ar] [dir=rtl] .section-exp-4 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:410px
+    }
+}
+
+@media (max-width: 1440px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card {
+        height:1040px
+    }
+}
+
+@media (max-width: 768px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card {
+        height:990px
+    }
+}
+
+@media (max-width: 767px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card {
+        height:420px
+    }
+}
+
+@media (max-width: 1440px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        // height:1040px
+    }
+}
+
+@media (max-width: 768px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:990px
+    }
+}
+
+@media (max-width: 767px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:775px
+    }
+}
+
+@media (max-width: 420px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:467px
+    }
+}
+
+@media (max-width: 375px) {
+    [lang=ar] [dir=rtl] .section-exp-5 .billing-report-section .billing-report-card.billing-report-card-usage {
+        height:420px
+    }
+}
+
+.billexplainertab {
+  .btn-text.btn-green {
+    width: 100%;
+    @include font-family-lato;
+    font-size: 14px;
+  }
+  .panel {
+   border:none;
+  }
+}
+// arabic language
+*[lang="ar"] {
+  *[dir="rtl"] {
+    .billexplainertab {
+      .btn-text.btn-green{
+        float: right;
+        &:before {
+            transform: translateY(-50%) rotate(316deg);
+        }
+      }
+    }
+    .billing-report-section p { 
+        @include font-family-Neotech-ge;
+        font-weight: get-font-weight("light");
+        letter-spacing: 0!important;
+    }
+  }
+}

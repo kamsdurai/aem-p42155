@@ -1,0 +1,142 @@
+.buttonstore {
+  @extend .wrapper;
+
+  position: relative;
+  z-index: 99;
+
+  @include respond-to-min($tablet) {
+    margin-top: 30px;
+  }
+  @include respond-to-min-max($tablet, $phone) {
+    padding-left: 15px;
+  }
+
+  @include respond-to-max($phone) {
+    padding-left: 15px;
+  }
+
+  .cmp_btn {
+    .cmp_store_btn {
+      background-size: cover;
+      border-radius: 5px;
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 0;
+
+      @include respond-to-min($desktop) {
+        margin-right: 15px;
+      }
+
+      @include respond-to-min($tablet) {
+        margin-bottom: 5px;
+        margin-right: 10px;
+      }
+
+      a {
+        img {
+          width: 168px;
+        }
+      }
+    }
+  }
+}
+
+.ewallet_about_wrap {
+  @include respond-to-min($tablet) {
+    padding-right: 15px;
+  }
+
+  h1 {
+    font-size: toRem(48);
+
+    @include respond-to-min($desktop) {
+      font-size: toRem(60);
+    }
+  }
+
+  p {
+    font-size: toRem(24);
+    line-height: 30px;
+
+    @include respond-to-min($desktop) {
+      font-size: toRem(28);
+      line-height: 34px;
+    }
+  }
+}
+
+.circle_list {
+  li {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 24px;
+    padding-bottom: 28px;
+
+    &::before {
+      border: 1.5px solid #2a5082;
+      border-radius: 100%;
+      box-sizing: border-box;
+      content: counter(a);
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 700;
+      height: 31px;
+      line-height: 20px;
+      margin-right: 10px;
+      padding-top: 4px;
+      text-align: center;
+      width: 31px;
+    }
+  }
+}
+
+.YoutubeWrapper {
+  position: relative;
+
+  img {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.faq-search-wrap {
+  padding-top: 55px;
+  position: relative;
+  z-index: 3;
+}
+
+.hero-heaer-01.faq-header.offers-head.no-illustration {
+  .teaser h1 {
+    position: absolute;
+
+    @include respond-to-min($desktop) {
+      top: 110px;
+      width: 50%;
+    }
+
+    @include respond-to-min-max($desktop, $tablet) {
+      font-size: toRem(48);
+      line-height: toRem(48);
+      top: 30px;
+      width: 50%;
+    }
+
+    @include respond-to-max($phone) {
+      top: 30px;
+      width: 100%;
+    }
+  }
+}
+
+.hotels-blurb {
+  .hero-heaer-01.faq-header.offers-head {
+    @include respond-to-max($tablet - 1) {
+      min-height: 425px;
+    }
+
+    @include respond-to-min-max($desktop, $tablet) {
+      min-height: 340px;
+    }
+  }
+}

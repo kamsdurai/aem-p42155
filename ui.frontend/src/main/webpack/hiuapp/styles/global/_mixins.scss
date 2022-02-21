@@ -1,0 +1,59 @@
+@function toRem($value) {
+  //$remValue: ($value / 16) + rem;
+  $remValue: math.div($value, 16) + rem;
+  @return $remValue;
+}
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+@mixin terms-page-heading-h3() {
+  font-size: 2em;
+  border-bottom: 2px solid $pink-color;
+  margin: 25px 0 15px 0;
+  display: inline-block;
+  font-weight: 400;
+  color: $black;
+  line-height: 1.2;
+}
+@mixin terms-page-heading-h1() {
+  margin-top: -20px;
+  font-size: $font50;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+@mixin terms-page-heading-h4() {
+  font-size: 1.5em;
+  margin: 25px 0 15px 0;
+  display: inline-block;
+  font-weight: 400;
+  color: $black;
+  line-height: 1.2;
+}
+@mixin terms-page-para() {
+  color: $font-color;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-top:toRem(8) !important;//13 oct
+}
+
+@mixin container {
+  margin: 0 auto;
+}
+
+
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 599px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 600px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 900px) { @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1800px) { @content; }
+  }
+}

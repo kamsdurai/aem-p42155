@@ -1,0 +1,203 @@
+
+/* ----------------- custom-scrolbars start ----------------- */
+[data-simplebar] {
+  align-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: inherit;
+  justify-content: flex-start;
+  max-height: inherit;
+  max-width: inherit;
+  position: relative;
+  width: 100%;
+}
+
+.simplebar-wrapper {
+  height: inherit;
+  max-height: inherit;
+  max-width: inherit;
+  overflow: hidden;
+  width: 100%;
+}
+
+.simplebar-mask {
+  bottom: 0;
+  direction: inherit;
+  height: auto !important;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto !important;
+  z-index: 0;
+}
+
+.simplebar-offset {
+  bottom: 0;
+  box-sizing: inherit !important;
+  direction: inherit !important;
+  left: 0;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+  padding: 0;
+  position: absolute;
+  resize: none !important;
+  right: 0;
+  top: 0;
+}
+
+.simplebar-content {
+  box-sizing: border-box !important;
+  direction: inherit;
+  display: block;
+  height: 100%;
+
+  /* Not required for horizontal scroll to trigger */
+  max-height: 100%;
+
+  /* Scroll on this element otherwise element can't have a padding applied properly */
+  max-width: 100%;
+  overflow: scroll;
+
+  /* Needed for vertical scroll to trigger */
+  -ms-overflow-style: none;  /* IE and Edge */
+  position: relative;
+  scrollbar-width: none;  /* Firefox */
+  visibility: visible;
+
+  /* Required for horizontal native scrollbar to not appear if parent is taller than natural height */
+  width: auto;
+
+  @include respond-to-max($tablet) {
+    overflow: scroll;
+  }
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.simplebar-content::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+.simplebar-placeholder {
+  max-height: 100%;
+  max-width: 100%;
+  pointer-events: none;
+  width: 100%;
+}
+
+.simplebar-height-auto-observer-wrapper {
+  box-sizing: inherit !important;
+  flex-basis: 0;
+  flex-grow: inherit;
+  flex-shrink: 0;
+  float: left;
+  height: 100%;
+  margin: 0;
+  max-height: toRem(1);
+  max-width: toRem(1);
+  overflow: hidden;
+  padding: 0;
+  pointer-events: none;
+  position: relative;
+  width: inherit;
+  z-index: -1;
+}
+
+.simplebar-height-auto-observer {
+  box-sizing: inherit;
+  display: block;
+  height: 1000%;
+  left: 0;
+  min-height: toRem(1);
+  min-width: toRem(1);
+  opacity: 0;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 1000%;
+  z-index: -1;
+}
+
+.simplebar-track {
+  bottom: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+}
+
+.simplebar-scrollbar {
+  min-height: toRem(10);
+  position: absolute;
+  right: toRem(2);
+  width: toRem(7);
+}
+
+.simplebar-scrollbar::before {
+  background: $main-green;
+  border-radius: toRem(7);
+  content: "";
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  transition: opacity 0.2s linear;
+}
+
+.simplebar-track {
+  &.simplebar-scrollbar.visible::before {
+    /* When hovered, remove all transitions from drag handle */
+    opacity: 0.5;
+    transition: opacity 0 linear;
+  }
+}
+
+.simplebar-track.vertical {
+  top: 0;
+  width: 11px;
+}
+
+.simplebar-track.vertical {
+  &.simplebar-scrollbar::before {
+    bottom: 2px;
+    top: 2px;
+  }
+}
+
+.simplebar-track.horizontal {
+  height: toRem(11);
+  left: 0;
+}
+
+.simplebar-track.horizontal {
+  &.simplebar-scrollbar::before {
+    height: 100%;
+    left: 2px;
+    right: 2px;
+  }
+}
+
+.horizontal.simplebar-track {
+  &.simplebar-scrollbar {
+    height: 7px;
+    left: 0;
+    min-height: 0;
+    min-width: toRem(10);
+    right: auto;
+    top: 2px;
+    width: auto;
+  }
+}
+
+/* Rtl support */
+[data-simplebar-direction="rtl"] .simplebar-track.vertical {
+  left: 0;
+  right: auto;
+}

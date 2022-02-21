@@ -1,0 +1,46 @@
+//== Font
+$font-family: 'Cabin', sans-serif;
+$font-size: 16px;
+$font-height: 1.2;
+
+//colors
+$blue-color: #5b32b4;
+$grey-color: #f5f9fc;
+$lgrey-color: #ccc;
+$off-white: #ced4da;
+$white: #fff; 
+$black: #000;
+$shade-white: #eff2f6;
+$title-color: #fb397d;
+$shade-gray: #495057;
+$shade-blue: #80bdff;
+$pink-color: #db4f74;
+$font-color: #726a84;
+$color-link: #452769;
+$greyish-white:#ddd;
+$custom-gray: #333;
+$shade-off-white2: #f4f4f4;
+$shade-pink: #eb6ca3;
+$shade-grey: #47425d;
+
+@mixin respond-to-max($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+@mixin respond-to-min($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+
+//sm
+$phone-xs:          380px;
+//sm
+$phone:             576px;
+//md
+$tablet:            768px;
+//lg
+$desktop:           992px;
+//xl
+$desktop-wide:      1200px;

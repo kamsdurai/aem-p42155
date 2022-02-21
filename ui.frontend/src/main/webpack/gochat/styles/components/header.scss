@@ -1,0 +1,138 @@
+header {
+  left: 0;
+  padding: toRem(32) toRem(15) toRem(20);
+  position: fixed;
+  top: 0;
+  transition: all 0.4s ease-out;
+  width: 100%;
+  z-index: 99;
+
+  &.header--sticky {
+    padding-top: toRem(20);
+
+    &::before {
+      background: $white-color;
+      box-shadow: 0 toRem(23) toRem(38) 0 rgb(0 0 0 / 9%);
+    }
+
+    nav {
+      .menu {
+        li a {
+          color: $link-color;
+          opacity: 0.5;
+        }
+
+        li.active a {
+          opacity: 1;
+        }
+      }
+
+      .menu__icon {
+        .hamburger {
+          background: $hamburger-blue;
+
+          &.hamburger--close {
+            background: transparent;
+            top: 0;
+          }
+
+          &.hamburger--close::before,
+          &.hamburger--close::after {
+            background: rgba(0 0 0 / 15%);
+            top: toRem(20);
+          }
+
+          &::before,
+          &::after {
+            background: $hamburger-blue;
+          }
+        }
+      }
+    }
+
+    @include respond-to-max($desktop) {
+      padding-bottom: toRem(10);
+      padding-top: toRem(10);
+
+      nav .menu li a {
+        color: $black;
+      }
+
+      nav .menu li.active a {
+        color: $link-color;
+        opacity: 1;
+      }
+
+      .logo--sticky .cmp-image {
+        max-width: toRem(42);
+      }
+    }
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: all 0.4s ease-out;
+    width: 100vw;
+  }
+
+  @include respond-to-max($desktop) {
+    padding: toRem(16) toRem(24) toRem(5);
+  }
+
+  @include respond-to-max($tablet) {
+    padding: toRem(16) toRem(15) toRem(5);
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .cmp-container {
+    margin: 0 auto;
+    max-width: toRem(1140);
+    padding: 0;
+  }
+
+  .logo {
+    margin: toRem(5) 0;
+    position: relative;
+
+    .cmp-image {
+      margin-left: toRem(7);
+      max-width: toRem(108);
+
+      @include respond-to-max($desktop) {
+        margin-left: toRem(16);
+        max-width: toRem(50);
+      }
+
+      @include respond-to-max($phone) {
+        margin-left: 0;
+      }
+    }
+
+    &--sticky {
+      display: none !important;
+      position: relative;
+
+      .cmp-image {
+        margin-left: toRem(16);
+        max-width: toRem(77);
+
+        @include respond-to-max($phone) {
+          margin-left: 0;
+        }
+
+        @include respond-to-min($desktop) {
+          margin-left: toRem(7);
+        }
+      }
+    }
+  }
+}

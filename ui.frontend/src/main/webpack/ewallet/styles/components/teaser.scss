@@ -1,0 +1,159 @@
+.landing_page {
+  .cmp-container {
+    @include respond-to-min($desktop-wide) {
+      padding-bottom: 20px;
+    }
+
+    .teaser {
+      padding-top: 120px;
+
+      @include respond-to-max($desktop) {
+        padding-top: 25px;
+      }
+
+      .cmp-teaser__description {
+        @include respond-to-max($desktop) {
+          width: 65%;
+        }
+
+        @include respond-to-max($phone) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.ewalletherobanner {
+  .teaser {
+    @extend .wrapper;
+
+    color: $white;
+    position: relative;
+    z-index: 1;
+
+    @include respond-to-max($desktop) {
+      padding: 140px 0 0;
+      width: 660px;
+    }
+
+    @include respond-to-min($tablet) {
+      padding-top: 55px;
+    }
+
+    @include respond-to-max($phone) {
+      padding: 15px 0 0;
+    }
+
+    @include respond-to-min-max($tablet, $tablet) {
+      &.teaser_img_right {
+        padding: 0;
+      }
+    }
+
+    &.title_copy p {
+        font-weight: 500 !important;
+    }
+
+    .cmp-teaser__description {
+      width: 100%;
+
+      @include respond-to-min($tablet) {
+        width: 75%;
+      }
+
+      @include respond-to-min-max($desktop-wide-xl, $desktop) {
+        width: 60%;
+      }
+
+      @include respond-to-min($desktop-wide-xl) {
+        width: 50%;
+      }
+
+      @include respond-to-max($phone) {
+        padding: 0 15px;
+      }
+
+      h1 {
+        color: $white;
+        font-size: toRem(40);
+        margin-bottom: 15px;
+
+        @include respond-to-min($desktop) {
+          font-size: toRem(72);
+          line-height: 66px;
+        }
+      }
+
+      h2 {
+        color: $white;
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 15px;
+
+        @include respond-to-min($tablet) {
+          font-size: 48px;
+          line-height: 52px;
+        }
+      }
+
+      p {
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        padding-right: 20px;
+
+        @include respond-to-min($tablet) {
+          font-size: 20px;
+        }
+      }
+    }
+
+    &.ewallet_btn_green .cmp-teaser__action-container {
+      margin-top: 50px;
+      position: relative;
+
+      @include respond-to-max($phone) {
+        margin: 20px 0 30px;
+        padding: 0 15px;
+      }
+
+      .cmp-teaser__action-link {
+        background-color: $link-color;
+        border-color: $link-color;
+        border-radius: 4px;
+        border-width: 1px;
+        color: $white;
+        font-size: 16px;
+        font-weight: 700;
+        height: 49px;
+        letter-spacing: 0;
+        line-height: 18px;
+        min-width: 180px;
+        outline: 0;
+        overflow: hidden;
+        padding: 0.75rem 0.5rem;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+        width: auto;
+
+        @include respond-to-max($phone) {
+          display: block;
+          width: 100%;
+        }
+      }
+
+      .cmp-teaser__action-link.active,
+      .cmp-teaser__action-link:hover {
+        background-color: $green-btn;
+        border-color: $green-btn;
+        box-shadow: none !important;
+        color: $white;
+        text-decoration: none;
+      }
+    }
+  }
+}

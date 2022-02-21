@@ -1,0 +1,110 @@
+.slider-destroy {
+  @include respond-to-max($custom-width-tab) {
+    .swiper-wrapper {
+      display: inline-block;
+
+      .swiper-slide {
+        .title-wrap {
+          height: auto;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .controls {
+      display: none !important;
+    }
+  }
+}
+
+//Load more slide Button
+.slider-load-more-cta {
+  background-color: $white;
+  border-color: $darkest-night;
+  border-radius: $border-radius-step-1;
+  color: $almost-black;
+  display: none;
+  margin-top: $margin-step-5;
+  transition: $transition-step-1;
+
+  @extend .btn;
+
+  &:active {
+    background-color: $green-btn;
+    border-color: $green-btn;
+    color: $white;
+    outline: 0;
+  }
+
+  &:hover {
+    background-color: $white;
+    border-color: $main-green;
+    box-shadow: none;
+    color: $main-green;
+  }
+
+  &:focus {
+    background-color: $green-btn;
+    border-color: $green-btn;
+    color: $white;
+    outline: 0;
+  }
+}
+
+//Load More slide Variation for Mobile view only
+
+.slider-load-more {
+  @include respond-to-max($tablet) {
+    .swiper-wrapper {
+      .swiper-slide {
+        &:nth-child(n + 4) {
+          display: none;
+        }
+      }
+    }
+
+    &--active {
+      .swiper-wrapper {
+        .swiper-slide {
+          &:nth-child(n + 4) {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .slider-load-more-cta {
+      display: block;
+    }
+  }
+}
+
+// *************************************
+// accessibility
+// *************************************
+.acc-black {
+  .btn,
+  .slider-load-more-cta {
+    background-color: $black;
+    border-color: $white;
+    color: $white;
+  }
+}
+
+.acc-blue {
+  .btn,
+  .slider-load-more-cta {
+    background-color: $blue4;
+    border-color: $white;
+    color: $white;
+  }
+}
+
+.acc-yellow {
+  .btn,
+  .slider-load-more-cta {
+    background-color: $black;
+    border-color: $yellow-light;
+    color: $yellow-light;
+  }
+}

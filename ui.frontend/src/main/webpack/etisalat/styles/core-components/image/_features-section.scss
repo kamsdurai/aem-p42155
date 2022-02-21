@@ -1,0 +1,847 @@
+/* stylelint-disable no-descending-specificity */
+// btn with border around
+.btn-wit-border {
+  border: $border-step-1 solid $white;
+  border-radius: $border-radius-step-1;
+  padding: $padding-step-1 $padding-step-4;
+  text-align: center;
+  width: auto;
+}
+
+// class name feature-watch
+// aem authoring name Feature Watch
+.cmp_text--feature-watch {
+  @include respond-to-min($desktop) {
+    &.green--bg {
+      padding-top: 0;
+
+      .cmp-image__image {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include respond-to-min($tablet) {
+    margin-bottom: toRem(112) !important;
+    max-height: toRem(304);
+    min-height: toRem(304);
+  }
+
+  @include respond-to-min($desktop) {
+    margin-bottom: toRem(50) !important;
+    max-height: toRem(468);
+    min-height: toRem(468);
+  }
+
+  .cmp-image__image {
+    @include respond-to-min($tablet) {
+      height: toRem(371);
+      margin-left: toRem(-30);
+      margin-top: 0;
+      width: toRem(297);
+    }
+
+    @include respond-to-min($desktop) {
+      height: toRem(479);
+      margin-left: 0;
+      margin-top: 0;
+      width: toRem(384);
+    }
+  }
+
+  .cmp_btn {
+    display: flex;
+    margin: 0;
+
+    img {
+      @include respond-to-min($tablet) {
+        height: toRem(29);
+      }
+
+      @include respond-to-min($desktop) {
+        height: toRem(36);
+      }
+    }
+
+    .cmp_store_btn {
+      margin-right: toRem(20);
+    }
+  }
+
+  .cmp-text {
+    @include respond-to-min($tablet) {
+      width: toRem(340);
+    }
+
+    @include respond-to-min($desktop) {
+      width: toRem(588);
+    }
+
+    h4 {
+      @include respond-to-min($tablet) {
+        font-size: $font28;
+        line-height: toRem(34);
+        margin: toRem(75) 0 toRem(16);
+      }
+
+      @include respond-to-min($desktop) {
+        font-size: $font32;
+        line-height: toRem(40);
+        margin: toRem(58) 0 toRem(32);
+      }
+    }
+
+    p {
+      @include respond-to-min($tablet) {
+        font-size: $font14;
+        line-height: toRem(20);
+        margin-bottom: $margin-step-2;
+      }
+
+      @include respond-to-min($desktop) {
+        font-size: $font16;
+        margin-bottom: $margin-step-3;
+      }
+
+      .cmp-link__arrow_left {
+        @include respond-to-min($tablet) {
+          padding-left: $padding-step-0;
+          padding-right: $padding-step-1;
+        }
+
+        @include respond-to-min($desktop) {
+          font-size: $font14;
+          line-height: toRem(20);
+          padding-right: calc(#{$padding-step-1} + 4px);
+        }
+      }
+
+      .cmp-button--secondary {
+        min-width: toRem(280);
+      }
+    }
+  }
+
+  .cmp-container {
+    margin: 0 auto;
+    padding: $padding-step-0 calc(#{$padding-step-1} + 4px);
+
+    @include respond-to-max($tablet) {
+      width: 100%;
+    }
+
+    @include respond-to-min($desktop) {
+      width: toRem(1224);
+    }
+  }
+}
+
+@include respond-to-max($phone) {
+  .cmp_text--feature-watch {
+    margin-bottom: toRem(208) !important;
+    max-height: toRem(502);
+    min-height: toRem(502);
+    padding-top: $padding-step-3 !important;
+
+    .image {
+      .cmp-image__image {
+        height: toRem(283);
+        margin-left: toRem(24);
+        width: toRem(240);
+      }
+    }
+
+    .cmp_btn {
+      margin: 0;
+
+      img {
+        height: toRem(29);
+        margin-bottom: $margin-step-3;
+      }
+    }
+
+    .cmp-text {
+      position: relative;
+
+      h4 {
+        font-size: $font28;
+        line-height: toRem(34);
+        margin: 0 0 $margin-step-3;
+      }
+
+      p {
+        font-size: $font14;
+        margin-bottom: $margin-step-2;
+
+        .cmp-link__arrow_left {
+          position: absolute;
+          right: toRem(70);
+          top: toRem(512);
+        }
+
+        .cmp-button--secondary {
+          position: absolute;
+          top: toRem(460);
+          width: 100%;
+        }
+      }
+    }
+
+    .cmp-container {
+      margin: 0 auto;
+      padding: $padding-step-0 calc(#{$padding-step-1} + 4px);
+      width: 100%;
+    }
+  }
+}
+
+// class name cmp_text--feature-watch-flipped
+// aem authoring name Feature Watch Flipped
+.cmp_text--feature-watch-flipped {
+  @include respond-to-min($tablet) {
+    margin-bottom: toRem(112) !important;
+    max-height: toRem(304);
+    min-height: toRem(304);
+  }
+
+  @include respond-to-min($desktop) {
+    margin-bottom: toRem(50) !important;
+    max-height: toRem(468);
+    min-height: toRem(468);
+  }
+
+  .cmp-image__image {
+    @include respond-to-min($tablet) {
+      height: toRem(371);
+      margin-left: toRem(-30);
+      margin-top: 0;
+      width: toRem(297);
+    }
+
+    @include respond-to-min($desktop) {
+      height: toRem(479);
+      margin-left: 0;
+      margin-top: 0;
+      width: toRem(384);
+    }
+  }
+
+  .cmp_btn {
+    display: flex;
+    margin: 0;
+
+    img {
+      @include respond-to-min($tablet) {
+        height: toRem(29);
+      }
+
+      @include respond-to-min($desktop) {
+        height: toRem(36);
+      }
+    }
+
+    .cmp_store_btn {
+      margin-right: 20px;
+    }
+  }
+
+  .cmp-text {
+    @include respond-to-min($tablet) {
+      width: toRem(340);
+    }
+
+    @include respond-to-min($desktop) {
+      width: toRem(588);
+    }
+
+    h4 {
+      @include respond-to-min($tablet) {
+        font-size: $font28;
+        line-height: toRem(34);
+        margin: toRem(75) 0 $margin-step-2;
+      }
+
+      @include respond-to-min($desktop) {
+        font-size: $font32;
+        line-height: toRem(40);
+        margin: toRem(58) 0 $margin-step-4;
+      }
+    }
+
+    p {
+      @include respond-to-min($tablet) {
+        font-size: $font14;
+        line-height: toRem(20);
+        margin-bottom: $margin-step-2;
+      }
+
+      @include respond-to-min($desktop) {
+        font-size: $font16;
+        margin-bottom: $margin-step-3;
+      }
+
+      .cmp-link__arrow_left {
+        @include respond-to-min($tablet) {
+          padding-left: $padding-step-0;
+          padding-right: $padding-step-1;
+        }
+
+        @include respond-to-min($desktop) {
+          font-size: $font14;
+          line-height: toRem(20);
+          padding-right: calc(#{$padding-step-1} + 4px);
+        }
+      }
+
+      .cmp-button--secondary {
+        min-width: toRem(280);
+      }
+    }
+  }
+
+  .cmp-container {
+    margin: 0 auto;
+    padding: $padding-step-0 calc(#{$padding-step-1} + 4px);
+
+    @include respond-to-max($tablet) {
+      width: 100%;
+    }
+
+    @include respond-to-min($desktop) {
+      width: toRem(1224);
+    }
+  }
+
+  &.aqua-green--bg {
+    .text {
+      margin-top: 0;
+    }
+
+    .cmp_store_btn {
+      img {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@include respond-to-max($phone) {
+  .cmp_text--feature-watch-flipped {
+    margin-bottom: toRem(208) !important;
+    max-height: toRem(502);
+    min-height: toRem(502);
+    padding-top: $padding-step-3 !important;
+
+    .image {
+      .cmp-image__image {
+        height: toRem(283);
+        margin-left: $margin-step-3;
+        width: toRem(240);
+      }
+    }
+
+    .cmp_btn {
+      margin: 0;
+
+      img {
+        height: toRem(29);
+        margin-bottom: $margin-step-3;
+      }
+    }
+
+    .cmp-text {
+      position: relative;
+
+      h4 {
+        font-size: $font28;
+        line-height: toRem(34);
+        margin: 0 0 $margin-step-3;
+      }
+
+      p {
+        font-size: $font14;
+        margin-bottom: $margin-step-2;
+
+        .cmp-link__arrow_left {
+          position: absolute;
+          right: toRem(70);
+          top: toRem(512);
+        }
+
+        .cmp-button--secondary {
+          position: absolute;
+          top: toRem(460);
+          width: 100%;
+        }
+      }
+    }
+
+    .cmp-container {
+      margin: 0 auto;
+      padding: $padding-step-0 calc(#{$padding-step-1} + 4px);
+      width: 100%;
+
+      .aem-Grid {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
+
+.text--overlap__image {
+  padding: $padding-step-2;
+}
+
+.gray--color {
+  color: $gray;
+}
+
+// cmp_banner--full-bleed class name
+// Feature Banner Full Bleed aem authoring name
+.cmp_banner--full-bleed {
+  @include respond-to-min($desktop) {
+    min-height: toRem(523);
+  }
+
+  .cmp-text {
+    margin-bottom: 0;
+    padding-bottom: toRem(44);
+    padding-top: toRem(64);
+    position: relative;
+    width: toRem(588);
+
+    @include respond-to-max($tablet) {
+      margin-left: toRem(36);
+      padding-bottom: toRem(65);
+      padding-top: toRem(52);
+    }
+
+    @include respond-to-max($phone) {
+      margin-bottom: toRem(50);
+      margin-left: 0;
+      padding-bottom: 0;
+      padding-top: toRem(32);
+    }
+
+    h3 {
+      margin: toRem(0) toRem(0) toRem(40) toRem(0);
+
+      @include respond-to-max($tablet) {
+        margin: toRem(0) toRem(0) toRem(48) toRem(0);
+      }
+
+      @include respond-to-max($phone) {
+        margin: toRem(0) toRem(0) toRem(20) toRem(0);
+      }
+    }
+
+    .body-copy1 {
+      margin-bottom: toRem(16);
+
+      @include respond-to-max($tablet) {
+        margin-bottom: toRem(12);
+        width: toRem(360);
+      }
+
+      @include respond-to-max($phone) {
+        width: toRem(320);
+      }
+    }
+
+    .body-copy2 {
+      font-size: $font20;
+      line-height: toRem(28);
+      margin-bottom: toRem(16);
+
+      @include respond-to-max($tablet) {
+        font-size: $font16;
+        line-height: toRem(24);
+        margin-bottom: toRem(12);
+      }
+    }
+
+    .font--number {
+      @include font-family-Neotech;
+
+      line-height: toRem(32);
+      padding-right: toRem(8);
+
+      @include respond-to-max($tablet) {
+        font-size: $font28;
+      }
+    }
+
+    ul {
+      @include respond-to-min($desktop) {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      li {
+        font-size: $font20;
+        margin-bottom: toRem(10);
+        padding: 0;
+
+        @include respond-to-min($desktop) {
+          flex: 1 0 50%;
+        }
+
+        @include respond-to-max($tablet) {
+          font-size: $font16;
+          margin-bottom: toRem(8);
+        }
+      }
+    }
+
+    sup {
+      @include respond-to-max($tablet) {
+        top: 0;
+      }
+    }
+
+    .cmp-button--primary,
+    .cmp-button--promo,
+    .cmp-button--secondary,
+    .cmp-button--transparent {
+      bottom: toRem(48);
+      left: toRem(294);
+      position: absolute;
+      width: toRem(288);
+
+      @include respond-to-max($tablet) {
+        bottom: 0;
+        left: 0;
+        margin: $margin-step-3 0 0;
+      }
+
+      @include respond-to-max($phone) {
+        bottom: toRem(-67);
+      }
+    }
+  }
+
+  .text {
+    float: none !important;
+    margin: 0 auto !important;
+    padding: 0 toRem(12) !important;
+    width: toRem(1224) !important;
+
+    @include respond-to-max($phone) {
+      padding: 0 toRem(16);
+    }
+  }
+
+  .cmp-container {
+    background-position: top center;
+    background-size: 100% auto;
+    height: 100%;
+    min-height: toRem(523);
+
+    @include respond-to-max($tablet) {
+      min-height: toRem(685);
+    }
+
+    @include respond-to-max($phone) {
+      min-height: toRem(620);
+    }
+  }
+
+  @include rtlBlock {
+    .cmp-button--primary {
+      left: toRem(6);
+
+      @include respond-to-max($tablet) {
+        right: 0;
+      }
+    }
+
+    .cmp-text {
+      ul {
+        li {
+          list-style-type: none;
+        }
+      }
+
+      .font--number {
+        padding: 0;
+      }
+    }
+
+    .old-price {
+      margin: 0;
+    }
+  }
+}
+
+.cmp_banner--full-bleed-right {
+  .cmp-text {
+    float: right;
+
+    @include rtlBlock() {
+      float: left;
+    }
+
+    @include respond-to-max($tablet) {
+      margin-right: toRem(256);
+
+      @include rtlBlock() {
+        margin-left: toRem(256);
+      }
+    }
+
+    @include respond-to-max($phone) {
+      float: left;
+
+      @include rtlBlock() {
+        float: right;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.direction-column {
+  height: toRem(450);
+  margin-bottom: toRem(208);
+
+  .cmp-container {
+    .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--5 {
+      margin-top: toRem(-48);
+      width: 70%;
+
+      @include respond-to-min($desktop) {
+        margin-top: 0;
+        width: 58.3333%;
+      }
+
+      img {
+        margin-left: 0;
+        width: 70%;
+
+        @include respond-to-max($tablet) {
+          width: 100%;
+        }
+      }
+    }
+
+    .aem-Grid.aem-Grid--phone--12 > .aem-GridColumn.aem-GridColumn--phone--7 {
+      width: 100%;
+    }
+
+    .cmp-text {
+      padding: $padding-step-4;
+      width: 100%;
+    }
+  }
+}
+
+// beigebg--pattern-bg teaser variation
+.beigebg--pattern-bg {
+  .cmp-image__image {
+    position: relative;
+    z-index: 4;
+  }
+
+  .cmp-container {
+    margin: 0 auto;
+    width: toRem(1224);
+  }
+}
+
+.large--banner {
+  @include rtlBlock {
+    .cmp-button--primary {
+      margin-right: $margin-step-3;
+      width: toRem(288);
+
+      @include respond-to-max($desktop-min) {
+        margin-right: $margin-step-0;
+      }
+    }
+
+    .cmp-button--secondary {
+      margin-right: $margin-step-6;
+      width: toRem(288);
+
+      @include respond-to-max($desktop-min) {
+        margin-right: $margin-step-0;
+      }
+    }
+  }
+}
+
+// Accessibility
+.acc-black,
+.acc-blue {
+  .cmp-title,
+  h1,
+  a {
+    color: $white;
+  }
+
+  .text {
+    &--text_black {
+      color: $white;
+    }
+
+    &--gray {
+      color: $white;
+    }
+  }
+
+  .cmp-button--secondary {
+    background-color: $black;
+    border-color: $white;
+    color: $white;
+  }
+
+  .cmp_text--feature-watch,
+  .cmp_text--feature-watch-flipped {
+    background-color: $black;
+
+    .text--gray {
+      color: $white;
+    }
+
+    .cmp-text {
+      h4 {
+        color: $white;
+      }
+    }
+
+    .cmp-link__arrow_left {
+      color: $white;
+
+      &::after {
+        border-color: $white;
+      }
+    }
+  }
+}
+
+.acc-blue {
+  .cmp-button--secondary {
+    background-color: $blue4;
+    border-color: $white;
+    color: $white;
+  }
+
+  .cmp_text--feature-watch,
+  .cmp_text--feature-watch-flipped {
+    background-color: $blue4;
+  }
+}
+
+.acc-yellow {
+  .cmp-title,
+  h1,
+  a {
+    color: $yellow-light;
+  }
+
+  .text {
+    &--text_black {
+      color: $yellow-light;
+    }
+
+    &--gray {
+      color: $yellow-light;
+    }
+  }
+
+  .cmp-button--secondary {
+    background-color: $black;
+    border-color: $yellow-light;
+    color: $yellow-light;
+  }
+
+  .cmp_text--feature-watch,
+  .cmp_text--feature-watch-flipped {
+    background-color: $black;
+
+    .text--gray {
+      color: $yellow-light;
+    }
+
+    .cmp-text {
+      h4 {
+        color: $yellow-light;
+      }
+    }
+
+    .cmp-link__arrow_left {
+      color: $yellow-light;
+
+      &::after {
+        border-color: $yellow-light;
+      }
+    }
+  }
+}
+
+.cmp_text--feature-4-0 {
+  @include respond-to-min($tablet) {
+    padding-top: 0 !important;
+
+    .container {
+      margin-left: 0;
+    }
+
+    .image {
+      .cmp-image__image {
+        margin-top: 0;
+        top: toRem(-30);
+      }
+    }
+  }
+
+  @include respond-to-min($desktop) {
+    max-height: toRem(420);
+    min-height: toRem(420);
+    padding-top: 0 !important;
+
+    .container {
+      margin-left: 0;
+    }
+
+    .image {
+      .cmp-image__image {
+        margin-top: 0;
+        top: toRem(-30);
+      }
+    }
+  }
+}
+
+.cmp_text--feature-4-0,
+.cmp_text--feature-watch,
+.cmp_text--feature-watch-flipped {
+  .container {
+    .aem-Grid {
+      @include respond-to-min($tablet) {
+        display: flex;
+        flex-direction: column;
+        height: toRem(300);
+        justify-content: center;
+
+        .buttonstore {
+          padding: toRem(10) 0;
+        }
+      }
+
+      @include respond-to-min($desktop) {
+        height: toRem(420);
+
+        .buttonstore {
+          padding: toRem(20) 0;
+        }
+      }
+    }
+  }
+
+  .cmp-link__arrow_left::after {
+    margin-top: toRem(-5);
+    right: toRem(-7);
+  }
+}

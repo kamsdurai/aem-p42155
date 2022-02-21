@@ -1,0 +1,622 @@
+.row-context-nav {
+  background-color: $sand-white;
+  position: relative;
+
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12,
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12,
+  .col-xs-1,
+  .col-xs-2,
+  .col-xs-3,
+  .col-xs-4,
+  .col-xs-5,
+  .col-xs-6,
+  .col-xs-7,
+  .col-xs-8,
+  .col-xs-9,
+  .col-xs-10,
+  .col-xs-11,
+  .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .spacer {
+    clear: both;
+    height: 3rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  > .container-fluid {
+    background-color: $sand-white;
+  }
+
+  .cmp-icon-card-four-item {
+    .context-nav-box-wrap {
+      overflow: hidden;
+      padding: 0 0 2rem;
+      text-align: center;
+
+      .swiper-wrapper {
+        -webkit-filter: blur(0);
+
+        @media (min-width: 425px) {
+          h5 {
+            letter-spacing: 1px;
+          }
+        }
+
+        .rect-responsive {
+          padding-bottom: 65%;
+          @media (min-width: $screen-lg-max) {
+            min-height: 145px !important;
+          }
+        }
+
+        .swiper-slide {
+          width: 66.66666667%;
+        }
+      }
+
+      .context-nav-box {
+        background-color: $white;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        &.content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 10px;
+        }
+
+        &::after {
+          background-color: $main-green;
+          bottom: 0;
+          content: " ";
+          height: 6.57%;
+          left: 0;
+          position: absolute;
+          width: 100%;
+        }
+
+        a h5 {
+          color: $almost-black;
+        }
+
+        h5 {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+          padding-top: 1em;
+          position: relative;
+          text-transform: uppercase;
+          text-align: center;
+        }
+
+        h5::after {
+          background-color: $main-green;
+          content: " ";
+          height: 1px;
+          left: 50%;
+          position: absolute;
+          top: 4px;
+          transform: translate(-50%, 0);
+          width: 2.5rem;
+        }
+
+        &.hover,
+        &:hover {
+          background-color: $main-green;
+          cursor: pointer;
+
+          a h5 {
+            color: $white;
+          }
+
+          h5::after {
+            background-color: $white;
+          }
+
+          .icon-area {
+            img,
+            object,
+            svg {
+              .main-stroke {
+                stroke: $white;
+              }
+            }
+          }
+        }
+
+        h5 {
+          height: toRem(60);
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+
+        .icon-area {
+          img,
+          object,
+          svg {
+            height: 3.375rem;
+            width: auto;
+
+            .main-stroke {
+              stroke: $almost-black;
+            }
+          }
+        }
+
+        .prepaid {
+          background-image: url("../resources/images/prepaid.svg");
+
+          @include context-nav-img();
+        }
+
+        .postpaid {
+          background-image: url("../resources/images/prepaid.svg");
+
+          @include context-nav-img();
+        }
+
+        .visitorline {
+          background-image: url("../resources/images/visitor.svg");
+
+          @include context-nav-img();
+        }
+
+        .roaming {
+          background-image: url("../resources/images/roaming.svg");
+
+          @include context-nav-img();
+        }
+
+        .elife-color {
+          background-image: url("../resources/images/elife-color.svg");
+
+          @include context-nav-img();
+        }
+
+        .elife {
+          background-image: url("../resources/images/elife.svg");
+
+          @include context-nav-img();
+        }
+
+        .internet {
+          background-image: url("../resources/images/internet.svg");
+
+          @include context-nav-img();
+        }
+
+        .internet-color {
+          background-image: url("../resources/images/internet-color.svg");
+
+          @include context-nav-img();
+        }
+
+        .telephone-color {
+          background-image: url("../resources/images/telephone-color.svg");
+
+          @include context-nav-img();
+        }
+
+        .telephone {
+          background-image: url("../resources/images/telephone.svg");
+
+          @include context-nav-img();
+        }
+
+        .vat {
+          background-image: url("../resources/images/vat.svg");
+
+          @include context-nav-img();
+        }
+      }
+    }
+  }
+
+  .cmp-icon-card-three-item {
+    .context-nav-box-wrap {
+      overflow: hidden;
+      padding: 0 0 2rem;
+      text-align: center;
+      @include respond-to-max($tablet) {
+        padding: 0 0 3.5rem;
+      }
+
+      .swiper-wrapper {
+        -webkit-filter: blur(0);
+
+        .rect-responsive {
+          padding-bottom: 65%;
+          @media (min-width: $screen-lg-max) {
+            min-height: 205px;
+            min-width: 223.76px;
+          }
+        }
+
+        .swiper-slide {
+          width: 66.66666667%;
+        }
+      }
+
+      .context-nav-box {
+        background-color: $white;
+        min-height: toRem(205);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+
+        @include respond-to-max($tablet) {
+          min-height: toRem(190);
+          width: 100%;
+        }
+
+        @include respond-to-max($phone) {
+          min-height: toRem(210);
+        }
+
+        &.content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          padding: 10px;
+        }
+
+        &::after {
+          background-color: $main-green;
+          bottom: 0;
+          content: " ";
+          height: 6.57%;
+          left: 0;
+          position: absolute;
+          width: 100%;
+        }
+
+        a h5 {
+          color: $almost-black;
+        }
+
+        h5 {
+          font-size: 1rem;
+          margin-top: 0.5rem;
+          padding-top: 1em;
+          position: relative;
+        }
+
+        h5::after {
+          background-color: $main-green;
+          content: " ";
+          height: 1px;
+          left: 50%;
+          position: absolute;
+          top: 0;
+          transform: translate(-50%, 0);
+          width: 2.5rem;
+        }
+
+        &.hover,
+        &:hover {
+          background-color: $main-green;
+          cursor: pointer;
+
+          a h5 {
+            color: $white;
+          }
+
+          h5::after {
+            background-color: $white;
+          }
+
+          .icon-area {
+            img,
+            object,
+            svg {
+              .main-stroke {
+                stroke: $white;
+              }
+            }
+          }
+        }
+
+        h5 {
+          height: toRem(60);
+          padding-left: 5%;
+          padding-right: 5%;
+        }
+
+        .icon-area {
+          img,
+          object,
+          svg {
+            height: 3.375rem;
+            width: auto;
+
+            .main-stroke {
+              stroke: $almost-black;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .support-logout-heading {
+    font-size: 30px;
+    letter-spacing: 0;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    text-align: center !important;
+  }
+}
+
+/* -----------------------------------------
+  02 - sm viewport
+  ----------------------------------------- */
+@include sm {
+  .context-nav-box-wrap {
+    .context-nav-box {
+      .prepaid,
+      .postpaid,
+      .visitorline,
+      .roaming {
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+/* -----------------------------------------
+  03 - md viewport
+  ----------------------------------------- */
+@include md {
+  .context-nav-box-wrap {
+    padding: 0 0 2.25rem;
+
+    .context-nav-box {
+      &.content {
+      }
+
+      .icon-area {
+        img,
+        svg {
+          height: 2.4rem !important;
+
+          @include respond-to-max($phone) {
+            height: toRem(54) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* HELP & SUPPORT */
+.support-wrapper {
+  margin-top: -60px !important;
+
+  .action-bar {
+    background-color: $white;
+    position: relative;
+
+    @include respond-to-max($phone) {
+      background-color: $main-green;
+      border-top: $border-step-1 solid $white;
+    }
+
+    .cmp-text {
+      margin-bottom: $margin-step-0;
+    }
+
+    a {
+      display: block;
+      font-size: $font18;
+      line-height: toRem(60);
+
+      @include respond-to-min($tablet) {
+        pointer-events: none;
+      }
+
+      @include respond-to-max($phone) {
+        line-height: toRem(59);
+
+        .cmp-link__text {
+          color: $white;
+          font-size: $font12;
+        }
+
+        &::after {
+          border: solid $white;
+          border-width: $border-step-0 $border-step-3 $border-step-3 $border-step-0;
+          content: " ";
+          display: inline-block;
+          padding: 3px;
+          position: absolute;
+          right: toRem(30);
+          top: toRem(26);
+          transform: rotate(-135deg);
+        }
+      }
+
+      .cmp-link__text {
+        color: $main-green;
+        font-size: $font18;
+
+        @include font-family-Neotech-roboto();
+
+        @include respond-to-max($desktop-wide) {
+          font-size: $font16;
+        }
+      }
+    }
+  }
+}
+
+/* DOWNLOAD LINKS */
+.download-links {
+  padding: $padding-step-8 $padding-step-0 $padding-step-10;
+
+  p {
+    border-top: $border-step-1 solid $light-sand-brown;
+    padding: $padding-step-2 $padding-step-0;
+
+    a {
+      display: flex;
+      flex-direction: row;
+
+      svg {
+        box-sizing: content-box;
+        float: left;
+        margin-top: $margin-step-0;
+      }
+
+      .cmp-link__text {
+        letter-spacing: initial;
+        text-transform: initial;
+      }
+    }
+
+    &:last-child {
+      border-bottom: $border-step-1 solid $light-sand-brown;
+    }
+  }
+}
+.iconcardlist {
+  float: unset;
+}
+
+// Accessibility
+.acc-black {
+  .row-context-nav {
+    & > .container-fluid {
+      background-color: $black;
+    }
+
+    .cmp-icon-card-four-item,
+    .cmp-icon-card-three-item {
+      .context-nav-box-wrap {
+        .context-nav-box {
+          background-color: $black;
+          border: 1px solid $white;
+
+          &::after {
+            background-color: $white;
+          }
+        }
+        a h5 {
+          color: $white;
+
+          &::after {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.acc-blue {
+  .row-context-nav {
+    & > .container-fluid {
+      background-color: $blue4;
+    }
+    .cmp-icon-card-four-item,
+    .cmp-icon-card-three-item {
+      .context-nav-box-wrap {
+        .context-nav-box {
+          background-color: $blue4;
+          border: 1px solid $white;
+
+          &::after {
+            background-color: $white;
+          }
+        }
+
+        a h5 {
+          color: $white;
+
+          &::after {
+            background-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.acc-yellow {
+  .row-context-nav {
+    & > .container-fluid {
+      background-color: $black;
+    }
+
+    .cmp-icon-card-four-item,
+    .cmp-icon-card-three-item {
+      .context-nav-box-wrap {
+        .context-nav-box {
+          background-color: $black;
+          border: 1px solid $yellow-light;
+          &::after {
+            background-color: $yellow-light;
+          }
+          &.hover,
+          &:hover {
+            background-color: transparent;
+
+            a h5 {
+              color: $yellow-light;
+            }
+
+            h5::after {
+              background-color: $yellow-light;
+            }
+          }
+        }
+        a h5 {
+          color: $yellow-light;
+
+          &::after {
+            background-color: $yellow-light;
+          }
+        }
+      }
+    }
+  }
+}

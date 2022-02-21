@@ -1,0 +1,26 @@
+/* Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 27px 44px;
+  background-size: 27px 44px;
+  background-size: 27px 44px;
+  cursor: pointer;
+  height: 44px;
+  margin-top: -22px;
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  z-index: 10;
+
+  &.swiper-button-disabled {
+    cursor: auto;
+    opacity: 0.35;
+    pointer-events: none;
+  }
+}
+
+.pagination-wrap {
+  text-align: center;
+}

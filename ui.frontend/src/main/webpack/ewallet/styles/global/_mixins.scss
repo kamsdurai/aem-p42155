@@ -1,0 +1,150 @@
+@mixin box-shadow {
+  background: $white;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+}
+
+// Clearfix
+
+@mixin clearFix() {
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+    display: block;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden;
+  }
+
+  & {
+    *zoom: 1;
+  }
+}
+
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+/* @include push--auto() */
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+/* @include pseudo() */
+
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+
+  &:placeholder {
+    @content;
+  }
+
+  &::placeholder {
+    @content;
+  }
+
+  &:input-placeholder {
+    @content;
+  }
+
+  &::input-placeholder {
+    @content;
+  }
+}
+
+/* @include input-placeholder() */
+
+@mixin align-image($position) {
+  img {
+    object-position: $position;
+  }
+}
+
+/* @include align-image() */
+
+//font size PX into REM
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+/* h1 { @include fontSize(32px); } */
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+
+  @return $remValue;
+}
+
+// .box {
+//     width: toRem(400);
+//     height: toRem(400);
+// }
+
+@mixin background-icon() {
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  content: "";
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+@mixin common-height-width {
+  height: 40px;
+  width: 40px;
+}
+
+//media query
+@mixin respond-to-max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin respond-to-min-max($width-max, $width-min) {
+  @media screen and (max-width: $width-max) and (min-width: $width-min) {
+    @content;
+  }
+}
+
+@mixin respond-to-min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+@mixin rtl($property, $ltr-value, $rtl-value) {
+  #{$property}: $ltr-value;
+
+  [dir="rtl"] & {
+    #{$property}: $rtl-value;
+  }
+}
+
+@mixin rtlBlock() {
+  [dir="rtl"] & {
+    @content;
+  }
+}

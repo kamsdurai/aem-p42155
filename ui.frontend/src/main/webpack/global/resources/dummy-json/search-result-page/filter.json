@@ -1,0 +1,1125 @@
+{
+  "data": {
+    "response": {
+      "HeaderContent": [],
+      "endeca:auditInfo": {
+        "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+        "ecr:innerPath": null
+      },
+      "name": "Two-Column Page",
+      "@type": "TwoColumnPage",
+      "MainContent": [
+        {
+          "defaultRefinementsAr": [],
+          "lastRecNum": 15,
+          "records": [
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/internet.jsp"
+                ],
+                "document.title": ["Internet"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". Plans and add-ons. eLife Home Portal. Al Shamil. Email2SMS. Packages. UAE Wi-Fi by etisalat. Wi-Fi Home Zone. Wi-Fi Connection Speed. View All. View Less. Application forms. Domain Name Registration Application Form. Al Shamil Broadband Application Form - for New Customer. Al Shamil Broadband Application Form - for Existing Customer. eLife. Telephone. VAT. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Services. Services. 5G. UAE Wifi. Home Zone. Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/internet.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Finternet.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/internet.jsp"
+                    ],
+                    "document.title": ["Internet"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". Plans and add-ons. eLife Home Portal. Al Shamil. Email2SMS. Packages. UAE Wi-Fi by etisalat. Wi-Fi Home Zone. Wi-Fi Connection Speed. View All. View Less. Application forms. Domain Name Registration Application Form. Al Shamil Broadband Application Form - for New Customer. Al Shamil Broadband Application Form - for Existing Customer. eLife. Telephone. VAT. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Services. Services. 5G. UAE Wifi. Home Zone. Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/internet.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Finternet.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/internet/home-zone-wifi-promo-faq.jsp"
+                ],
+                "document.title": ["Wi-Fi Home Zone Promo FAQ"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  "Home Zone Wi-Fi Promotion. FAQs for the Home Zone Wi-Fi Promotion. What is the Free 3 Months Home Zone Wi-Fi promotion ?. As a special year-end promotion, Etisalat offers free 3 Months rental for the Home Zone Wi-Fi service upon subscription. For any new Home Zone Wi-Fi service subscription during the promotion period customers will not pay the AED 29 monthly rent per home Zone for the first 3 months, after that the normal monthly rental fee will apply. Who can benefit from the Free 3 Months Home Zone Wi-Fi promotion?. All Etisalat Home customers that have an active internet line and subscribe to the Home Zone Wi-Fi service during the promotion period will benefit from the 3 Months promotion.. I am currently a subscriber to the Home Zone Wi-Fi service. Will I get any discount or will my rental be waived off during this promotion?. This promotion is only available for new Home Zone Wi-Fi subscriptions. Existing Home Zone Wi-Fi subscribers will continue to enjoy their services at the normal monthly rentals. I understand that the service rentals are waived off for the first 3 Months as part of the promotion. Do you have any other charges towards survey, engineer visit, devices, installation or any other hidden charges?. There are No additional charges nor hidden charges with the Home Zone Wi-Fi service besides the AED29 monthly rental fees per Home Zone. As part of the 3 Months Free Promo the rental will be waived for the first 3 months for all new subscription to the service during the promotion period.. Are there any separate exit charges for the promotion?. No, there are no additional exit charges for the promotion.. All the service specifications, benefits and exit charge rules remain same as it is today.. What are the Home Zone Wi-Fi service exit charges?. AED 500 per Zone is charged as exit fee if the customer ceases the service during the first year, and the exit fee will become AED 250 during the second year of the contract.. However, there will not be any exit fee post 24 months of subscription.. What will happen if customer already subscribed to 1 Home Zone Wi-Fi service and want to subscribe to a second Home Zone service during the promotion period?. The existing subscription will be considered as new subscription; hence, customer will get the benefit of the ongoing promotion, the rental for the 2 Home Zones will be waived for 3 months. Example: Assuming you subscribed to the 2nd Home zone your rental for 2 Home zones during the promo period will be AED 0 instead of the regular AED 58 / Month for 3-month period.. Can I shift the service from my current place to the next home during this promo while enjoying the promotion benefits & what is the charge for that?. Yes, you can shift these services free of cost from your current location to the new location along with your eLife shift request absolutely free.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/internet/home-zone-wifi-promo-faq.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Finternet%2Fhome-zone-wifi-promo-faq.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/internet/home-zone-wifi-promo-faq.jsp"
+                    ],
+                    "document.title": ["Wi-Fi Home Zone Promo FAQ"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      "Home Zone Wi-Fi Promotion. FAQs for the Home Zone Wi-Fi Promotion. What is the Free 3 Months Home Zone Wi-Fi promotion ?. As a special year-end promotion, Etisalat offers free 3 Months rental for the Home Zone Wi-Fi service upon subscription. For any new Home Zone Wi-Fi service subscription during the promotion period customers will not pay the AED 29 monthly rent per home Zone for the first 3 months, after that the normal monthly rental fee will apply. Who can benefit from the Free 3 Months Home Zone Wi-Fi promotion?. All Etisalat Home customers that have an active internet line and subscribe to the Home Zone Wi-Fi service during the promotion period will benefit from the 3 Months promotion.. I am currently a subscriber to the Home Zone Wi-Fi service. Will I get any discount or will my rental be waived off during this promotion?. This promotion is only available for new Home Zone Wi-Fi subscriptions. Existing Home Zone Wi-Fi subscribers will continue to enjoy their services at the normal monthly rentals. I understand that the service rentals are waived off for the first 3 Months as part of the promotion. Do you have any other charges towards survey, engineer visit, devices, installation or any other hidden charges?. There are No additional charges nor hidden charges with the Home Zone Wi-Fi service besides the AED29 monthly rental fees per Home Zone. As part of the 3 Months Free Promo the rental will be waived for the first 3 months for all new subscription to the service during the promotion period.. Are there any separate exit charges for the promotion?. No, there are no additional exit charges for the promotion.. All the service specifications, benefits and exit charge rules remain same as it is today.. What are the Home Zone Wi-Fi service exit charges?. AED 500 per Zone is charged as exit fee if the customer ceases the service during the first year, and the exit fee will become AED 250 during the second year of the contract.. However, there will not be any exit fee post 24 months of subscription.. What will happen if customer already subscribed to 1 Home Zone Wi-Fi service and want to subscribe to a second Home Zone service during the promotion period?. The existing subscription will be considered as new subscription; hence, customer will get the benefit of the ongoing promotion, the rental for the 2 Home Zones will be waived for 3 months. Example: Assuming you subscribed to the 2nd Home zone your rental for 2 Home zones during the promo period will be AED 0 instead of the regular AED 58 / Month for 3-month period.. Can I shift the service from my current place to the next home during this promo while enjoying the promotion benefits & what is the charge for that?. Yes, you can shift these services free of cost from your current location to the new location along with your eLife shift request absolutely free.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/internet/home-zone-wifi-promo-faq.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Finternet%2Fhome-zone-wifi-promo-faq.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/elife/wifi-connection-speed-faq.jsp"
+                ],
+                "document.title": ["Wi-Fi Connection Speed"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". Frequently Asked Questions. I have a Premium eLife package. Why is my Wi-Fi speed still low?. If you are experiencing low Wi-Fi speed, you should check the following:. Your devices. Your internet speed heavily depends on your network equipment (router). Old devices. Your devices’ hardware – processor, network card, memory, etc. – can impact the speed. Corrupted, outdated, or incorrectly configured operating system on your devices can also slow down the connection speed. If you are using an old router, consider upgrading it; an old router, or a router that is not designed to go as fast as your package, can slow down your Wi-Fi speed. Devices location. If your Wi-Fi router is located far from the devices, your internet speed will not be ideal; you may need a wireless repeater to boost the signal. Physical obstacles placed between the router and devices, especially walls and metal, can reduce Wi-Fi speed; move away metal boards, if any, and aquariums. Viruses. Viruses or malware might be running in the background, connecting to the internet and draining your network’s resources; take precautions by installing an antivirus programme and perform regular scans. Number of connected devices. Protect your connection and use a Wi-Fi password to prevent unauthorised access. Share the Wi-Fi password only to those you’ve permitted to use your connection. Your usage. Is everybody at home streaming music, gaming online, downloading videos, streaming movies and exchanging photos and videos? Also, the more you consume the internet, the more the connection slows down. In this case, consider upgrading your plan if you are a heavy user.. Why do some internet videos run slow?. Connection speed is not solely controlled from your side. The other party that you are connecting to also affects it. It could be that the website you are connecting to has a large number of users and the available speed is divided among them all. Likewise, if you are gaming online and encounter slow speed, the issue might be from the connection and the load on the server where the game is located.. How can I make sure that I am receiving the speed that I am paying for?. Visit. myspeed.etisalat.ae. and run the speed test after disconnecting all Wi-Fi connections and connecting your device to the router using a cable.. I am the only one using the internet. Why is it still slow?. Check your device as it may be running too many apps that connect to the internet at the same time. Some might be running in the background without you noticing it. Check your device settings such as auto-update, sync or back-up, as well as file sharing programmes.. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/elife/wifi-connection-speed-faq.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Felife%2Fwifi-connection-speed-faq.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/elife/wifi-connection-speed-faq.jsp"
+                    ],
+                    "document.title": ["Wi-Fi Connection Speed"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". Frequently Asked Questions. I have a Premium eLife package. Why is my Wi-Fi speed still low?. If you are experiencing low Wi-Fi speed, you should check the following:. Your devices. Your internet speed heavily depends on your network equipment (router). Old devices. Your devices’ hardware – processor, network card, memory, etc. – can impact the speed. Corrupted, outdated, or incorrectly configured operating system on your devices can also slow down the connection speed. If you are using an old router, consider upgrading it; an old router, or a router that is not designed to go as fast as your package, can slow down your Wi-Fi speed. Devices location. If your Wi-Fi router is located far from the devices, your internet speed will not be ideal; you may need a wireless repeater to boost the signal. Physical obstacles placed between the router and devices, especially walls and metal, can reduce Wi-Fi speed; move away metal boards, if any, and aquariums. Viruses. Viruses or malware might be running in the background, connecting to the internet and draining your network’s resources; take precautions by installing an antivirus programme and perform regular scans. Number of connected devices. Protect your connection and use a Wi-Fi password to prevent unauthorised access. Share the Wi-Fi password only to those you’ve permitted to use your connection. Your usage. Is everybody at home streaming music, gaming online, downloading videos, streaming movies and exchanging photos and videos? Also, the more you consume the internet, the more the connection slows down. In this case, consider upgrading your plan if you are a heavy user.. Why do some internet videos run slow?. Connection speed is not solely controlled from your side. The other party that you are connecting to also affects it. It could be that the website you are connecting to has a large number of users and the available speed is divided among them all. Likewise, if you are gaming online and encounter slow speed, the issue might be from the connection and the load on the server where the game is located.. How can I make sure that I am receiving the speed that I am paying for?. Visit. myspeed.etisalat.ae. and run the speed test after disconnecting all Wi-Fi connections and connecting your device to the router using a cable.. I am the only one using the internet. Why is it still slow?. Check your device as it may be running too many apps that connect to the internet at the same time. Some might be running in the background without you noticing it. Check your device settings such as auto-update, sync or back-up, as well as file sharing programmes.. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/elife/wifi-connection-speed-faq.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Felife%2Fwifi-connection-speed-faq.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/full-home-wifi-faq.jsp"
+                ],
+                "document.title": ["Full Home Wifi"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". Frequently Asked Questions. What is Full Home Wi-Fi?. Full Home Wi-Fi is a new solution to support customers extend their internet wi-fi coverage across their home, be it villa or apartments. This is superior to the current Home zone service which limits the Wi-Fi extension to a maximum of 3 zones. Full home wi-fi achieves this superiority by using the latest mesh technology to design the network and connect high quality wi-fi access points within customer’s premise. Our field engineers will perform a wi-fi survey using their tool and design the network architecture which delivers optimum results. Customer pays a monthly fee for the service, and we will take care of the rest such as cabling (if needed), and all cost of devices, labor and installation.. Can’t I get full internet coverage using my primary router along with eLife?. The Wi-Fi coverage will be available in the room of the router, and part of the next one. However, this will depend on many factors such as size of the rooms, distance from the main router, the walls construction materials. At times this leads to the requirement of additional access points will be needed in medium and large homes.. Is the solution available only for eLife customers?. The solution is available for all Etisalat Home customer accounts who have an active internet line.. I am currently using the eLife Home Zone service; can I upgrade to Full Home Wi Fi?. Definitely. You can choose to upgrade your Wi-Fi extension service from Home zone to Full Home Wi-Fi by placing an upgrade request in our retail stores or calling up the customer care or with the help of the Mobile App. There will be no exit charges for home zone service, even if you fall within the contract period.. What are the components that will be taken care as part of the service?. We will be providing the routers, cables, sockets, and all accessories, as well as the installation and configuration of all items end to end. The Wi-Fi survey and design of the network plan are also part of the service at no extra cost.. What is the total price for the service?. The Full Home Wi-Fi service will be charged at AED 99 per month (Incl 5% VAT). In case if the customer needs to do a stand-alone wi-fi survey, it costs AED 150 per visit. However, the visit charges will be waived off if the customer proceeds with the subscription.. Is there any exit fee for the service?. This service if offered with 2 years contract. AED 1000 is charged as the exit fee if the customer cease the service within first 2 years of subscription.. What will be the speed of the extended areas beyond the area covered by my primary router?. Internet and Wi-Fi speeds are always usually delivered as per the best effort basis. The speed that is expected across the home will be closer to the speeds of the primary connection.. How large can be the coverage?. There cannot be a direct answer for that since there are numerous variables that affect the coverage including the design, architecture of the home, size of rooms etc. Since the service can support up to a maximum of five devices, it should easily be able to cover large apartments and villas which has up to 6 – 8 bedrooms depending upon the size.. I have my own devices available. Can you use those devices instead of yours in the extra rooms?. It should be noted that the customer devices cannot be used as part of the service. Etisalat will use only Etisalat devices for this service. In addition, the devices that we provide will also enjoy up to 2 years warranty.. I have a superior device as my primary router. Can I continue to use the same primary router while enjoying Full Home Wi-Fi?. We would advice you to use Etisalat specified routers as primary routers to enjoy the full benefits of the full home wi-fi service and its technology. Using customer’s own router as the primary elife router compromises the quality of service from faster remote trouble shooting to the quality of network architecture. However, if the customer still requires to use his own primary router, the request should be shared with our field engineer who would install the remaining Full Home Wi-Fi keeping the customer’s primary router as it is, if feasible.. Once I cancel the service, will you take back the devices, cables and socket?. The ownership of all devices and accessories is with the customer. So the customer can choose to do whatever he would want with the routers, cables etc once service is cancelled.. Can I shift the service from my current place to the next home & what is the charge for that?. Full Home Wi-Fi services can be moved free of cost from his current home to his new location.. Do I need to change the user name and password when I move between different rooms?. In order to enable seamless movement within different rooms, we have ensured that the user name and password for the service will be same as that of the primary connection.. In case I choose to change the primary pack to a very higher speed, will the service be compatible to the new speed / experience?. Absolutely. Coverage and speed of the internet Wi-Fi in your entire home is dependent on the primary connection.. Can you extend the service to the next apartment attached to my apartment or to the next room outside my main villa building?. The Full Home Wi Fi service is a solution for Etisalat’s customers to enhance their Wi-Fi coverage within their homes. It is not possible to extend outside the customer premise where the primary account is based. Cabling cannot be done for the civil structure outside the main building.. What should I / Customer do if I want to subscribe (And unsubscribe) to this service?. Customer can simply call our toll free customer care number at 800101 any time and place the subscription request for Full Home Wi-Fi. Or he can place the request by visiting any of our business centers, Mobile App, portal or through the door to door sales team. It can also be placed and done, if the field engineer is already available at the customer premise for installation or any other service. The un-subscription request can be placed with our customer care, retail stores, Mobile app and Etisalat portal.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/full-home-wifi-faq.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Ffull-home-wifi-faq.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/full-home-wifi-faq.jsp"
+                    ],
+                    "document.title": ["Full Home Wifi"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". Frequently Asked Questions. What is Full Home Wi-Fi?. Full Home Wi-Fi is a new solution to support customers extend their internet wi-fi coverage across their home, be it villa or apartments. This is superior to the current Home zone service which limits the Wi-Fi extension to a maximum of 3 zones. Full home wi-fi achieves this superiority by using the latest mesh technology to design the network and connect high quality wi-fi access points within customer’s premise. Our field engineers will perform a wi-fi survey using their tool and design the network architecture which delivers optimum results. Customer pays a monthly fee for the service, and we will take care of the rest such as cabling (if needed), and all cost of devices, labor and installation.. Can’t I get full internet coverage using my primary router along with eLife?. The Wi-Fi coverage will be available in the room of the router, and part of the next one. However, this will depend on many factors such as size of the rooms, distance from the main router, the walls construction materials. At times this leads to the requirement of additional access points will be needed in medium and large homes.. Is the solution available only for eLife customers?. The solution is available for all Etisalat Home customer accounts who have an active internet line.. I am currently using the eLife Home Zone service; can I upgrade to Full Home Wi Fi?. Definitely. You can choose to upgrade your Wi-Fi extension service from Home zone to Full Home Wi-Fi by placing an upgrade request in our retail stores or calling up the customer care or with the help of the Mobile App. There will be no exit charges for home zone service, even if you fall within the contract period.. What are the components that will be taken care as part of the service?. We will be providing the routers, cables, sockets, and all accessories, as well as the installation and configuration of all items end to end. The Wi-Fi survey and design of the network plan are also part of the service at no extra cost.. What is the total price for the service?. The Full Home Wi-Fi service will be charged at AED 99 per month (Incl 5% VAT). In case if the customer needs to do a stand-alone wi-fi survey, it costs AED 150 per visit. However, the visit charges will be waived off if the customer proceeds with the subscription.. Is there any exit fee for the service?. This service if offered with 2 years contract. AED 1000 is charged as the exit fee if the customer cease the service within first 2 years of subscription.. What will be the speed of the extended areas beyond the area covered by my primary router?. Internet and Wi-Fi speeds are always usually delivered as per the best effort basis. The speed that is expected across the home will be closer to the speeds of the primary connection.. How large can be the coverage?. There cannot be a direct answer for that since there are numerous variables that affect the coverage including the design, architecture of the home, size of rooms etc. Since the service can support up to a maximum of five devices, it should easily be able to cover large apartments and villas which has up to 6 – 8 bedrooms depending upon the size.. I have my own devices available. Can you use those devices instead of yours in the extra rooms?. It should be noted that the customer devices cannot be used as part of the service. Etisalat will use only Etisalat devices for this service. In addition, the devices that we provide will also enjoy up to 2 years warranty.. I have a superior device as my primary router. Can I continue to use the same primary router while enjoying Full Home Wi-Fi?. We would advice you to use Etisalat specified routers as primary routers to enjoy the full benefits of the full home wi-fi service and its technology. Using customer’s own router as the primary elife router compromises the quality of service from faster remote trouble shooting to the quality of network architecture. However, if the customer still requires to use his own primary router, the request should be shared with our field engineer who would install the remaining Full Home Wi-Fi keeping the customer’s primary router as it is, if feasible.. Once I cancel the service, will you take back the devices, cables and socket?. The ownership of all devices and accessories is with the customer. So the customer can choose to do whatever he would want with the routers, cables etc once service is cancelled.. Can I shift the service from my current place to the next home & what is the charge for that?. Full Home Wi-Fi services can be moved free of cost from his current home to his new location.. Do I need to change the user name and password when I move between different rooms?. In order to enable seamless movement within different rooms, we have ensured that the user name and password for the service will be same as that of the primary connection.. In case I choose to change the primary pack to a very higher speed, will the service be compatible to the new speed / experience?. Absolutely. Coverage and speed of the internet Wi-Fi in your entire home is dependent on the primary connection.. Can you extend the service to the next apartment attached to my apartment or to the next room outside my main villa building?. The Full Home Wi Fi service is a solution for Etisalat’s customers to enhance their Wi-Fi coverage within their homes. It is not possible to extend outside the customer premise where the primary account is based. Cabling cannot be done for the civil structure outside the main building.. What should I / Customer do if I want to subscribe (And unsubscribe) to this service?. Customer can simply call our toll free customer care number at 800101 any time and place the subscription request for Full Home Wi-Fi. Or he can place the request by visiting any of our business centers, Mobile App, portal or through the door to door sales team. It can also be placed and done, if the field engineer is already available at the customer premise for installation or any other service. The un-subscription request can be placed with our customer care, retail stores, Mobile app and Etisalat portal.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/full-home-wifi-faq.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Ffull-home-wifi-faq.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/home-wireless-faqs.jsp"
+                ],
+                "document.title": ["Etisalat Home Wireless"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". Etisalat Home Wireless. Frequently Asked Questions. What is Etisalat Home Wireless?. Home Wireless service is designed to offer you instant Internet at your home. It’s a limited mobility service and will work at your home location only.. How and where does the service work?. On subscription of the service, we will provide you Data only SIM card. You need to insert yourdata SIM in any data enabled smart device of your choice at your home. Once it is activated, your home location will be linked to your Home Internet SIM Card and will only work at that location.. What if I have changed my location, what should I do?. If you decide to change your home location, you may call 101 to unlock it and we will update your new home location.. Is there a cancellation fee for my Etisalat Home Wireless?. In case you decide to cancel your service before the Minimum Term, you’ll be charged:. - One undiscounted monthly recurring charge (AED 299). What is the promotion duration?. The promotional monthly price of AED 199 will be for 12 months only. After that, it will be AED 299.. What is the relocation fee?. We will relocate you free of charge for the first time. After that, you’ll be charged AED 100 for each relocation request.. Can I connect more than one device at the same time?. Yes, you can. However, multiple devices sharing your internet connection can reduce your internet speed.. Will I get the same consistent speed at all times?. You will enjoy the best available speed at your location.. What is the STARZPLAY benefit that I will have?. With STARZPLAY, you can watch the best TV content in the region for 12 months on the STARZPLAY app without any additional cost.. How can I receive the STARZPLAY Voucher?. Once you subscribe to Etisalat Home Wireless, you will receive an email with the STARZPLAY Voucher, which you can redeem on STARZPLAY app, and will be valid for 12 months from the STARZPLAY Voucher redemption.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/home-wireless-faqs.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Fhome-wireless-faqs.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/home-wireless-faqs.jsp"
+                    ],
+                    "document.title": ["Etisalat Home Wireless"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". Etisalat Home Wireless. Frequently Asked Questions. What is Etisalat Home Wireless?. Home Wireless service is designed to offer you instant Internet at your home. It’s a limited mobility service and will work at your home location only.. How and where does the service work?. On subscription of the service, we will provide you Data only SIM card. You need to insert yourdata SIM in any data enabled smart device of your choice at your home. Once it is activated, your home location will be linked to your Home Internet SIM Card and will only work at that location.. What if I have changed my location, what should I do?. If you decide to change your home location, you may call 101 to unlock it and we will update your new home location.. Is there a cancellation fee for my Etisalat Home Wireless?. In case you decide to cancel your service before the Minimum Term, you’ll be charged:. - One undiscounted monthly recurring charge (AED 299). What is the promotion duration?. The promotional monthly price of AED 199 will be for 12 months only. After that, it will be AED 299.. What is the relocation fee?. We will relocate you free of charge for the first time. After that, you’ll be charged AED 100 for each relocation request.. Can I connect more than one device at the same time?. Yes, you can. However, multiple devices sharing your internet connection can reduce your internet speed.. Will I get the same consistent speed at all times?. You will enjoy the best available speed at your location.. What is the STARZPLAY benefit that I will have?. With STARZPLAY, you can watch the best TV content in the region for 12 months on the STARZPLAY app without any additional cost.. How can I receive the STARZPLAY Voucher?. Once you subscribe to Etisalat Home Wireless, you will receive an email with the STARZPLAY Voucher, which you can redeem on STARZPLAY app, and will be valid for 12 months from the STARZPLAY Voucher redemption.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/home-wireless-faqs.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Fhome-wireless-faqs.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/smart-lights-faqs.jsp"
+                ],
+                "document.title": ["Smart Lights"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". Frequently Asked Questions. How do I control Philips Hue lights?. You can control Philips Hue lights multiple ways — that's one of the reasons they're so smart! How you control your lights depends on whether you have a Hue Bridge.. Without a Hue Bridge. Certain Philips Hue lamps and light fixtures come with a Dimmer switch, which can be used out of the box to turn on and off the lights, dim and brighten, and cycle through four preset light scenes (if purchased with a White ambiance bulb). If your lamp did not come with a Dimmer switch, you can only turn on and off the light.. With a Hue Bridge. If you pair your lights with a Hue Bridge, you can then operate all your lights within the Hue app. The Hue app offers far more functionality, allowing you to set up the Home & Away feature, create custom light scenes, and more. You can also use a smart home assistant to control your lights with your voice.. Why are my lights unreachable?. Your Hue light may have been physically switched off (e.g. by using a wall switch) or it is out of the operating range of the system. If you are still having issues, please contact Support.. How and when do I update my Hue software?. You can see the status of your product and system updates in the Hue app:. Open the Hue app and tap on Settings at the bottom of the app screen.. Navigate to Software update to view all of your Bridges and products.. Up-to-date products have a green check mark next to their listing.. New updates will begin downloading automatically.. How do I know if my software is up to date?. Enable automatic updates on your device to allow the Philips Hue app to update automatically. To see if your software is up to date, go to Settings > Software update in the Hue app.. Can two starter kits work together?. You can set up two starter kits independently and switch between them in the Hue app, but you can't control both Hue Bridges at the same time. You can add the lightbulbs from both starter kits to one Bridge or assign them to separate Bridges.. What actions can I take to ensure my Philips Hue products are safe from hacking?. The Philips Hue ecosystem uses industry-standard encryption and authentication techniques to protect against unauthorized users gaining access to your Philips Hue products. Hue only connects to the internet securely via a dedicated cloud so your devices cannot be seen from the open internet. Hue products update regularly with the latest security fixes and patches — a feature you can activate by linking your Hue Bridge with a Hue account on. www.philips-hue.com. .. In addition to Hue’s security precautions, it is important for you to ensure your home network is secured as well. For more assistance on protecting your home network, contact your internet service provider.. What should I do if the power supply for my Philips Hue outdoor light stops functioning?. If your outdoor lights are no longer responding and you suspect an issue with the power supply unit (PSU), unplug the power supply from the wall socket and contact Philips Hue.. Do not touch the power supply in wet conditions. If the cable or plug are wet, first cut the main power to the socket, and then unplug the power supply. Do not leave any plugs or connectors of your outdoor lights open — use the supplied plastic caps to cover them. If you don’t have the original plastic caps, you can wrap the connectors in plastic.. Can I use different types of standalone Hue fixtures together?. Yes. All Philips Hue light fixtures are fully compatible with the Hue ecosystem. Some can be used as standalone light fixtures, while others require a Hue Bridge in order to operate. However, all Hue products can connect to a Bridge for advanced control via the Hue app.. How do I install Outdoor fixtures?. All Hue products come with a manual showing you exactly how to install them.. Most Hue outdoor fixtures are low voltage, meaning that they convert the main voltage to a lower voltage, allowing you to simply plug their power supply into a power outlet. You can add a maximum of five lights or 35 meters of cable to each power supply. Control your Hue outdoor lights via your Hue app or accessory.. Which Hue products can I use outdoors?. All Philips Hue products that are marked as \"Outdoor\" have been tested and rated for outdoor use.. Can I control two separate Hue systems with one device?. Yes. You can choose which Bridge you would like to control in the Settings > Hue Bridges section of the Hue app. Note that you can only control one Bridge at a time.. I am unable to control my light when I am away from home. To control your lights while away from home, you’ll need to set up the Home & Away functionality:. Select Routines at the bottom of the app screen.. Select Home & Away.. Turn the Location aware toggle button from off to on.*. Once you have set up Home & Away, you can control your lights anywhere you have a Wi-Fi, 3G or 4G connection the same way you would as if you were at home. If you’re having trouble controlling your lights while away from home, please double check that you are logged into your Hue account and your lights are reachable.. *You must be connected to your home Wi-Fi for the initial set up. If you are not connected to your home Wi-Fi, you will receive an error message.\". What do the LED indicators on the Hue Bridge mean?. The LED indicators on your Bridge represent the following:. Power indicator (Left): The power adapter is connected.. Network indicator (Middle): The Hue Bridge is successfully connected to the router network.. Hue Portal indicator (Right): The Hue Bridge is successfully connected to the internet.. Zigbee indicator (Blue ring around the button): Zigbee communication is up and running.. What does the \"Restore factory settings\" button on the back of the Hue Bridge do?. Pressing and holding the \"Restore factory settings button\" on the back of your Bridge returns it to its factory settings, which means all previous preferences and configurations — your scenes, routines, widgets, and Room configurations — will be deleted. Additionally, bulbs and lights, which had been previously found via the automatic Search function, may now require that you manually input their serial numbers to reconnect them. It is strongly advised that you only return your Bridge to its factory settings if a Hue customer support agent has advised you to do so.. Can I control multiple Hue Bridges with the Philips Hue app?. Yes, but you can only control one Bridge at a time. To switch between two Bridges, go to Settings > Hue Bridges and select the Bridge you want to control.. How can I check if a Philips Hue product comes with Bluetooth?. Both on the box and on the product, you will see the Bluetooth logo. Only those products are Bluetooth enabled and can be controlled by the Philips Hue Bluetooth app. All Philips Hue products can be controlled via the Philips Hue Bridge and the Philips Hue app.. What do I need to use Philips Hue Bluetooth?. You will need a smart phone or tablet where you can install the Philips Hue Bluetooth app, iOS 11 or Android 7 or higher. Your device does need to support Bluetooth Low Energy (BLE) 4.0 and up. Also, you need free fixtures or power outlets depending on the lights you choose. There’s no need to have a Wi-Fi or data connection for controlling your lights.. If I use Philips Hue Bluetooth, can I still use the Bridge?. Yes. All Philips Hue Bluetooth products can be used with the Philips Hue Bridge too. The Philips Hue Bridge is still the heart of our system and will allow you to make full use of all the Philips Hue features and benefits. We've added Bluetooth to our newest bulbs and lights, as this is an easy way to get started with Philips Hue using just a couple of lights in one room. You still can upgrade to the Bridge after starting with Bluetooth lights to get full access to all the features of the Philips Hue system.. How do I add an accessory to my Hue system?. Adding an accessory can easily be done within the Hue app:. In the Hue app, tap Settings.. Tap Accessory setup.. Tap the Add accessory button at the top of the screen.. Select the accessory you would like to add. Follow the on-screen instructions.. How do I reset a Hue accessory to its default settings?. To reset your Hue accessory to its default settings, go to Settings > Accessory setup in the Hue app and select the accessory from the list. Tap on Reset and follow the on-screen instructions to reset the accessory.. Can I control lights in multiple rooms with an accessory such as the Dimmer switch?. Yes. You can select multiple Rooms in Accessory setup. You can even configure the accessory to set different scenes per Room.. Can I temporarily disable the Hue Motion sensor?. Yes, you can disable the Hue Motion sensor when it is not needed (e.g. when hosting a party) from within the Hue app:. 1. Tap Settings.. 2. Select Accessory setup.. 3. Toggle the sensor to the \"off\" position.. To turn it back on, simply toggle the button back on.. Can I use the Hue Motion sensor outside?. The Hue Motion sensor is for indoor use only. However, the Hue Outdoor sensor is weatherproof and suitable for use outside.. What does the LED indicator on the Hue Motion sensor mean?. The Hue Motion sensor’s LED indicator is integrated into its housing just below the sensor dome. The LED flashes different colors to indicate different things:. Orange blinking: Sensor is ready to connect to your Hue Bridge. Green blinking: Sensor is identified. Short orange flash at detection*: Low battery. Short red flash at detection*: Battery is almost empty. Long red flash at detection*: Sensor cannot reach the Hue Bridge**. *Only shown at first detection after at least 15 seconds without motion.. **If this problem occurs often, try performing a Zigbee channel change in the Hue app by navigating to Settings > Hue bridges > Zigbee > Change channel and following the on-screen instructions.. Where should I put my Hue Motion sensor?. You will find an illustrated placement guide for each type of room during the Hue Motion sensor installation walkthrough in the Hue app. In order to find the best placement, open the Hue app and navigate to Settings > Accessory setup > Select your sensor > Motion sensitivity. This will restart the sensor in Test Mode, which gives you instant feedback on the sensor’s detection capabilities in its current placement. You can exit Test Mode by exiting the Motion sensitivity screen.. The Hue Motion sensor’s LED indicator will turn on when it detects movement and turn off after no motion has been detected for five seconds.. Why do certain lighting fixtures come with a Dimmer switch?. Certain light fixtures come with a Hue Dimmer switch to make it easier for customers without a Hue Bridge to control their lights. Can I use a Hue Dimmer or Tap switch to control my outdoor lights?. Yes, you can set up a Hue Dimmer switch or Tap switch to control your outdoor Hue lights. However, these accessories are only rated for indoor placement, so be sure to only use them inside.. How many lights can I control with a Hue Dimmer switch?. You can control up to 50 Hue lights on a single Dimmer switch, provided that they are located in no more than two Rooms. To ensure that your Hue system responds quickly, you can only use the Dimmer switch in two Rooms simultaneously.. My Dimmer switch is no longer working properly.. Your Dimmer switch was once connected to your Bridge and functioning normally but has stopped working correctly:. Check that all four LED indicator lights on top of the Hue Bridge are on.. Check that the Dimmer switch is operational by pressing any button and ensuring that the LED indicator light on the front of the switch lights up green.. Check that the Dimmer switch is within range by ensuring that it is not farther away from the Bridge than your farthest light.. Ensure the Dimmer switch was not mounted to a metal surface as this can affect the range of the device.. Make sure that the Hue lights you want to control are functioning correctly in the Hue app. If not, this could indicate a problem with the light itself rather than the Dimmer switch.. In the Hue app, go to Settings > Accessory setup and select the problematic Hue Dimmer switch. Make sure the configuration settings are correct and select Save to save your settings.. Restart the Hue Dimmer switch by pressing and holding all four buttons of the switch at the same time. Let go when you see the LED indicator light on the front of the switch flash red and green.. Perform a hard reset of your Dimmer switch by pressing and holding the Setup button on the back of the switch for 10 seconds.. Your Hue Dimmer switch was never connected to a Hue Bridge and was functioning normally but has stopped working correctly:. Check that the Dimmer switch is operational by pressing any button and ensuring that the LED indicator light on the front of the switch lights up green.. Check that the Dimmer switch is within range of your Hue light. The maximum range of the Dimmer switch is about 12 meters.. Check that the Hue light you want to control with your Dimmer switch is connected to electricity. Its traditional wall switch should be flipped to the \"on\" position.. Ensure the Dimmer switch was not mounted to a metal surface as this can affect the range of the device.. Restart the Hue Dimmer switch by pressing and holding all four buttons of the switch at the same time. Let go when you see the LED indicator light on the front of the switch flash red and green.. Your Hue Dimmer switch flashes red when you press a button:. The Dimmer switch has lost connection and needs to be reconfigured. Reconnect the Dimmer switch to your Hue Bridge by navigating to Settings > Accessory setup in the Hue app.. What can I control with a Philips Hue Dimmer switch?. The Hue Dimmer switch can be used in two ways, depending on whether you have a Hue Bridge and the Hue app.. Standalone mode:. When purchased as part of a set with a Philips Hue light fixture, the Dimmer switch functions in standalone mode. This means that it can control the lamp or light fixture with which it came, including turning on/off the light, dimming, and brightening. If the Dimmer switch was purchased with a White ambiance or White and color ambiance light fixture, you can also cycle through four preset light recipes, including Read, Relax, Energize, and Concentrate. It is not possible to control the color of the light beyond the preset light recipes.. Connected to Hue Bridge:. For more functionality, you can connect your Dimmer switch to your Hue app and Hue Bridge. When paired with your smart lighting system, the Dimmer switch can control up to 50 Hue lights in up to two Rooms. You can also assign your own preferred scenes to cycle through.. How to Install Videos. All the How To videos are added. here. Is Philips Hue products compatible with top voicde control brands?. Philips Hue products are compatible with top voice control products like Google Assistant, amazon alexa, Apple HomeKit,. Warranty related questions. Warranty period is one year and for any warranty-related questions customer needs to call our Call Centre team and will be taken care.. Kindly note: Philips Hue products are for Residential use.. UAE Contact Centre No: 800 035 703 972. English: 24/7 - Arabic: 11:00 - 20:00, Sunday - Friday. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/smart-lights-faqs.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Fsmart-lights-faqs.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/smart-lights-faqs.jsp"
+                    ],
+                    "document.title": ["Smart Lights"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". Frequently Asked Questions. How do I control Philips Hue lights?. You can control Philips Hue lights multiple ways — that's one of the reasons they're so smart! How you control your lights depends on whether you have a Hue Bridge.. Without a Hue Bridge. Certain Philips Hue lamps and light fixtures come with a Dimmer switch, which can be used out of the box to turn on and off the lights, dim and brighten, and cycle through four preset light scenes (if purchased with a White ambiance bulb). If your lamp did not come with a Dimmer switch, you can only turn on and off the light.. With a Hue Bridge. If you pair your lights with a Hue Bridge, you can then operate all your lights within the Hue app. The Hue app offers far more functionality, allowing you to set up the Home & Away feature, create custom light scenes, and more. You can also use a smart home assistant to control your lights with your voice.. Why are my lights unreachable?. Your Hue light may have been physically switched off (e.g. by using a wall switch) or it is out of the operating range of the system. If you are still having issues, please contact Support.. How and when do I update my Hue software?. You can see the status of your product and system updates in the Hue app:. Open the Hue app and tap on Settings at the bottom of the app screen.. Navigate to Software update to view all of your Bridges and products.. Up-to-date products have a green check mark next to their listing.. New updates will begin downloading automatically.. How do I know if my software is up to date?. Enable automatic updates on your device to allow the Philips Hue app to update automatically. To see if your software is up to date, go to Settings > Software update in the Hue app.. Can two starter kits work together?. You can set up two starter kits independently and switch between them in the Hue app, but you can't control both Hue Bridges at the same time. You can add the lightbulbs from both starter kits to one Bridge or assign them to separate Bridges.. What actions can I take to ensure my Philips Hue products are safe from hacking?. The Philips Hue ecosystem uses industry-standard encryption and authentication techniques to protect against unauthorized users gaining access to your Philips Hue products. Hue only connects to the internet securely via a dedicated cloud so your devices cannot be seen from the open internet. Hue products update regularly with the latest security fixes and patches — a feature you can activate by linking your Hue Bridge with a Hue account on. www.philips-hue.com. .. In addition to Hue’s security precautions, it is important for you to ensure your home network is secured as well. For more assistance on protecting your home network, contact your internet service provider.. What should I do if the power supply for my Philips Hue outdoor light stops functioning?. If your outdoor lights are no longer responding and you suspect an issue with the power supply unit (PSU), unplug the power supply from the wall socket and contact Philips Hue.. Do not touch the power supply in wet conditions. If the cable or plug are wet, first cut the main power to the socket, and then unplug the power supply. Do not leave any plugs or connectors of your outdoor lights open — use the supplied plastic caps to cover them. If you don’t have the original plastic caps, you can wrap the connectors in plastic.. Can I use different types of standalone Hue fixtures together?. Yes. All Philips Hue light fixtures are fully compatible with the Hue ecosystem. Some can be used as standalone light fixtures, while others require a Hue Bridge in order to operate. However, all Hue products can connect to a Bridge for advanced control via the Hue app.. How do I install Outdoor fixtures?. All Hue products come with a manual showing you exactly how to install them.. Most Hue outdoor fixtures are low voltage, meaning that they convert the main voltage to a lower voltage, allowing you to simply plug their power supply into a power outlet. You can add a maximum of five lights or 35 meters of cable to each power supply. Control your Hue outdoor lights via your Hue app or accessory.. Which Hue products can I use outdoors?. All Philips Hue products that are marked as \"Outdoor\" have been tested and rated for outdoor use.. Can I control two separate Hue systems with one device?. Yes. You can choose which Bridge you would like to control in the Settings > Hue Bridges section of the Hue app. Note that you can only control one Bridge at a time.. I am unable to control my light when I am away from home. To control your lights while away from home, you’ll need to set up the Home & Away functionality:. Select Routines at the bottom of the app screen.. Select Home & Away.. Turn the Location aware toggle button from off to on.*. Once you have set up Home & Away, you can control your lights anywhere you have a Wi-Fi, 3G or 4G connection the same way you would as if you were at home. If you’re having trouble controlling your lights while away from home, please double check that you are logged into your Hue account and your lights are reachable.. *You must be connected to your home Wi-Fi for the initial set up. If you are not connected to your home Wi-Fi, you will receive an error message.\". What do the LED indicators on the Hue Bridge mean?. The LED indicators on your Bridge represent the following:. Power indicator (Left): The power adapter is connected.. Network indicator (Middle): The Hue Bridge is successfully connected to the router network.. Hue Portal indicator (Right): The Hue Bridge is successfully connected to the internet.. Zigbee indicator (Blue ring around the button): Zigbee communication is up and running.. What does the \"Restore factory settings\" button on the back of the Hue Bridge do?. Pressing and holding the \"Restore factory settings button\" on the back of your Bridge returns it to its factory settings, which means all previous preferences and configurations — your scenes, routines, widgets, and Room configurations — will be deleted. Additionally, bulbs and lights, which had been previously found via the automatic Search function, may now require that you manually input their serial numbers to reconnect them. It is strongly advised that you only return your Bridge to its factory settings if a Hue customer support agent has advised you to do so.. Can I control multiple Hue Bridges with the Philips Hue app?. Yes, but you can only control one Bridge at a time. To switch between two Bridges, go to Settings > Hue Bridges and select the Bridge you want to control.. How can I check if a Philips Hue product comes with Bluetooth?. Both on the box and on the product, you will see the Bluetooth logo. Only those products are Bluetooth enabled and can be controlled by the Philips Hue Bluetooth app. All Philips Hue products can be controlled via the Philips Hue Bridge and the Philips Hue app.. What do I need to use Philips Hue Bluetooth?. You will need a smart phone or tablet where you can install the Philips Hue Bluetooth app, iOS 11 or Android 7 or higher. Your device does need to support Bluetooth Low Energy (BLE) 4.0 and up. Also, you need free fixtures or power outlets depending on the lights you choose. There’s no need to have a Wi-Fi or data connection for controlling your lights.. If I use Philips Hue Bluetooth, can I still use the Bridge?. Yes. All Philips Hue Bluetooth products can be used with the Philips Hue Bridge too. The Philips Hue Bridge is still the heart of our system and will allow you to make full use of all the Philips Hue features and benefits. We've added Bluetooth to our newest bulbs and lights, as this is an easy way to get started with Philips Hue using just a couple of lights in one room. You still can upgrade to the Bridge after starting with Bluetooth lights to get full access to all the features of the Philips Hue system.. How do I add an accessory to my Hue system?. Adding an accessory can easily be done within the Hue app:. In the Hue app, tap Settings.. Tap Accessory setup.. Tap the Add accessory button at the top of the screen.. Select the accessory you would like to add. Follow the on-screen instructions.. How do I reset a Hue accessory to its default settings?. To reset your Hue accessory to its default settings, go to Settings > Accessory setup in the Hue app and select the accessory from the list. Tap on Reset and follow the on-screen instructions to reset the accessory.. Can I control lights in multiple rooms with an accessory such as the Dimmer switch?. Yes. You can select multiple Rooms in Accessory setup. You can even configure the accessory to set different scenes per Room.. Can I temporarily disable the Hue Motion sensor?. Yes, you can disable the Hue Motion sensor when it is not needed (e.g. when hosting a party) from within the Hue app:. 1. Tap Settings.. 2. Select Accessory setup.. 3. Toggle the sensor to the \"off\" position.. To turn it back on, simply toggle the button back on.. Can I use the Hue Motion sensor outside?. The Hue Motion sensor is for indoor use only. However, the Hue Outdoor sensor is weatherproof and suitable for use outside.. What does the LED indicator on the Hue Motion sensor mean?. The Hue Motion sensor’s LED indicator is integrated into its housing just below the sensor dome. The LED flashes different colors to indicate different things:. Orange blinking: Sensor is ready to connect to your Hue Bridge. Green blinking: Sensor is identified. Short orange flash at detection*: Low battery. Short red flash at detection*: Battery is almost empty. Long red flash at detection*: Sensor cannot reach the Hue Bridge**. *Only shown at first detection after at least 15 seconds without motion.. **If this problem occurs often, try performing a Zigbee channel change in the Hue app by navigating to Settings > Hue bridges > Zigbee > Change channel and following the on-screen instructions.. Where should I put my Hue Motion sensor?. You will find an illustrated placement guide for each type of room during the Hue Motion sensor installation walkthrough in the Hue app. In order to find the best placement, open the Hue app and navigate to Settings > Accessory setup > Select your sensor > Motion sensitivity. This will restart the sensor in Test Mode, which gives you instant feedback on the sensor’s detection capabilities in its current placement. You can exit Test Mode by exiting the Motion sensitivity screen.. The Hue Motion sensor’s LED indicator will turn on when it detects movement and turn off after no motion has been detected for five seconds.. Why do certain lighting fixtures come with a Dimmer switch?. Certain light fixtures come with a Hue Dimmer switch to make it easier for customers without a Hue Bridge to control their lights. Can I use a Hue Dimmer or Tap switch to control my outdoor lights?. Yes, you can set up a Hue Dimmer switch or Tap switch to control your outdoor Hue lights. However, these accessories are only rated for indoor placement, so be sure to only use them inside.. How many lights can I control with a Hue Dimmer switch?. You can control up to 50 Hue lights on a single Dimmer switch, provided that they are located in no more than two Rooms. To ensure that your Hue system responds quickly, you can only use the Dimmer switch in two Rooms simultaneously.. My Dimmer switch is no longer working properly.. Your Dimmer switch was once connected to your Bridge and functioning normally but has stopped working correctly:. Check that all four LED indicator lights on top of the Hue Bridge are on.. Check that the Dimmer switch is operational by pressing any button and ensuring that the LED indicator light on the front of the switch lights up green.. Check that the Dimmer switch is within range by ensuring that it is not farther away from the Bridge than your farthest light.. Ensure the Dimmer switch was not mounted to a metal surface as this can affect the range of the device.. Make sure that the Hue lights you want to control are functioning correctly in the Hue app. If not, this could indicate a problem with the light itself rather than the Dimmer switch.. In the Hue app, go to Settings > Accessory setup and select the problematic Hue Dimmer switch. Make sure the configuration settings are correct and select Save to save your settings.. Restart the Hue Dimmer switch by pressing and holding all four buttons of the switch at the same time. Let go when you see the LED indicator light on the front of the switch flash red and green.. Perform a hard reset of your Dimmer switch by pressing and holding the Setup button on the back of the switch for 10 seconds.. Your Hue Dimmer switch was never connected to a Hue Bridge and was functioning normally but has stopped working correctly:. Check that the Dimmer switch is operational by pressing any button and ensuring that the LED indicator light on the front of the switch lights up green.. Check that the Dimmer switch is within range of your Hue light. The maximum range of the Dimmer switch is about 12 meters.. Check that the Hue light you want to control with your Dimmer switch is connected to electricity. Its traditional wall switch should be flipped to the \"on\" position.. Ensure the Dimmer switch was not mounted to a metal surface as this can affect the range of the device.. Restart the Hue Dimmer switch by pressing and holding all four buttons of the switch at the same time. Let go when you see the LED indicator light on the front of the switch flash red and green.. Your Hue Dimmer switch flashes red when you press a button:. The Dimmer switch has lost connection and needs to be reconfigured. Reconnect the Dimmer switch to your Hue Bridge by navigating to Settings > Accessory setup in the Hue app.. What can I control with a Philips Hue Dimmer switch?. The Hue Dimmer switch can be used in two ways, depending on whether you have a Hue Bridge and the Hue app.. Standalone mode:. When purchased as part of a set with a Philips Hue light fixture, the Dimmer switch functions in standalone mode. This means that it can control the lamp or light fixture with which it came, including turning on/off the light, dimming, and brightening. If the Dimmer switch was purchased with a White ambiance or White and color ambiance light fixture, you can also cycle through four preset light recipes, including Read, Relax, Energize, and Concentrate. It is not possible to control the color of the light beyond the preset light recipes.. Connected to Hue Bridge:. For more functionality, you can connect your Dimmer switch to your Hue app and Hue Bridge. When paired with your smart lighting system, the Dimmer switch can control up to 50 Hue lights in up to two Rooms. You can also assign your own preferred scenes to cycle through.. How to Install Videos. All the How To videos are added. here. Is Philips Hue products compatible with top voicde control brands?. Philips Hue products are compatible with top voice control products like Google Assistant, amazon alexa, Apple HomeKit,. Warranty related questions. Warranty period is one year and for any warranty-related questions customer needs to call our Call Centre team and will be taken care.. Kindly note: Philips Hue products are for Residential use.. UAE Contact Centre No: 800 035 703 972. English: 24/7 - Arabic: 11:00 - 20:00, Sunday - Friday. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/smart-lights-faqs.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Fsmart-lights-faqs.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/mobile/prepaid/visitor-line-faq-new.jsp"
+                ],
+                "document.title": ["Visitor Line FAQs"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  "Visitor Line. Frequently Asked Questions. What is the Visitor Line and who can benefit from it?. The Visitor Line is a new prepaid pack from Etisalat, exclusively designed for visitors travelling to the UAE. Whether you are on a business trip, a tourist, a job seeker or just visiting family, the Visitor Line gets you connected immediately with a rich pack selection of your choice. You can enjoy benefits that suit your needs, which include loads of data, voice minutes, Wi-Fi and discounts on the best restaurant and attractions in the UAE.. What are the New Visitor Packs?. PACK. Visitor Line. Visitor Line +. Visitor Line Premium. Visitor Line Premium +. Price (with VAT). 49. 79. 125. 200. Data. 2GB. 4GB. 6GB. 22.5GB. Flexi Mins. 30. 30. 120. 525. Validity (days). 28. 28. 28. 28. Wi-Fi (hours). -. -. 5 hours. 30 hours. Benefits. Careem. AED 100. Careem. AED 100. Careem. AED 100. Careem. AED 100. Smiles app. “Buy one, get one free” deals. Smiles app. “Buy one, get one free” deals. Smiles app. “Buy one, get one free” deals. Smiles app. “Buy one, get one free” deals. Who is eligible to subscribe to Visitor Packs?. All visitors/recurring visitors to the UAE can get these packs.. What other information do I need to know on the Visitor Line?. At the time of purchasing your line, you will need to choose a Visitor plan to instantly connect with your friends and family back home during your stay.. The packs are valid for 28 days and can be purchased multiple times. They are available to re-purchase at the same price.. The Visitor Line validity is the same validity as your VISA upon arrival. You can migrate your Visitor Line to Wasel Prepaid, our main Pay-as-You-Go line, or to Postpaid, by visiting any Etisalat outlet and presenting your new Emirates ID to fulfil the TRA registration rules.. To subscribe, recharge, check balance and buy voice and data packs, dial *101# or download the My app.. How will I be charged for my voice calls?. Charging pulse for the voice call bundles will be on per-minute basis.. What will my rates be if I recharge and use my Visitor Line?. In case you have opted not to subscribe to any of the packs above and just want to recharge and use your Visitor Line, you will be charged Pay-as-You-Go rates, which are listed below.. Service. Pay-as-You-Go rate (AED)*. Local call. 0.63/min. Local SMS. 0.19/SMS. International call. List of countries. International SMS. 0.63/SMS. Data charging. AED 1.05/20MB. With a daily limit of AED 9.45. To subscribe, SM “SDB” to 1012. 5% VAT inclusive. What happens after 28 days? Can I recharge and use my Visitor Line?. You can recharge your Visitor Line using any of the following methods; which are available across more than 10,000 outlets across the UAE:. My app. ; using your credit card. Dialling *101# and following the menu. eRecharge - any denomination; minimum from AED 5. Recharge cards – available in denominations of 25, 50, 100, 200 and 500. eVoucher – available in denominations of 25, 50, 100, 200 and 500. etisalat payment machines at over 1000 locations. To check your current balance - use My app, dial *121# or *101# and follow the menu, or call 121.. Where can I buy the Visitor Line?. The Visitor Line is available at all etisalat outlets and at all airport arrivals, covering Abu Dhabi, Dubai and Sharjah. It's also available in outlets in malls and other key tourist spots including:. Dubai.  .  .  . No. Location. Mobile. Landline. 1. Deira City Centre. 050-6340405. 04-2951359. 2. Dubai Festival City. 050-8777004.  . 3. Dubai Mall. 056-2533533. 04-3277702. 4. Mirdif City Centre. 050-8404048. 04-2843196. 5. Mall of the Emirates. 050-2808020. 04-3850071. 6. Dubai World Trade Centre. 050-8840005. 04-3290555. 7. Dubai Airport Terminal-1. 050-4555535.  . 8. Dubai Airport Terminal-2. 050-6254254. 04-2021097. 9. Dubai Airport Terminal-3. 050-8800089. 04-2203902. 10. Al Maktoum Airport. 056-1444143.  . 11. Ibn Batutta Mall. 055-1106143. 04-4531699.  . Abu Dhabi.  .  .  . No. Location. Mobile. Landline. 1. Mushrif Mall. 02-6500955. 050-7710666. 2. Etihad Plaza. 02-6163921.  050-6144489. 3. Al Wahda Mall. 02-4458581. 050-9577705. 4. Dalma Mall. 02-2530766. 050-9687841. 5. Marina Mall. 02-6813969. 050-6167067. 6. Khalidiya Mall. 02-4475651. 050-9577705. 7. World Trade Centre Mall. 02-6585730. 050-9577705 . 8. Abu Dhabi Mall. 02-444139. 050-4429696.  . Sharjah, Fujairah and Ajman.  .  . No. Location. Contact. 1. Sahara Mall. 050-9814777 / 06-5741904. 2. Sharjah City Centre. 050-4232531 / 06-5325339. 3. Mega Mall. 050-9400940 / 06-5741904. 4. Sharjah Airport. 050-4990002 / 06-5581800. 5. Manar Mall. 050-3825255 / 07-2273669. 6. Hamra Mall. 050-3128882 / 07-2434456. 7. Fujairah City Centre. 050-1922444 / 09-2238999. 8. Fujairah Century Mall. 050-7798008. 9. Ajman City Centre. 050-1711159 / 06-5325339. I have consumed the benefits. What can I do to use the line?. After bundle consumption, you can recharge the line using any of the recharge methods. Pay-as-you-go charges apply.. Pay-as-you-go (PAYG) tariffs are as follows:. Benefits. Total Price + VAT (AED). Local. Voice. 0.63/min. SMS. 0.19/SMS. International. Voice. Standard Prepaid International Call Rates. SMS. 0.63/SMS. Data. 1.05/20MB. How long can I use my Visitor Line?. Your Visitor Line is valid as per the validity of your VISA upon arrival to the UAE.. My phone is old. Will the SIM card work with it?. New Visitor Line is sold with the TRIO SIM card (2FF+3FF+4FF cuts).. I misplaced my SIM card. How much does it cost me to replace it?. SIM card replacement charge is AED 52.50 (5% VAT included). You can get a new SIM card at any. Business Centre. or. outlet. .. Can I retain my number, if I find a job and become a permanent resident of UAE?. Yes, you can migrate your Visitor Line to Wasel Prepaid, our main Pay-as-you-Go line, or to Postpaid, by visiting the nearest etisalat. Business Centre. or. outlet. and presenting to fulfil your UAE resident registration process, with valid identification documents.. I have a balance of AED 50 on my Visitor Line. Will I still have it after migration?. Minimum balance that can be migrated is limited to AED 100.. Can I subscribe to other etisalat tariff plans, bundles or promotions on the Visitor Line?. Visitor Line comes with its own rich set of exclusively designed packs and hassle-free experience. Stay connected with your friends and family with the all-in-one Visitor Line. Simply choose a suitable pack and enjoy your stay in the UAE. For additional combo and data packs, dial *101# and follow the menu. Or, visit the. My app. for add-ons.. Are there any restrictions on the usage of the provided benefits?. Flexible minutes apply only to some countries - click. here. to see the list. Flexible minutes can be used to call local and international numbers but do not include incoming roaming calls. There are some numbers allowed to be called and some that are blocked, please see the attachment. Will I be able to roam with the Visitor Line?. Yes, you will easily be able to enjoy roaming services, but while roaming, the visitor packs will not be available. You will need to recharge your line and the standard roaming tariff will apply.. Can I use my number to transfer credit to a friend?. Visitor Packs are not eligible for transferring credit. However, New Visitor Line can receive credit from any etisalat line.. What is the Wi-Fi service and how is it different from mobile data?. Wi-Fi service is provided to access the internet in certain areas wirelessly. These areas can be indoor or outdoor and are called Wi-Fi hotspots. There are two ways to connect to the internet wirelessly: one is Wi-Fi, which is considered more economical but with limited coverage (within the hotspot only) and the second is through a mobile network. A mobile network has wider coverage for mobile data or internet connectivity.. Where is etisalat Wi-Fi service available?. The etisalat Wi-Fi service is available at major public areas including shopping malls, cafes, restaurants and parks (in process). Just search for etisalat Wi-Fi on your device, and if you are in areas where there is coverage, you will see the etisalat network to log on to.. How can I manage my Visitor Line or get support?. You can conveniently manage your Visitor Line through. My app. :. Check your balance and track your usage. Subscribe instantly to a pack of your choice. Get notifications when you are running out of minutes, data and SMSs allowance. Recharge your line. Live chat for support from our agents. My app works with iOS, Android, BB10 OS and Windows. Download. My app. now from your app store and enjoy maximised convenience. Alternatively, you can visit any etisalat. Business Centre. or call 101 from your mobile for any help at any time.. Will I get any extra benefits?. Yes! Download the Smiles app and get up to AED 100 Careem rides, the regions favorite app-based car booking service. Your Careem discount code can be found under “Deals for you” section. Careem offer is 20% discount on 4 trips. Max discount per trip is AED 25.. Also, enjoy “Buy-One-Get-One Free” deals from Smiles on City Sightseeing Dubai, Ferrari World, Dubai Parks & Resorts and Yas Waterworld plus Buy-One-Get-One on the best restaurants in the UAE.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/mobile/prepaid/visitor-line-faq-new.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fmobile%2Fprepaid%2Fvisitor-line-faq-new.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/mobile/prepaid/visitor-line-faq-new.jsp"
+                    ],
+                    "document.title": ["Visitor Line FAQs"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      "Visitor Line. Frequently Asked Questions. What is the Visitor Line and who can benefit from it?. The Visitor Line is a new prepaid pack from Etisalat, exclusively designed for visitors travelling to the UAE. Whether you are on a business trip, a tourist, a job seeker or just visiting family, the Visitor Line gets you connected immediately with a rich pack selection of your choice. You can enjoy benefits that suit your needs, which include loads of data, voice minutes, Wi-Fi and discounts on the best restaurant and attractions in the UAE.. What are the New Visitor Packs?. PACK. Visitor Line. Visitor Line +. Visitor Line Premium. Visitor Line Premium +. Price (with VAT). 49. 79. 125. 200. Data. 2GB. 4GB. 6GB. 22.5GB. Flexi Mins. 30. 30. 120. 525. Validity (days). 28. 28. 28. 28. Wi-Fi (hours). -. -. 5 hours. 30 hours. Benefits. Careem. AED 100. Careem. AED 100. Careem. AED 100. Careem. AED 100. Smiles app. “Buy one, get one free” deals. Smiles app. “Buy one, get one free” deals. Smiles app. “Buy one, get one free” deals. Smiles app. “Buy one, get one free” deals. Who is eligible to subscribe to Visitor Packs?. All visitors/recurring visitors to the UAE can get these packs.. What other information do I need to know on the Visitor Line?. At the time of purchasing your line, you will need to choose a Visitor plan to instantly connect with your friends and family back home during your stay.. The packs are valid for 28 days and can be purchased multiple times. They are available to re-purchase at the same price.. The Visitor Line validity is the same validity as your VISA upon arrival. You can migrate your Visitor Line to Wasel Prepaid, our main Pay-as-You-Go line, or to Postpaid, by visiting any Etisalat outlet and presenting your new Emirates ID to fulfil the TRA registration rules.. To subscribe, recharge, check balance and buy voice and data packs, dial *101# or download the My app.. How will I be charged for my voice calls?. Charging pulse for the voice call bundles will be on per-minute basis.. What will my rates be if I recharge and use my Visitor Line?. In case you have opted not to subscribe to any of the packs above and just want to recharge and use your Visitor Line, you will be charged Pay-as-You-Go rates, which are listed below.. Service. Pay-as-You-Go rate (AED)*. Local call. 0.63/min. Local SMS. 0.19/SMS. International call. List of countries. International SMS. 0.63/SMS. Data charging. AED 1.05/20MB. With a daily limit of AED 9.45. To subscribe, SM “SDB” to 1012. 5% VAT inclusive. What happens after 28 days? Can I recharge and use my Visitor Line?. You can recharge your Visitor Line using any of the following methods; which are available across more than 10,000 outlets across the UAE:. My app. ; using your credit card. Dialling *101# and following the menu. eRecharge - any denomination; minimum from AED 5. Recharge cards – available in denominations of 25, 50, 100, 200 and 500. eVoucher – available in denominations of 25, 50, 100, 200 and 500. etisalat payment machines at over 1000 locations. To check your current balance - use My app, dial *121# or *101# and follow the menu, or call 121.. Where can I buy the Visitor Line?. The Visitor Line is available at all etisalat outlets and at all airport arrivals, covering Abu Dhabi, Dubai and Sharjah. It's also available in outlets in malls and other key tourist spots including:. Dubai.  .  .  . No. Location. Mobile. Landline. 1. Deira City Centre. 050-6340405. 04-2951359. 2. Dubai Festival City. 050-8777004.  . 3. Dubai Mall. 056-2533533. 04-3277702. 4. Mirdif City Centre. 050-8404048. 04-2843196. 5. Mall of the Emirates. 050-2808020. 04-3850071. 6. Dubai World Trade Centre. 050-8840005. 04-3290555. 7. Dubai Airport Terminal-1. 050-4555535.  . 8. Dubai Airport Terminal-2. 050-6254254. 04-2021097. 9. Dubai Airport Terminal-3. 050-8800089. 04-2203902. 10. Al Maktoum Airport. 056-1444143.  . 11. Ibn Batutta Mall. 055-1106143. 04-4531699.  . Abu Dhabi.  .  .  . No. Location. Mobile. Landline. 1. Mushrif Mall. 02-6500955. 050-7710666. 2. Etihad Plaza. 02-6163921.  050-6144489. 3. Al Wahda Mall. 02-4458581. 050-9577705. 4. Dalma Mall. 02-2530766. 050-9687841. 5. Marina Mall. 02-6813969. 050-6167067. 6. Khalidiya Mall. 02-4475651. 050-9577705. 7. World Trade Centre Mall. 02-6585730. 050-9577705 . 8. Abu Dhabi Mall. 02-444139. 050-4429696.  . Sharjah, Fujairah and Ajman.  .  . No. Location. Contact. 1. Sahara Mall. 050-9814777 / 06-5741904. 2. Sharjah City Centre. 050-4232531 / 06-5325339. 3. Mega Mall. 050-9400940 / 06-5741904. 4. Sharjah Airport. 050-4990002 / 06-5581800. 5. Manar Mall. 050-3825255 / 07-2273669. 6. Hamra Mall. 050-3128882 / 07-2434456. 7. Fujairah City Centre. 050-1922444 / 09-2238999. 8. Fujairah Century Mall. 050-7798008. 9. Ajman City Centre. 050-1711159 / 06-5325339. I have consumed the benefits. What can I do to use the line?. After bundle consumption, you can recharge the line using any of the recharge methods. Pay-as-you-go charges apply.. Pay-as-you-go (PAYG) tariffs are as follows:. Benefits. Total Price + VAT (AED). Local. Voice. 0.63/min. SMS. 0.19/SMS. International. Voice. Standard Prepaid International Call Rates. SMS. 0.63/SMS. Data. 1.05/20MB. How long can I use my Visitor Line?. Your Visitor Line is valid as per the validity of your VISA upon arrival to the UAE.. My phone is old. Will the SIM card work with it?. New Visitor Line is sold with the TRIO SIM card (2FF+3FF+4FF cuts).. I misplaced my SIM card. How much does it cost me to replace it?. SIM card replacement charge is AED 52.50 (5% VAT included). You can get a new SIM card at any. Business Centre. or. outlet. .. Can I retain my number, if I find a job and become a permanent resident of UAE?. Yes, you can migrate your Visitor Line to Wasel Prepaid, our main Pay-as-you-Go line, or to Postpaid, by visiting the nearest etisalat. Business Centre. or. outlet. and presenting to fulfil your UAE resident registration process, with valid identification documents.. I have a balance of AED 50 on my Visitor Line. Will I still have it after migration?. Minimum balance that can be migrated is limited to AED 100.. Can I subscribe to other etisalat tariff plans, bundles or promotions on the Visitor Line?. Visitor Line comes with its own rich set of exclusively designed packs and hassle-free experience. Stay connected with your friends and family with the all-in-one Visitor Line. Simply choose a suitable pack and enjoy your stay in the UAE. For additional combo and data packs, dial *101# and follow the menu. Or, visit the. My app. for add-ons.. Are there any restrictions on the usage of the provided benefits?. Flexible minutes apply only to some countries - click. here. to see the list. Flexible minutes can be used to call local and international numbers but do not include incoming roaming calls. There are some numbers allowed to be called and some that are blocked, please see the attachment. Will I be able to roam with the Visitor Line?. Yes, you will easily be able to enjoy roaming services, but while roaming, the visitor packs will not be available. You will need to recharge your line and the standard roaming tariff will apply.. Can I use my number to transfer credit to a friend?. Visitor Packs are not eligible for transferring credit. However, New Visitor Line can receive credit from any etisalat line.. What is the Wi-Fi service and how is it different from mobile data?. Wi-Fi service is provided to access the internet in certain areas wirelessly. These areas can be indoor or outdoor and are called Wi-Fi hotspots. There are two ways to connect to the internet wirelessly: one is Wi-Fi, which is considered more economical but with limited coverage (within the hotspot only) and the second is through a mobile network. A mobile network has wider coverage for mobile data or internet connectivity.. Where is etisalat Wi-Fi service available?. The etisalat Wi-Fi service is available at major public areas including shopping malls, cafes, restaurants and parks (in process). Just search for etisalat Wi-Fi on your device, and if you are in areas where there is coverage, you will see the etisalat network to log on to.. How can I manage my Visitor Line or get support?. You can conveniently manage your Visitor Line through. My app. :. Check your balance and track your usage. Subscribe instantly to a pack of your choice. Get notifications when you are running out of minutes, data and SMSs allowance. Recharge your line. Live chat for support from our agents. My app works with iOS, Android, BB10 OS and Windows. Download. My app. now from your app store and enjoy maximised convenience. Alternatively, you can visit any etisalat. Business Centre. or call 101 from your mobile for any help at any time.. Will I get any extra benefits?. Yes! Download the Smiles app and get up to AED 100 Careem rides, the regions favorite app-based car booking service. Your Careem discount code can be found under “Deals for you” section. Careem offer is 20% discount on 4 trips. Max discount per trip is AED 25.. Also, enjoy “Buy-One-Get-One Free” deals from Smiles on City Sightseeing Dubai, Ferrari World, Dubai Parks & Resorts and Yas Waterworld plus Buy-One-Get-One on the best restaurants in the UAE.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/mobile/prepaid/visitor-line-faq-new.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fmobile%2Fprepaid%2Fvisitor-line-faq-new.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/elife/elife-ultra.jsp"
+                ],
+                "document.title": ["eLife Ultra"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". eLife Ultra. Frequently Asked Questions. What is eLife Ultra?. The all-newis the most popular and best in class home broadband and is now even faster and comes with a world of entertainment for everyone in the family to enjoy.. The fastest broadband coupled with unparalleled benefits and services:. Amazon Prime: Fast, free delivery + Prime Video.. STARZPLAY: Enjoy unlimited movies, TV box-sets, kids shows and same day as the US premieres. FREE food delivery: Via the Smiles App (8 times/month for orders AED 50 or more). eLife TV Gaming: Play your favorite games with eLife TV Gaming. This is in addition to free & unlimited home telephone calls to any landline across the UAE and a lot more benefits.. What is the 24 months commitment and no-commitment option on eLife Ultra?. The 24 months commitment bundle gives a discount of AED 25/month. The no-commitment option does not provide this discount and provides you with flexibility.. Can I change my current eLife plan to the newplan?. Yes. You can do so via any of the following channels. My mobile app. Call us on 800101. visit your nearest Etisalat Store.. Can I switch to Etisalat using my current home telephone number?. Yes. It is easy to switch to Etisalat retaining your current home telephone number simply complete this . form.  and we’ll take care of the rest for you. . I am on the 24 months commitment plan. What are my cancellation charges?. The applicable cancellation charges are 1-month rent (maximum of AED 1000) for theStarter plan and any remaining device charges. ForSports andFusion plans, it is 1.5 (one and half month’s rent) and any remaining device charges.. For details on the calculation of these charges, please refer to the terms and conditions in your application.. I am on theno commitment option plan. What are my cancellation charges?. Any remaining device charges are the only applicable cancellation charges for you.. What will be my monthly charges after the 24 months commitment period?. Once your commitment period ends, you will be automatically moved to the no-commitment option, and the discount of AED 25/month will no longer apply. There will be no change to your benefits.. It’s simple to renew your commitment after it expires at any point in time to enjoy the discount of AED 25/month. To do this send renewal by SMS from your registered mobile number to 1012 or through My mobile app.. Can I have International calling packs to talk with my friends and family back home?. Yes. Our Ultimate World Calling Plan gives you 2000 minutes to talk to your friends and family in 54 countries from your home phone starting from AED 100. For details and to subscribe click. here. What is eLifeOn and is eLifeON free?. eLife TV subscribers oncan watch their shows and live TV on the go, anywhere in the UAE with the eLifeON app.. Download the eLifeON app. here. and log in.. Please note that not all channels available on eLife TV are available on eLifeON. You can view the channel list. here. .. How can I subscribe to TV channels not included in my subscription?. You can easily subscribe to TV packages through the eLife TV itself using the remote contorl select the package and confirm subscription by entering your PIN, when the subscription prompt appears on the channel.. How do I check my eLife internet speed?. To measure your Home Internet speed accurately, ensure the device you're testing with is connected on 5Ghz Wi-Fi or using an Ethernet cable using Ookla Speedtest application or their website. www.speedtest.net. How can I increase my eLife Home Internet speed?.offers a plan for everyone and you can choose to subscribe to one offering faster speeds and more entertainment options, together.. You can also subscribe to a speed booster. here. I am an existing customer on eLife and have been using the same devices for many years now and they’re now slow. Can I change them?. As ancustomer you are eligible for a new set of devices as part of your package once every 2 years from the date of plan activation (or renewal) and it will be delivered free too. You can choose to avail this by calling 800101.. My router is fast when I am near it in the living room. However, when I move to a different room, it slows down or there is no coverage. Can you help ?. Etisalat offers a. Full Home Wi-Fi. service using the latest mesh technology offering the best Wi-Fi coverage all over your home giving you peace of mind. You won’t need to worry about access points, cables, wiring, labor, or set-up. Our Wi-Fi experts will take care of the installation and maintenance for you. This service also comes with 24/7 remote assistance for only AED 99/month (5% VAT inclusive). Please click. here. to learn more or call us on 800101. How do I view my eLife bill?. You will receive your monthly eBill on your registered email address along with an SMS reminder within the first three days of every month.. You can also view your current and previous bills on My mobile app. To download the app, click. here. .. Where can I pay my eLife bill?. You can pay your bill:. Via. etisalat.ae/quickpay. Via. etisalat.ae/b2c/ecareLogin.html. By downloading My mobile app. By using your bank's preferred channel: ATM, online banking, phone banking or mobile banking. Via payment machines at our business centres (find them with our. store locator. ). At any of our. Exchange House partners. By calling 101 or 125 and selecting the \"Bill Payment\" option. How do I transfer my eLife connection?. Simply log in to My mobile app or request a callback. here. to schedule a moving date for your eLife connection. You can also visit any of the nearest Etisalat business centres or contact customer care at 101.. All we need is the address of your new location, any working landline number in that area and your moving date.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/elife/elife-ultra.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Felife%2Felife-ultra.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/elife/elife-ultra.jsp"
+                    ],
+                    "document.title": ["eLife Ultra"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". eLife Ultra. Frequently Asked Questions. What is eLife Ultra?. The all-newis the most popular and best in class home broadband and is now even faster and comes with a world of entertainment for everyone in the family to enjoy.. The fastest broadband coupled with unparalleled benefits and services:. Amazon Prime: Fast, free delivery + Prime Video.. STARZPLAY: Enjoy unlimited movies, TV box-sets, kids shows and same day as the US premieres. FREE food delivery: Via the Smiles App (8 times/month for orders AED 50 or more). eLife TV Gaming: Play your favorite games with eLife TV Gaming. This is in addition to free & unlimited home telephone calls to any landline across the UAE and a lot more benefits.. What is the 24 months commitment and no-commitment option on eLife Ultra?. The 24 months commitment bundle gives a discount of AED 25/month. The no-commitment option does not provide this discount and provides you with flexibility.. Can I change my current eLife plan to the newplan?. Yes. You can do so via any of the following channels. My mobile app. Call us on 800101. visit your nearest Etisalat Store.. Can I switch to Etisalat using my current home telephone number?. Yes. It is easy to switch to Etisalat retaining your current home telephone number simply complete this . form.  and we’ll take care of the rest for you. . I am on the 24 months commitment plan. What are my cancellation charges?. The applicable cancellation charges are 1-month rent (maximum of AED 1000) for theStarter plan and any remaining device charges. ForSports andFusion plans, it is 1.5 (one and half month’s rent) and any remaining device charges.. For details on the calculation of these charges, please refer to the terms and conditions in your application.. I am on theno commitment option plan. What are my cancellation charges?. Any remaining device charges are the only applicable cancellation charges for you.. What will be my monthly charges after the 24 months commitment period?. Once your commitment period ends, you will be automatically moved to the no-commitment option, and the discount of AED 25/month will no longer apply. There will be no change to your benefits.. It’s simple to renew your commitment after it expires at any point in time to enjoy the discount of AED 25/month. To do this send renewal by SMS from your registered mobile number to 1012 or through My mobile app.. Can I have International calling packs to talk with my friends and family back home?. Yes. Our Ultimate World Calling Plan gives you 2000 minutes to talk to your friends and family in 54 countries from your home phone starting from AED 100. For details and to subscribe click. here. What is eLifeOn and is eLifeON free?. eLife TV subscribers oncan watch their shows and live TV on the go, anywhere in the UAE with the eLifeON app.. Download the eLifeON app. here. and log in.. Please note that not all channels available on eLife TV are available on eLifeON. You can view the channel list. here. .. How can I subscribe to TV channels not included in my subscription?. You can easily subscribe to TV packages through the eLife TV itself using the remote contorl select the package and confirm subscription by entering your PIN, when the subscription prompt appears on the channel.. How do I check my eLife internet speed?. To measure your Home Internet speed accurately, ensure the device you're testing with is connected on 5Ghz Wi-Fi or using an Ethernet cable using Ookla Speedtest application or their website. www.speedtest.net. How can I increase my eLife Home Internet speed?.offers a plan for everyone and you can choose to subscribe to one offering faster speeds and more entertainment options, together.. You can also subscribe to a speed booster. here. I am an existing customer on eLife and have been using the same devices for many years now and they’re now slow. Can I change them?. As ancustomer you are eligible for a new set of devices as part of your package once every 2 years from the date of plan activation (or renewal) and it will be delivered free too. You can choose to avail this by calling 800101.. My router is fast when I am near it in the living room. However, when I move to a different room, it slows down or there is no coverage. Can you help ?. Etisalat offers a. Full Home Wi-Fi. service using the latest mesh technology offering the best Wi-Fi coverage all over your home giving you peace of mind. You won’t need to worry about access points, cables, wiring, labor, or set-up. Our Wi-Fi experts will take care of the installation and maintenance for you. This service also comes with 24/7 remote assistance for only AED 99/month (5% VAT inclusive). Please click. here. to learn more or call us on 800101. How do I view my eLife bill?. You will receive your monthly eBill on your registered email address along with an SMS reminder within the first three days of every month.. You can also view your current and previous bills on My mobile app. To download the app, click. here. .. Where can I pay my eLife bill?. You can pay your bill:. Via. etisalat.ae/quickpay. Via. etisalat.ae/b2c/ecareLogin.html. By downloading My mobile app. By using your bank's preferred channel: ATM, online banking, phone banking or mobile banking. Via payment machines at our business centres (find them with our. store locator. ). At any of our. Exchange House partners. By calling 101 or 125 and selecting the \"Bill Payment\" option. How do I transfer my eLife connection?. Simply log in to My mobile app or request a callback. here. to schedule a moving date for your eLife connection. You can also visit any of the nearest Etisalat business centres or contact customer care at 101.. All we need is the address of your new location, any working landline number in that area and your moving date.. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/elife/elife-ultra.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Felife%2Felife-ultra.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/elife.jsp"
+                ],
+                "document.title": ["eLife"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". eLife. Plans and add-ons.Ultra.Online Promo - Free installation.Entertainment.Family.Premium 100Mbps.Premium 500Mbps.Sports.Ultimate 1G. Internet Calling Plans. Home Protection. Home Moving.TV Gaming. Wi-Fi Connection Speed. View All. View Less. Application forms. Home Services application form.Lite application form. Cessation Form - for New Customer - Transfer to Etisalat eLife. Useful links.migration application form. TV codes. Audio device codes. Downloads. Universal Remote Control TV Codes. Universal Remote Control Audio Device Codes. Video tutorials. elife TV Introduction. 1:07.EPG Guide Tutorial. 1:17.CatchUp TV Tutorial. 0:55.Channel Re Numbering. 0:30.Bill & Current bill Inquiry. 0:35.Live TV. 1:45.Media Sharing. 1:16.My Apps. 0:35.On Screen ordering of premium pakages. 0:40.onDemand tutorial. 1:21.RCU tutorial. 4:10.Recorder tutorial. 1:39. Start Over TV. 0:36.Transfer of subscription. 1:10.Watch & Earn. 0:35. How to. New Bill Layout explained. 1:47. How to use the Panasonic wireless landline phone. 1:30. How to use the gigaset wireless landline phone. 1:30. How to plug and play your elife services. 3:57. How to configure Wi-Fi Repeater. 2:53. Step by step procedure to troubleshoot mobile data related issues. 1:24. Steps to fix internet Issues. 4:25. Beware about scammers. 2:49. Steps to fix IPTV issues. 3:25. Steps to fix Home Telephone issues. 2:28. Tips to fix slow connection. 1:10. Awareness on phishing emails. 2:59. How to save data on android devices. 7:10. How to save data on Apple devices. 5:12. Etisalat Rewards. 5:23. How to Redeem Etisalat Rewards via Mobile App. 1:48. How to redeem Redeem Etisalat Rewards via website. 2:30. Your ebill explained. 3:03. Know your etisalat bill. 2:03. Etisalat International Roaming Guide. 3:23. Know your Wi-Fi. 2:55. Etisalat Smart Service Kiosk. 2:12. Internet. Telephone. VAT. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi.Plans.ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/elife.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Felife.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/elife.jsp"
+                    ],
+                    "document.title": ["eLife"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". eLife. Plans and add-ons.Ultra.Online Promo - Free installation.Entertainment.Family.Premium 100Mbps.Premium 500Mbps.Sports.Ultimate 1G. Internet Calling Plans. Home Protection. Home Moving.TV Gaming. Wi-Fi Connection Speed. View All. View Less. Application forms. Home Services application form.Lite application form. Cessation Form - for New Customer - Transfer to Etisalat eLife. Useful links.migration application form. TV codes. Audio device codes. Downloads. Universal Remote Control TV Codes. Universal Remote Control Audio Device Codes. Video tutorials. elife TV Introduction. 1:07.EPG Guide Tutorial. 1:17.CatchUp TV Tutorial. 0:55.Channel Re Numbering. 0:30.Bill & Current bill Inquiry. 0:35.Live TV. 1:45.Media Sharing. 1:16.My Apps. 0:35.On Screen ordering of premium pakages. 0:40.onDemand tutorial. 1:21.RCU tutorial. 4:10.Recorder tutorial. 1:39. Start Over TV. 0:36.Transfer of subscription. 1:10.Watch & Earn. 0:35. How to. New Bill Layout explained. 1:47. How to use the Panasonic wireless landline phone. 1:30. How to use the gigaset wireless landline phone. 1:30. How to plug and play your elife services. 3:57. How to configure Wi-Fi Repeater. 2:53. Step by step procedure to troubleshoot mobile data related issues. 1:24. Steps to fix internet Issues. 4:25. Beware about scammers. 2:49. Steps to fix IPTV issues. 3:25. Steps to fix Home Telephone issues. 2:28. Tips to fix slow connection. 1:10. Awareness on phishing emails. 2:59. How to save data on android devices. 7:10. How to save data on Apple devices. 5:12. Etisalat Rewards. 5:23. How to Redeem Etisalat Rewards via Mobile App. 1:48. How to redeem Redeem Etisalat Rewards via website. 2:30. Your ebill explained. 3:03. Know your etisalat bill. 2:03. Etisalat International Roaming Guide. 3:23. Know your Wi-Fi. 2:55. Etisalat Smart Service Kiosk. 2:12. Internet. Telephone. VAT. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi.Plans.ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/elife.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Felife.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/mobile/prepaid/waselgo-faq.jsp"
+                ],
+                "document.title": ["WaselGo FAQs"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  "WaselGo. Frequently Asked Questions. What is WaselGo?. WaselGo is an all-new prepaid line which comes with unique features like rollover of unused data and flexi minutes, up to 3 favourite numbers, as well as flexible weekly plans.. The standard benefits of WaselGo include:. Per-second pulse for all calls. Lifetime validity of the prepaid line. Same base rates for calls, SMSs and Pay-as-You-Go data as Wasel. Additionally, you also get:. Weekly plans with rollover of unused data and flexi minutes. Up to 3 favourite local numbers (at least 1 Etisalat number). How can I buy a new WaselGo Line?. Simply visit any Etisalat Business Centre, outlet or Etisalat authorised reseller with your necessary documents.. I am an existing Prepaid customer – how can I move to WaselGo?. To move to WaselGo from your existing Prepaid line, simply log in to the My app or dial *101*15#.. Your remaining Wasel allowances will be kept till end of validity without any further renewal, and any remaining balance or reserve credit outstanding will be carried forward to the new tariff.. I am an existing Postpaid/Control Line customer – how can I move to WaselGo?. To move to WaselGo from your existing Postpaid/Control Line, simply visit any Etisalat Business Centre.. Can I enjoy other Prepaid services/packages after moving to WaselGo?. Existing Wasel Voice, Data and Combo offers will not available to WaselGo customers other than the eligible services mentioned below:. International Calling Offer. Start/Stop Data. Play on Demand. Super Hour Data Access. Internet Calling Plan. Reserve Credit. Value added services. How can I recharge my WaselGo line?. You may use all available modes to recharge your WaselGo prepaid line.. Will I be charged for using data after my allocated data is consumed?. No. If you consume your allocated data before the plan expires, you will be protected by default and data access will be blocked.. Can I share my data allowance with other users?. No. You will not be able to share your data (regular + rollover allowance) with other devices or users while on a Weekly Plan.. Can I choose an international number as my favourite number?. No. Favourite numbers can only be local Etisalat mobile numbers or other local mobile numbers based on the chosen Weekly Plan.. Can I use the favourite number minutes for Call Forwarding?. No. Favourite number minutes will not work for Call Forwarding scenarios.. Will my favourite number minutes be rolled over?. No. There will be no rollover of included minutes to favourite numbers.. How long can I keep my prepaid number if I don’t use the line?. To keep your free lifetime validity, simply continue using your line by recharging, making and receiving calls, or even sending SMSs. In case you stop using your line, it will be retained for 12 months. During this period, you can revive your lifetime validity again by making any recharge or call, as per these. rules. .. Can I use WaselGo line while on international roaming?. Yes. WaselGo customers can make and receive calls, or use data while they are roaming internationally. For details related to tariffs and offers, click. here. .. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/mobile/prepaid/waselgo-faq.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fmobile%2Fprepaid%2Fwaselgo-faq.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/mobile/prepaid/waselgo-faq.jsp"
+                    ],
+                    "document.title": ["WaselGo FAQs"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      "WaselGo. Frequently Asked Questions. What is WaselGo?. WaselGo is an all-new prepaid line which comes with unique features like rollover of unused data and flexi minutes, up to 3 favourite numbers, as well as flexible weekly plans.. The standard benefits of WaselGo include:. Per-second pulse for all calls. Lifetime validity of the prepaid line. Same base rates for calls, SMSs and Pay-as-You-Go data as Wasel. Additionally, you also get:. Weekly plans with rollover of unused data and flexi minutes. Up to 3 favourite local numbers (at least 1 Etisalat number). How can I buy a new WaselGo Line?. Simply visit any Etisalat Business Centre, outlet or Etisalat authorised reseller with your necessary documents.. I am an existing Prepaid customer – how can I move to WaselGo?. To move to WaselGo from your existing Prepaid line, simply log in to the My app or dial *101*15#.. Your remaining Wasel allowances will be kept till end of validity without any further renewal, and any remaining balance or reserve credit outstanding will be carried forward to the new tariff.. I am an existing Postpaid/Control Line customer – how can I move to WaselGo?. To move to WaselGo from your existing Postpaid/Control Line, simply visit any Etisalat Business Centre.. Can I enjoy other Prepaid services/packages after moving to WaselGo?. Existing Wasel Voice, Data and Combo offers will not available to WaselGo customers other than the eligible services mentioned below:. International Calling Offer. Start/Stop Data. Play on Demand. Super Hour Data Access. Internet Calling Plan. Reserve Credit. Value added services. How can I recharge my WaselGo line?. You may use all available modes to recharge your WaselGo prepaid line.. Will I be charged for using data after my allocated data is consumed?. No. If you consume your allocated data before the plan expires, you will be protected by default and data access will be blocked.. Can I share my data allowance with other users?. No. You will not be able to share your data (regular + rollover allowance) with other devices or users while on a Weekly Plan.. Can I choose an international number as my favourite number?. No. Favourite numbers can only be local Etisalat mobile numbers or other local mobile numbers based on the chosen Weekly Plan.. Can I use the favourite number minutes for Call Forwarding?. No. Favourite number minutes will not work for Call Forwarding scenarios.. Will my favourite number minutes be rolled over?. No. There will be no rollover of included minutes to favourite numbers.. How long can I keep my prepaid number if I don’t use the line?. To keep your free lifetime validity, simply continue using your line by recharging, making and receiving calls, or even sending SMSs. In case you stop using your line, it will be retained for 12 months. During this period, you can revive your lifetime validity again by making any recharge or call, as per these. rules. .. Can I use WaselGo line while on international roaming?. Yes. WaselGo customers can make and receive calls, or use data while they are roaming internationally. For details related to tariffs and offers, click. here. .. View All. View Less. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/mobile/prepaid/waselgo-faq.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fmobile%2Fprepaid%2Fwaselgo-faq.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/mobile/prepaid.jsp"
+                ],
+                "document.title": ["Prepaid"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". Plans and add-ons. Internet Calling Plans. Control Line. International Packs. WaselGo. Mobile Credit Transfer. Windows Store. Mobile Phone Billing. Multi SIM. Data Balance Transfer. Apple Carrier Billing. Credit Transfer. Google Play. Mobile Customer Registration. Notify Me. Play on Demand. Smart MCN. Combo Packs. Daily Local Calling Packages. Deal Of The Day. International Calling. Pinoy Pack. Data Plans. Recharge Offers. SMS Packs. Start/Stop Data. Wasel Premium Number. Wasel Line. 4-Digit Security PIN. View All. View Less. Terms and conditions. Mobile Terms and Conditions. Postpaid. Visitor Line. Roaming. VAT. The all-new prepaid line. Enjoy weekly plans with rollover of data and flexi minutes, get favourite numbers and much more.. Learn more. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans./Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/mobile/prepaid.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fmobile%2Fprepaid.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/mobile/prepaid.jsp"
+                    ],
+                    "document.title": ["Prepaid"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". Plans and add-ons. Internet Calling Plans. Control Line. International Packs. WaselGo. Mobile Credit Transfer. Windows Store. Mobile Phone Billing. Multi SIM. Data Balance Transfer. Apple Carrier Billing. Credit Transfer. Google Play. Mobile Customer Registration. Notify Me. Play on Demand. Smart MCN. Combo Packs. Daily Local Calling Packages. Deal Of The Day. International Calling. Pinoy Pack. Data Plans. Recharge Offers. SMS Packs. Start/Stop Data. Wasel Premium Number. Wasel Line. 4-Digit Security PIN. View All. View Less. Terms and conditions. Mobile Terms and Conditions. Postpaid. Visitor Line. Roaming. VAT. The all-new prepaid line. Enjoy weekly plans with rollover of data and flexi minutes, get favourite numbers and much more.. Learn more. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans./Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/mobile/prepaid.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fmobile%2Fprepaid.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home.jsp"
+                ],
+                "document.title": ["Help, Support & FAQs"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  "Please select the topic you need support for. eLife. Internet. Telephone. VAT. Popular topics. Mobile Registration Renewal. Smiles by etisalat. VAT. Mobile Registration Renewal. RENEW YOUR REGISTRATION NOW. The Telecom Regulatory Authority (TDRA) has introduced a new policy that requires you to renew the registration of all your etisalat mobile numbers by updating your profiles with valid and up-to-date ID details. All you need to do is update your profile with your original and valid ID details and specify the mobile numbers (SIM cards) under your name that you would like to renew registration for.. Renew. Smiles by etisalat. AMAZING DEALS TO MAKE YOU SMILE. Smiles is the ultimate destination for everyday savings, offering you amazing daily deals from etisalat as well as hundreds of your favourite brands. Enjoy 50% off on movie tickets, as well as \"Buy 1 Get 1 Free\" deals on entertainment, shopping, dining, travel and wellness. Download the Smiles app now to start earning your Smiles points.. Read More. VAT. Value Added Tax. VAT is a consumption tax that the end user is obligated to pay. Etisalat will be only acting as a collection agent on behalf of the taxation authority. Etisalat is legally obliged to comply with this Government mandate from 1 January 2018.. Read More. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home.jsp"
+                    ],
+                    "document.title": ["Help, Support & FAQs"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      "Please select the topic you need support for. eLife. Internet. Telephone. VAT. Popular topics. Mobile Registration Renewal. Smiles by etisalat. VAT. Mobile Registration Renewal. RENEW YOUR REGISTRATION NOW. The Telecom Regulatory Authority (TDRA) has introduced a new policy that requires you to renew the registration of all your etisalat mobile numbers by updating your profiles with valid and up-to-date ID details. All you need to do is update your profile with your original and valid ID details and specify the mobile numbers (SIM cards) under your name that you would like to renew registration for.. Renew. Smiles by etisalat. AMAZING DEALS TO MAKE YOU SMILE. Smiles is the ultimate destination for everyday savings, offering you amazing daily deals from etisalat as well as hundreds of your favourite brands. Enjoy 50% off on movie tickets, as well as \"Buy 1 Get 1 Free\" deals on entertainment, shopping, dining, travel and wellness. Download the Smiles app now to start earning your Smiles points.. Read More. VAT. Value Added Tax. VAT is a consumption tax that the end user is obligated to pay. Etisalat will be only acting as a collection agent on behalf of the taxation authority. Etisalat is legally obliged to comply with this Government mandate from 1 January 2018.. Read More. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/mobile/postpaid.jsp"
+                ],
+                "document.title": ["Postpaid Plans & Add-Ons"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". Postpaid. Plans and add-ons. Internet Calling Plans. New Freedom Plans. Freedom Plans. Control Line. New Postpaid Plan. Emirati Plan. Smart Plan. eSIM. Prepaid International Packs. Premium Postpaid Plans. Mobile Credit Transfer. Mobile Phone Billing. Multi SIM. Postpaid Data Plans. Data Booster. Data Balance Transfer. Apple Carrier Billing. Apple Music. Autopay. Credit Transfer. Google Play. Mobile Customer Registration. Notify Me. Play on Demand. Smart MCN. 4-Digit Security PIN. View All. View Less. Terms and conditions. Mobile Terms and Conditions. Prepaid. Visitor Line. Roaming. VAT. Need Support?. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/mobile/postpaid.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fmobile%2Fpostpaid.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/mobile/postpaid.jsp"
+                    ],
+                    "document.title": ["Postpaid Plans & Add-Ons"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". Postpaid. Plans and add-ons. Internet Calling Plans. New Freedom Plans. Freedom Plans. Control Line. New Postpaid Plan. Emirati Plan. Smart Plan. eSIM. Prepaid International Packs. Premium Postpaid Plans. Mobile Credit Transfer. Mobile Phone Billing. Multi SIM. Postpaid Data Plans. Data Booster. Data Balance Transfer. Apple Carrier Billing. Apple Music. Autopay. Credit Transfer. Google Play. Mobile Customer Registration. Notify Me. Play on Demand. Smart MCN. 4-Digit Security PIN. View All. View Less. Terms and conditions. Mobile Terms and Conditions. Prepaid. Visitor Line. Roaming. VAT. Need Support?. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/mobile/postpaid.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fmobile%2Fpostpaid.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/vat.jsp"
+                ],
+                "document.title": ["Value Added Tax FAQs"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  "Value Added Tax. Frequently Asked Questions. What is VAT?. Value Added Tax (VAT) is an indirect tax that is being introduced by the UAE Government, which will be payable by both business and Individuals.. When will the VAT go into effect and what will be the rates?. VAT will be introduced across the UAE on 1 January 2018 at a standard rate of 5%.. How will VAT apply to Etisalat products and services?. VAT will apply to applicable products and services at a rate of 5%. Further details regarding VAT application on our products and services will be made available in the coming weeks.. Is it compulsory to pay VAT?. Exceptions to VAT are only by law, and these are published by the Federal Tax Authority. There is a possibility for business owners to claim back their VAT payments, provided they have registered for VAT and meet the requirements. For further details, please visit. www.tax.gov.ae. How will Etisalat charge VAT for prepaid customers?. From 1st January 2018, most of the products and services provided by Etisalat shall have VAT applied upon consumption, in compliance with the provisions of the law and its Executive Regulations i.e. a bundle of AED 100 will become AED 105. Will Etisalat charge VAT on my bills?. From 1st January 2018, most of the products and services provided by Etisalat shall have VAT applied upon their charges / fees in compliance with the provisions of the law and its Executive Regulations. Transitional arrangements will apply for contracts and/or services which span 1st January 2018.. How can a business register for VAT and receive a Tax Registration Number (TRN)?. Businesses can register for VAT tax through the. e-services section. on the. FTA website. . However, first, they need to. sign up. an account first. For more details about VAT tax registration, please read. VAT registration User Guide. .. I am a Business owner. I have registered with the UAE Federal Tax Authority and have received my certificate and Tax Registration Number (TRN). Do I need to share this with Etisalat?. Yes, once you receive your Tax registration number (TRN) you are required to send this to us. This is important for us to update your account details, and ensure that your TRN is reflected on our monthly tax invoice. The inclusion of your Tax Registration Number (TRN) on our bill is required for you to claim back the incurred VAT within your VAT return.. How can Business Customer provide Tax Registration number (TRN) to Etisalat?. All Etisalat Business customers who are entitled to recover their input VAT must officially submit their VAT registration details including Tax Registration Number (TRN) with supporting evidence to Etisalat latest by 21st December 2017 either through contacting their Account Manager or on <a style=\"color: #99cc00 ;\" href=\"https://businessonline.etisalat.ae/b2bp/public/vat/step1UserVerification.jsp?locale=en_AE\">www.etisalat.ae/businesstrn</a> in order to be provided with a Full VAT Invoice in January 2018.. Will it be possible to issue cash receipts instead of VAT invoices?. A supplier registered or required to be registered for VAT must issue a valid VAT invoice for the supply. To be considered as a valid VAT invoice, the document must follow a specific format as mentioned in the legislation. In certain situations the supplier may be able to issue a simplified VAT invoice. The conditions for the VAT invoice and the simplified VAT invoice are mentioned in the legislation.. Will there be transitional rules?. Special rules will be provided to deal with various situations that may arise in respect of supplies that span the introduction of VAT. For example:. • Where a payment is received in respect of a supply of goods before the introduction of VAT but the goods are actually delivered after the introduction of VAT, this means that VAT will have to be charged on such supplies. Likewise, special rules will apply with regards to supplies of services spanning the introduction of VAT.. • Where a contract is concluded prior to the introduction of VAT in respect of a supply which is wholly or partly made after the introduction of VAT, and the contract does not contain clauses relating to the VAT treatment of the supply, then consideration for the supply will be treated as inclusive of VAT. There will, however, be special provisions to allow suppliers to charge VAT in situations where their recipient is able to recover their VAT but where there is no VAT clause.. Where can I get more information?. We suggest you visit Federal Tax Authority website. Federal Tax Authority website. for more information.. What is Etisalat’s Tax Registration Number?. Etisalat’s Tax Registration Number is 100023129800003 , The official registration certificate is available here (. (VAT Registration Certificate). ). View All. View Less. eLife. Internet. Telephone. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/vat.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Fvat.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/vat.jsp"
+                    ],
+                    "document.title": ["Value Added Tax FAQs"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      "Value Added Tax. Frequently Asked Questions. What is VAT?. Value Added Tax (VAT) is an indirect tax that is being introduced by the UAE Government, which will be payable by both business and Individuals.. When will the VAT go into effect and what will be the rates?. VAT will be introduced across the UAE on 1 January 2018 at a standard rate of 5%.. How will VAT apply to Etisalat products and services?. VAT will apply to applicable products and services at a rate of 5%. Further details regarding VAT application on our products and services will be made available in the coming weeks.. Is it compulsory to pay VAT?. Exceptions to VAT are only by law, and these are published by the Federal Tax Authority. There is a possibility for business owners to claim back their VAT payments, provided they have registered for VAT and meet the requirements. For further details, please visit. www.tax.gov.ae. How will Etisalat charge VAT for prepaid customers?. From 1st January 2018, most of the products and services provided by Etisalat shall have VAT applied upon consumption, in compliance with the provisions of the law and its Executive Regulations i.e. a bundle of AED 100 will become AED 105. Will Etisalat charge VAT on my bills?. From 1st January 2018, most of the products and services provided by Etisalat shall have VAT applied upon their charges / fees in compliance with the provisions of the law and its Executive Regulations. Transitional arrangements will apply for contracts and/or services which span 1st January 2018.. How can a business register for VAT and receive a Tax Registration Number (TRN)?. Businesses can register for VAT tax through the. e-services section. on the. FTA website. . However, first, they need to. sign up. an account first. For more details about VAT tax registration, please read. VAT registration User Guide. .. I am a Business owner. I have registered with the UAE Federal Tax Authority and have received my certificate and Tax Registration Number (TRN). Do I need to share this with Etisalat?. Yes, once you receive your Tax registration number (TRN) you are required to send this to us. This is important for us to update your account details, and ensure that your TRN is reflected on our monthly tax invoice. The inclusion of your Tax Registration Number (TRN) on our bill is required for you to claim back the incurred VAT within your VAT return.. How can Business Customer provide Tax Registration number (TRN) to Etisalat?. All Etisalat Business customers who are entitled to recover their input VAT must officially submit their VAT registration details including Tax Registration Number (TRN) with supporting evidence to Etisalat latest by 21st December 2017 either through contacting their Account Manager or on <a style=\"color: #99cc00 ;\" href=\"https://businessonline.etisalat.ae/b2bp/public/vat/step1UserVerification.jsp?locale=en_AE\">www.etisalat.ae/businesstrn</a> in order to be provided with a Full VAT Invoice in January 2018.. Will it be possible to issue cash receipts instead of VAT invoices?. A supplier registered or required to be registered for VAT must issue a valid VAT invoice for the supply. To be considered as a valid VAT invoice, the document must follow a specific format as mentioned in the legislation. In certain situations the supplier may be able to issue a simplified VAT invoice. The conditions for the VAT invoice and the simplified VAT invoice are mentioned in the legislation.. Will there be transitional rules?. Special rules will be provided to deal with various situations that may arise in respect of supplies that span the introduction of VAT. For example:. • Where a payment is received in respect of a supply of goods before the introduction of VAT but the goods are actually delivered after the introduction of VAT, this means that VAT will have to be charged on such supplies. Likewise, special rules will apply with regards to supplies of services spanning the introduction of VAT.. • Where a contract is concluded prior to the introduction of VAT in respect of a supply which is wholly or partly made after the introduction of VAT, and the contract does not contain clauses relating to the VAT treatment of the supply, then consideration for the supply will be treated as inclusive of VAT. There will, however, be special provisions to allow suppliers to charge VAT in situations where their recipient is able to recover their VAT but where there is no VAT clause.. Where can I get more information?. We suggest you visit Federal Tax Authority website. Federal Tax Authority website. for more information.. What is Etisalat’s Tax Registration Number?. Etisalat’s Tax Registration Number is 100023129800003 , The official registration certificate is available here (. (VAT Registration Certificate). ). View All. View Less. eLife. Internet. Telephone. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/vat.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Fvat.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/telephone.jsp"
+                ],
+                "document.title": ["Telephone"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". Plans and add-ons. Absher Plans. Ultimate International Calls. Voicemail Al Mersal. Application forms. Landline Application Form. eLife. Internet. VAT. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/telephone.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Ftelephone.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/telephone.jsp"
+                    ],
+                    "document.title": ["Telephone"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". Plans and add-ons. Absher Plans. Ultimate International Calls. Voicemail Al Mersal. Application forms. Landline Application Form. eLife. Internet. VAT. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/telephone.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Ftelephone.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            }
+          ],
+          "@type": "ResultsList",
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "MainContent[0]"
+          },
+          "defaultRefinementsEn": [],
+          "precomputedSorts": [],
+          "recsPerPage": 15,
+          "pagingActionTemplate": {
+            "siteRootPath": "/pages",
+            "contentPath": "/browse",
+            "siteState": {
+              "siteId": "@error:siteNotFound",
+              "properties": {},
+              "validSite": false
+            },
+            "navigationState": "?N=1696908230&No=%7Boffset%7D&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Nrpp=%7BrecordsPerPage%7D&Ntt=internet"
+          },
+          "totalNumRecs": 41,
+          "sortOptions": [
+            {
+              "siteRootPath": "/pages",
+              "contentPath": "/browse",
+              "label": "Most Relevant",
+              "siteState": {
+                "siteId": "@error:siteNotFound",
+                "properties": {},
+                "validSite": false
+              },
+              "navigationState": "?N=1696908230&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+              "selected": false
+            },
+            {
+              "siteRootPath": "/pages",
+              "contentPath": "/browse",
+              "label": "recentlyupdated",
+              "siteState": {
+                "siteId": "@error:siteNotFound",
+                "properties": {},
+                "validSite": false
+              },
+              "navigationState": "?N=1696908230&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ns=sku.creationDate%7C1%7C%7Csku.displayName%7C0&Ntt=internet",
+              "selected": false
+            },
+            {
+              "siteRootPath": "/pages",
+              "contentPath": "/browse",
+              "label": "product",
+              "siteState": {
+                "siteId": "@error:siteNotFound",
+                "properties": {},
+                "validSite": false
+              },
+              "navigationState": "?N=1696908230&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ns=sku.displayName%7C0&Ntt=internet",
+              "selected": false
+            }
+          ],
+          "name": "Results List",
+          "firstRecNum": 1
+        },
+        {
+          "@type": "SearchAdjustments",
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "MainContent[1]"
+          },
+          "name": "Search Adjustments",
+          "originalTerms": ["internet"]
+        }
+      ],
+      "SecondaryContent": [
+        {
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "SecondaryContent[0]"
+          },
+          "name": "Navigation Container",
+          "@type": "GuidedNavigation",
+          "navigation": [
+            {
+              "hideAllFilterOption": false,
+              "nameAr": "",
+              "@type": "RefinementMenu",
+              "displayAllFilterOption": false,
+              "displayName": "record.filterType",
+              "endeca:auditInfo": {
+                "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+                "ecr:innerPath": "SecondaryContent[0]/navigation[0]"
+              },
+              "dimensionName": "record.filterType",
+              "whyPrecedenceRuleFired": null,
+              "displayAsButton": false,
+              "displayNamePropertyAlias": "displayName",
+              "refinements": [
+                {
+                  "label": "All",
+                  "navigationState": "Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 441,
+                  "multiSelect": true
+                },
+                {
+                  "label": "FAQ",
+                  "navigationState": "Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 41,
+                  "properties": {
+                    "DGraph.Spec": "FAQ",
+                    "DimVal_Id": "1696908230",
+                    "selected": "true"
+                  },
+                  "multiSelect": true
+                },
+                {
+                  "label": "Add-ons",
+                  "navigationState": "N=1696908230+1445056031&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 4,
+                  "properties": {
+                    "DGraph.Spec": "Add-ons",
+                    "DimVal_Id": "1445056031",
+                    "selected": "false"
+                  },
+                  "multiSelect": true
+                },
+                {
+                  "label": "Devices",
+                  "navigationState": "N=1696908230+1293843148&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 1,
+                  "properties": {
+                    "DGraph.Spec": "Devices",
+                    "DimVal_Id": "1293843148",
+                    "selected": "false"
+                  },
+                  "multiSelect": true
+                },
+                {
+                  "label": "eLife",
+                  "navigationState": "N=1696908230+2386902385&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 52,
+                  "properties": {
+                    "DGraph.Spec": "eLife",
+                    "DimVal_Id": "2386902385",
+                    "selected": "false"
+                  },
+                  "multiSelect": true
+                },
+                {
+                  "label": "Others",
+                  "navigationState": "N=1696908230+4198847431&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 343,
+                  "properties": {
+                    "DGraph.Spec": "Others",
+                    "DimVal_Id": "4198847431",
+                    "selected": "false"
+                  },
+                  "multiSelect": true
+                }
+              ],
+              "displayAsRadio": false,
+              "name": "Filter Type",
+              "refinementValuesCount": 5,
+              "ancestors": [],
+              "multiSelect": true
+            }
+          ]
+        },
+        {
+          "rangeFilterCrumbs": [],
+          "displayNameProperty": "displayName_en",
+          "searchCrumbs": [
+            {
+              "removeAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/browse",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "navigationState": "?N=1696908230&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29"
+              },
+              "key": "All",
+              "terms": "internet",
+              "matchMode": "ALLPARTIAL"
+            }
+          ],
+          "geoFilterCrumb": null,
+          "@type": "Breadcrumbs",
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "SecondaryContent[1]"
+          },
+          "name": "Breadcrumbs",
+          "removeAllAction": {
+            "siteRootPath": "/pages",
+            "contentPath": "/browse",
+            "siteState": {
+              "siteId": "@error:siteNotFound",
+              "properties": {},
+              "validSite": false
+            },
+            "navigationState": ""
+          },
+          "displayNamePropertyAlias": "displayName",
+          "refinementCrumbs": [
+            {
+              "count": 41,
+              "removeAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/browse",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "navigationState": "Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet"
+              },
+              "dimensionName": "record.filterType",
+              "displayName": "record.filterType",
+              "ancestors": [],
+              "multiSelect": true,
+              "label": "FAQ",
+              "properties": {
+                "DGraph.Spec": "FAQ"
+              }
+            }
+          ]
+        }
+      ],
+      "endeca:siteRootPath": "/pages",
+      "endeca:contentPath": "/guidedSearch",
+      "endeca:siteState": {
+        "siteId": "@error:siteNotFound",
+        "properties": {},
+        "validSite": false
+      },
+      "atg:currentSiteProductionURL": "/scp",
+      "endeca:assemblerRequestInformation": {
+        "endeca:contentPath": "/guidedSearch",
+        "@type": "AssemblerRequestEvent",
+        "endeca:numRecords": 41,
+        "endeca:searchKey": "All",
+        "endeca:siteRootPath": "/pages",
+        "endeca:searchMode": "ALLPARTIAL",
+        "endeca:dimensionValues": ["/record.filterType/FAQ"],
+        "endeca:assemblyStartTimestamp": 1639657336423,
+        "endeca:assemblyFinishTimestamp": 1639657336504,
+        "endeca:eneTime": 25,
+        "endeca:searchTerms": "internet",
+        "endeca:relRankStrategy": "stratify,exact,field,freq",
+        "endeca:requestType": "SEARCH_THEN_NAVIGATE",
+        "endeca:dimensions": ["record.filterType"],
+        "endeca:numRefinements": 1,
+        "endeca:requestId": "126193",
+        "endeca:sessionId": "Kg_DMW46y6xFlcbvlYawG8be1N8WXG0s8EU3aJxSbA8W6JtB9NUV!1798114574!1639657336378"
+      },
+      "atg:searchId": "16396573365041710611728300",
+      "canonicalLink": {
+        "siteRootPath": "/pages",
+        "contentPath": "/guidedSearch",
+        "label": "",
+        "siteState": {
+          "siteId": "@error:siteNotFound",
+          "properties": {},
+          "validSite": false
+        },
+        "navigationState": "N=1696908230&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet"
+      }
+    }
+  }
+}

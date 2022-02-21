@@ -1,0 +1,65 @@
+.articlepage {
+  .article-header-text-wrapper {
+    margin: 0 auto;
+    max-width: 1224px;
+    width: 100%;
+  }
+
+  .article-header-text-wrapper {
+    .back-to-insight {
+      padding-bottom: 2.5rem;
+      padding-top: 2.5rem;
+
+      @include respond-to-max($tablet) {
+        padding-bottom: 4rem;
+      }
+    }
+  }
+
+  .cmp-text {
+    color: #919192;
+    font-size: $font20;
+    line-height: 28px;
+    margin-bottom: 1rem;
+
+    @include font-family-lato;
+  }
+}
+
+.articlepage.blog_post_details {
+  margin-top: 139px;
+
+  @include respond-to-max($tablet) {
+    margin-top: 56px;
+  }
+}
+
+.article-detail {
+  padding-left: calc(#{$padding-step-4} - 2px);
+}
+
+@media (min-width: 360px) and (max-width: 768px) {
+  .article-detail {
+    padding-left: $padding-step-2;
+  }
+}
+
+.article-detail {
+  h6.annoucement {
+    color: #909090;
+    font-family: Lato, GE SS Two, Roboto, Arial, sans-serif;
+    font-size: $font12;
+    font-weight: get-font-weight("semibold");
+    letter-spacing: toRem(4);
+    text-transform: uppercase;
+    text-transform: uppercase;
+  }
+
+  h6.annoucement-date {
+    color: #909090;
+    font-family: Lato, GE SS Two, Roboto, Arial, sans-serif;
+    font-size: $font16;
+    font-weight: get-font-weight("semibold");
+    line-height: toRem(20);
+  }
+}

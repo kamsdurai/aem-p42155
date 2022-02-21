@@ -1,0 +1,28 @@
+header {
+  position: relative;
+  z-index: 200;
+
+  .cmp-experiencefragment {
+    @extend .wrapper;
+
+    position: relative;
+
+    @include respond-to-min($desktop) {
+      padding: 25px 0 0;
+    }
+
+    @include respond-to-max($desktop) {
+      width: toRem(690);
+    }
+
+    .cmp-image__image {
+      @include respond-to-max($phone) {
+        padding-left: 15px;
+      }
+
+      @include respond-to-min($phone) {
+        width: auto;
+      }
+    }
+  }
+}

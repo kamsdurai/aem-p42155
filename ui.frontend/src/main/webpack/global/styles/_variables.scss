@@ -1,0 +1,290 @@
+// Etisalat Primary Colors
+// --------------------------------
+
+// -- Consumer palette
+
+$dark-green: #616b1e;
+$main-green: #719e19;
+$light-green: #bee70d;
+$thick-green: #618816;
+$celadon-green: #eaf1dd;
+
+// -- Business palette
+$dark-gray: #242424;
+$dark-sand-brown: #393c3a;
+$moonlight-sand: #2b2e2c;
+$darkest-night: #151515;
+$premium-gray: #454844;
+$dark-green: #616b1e;
+$dark-sage: #505b4d;
+
+// -- Sand
+$sand-white: #f1f1eb;
+$white: #fff;
+$sand-white-50: #f7f8f4;
+$sand-white-60: #f9f9f7;
+$sand-white-70: #fcfcfa;
+$silver-white: #e4e4e4;
+$light-sand-brown: #e2e1da;
+$yellow1: #d4af37;
+$light-yellow: #fafaf5;
+
+// -- Text Colors
+$gray1: #919192;
+$almost-black: #353738;
+$cold-gray: #d1d2d1;
+$cold-gray-2: #d1d1d1;
+$grey1: #6f7273;
+$grey2: #7e7f7f;
+$grey3: #b5b5b5;
+$grey4: #b2b2b2;
+$grey5: #d8d8d8;
+$grey6: #666;
+$grey-radio: #5a5a5a;
+$grey-checked: #949494;
+$switch-green: #84c7c1;
+$switch-grey: #f1f1f1;
+$dropdown-grey: #9e9e9e;
+$search-grey: #606263;
+$light-grey: #e9e9e9;
+$dark-purple: #61199e;
+
+// Etisalat Extended Colors
+// --------------------------------
+// TODO: define or replace "used but not declared" variables
+$sand-brown: #c1b792;
+$sandy-green: #567a6a;
+$yellow: #ffce00;
+$yellow-light: #ff0;
+$orange: #ff8100;
+$grey-dark-grass: #2a332f;
+$black: #000;
+$red: #b3170c;
+$error-red: #be1218;
+$alert-red: #fdeeef;
+$gray: #909192;
+
+// sand brown
+$sandy-brown: #8c7767;
+$sandy-green2: #9fa171;
+$sandy-purple: #9986a1;
+$sandy-white: #dbdad0;
+$sand-grey: #8d8e80;
+
+// grey dark grass
+$premium: #353733;
+
+// -- new varation added for texts
+$gray-text-color: #6f6c70;
+$module-bg-color: #fafaf7;
+
+// End official Etisalt color palette
+// --------------------------------
+
+// Used but not declared
+// --------------------------------
+$texts-gray: #575757;
+$custom-gray: #333;
+$steel-grey: #848789;
+$light-sand-brown: #e2e1da;
+$white-2: #e5e5e5;
+$warm-gray: #7a7a7a; // footer nav & less button
+$warm-background: #e4e4df; // breadcrumb
+$warm-white: #f6f6f6;
+$pink: #fb193f; // store-locator
+$dark-orange: #ff8000; // store-locator
+$light-orange: #ff800026;
+$pine: #93703d;
+$portica: #f8d279;
+$dark-gray-10: #3d3434;
+$sandy-blue: #2e3936; // used for brand-info bootstrap's var
+$cement: #9e9f94; // used for buttons
+$bland: #aeaf89; // used for buttons
+$gray-close-dropdown: #9e9d9d; // used in page navi dropdown
+$lighty-gray: #bcbcbc;
+$gray-fill: #6b6b6b;
+$silver-top: #c0c0c0;
+$gold-top: #fc0;
+$valid-green: #e3ecd1;
+$ligther-gray: #b2b2b1;
+$dark-accordion-gray: #575956;
+$disabled-gray: #474948;
+$business-table-head: #3a3c3b;
+$business-table-ticked: #2c2e2d;
+$blue1: #595783;
+$blue2: #353738;
+$blue3: #630e92;
+$blue4: #3a5796;
+$blue5: #619cba;
+$blue6: #3e6376;
+$blue7: #5a037b;
+$blue8: #bd5ee1;
+$orange1: #9e5419;
+$green1: #3a4035;
+$platinum-blue: #606a85;
+$platinum-white: #cddefb;
+$lemon-green: #9c0;
+$lemon-green-light: #96d12e;
+$lemon-green-dark: #429321;
+$green-dark-10: #157d75;
+$grey-10: #555656;
+$grey-20: #2d2f2f;
+$grey-30: #c8c8c8;
+$grey-40: #5f5f5f;
+$blue-10: #5eb4d4;
+$blue-20: #103f56;
+$bright-sun: #e6c035;
+$pumpkin: #f76b1c;
+$light-sun: #bea026;
+$light-pumpkin: #e8c84a;
+$light-white-grey: #eaeaea;
+$white-grey: #e7e4e4;
+
+// main-menu and top-nav
+$light-gray: #f2f2f2;
+$light-gray1: #929292;
+$light-gray2: #e0dfd2;
+$sub-menu-gray: #ebebeb;
+$cart-count-black: #353738;
+$slight-gray: #edeee6;
+$white-gray: #fbfbfb;
+$list-gray: #9fa0a1;
+$light-water-gray: #e3e5f1;
+$nav-black: #1c1d1e;
+$nav-item-black: #979797;
+$dark-gray2: #606060;
+$dark-gray3: #eee;
+$white-gray1: #fafaf4;
+$dark-gray10: #0e0e0c;
+$dark-gray: #6f6c70;
+$cust-select: #ccc;
+$select-focus: #c9f3ef;
+$btn-focus: #2ab7a9;
+$gray-primary: #5a637c;
+$green-primary: #7da830;
+$grey-secondary: #ccd3e6;
+$black-secondary: #2d2f31;
+$blue-secondary: #007aff;
+$grey-brass: #9ca1b0;
+$grey-warning: #ffebd9;
+$grey-select: #aaa;
+$green-btn: #5f8515;
+$brown-stroke: #787878;
+$cream-brown: #e2e2e2;
+$yellow-bg: #f8dc51;
+$yellow-bg1: #b4ec51;
+$grey-bg: #909090;
+$gold: #fdeed7;
+$graphite: #4e4d49;
+$blue-dark: #154a6e;
+$blue-sierra: #acc6db;
+$blue-pacific: #27424d;
+$grey-midnight: #41454b;
+$grey-starlight: #e5dfd5;
+$grey-dark: #3c343f;
+$red-light: #c72132;
+$silver-light: #f2f3ed;
+$pink-light: #e8d1cf;
+$aqua-grey: #3d3d3d;
+$aqua-green: #199e94;
+$padding-base-vertical: 6px;
+$padding-base-horizontal: 32px; // 12px
+$padding-large-vertical: 12px;
+$padding-large-horizontal: 32px;
+$padding-small-vertical: 6px;
+$padding-small-horizontal: 16px;
+$padding-xs-vertical: 1px;
+$padding-xs-horizontal: 5px;
+$line-height-large: 1.3333; // extra decimals for Win 8.1 Chrome
+$line-height-small: 1.5;
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+
+// == Tables
+
+// ## Customizes the `.table` component with basic values, each used across all table variations.
+
+// ** Padding for `<th>`s and `<td>`s.
+$table-cell-padding: 8px;
+
+// ** Padding for cells in `.table-condensed`.
+$table-condensed-cell-padding: 5px;
+
+// ** Default background color used for all tables.
+$table-bg: transparent;
+
+// ** Background color used for `.table-striped`.
+$table-bg-accent: #f9f9f9;
+
+// ** Background color used for `.table-hover`.
+$table-bg-hover: #f5f5f5;
+$table-bg-active: $table-bg-hover;
+
+// ** Border color for table and cell borders.
+$table-border-color: #ddd;
+$table-border-color-l: #d5d5d5;
+$btn-font-weight: normal;
+$btn-default-color: $black;
+$btn-default-bg: transparent;
+$btn-default-border: $black;
+
+// **Font size
+$font11: 0.6875rem;
+$font12: 0.75rem;
+$font12pt8: 0.8rem;
+$font14: 0.875rem;
+$font15: 0.938rem;
+$font16: 1rem;
+$font18: 1.125rem;
+$font26: 1.625rem;
+$font32: 2rem;
+$font36: 2.25rem;
+$font40: 2.5rem;
+$font24: 1.5rem;
+$font21: 1.3125rem;
+$font20: 1.25rem;
+$font28: 1.75rem;
+$font10: 0.625rem;
+$font30: 1.875rem;
+$font64: 4rem;
+$font34: 2.125rem;
+$font22: 1.375rem;
+$font12pt: 0.755rem;
+$font54: 3.375rem;
+
+// *Flots
+$floatL: left;
+$floatR: right;
+
+// *Link Arrow border
+$arrow-border: #b2b2b2;
+$arrow-border-green: #719e19;
+$hero-light-green: #afcd74;
+
+// font color
+$paracolor: #767676;
+
+// path for resources
+$resource-path: "./resources/images/";
+
+// == Font weight
+$font-weight: (
+  "normal": 200,
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semibold": 600,
+  "bold": 700,
+  "heavy": 900,
+);
+
+// == Font weight
+$background-gredient: (
+  "purpal-bg": linear-gradient(-92.14deg, #222 41%, #491873 110%),
+  "green-bg": linear-gradient(225deg, #353738, #719e19),
+  "orange-bg": linear-gradient(225deg, #353738, #9e5419),
+  "aqua-green-bg": linear-gradient(180deg, #679116 -46%, #199e94),
+  "aqua-bg": linear-gradient(225deg, #3d3d3d, #199e94),
+  "default-bg": #f7f8f4,
+);

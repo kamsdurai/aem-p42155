@@ -1,0 +1,184 @@
+.config-section-wrap {
+    background: #fff;
+    min-height: toRem(56);
+    box-shadow: 0 toRem(5) toRem(10) 0 rgb(0 0 0 / 10%);
+    transition: all .25s ease-in-out;
+    height: toRem(56);
+    max-height: toRem(78);
+    position: relative;
+    z-index: 10;
+    @include respond-to-min($desktop){
+      max-height: toRem(90);
+      height: toRem(90);
+    }
+  & .page-nav {
+    align-items: flex-end;
+    display: flex;
+    -ms-flex-align: end;
+    height: toRem(56);
+    margin-bottom: 0;
+    min-height: toRem(56);
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    white-space: nowrap;
+
+    @include respond-to-min($desktop) {
+      display: block;
+      height: auto;
+    }
+  }
+  .nav-tabs > li > a {
+    border: 0;
+    border-bottom: 4px solid transparent;
+
+    @include respond-to-min($tablet) {
+      border-bottom: 2px solid transparent;
+    }
+
+    &:hover {
+      border-color: $white;
+    }
+  }
+
+  .page-nav {
+    margin: 0 toRem(10);
+
+    li {
+      padding-right: 1.4rem;
+      display: inline-block;
+      width: auto !important;
+
+      @include respond-to-min($desktop) {
+        min-height: toRem(90);
+      }
+    }
+
+    .swiper-slide {
+      display: inline-block;
+      width: auto !important;
+
+      @include respond-to-min($desktop) {
+        min-height: toRem(90);
+      }
+    }
+
+    .swiper-slide,
+    li a {
+      color: $almost-black;
+      cursor: pointer;
+      display: block;
+      font-size: $font12;
+      letter-spacing: 0.25px;
+      padding: 0 1rem 0.625rem;
+      text-transform: uppercase;
+
+      @include font-family-lato;
+
+      @include respond-to-min($desktop) {
+        font-size: $font20;
+        height: toRem(90);
+        line-height: toRem(90);
+        padding: 0 1.5rem;
+        text-transform: none;
+
+        @include font-family-Neotech-ge;
+      }
+      &:hover {
+        color: $main-green;
+      }
+    }
+
+    .swiper-slide.active a,
+    li.active a {
+      border-bottom: 2px solid $main-green;
+      border-left: 0;
+      border-right: 0;
+      border-top: 0;
+      color: $main-green;
+
+      @include respond-to-min($desktop) {
+        border-bottom: 4px solid $main-green;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .config-section-main-label-top {
+    color: $gray;
+    font-size: $font12;
+    letter-spacing: 1px;
+    line-height: toRem(22);
+    margin: 0;
+    margin-bottom: toRem(10);
+    margin-top: -10px;
+    position: relative;
+    top: toRem(20);
+
+    @include font-family-Neotech-ge;
+
+    @include respond-to-min($desktop) {
+      margin: 0;
+      padding: 0;
+    }
+
+    @include respond-to-max($tablet) {
+      left: 1.2rem;
+    }
+
+    @include respond-to-min($tablet) {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      height: toRem(90);
+      line-height: toRem(20);
+      margin: 0 0 toRem(10) toRem(20);
+      top: 0;
+    }
+  }
+}
+
+.deeplink-tabs {
+  padding: 1.5rem 0;
+}
+
+.deeplink-tab {
+  display: none;
+  transition: all 0.3s ease;
+  &.active {
+    display: inherit;
+    transition: all 0.3s ease;
+  }
+}
+
+.pagenavigation {
+  padding-bottom: toRem(20);
+
+  @include respond-to-min($desktop){
+    padding: 0;
+  }
+
+  @include respond-to-min($desktop-wide) {
+    .config-section-wrap > .container {
+      margin: auto;
+      position: relative;
+      width: toRem(1224);
+    }
+  }
+}
+
+.title {
+  .cmp-title__text {
+    margin-bottom: toRem(100);
+
+    @include respond-to-min($tablet) {
+      margin-bottom: toRem(120);
+    }
+
+    @include respond-to-min($desktop) {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,418 @@
+%focus {
+  &:focus {
+    color: $main-green;
+    font-size: $font16;
+    transform: translateY(-10px) scale(0.8);
+    transform-origin: 0 0;
+  }
+}
+
+.register-btn {
+  text-align: center;
+
+
+  .button {
+    float: none !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .btn-disabled {
+    background-color: $cold-gray-2;
+    border: none;
+    border: solid toRem(1) $cold-gray-2;
+    border-radius: 0.25rem;
+    color: $steel-grey;
+    cursor: not-allowed;
+    font-weight: 700;
+    height: 3rem;
+    opacity: 1;
+    outline: 0;
+    padding: 0 0.5rem;
+    pointer-events: none;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include respond-to-min($desktop) {
+      width: toRem(588);
+    }
+
+    &:hover {
+      background-color: $cold-gray-2;
+      border-color: $cold-gray-2;
+      color: $steel-grey;
+      opacity: 1;
+    }
+  }
+
+  .cmp-form-button {
+    background-color: $main-green;
+    border: solid toRem(1) $main-green;
+    border-radius: toRem(4);
+    color: $white;
+    font-size: $font14;
+    font-weight: 700;
+    height: 3rem;
+    letter-spacing: 0.14285714em;
+    line-height: 3rem;
+    margin-top: toRem(22);
+    outline: 0;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateZ(0);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    @include respond-to-min($tablet) {
+      margin-top: toRem(32);
+    }
+
+    &:active {
+      background-color: $white;
+      border-color: $main-green;
+      box-shadow: none !important;
+      color: $main-green;
+    }
+
+    &:focus {
+      background-color: $green-btn;
+      border-color: $green-btn;
+      color: $white;
+      outline: 0;
+    }
+
+    &:hover {
+      background-color: $green-btn;
+      border-color: $green-btn;
+      box-shadow: none !important;
+      color: $white;
+    }
+  }
+}
+
+.btn-validate {
+  text-align: center;
+
+  .button {
+    float: none !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .btn-disabled {
+    &:hover {
+      background-color: $cold-gray-2;
+      border-color: $cold-gray-2;
+      color: $steel-grey;
+      opacity: 1;
+    }
+  }
+
+  button {
+    &:active {
+      background-color: $green-btn;
+      border-color: $green-btn;
+      color: $white;
+      outline: 0;
+    }
+
+    &:hover {
+      background-color: $white;
+      border-color: $main-green;
+      box-shadow: none !important;
+      color: $main-green;
+    }
+
+    &:focus {
+      background-color: $green-btn;
+      border-color: $green-btn;
+      color: $white;
+      outline: 0;
+    }
+  }
+
+  .cmp-form-button {
+    background-color: $white;
+    border: solid toRem(1) $darkest-night;
+    border-radius: toRem(4);
+    color: $almost-black;
+    font-size: $font14;
+    font-weight: 700;
+    height: 3rem;
+    letter-spacing: 0.14285714em;
+    line-height: 3rem;
+    margin-top: toRem(22);
+    outline: 0;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateZ(0);
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+
+    @include respond-to-min($tablet) {
+      margin-top: toRem(32);
+    }
+  }
+
+  .active {
+    background-color: $green-btn !important;
+    border-color: $green-btn !important;
+    color: $white !important;
+    outline: 0;
+  }
+}
+
+.cws-form,
+.wst-form {
+  .desc-text {
+    @include respond-to-min($desktop) {
+      margin-top: 1.2rem;
+    }
+  }
+}
+
+.form-success {
+  .success-heading {
+    color: $main-green;
+    font-size: $font26;
+
+    &.error {
+      color: $error-red;
+      font-size: $font14;
+      line-height: calculateRem(24px);
+    }
+  }
+
+  .btn-text {
+    &.no-arrow {
+      width: 80%;
+    }
+  }
+}
+
+.build-your-journey {
+  &.learn-more {
+    padding-right: calculateRem(15px);
+
+    &::before {
+      right: 0;
+    }
+  }
+}
+
+.capture-lead-form-submitted,
+.consumer-register-form-submitted,
+.form-submitted {
+  align-items: center;
+  background-color: $main-green;
+  color: $white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 10rem;
+  justify-content: center;
+  margin: 2.2rem 0 0;
+  padding: 0;
+  text-align: center;
+  width: 100%;
+
+  &.error {
+    background-color: $orange;
+
+    &.red {
+      background-color: $pink;
+    }
+
+    & h3 {
+      margin: 1rem;
+    }
+  }
+}
+
+//mobile
+@include respond-to-min($tablet) {
+  //@media (max-width: $screen-md-max) {
+  .form {
+    &.wst-form {
+      .form-group {
+        margin-bottom: 1rem;
+
+        .checkboxes-wrap,
+        .radio-wrap {
+          label {
+            font-size: $font16;
+          }
+        }
+      }
+    }
+  }
+}
+
+input:-internal-autofill-selected {
+  background-color: transparent !important;
+}
+
+// *[lang="ar"] *[dir="rtl"] {
+//   .cmp-form {
+//     &.wst-form {
+//       .form-group {
+//         label {
+//           transform-origin: 100% 50% !important;
+//         }
+//         &.cmp-form-text__text {
+//           .cmp-form-options--drop-down {
+//             > label {
+//               left: auto;
+//               right: 4.6rem;
+//             }
+//             .flag-container {
+//               left: auto;
+//               right: 0;
+//             }
+//             .selected-flag {
+//               .iti-arrow {
+//                 left: calculateRem(5px);
+//                 right: auto;
+//               }
+//             }
+//           }
+//           .select2-container {
+//             .select2-selection {
+//               text-align: right;
+//               .select2-selection__rendered {
+//                 padding-right: 0;
+//                 padding-left: calculateRem(20px);
+//               }
+//               .select2-selection__arrow {
+//                 right: auto;
+//                 left: calculateRem(1px);
+//               }
+//             }
+//           }
+//         }
+//       }
+//       .has-error-fields {
+//         .icon-error,
+//         .alert-icon {
+//           svg {
+//             right: auto;
+//             left: 0.5rem;
+//           }
+//         }
+//         .alert-label {
+//           text-align: right;
+//         }
+//         &.textarea {
+//           .icon-error,
+//           .alert-icon {
+//             svg {
+//               left: 1.25rem;
+//             }
+//           }
+//           .has-error {
+//             ~ label {
+//               right: 1.25rem;
+//             }
+//           }
+//           .valid {
+//             ~ label {
+//               right: 1.25rem;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+.g-recaptcha {
+  & > div {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+}
+
+.button {
+  button#disableBtn.btn-disabled.cmp-form-button {
+    background-color: $cold-gray-2;
+    border-color: $cold-gray-2;
+    border-radius: calculateRem(4px);
+    border-width: 1px;
+    color: $steel-grey;
+    font-weight: 700;
+    height: 3rem;
+    opacity: 1;
+    outline: 0;
+    padding: 0 0.5rem;
+    pointer-events: none;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+  }
+
+  button#disableBtn.cmp-form-button {
+    background-color: $main-green;
+    border-color: $main-green;
+    border-radius: 4px;
+    border-width: 1px;
+    color: $white;
+    font-weight: 700;
+    height: 3rem;
+    outline: 0;
+    padding: 0 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+  }
+}
+
+.has-error-fields input {
+  border-bottom: 1px solid;
+}
+
+.has-error-fields input:focus {
+  border-bottom: 1px solid $main-green !important;
+}
+
+div.button {
+  text-align: center;
+}
+
+.form.wst-form {
+  // .has-error-fields {
+  //   .has-error ~ label {
+  //     transform: translateY(-10px) scale(0.8);
+  //     transform-origin: 0 0;
+  //     font-size: $font16;
+  //     z-index: 2;
+  //   }
+  // }
+}
+
+.cws-form,
+.wst-form {
+  .is-valid {
+    label {
+      color: $almost-black;
+      font-size: $font16 !important;
+      transform: translateY(-10px) scale(0.8) !important;
+      transform-origin: 0 0 !important;
+      z-index: 2;
+
+      @include font-family-lato;
+    }
+  }
+}
+
+.clear-both {
+  clear: both !important;
+}

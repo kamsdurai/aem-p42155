@@ -1,0 +1,714 @@
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.cws-form,
+.wst-form {
+  .cmp-form-options__legend {
+    border: 0;
+    color: $dropdown-grey;
+    font-size: $font16;
+    font-weight: 400;
+    margin-bottom: toRem(36);
+    position: relative;
+  }
+
+  .account-radio {
+    & > label {
+      font-size: $font16;
+      transform: translateY(toRem(-10)) scale(0.8);
+      transform-origin: 0 0;
+      z-index: 2;
+    }
+  }
+
+  .desc-text {
+    margin-top: 2rem;
+    position: relative;
+
+    .alert-icon {
+      svg {
+        top: 0.5rem !important;
+
+        @include rtlProp(right, left, 0.5rem);
+      }
+    }
+
+    .alert-label {
+      top: 10.5rem;
+    }
+  }
+
+  .iti {
+    border-color: $error-red;
+    position: relative;
+    width: 100%;
+
+    .icon-error,
+    .alert-icon {
+      display: block;
+      float: right !important;
+
+      svg {
+        fill: $pink;
+        height: 1.5rem;
+
+        //top: 2.5rem;
+        position: relative;
+        right: 1.2rem;
+        top: 0;
+        width: 1.5rem;
+        width: 1.5rem;
+        z-index: 2;
+      }
+    }
+
+    input[type="tel"]:not(.browser-default) {
+      width: 100%;
+
+      & ~ label {
+        left: 0;
+      }
+    }
+
+    input[type="tel"]:focus {
+      & ~ label {
+        color: $main-green;
+        font-size: $font16;
+        font-size: $font16;
+        transform: translateY(-10px) scale(0.8);
+        transform-origin: 0 0;
+      }
+    }
+  }
+
+  .new {
+    margin: 0;
+  }
+
+  .iti .cmp-form-text__textput {
+    width: 100%;
+  }
+
+  input#firstName,
+  input#designation {
+    width: 100%;
+  }
+
+  select {
+    max-height: toRem(200);
+    overflow-y: auto;
+    width: 100% !important; //To use Important Form default AEM Control css overrides
+    option {
+      background-position: 100%;
+      border-bottom: 1px solid $sand-white;
+      letter-spacing: 0;
+      line-height: 2.8rem;
+      padding: 0;
+      padding: 0 1rem;
+      text-decoration: none;
+    }
+  }
+
+  .contactNumber {
+    bottom: toRem(15);
+    display: inline-flex;
+    margin-top: 1rem;
+    position: relative;
+    width: 85%;
+
+    input {
+      display: inline-flex;
+      width: 100%;
+
+      & ~ label {
+        font-size: $font20;
+        left: 0;
+
+        @include font-family-lato;
+      }
+    }
+  }
+
+  form {
+    div.cmp-container {
+      position: relative;
+    }
+  }
+
+  .outside-icon {
+    right: 0;
+    top: 2.3rem;
+  }
+
+  &.has-error-fields {
+    input {
+      border-color: $error-red;
+      box-shadow: 0 1px 0 0 $error-red;
+    }
+
+    .select2.select2-container {
+      .select2-selection__arrow {
+        right: 3rem;
+      }
+    }
+
+    .select2-selection--single {
+      background: transparent !important; //To use Important Form default AEM Control css overrides
+
+      .select2-selection__rendered {
+        color: $error-red !important; //To use Important Form default AEM Control css overrides
+      }
+    }
+  }
+
+  [type="radio"]:checked + span::after,
+  [type="radio"]:not(:checked) + span::after {
+    background-image: url(../resources/images/icon-checkbox-selected.png);
+    background-repeat: no-repeat;
+    background-size: toRem(21);
+    border: toRem(2) solid transparent;
+    content: "";
+    display: block;
+    height: toRem(24);
+    left: toRem(-3);
+    margin-right: toRem(1);
+    position: absolute;
+    top: toRem(-3);
+    transition: all 0.25s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    width: toRem(24);
+    z-index: 2;
+  }
+
+  [type="radio"]:not(:checked) + span::after,
+  [type="radio"]:not(:checked) + span::before {
+    background-image: url(../resources/images/icon-unselected.png);
+    background-repeat: no-repeat;
+    background-size: 21px;
+    border: 2px solid transparent;
+    content: "";
+    display: block;
+    height: toRem(24);
+    left: toRem(-3);
+    margin-right: toRem(1);
+    position: absolute;
+    top: toRem(-3);
+    transition: all 0.25s cubic-bezier(0.55, 0.06, 0.68, 0.19);
+    width: toRem(24);
+    z-index: 2;
+  }
+
+  input:focus ~ label {
+    color: $main-green;
+    font-size: $font16;
+    transform: translateY(-10px) scale(0.8);
+    transform-origin: 0 0;
+
+    @include font-family-lato;
+  }
+
+  .has-error-fields {
+    textarea.cmp-form-text__textarea {
+      border-bottom: 1px solid $error-red;
+    }
+  }
+
+  textarea.cmp-form-text__textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $main-green;
+    box-shadow: none;
+    z-index: 0;
+  }
+
+  textarea {
+    &.cmp-form-text__textarea {
+      border: 1px solid $grey4;
+    }
+  }
+
+
+  textarea.cmp-form-text__textarea:disabled,
+  textarea.cmp-form-text__textarea[readonly="readonly"] {
+    border: 1px solid $grey4 !important; // To use Important Form default AEM Control css overrides
+    box-shadow: none !important;
+  }
+
+
+  textarea.cmp-form-text__textarea:disabled ~ label,
+  textarea.cmp-form-text__textarea[readonly="readonly"] ~ label {
+    color: $steel-grey;
+  }
+
+  textarea.cmp-form-text__textarea:focus:not([readonly]) .parent ~ label {
+    color: $main-green;
+    font-size: $font16;
+    transform: translateY(10px) scale(0.8);
+    transform-origin: 0 0;
+
+    @include font-family-lato;
+  }
+
+  .select {
+    label {
+      font-size: 1.2rem;
+      position: absolute;
+      top: 10px;
+    }
+  }
+
+  // intlTelInput ends //
+  .textarea.input-field > label {
+    left: toRem(24);
+  }
+
+  textarea.cmp-form-text__textarea {
+    background-color: transparent;
+    box-sizing: border-box;
+    height: 10rem;
+    line-height: normal;
+    margin-bottom: 0;
+    min-height: 3rem;
+    overflow-y: hidden;
+    padding: 2rem 1rem 1rem;
+    resize: none;
+    width: 100%;
+  }
+
+  .hiddendiv {
+    overflow-wrap: break-word;
+    padding-top: 1.2rem;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    z-index: -1;
+  }
+
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  [type="radio"]:checked + span::after,
+  [type="radio"]:checked + span::before,
+  [type="radio"]:not(:checked) + span::after,
+  [type="radio"]:not(:checked) + span::before {
+    border-radius: 50%;
+  }
+
+  [type="radio"]:not(:checked) + span::after {
+    transform: scale(0);
+  }
+
+  [type="radio"]:checked + span::after {
+    border: toRem(2) solid $main-green;
+  }
+
+  [type="radio"]:checked + span::after {
+    background-color: $main-green;
+  }
+
+  [type="radio"]:checked + span::after {
+    transform: scale(1.02);
+  }
+
+  [type="checkbox"]:checked,
+  [type="checkbox"]:not(:checked) {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+  }
+
+  .cmp-form-text__textspan svg {
+    fill: $main-green;
+    height: 16px;
+    width: 16px;
+  }
+
+  .textarea.input-field > label {
+    left: toRem(24) !important; //To use Important Form default AEM Control css overrides
+  }
+
+  // intl input for country name dropdown
+  .intl-input-wrapper {
+    input {
+      padding: 0 !important; //To use Important Form default AEM Control css overrides
+    }
+
+    .cmp-form-options--drop-down {
+      .flag-container {
+        width: 100%;
+        z-index: 99;
+
+        .selected-flag {
+          width: 100%;
+
+          &:focus,
+          &:active {
+            outline: none;
+          }
+
+          .iti-flag {
+            background: transparent;
+            box-shadow: none;
+            height: toRem(38);
+            margin: 0;
+            -moz-transform: none;
+            -ms-transform: none;
+            -o-transform: none;
+            transform: none;
+          }
+        }
+      }
+
+      .country-list {
+        padding: 0 1rem;
+        top: toRem(40);
+        width: 100%;
+
+        .country {
+          background-position: 100%;
+          border-bottom: 1px solid $sand-white;
+          letter-spacing: 0;
+          line-height: 2.8rem;
+          padding: 0;
+          text-decoration: none;
+
+          * {
+            color: $almost-black;
+          }
+
+          &.highlight {
+            background: transparent;
+            color: $main-green;
+
+            * {
+              color: $main-green;
+            }
+          }
+
+          .flag-box,
+          .dial-code {
+            display: none;
+          }
+        }
+      }
+    }
+
+    // select contact number
+    &.select-contact-number {
+      .cmp-form-options--drop-down {
+        justify-content: flex-end;
+
+        .has-error.alert-label {
+          left: 25%;
+        }
+
+        & + label {
+          left: 25%;
+        }
+
+        .flag-container {
+          border-bottom: 1px solid $grey4;
+          padding: 0;
+          width: 20%;
+          z-index: 9;
+
+          .iti-flag {
+            color: $almost-black;
+            font-size: $font20;
+          }
+        }
+
+        input {
+          width: 75%;
+        }
+
+        .country-list {
+          .country {
+            .dial-code {
+              display: block;
+            }
+
+            .flag-box,
+            .country-name {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    &.select-country-name {
+      .cmp-form-options--drop-down {
+        .selected-flag .iti-flag {
+          display: none;
+        }
+      }
+    }
+  }
+
+  *[lang="ar"] {
+    *[dir="rtl"] {
+      .intl-input-wrapper.select-contact-number .cmp-form-options--drop-down + label,
+      .intl-input-wrapper.select-contact-number .cmp-form-options--drop-down .has-error.alert-label {
+        left: 0;
+        right: 25%;
+      }
+    }
+  }
+
+  .icon-error,
+  .alert-icon {
+    display: none;
+  }
+
+  .cmp-form-text {
+    display: flex;
+    position: relative;
+  }
+
+  .hideBusiness {
+    visibility: hidden;
+  }
+
+  .showBusiness {
+    visibility: visible;
+  }
+
+  select:focus {
+    outline: 1px solid $select-focus;
+  }
+
+  // ::-moz-placeholder {
+  //   color: $cold-gray-2;
+  // }
+
+  // ::-ms-input-placeholder {
+  //   color: $cold-gray-2;
+  // }
+
+  // ::placeholder {
+  //   color: $cold-gray-2;
+  // }
+}
+
+.new_form {
+  padding: 0 toRem(12) !important; //Form default container responsive grid padding overrides;
+  .hideBusiness {
+    visibility: hidden;
+  }
+
+  .showBusiness {
+    visibility: visible;
+  }
+
+  .cmp-teaser__content {
+    text-align: center;
+
+    h2 {
+      font-size: $font40;
+      line-height: toRem(52);
+
+      @media (max-width: $screen-md-max) {
+        font-size: $font28;
+        line-height: 34px;
+      }
+    }
+  }
+
+  .cmp-teaser__description {
+    text-align: center;
+    width: 100%;
+
+    & p {
+      color: $gray !important;
+      font-size: $font16 !important; //To use Important Form default AEM Control css overrides
+      line-height: 1.5rem !important;
+      padding-bottom: 6rem;
+
+      @include font-family-lato;
+    }
+  }
+}
+
+.has-error-fields {
+  input {
+    border-bottom: 1px solid $error-red !important;
+  }
+}
+
+.needHelpForm_Teaser {
+  padding-bottom: 1rem;
+  padding-top: 3rem;
+
+  .cmp-teaser__description {
+    margin-top: 0 !important;
+    width: 100% !important; //Some body added width 70%important for teaser causing issue here
+  }
+
+  h3,
+  h2 {
+    @include respond-to-max($tablet) {
+      font-size: $font30 !important;
+    }
+  }
+
+  .cmp-teaser__content {
+    margin-bottom: 0;
+  }
+}
+
+.teaser-form {
+  .cmp-teaser__description {
+    margin-top: 3rem;
+    text-align: center;
+    width: 100% !important; //Some body added width 70%important for teaser causing issue here
+    & > p {
+      color: $gray;
+      font-size: $font16;
+      line-height: 1.5rem;
+      padding-bottom: 1.5rem;
+
+      @include font-family-lato;
+    }
+  }
+
+  .cmp-teaser__content {
+    margin-bottom: 3.5rem;
+    text-align: center;
+
+    @include font-family-lato;
+
+    h3 {
+      font-size: $font32;
+      line-height: toRem(52);
+      margin-bottom: 1.5rem;
+    }
+
+    h2 {
+      font-size: $font40;
+      line-height: toRem(52);
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.grecaptcha-badge {
+  z-index: 1;
+}
+
+
+[type=radio]:checked,
+[type=radio]:not(:checked) {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none
+}
+
+[type=radio]:checked+span,
+[type=radio]:not(:checked)+span {
+	position: relative;
+	padding-left: 35px;
+	cursor: pointer;
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	font-size: 1rem;
+	transition: .28s ease;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none
+}
+
+[type=radio]+span:after,
+[type=radio]+span:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	margin: 4px;
+	width: 16px;
+	height: 16px;
+	z-index: 0;
+	transition: .28s ease
+}
+
+[type=radio].with-gap:checked+span:after,
+[type=radio].with-gap:checked+span:before,
+[type=radio]:checked+span:after,
+[type=radio]:checked+span:before,
+[type=radio]:not(:checked)+span:after,
+[type=radio]:not(:checked)+span:before {
+	border-radius: 50%
+}
+
+[type=radio]:not(:checked)+span:after,
+[type=radio]:not(:checked)+span:before {
+	border: 2px solid #5a5a5a
+}
+
+[type=radio]:not(:checked)+span:after {
+	transform: scale(0)
+}
+
+[type=radio]:checked+span:before {
+	border: 2px solid transparent
+}
+
+[type=radio].with-gap:checked+span:after,
+[type=radio].with-gap:checked+span:before,
+[type=radio]:checked+span:after {
+	border: 2px solid #719e19
+}
+
+[type=radio].with-gap:checked+span:after,
+[type=radio]:checked+span:after {
+	background-color: #719e19
+}
+
+[type=radio]:checked+span:after {
+	transform: scale(1.02)
+}
+
+[type=radio].with-gap:checked+span:after {
+	transform: scale(.5)
+}
+
+[type=radio].tabbed:focus+span:before {
+	box-shadow: 0 0 0 10px rgba(0, 0, 0, .1)
+}
+
+[type=radio].with-gap:disabled:checked+span:before {
+	border: 2px solid rgba(0, 0, 0, .42)
+}
+
+[type=radio].with-gap:disabled:checked+span:after {
+	border: none;
+	background-color: rgba(0, 0, 0, .42)
+}
+
+[type=radio]:disabled:checked+span:before,
+[type=radio]:disabled:not(:checked)+span:before {
+	background-color: transparent;
+	border-color: rgba(0, 0, 0, .42)
+}
+
+[type=radio]:disabled+span {
+	color: rgba(0, 0, 0, .42)
+}
+
+[type=radio]:disabled:not(:checked)+span:before {
+	border-color: rgba(0, 0, 0, .42)
+}
+
+[type=radio]:disabled:checked+span:after {
+	background-color: rgba(0, 0, 0, .42);
+	border-color: #949494
+}

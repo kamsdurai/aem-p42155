@@ -1,0 +1,289 @@
+.benefit-section {
+  // benefits title
+
+  .benefits-main-title {
+    margin-bottom: toRem(24);
+    padding-left: toRem(8);
+    @include respond-to-min($desktop) {
+      margin-bottom: toRem(64);
+      padding-left: 0;
+    }
+    @include rtlBlock() {
+      @include respond-to-max($desktop - 1) {
+        padding-left: 0;
+        padding-right: toRem(8);
+      }
+    }
+    h2 {
+      font-size: $font26;
+      color: $almost-black;
+      line-height: 32px;
+      text-align: left;
+      margin: 0;
+      @include respond-to-min($desktop) {
+        font-size: $font32;
+        line-height: 1.25;
+        text-align: center;
+        @include rtlBlock() {
+          text-align: center;
+        }
+      }
+    }
+    h3,
+    h4,
+    h5,
+    h6 {
+      text-align: left;
+      @include respond-to-min($desktop) {
+        text-align: center;
+        @include rtlBlock() {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .top {
+    @include respond-to-max($desktop - 1) {
+      padding-left: toRem(8);
+      @include rtlBlock() {
+        padding-left: 0;
+        padding-right: toRem(8);
+      }
+    }
+  }
+
+  .tiles {
+    display: flex;
+    flex-wrap: wrap;
+
+    .benefits-tile {
+      margin-bottom: 24px;
+      display: flex;
+      width: 100%;
+      @include respond-to-min($desktop) {
+        display: block;
+        margin-bottom: 0;
+        width: 33.3%;
+        padding-right: toRem(24);
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+        @include respond-to-min($desktop) {
+          margin-right: 0;
+        }
+      }
+
+      @include rtlBlock() {
+        @include respond-to-min($desktop) {
+          padding-right: 0;
+          padding-left: toRem(24);
+        }
+      }
+
+      .benefits-icon-wrap {
+        @include respond-to-max($desktop - 1) {
+          margin-right: toRem(16);
+
+          @include rtlBlock() {
+            margin-right: 0;
+            margin-left: toRem(16);
+          }
+        }
+        @include respond-to-min($desktop) {
+          margin-bottom: toRem(24);
+        }
+        svg,
+        img {
+          width: 28px;
+          height: 28px;
+          @include respond-to-min($desktop) {
+            width: 48px;
+            height: 48px;
+          }
+        }
+      }
+      .benefits-secondary-title {
+        margin-bottom: toRem(8);
+        @include respond-to-min($desktop) {
+          margin-bottom: toRem(16);
+        }
+
+        h3 {
+          font-size: $font12;
+          font-weight: bold;
+          line-height: 1.33;
+          color: $almost-black;
+          margin: 0;
+          @include respond-to-min($desktop) {
+            font-size: $font20;
+            line-height: 1.4;
+          }
+        }
+      }
+      .benefits-description {
+        p {
+          margin: 0;
+          font-size: $font12;
+          line-height: 15px;
+          color: #848789;
+          @include respond-to-min($desktop) {
+            font-size: $font14;
+            line-height: 1.57;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    margin-bottom: toRem(40);
+    @include respond-to-min($desktop) {
+      margin-bottom: toRem(100);
+    }
+    .benefits-tile {
+      @include respond-to-max($desktop - 1) {
+        &:nth-child(odd) {
+          border-radius: 8px;
+          background-color: #f7f8f4;
+          padding: toRem(16) toRem(8);
+          margin-left: -toRem(8);
+          margin-right: -toRem(8);
+        }
+        &:nth-child(even) {
+          padding-left: toRem(8);
+          @include rtlBlock() {
+            padding-left: 0;
+            padding-right: toRem(8);
+          }
+        }
+      }
+      @include respond-to-min($desktop) {
+        margin-bottom: toRem(64);
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .benefits-view-more {
+    display: flex;
+    margin: toRem(32) 0 toRem(16) 0;
+    padding-left: toRem(8);
+    @include respond-to-min($desktop) {
+      justify-content: center;
+      margin: toRem(60) 0;
+      padding-left: 0;
+    }
+
+    @include respond-to-max($desktop - 1) {
+      @include rtlBlock() {
+        padding-left: 0;
+        padding-right: toRem(8);
+      }
+    }
+
+    a {
+      font-size: $font12;
+      line-height: 1.33;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+      @include respond-to-min($desktop) {
+        font-size: $font16;
+        line-height: 1.38;
+        letter-spacing: 2px;
+      }
+      .show-less {
+        display: block;
+      }
+      .show-more {
+        display: none;
+      }
+    }
+    a.collapsed {
+      .show-more {
+        display: block;
+      }
+      .show-less {
+        display: none;
+      }
+    }
+
+    @include rtlBlock() {
+      .btn-text.btn-green {
+        &:before {
+          border-width: 0 1px 1px 0;
+        }
+        .collapsed {
+          &:before {
+            //transform: rotate(45deg);
+            border-width: 0 1px 1px 0;
+          }
+        }
+      }
+    }
+  }
+  &.four-cols {
+    .benefits-tile {
+      @include respond-to-min($desktop) {
+        width: 25%;
+      }
+    }
+  }
+
+  // benefit section as a module -> caremal variation
+  &.caremal {
+    &.with-bg {
+      background-color: #f7f8f4;
+      padding-top: toRem(40);
+      padding-bottom: toRem(40);
+      @include respond-to-min($desktop) {
+        padding-top: toRem(80);
+        padding-bottom: toRem(80);
+      }
+    }
+    .tiles {
+      @include respond-to-min($desktop) {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+    }
+    .caremal-heading h2 {
+      font-size: $font26;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      color: $almost-black;
+      text-align: left;
+      margin: 0;
+      margin-bottom: toRem(24);
+      @include respond-to-min($desktop) {
+        font-size: $font32;
+        line-height: 1.25;
+        margin-bottom: toRem(64);
+        text-align: center;
+      }
+    }
+    .benefits-secondary-title p {
+      font-size: $font12;
+      font-weight: bold;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: $almost-black;
+      @include respond-to-min($desktop) {
+        font-size: $font20;
+        line-height: 1.4;
+      }
+    }
+    .benefits-description p {
+      font-size: $font12;
+      @include respond-to-min($desktop) {
+        font-size: $font16;
+        line-height: 1.5;
+      }
+    }
+  }
+}

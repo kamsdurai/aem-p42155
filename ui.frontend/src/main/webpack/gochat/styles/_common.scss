@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: Quicksand, sans-serif;
+  font-size: $font-size;
+  line-height: $font-height;
+}
+
+a {
+  transition: all 0.5s ease;
+}
+
+p {
+  font-family: Roboto, sans-serif;
+}
+
+ul,
+ol,
+li {
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  padding-top: toRem(128);
+  transition: all 0.5s ease;
+
+  @include respond-to-max($tablet) {
+    padding-top: toRem(90);
+  }
+}
+
+.container-block {
+  margin: 0 auto;
+  padding: 0 toRem(20);
+  width: 100%;
+
+  @include respond-to-max($tablet) {
+    width: 100%;
+  }
+
+  @include respond-to-min($tablet) {
+    max-width: toRem(1070);
+  }
+}

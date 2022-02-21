@@ -1,0 +1,43 @@
+// Do not change any style in this file all changes are for global containers.
+// We are using important to overwrite existing AEM grid and bootestrap grid CSS
+.root.container {
+  padding: 0;
+  width: 100% !important;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @include respond-to-min($phone) {
+    max-width: 540px !important;
+  }
+
+  @include respond-to-min($tablet) {
+    max-width: 720px !important;
+  }
+
+  @include respond-to-min($desktop) {
+    max-width: 960px !important;
+  }
+
+  @include respond-to-min($desktop-wide) {
+    max-width: 1140px !important;
+  }
+}
+
+.container-center {
+  clear: both !important;
+  max-width: 100% !important;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.container-fix__width {
+  left: 50% !important;
+  margin-left: -50vw !important;
+  max-width: inherit !important;
+  position: relative !important;
+  width: 100vw !important;
+}

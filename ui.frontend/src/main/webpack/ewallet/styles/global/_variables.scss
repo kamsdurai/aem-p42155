@@ -1,0 +1,177 @@
+$light-gray: #f3f3f3;
+$dark-gray: #8a8a8a;
+$black: #0a0a0a;
+$black2: #000;
+$black3: #1e2021;
+$darkblack: #000;
+$almost-black: #353738;
+$link-color: #7da830;
+$link-hover-color: darken($link-color, 15%);
+$light-white: #eaedf5;
+
+//** Link hover decoration.
+
+$white: #fff;
+$white1: #eee;
+$white2: #ddd;
+$white3: #e9e9e9;
+$white4: #f6f6f6;
+$white5: #ccc;
+$white6: #ededed;
+$white7: #fbfbfc;
+$white8: #f3f5f9;
+$white9: #f5f6f7;
+$white10: #fcfcfc;
+$white11: #fefefe;
+$gray: #333;
+$gray2: #454545;
+$gray3: #909192;
+$grey2: #2d2f31;
+$gray4: #36393b;
+$light-grey1: #8b91a3;
+$light-black: #2b2b2b;
+$light-grey: #c5c5c5;
+$light-gray1: #666;
+$light-gray2: #a5aab8;
+$light-blue: #5e9ed6;
+$blue1: #007fff;
+$blue: #003eff;
+$yellow: #dad55e;
+$dark-yellow: #777620;
+$light-yellow: #fffa90;
+$cream: #f1a899;
+$light-pink: #fddfdf;
+$brown: #5f3f3f;
+$dark-green1: #73932e;
+$grey-brass: #9ca1b0;
+$cold-gray: #d1d2d1;
+$blue-secondary1: #007aff;
+$pink: #fb193f;
+$red: #b3170c;
+$error-red: #be1218;
+$alert-red: #fdeeef;
+$global-width: 496px;
+$global-width-small: 95%;
+$global-gutter: 16px;
+$body-background: $light-gray;
+$container-background: $white;
+$global-font-color: $black;
+$body-font-family: tahoma, geneva, sans-serif;
+$global-padding: 16px;
+$global-margin: 16px;
+$global-radius: 3px;
+$global-rounded: 500px;
+$global-breakpoint: $global-width + $global-gutter;
+
+//added for location
+// Font Sizes
+$base-font-size: 16px;
+$font-size-base: 14px;
+
+//** Unit-less `line-height` for use in components like buttons.
+$line-height-base: 1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+$line-height-computed: floor(($font-size-base * $line-height-base)); // ~20px
+//=== Shared nav styles
+$nav-link-padding: 10px 15px;
+$gray-base: #919192;
+$nav-link-hover-bg: lighten($gray-base, 93.5%);
+$dark-gray: #242424;
+$dark-sand-brown: #393c3a;
+$sand-brown: #c1b792;
+$sand-white: #f1f1eb;
+$black-grey: #3c485e;
+$grey-bottom: #e6e6e6;
+$gray-primary: #5a637c;
+$grey-select: #aaa;
+$green-btn: #5f8515;
+$main-green: #769a2f;
+$grey-secondary: #ccd3e6;
+$nav-blue: #202e4d;
+$blue-secondary: #2a5082;
+$blue-grey: #e3e3ed;
+$font-family-base: 'Georgia, "Times New Roman", Times, serif';
+$pale-green: #616b1e;
+$screen-ms: 541px;
+$screen-xs: 414px;
+$border-white: #d3d3d3;
+$dropdown-grey: #999;
+
+//* chat bot bg clor
+
+$chatboatbg: #719e19;
+$chatbotgray: #fbfbfb;
+
+//
+$base-font: bariol, ge ss two, arial, sans-serif;
+
+//**Font size
+$font11: 0.6875rem;
+$font12: 0.75rem;
+$font14: 0.875rem;
+$font16: 1rem;
+$font18: 1.125rem;
+$font20: 1.25rem;
+$font21: 1.3125rem;
+$font23: 1.438rem;
+$font24: 1.5rem;
+$font25: 1.563rem;
+$font26: 1.625rem;
+$font28: 1.75rem;
+$font30: 1.875rem;
+$font32: 2rem;
+$font36: 2.25rem;
+$font40: 2.5rem;
+$font24: 1.5rem;
+$font21: 1.3125rem;
+$font20: 1.25rem;
+$font28: 1.75rem;
+$font10: 0.625rem;
+$font30: 1.875rem;
+$font64: 4rem;
+$font48: 3rem;
+
+@mixin respond-to-max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin respond-to-min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+//font size PX into REM
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; //Fallback in px
+  font-size: calculateRem($size);
+}
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+
+  @return $remValue;
+}
+
+//sm
+$phone: 576px;
+
+//md
+$tablet: 768px;
+
+//lg
+$desktop: 992px;
+
+//xl
+$desktop-wide: 1200px;
+
+//xxl
+$desktop-wide-xl: 1400px;

@@ -1,0 +1,105 @@
+$spacer-height: 1rem;
+
+.spacer {
+  background-color: transparent;
+  display: block;
+  min-height: $spacer-height / 4;
+
+  .sand-white {
+    background-color: $sand-white-50;
+  }
+
+  .white {
+    background-color: $white;
+  }
+
+  .light-gray {
+    background-color: $light-gray;
+    opacity: .3;
+  }
+
+  &.spacer-zero {
+    height: 0;
+    min-height: 0;
+  }
+
+  &.spacer-8 {
+    height: $spacer-height / 4;
+
+    @include respond-to-min($desktop) {
+      height: $spacer-height / 2;
+    }
+  }
+
+  &.spacer-16 {
+    height: $spacer-height / 2;
+
+    @include respond-to-min($desktop) {
+      height: $spacer-height;
+    }
+  }
+
+  &.spacer-24 {
+    height: $spacer-height * .75;
+
+    @include respond-to-min($desktop) {
+      height: $spacer-height * 1.5;
+    }
+  }
+
+  &.spacer-36 {
+    height: $spacer-height;
+
+    @include respond-to-min($desktop) {
+      height: $spacer-height * 2.25;
+    }
+  }
+
+  &.spacer-42 {
+    height: 1.25rem;
+
+    @include respond-to-min($desktop) {
+      height: 2.5rem;
+    }
+  }
+
+  &.spacer-48 {
+    height: 1.5rem;
+
+    @include respond-to-min($desktop) {
+      height: 3rem;
+    }
+  }
+
+  &.spacer-52 {
+    height: $spacer-height * 1.5;
+
+    @include respond-to-min($desktop) {
+      height: $spacer-height * 3.25;
+    }
+  }
+
+  &.spacer-64 {
+    height: $spacer-height * 2;
+
+    @include respond-to-min($desktop) {
+      height: $spacer-height * 4;
+    }
+  }
+
+  &.spacer-84 {
+    height: $spacer-height * 3;
+
+    @include respond-to-min($desktop) {
+      height: $spacer-height * 5.25;
+    }
+  }
+
+  &.spacer-102 {
+    height: $spacer-height * 4.5;
+
+    @include respond-to-min($desktop) {
+      height: $spacer-height * 6.375;
+    }
+  }
+}

@@ -1,0 +1,429 @@
+/* stylelint-disable no-descending-specificity */
+.cmp-form-options--drop-down .select-hide,
+.cmp-form-options--drop-down select {
+  visibility: hidden;
+}
+
+.cmp-form,
+.cq-Editable-dom {
+  padding: toRem(16);
+
+  label {
+    background-color: transparent;
+    box-sizing: border-box;
+    color: $gray-primary;
+    display: block;
+    font-size: $font24;
+    font-weight: 400;
+    left: 0;
+    line-height: toRem(59);
+    margin: 0;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 toRem(18) !important;
+    pointer-events: none;
+    position: absolute;
+    text-overflow: ellipsis;
+    top: 0;
+    transition: 0.3s;
+    white-space: nowrap;
+    z-index: 1;
+  }
+
+  .has-error-fields {
+    label {
+      color: $error-red;
+      font-size: $font16;
+      font-weight: 500;
+      line-height: toRem(24);
+      padding-left: toRem(12) !important;
+      transform: translateY(0) scale(0.8);
+    }
+  }
+
+  .text,
+  .options {
+    padding: toRem(16);
+  }
+
+  .form-group {
+    margin-bottom: 0;
+
+    .alert-icon {
+      display: none;
+    }
+
+    &.has-error-fields {
+      border-color: $error-red;
+
+      .alert-icon {
+        display: block;
+
+        svg {
+          fill: $error-red;
+          height: toRem(20);
+          position: absolute;
+          right: toRem(15);
+          top: toRem(20);
+          width: toRem(20);
+        }
+      }
+
+      .alert-label {
+        bottom: toRem(-25);
+        color: $error-red;
+        font-size: $font12;
+        height: 1rem;
+        line-height: toRem(16);
+        margin: 0 0 6px;
+        overflow: hidden;
+        padding: 0 toRem(18);
+        position: absolute;
+        text-align: left;
+        text-overflow: ellipsis;
+        top: auto;
+        white-space: nowrap;
+        width: 100%;
+      }
+    }
+  }
+
+  .cmp-form-text,
+  .cmp-form-options,
+  .floating-label-select {
+    border: 1px solid $grey-secondary;
+    border-radius: toRem(4);
+    display: block;
+    height: toRem(61);
+    position: relative;
+    width: 97%;
+
+    @include respond-to-min($tablet) {
+      width: 100%;
+    }
+
+    &.select-arrow-active {
+      font-weight: 500;
+    }
+
+    .floating-label {
+      color: $gray-primary;
+      font-size: $font14;
+      font-weight: 500;
+      line-height: toRem(13);
+      top: toRem(6);
+    }
+
+    .cmp-form-text__text {
+      background-color: transparent;
+      border: none;
+      border-radius: toRem(5);
+      box-shadow: none;
+      box-sizing: border-box;
+      color: $gray-primary;
+      display: block;
+      font-size: $font24;
+      font-weight: 500;
+      line-height: 45px;
+      margin: 0;
+      outline: none;
+      padding: 10px 18px 4px !important;
+      position: relative;
+      width: 100%;
+      z-index: 1;
+
+      &:focus ~ label,
+      &.valid ~ label {
+        color: $nav-blue;
+        font-size: $font16;
+        font-weight: 500;
+        line-height: toRem(24);
+        padding-left: toRem(12) !important;
+        transform: translateY(0) scale(0.8);
+      }
+
+      &.valid ~ label {
+        color: $gray-primary;
+      }
+    }
+
+    @include respond-to-max($phone) {
+      width: 100%;
+    }
+  }
+
+  .cmp-form-options__field {
+    border: 1px solid $grey-select;
+    border-radius: 4px;
+    color: $gray-primary;
+    font-size: $font24;
+    font-weight: 400;
+    height: 60px;
+    line-height: toRem(59);
+    margin: 0;
+    outline: none;
+    padding: 0 toRem(18) !important;
+    width: 97%;
+
+    @include respond-to-min($desktop) {
+      width: 100%;
+    }
+  }
+}
+
+.select-selected {
+  background-position: 100%;
+  color: $almost-black;
+  color: $gray-primary;
+  cursor: pointer;
+  display: block;
+  font-size: toRem(20);
+  font-size: $font24;
+  font-weight: 400;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 1.8rem;
+  line-height: toRem(59);
+  margin: 0;
+  max-width: 100%;
+  overflow: hidden;
+  padding: 0 18px !important;
+  text-decoration: none;
+  width: 100%;
+
+  .select-arrow-active::after {
+    background-color: transparent;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    height: 0;
+    position: absolute;
+    right: toRem(10);
+    top: toRem(14);
+    width: 0;
+  }
+}
+
+.cmp-form-options--drop-down {
+  .select-items {
+    background-color: $white;
+    background-position: 100%;
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 0.0625rem 0.25rem 0 rgb(1 1 1 / 30%);
+    color: $dark-gray;
+    cursor: pointer;
+    font-size: $font16;
+    letter-spacing: 0;
+    line-height: 1.8rem;
+    overflow-x: hidden;
+    padding: 0.5rem 0;
+    position: relative;
+    text-decoration: none;
+    z-index: 5;
+
+    .selecteddiv {
+      font-size: toRem(23);
+      font-weight: 400;
+      line-height: toRem(26);
+      padding: toRem(10) toRem(25);
+
+      &:hover {
+        color: $gray-primary;
+        font-weight: 700;
+        text-decoration: none;
+      }
+    }
+
+    & div {
+      @media (max-width: 768px) {
+        padding: 0.3rem;
+      }
+    }
+
+    & > div:last-child .selecteddiv {
+      border: none;
+    }
+  }
+
+  .alert-icon {
+    display: none;
+  }
+
+  &.has-error-fields {
+    border-color: $error-red;
+
+    .alert-icon {
+      display: block;
+
+      svg {
+        fill: $error-red;
+        height: toRem(20);
+        position: absolute;
+        right: toRem(15);
+        top: toRem(20);
+        width: toRem(20);
+      }
+    }
+
+    .alert-label {
+      bottom: toRem(-25);
+      color: $error-red;
+      font-size: $font12;
+      height: 1rem;
+      line-height: toRem(16);
+      margin: 0 0 6px;
+      overflow: hidden;
+      padding: 0 toRem(18);
+      position: absolute;
+      text-align: left;
+      text-overflow: ellipsis;
+      top: auto;
+      white-space: nowrap;
+      width: 100%;
+    }
+  }
+}
+
+.cmp-form {
+  margin: 30px auto 0;
+  padding: 0;
+
+  @include respond-to-min($desktop-wide) {
+    width: toRem(1024);
+  }
+
+  .googlecaptcha {
+    margin-bottom: 30px;
+
+    .g-recaptcha {
+      margin: 20px auto;
+      width: toRem(304);
+
+      iframe {
+        margin: 20px 0;
+
+        @include respond-to-max($phone) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .button {
+    text-align: center;
+
+    .cmp-form-button {
+      background-color: $chatboatbg;
+      border: 1px solid $link-color;
+      border-radius: 4px;
+      color: $white;
+      cursor: pointer;
+      font-family: $base-font;
+      font-size: $font16;
+      font-weight: 700;
+      height: toRem(56);
+      letter-spacing: 0;
+      line-height: 18px;
+      margin-left: 0;
+      margin-top: 15px;
+      outline: 0;
+      overflow: hidden;
+      padding: 0.75rem 0.5rem;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      vertical-align: middle;
+      width: toRem(304);
+
+      @include respond-to-max($phone) {
+        width: 100%;
+      }
+    }
+  }
+
+  .text,
+  .options {
+    @include respond-to-max($phone) {
+      padding: 1rem 0;
+    }
+  }
+}
+
+.select2-container--default,
+.select2-selection {
+  &--single {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    font-size: $font24;
+    height: toRem(58) !important;
+    padding-left: toRem(8);
+    padding-top: toRem(12);
+  }
+
+  &__arrow {
+    display: none;
+  }
+
+  &__rendered {
+    color: $gray-primary !important;
+    line-height: toRem(40) !important;
+  }
+}
+
+.select2-container--default {
+  &__rendered {
+    line-height: 40px;
+  }
+
+  .select2-results > .select2-results__options {
+    max-height: toRem(360) !important;
+    padding-bottom: toRem(15);
+  }
+}
+
+.select2-container--open {
+  &.select2-container--open {
+    .select2-dropdown {
+      background-color: $white;
+      border: 1px solid $grey-secondary;
+      border-radius: 0 0 4px 4px;
+      box-shadow: 0 0.0625rem 0.25rem 0 rgb(1 1 1 / 30%);
+    }
+
+    .select2-results {
+      &__option {
+        font-size: $font23;
+        line-height: toRem(26);
+        padding: toRem(10) toRem(25);
+
+        &--selected {
+          background: transparent;
+        }
+      }
+
+      &__option[aria-selected="true"],
+      &--highlighted {
+        color: $gray-primary;
+        font-size: $font23;
+        font-weight: 700;
+        text-decoration: none;
+      }
+
+      ul {
+        li {
+          &:hover,
+          &.select2-results__option--highlighted {
+            background-color: transparent;
+            color: $gray-primary;
+            font-size: 23px;
+            font-weight: 700;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

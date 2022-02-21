@@ -1,0 +1,493 @@
+.hero-heaer-01 {
+  min-height: 665px;
+  position: relative;
+
+  @media (max-width: 991px) {
+    min-height: 650px;
+  }
+
+  div.cover {
+    height: 110%;
+    top: -100px;
+
+    @media (min-width: 1440px) {
+      height: 115%;
+    }
+
+    @media (max-width: 991px) {
+      height: 115%;
+    }
+
+    @media (max-width: 767px) {
+      height: 50%;
+    }
+
+    @media (max-width: 374px) {
+      height: 54%;
+    }
+
+    @media (min-width: 737px) and (max-width: 991px) {
+      top: -105px;
+    }
+
+    img {
+      max-height: 735px;
+      min-width: 100%;
+
+      @media (min-width: 1440px) {
+        max-height: 1000px;
+      }
+
+      @media (max-width: 991px) {
+        max-height: 755px;
+      }
+
+      @media (max-width: 767px) {
+        max-height: 600px;
+      }
+    }
+
+    &::after {
+      background: url(../resources/images/img-main-lx.png) no-repeat;
+      background-size: cover;
+      content: "";
+      height: 100%;
+      left: 0;
+      min-width: 100%;
+      position: absolute;
+      top: 1px;
+      z-index: 1;
+
+      @media (max-width: 991px) {
+        background-position: bottom;
+        background-size: 120%;
+      }
+
+      @media (max-width: 767px) {
+        background-position: bottom;
+        background-size: contain;
+      }
+    }
+  }
+
+  @media (min-width: 1600px) {
+    min-height: 747px;
+  }
+
+  &::after {
+    background:
+      url(../resources/images/illustartion-white-20.svg),
+      url(../resources/images/illustartion-white.svg);
+    background-position: top -13px right, bottom 10px center;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 37%, 60%;
+    bottom: 0;
+    content: "";
+
+    /* display: block; */
+    display: none;
+    left: 0;
+    opacity: 0.2;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @media (max-width: 991px) {
+      background-position: top 295px right -60px, bottom 60px center;
+      background-size: 47%, 75%;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &.faq-header {
+    min-height: 470px;
+
+    @media (min-width: 1440px) {
+      min-height: 520px;
+    }
+
+    @media (min-width: 1600px) {
+      min-height: 630px;
+    }
+
+    @media (max-width: 767px) {
+      min-height: 300px;
+    }
+
+    div.cover {
+      height: 120%;
+
+      @media (max-width: 1024px) {
+        height: 110%;
+      }
+
+      @media (max-width: 767px) {
+        height: 130%;
+      }
+
+      img {
+        /* max-height: 570px; */
+      }
+
+      &::after {
+        background-position: bottom;
+
+        @media (max-width: 767px) {
+          background-position: bottom right -60px;
+        }
+      }
+    }
+
+    &::after {
+      background-position: top 0 right 62px, bottom -130px center;
+      background-size: 32%, 50%;
+
+      @media (max-width: 1024px) {
+        background-position: top 0 right -170px, bottom -65px center;
+        background-size: 45%, 56%;
+      }
+
+      @media (max-width: 768px) {
+        background-position: top 165px right -76px, bottom -65px center;
+        background-size: 48%, 50%;
+      }
+    }
+
+    &.about-us {
+      &::after {
+        display: none;
+      }
+    }
+
+    &.offers-head {
+      @media (max-width: 768px) {
+        min-height: 335px;
+      }
+    }
+
+    &.no-content {
+      @media (max-width: 1024px) {
+        min-height: 395px;
+      }
+
+      @media (max-width: 768px) {
+        min-height: 300px;
+      }
+
+      @media (max-width: 736px) {
+        min-height: 180px;
+      }
+
+      &.no-offer-head {
+        @media (max-width: 768px) {
+          min-height: 220px;
+        }
+
+        @media (max-width: 736px) {
+          min-height: 180px;
+        }
+      }
+
+      .cover-style1 {
+        @media (max-width: 375px) {
+          height: 160%;
+        }
+      }
+    }
+  }
+
+  &.news-header {
+    min-height: 460px;
+
+    @media (min-width: 1440px) {
+      min-height: 560px;
+    }
+
+    @media (max-width: 1024px) {
+      min-height: 360px;
+    }
+
+    @media (max-width: 767px) {
+      min-height: 260px;
+    }
+
+    @media (max-width: 375px) {
+      min-height: 185px;
+    }
+
+    &::after {
+      background-position: bottom 0 right -203px, bottom -74px right 284px;
+      background-size: 40%, 50%;
+
+      @media (max-width: 768px) {
+        background-position: bottom 0 right -240px, bottom -62px right -81px;
+        background-size: 40%, 75%;
+      }
+    }
+  }
+
+  &.news-detail-header {
+    min-height: 500px;
+
+    div.cover {
+      height: 120%;
+
+      @media (min-width: 1440px) {
+        height: 126%;
+      }
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &.offers-header {
+    min-height: 475px;
+
+    div.cover {
+      height: 120%;
+
+      @media (min-width: 1440px) {
+        height: 126%;
+      }
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  &.busness-header {
+    &::after {
+      display: none;
+    }
+  }
+
+  &.no-illustration {
+    &::after {
+      display: none;
+    }
+  }
+
+  &.small-header {
+    min-height: 635px;
+
+    @media (min-width: 1440px) {
+      min-height: 670px;
+    }
+
+    @media (max-width: 991px) {
+      min-height: 525px;
+    }
+
+    @media (max-width: 767px) {
+      min-height: 470px;
+    }
+
+    div.cover {
+      height: 115%;
+
+      @media (max-width: 991px) {
+        height: 125%;
+      }
+    }
+
+    &.contact-us-header {
+      &::after {
+        background-position: top 186px right -290px, bottom -185px right 370px;
+        background-size: 45%, 60%;
+
+        @media (max-width: 1024px) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.no-offer-head {
+    div.cover-style3 {
+      @media (max-width: 768px) {
+        height: 143%;
+
+        img {
+          height: 100%;
+          max-height: unset !important;
+        }
+      }
+    }
+  }
+
+  &.contact-us-header {
+    @media (min-width: 1024px) {
+      min-height: 450px;
+    }
+
+    @media (min-width: 1440px) {
+      min-height: 560px;
+    }
+
+    @media (max-width: 375px) {
+      min-height: 260px;
+    }
+
+    div.cover-style3 {
+      @media (max-width: 767px) {
+        height: 143%;
+
+        img {
+          height: 100%;
+          max-height: unset !important;
+        }
+      }
+
+      @media (max-width: 375px) {
+        height: 148%;
+      }
+    }
+  }
+
+  div.cover {
+    &.cover-style1 {
+      img {
+        @media (max-width: 991px) {
+          height: 100%;
+          max-height: unset;
+        }
+      }
+
+      &::after {
+        background:
+          url(../resources/images/img-location-contact-us-rx.png)
+          no-repeat;
+        background-size: cover;
+
+        @media (max-width: 1024px) {
+          background-position: bottom;
+          background-size: contain;
+        }
+
+        @media (max-width: 767px) {
+          background-position: center !important;
+          background-size: cover;
+        }
+      }
+    }
+
+    &.cover-style2 {
+      height: 122%;
+
+      img {
+        max-height: 640px;
+      }
+
+      &::after {
+        @media (min-width: 1025px) {
+          background: url(../resources/images/img-about-us-lx.png) no-repeat;
+          background-position: bottom;
+          background-size: contain;
+        }
+
+        @media (min-width: 1440px) {
+          background-size: cover;
+        }
+      }
+    }
+
+    &.cover-style3 {
+      height: 122%;
+
+      @media (max-width: 375px) {
+        height: 150%;
+      }
+
+      img {
+        @media (max-width: 768px) {
+          max-height: 445px;
+        }
+      }
+
+      &::after {
+        @media (min-width: 1024px) {
+          background:
+            url(../resources/images/img-location-contact-us-lx.png)
+            no-repeat;
+          background-size: cover;
+        }
+
+        @media (max-width: 1024px) {
+          background-position: bottom;
+        }
+
+        @media (max-width: 767px) {
+          background-size: cover;
+        }
+      }
+
+      &.back-sm {
+        &::after {
+          @media (min-width: 768px) {
+            background:
+              url(../resources/images/img-location-contact-us-lx.png)
+              no-repeat;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+
+  &.about-us {
+    div.cover {
+      &.cover-style2 {
+        @media (min-width: 1600px) {
+          height: 116%;
+        }
+
+        img {
+          max-height: 640px;
+
+          @media (min-width: 1440px) {
+            max-height: 640px;
+          }
+
+          @media (min-width: 1600px) {
+            max-height: 1000px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// arabic language
+*[lang="ar"] {
+  *[dir="rtl"] {
+    .hero-heaer-01 {
+      &::after {
+        transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+
+      &.faq-header {
+        &::after {
+        }
+      }
+
+      .cover {
+        img {
+          transform: scaleX(-1);
+          transform: scaleX(-1);
+        }
+
+        &::after {
+          transform: scaleX(-1);
+          transform: scaleX(-1);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1331 @@
+/* stylelint-disable*/
+.hero-image-section div.cover {
+  max-height: toRem(250);
+
+  @media (min-width: 992px) {
+    max-height: inherit;
+  }
+
+  &.medium {
+    div.cover {
+      max-height: toRem(200);
+
+      @media (min-width: 992px) {
+        max-height: toRem(363);
+      }
+    }
+  }
+}
+
+.hero-image-section.hero-video div.cover {
+  max-height: toRem(250);
+}
+
+@media (max-width: 576px) {
+  .hero-image-section div.cover video {
+    width: 100%;
+  }
+}
+
+.hero-image-section {
+  width: 100%;
+
+  .hero-over-title {
+    letter-spacing: 0.215em;
+  }
+
+  .hero-content {
+    font-size: 0.875rem;
+
+    span {
+      display: block;
+      margin: 0 auto;
+      width: 65%;
+    }
+  }
+
+  .hero-upper-title {
+    font-size: 2.25rem;
+    margin-bottom: 0.6875rem;
+
+    @include font-family-Neotech-ge;
+  }
+
+  .hero-swiper-button-next,
+  .hero-swiper-button-prev {
+    background: rgb(255 255 255 / 0%);
+    cursor: pointer;
+    height: 2rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 1rem;
+    z-index: 2;
+
+    svg {
+      height: 2rem;
+      stroke: $black;
+      width: 1rem;
+    }
+  }
+
+  .hero-swiper-button-next {
+    right: 1.25rem;
+  }
+
+  .hero-swiper-button-prev {
+    left: 1.25rem;
+  }
+
+  &.bg-dark {
+    .hero-swiper-button-next,
+    .hero-swiper-button-prev {
+      svg {
+        stroke: $white;
+      }
+    }
+  }
+
+  .swiper-slide {
+    align-items: center;
+    background-color: $white;
+    color: $black;
+
+    /* Center slide text vertically */
+    display: flex;
+    font-size: 1.125rem;
+    justify-content: center;
+    text-align: center;
+
+    > .cover {
+      height: toRem(500);
+      left: 0;
+      overflow: hidden;
+      top: 0;
+      z-index: 1;
+    }
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      > .cover {
+        z-index: 0;
+      }
+    }
+
+    > .container {
+      margin: 0;
+      z-index: 3;
+
+      @include respond-to-max($tablet) {
+        width: 100%;
+      }
+    }
+
+    > .container-fluid {
+      margin: 0;
+      width: 100%;
+    }
+
+    &.bg-dark {
+      color: $white;
+    }
+
+    .section-title {
+      left: 0;
+      letter-spacing: 0.2em;
+      padding-bottom: 1.5rem;
+      padding-top: 0.5rem;
+      position: relative;
+      text-align: center;
+      text-transform: uppercase;
+      top: 0;
+      width: 100%;
+    }
+
+    .price-tag {
+      background-color: rgb(255 128 0 / 80%);
+      padding: 0.5rem 1.8rem 1rem;
+      position: absolute;
+      right: 0;
+      top: 0;
+
+      .detail-info-wrap-pricetag > div {
+        color: $white;
+      }
+    }
+
+    h2 {
+      .heading-bigger {
+        font-size: 2.1875rem;
+        margin-top: 0;
+      }
+    }
+
+    h2:first-child {
+      margin-top: 0;
+    }
+
+    h2:last-child {
+      margin-bottom: 1.625rem;
+    }
+
+    p {
+      position: relative;
+
+      &.hero-content {
+        font-size: 1rem;
+        font-weight: 300;
+        letter-spacing: 0.2rem;
+        position: relative;
+
+        @include font-family-Neotech;
+      }
+    }
+
+    .bg-filter {
+      background-color: transparent;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2;
+    }
+  }
+}
+
+.hero-image-section {
+  &.hero-video {
+    height: 100%;
+  }
+
+  &.hero-links-add {
+    height: toRem(560);
+    margin-bottom: toRem(-50);
+    overflow: hidden !important;
+  }
+
+  .hero-details {
+    height: toRem(186);
+    left: 0;
+    position: absolute;
+    text-align: left;
+    top: toRem(300);
+    width: 100%;
+
+    @include respond-to-max($desktop) {
+      display: block;
+      height: auto;
+      left: auto;
+      position: relative;
+      top: auto;
+      width: inherit;
+    }
+
+    .hero-heading-small {
+      color: $gray1;
+      font-size: 1rem;
+      font-weight: bold;
+      letter-spacing: toRem(1.75);
+      line-height: 1rem;
+      margin: 0;
+      margin-bottom: 0.5rem;
+      text-transform: uppercase;
+
+      @include font-family-Neotech-ge;
+
+      @include respond-to-max($desktop) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .hero-heading-big {
+      color: $black;
+      font-size: 2.1rem;
+      line-height: toRem(28);
+      margin: 0;
+      margin-bottom: 0.5rem;
+
+      @include font-family-Neotech-ge;
+
+      @include respond-to-max($desktop) {
+        font-size: toRem(54);
+        line-height: toRem(64);
+        margin-bottom: 1rem;
+      }
+    }
+
+    .hero-description {
+      color: $black;
+      font-size: toRem(18);
+      line-height: toRem(26);
+
+      @include font-family-Neotech-ge;
+    }
+
+    button.btn,
+    a.btn {
+      max-width: 100%;
+
+      @include respond-to-max($desktop) {
+        min-width: toRem(180);
+        width: auto;
+      }
+    }
+  }
+
+  .bg-dark {
+    .hero-details {
+      .hero-heading-small,
+      .hero-heading-big,
+      .hero-description {
+        color: $white;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: unset !important;
+    top: toRem(256);
+  }
+}
+
+.hero-image-section.swiper-container .hero-swiper-button-next,
+.hero-image-section.swiper-container .hero-swiper-button-prev {
+  align-items: center;
+  background: rgb(0 0 0 / 42%);
+  border-radius: 50%;
+  display: none;
+  height: toRem(48);
+  justify-content: center;
+  right: 2rem;
+  width: toRem(48);
+
+  @include respond-to-max($desktop) {
+    display: flex;
+  }
+
+  svg {
+    height: 1rem;
+    stroke: $white;
+    width: 1rem;
+  }
+
+  .hero-swiper-button-prev {
+    left: 2rem;
+    right: auto;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: $main-green;
+  }
+}
+
+.hero-image-section {
+  height: 100%;
+  min-height: toRem(200);
+  position: relative;
+  z-index: 8;
+
+  &.medium {
+    height: 100%;
+    min-height: toRem(200);
+    position: relative;
+    z-index: 8;
+
+    @include respond-to-max($desktop) {
+      height: toRem(363);
+      min-height: toRem(363);
+    }
+
+    div.cover {
+      max-height: toRem(200);
+
+      @include respond-to-max($desktop) {
+        max-height: toRem(363);
+      }
+    }
+
+    .swiper-slide > .cover {
+      height: 100%;
+
+      @include respond-to-max($desktop) {
+        height: toRem(363);
+      }
+    }
+
+    @include respond-to-max($desktop) {
+      .hero-images-call-to-action-section {
+        top: toRem(50);
+      }
+
+      .hero-details + .hero-images-call-to-action-section {
+        top: toRem(120);
+      }
+    }
+
+    .hero-details {
+      @include respond-to-max($desktop) {
+        height: 100%;
+        margin-top: toRem(200);
+        position: relative;
+        top: 0;
+
+        .hero-heading-big {
+          margin-top: toRem(24);
+        }
+      }
+    }
+
+    .swiper-slide {
+      width: 100%;
+
+      .hero-heading-big {
+        @include respond-to-max($desktop) {
+          color: $black;
+          font-size: toRem(22);
+        }
+      }
+
+      .hero-description {
+        @include respond-to-max($desktop) {
+          color: $grey1;
+          font-size: toRem(14);
+        }
+      }
+    }
+
+    &.hr-landing-section {
+      &.destryeMe {
+        @include respond-to-max($desktop) {
+          .swiper-pagination {
+            display: none;
+          }
+
+          .hero-details {
+            margin-top: toRem(250);
+          }
+        }
+      }
+
+      .hrblock {
+        .hr-upload-docs-box {
+          display: none !important;
+        }
+      }
+
+      @include respond-to-max($desktop) {
+        .hero-details {
+          display: block !important;
+
+          .hr-upload-docs-box {
+            iframe {
+              display: none;
+            }
+
+            .upload-docs-btn {
+              margin-top: 3rem;
+            }
+          }
+        }
+      }
+
+      @include respond-to-max($desktop) {
+        .hero-details {
+          align-items: center;
+          display: flex;
+
+          .hr-upload-docs-box {
+            background: $white;
+            border-radius: toRem(8);
+            box-shadow: 0 toRem(5) toRem(10) 0 rgb(0 0 0 / 10%);
+            float: right;
+            height: toRem(452);
+            overflow: hidden;
+            width: toRem(282);
+
+            iframe {
+              border: 0;
+              height: 100%;
+              width: 100%;
+            }
+
+            .upload-docs-btn {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .wst-overlay-wrapper {
+        h3 {
+          @include respond-to-max($desktop) {
+            font-size: 1rem;
+          }
+        }
+
+        .close {
+          background-image: none;
+        }
+
+        .wst-overlay-head {
+          @include respond-to-max($desktop) {
+            margin-bottom: 1.5rem;
+            padding: toRem(27) 0;
+          }
+        }
+
+        .wst-overlay-body {
+          iframe {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  &.hero-video {
+    height: 100%;
+
+    @media (max-width: 991px) {
+      height: auto;
+    }
+
+    .swiper-wrapper {
+      @media (max-width: 991px) {
+        height: auto;
+      }
+    }
+
+    @include respond-to-max($desktop) {
+      height: toRem(500);
+      min-height: toRem(500);
+    }
+
+    div.cover {
+      max-height: toRem(250);
+
+      @include respond-to-max($desktop) {
+        max-height: toRem(500);
+      }
+    }
+
+    @include respond-to-max($desktop) {
+      .hero-details {
+        height: 100%;
+        margin-top: toRem(290);
+        position: relative;
+        top: 0;
+      }
+    }
+
+    .swiper-pagination {
+      bottom: auto !important;
+      top: toRem(256);
+    }
+
+    .swiper-slide {
+      .hero-heading-big {
+        font-size: toRem(26);
+        line-height: toRem(33);
+
+        @include respond-to-max($desktop) {
+          font-size: toRem(54);
+          line-height: toRem(64);
+        }
+      }
+
+      .hero-description {
+        color: $gray1;
+        margin-bottom: 0;
+
+        @include respond-to-max($desktop) {
+          color: $black;
+          font-size: toRem(14);
+          line-height: toRem(22);
+        }
+
+        & ~ .btn,
+        & ~ .wst-price-tag {
+          margin-bottom: 0;
+          margin-top: 1.5rem;
+        }
+      }
+
+      .hero-details {
+        @include respond-to-max($desktop) {
+          display: none;
+        }
+      }
+    }
+
+    .swiper-slide-active {
+      .hero-details {
+        @include respond-to-max($desktop) {
+          display: block;
+        }
+      }
+    }
+
+    .video-wrapper {
+      margin-bottom: 1rem;
+
+      @include respond-to-max($desktop) {
+        margin-bottom: toRem(10);
+      }
+
+      .play-video {
+        font-size: toRem(14);
+        letter-spacing: toRem(2);
+        line-height: toRem(20);
+        position: relative;
+        text-transform: uppercase;
+
+        svg,
+        img,
+        svg path,
+        svg polygon {
+          height: toRem(18);
+          position: absolute;
+          right: toRem(-32);
+          top: toRem(-2);
+          width: toRem(18);
+
+          @include respond-to-max($desktop) {
+            height: toRem(20);
+            top: toRem(-3);
+            width: toRem(20);
+          }
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .swiper-slide.bg-dark {
+      .video-wrapper {
+        .play-video {
+          @include respond-to-max($desktop) {
+            color: $white;
+
+            svg,
+            svg path,
+            svg polygon {
+              stroke: $white;
+
+              @include rtlBlock() {
+                right: 0 !important;
+              }
+            }
+          }
+
+          @include rtlBlock() {
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+
+    .bg-dark {
+      .hero-details {
+        @include respond-to-max($desktop) {
+          .hero-description {
+            color: $white;
+          }
+
+          .wst-price-tag {
+            .top-part,
+            .price,
+            .tag,
+            .bottom-part {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+
+    .swiper-pagination {
+      & ~ .hero-swiper-button {
+        background: rgb(255 255 255 / 40%);
+
+        svg {
+          stroke: $grey4;
+        }
+
+        &.hero-swiper-button-prev svg {
+          transform: translateY(0) rotate(-180deg);
+        }
+      }
+
+      &.bg-dark {
+        & ~ .hero-swiper-button {
+          background: rgb(0 0 0 / 42%);
+
+          svg {
+            stroke: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero-image-section.medium swiper-slide > .cover {
+  height: 100%;
+}
+
+.hero-image-section.medium .swiper-slide {
+  width: 100%;
+}
+
+.hero-image-section .wst-price-tag {
+  .top-part,
+  .bottom-part {
+    color: $grey1;
+    font-size: toRem(14);
+    line-height: toRem(22);
+
+    @include font-family-Neotech-ge;
+  }
+
+  .main-part {
+    align-items: baseline;
+    display: flex;
+
+    .price {
+      color: $arrow-border-green;
+      font-size: 2rem;
+      line-height: toRem(40);
+      margin-right: toRem(10);
+
+      @include rtlBlock() {
+        margin-right: 0;
+      }
+    }
+
+    .tag {
+      color: $arrow-border-green;
+      font-size: toRem(14);
+      line-height: toRem(17);
+
+      @include font-family-Neotech-ge;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .hero-image-add .hero-images-call-to-action-section {
+    left: unset;
+  }
+}
+
+@media (max-width: 411px) {
+  .business .hero-image-section img.cover {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-image-section {
+    .hero-details {
+      display: block;
+      height: auto;
+      left: auto;
+      position: relative;
+      top: auto;
+      width: inherit;
+
+      .hero-heading-small {
+        margin-bottom: 1rem;
+      }
+
+      .hero-heading-big {
+        font-size: toRem(54);
+        line-height: toRem(64);
+        margin-bottom: 1rem;
+      }
+
+      a.btn,
+      button.btn {
+        min-width: toRem(180);
+        width: auto;
+      }
+    }
+
+    &.swiper-container {
+      .hero-swiper-button-next,
+      .hero-swiper-button-prev {
+        display: flex;
+      }
+    }
+
+    .hero-details .c-center {
+      text-align: center;
+
+      .wst-price-tag {
+        .top-part {
+          text-indent: toRem(-80);
+        }
+
+        .main-part {
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+
+    &.medium {
+      height: toRem(363);
+      min-height: toRem(363);
+
+      swiper-slide > .cover {
+        height: toRem(363);
+      }
+
+      .hero-images-call-to-action-section {
+        top: toRem(50);
+      }
+
+      .hero-details + .hero-images-call-to-action-section {
+        top: toRem(120);
+      }
+    }
+
+    &.hero-video {
+      height: toRem(500);
+      min-height: toRem(500);
+
+      .swiper-slide .hero-heading-big {
+        font-size: toRem(54);
+        line-height: toRem(64);
+      }
+
+      .swiper-slide.bg-dark .video-wrapper .play-video {
+        color: $white;
+
+        svg,
+        svg path,
+        svg polygon {
+          stroke: $white;
+        }
+      }
+
+      .hero-description {
+        color: $almost-black;
+        font-size: toRem(14);
+        line-height: toRem(22);
+      }
+
+      .video-wrapper {
+        margin-bottom: toRem(10);
+      }
+
+      img,
+      svg,
+      svg path,
+      svg polygon {
+        height: toRem(20);
+        top: toRem(-3);
+        width: toRem(20);
+      }
+
+      .bg-dark .hero-details {
+        .hero-description,
+        .wst-price-tag .bottom-part,
+        .price,
+        .tag,
+        .top-part {
+          color: $white;
+        }
+      }
+    }
+  }
+
+  [lang="ar"] [dir="rtl"] {
+    .hero-image-section {
+      .wst-price-tag .main-part .price {
+        margin-right: 0;
+      }
+
+      .hero-details .c-center .wst-price-tag .top-part {
+        text-indent: toRem(-62);
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-image-section {
+    &.medium {
+      .hero-details {
+        height: 100%;
+        margin-top: toRem(200);
+        position: relative;
+        top: 0;
+
+        .hero-heading-big {
+          margin-top: toRem(24);
+        }
+      }
+
+      .swiper-slide {
+        .hero-heading-big {
+          color: $almost-black;
+          font-size: toRem(22);
+        }
+
+        .hero-description {
+          color: $grey1;
+          font-size: toRem(14);
+        }
+      }
+    }
+
+    &.hero-image-add {
+      min-height: toRem(412);
+    }
+
+    &.hero-video,
+    &.hero-video .swiper-wrapper {
+      height: auto;
+    }
+
+    &.hero-video {
+      .hero-details {
+        height: 100%;
+        margin-top: toRem(290);
+        position: relative;
+        top: 0;
+      }
+
+      .swiper-slide .hero-details {
+        display: none;
+      }
+
+      .swiper-slide-active .hero-details {
+        display: block;
+      }
+    }
+
+    .bg-dark .hero-details .hero-heading-big,
+    .bg-dark .hero-details .hero-heading-small {
+      color: $blue2;
+    }
+
+    .bg-dark .hero-details .hero-description {
+      color: $gray1;
+    }
+
+    &.hero-image-add ~ .config-section-wrap {
+      margin-top: toRem(70);
+
+      ~ .config-section-wrap {
+        margin-top: 0;
+      }
+
+      &.add-links {
+        margin-top: toRem(-168);
+      }
+    }
+  }
+}
+
+@media (-ms-high-contrast: none), screen and (-ms-high-contrast: active) {
+  .hero-image-section .swiper-slide > .cover {
+    z-index: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image-section .swiper-slide > .container {
+    width: 100%;
+  }
+}
+
+.hero-images-call-to-action-section {
+  display: none;
+  padding: 0 toRem(12);
+  text-align: left;
+  width: 100%;
+
+  .call-to-action-box {
+    background-color: $arrow-border-green;
+    border-radius: toRem(5);
+    border-radius: toRem(5);
+    border-radius: toRem(5);
+    height: toRem(146);
+    padding: 1.3rem;
+    position: relative;
+
+    @include respond-to-min($desktop) {
+      height: toRem(160);
+      max-width: toRem(384);
+    }
+
+    .heading {
+      color: $white;
+      font-size: 1.25rem;
+      letter-spacing: 0;
+      margin: 0;
+      margin-bottom: toRem(12);
+    }
+
+    .description {
+      color: #afcd74;
+      font-family: "Lato", Roboto, "GE SS Two", Arial, sans-serif;
+      font-size: toRem(14);
+      line-height: toRem(18);
+      margin-bottom: 1rem;
+    }
+
+    .btn-text {
+      bottom: 1.1rem;
+      color: $white;
+
+      // font-size: 12px;
+      position: absolute;
+
+      &::before {
+        border: solid $white;
+        border-width: 0 toRem(1) toRem(1) 0;
+        padding: toRem(3);
+      }
+    }
+  }
+
+  @include rtlBlock() {
+    text-align: right;
+  }
+}
+
+[lang="ar"] [dir="rtl"] .hero-images-call-to-action-section .btn-text {
+  right: 2.5rem;
+}
+
+.hero-image-add .swiper-slide .hero-images-call-to-action-section {
+  display: block;
+}
+
+.hero-image-add .hero-details {
+  top: toRem(360);
+}
+
+.hero-image-add.dynamic-content {
+  .swiper-slide {
+    display: block;
+
+    .cover + .container {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      margin: 0 auto;
+
+      .hero-details {
+        z-index: 9999;
+      }
+
+      .row {
+        width: 100%;
+      }
+    }
+  }
+
+  .hero-details + .hero-images-call-to-action-section {
+    top: toRem(230);
+  }
+}
+
+//below code is only if there is a img-box with action links on hero image
+.hero-image-add {
+  .hero-images-call-to-action-section {
+    display: block;
+    left: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: toRem(170);
+    z-index: 9;
+
+    @media (min-width: $phone) {
+      left: unset;
+    }
+
+    @media (min-width: $tablet) {
+      top: toRem(190);
+    }
+
+    .call-to-action-box {
+      @media (min-width: $tablet) {
+        float: right;
+        min-width: toRem(384);
+      }
+
+      @include rtlBlock() {
+        float: left;
+      }
+    }
+  }
+
+  .swiper-slide {
+    .hero-images-call-to-action-section {
+      display: block;
+    }
+
+    .cover + div {
+      @media (min-width: $tablet) {
+        position: relative;
+      }
+    }
+  }
+
+  .hero-details {
+    top: toRem(360);
+
+    @media (min-width: $tablet) {
+      top: auto;
+    }
+  }
+
+  &.dynamic-content {
+    .swiper-slide {
+      display: block;
+
+      .cover + .container {
+        align-items: center;
+        display: flex;
+        height: 100%;
+        margin: 0 auto;
+
+        .hero-details {
+          z-index: 9999;
+        }
+
+        .row {
+          width: 100%;
+        }
+      }
+    }
+
+    .hero-details + .hero-images-call-to-action-section {
+      top: toRem(230);
+    }
+  }
+}
+
+//
+
+.hero-image-add {
+  &.has-action {
+    .bg-dark {
+      .hero-details {
+        .hero-heading-big,
+        .hero-description {
+          color: $white !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .swiper-container {
+    .swiper-slide {
+      h2:last-child {
+        margin-bottom: 3rem;
+      }
+
+      a.btn {
+        margin-bottom: 3.5rem;
+        margin-top: 1.875rem;
+
+        &.btn-promo {
+          bottom: 0;
+        }
+      }
+
+      h2 {
+        font-size: 3.4375rem;
+        font-weight: 300;
+
+        @include font-family-Neotech-ge;
+      }
+
+      & h2.promo-heading {
+        font-size: 3.2rem;
+        margin-top: 7rem;
+      }
+    }
+  }
+
+  .swiper-container .hero-content {
+    font-size: 1rem;
+  }
+
+  .swiper-container .hero-upper-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .swiper-container .hero-swiper-button-next,
+  .swiper-container .hero-swiper-button-next svg,
+  .swiper-container .hero-swiper-button-prev,
+  .swiper-container .hero-swiper-button-prev svg {
+    height: 4.25rem;
+    width: 2.1875rem;
+  }
+
+  .swiper-container .hero-swiper-button-next {
+    right: 2.25rem;
+  }
+
+  .swiper-container .hero-swiper-button-prev {
+    left: 2.25rem;
+  }
+}
+
+.swiper-container {
+  .swiper-slide {
+    h2 {
+      font-size: 3.4375rem;
+      font-weight: 300;
+
+      @include font-family-Neotech-ge;
+
+      &.promo-heading {
+        font-size: 3.2rem;
+        margin-top: 3rem;
+      }
+
+      .arabicTitle {
+        display: inline-block;
+        font-size: 2.6rem;
+        letter-spacing: 0 !important;
+        margin-bottom: toRem(20);
+      }
+    }
+
+    h2:last-child {
+      margin-bottom: 5.8rem;
+    }
+
+    .section-title {
+      padding-top: 0;
+      position: absolute;
+      top: 3.125rem;
+    }
+
+    .price-tag {
+      padding: 1rem 2rem 1.5rem;
+    }
+
+    a.btn {
+      margin-bottom: 0;
+      margin-top: 1.875rem;
+
+      &.btn-promo {
+        bottom: -6rem;
+        font-size: 1rem;
+        height: 5rem;
+        line-height: 1.6rem;
+        padding: 1rem;
+
+        @include font-family-Neotech-ge;
+      }
+    }
+  }
+
+  .hero-content {
+    font-size: 1rem;
+  }
+
+  .hero-upper-title {
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero-swiper-button-next,
+  .hero-swiper-button-prev {
+    height: 4.25rem;
+    width: 2.1875rem;
+
+    svg {
+      height: 4.25rem;
+      width: 2.1875rem;
+    }
+  }
+
+  .hero-swiper-button-next {
+    right: 2.25rem;
+  }
+
+  .hero-swiper-button-prev {
+    left: 2.25rem;
+  }
+}
+
+@media (min-width: 1248px) {
+  .swiper-container .swiper-slide h2 {
+    font-size: 5rem;
+  }
+
+  .swiper-container .swiper-slide h2:last-child {
+    margin-bottom: 5rem;
+  }
+
+  .swiper-container .hero-content {
+    font-size: 1.25rem;
+  }
+
+  .swiper-container .hero-upper-title {
+    font-size: 2.25rem;
+  }
+
+  .swiper-container .hero-swiper-button-next,
+  .swiper-container .hero-swiper-button-next svg,
+  .swiper-container .hero-swiper-button-prev,
+  .swiper-container .hero-swiper-button-prev svg {
+    height: 5.625rem;
+    width: 2.875rem;
+  }
+
+  .swiper-container .hero-swiper-button-next {
+    right: 4.625rem;
+  }
+
+  .swiper-container .hero-swiper-button-prev {
+    left: 4.625rem;
+  }
+
+  [lang="ar"] [dir="rtl"] .swiper-container .swiper-slide h2 {
+    font-size: 5.625rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-container {
+    .swiper-slide {
+      .price-tag {
+        margin-right: 0;
+
+        @include rtlBlock() {
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+
+    .hero-upper-title {
+      font-size: 1.25rem;
+    }
+
+    .hero-swiper-button-next,
+    .hero-swiper-button-prev {
+      svg {
+        stroke-width: 0.25rem;
+      }
+    }
+  }
+}

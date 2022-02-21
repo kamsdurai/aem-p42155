@@ -1,0 +1,331 @@
+@mixin box-shadow {
+  background: $white;
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+}
+
+@mixin media-box-shadow {
+  background: $white;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+}
+
+@mixin arrow-after-link {
+  border: solid $arrow-border-green;
+  border-width: 0 1px 1px 0;
+  content: "";
+  display: inline-block;
+  height: 0.45em;
+  position: absolute;
+  right: 0;
+  top: 1em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+
+@mixin font-family-lato {
+  font-family: Lato, "GE SS Two", Roboto, Arial, sans-serif;
+}
+
+@mixin font-family-lato-withoutge {
+  font-family: Lato, Roboto, Arial, sans-serif;
+}
+
+@mixin font-family-Neotech {
+  font-family: Neotech-medium, "GE SS Two", Roboto, Arial, sans-serif;
+}
+
+@mixin font-family-Neotech-ge {
+  font-family: Neotech-medium, "GE SS Two", Arial, sans-serif;
+}
+
+@mixin font-family-Neotech-roboto {
+  font-family: Neotech, Roboto, Arial, sans-serif;
+}
+
+@mixin font-family-Bariol {
+  font-family: Bariol, "GE SS Two", Arial, sans-serif;
+}
+
+// *Break Points
+
+@media (max-width: 480px) {
+  // 320px — 480px: Mobile devices
+}
+
+$screen-sm-max: 480px;
+
+@media (max-width: 768) {
+  // 481px — 768px: iPads, Tablets
+}
+
+$screen-md-max: 768px;
+
+@media (max-width: 1024px) {
+  // 769px — 1024px: Small screens, laptops
+}
+
+$screen-lg-max: 992px;
+
+@media (max-width: 1200px) {
+  // 1025px — 1200px: Desktops, large screens
+}
+
+$screen-xl-max: 1200px;
+
+@media (max-width: 1201px) {
+  // 1201px and more —  Extra large screens, TV
+}
+
+$screen-xxl-max: 1201px;
+
+// 320px — 480px: Mobile devices
+@mixin sm {
+  @media (max-width: #{$screen-sm-max}) {
+    @content;
+  }
+}
+
+// 481px — 768px: iPads, Tablets
+@mixin md {
+  @media (max-width: #{$screen-md-max}) {
+    @content;
+  }
+}
+
+// 769px — 1024px: Small screens, laptops
+@mixin lg {
+  @media (max-width: #{$screen-lg-max}) {
+    @content;
+  }
+}
+
+// 1201px and more —  Extra large screens, TV
+@mixin xl {
+  @media (max-width: #{$screen-xl-max}) {
+    @content;
+  }
+}
+
+@mixin xxl {
+  @media (max-width: #{$screen-xxl-max}) {
+    @content;
+  }
+}
+
+// common property for image
+@mixin context-nav-img {
+  background-repeat: no-repeat;
+  display: block;
+  height: 4rem;
+  margin: auto;
+  margin-top: 15px;
+  width: 4rem;
+}
+
+@mixin link-arrow {
+  border: solid $arrow-border;
+  border-width: 0 1px 1px 0;
+  content: "";
+  display: inline-block;
+  height: 0.45em;
+  left: 9rem;
+  position: relative;
+  top: 0.6em;
+  transform: rotate(-45deg);
+  vertical-align: top;
+  width: 0.45em;
+}
+
+@mixin font-family-Helvetica {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+// common css for btn
+
+@mixin primary-btn {
+  background-color: $white;
+  border-color: $darkest-night;
+  border-radius: 4px;
+  border-width: 1px;
+  color: $almost-black;
+  cursor: pointer;
+  font-size: $font14;
+  font-weight: 700;
+  line-height: 3rem;
+  outline: 0;
+  padding: 0 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  width: auto;
+
+  @include font-family-lato;
+}
+
+@mixin secondary-button {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: $font14;
+  font-weight: 700;
+  letter-spacing: toRem(2);
+  line-height: 3rem;
+  outline: 0;
+  padding: 0 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  width: auto;
+
+  @include font-family-lato;
+}
+
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// media query
+@mixin respond-to-max($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin respond-to-min-max($width-max, $width-min) {
+  @media screen and (max-width: $width-max) and (min-width: $width-min) {
+    @content;
+  }
+}
+
+@mixin respond-to-min($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+}
+
+// Clearfix
+
+@mixin clearFix() {
+  &::before,
+  &::after {
+    content: " ";
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+    display: block;
+    height: 1px;
+    margin-top: -1px;
+    visibility: hidden;
+  }
+
+  & {
+    *zoom: 1;
+  }
+}
+
+@mixin push--auto {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+/* @include push--auto() */
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+/* @include pseudo() */
+@mixin input-placeholder {
+  &.placeholder {
+    @content;
+  }
+}
+
+/* @include input-placeholder() */
+
+@mixin align-image($position) {
+  img {
+    object-position: $position;
+  }
+}
+
+/* @include align-image() */
+
+// font size PX into REM
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+
+  @return #{$remSize}rem;
+}
+
+@mixin fontSize($size) {
+  font-size: $size; // Fallback in px
+  font-size: calculateRem($size);
+}
+
+/* h1 { @include fontSize(32px); } */
+
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+
+  @return $remValue;
+}
+
+@mixin background-icon() {
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  content: "";
+  height: 20px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+
+@mixin rtl($property, $ltr-value, $rtl-value) {
+  #{$property}: $ltr-value;
+
+  [dir="rtl"] & {
+    #{$property}: $rtl-value;
+  }
+}
+
+@mixin rtlProp($ltr, $rtl, $value) {
+  [dir="ltr"] & {
+    #{$ltr}: $value;
+  }
+
+  [dir="rtl"] & {
+    #{$rtl}: $value;
+  }
+}
+
+@mixin rtlBlock() {
+  [dir="rtl"] & {
+    @content;
+  }
+}
+
+@mixin img-cover {
+  bottom: -9999px;
+  left: -9999px;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: -9999px;
+  top: -9999px;
+}

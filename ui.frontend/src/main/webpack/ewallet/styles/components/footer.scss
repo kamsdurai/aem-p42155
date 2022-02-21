@@ -1,0 +1,86 @@
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 25px;
+
+  @include respond-to-max($desktop) {
+    padding: 100px 0 45px;
+  }
+
+  ul {
+    display: table;
+
+    li {
+      float: left;
+      font-family: $base-font;
+
+      a {
+        border-left: none;
+        border-right: none;
+        color: $black-grey;
+        font-size: toRem(14);
+        letter-spacing: 0;
+        line-height: 18px;
+        padding: 0 14px;
+
+        @include respond-to-min($phone) {
+          font-size: toRem(16);
+        }
+
+        &:hover {
+          color: $pale-green;
+          text-decoration: underline;
+        }
+      }
+
+      &:last-child {
+        font-size: toRem(20);
+
+        @include respond-to-max($phone) {
+          clear: both;
+          float: none;
+          padding-top: 15px;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .footer-social-icons .cmp-container {
+    clear: both;
+    margin: 30px auto;
+    text-align: center;
+
+    .button {
+      display: inline-block;
+      margin: 0 15px;
+      max-width: 44px;
+
+      a {
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+          text-decoration: none;
+        }
+      }
+
+      .cmp-button__icon--fa {
+        border-radius: 3px;
+        color: $black-grey;
+        display: inline;
+        font: normal normal normal 25px/1 FontAwesome;
+        font-size: 30px;
+        font-weight: 500;
+        height: 30px;
+        line-height: 40px;
+        margin-top: 30px;
+        width: 30px;
+      }
+
+      .cmp-button__text {
+        display: none;
+      }
+    }
+  }
+}

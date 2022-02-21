@@ -1,0 +1,561 @@
+/* -----------------------------------------
+    Styles: Main Text 4-0 update
+  ----------------------------------------- */
+.main-text-4-0 {
+  padding: 16px 0;
+
+  &.has-bg {
+    background-color: $module-bg-color;
+  }
+}
+
+.main-text-grid-4-0 {
+  padding: 16px 0;
+
+  @media screen and (max-width: 767px) {
+    .container {
+      padding-left: 4px;
+      padding-right: 4px;
+    }
+  }
+
+  &.has-bg {
+    background-color: $module-bg-color;
+  }
+
+  .main-text-action-wrapper {
+    margin-bottom: 20px;
+    margin-top: 16px;
+  }
+
+  .grid-wrapper {
+    // display: flex;
+    // flex-direction: row;
+    // flex-wrap: wrap;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(288px, 1fr));
+    justify-content: space-between;
+    row-gap: 32px;
+
+    @media screen and (min-width: 768px) {
+      grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+      row-gap: 32px;
+    }
+
+    @media screen and (min-width: 992px) {
+      grid-template-columns: repeat(auto-fill, minmax(383px, 1fr));
+      row-gap: 32px;
+    }
+
+    .grid-tile {
+      display: flex;
+      flex-direction: column;
+
+      &:nth-child(1n + 4) {
+        @media screen and (max-width: 767px) {
+          display: none;
+        }
+      }
+
+      .persondetails {
+        display: flex;
+        flex-direction: column;
+
+        @include respond-to-min($tablet) {
+          height: 100%;
+        }
+      }
+
+      .person-details {
+        align-items: center;
+        display: flex;
+        margin-bottom: 16px;
+
+        .icon {
+          height: 46px;
+          margin-right: 14px;
+          width: 46px;
+
+          @media screen and (min-width: 992px) {
+            margin-right: 16px;
+          }
+
+          img,
+          svg {
+            height: 46px;
+            width: 46px;
+          }
+        }
+
+        .person {
+          .name {
+            color: $almost-black;
+            font-size: 20px;
+            letter-spacing: normal;
+            line-height: 1.4;
+            margin: 0;
+            margin-bottom: 4px;
+
+            @media screen and (min-width: 992px) {
+              font-size: 24px;
+              line-height: 1.33;
+            }
+          }
+
+          .designation {
+            color: $almost-black;
+            font-size: 12px;
+            line-height: 1.33;
+            margin: 0;
+
+            @include font-family-lato;
+
+            @media screen and (min-width: 992px) {
+              font-size: 14px;
+              line-height: 1.43;
+            }
+          }
+        }
+      }
+
+      .description {
+        flex: 1 1 auto;
+        margin-bottom: 16px;
+
+        @media screen and (min-width: 992px) {
+          margin-bottom: 24px;
+        }
+
+        p {
+          color: $gray-text-color;
+          font-size: 14px;
+          line-height: 1.43;
+          margin: 0;
+
+          @include font-family-lato;
+
+          @media screen and (min-width: 992px) {
+            font-size: 16px;
+            line-height: 1.5;
+          }
+        }
+      }
+
+      .action {
+        font-size: 14px;
+        height: 20px;
+
+        .link {
+          font-size: 12px;
+          letter-spacing: 2px;
+          list-style: 1.33;
+          padding-right: 8px;
+          position: relative;
+          text-transform: uppercase;
+
+          @media screen and (min-width: 992px) {
+            font-size: 14px;
+            line-height: 1.43;
+            padding-right: 12px;
+          }
+
+          &:hover {
+            color: $main-green;
+            text-decoration: underline;
+          }
+
+          &::before {
+            border: solid $main-green;
+            border-width: 0 1px 1px 0;
+            content: "";
+            line-height: 1;
+            padding: 2.6px;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(-45deg);
+            transition: all 0.3s ease-in-out;
+
+            @media screen and (min-width: 992px) {
+              padding: 3.25px;
+            }
+          }
+        }
+
+        a {
+          @media screen and (min-width: 992px) {
+            min-width: 180px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-text-4-0 {
+  &.main-text-section-two-col {
+    .two-cols {
+      display: flex;
+      flex-direction: column;
+
+      @media screen and (min-width: 768px) {
+        //margin-top: 1.5rem;
+        flex-direction: row;
+      }
+
+      .main-text-section {
+        display: flex;
+        flex-direction: column;
+
+        .main-text-content-wrapper {
+          flex: 1 1 auto;
+        }
+      }
+    }
+
+    .main-text-section {
+      margin-top: 1.5rem;
+
+      @media screen and (min-width: 768px) {
+        margin-right: 24px;
+        margin-top: 0;
+        width: 50%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .wst-main-headings {
+        margin-bottom: 12px;
+
+        @media screen and (min-width: 992px) {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}
+
+/* -----------------------------------------
+  main-text-slider - 4 - 0
+  ----------------------------------------- */
+.main-text-slider-4-0 {
+  overflow: hidden;
+  position: relative;
+
+  @media screen and (max-width: 767px) {
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .slides-wrapper .swiper-slide:nth-child(1n + 4) {
+      display: none;
+    }
+  }
+
+  &.has-bg {
+    background-color: $module-bg-color;
+    padding: 16px 0;
+  }
+
+  &.three-only {
+    .prev,
+    .next,
+    .scrollbar,
+    .load-more {
+      display: none;
+    }
+  }
+
+  .container {
+    position: relative;
+  }
+
+  .main-text-action-wrapper.load-more {
+    margin-top: 36px;
+  }
+
+  .wst-main-headings {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h7,
+    .h8 {
+      margin-bottom: 12px;
+
+      @media (min-width: 992px) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .paragraph-styling p,
+  .paragraph-styling ol,
+  ul {
+    margin-bottom: 16px;
+
+    @media (min-width: 992px) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .third-action-wrapper {
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+
+    .btn {
+      margin: 0 !important;
+    }
+  }
+
+  .slides-wrapper {
+    @media screen and (max-width: 991px) {
+      display: grid;
+      grid-gap: 36px 32px;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    }
+
+    .paragraph-styling {
+      flex: 1 1 auto;
+    }
+
+    .swiper-slide {
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: flex-start;
+
+      @media (min-width: 992px) {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+    }
+  }
+
+  .prev,
+  .next {
+    display: none;
+
+    @media (min-width: 1248px) {
+      display: block;
+      height: 48px;
+      position: absolute;
+      top: 42%;
+      width: 48px;
+      z-index: 9;
+
+      svg,
+      img {
+        height: 48px;
+        width: 48px;
+      }
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.swiper-button-disabled {
+      &:hover {
+        cursor: auto;
+        opacity: 0.5;
+      }
+    }
+  }
+
+  .next {
+    right: -60px;
+  }
+
+  .prev {
+    left: -60px;
+  }
+
+  .scrollbar {
+    bottom: 0;
+    height: 4px;
+    margin-bottom: 0;
+    margin-top: 36px;
+    position: relative;
+    z-index: 99999;
+
+    @media (max-width: 991px) {
+      display: none;
+    }
+
+    @media (min-width: 1248px) {
+      display: none;
+    }
+
+    .swiper-scrollbar-drag {
+      background: #719e19;
+    }
+  }
+
+  &.left-align {
+    .slides-wrapper {
+      .swiper-slide {
+        align-items: flex-start;
+        text-align: left;
+      }
+    }
+  }
+}
+
+// arabic language
+*[lang="ar"] {
+  *[dir="rtl"] {
+    .main-text-grid-4-0 .grid-wrapper .grid-tile .person-details .icon {
+      margin-left: 14px;
+      margin-right: 0;
+
+      @media (max-width: 767px) {
+        margin-left: 16px;
+        margin-right: 0;
+      }
+    }
+
+    .main-text-grid-4-0 .grid-wrapper .grid-tile .action .link {
+      padding-left: 20px;
+      padding-right: 0;
+      @include font-family-lato;
+
+      &::before {
+        left: 0;
+        right: auto;
+        transform: translateY(-50%) rotate(135deg);
+      }
+    }
+
+    .main-text-slider-4-0 .next {
+      left: -60px;
+      right: auto;
+      transform: rotate(180deg);
+    }
+
+    .main-text-slider-4-0 .prev {
+      left: auto;
+      right: -60px;
+      transform: rotate(180deg);
+    }
+
+    .main-text-slider-4-0.left-align {
+      .slides-wrapper {
+        .swiper-slide {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+// *************************************
+// accessibility Blue and Black
+// *************************************
+
+.acc-black,
+.acc-blue {
+  a,
+  a.link {
+    color: $white;
+    &:hover {
+      color: $white !important;
+    }
+  }
+
+  .main-text-grid-4-0 .grid-wrapper,
+  .grid-tile {
+    .person-details .person {
+      .name {
+        color: $white;
+      }
+
+      .designation {
+        color: $white;
+      }
+    }
+
+    .description {
+      p {
+        color: $white;
+      }
+    }
+
+    .action {
+      .link {
+        color: $white;
+
+        &::before,
+        &::after {
+          border-color: $white !important;
+        }
+      }
+    }
+    .persondetails {
+      background: $black;
+    }
+  }
+}
+.acc-blue {
+  .grid-tile {
+    .persondetails {
+      background: $blue4 !important;
+    }
+  }
+}
+// *************************************
+// accessibility Yellow
+// *************************************
+
+.acc-yellow {
+  a,
+  a.link {
+    color: $yellow-light;
+    &:hover {
+      color: $yellow-light !important;
+    }
+  }
+
+  .main-text-grid-4-0 .grid-wrapper,
+  .grid-tile {
+    .person-details .person {
+      .name {
+        color: $yellow-light;
+      }
+
+      .designation {
+        color: $yellow-light;
+      }
+    }
+
+    .description {
+      p {
+        color: $yellow-light;
+      }
+    }
+
+    .action {
+      .link {
+        color: $yellow-light;
+
+        &::before,
+        &::after {
+          border-color: $yellow-light !important;
+        }
+      }
+    }
+    .persondetails {
+      background: $black;
+    }
+  }
+}

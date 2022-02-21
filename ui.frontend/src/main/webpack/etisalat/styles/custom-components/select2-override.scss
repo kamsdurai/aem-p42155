@@ -1,0 +1,110 @@
+.cmp-form-options {
+  .select2-container {
+    &--default {
+      background: transparent;
+      border: $border-step-0;
+
+      .select2-selection--single {
+        border: 0;
+        border-radius: $border-radius-step-0;
+      }
+
+      .select2-search--dropdown .select2-search__field {
+        border-width: 0 0 1px;
+
+        &:focus {
+          border-color: $main-green;
+        }
+      }
+    }
+
+    &--focus {
+      outline: 0;
+    }
+
+    &--open {
+      .select2-dropdown {
+        box-shadow: 0 0.0625rem 0.25rem 0 rgba(1, 1, 1, 0.3);
+      }
+    }
+  }
+
+  .select2-selection {
+    border: $border-step-0;
+    border-radius: $border-radius-step-0;
+    height: toRem(40);
+    outline: 0;
+
+    &__rendered {
+      color: $almost-black;
+      font-size: $font14;
+      line-height: toRem(52) !important;
+      padding-left: $padding-step-0 !important;
+      padding-right: $padding-step-0 !important;
+
+      @include font-family-lato;
+      @include rtl(text-align, left, right);
+
+      @include respond-to-min($desktop-min) {
+        font-size: $font20;
+      }
+    }
+
+    &__arrow {
+      b {
+        display: none;
+      }
+    }
+
+    &--single {
+      background-color: transparent;
+    }
+  }
+}
+
+.select2-dropdown {
+  background-color: $white;
+  border: $border-step-0;
+  border-radius: $border-radius-step-0;
+  box-shadow: 0 0.0625rem 0.25rem 0 rgba(1, 1, 1, 0.3);
+  margin-left: $margin-step-0;
+
+  .select2-results {
+    ul {
+      padding: $padding-step-0 $padding-step-2;
+
+      li {
+        background-position: 100%;
+        border-bottom: $border-step-1 solid $sand-white;
+        font-size: $font16;
+        letter-spacing: 0;
+        line-height: toRem(44.8);
+        padding: $padding-step-0;
+        text-decoration: none;
+
+        @include font-family-lato;
+
+        &:hover,
+        &.select2-results__option--highlighted {
+          background-color: transparent;
+          color: $main-green !important;
+        }
+      }
+    }
+  }
+}
+
+.select2-search--dropdown .select2-search__field {
+  border-width: 0 0 1px !important;
+  min-height: toRem(40);
+  outline: 0;
+
+  &:focus {
+    border-color: $main-green;
+  }
+}
+
+// to remove background
+.select2-container--default .select2-results__option--selected {
+  background-color: transparent;
+}

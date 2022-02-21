@@ -1,0 +1,3728 @@
+
+
+.acc-yellow {
+
+  $acc-yellow: yellow; // for yellow theme
+
+  $acc-background: #000000;
+  $acc-forground: $acc-yellow;
+
+
+  color: $acc-forground;
+  background-color: $acc-background;
+
+
+  // *************************************
+  // top nav
+  // *************************************
+  .top-nav {
+    background-color: $acc-background;
+    border-bottom: 1px solid;
+    border-color: $acc-forground;
+    a {
+      color: $acc-forground;
+    }
+    .active > a,
+    .active > a:focus,
+    .active > a:hover,
+    a:focus,
+    a:hover {
+      color: $acc-forground;
+    }
+    span.badge-top {
+      background-color: $acc-forground;
+      color: $acc-background;
+    }
+  }
+
+  .top-nav-section {
+    .top-nav-left {
+      .links {
+        .active > a,
+        .active > a:hover,
+        a:hover {
+          color: $acc-forground;
+          border-bottom: 2px solid;
+          border-color: $acc-forground;
+        }
+      }
+    }
+    .links li a svg {
+      stroke: $acc-forground;
+      circle,
+      path,
+      polygon,
+      polyline,
+      g {
+        stroke: $acc-forground;
+      }
+    }
+  }
+
+  .user-loged-in {
+    .logedin-user > a:after {
+      border: solid;
+      border-color: $acc-forground;
+      border-width: 0 1px 1px 0;
+    }
+  }
+
+  .top-nav-section .top-nav-right .links .language-switch-content + svg {
+    g {
+      fill: $acc-forground;
+    }
+  }
+
+  // *************************************
+  // main menu
+  // *************************************
+  .main-menu-desktop {
+    .navbar-default {
+      background-color: $acc-background;
+      border-bottom: 1px solid;
+      border-color: $acc-forground;
+      .navbar-links {
+        .nav.navbar-nav > li > a {
+          color: $acc-forground;
+        }
+        .nav.navbar-nav > li.active > a {
+          color: $acc-forground;
+        }
+      }
+      .user-loged-in {
+        ul.navbar-right > li > a {
+          color: $acc-forground;
+        }
+      }
+    }
+
+  }
+
+  .sub-account-menu-wrap {
+    .sub-account-menu {
+      border: 1px solid;
+      border-color: $acc-forground;
+      background: $acc-background;
+      border-top: 3px solid;
+      li a {
+        color: $acc-forground;
+      }
+      li.active a,
+      a:focus,
+      a:hover {
+        color: $acc-forground;
+      }
+    }
+  }
+
+  .account-link.logedin-user:hover > a {
+    color: $acc-forground !important;
+  }
+
+  .hamburger .line {
+    background-color: $acc-forground !important;
+  }
+  .main-menu-mobile {
+    .panel-group .panel-heading {
+      background-color: $acc-background;
+      .panel-title {
+        .arrow_accordion:after {
+          border-color: $acc-forground;
+        }
+        a {
+          color: $acc-forground;
+          &.active {
+            color: $acc-forground;
+          }
+        }
+      }
+    }
+    .menu-account {
+      background-color: $acc-background;
+      .menu-account-link {
+        color: $acc-forground;
+      }
+    }
+    .badge-top {
+      background-color: $acc-forground;
+      color: $acc-background;
+    }
+    .panel-group.panel-footer-wraper .panel-languange a {
+      color: $acc-forground;
+    }
+    .panel-group.panel-footer-wraper .panel-collapse a,
+    .panel-group.panel-footer-wraper .panel-default a {
+      color: $acc-forground !important;
+    }
+    .panel-group .panel-collapse .panel-body {
+      background-color: $acc-background;
+      .item_sub-menu {
+        color: $acc-forground;
+      }
+    }
+  }
+
+
+
+
+
+
+
+  .main-menu-mobile .panel-group.panel-footer-wraper {
+    background-color: $acc-background;
+    border-top: 1px solid $acc-forground;
+    border-bottom: 1px solid $acc-forground;
+  }
+  .main-menu-mobile .panel-group.panel-footer-wraper .panel .panel-heading {
+    background-color: $acc-background !important;
+  }
+
+  // *************************************
+  // mega menu
+  // *************************************
+  .main-mega-menu-desktop{
+    .mega-menu-navbar-default{
+      background-color: $acc-background;
+      .navbar-items {
+        .nav.navbar-nav{
+            >li>a{
+              color: $acc-forground;
+            }
+            >li:hover{
+              &:after {
+                  border-bottom: 3px solid $acc-forground;
+              }
+              >a {
+                  color: $acc-forground !important;
+              }
+            }
+            >li.icon-link:before {
+              border: toRem(1) solid $acc-yellow;
+            }
+        }
+      }
+      .nav>li>a:focus, .nav>li>a:hover {
+          background-color: $acc-background;
+      }
+      .sub-menu-wrap{
+        &.mega-dropdown{
+            background: $acc-background;
+            border: solid 1px $acc-forground;
+            border-top: 0;
+        }
+        .sub-menu{
+           li{
+             &.sub-menu-heading{
+               color: $acc-forground;
+             }
+             a, p{
+               color: $acc-forground;
+             }
+
+           }
+        }
+        .menu-items-footer {
+          .sub-menu {
+            border-top: 1px solid $acc-forground;
+            li {
+              a{
+                color: $acc-forground;
+              }
+            }
+          }
+        }
+        .form{
+          &.wst-form {
+            .input-field>label{
+              color: $acc-forground;
+            }
+            input:-internal-autofill-selected, input:focus {
+                background-color: $acc-background !important;
+                -webkit-box-shadow: 0 0 0 100px $acc-background inset!important;
+            }
+            /* Change autocomplete styles in WebKit */
+            input:-webkit-autofill,
+            input:-webkit-autofill:hover,
+            input:-webkit-autofill:focus,
+            textarea:-webkit-autofill,
+            textarea:-webkit-autofill:hover,
+            textarea:-webkit-autofill:focus,
+            select:-webkit-autofill,
+            select:-webkit-autofill:hover,
+            select:-webkit-autofill:focus {
+              border: 1px solid green;
+              -webkit-text-fill-color: green;
+              -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+              transition: background-color 5000s ease-in-out 0s;
+            }
+          }
+        }
+        .btn{
+          color: $acc-forground;
+          border: 1px solid $acc-forground;
+        }
+        .btn.btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .open>.dropdown-toggle.btn.btn-default {
+          background: $acc-background;
+        }
+      }
+    }
+    .sub-account-menu-wrap {
+      .sub-account-menu {
+        border: 1px solid;
+        border-color: $acc-forground;
+        background: $acc-background;
+        border-top: 3px solid;
+        li a {
+          color: $acc-forground;
+        }
+        li.active a,
+        a:focus,
+        a:hover {
+          color: $acc-forground;
+        }
+      }
+    }
+  }
+
+  .menu-promotion-wrapper{
+    .tiles-wrapper{
+       .tile {
+         .tile-content-wrapp {
+           .content {
+             h4{
+               color: $acc-forground;
+             }
+           }
+         }
+       }
+    }
+    &.support{
+      background: $acc-background;
+      .sub-menu-heading,p{
+        color: $acc-forground;
+      }
+    }
+  }
+  .nav-drill{
+    background: $acc-background;
+  }
+  .nav-item{
+    &.highlighted{
+      .nav-link, .nav-expand-content ul .nav-item .nav-link {
+         background-color: $acc-background !important;
+       }
+
+    }
+  }
+  .nav-link{
+    background: $acc-background;
+    color: $acc-forground;
+    .nav-link-arrow {
+      width: 12px;
+      height: 12px;
+      path {
+        fill: $acc-forground;
+      }
+    }
+  }
+  .nav-quick-links{
+    >.nav-link{
+        color: $acc-forground;
+    }
+  }
+  .nav-footer{
+    background: $acc-background;
+  }
+  .nav-site-switch.active,
+  .nav-site-switch, .nav-lang{
+    color: $acc-forground !important;
+  }
+  .nav-site-switch.active {
+    border-left: 4px solid $acc-yellow;
+  }
+  .nav-expand{
+     .nav-expand-content{
+       background-color: $acc-background;
+       .nav-back-link{
+          background-color: $acc-background !important;
+          &:before {
+            border: solid $acc-yellow;
+            border-width: 0 toRem(1.5) toRem(1.5) 0;
+          }
+       }
+       .nav-link{
+         background-color: $acc-background !important;
+         color: $acc-forground !important;
+       }
+       .menu-brand-wrapper {
+            background-color: $acc-background;
+            .menu-brand-item{
+              border: 1px solid $acc-forground;
+              background-color: $acc-background;
+            }
+        }
+     }
+     .nav-expand-footer{
+        .nav-link{
+          background-color: $acc-background !important;
+          color: $acc-forground;
+        }
+        .nav-link-arrow {
+          opacity: 1;
+          path{
+            fill: $acc-forground;
+          }
+        }
+     }
+  }
+  .nav-item-heading{
+    background-color: $acc-background;
+    a{
+      color: $acc-forground;
+    }
+    .nav-link-arrow path{
+      fill: $acc-forground;
+    }
+  }
+  .sub-menu-wrap{
+     .form.wst-form{
+        .input-field{
+          >label{
+            color: $acc-forground;
+          }
+        }
+        input:valid{
+          ~label{
+            color: $acc-forground;
+          }
+        }
+        input:-internal-autofill-selected, input:focus{
+          background-color: $acc-background !important;
+          -webkit-box-shadow: 0 0 0 100px $acc-background inset!important;
+        }
+     }
+     .btn{
+       color: $acc-forground;
+       border: 1px solid $acc-forground;
+     }
+  }
+  // *************************************
+  // Quick Links
+  // *************************************
+  .quick-links-section {
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: $acc-forground;
+    background-color: $acc-background;
+  }
+  .quick-links-section .quick-links-body .links-item a {
+    color: $acc-forground;
+  }
+
+  // *************************************
+  // footer Links
+  // *************************************
+  .footer-links-logo-section {
+    background-color: $acc-background;
+    .footer-links-nav li a {
+      color: $acc-forground;
+    }
+    .copyright {
+      color: $acc-forground;
+    }
+  }
+  .quick-links-section {
+    .quick-links-head {
+      svg {
+        fill: $acc-forground;
+      }
+      .link-title-mob {
+        color: $acc-forground;
+      }
+    }
+    .arrow_accordion {
+      &:after {
+        border: solid $acc-yellow;
+        border-width: 0 toRem(1) toRem(1) 0;
+      }
+    }
+  }
+  .social-links-section {
+    .social-links-body {
+      .links-item {
+        svg {
+          circle,
+          path,
+          polygon,
+          polyline {
+            fill: $acc-forground;
+          }
+        }
+      }
+    }
+  }
+
+  // *************************************
+  // Hero Images
+  // *************************************
+  .hero-image-section {
+    div.cover {
+      img.cover {
+        filter: grayscale(100%);
+      }
+    }
+  }
+  .hero-images-call-to-action-section {
+    .call-to-action-box {
+      background-color: $acc-background;
+      .description {
+        color: $acc-forground;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .hero-image-section {
+      .swiper-slide {
+        background-color: $acc-background;
+      }
+      .wst-price-tag .main-part .price {
+        color: $acc-background;
+      }
+      .bg-dark .hero-details .hero-heading-big,
+      .bg-dark .hero-details .hero-heading-small {
+        color: $acc-forground;
+      }
+      .bg-dark .hero-details .hero-description {
+        color: $acc-forground;
+      }
+      .wst-price-tag .bottom-part,
+      .wst-price-tag .top-part {
+        color: $acc-forground;
+      }
+      &.medium .swiper-slide .hero-heading-big {
+        color: $acc-forground;
+      }
+      &.hero-video .swiper-slide .hero-description {
+        color: $acc-forground;
+      }
+      .wst-price-tag .main-part .price,
+      .wst-price-tag .main-part .tag {
+        color: $acc-forground;
+      }
+    }
+  }
+
+  // *************************************
+  // Media CTA
+  // *************************************
+  .media-cta-section,
+  .cta-benefits {
+    background-color: $acc-background;
+    border-color: $acc-forground;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    .cta-heading {
+      color: $acc-forground;
+    }
+    .media-cta-photo > .cover img.cover {
+      filter: grayscale(100%);
+      background-color: $acc-background;
+    }
+    .media-cta-wrapper {
+      .body-standard {
+        background-color: $acc-background;
+        h4, p {
+          color: $acc-forground !important;
+        }
+      }
+      .media-cta-photo {
+        background-color: $acc-background;
+      }
+    }
+    .btn-text.btn-green,
+    .btn-text.btn-green.focus,
+    .btn-text.btn-green:focus {
+      color: $acc-forground !important;
+    }
+    .btn-text.btn-green:before {
+      border-color: $acc-forground !important;
+    }
+  }
+
+  .cta-benefits .media-cta-container, .media-cta-section .media-cta-container {
+    border: 1px solid;
+    border-color: $acc-forground;
+    background: $acc-background;
+  }
+
+  // benefit section
+  .cta-benefits-section,
+  .benefits-section {
+    background-color: $acc-background;
+    border-color: $acc-forground;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    .title-wrapper .title h3,
+    .title-wrapper .title h1 {
+      color: $acc-forground;
+    }
+    .features-wrapper {
+      .features-list {
+        li > a p,
+        li.active > a,
+        li.active > a p {
+          color: $acc-forground;
+        }
+      }
+    }
+    .benefits-mobile.collapsed .view-more:before {
+      border-color: $acc-forground;
+    }
+    .benefits-mobile.collapsed span {
+      color: $acc-forground;
+    }
+    .benefits-mobile span {
+      color: $acc-forground;
+    }
+    .benefits-mobile .view-more:before {
+      border-color: $acc-forground;
+    }
+    .title-wrapper {
+      .paragraph-styling,
+      .ul-list-cms {
+        p,
+        ul li {
+          color: $acc-forground;
+        }
+
+      }
+    }
+  }
+
+  .cta-benefits-section {
+    .benefits-mobile,
+    .benefits-mobile.collapsed {
+      svg {
+        circle,
+        path,
+        polygon,
+        polyline {
+          stroke: $acc-forground;
+        }
+      }
+    }
+  }
+
+  .benefits-section .features-wrapper .features-list li > a .icon svg circle,
+  path,
+  polygon,
+  polyline, g {
+    stroke: $acc-forground !important;
+    opacity: 1;
+  }
+
+  // *************************************
+  // config tabs
+  // *************************************
+  .config-section-wrap {
+    background-color: $acc-background;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-color: $acc-forground;
+    .config-section-main-label-top {
+      color: $acc-forground;
+    }
+    .page-nav .swiper-slide a,
+    .page-nav li a {
+      color: $acc-forground;
+      &:hover {
+        color: $acc-forground;
+      }
+    }
+  }
+  .hero-links-secton ul {
+    background-color: $acc-background;
+    border: 1px solid;
+  }
+
+  .config-section-wrap {
+    .nav > li > a:focus, .nav > li > a:hover {
+      background-color: $acc-background;
+    }
+  }
+
+  .config-section-wrap .page-nav .swiper-slide.active a,
+  .config-section-wrap .page-nav li.active a {
+    border-bottom: 2px solid $acc-forground;
+    @media (min-width: 992px) {
+      border-bottom: 4px solid $acc-forground;
+    }
+  }
+
+  // *************************************
+  // package details
+  // *************************************
+  .package-details-section {
+    .package-title {
+      color: $acc-forground;
+    }
+    .package-details-wrap {
+      .details {
+        .details-heading h3,
+        .details-body p {
+          color: $acc-forground;
+        }
+        p {
+          color: $acc-forground;
+        }
+      }
+    }
+    .note {
+      color: $acc-forground;
+    }
+  }
+
+  // *************************************
+  // features
+  // *************************************
+  .features-section,
+  .features-single-tile,
+  .features-full-bleed-section {
+    img {
+      filter: grayscale(100%);
+    }
+  }
+  .features-section {
+    background: $acc-background;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-color: $acc-forground;
+    .heading-mini {
+      color: $acc-forground;
+    }
+    .feature-detail-wrap {
+      h3 {
+        color: $acc-forground;
+      }
+    }
+    .btn.btn-green,
+    .btn.btn-green.focus,
+    .btn.btn-green:focus {
+      background-color: $acc-forground;
+      border-color: $acc-forground;
+      color: $acc-background;
+    }
+    .nav.nav-pills li a {
+      color: $acc-forground;
+    }
+    .nav.nav-pills li.active a {
+      color: $acc-forground;
+      border-color: $acc-forground;
+    }
+  }
+
+  .features-single-tile {
+    .linkable-text {
+      color: $acc-forground;
+    }
+    .features-section .feature-detail-wrap p {
+      color: $acc-forground;
+    }
+    .features-section .linkable-text:after {
+      border-color: $acc-forground;
+    }
+  }
+
+  .features-full-bleed-section {
+    .body-standard {
+      .recommended,
+      .title,
+      p {
+        color: $acc-forground;
+      }
+    }
+    .media-cta-wrapper .detail-price-new {
+      color: $acc-forground;
+    }
+    .action-items.green {
+      .price-valute,
+      .price {
+        color: $acc-forground;
+      }
+    }
+    .action-items .detail-price-new .before-price-container {
+      background-color: $acc-background;
+    }
+    .media-cta-wrapper p,
+    .media-cta-wrapper ul {
+      color: $acc-forground;
+    }
+
+  }
+
+  // *************************************
+  // tables
+  // *************************************
+  .table-default-section {
+    .table thead th {
+      color: $acc-forground;
+    }
+    .table-with-action {
+      .btn-text {
+        color: $acc-forground;
+      }
+    }
+
+  }
+  .table.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: $acc-forground;
+    td {
+      color: $acc-background;
+    }
+  }
+  .table.table-striped > tbody > tr:nth-of-type(even) {
+    td {
+      color: $acc-forground;
+    }
+  }
+  .table-default-section .table.table-link a {
+    color: $acc-forground !important;
+  }
+  .table-default-section .table.table-link a:before {
+    border-color: $acc-forground;
+  }
+
+  .table-default-section .see-more {
+    color: $acc-background;
+  }
+
+  .table caption {
+    color: $acc-forground;
+  }
+
+  .table > tbody > tr > td,
+  .table > tbody > tr > th,
+  .table > tfoot > tr > td,
+  .table > tfoot > tr > th,
+  .table > thead > tr > td,
+  .table > thead > tr > th {
+    color: $acc-forground;
+  }
+
+  .table-default-section .table.table-link-no-shevron a {
+    color: $acc-forground;
+  }
+  .table.table-striped > tbody > tr:nth-of-type(2n) td {
+    color: $acc-forground !important;
+  }
+  .table-foot-note p {
+    color: $acc-forground;
+  }
+  .table > tbody > tr > td .price, .table > tbody > tr > th .price,
+  .table > tfoot > tr > td .price, .table > tfoot > tr > th .price,
+  .table > thead > tr > td .price, .table > thead > tr > th .price {
+    color: $acc-forground;
+  }
+  .paragraph-styling .p1 p,
+  .paragraph-styling .p2 p,
+  .paragraph-styling .p3 p,
+  .paragraph-styling .p4 p {
+    color: $acc-forground;
+  }
+
+  .channel-lists-section {
+    ul li {
+      border-color: $acc-forground;
+    }
+    .channel-description,
+    .channel-number {
+      color: $acc-forground;
+    }
+    .channel-mg svg {
+      stroke: $acc-forground;
+      circle,
+      path,
+      polygon,
+      polyline,
+      g {
+        stroke: $acc-forground;
+      }
+    }
+  }
+  .heading-medium-neotech {
+    color: $acc-forground;
+  }
+
+  @media screen and (max-width: 991px) {
+    .table-default-section .table tbody tr td:before {
+      color: $acc-forground;
+    }
+  }
+
+  // *************************************
+  // tile-expansion
+  // *************************************
+  .tile-expansion-section {
+    color: $acc-forground;
+    background-color: $acc-background;
+    border: 1px solid;
+    border-color: $acc-forground;
+    .collapsed-content {
+      h2 {
+        color: $acc-forground;
+      }
+    }
+    .paragraph-styling,
+    .paragraph-styling {
+      p, a {
+        color: $acc-forground;
+      }
+    }
+    .ul-list-sub > li,
+    .ul-list > li {
+      color: $acc-forground;
+    }
+    .ul-list > li:before {
+      color: $acc-forground;
+    }
+    .view-more {
+      color: $acc-forground !important;
+      &.btn-green:before {
+        border-color: $acc-forground;
+      }
+    }
+    .btn-text.download {
+      color: $acc-forground;
+    }
+  }
+
+  // *************************************
+  // need help
+  // *************************************
+  .need-help-section {
+    color: $acc-forground;
+    .need-help-content {
+      h2, p {
+        color: $acc-forground;
+      }
+      a {
+        color: $acc-background;
+      }
+    }
+    a {
+      color: $acc-forground;
+    }
+    .need-help-icons .heading-sub {
+      color: $acc-forground;
+    }
+  }
+
+  // *************************************
+  // promo grid
+  // *************************************
+  .promo-grid {
+    color: $acc-forground;
+    img {
+      filter: grayscale(100%);
+    }
+    .grid-content {
+      .btn-text, h1 {
+        color: $acc-background;
+      }
+      .btn-text {
+        &:before {
+          border-color: $acc-background;
+        }
+      }
+    }
+    &.bg-white-filler {
+      background-color: $acc-background !important;
+      border: 1px solid $acc-forground;
+      .grid-content {
+        .btn-text, h1 {
+          color: $acc-forground;
+        }
+        .btn-text {
+          &:before {
+            border-color: $acc-forground;
+          }
+        }
+      }
+    }
+  }
+
+  .promo-grid.small-tile-no-image.bgpattern {
+    background-color: $acc-background !important;
+    border: 1px solid $acc-forground;
+    .grid-content {
+      a, h1 {
+        color: $acc-forground !important;
+      }
+      a:before {
+        border-color: $acc-forground;
+      }
+    }
+  }
+
+  .promo-grid.bg-lighter-filler {
+    background-color: black !important;
+    border: 1px solid $acc-forground
+  }
+  .promo-grid.medium-tile.bg-lighter-filler .grid-content a {
+    color: $acc-forground !important;
+  }
+
+  .promo-grid.medium-tile.bg-lighter-filler .grid-content a:before {
+    border-color: $acc-forground !important;
+  }
+  .promo-grid.medium-tile.bg-lighter-filler .grid-content h1 {
+    color: $acc-forground !important;
+  }
+
+  // *************************************
+  // cross promo
+  // *************************************
+  .cross-promo-background,
+  .cross-promo-plain {
+    img {
+      filter: grayscale(100%);
+    }
+  }
+
+  .cross-promo-plain {
+    background: $acc-background !important;
+    border-top: 1px solid $acc-forground;
+    border-bottom: 1px solid $acc-forground;
+  }
+
+  .cross-promo-plain.full-bleed-wrapper {
+    img {
+      filter: grayscale(100%);
+    }
+  }
+
+  .cross-promo-plain.promo-small {
+    background: $acc-background !important;
+    border: 1px solid $acc-forground;
+    .content-section {
+      background: $acc-background !important;
+    }
+  }
+
+  .cross-promo-plain.promo-small-02 {
+    border: 0;
+    .content-section {
+      background: $acc-background;
+      border: 1px solid $acc-forground;
+    }
+  }
+
+  // *************************************
+  // tile boxes
+  // *************************************
+  .tile-boxes-section {
+    .swiper-wrapper {
+      .swiper-slide {
+        background-color: $acc-background;
+        .tile-box-tile {
+          background-color: $acc-background;
+          img {
+            filter: grayscale(100%);
+          }
+          .tile-box-body {
+            h2, p {
+              color: $acc-forground;
+            }
+          }
+          .btn-text {
+            color: $acc-forground;
+            &:before {
+              border-color: $acc-forground;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // *************************************
+  // table and text
+  // *************************************
+
+  .main-text-wst3 {
+    h1, h2, h3, h4, h5, h6, .h7, .h8, p {
+      color: $acc-forground;
+    }
+  }
+  .table-default-section .table.table-no-border tbody td label,
+  .table-default-section .table.tableListItem ul li {
+    color: $acc-forground;
+  }
+  .table-default-section .table.table-no-border tbody td:last-child,
+  .table-default-section .table.table-row-border tbody td:last-child {
+    color: $acc-forground;
+  }
+
+  // *************************************
+  // context navigation
+  // *************************************
+  .context-navigation {
+    &.with-bg {
+      background-color: $acc-background;
+      border-top: 1px solid;
+      border-bottom: 1px solid;
+      border-color: $acc-forground;
+    }
+    .content-detail {
+      h3, p {
+        color: $acc-forground;
+      }
+    }
+  }
+  .bring-value-card-wrapper {
+    .bring-value-card {
+      h4, p {
+        color: $acc-forground;
+      }
+    }
+    .btn-text.btn-green, .btn-text.btn-green.focus, .btn-text.btn-green:focus {
+      color: $acc-forground;
+    }
+    .btn-text.btn-green:before {
+      border-color: $acc-forground;
+    }
+    .bring-value-card-icon {
+      svg {
+        stroke: $acc-forground;
+      }
+    }
+  }
+
+  // *************************************
+  // promo grid tile
+  // *************************************
+  .product-tile-section {
+
+  }
+  .product-tile-section.bg-cards {
+    .plan-card.tile-table .tile-card {
+      border: 1px solid $acc-forground;
+      img {
+        filter: grayscale(100%);
+      }
+      .tile-card__front {
+        background: $acc-background;
+
+      }
+    }
+  }
+
+  .nv-promotional-tile {
+    background: $acc-background;
+    border: 1px solid $acc-forground;
+    img {
+      filter: grayscale(100%);
+    }
+    .nv-promo-price {
+      color: $acc-forground;
+      text-shadow: 0 6px 0 $acc-background;
+    }
+  }
+
+  // *************************************
+  // main-text
+  // *************************************
+  .text-dropdown-section {
+    .panel-group {
+      border-top: 1px solid $acc-forground;
+      border-bottom: 1px solid $acc-forground;
+    }
+    .panel-default {
+      background: $acc-background;
+    }
+    .panel-heading {
+      .panel-title {
+        h3, p {
+          color: $acc-forground;
+        }
+        a:after {
+          border-color: $acc-forground;
+        }
+      }
+      .panel-title a.collapsed {
+        margin-bottom: -1px;
+      }
+    }
+    .panel-collapse {
+      background-color: $acc-background;
+    }
+  }
+
+  .main-text-slider-section {
+    .swiper-slide {
+      background-color: $acc-background;
+    }
+    &.has-bg {
+      background-color: $acc-background;
+      border-top: 1px solid $acc-forground;
+      border-bottom: 1px solid $acc-forground;
+    }
+  }
+
+  .main-text-section {
+    &.has-bg {
+      background-color: $acc-background;
+      border-top: 1px solid $acc-forground;
+      border-bottom: 1px solid $acc-forground;
+    }
+    .main-text-action-wrapper {
+      .action .link {
+        color: $acc-forground;
+        &:before {
+          border-color: $acc-forground;
+        }
+      }
+    }
+  }
+
+  .wst-main-headings h1,
+  .wst-main-headings h2,
+  .wst-main-headings h3,
+  .wst-main-headings h4,
+  .wst-main-headings h5,
+  .wst-main-headings h6 {
+    color: $acc-forground;
+  }
+  .main-text-slider-section {
+    .main-text-cta .link {
+      color: $acc-forground;
+      &:before {
+        border-color: $acc-forground;
+      }
+    }
+  }
+
+  .paragraph-styling .p1 a, .paragraph-styling .p2 a, .paragraph-styling .p3 a, .paragraph-styling .p4 a {
+    color: $acc-forground;
+  }
+  .paragraph-styling .p1 ol li,
+  .paragraph-styling .p1 ul li,
+  .paragraph-styling .p2 ol li,
+  .paragraph-styling .p2 ul li,
+  .paragraph-styling .p3 ol li,
+  .paragraph-styling .p3 ul li,
+  .paragraph-styling .p4 ol li,
+  .paragraph-styling .p4 ul li {
+    color: $acc-forground !important;
+  }
+
+  // *************************************
+  // tab boxes
+  // *************************************
+  .tab-boxes-section .head-desktop a {
+    color: $acc-forground;
+    border-color: $acc-forground;
+    .head-desktop a.collapsed {
+      color: $acc-forground;
+    }
+  }
+  .heading-large, .heading-medium {
+    color: $acc-forground;
+  }
+  .ul-list-sub > li, .ul-list > li {
+    color: $acc-forground;
+  }
+
+  // *************************************
+  // store-locator
+  // *************************************
+  .store-locator-wrap {
+    .tiles-content {
+      background: $acc-background;
+    }
+    img {
+      filter: grayscale(100%);
+    }
+  }
+  .store-locator-wrap .map-container .background-map .map-filter .result-main-container .sidebar-result-container .result-slide .result-item-container {
+    background-color: $acc-background;
+    .desc-short {
+      h4, p {
+        color: $acc-forground;
+      }
+    }
+  }
+  .store-locator-wrap .switch-store-locator .switcher {
+    border: 1px solid $acc-forground;
+    background: $acc-forground;
+    color: $acc-forground;
+    &:hover {
+      color: $acc-forground
+    }
+  }
+
+  // *************************************
+  // product grid section
+  // *************************************
+  .product-grid-text-section {
+    &.plans {
+      .tiles-box-list ul li {
+        color: $acc-forground;
+        a:hover {
+          color: $acc-forground;
+        }
+        b, strong {
+          color: $acc-forground;
+        }
+      }
+    }
+
+    img {
+      filter: grayscale(100%);
+    }
+
+    .detail-info-wrap-pricetag .main-part .price {
+      color: $acc-forground;
+    }
+    .bg-cards .device-card-selection.tile-table .tile-card .special-offer, .bg-cards .device-card.tile-table .tile-card .special-offer, .bg-cards .device-multi-card-selection.tile-table .tile-card .special-offer, .bg-cards .device-single-card-selection.tile-table .tile-card .special-offer, .bg-cards .plan-card.tile-table .tile-card .special-offer, .bg-cards .plan-multi-card-selection.tile-table .tile-card .special-offer, .bg-cards .plan-single-card-selection.tile-table .tile-card .special-offer, .bg-cards .product-grid.tile-table .tile-card .special-offer, .bg-cards .product-home-card.tile-table .tile-card .special-offer, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .special-offer, .bg-cards .product-home-single-card-selection.tile-table .tile-card .special-offer {
+      background-color: $acc-forground;
+      color: $acc-background;
+    }
+    .bg-cards .plan-card.tile-table .tile-card .tiles-box-list,
+    .bg-cards .plan-multi-card-selection.tile-table .tile-card .tiles-box-list,
+    .bg-cards .plan-single-card-selection.tile-table .tile-card .tiles-box-list {
+      border-left: 0;
+      border-right: 0;
+      background: $acc-background;
+      border-bottom: 1px solid $acc-forground;
+    }
+    .bg-cards .device-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .device-card.tile-table .tile-card .detail-price-new .from, .bg-cards .device-multi-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .device-single-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .plan-card.tile-table .tile-card .detail-price-new .from, .bg-cards .plan-multi-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .plan-single-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .product-grid.tile-table .tile-card .detail-price-new .from, .bg-cards .product-home-card.tile-table .tile-card .detail-price-new .from, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .product-home-single-card-selection.tile-table .tile-card .detail-price-new .from,
+    .bg-cards .device-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .device-card.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .plan-card.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .plan-multi-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .plan-single-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .product-grid.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .product-home-card.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .product-home-single-card-selection.tile-table .tile-card .tiles-box-list .bottom-text {
+      color: $acc-forground;
+    }
+    .bg-cards .device-card-selection.tile-table .tile-card .smile-points, .bg-cards .device-card.tile-table .tile-card .smile-points, .bg-cards .device-multi-card-selection.tile-table .tile-card .smile-points, .bg-cards .device-single-card-selection.tile-table .tile-card .smile-points, .bg-cards .plan-card.tile-table .tile-card .smile-points, .bg-cards .plan-multi-card-selection.tile-table .tile-card .smile-points, .bg-cards .plan-single-card-selection.tile-table .tile-card .smile-points, .bg-cards .product-grid.tile-table .tile-card .smile-points, .bg-cards .product-home-card.tile-table .tile-card .smile-points, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .smile-points, .bg-cards .product-home-single-card-selection.tile-table .tile-card .smile-points {
+      color: $acc-forground;
+      background: $acc-background;
+      border-bottom: 1px solid $acc-forground;
+    }
+    .bg-cards .device-card-selection.tile-table .tile-card .tiles-box-title,
+    .bg-cards .device-card.tile-table .tile-card .tiles-box-title,
+    .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-title,
+    .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-title,
+    .bg-cards .plan-card.tile-table .tile-card .tiles-box-title,
+    .bg-cards .plan-multi-card-selection.tile-table .tile-card .tiles-box-title,
+    .bg-cards .plan-single-card-selection.tile-table .tile-card .tiles-box-title {
+      background: $acc-background;
+      border-bottom: 1px solid $acc-forground;
+    }
+    .bg-cards .device-card-selection.tile-table .tile-card .read-more, .bg-cards .device-card.tile-table .tile-card .read-more, .bg-cards .device-multi-card-selection.tile-table .tile-card .read-more, .bg-cards .device-single-card-selection.tile-table .tile-card .read-more, .bg-cards .plan-card.tile-table .tile-card .read-more, .bg-cards .plan-multi-card-selection.tile-table .tile-card .read-more, .bg-cards .plan-single-card-selection.tile-table .tile-card .read-more, .bg-cards .product-grid.tile-table .tile-card .read-more, .bg-cards .product-home-card.tile-table .tile-card .read-more, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .read-more, .bg-cards .product-home-single-card-selection.tile-table .tile-card .read-more {
+      background-color: $acc-background;
+    }
+    .bg-cards .device-card-selection.offer .tile-card .price, .bg-cards .device-card-selection.offer .tile-card .smile-points, .bg-cards .device-card-selection.offer .tile-card small, .bg-cards .device-card.offer .tile-card .price, .bg-cards .device-card.offer .tile-card .smile-points, .bg-cards .device-card.offer .tile-card small, .bg-cards .device-multi-card-selection.offer .tile-card .price, .bg-cards .device-multi-card-selection.offer .tile-card .smile-points, .bg-cards .device-multi-card-selection.offer .tile-card small, .bg-cards .device-single-card-selection.offer .tile-card .price, .bg-cards .device-single-card-selection.offer .tile-card .smile-points, .bg-cards .device-single-card-selection.offer .tile-card small, .bg-cards .plan-card.offer .tile-card .price, .bg-cards .plan-card.offer .tile-card .smile-points, .bg-cards .plan-card.offer .tile-card small, .bg-cards .plan-multi-card-selection.offer .tile-card .price, .bg-cards .plan-multi-card-selection.offer .tile-card .smile-points, .bg-cards .plan-multi-card-selection.offer .tile-card small, .bg-cards .plan-single-card-selection.offer .tile-card .price, .bg-cards .plan-single-card-selection.offer .tile-card .smile-points, .bg-cards .plan-single-card-selection.offer .tile-card small, .bg-cards .product-grid.offer .tile-card .price, .bg-cards .product-grid.offer .tile-card .smile-points, .bg-cards .product-grid.offer .tile-card small, .bg-cards .product-home-card.offer .tile-card .price, .bg-cards .product-home-card.offer .tile-card .smile-points, .bg-cards .product-home-card.offer .tile-card small, .bg-cards .product-home-multi-card-selection.offer .tile-card .price, .bg-cards .product-home-multi-card-selection.offer .tile-card .smile-points, .bg-cards .product-home-multi-card-selection.offer .tile-card small, .bg-cards .product-home-single-card-selection.offer .tile-card .price, .bg-cards .product-home-single-card-selection.offer .tile-card .smile-points, .bg-cards .product-home-single-card-selection.offer .tile-card small {
+      color: $acc-forground;
+    }
+    .bg-cards .device-card-selection.offer .tile-card .before-price-container, .bg-cards .device-card.offer .tile-card .before-price-container, .bg-cards .device-multi-card-selection.offer .tile-card .before-price-container, .bg-cards .device-single-card-selection.offer .tile-card .before-price-container, .bg-cards .plan-card.offer .tile-card .before-price-container, .bg-cards .plan-multi-card-selection.offer .tile-card .before-price-container, .bg-cards .plan-single-card-selection.offer .tile-card .before-price-container, .bg-cards .product-grid.offer .tile-card .before-price-container, .bg-cards .product-home-card.offer .tile-card .before-price-container, .bg-cards .product-home-multi-card-selection.offer .tile-card .before-price-container, .bg-cards .product-home-single-card-selection.offer .tile-card .before-price-container {
+      background: $acc-forground;
+      color: $acc-background;
+    }
+    .swiper-container-horizontal .swiper-scrollbar {
+      background-color: $almost-black;
+    }
+    .swiper-container-horizontal .swiper-scrollbar .swiper-scrollbar-drag {
+      background-color: $acc-forground;
+    }
+    .bg-cards .product-grid.tile-table .tile-card .tiles-box-list {
+      background: $acc-background;
+    }
+    .bg-cards .product-grid.tile-table .tile-card .tiles-box-list {
+      border-left: 0;
+      border-right: 0;
+      border-bottom: 1px solid $acc-forground;
+    }
+    .bg-cards .product-grid.tile-table .tile-card .tiles-box-title {
+      background: $acc-background;
+      background: $acc-background;
+      border-bottom: 1px solid $acc-forground;
+    }
+    .bg-cards .product-home-card.tile-table .tile-card .tiles-box-list .view-channel-list, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .tiles-box-list .view-channel-list, .bg-cards .product-home-single-card-selection.tile-table .tile-card .tiles-box-list .view-channel-list {
+      color: $acc-forground;
+    }
+
+    .bg-cards .device-card.tile-table .tile-card .tiles-box-title, .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-title, .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-title {
+      border-bottom: 0 !important;
+    }
+    .bg-cards .device-card.tile-table .tile-card .tiles-box-title .catagory, .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-title .catagory, .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-title .catagory {
+      color: $acc-forground;
+    }
+    .bg-cards .device-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .device-card.tile-table .tile-card .tiles-box-title h2, .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .plan-card.tile-table .tile-card .tiles-box-title h2, .bg-cards .plan-multi-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .plan-single-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .product-grid.tile-table .tile-card .tiles-box-title h2, .bg-cards .product-home-card.tile-table .tile-card .tiles-box-title h2, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .tiles-box-title h2, .bg-cards .product-home-single-card-selection.tile-table .tile-card .tiles-box-title h2 {
+      color: $acc-forground;
+    }
+
+  }
+
+  .product-grid-text-section.plans .bg-cards .plan-card.tile-table .tile-card .tile.postpaid .tiles-box-title, .product-grid-text-section.plans .bg-cards .plan-multi-card-selection.tile-table .tile-card .tile.postpaid .tiles-box-title, .product-grid-text-section.plans .bg-cards .plan-single-card-selection.tile-table .tile-card .tile.postpaid .tiles-box-title {
+    background: $acc-background;
+  }
+
+  .bg-cards .device-card-selection.tile-table .tile-card .tile, .bg-cards .device-card.tile-table .tile-card .tile, .bg-cards .device-multi-card-selection.tile-table .tile-card .tile, .bg-cards .device-single-card-selection.tile-table .tile-card .tile, .bg-cards .plan-card.tile-table .tile-card .tile, .bg-cards .plan-multi-card-selection.tile-table .tile-card .tile, .bg-cards .plan-single-card-selection.tile-table .tile-card .tile, .bg-cards .product-grid.tile-table .tile-card .tile, .bg-cards .product-home-card.tile-table .tile-card .tile, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .tile, .bg-cards .product-home-single-card-selection.tile-table .tile-card .tile {
+    color: $acc-forground;
+  }
+  .btn-text.btn-green, .btn-text.btn-green.focus, .btn-text.btn-green:focus {
+    color: $acc-forground;
+    &:before {
+      border-color: $acc-forground;
+    }
+  }
+  .product-grid-text-section.plans .bg-cards .product-home-card.tile-table .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .product-home-multi-card-selection.tile-table .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .product-home-single-card-selection.tile-table .tile-card .tiles-box-list {
+    background: $acc-background;
+  }
+
+  .product-grid-text-section.plans .bg-cards .device-card.tile-table .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-list {
+    border-bottom: 1px solid $acc-forground;
+    background: $acc-background;
+  }
+
+  .product-grid-text-section.gray-bg {
+    background-color: $acc-background;
+    border-top: 1px solid $acc-forground;
+    border-bottom: 1px solid $acc-forground;
+    .default-section-title {
+      color: $acc-forground;
+      p {
+        color: $acc-forground;
+      }
+    }
+  }
+
+  .product-grid-text-section .bg-cards .device-card-selection.tile-table .tile-card, .product-grid-text-section .bg-cards .device-card.tile-table .tile-card, .product-grid-text-section .bg-cards .device-multi-card-selection.tile-table .tile-card, .product-grid-text-section .bg-cards .device-single-card-selection.tile-table .tile-card, .product-grid-text-section .bg-cards .plan-card.tile-table .tile-card, .product-grid-text-section .bg-cards .plan-multi-card-selection.tile-table .tile-card, .product-grid-text-section .bg-cards .plan-single-card-selection.tile-table .tile-card, .product-grid-text-section .bg-cards .product-grid.tile-table .tile-card, .product-grid-text-section .bg-cards .product-home-card.tile-table .tile-card, .product-grid-text-section .bg-cards .product-home-multi-card-selection.tile-table .tile-card, .product-grid-text-section .bg-cards .product-home-single-card-selection.tile-table .tile-card {
+    border: 1px solid $acc-forground;
+  }
+  .detail-info-wrap-pricetag > div {
+    color: $acc-forground;
+  }
+
+  .product-grid-text-section.plans .bg-cards .plan-card.offer .tile-card .tile .tiles-box-title,
+  .product-grid-text-section.plans .bg-cards .plan-multi-card-selection.offer .tile-card .tile .tiles-box-title,
+  .product-grid-text-section.plans .bg-cards .plan-single-card-selection.offer .tile-card .tile .tiles-box-title {
+    background: $acc-background !important;
+  }
+  .product-grid-text-section.plans .bg-cards .device-card-selection.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .device-card.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .device-multi-card-selection.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .device-single-card-selection.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .plan-card.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .plan-multi-card-selection.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .plan-single-card-selection.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .product-grid.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .product-home-card.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .product-home-multi-card-selection.tile-table.plan-card .tile-card .tiles-box-list, .product-grid-text-section.plans .bg-cards .product-home-single-card-selection.tile-table .tile-card .tiles-box-list {
+    background: $acc-background;
+    border-bottom: 1px solid $acc-forground;
+  }
+  .product-grid-text-section.plans .tiles-box-list ul li a {
+    color: $acc-forground;
+  }
+
+  // *************************************
+  // non-actionalble boxes
+  // *************************************
+  .non-action-boxes-section {
+    background: $acc-background;
+  }
+  .cta-benefits .media-cta-container, .media-cta-section .media-cta-container {
+    padding-right: 0;
+  }
+
+  *[lang="ar"] {
+    *[dir="rtl"] {
+      .cta-benefits .media-cta-container, .media-cta-section .media-cta-container {
+        padding-right: 12px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  // *************************************
+  // Generic - buttons
+  // *************************************
+
+  .btn.btn-green,
+  .btn.btn-green.focus,
+  .btn.btn-green:focus,
+  .btn.btn-orange-text {
+    background-color: $acc-background;
+    border-color: $acc-background !important;
+
+    @media (max-width: 991px) {
+      border: 1px solid;
+    }
+  }
+
+  // *************************************
+  // spacer
+  // *************************************
+
+  $spacer-height: 1rem;
+  .spacer {
+    display: block;
+    min-height: $spacer-height / 4;
+    background-color: $acc-background !important;
+    &.spacer-zero {
+      height: 0;
+      min-height: 0;
+    }
+    &.spacer-8 {
+      &.sand-white {
+        background-color: $acc-background !important;
+      }
+      &.white {
+        background-color: $acc-background !important;
+      }
+      &.light-gray {
+        background-color: $acc-background !important;
+      }
+    }
+    &.spacer-16 {
+      &.sand-white {
+        background-color: $acc-background !important;
+      }
+      &.white {
+        background-color: $acc-background !important;
+      }
+      &.light-gray {
+        background-color: $acc-background !important;
+      }
+    }
+    &.spacer-24 {
+      &.sand-white {
+        background-color: $acc-background !important;
+      }
+      &.white {
+        background-color: $acc-background !important;
+      }
+      &.light-gray {
+        background-color: $acc-background !important;
+      }
+    }
+    &.spacer-36 {
+      &.sand-white {
+        background-color: $acc-background !important;
+      }
+      &.white {
+        background-color: $acc-background !important;
+      }
+      &.light-gray {
+        background-color: $acc-background !important;
+        opacity: .30;
+      }
+    }
+    &.spacer-52 {
+      &.sand-white {
+        background-color: $acc-background !important;
+      }
+      &.white {
+        background-color: $acc-background !important;
+      }
+      &.light-gray {
+        background-color: $acc-background !important;
+      }
+    }
+    &.spacer-64 {
+      &.sand-white {
+        background-color: $acc-background !important;
+      }
+      &.white {
+        background-color: $acc-background !important;
+      }
+      &.light-gray {
+        background-color: $acc-background !important;
+      }
+    }
+    &.spacer-84 {
+      &.sand-white {
+        background-color: $acc-background !important;
+      }
+      &.white {
+        background-color: $acc-background !important;
+      }
+      &.light-gray {
+        background-color: $acc-background !important;
+      }
+    }
+    &.spacer-102 {
+      &.sand-white {
+        background-color: $acc-background !important;
+      }
+      &.white {
+        background-color: $acc-background !important;
+      }
+      &.light-gray {
+        background-color: $acc-background !important;
+      }
+    }
+  }
+
+  .spacer {
+    &.white-16 {
+      background-color: $acc-background;
+    }
+    &.white-24 {
+      background-color: $acc-background;
+    }
+    &.white-32 {
+      background-color: $acc-background;
+    }
+    &.white-42 {
+      background-color: $acc-background;
+    }
+    &.white-48 {
+      background-color: $acc-background;
+    }
+    &.white-64 {
+      background-color: $acc-background;
+    }
+    &.light-gray-16 {
+      background-color: $acc-background;
+    }
+    &.light-gray-24 {
+      background-color: $acc-background;
+    }
+    &.light-gray-32 {
+      background-color: $acc-background;
+    }
+    &.light-gray-42 {
+      background-color: $acc-background;
+    }
+    &.light-gray-48 {
+      background-color: $acc-background;
+    }
+    &.light-gray-64 {
+      background-color: $acc-background;
+    }
+    &.transparent {
+      background-color: $acc-background;
+    }
+  }
+
+  // ****************************************************************************************************************************************************
+  // buynget components start
+  // ****************************************************************************************************************************************************
+  // *****************************************
+  // nv-buttons elife -> buynget
+  // *****************************************
+  .nv-btn-link {
+    color: $acc-background;
+    &.btn-lang {
+      color: $acc-background;
+      background: $acc-forground;
+      &.home {
+        color: $acc-background;
+        background: none;
+      }
+    }
+    .icon {
+      svg {
+        stroke: $acc-background;
+        circle,
+        path,
+        polygon,
+        polyline,
+        g {
+          stroke: $acc-background;
+        }
+      }
+    }
+    &.dark {
+      color: $acc-background !important;
+
+      &:before {
+        border-color: $acc-background !important;
+      }
+    }
+    &.green {
+      color: $acc-forground !important;
+
+      &:before {
+        border-color: $acc-forground !important;
+      }
+    }
+  }
+
+  // *****************************************
+  // nv-selectors elife -> buynget
+  // *****************************************
+  .nv-selector-colored {
+    .selector-item {
+      .selector-feature {
+        .selector-feature-label {
+          background: $acc-background;
+          color: $acc-forground;
+          &:after {
+            border: 1px solid $acc-forground;
+          }
+        }
+      }
+    }
+  }
+
+  .nv-selector-border {
+    &.disabled {
+      .selector-item .selector-feature {
+        border: solid 1px $acc-forground;
+      }
+    }
+
+    .selector-item {
+      &.payment-card {
+        .selector-feature {
+          .selector-feature-label {
+            color: $acc-forground;
+          }
+        }
+      }
+      .selector-feature {
+        background-color: $acc-background;
+        border: 1px solid $acc-forground;
+
+        // align-items: center;
+        .selector-price-text {
+          color: $acc-forground;
+          .free {
+            background-color: $acc-forground;
+            color: $acc-background;
+          }
+        }
+
+        .selector-tip {
+          color: $acc-forground;
+
+          &.offer {
+            background-color: $acc-forground;
+          }
+
+          &.icon {
+            background: $acc-background;
+            &:after {
+              border-color: $acc-background;
+            }
+          }
+        }
+
+        &.with-color-circle {
+          .selection-circle {
+            border: 1px solid $acc-forground;
+          }
+        }
+
+        .selector-feature-label {
+          color: $acc-forground;
+        }
+        &.multi-line {
+          .selector-feature-label {
+            .brand {
+              color: $acc-forground;
+            }
+          }
+        }
+      }
+      input[type="checkbox"]:checked,
+      input[type="radio"]:checked {
+        +.selector-feature {
+          color: $acc-forground;
+          border: 1px solid $acc-forground;
+          text-shadow: 0 0 0 $acc-forground;
+          .selector-feature-label {
+            .brand,
+            strong {
+              color: $acc-forground;
+            }
+          }
+          .selector-feature-label,
+          .selector-price-text {
+            color: $acc-forground;
+            font-weight: 700;
+            .free {
+              background-color: $acc-background;
+              color: $acc-forground;
+            }
+          }
+          .icon-img {
+            svg {
+              g,
+              path {
+                stroke: $acc-forground;
+              }
+            }
+          }
+          .selector-tip {
+            background: $acc-forground;
+            &.offer {
+              padding-right: 39px;
+              +.icon {
+                margin: 8px 0px;
+                padding: 7px 14px;
+                border-left: 1px solid $acc-forground;
+                border-radius: 0;
+              }
+            }
+          }
+        }
+      }
+
+      input[type="radio"]:checked {
+        +.selector-feature {
+          .nv-checkboxes-wrap label {
+            border: 1px solid $acc-forground;
+            &:after {
+              border: 6px solid $acc-forground;
+            }
+          }
+        }
+      }
+
+      input[type="checkbox"]:checked {
+        +.selector-feature {
+          .nv-checkboxes-wrap label {
+            background-color: $acc-forground;
+            border-color: $acc-forground;
+
+            &:after {
+              border: 2px solid $acc-forground;
+            }
+          }
+        }
+      }
+    }
+
+    &.device-selector {
+      .selector-price-wrapper {
+        border-top: 1px dashed $acc-forground;
+      }
+    }
+    &.green-bg {
+      .selector-item {
+        input[type="checkbox"]:checked,
+        input[type="radio"]:checked {
+          +.selector-feature {
+            background: $acc-forground;
+            border: 1px solid $acc-forground;
+            color: $acc-background;
+            >* {
+              color: $acc-background;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .nv-plus-minus-input {
+    input.input-group-field {
+      background: $acc-background;
+      color: $acc-forground;
+    }
+    .input-group-button {
+      .circle {
+        background-color: $acc-forground;
+        color: $acc-forground;
+        &:after,
+        &:before {
+          background: $acc-background;
+        }
+      }
+      &.active {
+        .circle:after,
+        .circle:before {
+          background: $acc-background;
+        }
+      }
+    }
+  }
+
+  .nv-selector-border.incremental-selector .nv-checkboxes-wrap label,
+  .nv-selector-border.incremental-selector .nv-radio-wrap label {
+    border: 1px solid $acc-forground;
+    background: $acc-forground;
+    &:after {
+      border-color: $acc-forground;
+    }
+  }
+  .nv-selector-border.incremental-selector .nv-checkboxes-wrap label:after, .nv-selector-border.incremental-selector .nv-radio-wrap label:after {
+    background: linear-gradient($acc-background,$acc-background),linear-gradient($acc-background,$acc-background),$acc-forground;
+    background-position: 50%;
+    background-size: 80% 2px,2px 80%;
+    background-repeat: no-repeat;
+  }
+  .acc-black .nv-selector-border .selector-item .selector-feature {
+    img {
+      filter: grayscale(100%);
+    }
+  }
+
+  .nv-checkboxes-wrap label, .nv-radio-wrap label {
+    border: 1px solid $acc-forground;
+  }
+
+
+
+  /*--------------------  new smile-points -------------------- */
+  .nv-smile-points {
+    color: $acc-forground;
+    background-color: $acc-background;
+    &.orange {
+      background-color: $acc-forground;
+      color: $acc-background;
+    }
+  }
+
+  /*-------------------- label checkboxes && radio button -------------------- */
+  .nv-checkboxes-wrap,
+  .nv-radio-wrap {
+    input {
+      &[type="radio"]:checked {
+        ~label {
+          border: 1px solid $acc-forground;
+
+          &:after {
+            border-radius: 50%;
+            opacity: 1;
+            border: 6px solid $acc-forground;
+          }
+        }
+      }
+
+      &[type="checkbox"]:checked {
+        ~label {
+          background-color: $acc-background;
+          border-color: $acc-forground;
+          &:after {
+            border: 2px solid $acc-forground;
+          }
+        }
+      }
+    }
+
+    &.sm {
+      input {
+        &[type="radio"]:checked {
+          ~label {
+            &:after {
+              border: 5px solid $acc-forground;
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+  // *****************************************
+  // buynget - config-page header
+  // *****************************************
+  .elife-heading-mod-wrapper {
+    .pre-title,
+    .title {
+      color: $acc-forground;
+    }
+  }
+  .elife-mod-showcase-image {
+    img {
+      filter: grayscale(100%);
+    }
+  }
+
+  .elife-mod-table-wrapper {
+    img {
+      filter: grayscale(100%);
+    }
+    tbody {
+      tr td {
+        color: $acc-forground;
+      }
+    }
+    &.two-col {
+      tbody tr {
+        td:last-child {
+          color: $acc-forground;
+        }
+      }
+    }
+  }
+
+  // *****************************************
+  // buynget - delivery info
+  // *****************************************
+  .nv-prices-warraper {
+    color: $acc-forground;
+    strong {
+      color: $acc-forground;
+    }
+  }
+
+
+
+
+
+  // *****************************************
+  // buynget - non-logged in user
+  // *****************************************
+  .upload-documents-wrapper {
+    img {
+      filter: grayscale(100%);
+    }
+    .eid-title {
+      h5 {
+        color: $acc-forground;
+      }
+    }
+    .eid-container {
+      .plus-icon {
+        svg {
+          fill: $acc-forground;
+          g, path {
+            fill: $acc-forground;
+          }
+
+        }
+      }
+    }
+  }
+  .input-field>label,
+  .generic-tooltip .title {
+    color: $acc-forground;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  // *****************************************
+  // buynget - footer summary
+  // *****************************************
+  .nv-footer-top-summary {
+    background-color: $acc-background;
+    border-bottom: 1px solid $acc-forground;
+    border-top: 1px solid $acc-forground;
+    border-radius: 0;
+  }
+  .nv-footer-details-summary {
+    background-color: $acc-background;
+    .btn {
+      background-color: $acc-forground;
+      border-color: $acc-forground !important;
+      color: $acc-background;
+    }
+  }
+  .sacondary-title, .sacondary-title h4 {
+    color: $acc-forground;
+  }
+
+  .nv-price-wrapper.dark .from, .nv-price-wrapper.dark .price {
+    color: $acc-forground;
+  }
+
+
+  // *****************************************
+  // buynget - forms
+  // *****************************************
+  .nv-title-with-icon .icon {
+    background-color: $acc-forground;
+    svg circle,
+    path,
+    polygon,
+    polyline, g {
+      stroke: $acc-background !important;
+      opacity: 1;
+    }
+  }
+  .nv-description,
+  .nv-title {
+    color: $acc-forground;
+  }
+  .input-field label.floating-label {
+    color: $acc-forground !important;
+  }
+  .nv-image-and-text {
+    img {
+      filter: grayscale(100%);
+    }
+  }
+
+  .nv-success-msg {
+    img, svg {
+      filter: grayscale(100%);
+    }
+  }
+  .elife-location-input .search-group .check-availability-style .clear-check-seach-btn {
+    color: $acc-forground;
+  }
+
+  .eshop-config-tabs.config-section-wrap .page-nav .swiper-slide a,
+  .eshop-config-tabs.config-section-wrap .page-nav li a {
+    background: $acc-background;
+    height: 88px !important;
+  }
+
+  .upload-documents-wrapper .eid-container .plus-icon {
+    background: $acc-background;
+  }
+
+  .form input:-webkit-autofill,
+  .form input:-webkit-autofill:hover,
+  .form input:-webkit-autofill:focus,
+  .form textarea:-webkit-autofill,
+  .form textarea:-webkit-autofill:hover,
+  .form textarea:-webkit-autofill:focus,
+  .form select:-webkit-autofill,
+  .form select:-webkit-autofill:hover,
+  .form select:-webkit-autofill:focus {
+    //border: 1px solid green;
+    -webkit-text-fill-color: $acc-forground;
+    -webkit-box-shadow: 0 0 0px 1000px $acc-background inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+
+  .form input:not([type]), .form input[type=date]:not(.browser-default),
+  .form input[type=datetime-local]:not(.browser-default), .form input[type=datetime]:not(.browser-default),
+  .form input[type=email]:not(.browser-default), .form input[type=number]:not(.browser-default),
+  .form input[type=password]:not(.browser-default), .form input[type=search]:not(.browser-default),
+  .form input[type=tel]:not(.browser-default), .form input[type=text]:not(.browser-default), .form input[type=time]:not(.browser-default),
+  .form input[type=url]:not(.browser-default), textarea.materialize-textarea {
+    color: $acc-forground;
+  }
+
+  .form input:not([type]):focus:not([readonly])~label, .form input[type=date]:not(.browser-default):focus:not([readonly])~label,
+  .form input[type=datetime-local]:not(.browser-default):focus:not([readonly])~label, .form input[type=datetime]:not(.browser-default):focus:not([readonly])~label,
+  .form input[type=email]:not(.browser-default):focus:not([readonly])~label, .form input[type=number]:not(.browser-default):focus:not([readonly])~label,
+  .form input[type=password]:not(.browser-default):focus:not([readonly])~label, .form input[type=search]:not(.browser-default):focus:not([readonly])~label,
+  .form input[type=tel]:not(.browser-default):focus:not([readonly])~label,
+  .form input[type=text]:not(.browser-default):focus:not([readonly])~label, .form input[type=time]:not(.browser-default):focus:not([readonly])~label,
+  .form input[type=url]:not(.browser-default):focus:not([readonly])~label {
+    color: $acc-forground;
+  }
+  .input-field .helper-text.text-danger, .input-field .helper-text.text-danger p,
+  .nv-mobile-number {
+    color: $acc-forground !important;
+  }
+  .bg-green-icon {
+    background-color: $acc-forground;
+    svg {
+      stroke: $acc-background;
+      circle,
+      path,
+      polygon,
+      polyline,
+      g {
+        stroke: $acc-background !important;
+      }
+    }
+  }
+  .form input:not([type]):focus:not([readonly]), .form input[type=date]:not(.browser-default):focus:not([readonly]),
+  .form input[type=datetime-local]:not(.browser-default):focus:not([readonly]), .form input[type=datetime]:not(.browser-default):focus:not([readonly]),
+  .form input[type=email]:not(.browser-default):focus:not([readonly]), .form input[type=number]:not(.browser-default):focus:not([readonly]),
+  .form input[type=password]:not(.browser-default):focus:not([readonly]), .form input[type=search]:not(.browser-default):focus:not([readonly]),
+  .form input[type=tel]:not(.browser-default):focus:not([readonly]), .form input[type=text]:not(.browser-default):focus:not([readonly]),
+  .form input[type=time]:not(.browser-default):focus:not([readonly]), .form input[type=url]:not(.browser-default):focus:not([readonly]),
+  textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $acc-forground;
+    box-shadow: 0 1px 0 0 $acc-forground;
+  }
+
+  // *****************************************
+  // buynget - nv-modals
+  // *****************************************
+  .outstanding-bill-wrapper {
+    border: 1px solid $acc-forground;
+    background: $acc-background;
+  }
+  .bill-details .data-warraper {
+    .customer-name,
+    .customer-number {
+      color: $acc-forground;
+    }
+  }
+  .link-no-arrow.green {
+    color: $acc-forground;
+  }
+  .nv-modal-content {
+    background-color: $acc-background;
+    border-top: 1px solid $acc-forground;
+    .btn.btn-green {
+      background-color: $acc-forground;
+      color: $acc-background;
+    }
+    svg, img {
+      filter: grayscale(100%);
+    }
+  }
+  .nv-modal-title {
+    color: $acc-forground;
+  }
+  .more-details-content-wrapper p {
+    color: $acc-forground;
+  }
+  .more-details-content-wrapper::-webkit-scrollbar-thumb {
+    background-color: $acc-forground;
+  }
+  .bundle-charges-wrapper .bundles {
+    border-bottom: 1px dashed $acc-forground;
+    .bundle-head .head-title {
+      color: $acc-forground;
+    }
+  }
+  .bundles-footer {
+    p,a {
+      color: $acc-forground;
+    }
+  }
+  .bundle-list li {
+    color: $acc-forground;
+  }
+  .out-of-bundle-charges-title {
+    color: $acc-forground;
+  }
+
+  // *****************************************
+  // buynget - order-summary
+  // *****************************************
+  .nv-payment-summary {
+    .nv-purchase-prodected {
+      background-color: $acc-background;
+      border: 1px solid $acc-forground;
+    }
+    .btn.btn-green {
+      background-color: $acc-forground;
+      border-color: $acc-forground !important;
+      color: $acc-background;
+    }
+    img {
+      filter: grayscale(100%);
+    }
+  }
+
+  // *****************************************
+  // buynget - nv elife cards
+  // *****************************************
+  .nv-card-wrapper {
+    .nv-card.products {
+      border: 1px solid $acc-forground;
+      .btn {
+        border: 0;
+        border-top: 1px solid;
+      }
+    }
+    .elife-plan {
+      .btn {
+        border: 1px solid;
+        border-color: $acc-forground !important;
+      }
+      .nv-card-body {
+        background-color: $acc-background;
+        img {
+          filter: grayscale(100%);
+        }
+        .nv-brand,
+        .nv-product-name {
+          color: $acc-forground;
+        }
+        .nv-package-warraper {
+          border-color: $acc-forground;
+        }
+      }
+    }
+    .nv-feature-list li {
+      color: $acc-forground;
+    }
+    .nv-channel-list a {
+      color: $acc-forground;
+    }
+    .nv-price-wrapper {
+      .from,
+      .price,
+      .price-vat {
+        color: $acc-forground;
+      }
+    }
+    &.selectable .nv-card-input[type=checkbox]:checked+.products .nv-checkboxes-wrap label {
+      background-color: $acc-background;
+      border-color: $acc-forground;
+    }
+  }
+  .nv-package-warraper {
+    .nv-package-details {
+      .nv-package-detail {
+        color: $acc-forground !important;
+        span, p, s {
+          color: $acc-forground !important;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  // *****************************************
+  // buynget - generic changes
+  // *****************************************
+  .gray-bg {
+    background: $acc-background;
+  }
+  .gray-color {
+    color: $acc-forground !important
+  }
+  .nv-section-title,
+  .nv-section-sub-title{
+    color: $acc-forground;
+  }
+
+  .nv-modal-close {
+    svg {
+      circle,
+      path,
+      line,
+      polygon,
+      polyline,
+      g {
+        stroke: $acc-forground !important;
+      }
+    }
+  }
+  img {
+    filter: grayscale(100%);
+  }
+  .nv-spacifications li {
+    color: $acc-forground;
+  }
+
+  .card {
+    background: $acc-background;
+    border: 1px solid $acc-forground;
+  }
+
+  // *****************************************
+  // buynget - eshop - titles
+  // *****************************************
+  .title-wrapper {
+    .pre-tite {
+      p {
+        color: $acc-forground
+      }
+
+      svg.share-icon {
+        width: 12px;
+        fill: $acc-forground;
+      }
+    }
+
+    .title {
+      h3,
+      h1 {
+        color: $acc-forground;
+      }
+    }
+  }
+  .default-section-title {
+    color: $acc-forground;
+  }
+  .action-btn {
+    a {
+      color: $acc-forground;
+    }
+  }
+  .default-title,
+  .default-title h3 {
+    color: $acc-forground;
+
+    &.with-b-b {
+      border-bottom: 1px solid $acc-forground;
+    }
+  }
+  .sacondary-title,
+  .sacondary-title h4 {
+    color: $acc-forground;
+  }
+
+  .addons-heading {
+    color: $acc-forground;
+  }
+  .section-sub-heading {
+    color: $acc-forground;
+  }
+
+  // *****************************************
+  // buynget - eshop - 02-radio selectors
+  // *****************************************
+  .selector-toggle-container {
+    .selector-toggle-title {
+      color: $acc-forground;
+      strong {
+        color: $acc-forground;
+      }
+    }
+    .swiper-wrapper,
+    .selector-toggle-wapper {
+      .selector-toggle-item {
+        input[type="checkbox"]:checked,
+        input[type="radio"]:checked {
+          +.selector-feature {
+            .selector-feature-label {
+              color: $acc-forground;
+              border: 1px solid $acc-forground;
+              text-shadow: 0 0 0 $acc-forground;
+
+              * {
+                color: $acc-forground;
+              }
+            }
+          }
+        }
+        .selector-feature {
+          background-color: $acc-background;
+          .selector-feature-label {
+            background-color: $acc-background;
+            color: $acc-forground;
+            border: 1px solid $acc-forground;
+          }
+        }
+      }
+    }
+  }
+  .selector-toggle-container-colored {
+    .selector-toggle-title {
+      color: $acc-forground;
+
+      strong {
+        color: $acc-forground;
+      }
+    }
+    /*** Style: Vertical radio selection with label***/
+    &.acc-radio-selection {
+      .selector-toggle-wapper {
+        .selector-toggle-item {
+          input[type="radio"] {
+            +.selector-feature {
+              span {
+                color: $acc-forground;
+              }
+            }
+          }
+          input[type="radio"]:checked {
+            +.selector-feature {
+              span {
+                color: $acc-forground;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .number-selector {
+    .tab-more-text {
+      color: $acc-forground;
+    }
+  }
+
+
+  // *****************************************
+  // buynget - eshop - 04-content-section
+  // *****************************************
+  .benefits-section {
+    .ul-list-cms ul>li {
+      color: $acc-forground;
+    }
+
+    .media-cta-container {
+      background-color: $acc-background;
+    }
+
+    .benefits-mobile {
+      color: $acc-forground;
+
+      .icon {
+
+        circle,
+        path,
+        polygon,
+        polyline {
+          stroke: $acc-forground;
+        }
+      }
+
+      .view-more {
+        &:before {
+          border: solid $acc-forground;
+          border-width: 0 1px 1px 0;
+
+        }
+      }
+
+      &.collapsed {
+        color: $acc-forground;
+
+        .icon {
+
+          circle,
+          path,
+          polygon,
+          polyline {
+            stroke: $acc-forground;
+            stroke-width: 1px;
+          }
+        }
+
+        .view-more {
+          &:before {
+            border: solid $acc-forground;
+            border-width: 0 1px 1px 0;
+            // top: 45%;
+          }
+        }
+      }
+    }
+
+
+    .features-wrapper {
+      .features-list {
+        li {
+          color: $acc-forground;
+
+          >a {
+            color: $acc-forground;
+
+            .icon {
+              fill: $acc-forground;
+            }
+          }
+
+          &.active {
+            color: $acc-forground;
+
+            >a {
+              color: $main-green;
+
+              .icon {
+                color: $acc-forground;
+
+                circle,
+                path,
+                polygon,
+                polyline {
+                  stroke: $acc-forground;
+                }
+              }
+            }
+
+          }
+        }
+      }
+    }
+
+    .img-with-disc {
+      background: $acc-background;
+    }
+  }
+  .overview-section {
+    .overview-wrapper {
+      .mobile-features {
+
+        .mobile-feature {
+          border-bottom: 1px solid $acc-forground;
+        }
+      }
+    }
+  }
+  .specification-section {
+    .specification-box {
+      .specification-list {
+
+        .table {
+
+          >tfoot,
+          >thead,
+          >tbody {
+
+            td {
+
+              color: $acc-forground;
+            }
+          }
+        }
+      }
+    }
+  }
+  .media-news {
+    .news-item {
+      border-bottom: solid 1px $acc-forground;
+
+
+    }
+  }
+  // *************************************
+  // media-cta custom styling
+  // *************************************
+  .cta-benefits,
+  .media-cta-section {
+    background-color: $acc-background;
+
+    .cta-heading {
+      color: $acc-forground;
+    }
+
+    .media-cta-container {
+      background: $acc-background;
+    }
+
+    .media-cta-wrapper {
+      p {
+        color: $acc-forground  !important;
+      }
+
+      h4 {
+        @media (max-width: 767px) {
+          color: $acc-forground;
+        }
+      }
+    }
+  }
+  .media-cta-section {
+    ~.modal-backdrop.fade.in {
+      background-color: $acc-background;
+    }
+  }
+  .media-cta-wrapper {
+    .media-cta-photo {
+      background-color: $acc-background;
+    }
+
+
+    .btn-accordion {
+
+
+      &:active,
+      &:focus,
+      &:hover {
+
+        color: $acc-forground;
+      }
+    }
+
+    .media-cta-caption {
+      >div {
+
+        //text-align: left;
+        p.media-cta-icon {
+
+          svg {
+            fill: $acc-forground;
+          }
+        }
+      }
+    }
+
+    .more-details-triangle {
+      fill: $acc-forground;
+    }
+
+    .media-cta-details {
+      background-color: $acc-background;
+
+      .h5,
+      h5 {
+        color: $acc-forground;
+      }
+
+      p,
+      ul {
+        color: $acc-forground;
+      }
+
+    }
+
+
+
+
+
+    .detail-price-new {
+
+      color: $acc-forground;
+
+
+    }
+
+    .btn-arrow-only {
+
+
+      svg {
+        stroke: $acc-forground;
+
+      }
+    }
+
+
+
+    p,
+    ul {
+      color: $acc-forground;
+
+    }
+
+  }
+  /* -----------------------------------------
+  04 - lg viewport
+  ----------------------------------------- */
+ @media (min-width: 1248px) {
+    .media-cta-wrapper {
+      .h3,
+      .h4,
+      h3,
+      h4 {
+        font-size: 26px;
+        margin-bottom: 1.7rem;
+        color: $acc-forground;
+      }
+    }
+  }
+  /* -----------------------------------------
+  07 - background colors
+  -------------------------------------------- */
+  .media-cta-container {
+    background-color: $acc-background;
+    &.media-cta-container-wh {
+      background-color: $acc-background
+    }
+    &.media-cta-container-gr {
+      background-color: $acc-background
+    }
+  }
+  .benefits-section {
+    &.no-action {
+      .main-text-action-wrapper {
+        .btn {
+          &:hover {
+            color: $acc-forground
+          }
+        }
+      }
+    }
+  }
+  .benefits-section .features-wrapper .features-list li {
+    color: $acc-forground
+  }
+  .benefits-section .features-wrapper .features-list li>a {
+    color: $acc-forground
+  }
+  .benefits-section .features-wrapper .features-list li>a p {
+    color: $acc-forground;
+  }
+  .benefits-section .features-wrapper .features-list li.active {
+    color: $acc-forground
+  }
+  .benefits-section .features-wrapper .features-list li.active>a {
+    color: $acc-forground
+  }
+  .benefits-section .features-wrapper .features-list li.active>a p {
+    color: $acc-forground
+  }
+  .benefits-section .features-wrapper .features-list li.active>a .icon {
+    color: $acc-forground
+  }
+  .benefits-section .features-wrapper .features-list li.active>a .icon circle,
+  .benefits-section .features-wrapper .features-list li.active>a .icon path,
+  .benefits-section .features-wrapper .features-list li.active>a .icon polygon,
+  .benefits-section .features-wrapper .features-list li.active>a .icon polyline {
+    stroke: $acc-forground
+  }
+  .benefits-section .img-with-disc {
+    background: $acc-background;
+  }
+
+
+  // *****************************************
+  // buynget - eshop - 07-promo-code
+  // *****************************************
+  .promo-code {
+    .action-part {
+      .price-wrapper {
+        .price {
+          color: $acc-forground;
+        }
+      }
+    }
+    .purchase-protected {
+      .media-left {
+        img,
+        svg:not(:root) {
+
+          circle,
+          path,
+          polygon,
+          polyline {
+            stroke: $acc-forground;
+          }
+        }
+      }
+    }
+    .order-summary {
+      .order-summary-item {
+        .media {
+          border-bottom: 1px solid $acc-forground;
+          .item-details {
+            border-bottom: 1px solid $acc-forground;
+          }
+          .brand-item {
+            color: $acc-forground;
+          }
+          .item-quantity,
+          .total-price {
+            color: $acc-forground;
+          }
+        }
+      }
+    }
+  }
+
+
+  // *****************************************
+  // buynget - eshop - 08-cart
+  // *****************************************
+  .cart {
+    .default-section-title {
+      .item-hint {
+        color: $acc-forground;
+        &.print {
+          color: $acc-forground;
+          img,
+          svg {
+            circle,
+            path,
+            polygon,
+            polyline {
+              stroke: $acc-forground;
+            }
+          }
+        }
+
+        img,
+        svg {
+
+          circle,
+          path,
+          polygon,
+          polyline {
+            stroke: $acc-forground;
+          }
+        }
+      }
+
+    }
+
+    .cart-item {
+      .item-details {
+        .media-body {
+          .default-title {
+            color: $acc-forground;
+          }
+
+          .default-text {
+            strong {
+              color: $acc-forground;
+            }
+          }
+
+          .spacifications {
+            color: $acc-forground;
+          }
+        }
+      }
+
+      .selected-devices {
+        margin-top: 32px;
+        .selected-device {
+          border-bottom: 1px solid $acc-forground;
+        }
+
+        .offer {
+          .new-price {
+            color: $acc-forground;
+            .price {
+              color: $acc-forground;
+            }
+          }
+        }
+      }
+    }
+
+   @media (max-width: 991px) {
+      .cart-item {
+        .selected-devices {
+          .selected-device {
+            border-top: 1px solid $acc-forground;
+          }
+        }
+      }
+    }
+  }
+
+
+  // *****************************************
+  // buynget - eshop - 10-wizard
+  // *****************************************
+  .step-indicator {
+    li {
+      &:after {
+        background-color: $acc-background
+      }
+      &.active,
+      &.complete {
+        .step {
+          // border-color: @wizard-color-active;
+          border-color: $acc-forground;
+          color: $acc-forground;
+          background: $acc-background;
+
+          &:before {
+            background-color: $acc-background;
+          }
+        }
+      }
+      &.complete {
+        &:after {
+          background-color: $acc-background
+        }
+      }
+    }
+    .step {
+      background-color: $acc-background;
+      border: 1px solid $acc-forground;
+      color: $acc-forground;
+
+      &:before {
+        border: 1px solid $acc-forground;
+        background: $acc-background;
+      }
+    }
+    .caption {
+      background: $acc-background;
+      color: $acc-forground
+    }
+    .active,
+    .complete {
+      .caption {
+        color: $acc-forground;
+      }
+    }
+  }
+
+
+  // *****************************************
+  // buynget - eshop - 12-info card
+  // *****************************************
+  .info-card {
+    .default-title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-family: Lato, 'GE SS Two', Roboto, Arial, sans-serif;
+      margin-bottom: .5rem;
+      font-weight: bold;
+    }
+
+    &.with-selection {
+      .default-title {
+
+        span {
+          color: $acc-forground;
+        }
+      }
+
+      .media-left {
+
+
+        label {
+          border: 1px solid $acc-forground;
+        }
+
+
+        input[type="checkbox"]:checked+label {
+          background-color: $acc-forground;
+        }
+
+        input[type="radio"]:checked+label {
+          border: 1px solid $acc-forground;
+        }
+
+        input[type="checkbox"]:checked+label {
+          &:after {
+            border: 1px solid $acc-forground;
+          }
+        }
+
+        input[type="radio"]:checked+label {
+          &:after {
+            background-color: $acc-forground;
+          }
+        }
+
+
+      }
+    }
+  }
+  .delivery-mode {
+
+    .media.product {
+      border-bottom: 1px solid $acc-forground;
+    }
+    .card {
+      .item-quantity {
+        color: $acc-forground;
+      }
+    }
+  }
+  .payment-method {
+    .method {
+      input[type="radio"]:checked {
+        +.selected-method {
+          border: 1px solid $acc-forground;
+          p {
+            color: $acc-forground;
+          }
+          img,
+          svg {
+            path {
+              fill: $acc-background;
+              stroke: $acc-forground;
+            }
+          }
+        }
+      }
+      .selected-method {
+        background-color: $acc-background;
+        color: $acc-forground;
+        border: 1px solid $acc-forground;
+        p {
+          color: $acc-forground;
+        }
+        img,
+        svg {
+          circle,
+          path,
+          polygon,
+          polyline {
+            stroke: $acc-forground;
+          }
+        }
+      }
+    }
+  }
+
+
+  // *****************************************
+  // buynget - eshop - 16-quantity
+  // *****************************************
+  .plus-minus-input {
+    input.input-group-field {
+      background: $acc-background
+    }
+    .input-group-button {
+      .circle {
+        background-color: $acc-background;
+        color: $acc-forground;
+
+        &:after,
+        &:before {
+          background: $acc-forground;
+        }
+      }
+      &.active {
+        .circle:after,
+        .circle:before {
+          background: $acc-background;
+        }
+      }
+    }
+  }
+
+  // *****************************************
+  // buynget - eshop - 115-config-carousel
+  // *****************************************
+  .hero-slider .hero-slider-thumbs-slide {
+    border-left: solid 2px $acc-forground
+  }
+
+  .hero-slider .hero-slider-thumbs {
+    border-left: solid 2px  $acc-forground
+  }
+
+  .hero-slider .hero-slider-thumbs .active {
+    border-left: solid 2px  $acc-forground
+  }
+
+  .hero-slider .swiper-pagination-bullet-active {
+    background: $acc-background
+  }
+
+  .hero-slider-modal .hero-slider-thumbs-modal .swiper-slide-thumb-active {
+    border-bottom: solid 2px  $acc-forground
+  }
+
+  *[lang='ar'] *[dir='rtl'] .hero-slider .hero-slider-thumbs-slide {
+    border-left: 0;
+    border-right: solid 2px  $acc-forground
+  }
+
+  *[lang='ar'] *[dir='rtl'] .hero-slider .hero-slider-thumbs .active {
+    border-right: solid 2px  $acc-forground
+  }
+
+  // *****************************************
+  // buynget - eshop - 118-addons
+  // *****************************************
+  .checkbox,
+  .radio {
+    .check-label {
+      color: $acc-forground;
+    }
+
+    input[type=radio],
+    input[type=checkbox] {
+
+      +.check-label,
+      h3 {
+        &:before {
+          border: 1px solid $acc-forground;
+        }
+      }
+    }
+  }
+
+  .checkbox {
+    input[type=checkbox] {
+      &:checked {
+
+        +.check-label,
+        h3 {
+          &:before {
+            background-color: $acc-background;
+            border-color: $acc-forground;
+          }
+        }
+      }
+    }
+  }
+
+  .radio {
+    input[type=radio] {
+      &:checked {
+
+        +.check-label,
+        h3 {
+          &:after {
+            background-color: $acc-forground;
+          }
+        }
+      }
+    }
+  }
+
+
+  .addon {
+    p {
+      color: $acc-forground;
+    }
+
+    h3.check-label {
+      &.new {
+        &:after {
+          background: $acc-background;
+          color: $acc-forground;
+        }
+      }
+    }
+
+    strong {
+      color: $acc-forground;
+    }
+  }
+
+  .well {
+    border: 1px solid $acc-forground;
+    background-color: $acc-background;
+  }
+
+  .selector-toggle-container {
+    &.border-bottom {
+      border-bottom: 1px solid $acc-forground;
+    }
+  }
+
+  .price-wrapper {
+    .price {
+      color: $acc-forground;
+
+      .vat {
+        color: $acc-forground;
+      }
+    }
+  }
+
+  .content-section {
+    .benefits-box {
+      p {
+        color: $acc-forground
+      }
+    }
+  }
+
+
+  // *****************************************
+  // buynget - eshop - 118-bg-collapse
+  // *****************************************
+  .bg-collapse {
+    .collapse-title {
+      color: $acc-forground;
+
+      strong {
+        color: $acc-forground;
+      }
+    }
+
+    .collapse-tab-wrapper {
+      .desktop-collapse {
+
+        .collapse-tab {
+          background-color: $acc-background;
+          color: $acc-forground;
+          border: 2px solid $acc-forground;
+          text-shadow: .5px 0 0 $acc-forground;
+
+          .tab-more-text {
+            color: $acc-forground;
+          }
+
+          &.collapsed {
+            color: $acc-forground;
+            border: 2px solid $acc-forground;
+
+            .tab-more-text {
+              color: $acc-forground;
+            }
+          }
+
+        }
+      }
+
+      .collapse-content {
+        .mobile-collapse {
+          .collapse-tab {
+            background-color: $acc-background;
+
+            color: $acc-forground;
+            border: 2px solid $acc-forground;
+
+            &.collapsed {
+              color: $acc-forground;
+              border: 0 solid $acc-forground;
+
+              .tab-more-text {
+                color: $acc-forground;
+              }
+            }
+          }
+        }
+
+        .panel-heading {
+          .tab-title {
+            color: $acc-forground;
+          }
+
+          .tab-more-text {
+            color: $acc-forground;
+          }
+        }
+
+        &.panel-open {
+          .panel-heading {
+            color: $acc-forground  !important;
+            border: 1px solid $acc-forground  !important;
+
+            .tab-more-text {
+              color: $acc-forground;
+            }
+
+            .tab-title {
+              color: $acc-forground;
+
+            }
+
+          }
+        }
+
+        .panel-body {
+          border: 1px solid $acc-forground;
+          background-color: $acc-background;
+
+          // label,
+          p {
+            color: $acc-forground;
+
+          }
+
+          .loading-message {
+            p {
+              color: $acc-forground;
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .selector-toggle-container .selector-toggle-wapper .selector-toggle-item .selector-feature .selector-feature-label .tab-title {
+    color: $acc-forground;
+  }
+
+  .selector-toggle-container .selector-toggle-wapper .selector-toggle-item .selector-feature .selector-feature-label .tab-more-text {
+    color: $acc-forground;
+  }
+
+  .selector-toggle-container .selector-toggle-wapper .selector-toggle-item input[type='radio']:checked+.selector-feature .selector-feature-label .tab-more-text,
+  .selector-toggle-container .selector-toggle-wapper .selector-toggle-item input[type='radio']:checked+.selector-feature .selector-feature-label .tab-title,
+  .selector-toggle-container .selector-toggle-wapper .selector-toggle-item input[type='radio']:checked+.selector-feature .selector-feature-label .tab-title strong {
+    color: $acc-forground;
+  }
+
+  .bg-collapse .collapse-tab-wrapper .collapse-content .mobile-collapse .collapse-tab {
+    background-color: $acc-background;
+    color: $acc-forground;
+    border: 2px solid $acc-forground;
+  }
+
+  .bg-collapse .collapse-tab-wrapper .collapse-content .mobile-collapse .collapse-tab.collapsed {
+    color: $acc-forground;
+    border: 0 solid $acc-forground;
+  }
+
+  /*ui fix for Payment options device config*/
+  .bg-collapse.ng .collapse-tab-wrapper .collapse-content .panel-heading {
+    background-color: $acc-background;
+    color: $acc-forground;
+    border: 1px solid $acc-forground;
+  }
+
+  // *****************************************
+  // buynget - eshop - 118-choose-number
+  // *****************************************
+  .phone-input-group {
+
+    input[type="number"],
+    input[type=password] {
+      border: 0;
+      border-bottom: 1px solid $acc-forground;
+
+    }
+
+    &.nv-lg {
+
+      input[type=password],
+      input[type=number] {
+        border: 0;
+        border-bottom: 1px solid $acc-forground;
+        color: $acc-forground;
+      }
+    }
+
+
+    input[type=password].ng-valid.ng-not-empty:not(.browser-default) {
+      color: $acc-forground;
+    }
+  }
+  .choose-number {
+    .form-section {
+      background-color: $acc-background;
+
+      select {
+        color: $acc-forground;
+      }
+    }
+  }
+  .tabset {
+    h3 {
+      color: $acc-forground;
+    }
+    p {
+      color: $acc-forground;
+    }
+    .nav-tabs {
+      border-bottom: 1px solid transparent;
+    }
+    .nav-tabs>li>a {
+      color: $acc-forground;
+    }
+    .nav-tabs>.active>a,
+    .nav-tabs>.active>a:focus,
+    .nav-tabs>.active>a:hover {
+      border: 1px solid transparent;
+      border-bottom: 4px solid $acc-forground;
+      color: $acc-forground;
+    }
+  }
+
+
+  // *****************************************
+  // buynget - eshop - 118-propose-number
+  // *****************************************
+
+  .small-text {
+    color: $acc-forground;
+  }
+  .desc {
+    color: $acc-forground;
+  }
+  .propose-number {
+    color: $acc-forground;
+  }
+
+  // *****************************************
+  // buynget - eshop - common changes
+  // *****************************************
+
+  .selectize-input .ui-select-match,
+  .checkboxes-wrap label, .radio-wrap label,
+  .btn-text {
+    color: $acc-forground !important;
+  }
+  .selectize-control.single.ng-not-empty .selectize-input,
+  .category-head-collapisble.expandable:after {
+    border-color: $acc-forground !important;
+  }
+  .selectize-control.ng-not-empty+label {
+    color: $acc-forground;
+  }
+  .compare-icon a, .filter-icon a, .reset a, .sort-icon a,
+  .category-head-collapisble.default, .category-head-collapisble.expandable {
+    color: $acc-forground;
+  }
+
+  .btn-text:before {
+    border-color: $acc-forground !important;
+  }
+
+  // buynget cards
+  .bg-cards .device-card.tile-table .tile-card .product, .bg-cards .device-card.tile-table .tile-card .tiles-box-list, .bg-cards .device-card.tile-table .tile-card .tiles-box-title, .bg-cards .device-multi-card-selection.tile-table .tile-card .product, .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-list, .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-title, .bg-cards .device-single-card-selection.tile-table .tile-card .product, .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-list, .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-title {
+    border-left: 1px solid $acc-forground;
+    background: $acc-background;
+    border-right: 1px solid $acc-forground;
+    color: $acc-forground;
+  }
+  .bg-cards .device-card.tile-table .tile-card .product, .bg-cards .device-multi-card-selection.tile-table .tile-card .product, .bg-cards .device-single-card-selection.tile-table .tile-card .product {
+    border-top: 1px solid $acc-forground;
+  }
+  .bg-cards .device-card.tile-table .tile-card .smile-points, .bg-cards .device-multi-card-selection.tile-table .tile-card .smile-points, .bg-cards .device-single-card-selection.tile-table .tile-card .smile-points {
+    border-left: 1px solid $acc-forground;
+    border-right: 1px solid $acc-forground;
+  }
+  .bg-cards .device-card-selection.tile-table .tile-card .read-more, .bg-cards .device-card.tile-table .tile-card .read-more, .bg-cards .device-multi-card-selection.tile-table .tile-card .read-more, .bg-cards .device-single-card-selection.tile-table .tile-card .read-more, .bg-cards .plan-card.tile-table .tile-card .read-more, .bg-cards .plan-multi-card-selection.tile-table .tile-card .read-more, .bg-cards .plan-single-card-selection.tile-table .tile-card .read-more, .bg-cards .product-grid.tile-table .tile-card .read-more, .bg-cards .product-home-card.tile-table .tile-card .read-more, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .read-more, .bg-cards .product-home-single-card-selection.tile-table .tile-card .read-more {
+    border-bottom: 1px solid $acc-forground;
+    border-left: 1px solid $acc-forground;
+    border-right: 1px solid $acc-forground;
+    border-radius: 0 0 10px 10px;
+  }
+  .bg-cards .device-card.tile-table .tile-card .tiles-box-title .catagory, .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-title .catagory, .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-title .catagory {
+    color: $acc-forground;
+  }
+  .bg-cards .device-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .device-card.tile-table .tile-card .detail-price-new .from, .bg-cards .device-multi-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .device-single-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .plan-card.tile-table .tile-card .detail-price-new .from, .bg-cards .plan-multi-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .plan-single-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .product-grid.tile-table .tile-card .detail-price-new .from, .bg-cards .product-home-card.tile-table .tile-card .detail-price-new .from, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .detail-price-new .from, .bg-cards .product-home-single-card-selection.tile-table .tile-card .detail-price-new .from,
+  .detail-info-wrap-pricetag .main-part .price,
+  .bg-cards .device-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .device-card.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .device-multi-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .device-single-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .plan-card.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .plan-multi-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .plan-single-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .product-grid.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .product-home-card.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .tiles-box-list .bottom-text, .bg-cards .product-home-single-card-selection.tile-table .tile-card .tiles-box-list .bottom-text {
+    color: $acc-forground;
+  }
+  .bg-cards .device-card-selection.tile-table .tile-card .smile-points, .bg-cards .device-card.tile-table .tile-card .smile-points, .bg-cards .device-multi-card-selection.tile-table .tile-card .smile-points, .bg-cards .device-single-card-selection.tile-table .tile-card .smile-points, .bg-cards .plan-card.tile-table .tile-card .smile-points, .bg-cards .plan-multi-card-selection.tile-table .tile-card .smile-points, .bg-cards .plan-single-card-selection.tile-table .tile-card .smile-points, .bg-cards .product-grid.tile-table .tile-card .smile-points, .bg-cards .product-home-card.tile-table .tile-card .smile-points, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .smile-points, .bg-cards .product-home-single-card-selection.tile-table .tile-card .smile-points {
+    background: $acc-background;
+    color: $acc-forground;
+  }
+  .bg-cards .device-card-selection.tile-table .tile-card .special-offer, .bg-cards .device-card.tile-table .tile-card .special-offer, .bg-cards .device-multi-card-selection.tile-table .tile-card .special-offer, .bg-cards .device-single-card-selection.tile-table .tile-card .special-offer, .bg-cards .plan-card.tile-table .tile-card .special-offer, .bg-cards .plan-multi-card-selection.tile-table .tile-card .special-offer, .bg-cards .plan-single-card-selection.tile-table .tile-card .special-offer, .bg-cards .product-grid.tile-table .tile-card .special-offer, .bg-cards .product-home-card.tile-table .tile-card .special-offer, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .special-offer, .bg-cards .product-home-single-card-selection.tile-table .tile-card .special-offer {
+    background: $acc-forground  ;
+    color: $acc-background;
+    border: 1px solid $acc-background;
+    border-top: 0;
+  }
+  .bg-cards .device-card-selection.offer .tile-card .price, .bg-cards .device-card.offer .tile-card .price, .bg-cards .device-multi-card-selection.offer .tile-card .price, .bg-cards .device-single-card-selection.offer .tile-card .price, .bg-cards .plan-card.offer .tile-card .price, .bg-cards .plan-multi-card-selection.offer .tile-card .price, .bg-cards .plan-single-card-selection.offer .tile-card .price, .bg-cards .product-grid.offer .tile-card .price, .bg-cards .product-home-card.offer .tile-card .price, .bg-cards .product-home-multi-card-selection.offer .tile-card .price, .bg-cards .product-home-single-card-selection.offer .tile-card .price,
+  .bg-cards .device-card-selection.offer .tile-card small, .bg-cards .device-card.offer .tile-card small, .bg-cards .device-multi-card-selection.offer .tile-card small, .bg-cards .device-single-card-selection.offer .tile-card small, .bg-cards .plan-card.offer .tile-card small, .bg-cards .plan-multi-card-selection.offer .tile-card small, .bg-cards .plan-single-card-selection.offer .tile-card small, .bg-cards .product-grid.offer .tile-card small, .bg-cards .product-home-card.offer .tile-card small, .bg-cards .product-home-multi-card-selection.offer .tile-card small, .bg-cards .product-home-single-card-selection.offer .tile-card small {
+    color: $acc-forground;
+  }
+
+  .bg-cards .device-card-selection.offer .tile-card .before-price-container, .bg-cards .device-card.offer .tile-card .before-price-container, .bg-cards .device-multi-card-selection.offer .tile-card .before-price-container, .bg-cards .device-single-card-selection.offer .tile-card .before-price-container, .bg-cards .plan-card.offer .tile-card .before-price-container, .bg-cards .plan-multi-card-selection.offer .tile-card .before-price-container, .bg-cards .plan-single-card-selection.offer .tile-card .before-price-container, .bg-cards .product-grid.offer .tile-card .before-price-container, .bg-cards .product-home-card.offer .tile-card .before-price-container, .bg-cards .product-home-multi-card-selection.offer .tile-card .before-price-container, .bg-cards .product-home-single-card-selection.offer .tile-card .before-price-container {
+    background: $acc-forground  ;
+    color: $acc-background;
+  }
+  .bg-cards .device-card.tile-table .tile-card .read-more, .bg-cards .device-card-selection.tile-table .tile-card .read-more, .bg-cards .device-multi-card-selection.tile-table .tile-card .read-more, .bg-cards .device-single-card-selection.tile-table .tile-card .read-more, .bg-cards .plan-card.tile-table .tile-card .read-more, .bg-cards .plan-multi-card-selection.tile-table .tile-card .read-more, .bg-cards .plan-single-card-selection.tile-table .tile-card .read-more, .bg-cards .product-grid.tile-table .tile-card .read-more, .bg-cards .product-home-card.tile-table .tile-card .read-more, .bg-cards .product-home-multi-card-selection.tile-table .tile-card .read-more, .bg-cards .product-home-single-card-selection.tile-table .tile-card .read-more {
+    background: $acc-background;
+    border-top: 1px solid $acc-forground;
+  }
+
+  .bg-cards .device-card.offer .tile-card .read-more, .bg-cards .device-card-selection.offer .tile-card .read-more, .bg-cards .device-multi-card-selection.offer .tile-card .read-more, .bg-cards .device-single-card-selection.offer .tile-card .read-more, .bg-cards .plan-card.offer .tile-card .read-more, .bg-cards .plan-multi-card-selection.offer .tile-card .read-more, .bg-cards .plan-single-card-selection.offer .tile-card .read-more, .bg-cards .product-grid.offer .tile-card .read-more, .bg-cards .product-home-card.offer .tile-card .read-more, .bg-cards .product-home-multi-card-selection.offer .tile-card .read-more, .bg-cards .product-home-single-card-selection.offer .tile-card .read-more, .footer {
+    background: $acc-background;
+  }
+
+  .bg-cards .plan-card.offer .tile-card:hover .smile-points, .bg-cards .plan-multi-card-selection.offer .tile-card:hover .smile-points, .bg-cards .plan-single-card-selection.offer .tile-card:hover .smile-points, .bg-cards .plan-card.offer .tile-card:hover .tiles-box-list, .bg-cards .plan-multi-card-selection.offer .tile-card:hover .tiles-box-list, .bg-cards .plan-single-card-selection.offer .tile-card:hover .tiles-box-list {
+    border-color: $acc-forground;
+  }
+
+  .default-sub-title p {
+    color: $acc-forground;
+  }
+
+  .panel-footer {
+    .btn.btn-green,
+    .btn.btn-green.focus,
+    .btn.btn-green:focus,
+    .btn.btn-orange-text {
+      border-color: $acc-forground !important;
+      color: $acc-forground;
+    }
+  }
+
+  .specification-section .table.table-striped > tbody > tr:nth-of-type(odd) th {
+    color: $acc-background;
+  }
+
+  .specification-section .table.table-striped > tbody > tr:nth-of-type(odd) td {
+    color: $acc-background !important;
+  }
+
+  .out-ofstock {
+    background-color: $acc-forground;
+  }
+
+  .buynget-menu {
+    background-color: $acc-background;
+    .navbar-nav>.active>a,
+    .navbar-nav>.active>a:focus,
+    .navbar-nav>.active>a:hover {
+      color: $acc-forground;
+    }
+    .navbar-nav>li>a {
+      color: $acc-forground;
+      border-bottom: 0;
+    }
+    .navbar-nav>.active>a {
+      border-color: $acc-forground !important;
+    }
+  }
+
+  .price-with-promotion .from {
+    color: $acc-forground;
+  }
+  .price-with-promotion .price-details .price,
+  .price-with-promotion .before-price-container,
+  .price-with-promotion .before-price-container .old-price .price {
+    color: $acc-forground;
+  }
+
+  .price-with-promotion .before-price-container .old-price {
+    background-color: $acc-forground ;
+    color: $acc-background;
+  }
+
+  .shopping-cart .plus-minus-input .input-group-button .circle {
+    background-color: $acc-forground;
+  }
+
+  .btn-text {
+    .more {
+      color: $acc-forground;
+    }
+  }
+
+  .btn.btn-orange-text {
+    color: $acc-forground;
+  }
+  .my-info .complete-info p {
+    color: $acc-forground;
+  }
+
+  .panel-default > .panel-heading {
+    color: $acc-forground;
+  }
+
+  .well p {
+    color: $acc-forground;
+  }
+
+  .addon.addonsList {
+    .acc-black .btn.btn-green, .acc-black .btn.btn-green.focus, .acc-black .btn.btn-green:focus, .acc-black .btn.btn-orange-text {
+      color: $acc-forground;
+      border-color: $acc-forground !important;
+    }
+    a {
+      color: $acc-forground;
+    }
+  }
+
+  .apolo-filters-wrapper {
+    background: $acc-background;
+    border-bottom: 1px solid $acc-forground;
+    overflow: inherit;
+    .filter-heading h2 {
+      color: $acc-background;
+    }
+  }
+  .apolo-wrapper .selector-toggle-container .selector-toggle-wapper .selector-toggle-item input[type=checkbox]:checked + .selector-feature .selector-feature-label:after, .apolo-wrapper .selector-toggle-container .selector-toggle-wapper .selector-toggle-item input[type=radio]:checked + .selector-feature .selector-feature-label:after, .apolo-wrapper .selector-toggle-container .swiper-wrapper .selector-toggle-item input[type=checkbox]:checked + .selector-feature .selector-feature-label:after, .apolo-wrapper .selector-toggle-container .swiper-wrapper .selector-toggle-item input[type=radio]:checked + .selector-feature .selector-feature-label:after {
+    border-color: $acc-background;
+  }
+  .apolo-wrapper .selector-toggle-container .selector-toggle-wapper .selector-toggle-item input[type=checkbox]:checked + .selector-feature .selector-feature-label:before, .apolo-wrapper .selector-toggle-container .selector-toggle-wapper .selector-toggle-item input[type=radio]:checked + .selector-feature .selector-feature-label:before, .apolo-wrapper .selector-toggle-container .swiper-wrapper .selector-toggle-item input[type=checkbox]:checked + .selector-feature .selector-feature-label:before, .apolo-wrapper .selector-toggle-container .swiper-wrapper .selector-toggle-item input[type=radio]:checked + .selector-feature .selector-feature-label:before {
+    background-color: $acc-forground;
+  }
+
+  .bg-cards .plan-card.offer .tile-card .tiles-box-title, .bg-cards .plan-multi-card-selection.offer .tile-card .tiles-box-title, .bg-cards .plan-single-card-selection.offer .tile-card .tiles-box-title,
+  .bg-cards .plan-card.postpaid.tile-table .tile-card .tiles-box-title, .bg-cards .plan-multi-card-selection.postpaid.tile-table .tile-card .tiles-box-title, .bg-cards .plan-single-card-selection.postpaid.tile-table .tile-card .tiles-box-title {
+    background: $acc-background;
+    border: 1px solid $acc-forground;
+    width: 100%;
+  }
+  .bg-cards .plan-card.tile-table .tile-card .tiles-box-list, .bg-cards .plan-multi-card-selection.tile-table .tile-card .tiles-box-list, .bg-cards .plan-single-card-selection.tile-table .tile-card .tiles-box-list {
+    background-color: $acc-background;
+  }
+  ul.featureList li,
+  ul.featureList li b, ul.featureList li strong,
+  .freebie-subs p,
+  .nv-title-gray {
+    color: $acc-forground;
+  }
+
+  .freebie-subs {
+    border-color: $acc-forground;
+  }
+
+
+
+
+  // *****************************************
+  // HMB - toggle
+  // *****************************************
+  .callback-green {
+    background: transparent !important;
+  }
+
+  .callback-singleButton a {
+    background: $acc-background !important;
+    border:1px solid $acc-forground !important;
+  }
+
+  .callback-singleButton .allback-singleButton-title {
+    color: $acc-forground !important;
+  }
+
+
+  // *****************************************
+  // accessibility overlay
+  // *****************************************
+  .accessibility-overlay{
+    &.modal {
+      .modal-content{
+        background-color: $acc-background;
+        .modal-header{
+          border-bottom: 1px solid $acc-forground;
+          .close{
+            svg{
+              g{
+                g{
+                  fill: $acc-forground;
+                  stroke: $acc-forground;
+                  stroke-width: 5px;
+                }
+              }
+            }
+          }
+          .modal-title{
+            color: $acc-forground;
+          }
+        }
+        .modal-body{
+          .pop-up-content{
+            *{
+              color: $acc-forground !important;
+            }
+          }
+        }
+        .btn-text{
+          &.btn-green{
+            &:before{
+              border-color: $acc-forground;
+            }
+          }
+        }
+      }
+
+    }
+    .selector-toggle-container .selector-toggle-wapper .selector-toggle-item .selector-feature .selector-feature-label, .selector-toggle-container .swiper-wrapper .selector-toggle-item .selector-feature .selector-feature-label{
+      background-color: $acc-background;
+    }
+    .selector-toggle-container.acc-font-controller .selector-toggle-carousel .selector-toggle-wapper .selector-toggle-item .selector-feature .selector-feature-label.acc-font-normal{
+      color: $acc-forground;
+      border: 1px solid $acc-forground;
+      text-shadow: 0 0 0 $acc-forground;
+    }
+    .selector-toggle-container .selector-toggle-wapper .selector-toggle-item input[type=checkbox]:checked+.selector-feature .selector-feature-label, .selector-toggle-container .selector-toggle-wapper .selector-toggle-item input[type=radio]:checked+.selector-feature .selector-feature-label, .selector-toggle-container .swiper-wrapper .selector-toggle-item input[type=checkbox]:checked+.selector-feature .selector-feature-label, .selector-toggle-container .swiper-wrapper .selector-toggle-item input[type=radio]:checked+.selector-feature .selector-feature-label{
+      color: $acc-forground;
+      border: 1px solid $acc-forground;
+      text-shadow: 0 0 0 $acc-forground;
+    }
+  }
+
+  .main-text-section .action .btn {
+    color: #000;
+}
+.main-text-section .action .btn:hover {
+    color: #000;
+}
+
+.colorList li{
+  border: 1px solid #fff !important;
+}
+
+ .rt-intercept-popover {
+    background-color: #000;
+    border: 1px solid yellow;
+}
+.rt-intercept-popover p {
+    color: yellow;
+}
+.rt-intercept-declinebtnstyle {
+    color: #000;
+}
+.rt-intercept-acceptbtnstyle {
+    background-color: #000;
+    border-color: yellow;
+}
+  .icon-checkbox-platinum {
+    &::before {
+      filter: invert(87%) sepia(98%) saturate(1387%) hue-rotate(0.06turn) brightness(101%) contrast(103%);
+    }
+  }
+  .read-more {
+    color: $yellow-light !important;
+    background-color: $black !important;
+  }
+  .read-more.link .read-more-link,
+  .tile-card .price,
+  .tile-card small,
+  .smile-points,
+  .smile-points span {
+    color: $yellow-light !important;
+  }
+  .icon-unlimited,
+  .icon-smiles,
+  .icon-switch {
+    &:before {
+      filter: grayscale(100%);
+    }
+  }
+  .ul-list-cms ul li:after {
+    background-color: $yellow-light;
+  }
+
+ h1, h2, h3, h4, h5, h6, p, a {
+  color: $acc-forground;
+ }
+ hr {
+    border-color:  $yellow-light;
+  }
+} // ends acc-black wrapper here

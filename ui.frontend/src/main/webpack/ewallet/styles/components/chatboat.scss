@@ -1,0 +1,134 @@
+.ewallet-chat-button {
+  background-color: $chatboatbg;
+  border-radius: 8px 8px 0 0;
+  bottom: 0;
+  cursor: pointer;
+  display: block;
+  height: 60px;
+  position: fixed;
+  right: 0;
+  width: 400px;
+  z-index: 999999;
+
+  .ewallet-text {
+    color: $white;
+    font-size: 24px;
+    font-weight: 600;
+    margin-top: 18px;
+    text-align: center;
+  }
+}
+
+.ewallet-close-btn::after,
+.ewallet-close-btn::before {
+  background-color: $white;
+  content: " ";
+  height: 24px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 2px;
+}
+
+.ewallet-close-btn::before {
+  transform: rotate(45deg);
+}
+
+.ewallet-close-btn::after {
+  transform: rotate(-45deg);
+}
+
+.ewallet-close-btn {
+  float: right;
+}
+
+.ewallet-text svg {
+  fill: $white;
+  margin-left: -40px;
+  margin-right: 6px;
+  position: absolute;
+  width: 33px;
+}
+
+.ewallet-chat-panel {
+  background-color: $chatbotgray;
+  border-radius: 8px 8px 0 0;
+  bottom: 0;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+  display: none;
+  min-height: 75%;
+  position: fixed;
+  right: 0;
+  width: 400px;
+  z-index: 999;
+}
+
+.ewallet-chat-iframe {
+  border-radius: 10px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .minAI {
+    cursor: pointer;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    right: 45px;
+    top: 0;
+    width: 45px;
+  }
+
+  .minAI-Ic {
+    background: $black;
+    font-family: Lato, Arial !important;
+    height: 2px;
+    margin: auto;
+    margin-top: 30px;
+    width: 14px;
+    z-index: 999999;
+  }
+
+  .greetings {
+    font-family: Lato, Arial;
+  }
+}
+
+@media (max-width: 515px) {
+  .ewallet-chat-button {
+    background-color: $chatboatbg;
+    border-radius: 8px 8px 0 0;
+    bottom: 0;
+    cursor: pointer;
+    display: block;
+    height: 60px;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 999999;
+  }
+
+  .ewallet-text {
+    color: $white;
+    font-size: toRem(24);
+    font-weight: normal;
+    margin-top: 16px;
+    text-align: center;
+  }
+
+  .ewallet-chat-panel {
+    background-color: $chatbotgray;
+    border-radius: 0;
+    bottom: 0;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+    display: none;
+    min-height: 100%;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+  }
+}

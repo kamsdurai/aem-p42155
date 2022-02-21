@@ -1,0 +1,755 @@
+/// tile boxes slider
+// *************************************
+
+// {
+//     width: 1224px;
+//     margin-right: auto;
+//     margin-left: auto;
+//     padding-left: 12px;
+//     padding-right: 12px;
+// }
+// .tile-boxes-section{
+//     .swiper-container {
+//         overflow:auto;
+//     }
+// }
+//Causing Issue
+// .swiper-wrapper{
+//     padding-bottom: 20px;
+// }
+
+.tilecontainer {
+  @media (min-width: 320px) and (max-width: 769px) {
+    .no-swiper_card {
+      .swiper-container {
+        margin-bottom: toRem(20);
+      }
+
+      .scrollbar {
+        display: none;
+      }
+
+      .swiper-wrapper {
+        display: block !important;
+        overflow: hidden !important;
+        transform: inherit !important;
+        transition: none !important;
+      }
+
+      .swiper-slide {
+        width: 100% !important;
+
+        .swiper-slide {
+          margin-bottom: toRem(30);
+        }
+      }
+    }
+  }
+
+  .tile-boxes-image-wrapper {
+    border-radius: toRem(8);
+    height: toRem(120);
+    min-width: toRem(212);
+    overflow: hidden;
+    position: relative;
+
+    @include respond-to-min($desktop) {
+      height: toRem(225);
+    }
+
+    @media (min-width: 1248px) {
+      min-width: toRem(282);
+    }
+  }
+
+  .tile-boxes-title-wrap {
+    h2 {
+      font-size: $font26;
+      line-height: normal;
+      margin: 0;
+
+      @include respond-to-min($desktop) {
+        font-size: $font32;
+        line-height: 1.25;
+      }
+      @include rtlBlock() {
+        text-align: center;
+      }
+    }
+  }
+
+  .tile-boxes-title-small {
+    h3 {
+      color: $black;
+      color: $almost-black;
+      font-size: $font16;
+      font-weight: 700;
+      line-height: 1.5;
+      margin: 0;
+
+      @include respond-to-min($desktop) {
+        font-size: $font20;
+        line-height: 1.4;
+      }
+    }
+  }
+
+  .tile-box-description p {
+    color: $steel-grey;
+    font-size: $font14;
+    line-height: 1.43;
+    margin: 0;
+
+    @include respond-to-min($desktop) {
+      line-height: 1.6;
+    }
+  }
+
+  .tile-boxes-section {
+    padding-bottom: $font32;
+    padding-top: toRem(40);
+
+    @include font-family-lato;
+
+    @include respond-to-min($desktop) {
+      padding-bottom: toRem(75);
+      padding-top: toRem(80);
+    }
+
+    &.with-bg {
+      background-color: rgba(242, 242, 242, 0.33);
+    }
+
+    .tile-boxes-title-wrap {
+      margin-bottom: 1.5rem;
+      text-align: left;
+
+      @include respond-to-min($desktop) {
+        margin-bottom: 3rem;
+        text-align: center;
+      }
+    }
+
+    .tile-boxes-image-wrapper {
+      margin-bottom: 1rem;
+      width: 100%;
+
+      @include respond-to-min($desktop) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .swiper-scrollbar-drag {
+      background: $main-green;
+    }
+    .tile-boxes-title-small {
+      margin-bottom: 0.5rem;
+
+      @include respond-to-min($desktop) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .tile-box-description {
+      margin-bottom: 1rem;
+
+      @include respond-to-min($desktop) {
+        margin-bottom: 1.25rem;
+      }
+    }
+
+    .learn-more-wrap {
+      a {
+        font-size: $font12;
+        letter-spacing: toRem(1.6);
+        line-height: toRem(16);
+
+        @include font-family-lato;
+
+        @include rtlBlock() {
+          @include font-family-Neotech-ge();
+        }
+
+        @include respond-to-min($desktop) {
+          font-size: $font14;
+          letter-spacing: toRem(2);
+          line-height: toRem(20);
+        }
+      }
+    }
+
+    .learn-more.btn-modal {
+      &::before {
+        padding: toRem(3.7);
+      }
+
+      span.moreg {
+        font-size: $font12;
+        letter-spacing: toRem(1.6);
+        line-height: toRem(16);
+
+        @include respond-to-min($desktop) {
+          font-size: $font14;
+          letter-spacing: toRem(2);
+          line-height: toRem(20);
+        }
+      }
+    }
+
+    .tileBoxMobCarWrap {
+      .swiper-slide {
+        p {
+          margin-bottom: 1.5rem;
+          text-align: left;
+        }
+      }
+    }
+
+    .swiper-wrapper {
+      .swiper-slide {
+        align-items: flex-start;
+        background-color: transparent;
+        flex-direction: column;
+        float: left;
+        @include respond-to-max($tablet) {
+          padding: 0;
+        }
+      }
+    }
+
+    &.two-slides,
+    &.one-slides,
+    &.three-slides {
+      .swiper-slide {
+        @include respond-to-min($desktop) {
+          flex-basis: 100%;
+          flex-grow: 0;
+          flex-shrink: 1 !important;
+        }
+      }
+
+      .scrollbar {
+        width: 96% !important;
+      }
+    }
+
+    &.one-slides {
+      .swiper-wrapper {
+        @include respond-to-max($tablet) {
+          padding: 0;
+        }
+      }
+      .cover {
+        position: relative;
+        overflow: hidden;
+        border-radius: toRem(4) toRem(4) 0 0;
+        width: 100%;
+        @include respond-to-max($tablet) {
+          height: toRem(130);
+        }
+
+        .cmp-image__image {
+          position: absolute;
+          left: toRem(-9999);
+          right: toRem(-9999);
+          top: toRem(-9999);
+          bottom: toRem(-9999);
+          margin: auto;
+          min-width: 100%;
+        }
+      }
+      .swiper-slide {
+        @include respond-to-max($phone) {
+          margin-right: 0 !important;
+        }
+
+        @include respond-to-min($desktop-wide) {
+          margin-right: 0 !important;
+        }
+
+        @include respond-to-max($desktop - 1) {
+          flex-basis: 100%;
+          flex-grow: 0;
+          flex-shrink: 1 !important;
+        }
+      }
+    }
+
+    &.two-slides {
+      .swiper-slide {
+        @media (min-width: 540px) and (max-width: 991px) {
+          flex-basis: 100%;
+          flex-grow: 0;
+          flex-shrink: 1 !important;
+        }
+      }
+    }
+
+    &.one-slides {
+      .scrollbar {
+        display: none;
+      }
+    }
+
+    &.two-slides,
+    &.three-slides,
+    &.four-slides {
+      .scrollbar {
+        display: block;
+
+        @include respond-to-min($desktop) {
+          display: none;
+        }
+      }
+    }
+
+    &.one-slides,
+    &.two-slides,
+    &.three-slides,
+    &.four-slides,
+    &.four-plus-slides {
+      .swiper-slide {
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .scrollbar {
+        position: relative !important;
+      }
+    }
+
+    &.four-plus-slides {
+      padding-bottom: toRem(39);
+      position: sticky;
+
+      .swiper-container {
+        z-index: 99;
+      }
+
+      .scrollbar {
+        width: 96% !important;
+
+        @include respond-to-min($desktop) {
+          margin-top: 2rem;
+          width: 98% !important;
+        }
+      }
+    }
+
+    .swiper-container-horizontal .swiper-scrollbar {
+      @include respond-to-max($desktop - 1) {
+        left: 0;
+        width: 96%;
+      }
+
+      @include respond-to-min($desktop) {
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    .scrollbar {
+      @include respond-to-max($desktop - 1) {
+        margin-top: 2rem;
+        position: relative;
+      }
+
+      &--hidden {
+        display: none;
+      }
+    }
+  }
+
+  //insurance tiles
+  .tile-box-tile {
+    @include box-shadow();
+
+    .tile-box-body {
+      padding: 1.5rem;
+      padding-bottom: 3rem;
+      text-align: left;
+      h2 {
+        color: $almost-black;
+        font-size: toRem(18);
+        line-height: toRem(24);
+        margin: 0;
+        margin-bottom: 0.5rem;
+
+        @include respond-to-min($desktop) {
+          font-size: toRem(28);
+          line-height: toRem(35);
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  .tile_card-shadow {
+    .tile-boxes-image-wrapper {
+      height: toRem(160);
+      border-radius: toRem(4) toRem(4) 0 0;
+      margin-bottom: 0;
+
+      img {
+        max-width: inherit !important;
+        width: auto;
+      }
+    }
+
+    .tile-box-body {
+      background: #fff;
+      border-radius: 0 0 toRem(4) toRem(4);
+      box-shadow: 0 toRem(5) toRem(10) 0 rgb(0 0 0 / 10%);
+      max-height: toRem(210);
+      min-height: toRem(210);
+      padding: 1.5rem;
+      position: relative;
+      text-align: left;
+      width: 100%;
+
+      *[lang="ar"] *[dir="rtl"] & {
+        text-align: right;
+      }
+    }
+
+    .tile-boxes-title-small h2 {
+      color: $almost-black;
+      font-size: toRem(28);
+      line-height: toRem(35);
+      margin-bottom: 1rem;
+    }
+  }
+
+  .slide_card_4 {
+    .swiper-slide {
+      width: 23% !important;
+
+      @include sm {
+        width: 100% !important;
+      }
+    }
+
+    .tile_card-shadow .tile-box-body {
+      top: toRem(-40);
+    }
+  }
+
+  .slide_card_3 {
+    .swiper-slide {
+      width: 33.33333333% !important;
+
+      @include sm {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .tile-boxes-image-wrapper img {
+    height: auto;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .slides_clumn .swiper-slide {
+    width: 33.33333333% !important;
+
+    @include sm {
+      width: 100% !important;
+    }
+  }
+
+  .category p {
+    background: #719e19;
+    border-radius: 0 0 toRem(4) toRem(4);
+    color: #fff;
+    font-size: $font10;
+    left: 1.5rem;
+    letter-spacing: toRem(1);
+    margin: 0;
+    padding: toRem(5) toRem(10);
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0;
+    z-index: 1;
+
+    *[lang="ar"] *[dir="rtl"] & {
+      left: auto;
+      right: 1.5rem;
+    }
+  }
+
+  .card_date {
+    color: $steel-grey;
+    font-size: $font10;
+    line-height: toRem(16);
+    margin: 0;
+  }
+
+  .tile_card-shadow .learn-more-wrap {
+    bottom: toRem(20);
+    position: absolute;
+  }
+
+  .tile-boxes-section a .learn-more-wrap {
+    display: none;
+  }
+
+  .card_no_link {
+    .learn-more-wrap {
+      a {
+        display: none;
+      }
+    }
+
+    .learn-more-wrap {
+      a::before {
+        display: none;
+      }
+    }
+  }
+
+  .card-no_label {
+    .category {
+      display: none;
+    }
+  }
+  .btn-text {
+    &::before {
+      @include rtlBlock() {
+        transform: translateY(-50%) rotate(135deg);
+        left: -15px;
+        right: auto;
+      }
+    }
+  }
+}
+
+.title {
+  .cmp-title__text {
+    @include respond-to-max($tablet) {
+      margin-bottom: toRem(8);
+    }
+  }
+}
+
+*[lang="ar"] *[dir="rtl"] .tile-boxes-section .swiper-wrapper .swiper-slide p {
+  text-align: right;
+}
+
+//Insurance cards
+.tileBoxMobCarWrap {
+  padding: 0 toRem(12);
+  .tile-box-tile {
+    background: $white;
+    border-radius: toRem(4);
+    box-shadow: 0 toRem(5) toRem(10) 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: toRem(32);
+    min-height: toRem(280);
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+    @include font-family-lato;
+
+    @include respond-to-min($tablet) {
+      max-height: toRem(440);
+      min-height: toRem(440);
+      padding-left: 0 !important;
+    }
+
+    .img-cover {
+      border-radius: toRem(4) toRem(4) 0 0;
+      height: toRem(130);
+      overflow: hidden;
+      position: relative;
+
+      @include respond-to-min($tablet) {
+        height: toRem(225);
+      }
+    }
+
+    .tile-box-body {
+      padding: toRem(24);
+      padding-bottom: toRem(48);
+      text-align: left;
+
+      @include respond-to-min($tablet) {
+        padding-bottom: toRem(24);
+      }
+
+      h2 {
+        color: $almost-black;
+        font-size: $font18;
+        line-height: toRem(24);
+        margin: 0;
+        margin-bottom: toRem(8);
+
+        @include respond-to-min($tablet) {
+          font-size: $font28;
+          line-height: toRem(35);
+          margin-bottom: toRem(16);
+        }
+      }
+
+      p {
+        color: $steel-grey;
+        font-size: $font14;
+        line-height: toRem(20);
+
+        @include respond-to-min($tablet) {
+          line-height: toRem(22);
+        }
+      }
+
+      .btn-text {
+        bottom: toRem(24);
+        font-size: $font12;
+        left: toRem(24);
+        letter-spacing: toRem(2);
+        position: absolute;
+
+        @include respond-to-min($tablet) {
+          font-size: $font14;
+
+          &:before {
+            padding: toRem(3.5);
+            right: toRem(-20);
+          }
+        }
+      }
+    }
+  }
+
+  .swiper-scrollbar {
+    bottom: 0 !important;
+  }
+
+  .swiper-container-horizontal > .swiper-scrollbar {
+    bottom: 0;
+    height: toRem(5);
+    left: 1% !important;
+    position: relative !important;
+    width: 93% !important;
+    z-index: 50;
+  }
+
+  .swiper-scrollbar-drag {
+    background: $main-green !important;
+    border-radius: toRem(10);
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
+// *************************************
+// accessibility black and blue
+// *************************************
+
+.acc-black,
+.acc-blue {
+  .tilecontainer {
+    .cmp-tilecontainer {
+      background-color: rgba(242, 242, 242, 0.33);
+    }
+    .tile-boxes-section {
+      &.with-bg {
+        background-color: transparent;
+      }
+      .swiper-wrapper {
+        .swiper-slide {
+          .tile {
+            background-color: $black;
+          }
+        }
+      }
+      .scrollbar {
+        background-color: $steel-grey;
+        .swiper-scrollbar-drag {
+          background-color: $white;
+        }
+      }
+    }
+    .tile-boxes-title-wrap {
+      h2 {
+        color: $white;
+      }
+    }
+    .tile-boxes-title-small {
+      h3 {
+        color: $white;
+      }
+    }
+    .tile-box-description {
+      p {
+        color: $white;
+      }
+      hr {
+        border: toRem(1) solid $white;
+      }
+    }
+  }
+}
+
+.acc-blue {
+  .tilecontainer {
+    .tile-boxes-section {
+      .swiper-wrapper {
+        .swiper-slide {
+          .tile {
+            background-color: $blue4;
+          }
+        }
+      }
+    }
+  }
+}
+
+// *************************************
+// accessibility yellow
+// *************************************
+
+.acc-yellow {
+  .tilecontainer {
+    .cmp-tilecontainer {
+      background-color: rgba(242, 242, 242, 0.33);
+    }
+    .tile-boxes-section {
+      &.with-bg {
+        background-color: transparent;
+      }
+      .swiper-wrapper {
+        .swiper-slide {
+          .tile {
+            background-color: $black;
+          }
+        }
+      }
+      .scrollbar {
+        background-color: $steel-grey;
+      }
+    }
+    .tile-boxes-title-wrap {
+      h2 {
+        color: $yellow-light;
+      }
+    }
+    .tile-boxes-title-small {
+      h3 {
+        color: $yellow-light;
+      }
+    }
+    .tile-box-description {
+      p {
+        color: $yellow-light;
+      }
+      hr {
+        border: toRem(1) solid $yellow-light;
+      }
+    }
+  }
+}
+
+// *************************************

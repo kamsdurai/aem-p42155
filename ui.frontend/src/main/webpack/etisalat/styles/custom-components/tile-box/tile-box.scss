@@ -1,0 +1,373 @@
+// *************************************
+// tile boxes 4 - 0
+// *************************************
+.tile-box-main-text .tile {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: $white;
+  overflow: hidden;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  .box-img {
+    position: relative;
+    height: 242px;
+  }
+  .box-content {
+    padding: 24px 16px;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    .paragraph-styling {
+      flex: 1 1 auto;
+    }
+  }
+  .link-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+
+// tile boxes 4 - 0 as a module grid view
+.tile-boxes-4-0 {
+  &.has-bg {
+    background-color: $module-bg-color;
+    padding: 16px 0;
+  }
+
+  &.no-paragraph {
+    .paragraph-styling {
+      display: none;
+    }
+    .wst-main-headings {
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      .h7,
+      .h8 {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  @include respond-to-max($custom-width-tab) {
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  .wst-main-headings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .h7,
+    .h8 {
+      margin-bottom: 16px;
+    }
+  }
+  .paragraph-styling {
+    p {
+      margin-bottom: 24px;
+    }
+  }
+
+  .tiles-wrapper {
+    display: grid;
+    grid-gap: toRem(16);
+    grid-template-columns: repeat(auto-fill, minmax(toRem(288), 1fr));
+    margin-bottom: toRem(15);
+    @include respond-to-min($desktop) {
+      grid-gap: toRem(24);
+      grid-template-columns: repeat(auto-fill, minmax(toRem(300), 1fr));
+    }
+  }
+
+  &.with-main-text {
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: toRem(15);
+
+      @include respond-to-min($desktop-wide) {
+        flex-direction: row;
+      }
+      .content {
+        width: 100%;
+        margin-bottom: 24px;
+
+        @include respond-to-min($desktop-wide) {
+          width: 33%;
+          max-width: 384px;
+          margin-right: 24px;
+        }
+      }
+      .tiles-wrapper {
+        width: 100%;
+        @include respond-to-min($desktop-wide) {
+          display: grid;
+          grid-gap: 24px;
+          grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+          width: 67%;
+        }
+      }
+    }
+    &.with-single-tile {
+      .content-wrapper {
+        .tiles-wrapper {
+          grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+        }
+      }
+    }
+  }
+}
+
+// *************************************
+// tile boxes slider
+// *************************************
+.tile-boxes-image-wrapper {
+  position: relative;
+  min-width: 212px;
+  height: 120px;
+  border-radius: 8px;
+  overflow: hidden;
+  @include respond-to-min($desktop) {
+    height: 225px;
+  }
+  @include respond-to-min($desktop-wide) {
+    min-width: 282px;
+  }
+}
+.tile-boxes-title-wrap {
+  h2 {
+    margin: 0;
+    font-size: 26px;
+    line-height: normal;
+    color: $almost-black;
+    @include respond-to-min($desktop) {
+      font-size: 32px;
+      line-height: 1.25;
+    }
+  }
+}
+
+.tile-boxes-title-small {
+  h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: $almost-black;
+    @include respond-to-min($desktop) {
+      font-size: 20px;
+      line-height: 1.4;
+    }
+  }
+}
+.tile-box-description p {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #848789;
+  margin: 0;
+  @include respond-to-min($desktop) {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+.tile-boxes-section {
+  padding-top: 40px;
+  padding-bottom: 32px;
+  &.with-bg {
+    background-color: rgba(242, 242, 242, 0.33);
+  }
+  @include respond-to-min($desktop) {
+    padding-top: 80px;
+    padding-bottom: 75px;
+  }
+  @include respond-to-max($desktop-min) {
+    padding-left: 1rem !important;
+    .container {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  @include respond-to-min-max($desktop-min, $tablet) {
+    padding-left: 12px !important;
+  }
+  .tile-boxes-title-wrap {
+    margin-bottom: 1.5rem;
+    text-align: left;
+    @include respond-to-min($desktop) {
+      margin-bottom: 3rem;
+      text-align: center;
+    }
+  }
+  .tile-boxes-image-wrapper {
+    margin-bottom: 1rem;
+    width: 100%;
+    @include respond-to-min($desktop) {
+      margin-bottom: 1.5rem;
+    }
+  }
+  .tile-boxes-title-small {
+    margin-bottom: 0.5rem;
+    @include respond-to-min($desktop) {
+      margin-bottom: 1rem;
+    }
+  }
+  .tile-box-description {
+    margin-bottom: 1rem;
+    @include respond-to-min($desktop) {
+      margin-bottom: 1.25rem;
+    }
+  }
+  .learn-more-wrap {
+    line-height: 16px;
+    font-size: 12px;
+    @include respond-to-min($desktop) {
+      line-height: 20px;
+      font-size: 14px;
+    }
+    .btn-text {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 1.6px;
+      @include respond-to-min($desktop) {
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 2px;
+      }
+    }
+  }
+  .swiper-wrapper {
+    .swiper-slide {
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: transparent;
+      @include respond-to-max($desktop-min) {
+        padding: 0 !important;
+      }
+
+      p {
+        text-align: left;
+      }
+    }
+  }
+
+  &.two-slides,
+  &.one-slides,
+  &.three-slides {
+    .swiper-slide {
+      @include respond-to-min($desktop) {
+        flex-grow: 0;
+        flex-shrink: 1 !important;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &.one-slides {
+    .swiper-slide {
+      @include respond-to-max($desktop-min) {
+        flex-grow: 0;
+        flex-shrink: 1 !important;
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  &.two-slides {
+    .swiper-slide {
+      @include respond-to-min-max($desktop-min, $phone) {
+        flex-grow: 0;
+        flex-shrink: 1 !important;
+        flex-basis: 100%;
+      }
+    }
+  }
+  &.one-slides,
+  &.two-slides,
+  &.three-slides,
+  &.four-slides,
+  &.four-plus-slides {
+    .swiper-slide {
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  &.four-plus-slides {
+    padding-bottom: 39px;
+    .scrollbar {
+      display: block !important;
+      @include respond-to-min($desktop) {
+        margin-top: 2rem;
+        position: relative;
+      }
+    }
+  }
+
+  .swiper-container-horizontal .swiper-scrollbar {
+    @include respond-to-max($desktop-min) {
+      left: 0;
+      width: 96%;
+    }
+    @include respond-to-min($desktop) {
+      left: 0;
+      width: 100%;
+    }
+  }
+  .scrollbar {
+    @include respond-to-min($desktop) {
+      display: none;
+    }
+    @include respond-to-max($desktop-min) {
+      margin-top: 2rem;
+      position: relative;
+    }
+  }
+}
+
+// *************************************
+// arabic overides
+// *************************************
+
+*[lang="ar"] {
+  *[dir="rtl"] {
+    .tile-boxes-section .tile-boxes-title-wrap {
+      text-align: center;
+      @include respond-to-max($desktop-min) {
+        text-align: right;
+      }
+    }
+
+    .tile-boxes-section {
+      @include respond-to-max($desktop-min) {
+        padding-left: 0 !important;
+        padding-right: 1rem !important;
+      }
+      @include respond-to-min-max($desktop-min, $tablet) {
+        padding-left: 0;
+        padding-right: 12px !important;
+      }
+    }
+
+    .tile-boxes-section .swiper-wrapper .swiper-slide p {
+      text-align: right;
+    }
+
+    .tile-boxes-section .swiper-container-horizontal .swiper-scrollbar {
+      left: 16px;
+    }
+  }
+}

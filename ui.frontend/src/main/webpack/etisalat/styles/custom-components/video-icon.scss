@@ -1,0 +1,25 @@
+.cover-image__with-play-btn-icon {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.cover-image__with-play-btn-icon {
+  margin-left: -13px;
+  max-height: 260px;
+  position: relative;
+}
+
+.play-icon {
+  align-items: center;
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}

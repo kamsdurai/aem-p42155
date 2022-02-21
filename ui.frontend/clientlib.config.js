@@ -1,3 +1,4 @@
+/* eslint-disable */
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  ~ Copyright 2020 Adobe Systems Incorporated
  ~
@@ -14,27 +15,16 @@
  ~ limitations under the License.
  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-const path = require('path');
+const path = require("path");
 
-const BUILD_DIR = path.join(__dirname, 'dist');
-const CLIENTLIB_DIR = path.join(
-  __dirname,
-  '..',
-  'ui.apps',
-  'src',
-  'main',
-  'content',
-  'jcr_root',
-  'apps',
-  'etisalat',
-  'clientlibs'
-);
+const BUILD_DIR = path.join(__dirname, "dist");
+const CLIENTLIB_DIR = path.join(__dirname, "..", "ui.apps", "src", "main", "content", "jcr_root", "apps", "etisalat", "clientlibs");
 
 const libsBaseConfig = {
   allowProxy: true,
-  serializationFormat: 'xml',
-  cssProcessor: ['default:none', 'min:none'],
-  jsProcessor: ['default:none', 'min:none']
+  serializationFormat: "xml",
+  cssProcessor: ["default:none", "min:none"],
+  jsProcessor: ["default:none", "min:none"],
 };
 
 // Config for `aem-clientlib-generator`
@@ -44,50 +34,273 @@ module.exports = {
   libs: [
     {
       ...libsBaseConfig,
-      name: 'clientlib-dependencies',
-      categories: ['etisalat.dependencies'],
+      name: "clientlib-base",
+      categories: ["etisalat.base"],
+      embed: [
+        "core.wcm.components.accordion.v1,core.wcm.components.tabs.v1,core.wcm.components.carousel.v1,core.wcm.components.image.v2,core.wcm.components.breadcrumb.v2,core.wcm.components.search.v1,core.wcm.components.form.text.v2,core.wcm.components.pdfviewer.v1,core.wcm.components.commons.datalayer.v1,etisalat-text-rte-plugin-color-picker",
+      ],
       assets: {
         // Copy entrypoint scripts and stylesheets into the respective ClientLib
         // directories
         js: {
-          cwd: 'clientlib-dependencies',
-          files: ['**/*.js'],
-          flatten: false
+          cwd: "clientlib-base",
+          files: ["**/*.js"],
+          flatten: false,
         },
         css: {
-          cwd: 'clientlib-dependencies',
-          files: ['**/*.css'],
-          flatten: false
-        }
-      }
+          cwd: "clientlib-base",
+          files: ["**/*.css"],
+          flatten: false,
+        },
+      },
     },
     {
       ...libsBaseConfig,
-      name: 'clientlib-site',
-      categories: ['etisalat.site'],
-      dependencies: ['etisalat.dependencies'],
+      name: "clientlib-dependencies",
+      categories: ["etisalat.dependencies"],
+      dependencies: ["granite.csrf.standalone"],
       assets: {
         // Copy entrypoint scripts and stylesheets into the respective ClientLib
         // directories
         js: {
-          cwd: 'clientlib-site',
-          files: ['**/*.js'],
-          flatten: false
+          cwd: "clientlib-dependencies",
+          files: ["**/*.js"],
+          flatten: false,
         },
         css: {
-          cwd: 'clientlib-site',
-          files: ['**/*.css'],
-          flatten: false
+          cwd: "clientlib-dependencies",
+          files: ["**/*.css"],
+          flatten: false,
+        },
+      },
+    },
+    {
+      ...libsBaseConfig,
+      name: "clientlib-etisalat",
+      categories: ["etisalat.etisalat"],
+      dependencies: ["etisalat.dependencies", "etisalat.global", "etisalat.corecomponent"],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: "clientlib-etisalat",
+          files: ["**/*.js"],
+          flatten: false,
+        },
+        css: {
+          cwd: "clientlib-etisalat",
+          files: ["**/*.css"],
+          flatten: false,
         },
 
         // Copy all other files into the `resources` ClientLib directory
         resources: {
-          cwd: 'clientlib-site',
-          files: ['**/*.*'],
+          cwd: "clientlib-global",
+          files: ["**/*.*"],
           flatten: false,
-          ignore: ['**/*.js', '**/*.css']
-        }
-      }
-    }
-  ]
+          ignore: ["**/*.js", "**/*.css"],
+        },
+      },
+    },
+    {
+      ...libsBaseConfig,
+      name: "clientlib-corecomponent",
+      categories: ["etisalat.corecomponent"],
+      dependencies: ["etisalat.dependencies"],
+      embed: ["etisalat.custom.grid"],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: "clientlib-corecomponent",
+          files: ["**/*.js"],
+          flatten: false,
+        },
+        css: {
+          cwd: "clientlib-corecomponent",
+          files: ["**/*.css"],
+          flatten: false,
+        },
+
+        // Copy all other files into the `resources` ClientLib directory
+        resources: {
+          cwd: "clientlib-global",
+          files: ["**/*.*"],
+          flatten: false,
+          ignore: ["**/*.js", "**/*.css"],
+        },
+      },
+    },
+    {
+      ...libsBaseConfig,
+      name: "clientlib-careers",
+      categories: ["etisalat.careers"],
+      dependencies: ["etisalat.dependencies", "etisalat.global", "etisalat.corecomponent", "etisalat.etisalat"],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: "clientlib-careers",
+          files: ["**/*.js"],
+          flatten: false,
+        },
+        css: {
+          cwd: "clientlib-careers",
+          files: ["**/*.css"],
+          flatten: false,
+        },
+
+        // Copy all other files into the `resources` ClientLib directory
+        resources: {
+          cwd: "clientlib-global",
+          files: ["**/*.*"],
+          flatten: false,
+          ignore: ["**/*.js", "**/*.css"],
+        },
+      },
+    },
+    {
+      ...libsBaseConfig,
+      name: "clientlib-global",
+      categories: ["etisalat.global"],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: "clientlib-global",
+          files: ["**/*.js"],
+          flatten: false,
+        },
+        css: {
+          cwd: "clientlib-global",
+          files: ["**/*.css"],
+          flatten: false,
+        },
+
+        // Copy all other files into the `resources` ClientLib directory
+        resources: {
+          cwd: "clientlib-global",
+          files: ["**/*.*"],
+          flatten: false,
+          ignore: ["**/*.js", "**/*.css"],
+        },
+      },
+    },
+    {
+      ...libsBaseConfig,
+      name: "clientlib-hiuapp",
+      categories: ["etisalat.hiuapp"],
+      dependencies: ["etisalat.dependencies"],
+      embed: ["etisalat.grid"],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: "clientlib-hiuapp",
+          files: ["**/*.js"],
+          flatten: false,
+        },
+        css: {
+          cwd: "clientlib-hiuapp",
+          files: ["**/*.css"],
+          flatten: false,
+        },
+
+        // Copy all other files into the `resources` ClientLib directory
+        resources: {
+          cwd: "clientlib-hiuapp",
+          files: ["**/*.*"],
+          flatten: false,
+          ignore: ["**/*.js", "**/*.css"],
+        },
+      },
+    },
+    {
+      ...libsBaseConfig,
+      name: "clientlib-fivemobile",
+      categories: ["etisalat.fivemobile"],
+      dependencies: ["etisalat.dependencies"],
+      embed: ["etisalat.grid"],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: "clientlib-fivemobile",
+          files: ["**/*.js"],
+          flatten: false,
+        },
+        css: {
+          cwd: "clientlib-fivemobile",
+          files: ["**/*.css"],
+          flatten: false,
+        },
+
+        // Copy all other files into the `resources` ClientLib directory
+        resources: {
+          cwd: "clientlib-fivemobile",
+          files: ["**/*.*"],
+          flatten: false,
+          ignore: ["**/*.js", "**/*.css"],
+        },
+      },
+    },
+    {
+      ...libsBaseConfig,
+      name: "clientlib-gochat",
+      categories: ["etisalat.gochat"],
+      dependencies: ["etisalat.dependencies"],
+      embed: ["etisalat.custom.grid"],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: "clientlib-gochat",
+          files: ["**/*.js"],
+          flatten: false,
+        },
+        css: {
+          cwd: "clientlib-gochat",
+          files: ["**/*.css"],
+          flatten: false,
+        },
+
+        // Copy all other files into the `resources` ClientLib directory
+        resources: {
+          cwd: "clientlib-gochat",
+          files: ["**/*.*"],
+          flatten: false,
+          ignore: ["**/*.js", "**/*.css"],
+        },
+      },
+    },
+    {
+      ...libsBaseConfig,
+      name: "clientlib-ewallet",
+      categories: ["etisalat.ewallet"],
+      dependencies: ["etisalat.dependencies"],
+      embed: ["etisalat.grid"],
+      assets: {
+        // Copy entrypoint scripts and stylesheets into the respective ClientLib
+        // directories
+        js: {
+          cwd: "clientlib-ewallet",
+          files: ["**/*.js"],
+          flatten: false,
+        },
+        css: {
+          cwd: "clientlib-ewallet",
+          files: ["**/*.css"],
+          flatten: false,
+        },
+
+        // Copy all other files into the `resources` ClientLib directory
+        resources: {
+          cwd: "clientlib-ewallet",
+          files: ["**/*.*"],
+          flatten: false,
+          ignore: ["**/*.js", "**/*.css"],
+        },
+      },
+    },
+  ],
 };

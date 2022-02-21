@@ -1,0 +1,957 @@
+// more notifications
+.more-notifications {
+  a {
+    color: $white;
+    display: flex;
+    font-size: $font12;
+    letter-spacing: 1.71px;
+    line-height: normal;
+    padding-right: toRem(14);
+    position: relative;
+    text-transform: uppercase;
+
+    @include respond-to-min($desktop) {
+      font-size: $font11;
+      letter-spacing: 1.57px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &::after {
+      border: solid $main-green;
+      border: solid $white;
+      border-width: 0 1px 1px 0;
+      border-width: 0 1px 1px 0;
+      content: "";
+      line-height: 1;
+      padding: 2.7px;
+      position: absolute;
+      right: 3px;
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+}
+
+// icons
+.noti-icon-info,
+.noti-icon-dismis,
+.noti-icon-dismis a {
+  align-items: center;
+  display: flex;
+  height: toRem(18);
+  justify-content: center;
+  width: toRem(18);
+
+  @include respond-to-min($desktop) {
+    svg,
+    img {
+      height: toRem(18);
+      width: toRem(18);
+    }
+  }
+
+  svg,
+  img {
+    height: 15px;
+    width: 15px;
+  }
+}
+
+.noti-icon-dismis a {
+  z-index: 2;
+}
+
+// notifications head styling
+.notifications-head {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  .title {
+    align-items: center;
+    display: flex;
+
+    a {
+      padding-left: 6px;
+      text-decoration: underline;
+    }
+
+    h3 {
+      padding-right: 24px;
+    }
+
+    h3,
+    a {
+      color: $white;
+      font-size: $font14;
+      font-weight: bold;
+      letter-spacing: normal;
+      line-height: 1.29;
+      margin: 0;
+
+      @include font-family-lato;
+
+      @include respond-to-min($desktop) {
+        font-weight: 500;
+      }
+
+      @media (min-width: 1260px) {
+        display: flex;
+      }
+    }
+  }
+}
+
+// notifications body styling
+.notifications-body {
+  .description {
+    a {
+      text-decoration: underline;
+    }
+
+    p,
+    a {
+      color: $white;
+      font-size: $font12;
+      letter-spacing: normal;
+      line-height: 1.5;
+      margin: 0;
+
+      @include respond-to-min($desktop) {
+        font-size: $font14;
+        font-weight: 500;
+        line-height: 1.29;
+      }
+    }
+
+    p + p {
+      margin-top: 8px;
+    }
+  }
+
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li,
+    li a {
+      color: $white;
+      font-size: $font12;
+      font-weight: normal;
+      letter-spacing: normal;
+      line-height: 1.5;
+      position: relative;
+
+      @include respond-to-min($desktop) {
+        font-weight: 500;
+      }
+    }
+
+    li a {
+      text-decoration: underline;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    li {
+      padding-left: toRem(10);
+
+      &::after {
+        background: $white;
+        content: " ";
+        display: block;
+        height: 1px;
+        left: 0;
+        left: 0;
+        position: absolute;
+        top: 50%;
+        width: 4px;
+      }
+    }
+  }
+}
+
+.digital-notification-swiper-container {
+  .swiper-container-autoheight {
+    .swiper-slide {
+      width: 100%;
+    }
+  }
+}
+
+// notifications as a module
+.digital-notifications-wrapper {
+  padding: 17px 16px 24px;
+
+  @include respond-to-min($tablet) {
+    padding: 24px 0;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  &.bg-black {
+    background-color: $black;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  &.bg-yellow {
+    background-color: $yellow-bg;
+
+    .title {
+      h3,
+      a {
+        color: $almost-black;
+      }
+    }
+
+    .noti-icon-info svg g {
+      stroke: $almost-black;
+    }
+
+    .notifications-body .description a,
+    .notifications-body .description p {
+      color: $almost-black;
+    }
+
+    .notifications-body ul li,
+    .notifications-body ul li a {
+      color: $almost-black;
+    }
+
+    .notifications-body ul li::after {
+      background: $almost-black;
+    }
+
+    .more-notifications a {
+      color: $almost-black;
+
+      &::after {
+        border-color: $almost-black;
+      }
+    }
+
+    .noti-icon-dismis svg g,
+    .noti-icon-dismis svg path {
+      stroke: $almost-black;
+    }
+  }
+
+  > .container {
+    position: relative;
+
+    @media (max-width: 767px) {
+      padding: 0 !important;
+    }
+  }
+
+  .noti-icon-info {
+    margin-right: toRem(10);
+  }
+
+  .noti-icon-dismis {
+    position: absolute;
+    right: 0;
+
+    @include respond-to-min($tablet) {
+      right: 12px;
+    }
+
+    @include respond-to-min($desktop) {
+      right: -16px;
+    }
+
+    @media (min-width: 1248px) {
+      right: -12px;
+    }
+
+    @media (min-width: 1348px) {
+      right: -40px;
+    }
+  }
+
+  .notifications-head {
+    @media (max-width: 767px) {
+      align-items: flex-start;
+
+      .title {
+        align-items: flex-start;
+      }
+    }
+
+    .more-notifications {
+      display: none;
+
+      @include respond-to-min($desktop) {
+        display: block;
+      }
+    }
+  }
+
+  .notifications-body {
+    @include respond-to-min($desktop) {
+      margin-top: -1px;
+    }
+
+    .description {
+      margin-top: 8px;
+    }
+
+    ul {
+      margin-top: 8px;
+    }
+
+    a.btn {
+      margin-bottom: 0;
+      margin-top: 16px;
+      min-width: 180px;
+      width: auto;
+    }
+
+    .more-notifications {
+      display: block;
+      margin-top: 16px;
+
+      @include respond-to-min($desktop) {
+        display: none;
+        margin-top: 0;
+      }
+
+      a {
+        @media (max-width: 991px) {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  .swiper-slide {
+    display: block;
+    width: 100%;
+  }
+
+  .swiper-slide {
+    background-color: transparent;
+    text-align: left;
+  }
+}
+
+// mid page banner
+.digital-notifications-wrapper {
+  &.mid-page {
+    margin-top: 1rem;
+
+    // border-radius: 4px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    @include respond-to-min($tablet) {
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .noti-icon-dismis {
+      display: none;
+    }
+  }
+}
+
+// notifications with bottom position ( contextual notifications )
+.digital-notifications-wrapper {
+  .mob-tab-bar {
+    display: none;
+  }
+
+  &.bottom {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    z-index: 9;
+  }
+
+  &.expand-collapse {
+    .mob-tab-bar {
+      @media (max-width: 991px) {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        .tab-line {
+          background-color: $grey1;
+          border-radius: 2px;
+          display: block;
+          height: 4px;
+          margin-bottom: 16px;
+          margin-top: -12px;
+          width: 24px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .notifications-body {
+      @media (max-width: 991px) {
+        display: block !important;
+        height: auto;
+        opacity: 0.5;
+        overflow: hidden;
+
+        &.expanded {
+          height: auto;
+          opacity: 1;
+          transition: all 0.3s ease-in-out;
+        }
+      }
+
+      @include respond-to-min($desktop) {
+        //display: none;
+        &.active {
+          display: block;
+        }
+      }
+    }
+
+    .more-notifications {
+      @media (max-width: 991px) {
+        display: none;
+      }
+
+      a {
+        padding-right: toRem(18);
+
+        &::after {
+          top: 45%;
+          transform: translateY(-50%) rotate(45deg);
+        }
+      }
+
+      &.active {
+        a {
+          &::after {
+            top: 54%;
+            transform: translateY(-50%) rotate(-135deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+// notification popup
+.single-notification {
+  margin-bottom: 32px;
+
+  @include respond-to-min($desktop) {
+    margin-bottom: 36px;
+  }
+
+  .notification-title h3,
+  .notification-date h3 {
+    color: $almost-black;
+    font-size: $font16;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.5;
+    margin: 0;
+
+    @include respond-to-min($desktop) {
+      color: $black;
+      font-size: $font20;
+      letter-spacing: normal;
+    }
+  }
+
+  .notification-title {
+    margin-bottom: 16px;
+  }
+
+  .notification-date {
+    @media (max-width: 991px) {
+      margin-bottom: 8px;
+    }
+  }
+
+  .notification-description {
+    p {
+      color: $steel-grey;
+      font-size: $font14;
+      letter-spacing: normal;
+      line-height: 1.43;
+      margin: 0;
+
+      @include respond-to-min($desktop) {
+        color: $almost-black;
+        font-size: $font14;
+        line-height: 1.71;
+      }
+    }
+
+    p + p {
+      margin-top: 16px;
+    }
+  }
+
+  .notifications-learn-more {
+    margin-top: 16px;
+
+    @include respond-to-min($desktop) {
+      margin-top: 8px;
+    }
+
+    a {
+      color: $main-green;
+      display: inline-block;
+      font-size: $font14;
+      letter-spacing: 2px;
+      line-height: 1.43;
+      padding-right: toRem(14);
+      position: relative;
+      text-transform: uppercase;
+
+      &::after {
+        border: solid $main-green;
+        border-width: 0 1px 1px 0;
+        content: "";
+        line-height: 1;
+        padding: 3.7px;
+        position: absolute;
+        right: 3px;
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.notifications-popup-wrapper {
+  .nv-modal-content {
+    display: block;
+  }
+
+  .nv-modal-body {
+    max-height: 80vh;
+    overflow: hidden;
+    overflow-y: auto;
+    padding: 0 !important;
+
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+      border-radius: toRem(10);
+    }
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: $main-green;
+      border-radius: 4px;
+    }
+  }
+
+  .nv-modal-header {
+    border-bottom: 1px solid $grey5;
+    margin-bottom: 1.5rem;
+    padding: 0;
+
+    @include respond-to-min($desktop) {
+      margin-bottom: 3rem;
+      padding-bottom: 40px;
+    }
+
+    .nv-modal-close {
+      svg {
+        line,
+        g {
+          @media (max-width: 991px) {
+            stroke: $cold-gray;
+            stroke-width: 4px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .offers-popup-wrapper {
+    .nv-modal.bottom-modal {
+      .nv-modal-dialog {
+        top: 0;
+
+        .nv-modal-content {
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+// *************************************
+// arabic overides
+// *************************************
+*[lang="ar"] {
+  *[dir="rtl"] {
+    .digital-notifications-wrapper .notifications-head .noti-icon-info {
+      margin-left: toRem(10);
+      margin-right: 0;
+    }
+
+    .digital-notifications-wrapper {
+      .noti-icon-dismis {
+        left: 0;
+        right: auto;
+
+        @include respond-to-min($tablet) {
+          left: 12px;
+          right: auto;
+        }
+
+        @include respond-to-min($desktop) {
+          left: -16px;
+          right: auto;
+        }
+
+        @media (min-width: 1248px) {
+          left: -12px;
+          right: auto;
+        }
+
+        @media (min-width: 1348px) {
+          left: -40px;
+          right: auto;
+        }
+      }
+    }
+
+    .notifications-head .title a {
+      padding-left: 0;
+      padding-right: 6px;
+    }
+
+    .notifications-head .title h3 {
+      padding-left: 24px;
+      padding-right: 0;
+    }
+
+    .digital-notifications-wrapper .notifications-head {
+      .noti-icon-dismis {
+        left: 0;
+        position: absolute;
+        right: auto;
+
+        @include respond-to-min($tablet) {
+          left: 12px;
+          right: auto;
+        }
+
+        @include respond-to-min($desktop) {
+          left: -16px;
+          right: auto;
+        }
+
+        @media (min-width: 1248px) {
+          left: -12px;
+          right: auto;
+        }
+
+        @media (min-width: 1348px) {
+          left: -40px;
+          right: auto;
+        }
+      }
+    }
+
+    .more-notifications a {
+      padding-left: toRem(14);
+      padding-right: 0;
+
+      &::after {
+        left: 3px;
+        right: auto;
+        transform: translateY(-50%) rotate(136deg);
+      }
+    }
+
+    .notifications-body ol li,
+    .notifications-body ul li {
+      padding-left: 0;
+      padding-right: toRem(10);
+
+      &::after {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    .digital-notifications-wrapper .notifications-body {
+      text-align: right;
+    }
+
+    .single-notification .notifications-learn-more a {
+      padding-left: toRem(14);
+      padding-right: 0;
+
+      &::after {
+        left: 3px;
+        right: auto;
+        transform: translateY(-50%) rotate(-226deg);
+      }
+    }
+
+    .quick-links-section.flexible-col .quick-links-body .links-item a img,
+    .quick-links-section.flexible-col .quick-links-body .links-item a svg {
+      margin-left: 0;
+      margin-right: 4px;
+    }
+  }
+}
+
+// configure notifications with menu
+.digital-notifications-wrapper.top {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+
+.show-digital-notification-top {
+  .top-nav-section,
+  .mega-menu-navbar-default {
+    position: absolute;
+  }
+}
+
+.bg-black {
+  .more-notifications {
+    margin-right: 3rem;
+
+    a {
+      color: $white;
+    }
+  }
+
+  .btn-text.btn-green {
+    &::before {
+      display: none;
+    }
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+.bg-yellow {
+  .btn-text.btn-green {
+    &::before {
+      display: none;
+    }
+  }
+
+  .notifications-head .more-notifications {
+    margin-right: 0;
+  }
+}
+
+.moreg {
+  font-size: $font11;
+  letter-spacing: 1.57px;
+}
+
+.nv-modal-close svg {
+  top: 0 !important;
+}
+
+.swipercontainer {
+  .swiper-container {
+    padding: 0;
+  }
+}
+
+.digital-notification {
+  .top-modal {
+    height: 100%;
+
+    @include respond-to-min($tablet) {
+      height: 100%;
+    }
+
+    @include respond-to-min($desktop) {
+      height: 61%;
+    }
+  }
+
+  .nv-modal-content {
+    border-radius: 0 !important;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include respond-to-min($tablet) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+// Accessibility
+.acc-black,
+.acc-blue {
+  .digital-notifications-wrapper {
+    &.bg-yellow {
+      background-color: $black;
+      .title {
+        h3 {
+          color: $white;
+        }
+      }
+
+      .notifications-body {
+        .description {
+          a {
+            color: $white;
+          }
+
+          p {
+            color: $white;
+          }
+          li {
+            color: $yellow-light;
+          }
+        }
+      }
+    }
+  }
+
+  .more-notifications {
+    a {
+      &::after {
+        border-color: $white;
+      }
+    }
+  }
+
+  .notifications-head {
+    .title {
+      h3 {
+        color: $white;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .notifications-body {
+    li {
+      color: $white;
+    }
+
+    .description {
+      a,
+      p {
+        color: $white;
+      }
+    }
+  }
+}
+
+.acc-blue {
+  .digital-notifications-wrapper {
+    &.bg-yellow {
+      background-color: $blue4;
+    }
+
+    &.bg-black {
+      background-color: $blue4;
+    }
+  }
+}
+
+.acc-yellow {
+  .digital-notifications-wrapper {
+    &.bg-yellow {
+      background-color: $black;
+      .title {
+        h3 {
+          color: $yellow-light;
+        }
+      }
+
+      .notifications-body {
+        .description {
+          a {
+            color: $yellow-light;
+          }
+          p {
+            color: $yellow-light;
+          }
+        }
+
+        li {
+          color: $yellow-light;
+        }
+      }
+    }
+  }
+
+  .more-notifications {
+    a {
+      &::after {
+        border-color: $yellow-light;
+      }
+    }
+  }
+
+  .notifications-head {
+    .title {
+      h3 {
+        color: $yellow-light;
+      }
+
+      a {
+        color: $yellow-light;
+      }
+    }
+  }
+
+  .notifications-body {
+    li {
+      color: $yellow-light;
+
+      &::after {
+        background-color: $yellow-light;
+      }
+    }
+
+    .description {
+      a,
+      p {
+        color: $yellow-light;
+      }
+    }
+  }
+}

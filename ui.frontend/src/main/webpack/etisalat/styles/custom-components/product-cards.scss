@@ -1,0 +1,1007 @@
+.product-card {
+  $parent: &;
+  @include font-family-lato;
+  border: toRem(1) solid transparent;
+  border-radius: $border-radius-step-2;
+  box-shadow: 0 toRem(5) toRem(10) 0 rgb(0 0 0 / 10%);
+  cursor: pointer;
+  position: relative;
+  transition: 0.3s;
+
+  &:hover {
+    border-color: $main-green;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  &__header {
+    // height: 14.125rem;
+    height: auto;
+    overflow: hidden;
+    position: relative;
+
+    &__figure {
+      height: inherit;
+      margin-bottom: $margin-step-0;
+
+      img {
+        border-radius: $border-radius-step-2 $border-radius-step-2 0 0;
+        height: 100%;
+        object-fit: cover;
+        width: 100%;
+        z-index: 0;
+
+        &::before {
+          background-color: $grey-secondary;
+          border-radius: $border-radius-step-2 $border-radius-step-2 0 0;
+          content: "";
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    &__title {
+      bottom: 0;
+      color: $white;
+      padding: $padding-step-2 $padding-step-2 0;
+      position: absolute;
+      width: 100%;
+
+      &__primary {
+        @include font-family-lato;
+        font-size: $font12;
+        font-weight: get-font-weight("bold");
+        letter-spacing: toRem(3);
+        line-height: toRem(12);
+        text-transform: uppercase;
+        color: $white;
+        opacity: 0.8;
+        margin-bottom: $margin-step-1;
+      }
+
+      &__secondary {
+        @include font-family-Neotech-ge;
+        font-size: $font28;
+        line-height: toRem(35);
+        margin: $margin-step-0;
+        margin-bottom: $margin-step-2;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &__special-offer {
+    background-color: $dark-orange;
+    border-radius: 0 0 $border-radius-step-1 $border-radius-step-1;
+    color: $white;
+    display: none;
+    @include font-family-Neotech-ge;
+    font-size: $font12;
+    font-weight: get-font-weight("medium");
+    left: toRem(14);
+    letter-spacing: toRem(0.25);
+    line-height: toRem(12);
+    padding: $padding-step-1 toRem(10);
+    position: absolute;
+    top: 0;
+  }
+
+  &__item-top {
+    border-bottom: toRem(1) dashed $light-sand-brown;
+    border-top: 0;
+    margin-bottom: $margin-step-3;
+    padding: 0 0 $padding-step-3;
+
+    .package {
+      color: $grey1;
+      flex: 0 0 50%;
+      font-size: $font14;
+      max-width: 50%;
+      text-align: center;
+
+      img {
+        height: toRem(32);
+        margin-right: $margin-step-1;
+        min-height: auto;
+        position: relative;
+        vertical-align: text-bottom;
+
+        &::before,
+        &::after {
+          height: toRem(32);
+          position: absolute;
+          width: toRem(32);
+        }
+
+        &::before {
+          background-color: $cust-select;
+          border-radius: toRem(5);
+          content: "";
+          left: toRem(-2);
+          top: 50%;
+          transform: translateY(-50%);
+        }
+
+        &::after {
+          color: rgb(100 100 100);
+          content: "";
+          display: block;
+          left: 0;
+          top: toRem(5);
+          z-index: 2;
+        }
+      }
+
+      span {
+        color: $almost-black;
+        @include font-family-Neotech-ge;
+        font-size: $font28;
+        small {
+          color: $grey1;
+          font-family: Lato, GE SS Two, Roboto, Arial, sans-serif;
+          font-size: $font14;
+          text-align: center;
+        }
+      }
+
+      p {
+        color: $grey1;
+        font-size: $font16;
+        line-height: toRem(20);
+        margin-bottom: $margin-step-0;
+        margin-top: toRem(12);
+        max-height: toRem(40);
+        overflow: hidden;
+      }
+    }
+  }
+
+  &__feature-list,
+  &__color-list {
+    margin-bottom: toRem(44);
+    overflow: hidden;
+    position: relative;
+
+    ul {
+      list-style: none;
+      margin-top: $margin-step-0;
+
+      li {
+        color: $steel-grey;
+        font-size: $font20;
+        line-height: toRem(24);
+        margin-bottom: toRem(18);
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    &--small {
+      ul {
+        li {
+          font-size: $font14;
+          @include respond-to-min($desktop){
+            font-size: $font16;
+          }
+          line-height: 1.43;
+          margin-bottom: toRem(4);
+        }
+      }
+    }
+  }
+  &__feature-list {
+    margin-bottom: toRem(35.2);
+  }
+
+  &__price-wrapper {
+    @include font-family-lato;
+  }
+
+  &__price {
+    color: $main-green;
+    line-height: normal;
+
+    .price-value {
+      @include font-family-Neotech-roboto;
+      font-size: $font26;
+    }
+
+    .price-currency {
+      display: inline-block;
+      font-size: $font14;
+      margin-left: toRem(4);
+    }
+  }
+
+  &__price-from {
+    display: block;
+    @include font-family-lato;
+    padding-bottom: toRem(1.6);
+  }
+
+  &__price-from,
+  &__price-vat {
+    color: $grey1;
+    font-size: $font14;
+    line-height: inherit;
+  }
+  &__price-vat {
+    margin-top: $margin-step-1;
+    line-height: 1.4;
+  }
+
+  &__old-price {
+    background-color: $main-green;
+    border-radius: toRem(10);
+    color: $white;
+    font-size: $font12;
+    font-weight: get-font-weight("bold");
+    line-height: toRem(15);
+    margin-right: $margin-step-1;
+    padding: toRem(3) toRem(7);
+
+    .old-price-value {
+      text-decoration: line-through;
+    }
+  }
+
+  &__smile-points {
+    background-color: $sand-white-50;
+    color: $main-green;
+    font-size: $font14;
+    font-weight: get-font-weight("bold");
+    letter-spacing: toRem(0.5);
+    line-height: toRem(14);
+    overflow: hidden;
+    padding: toRem(12) $padding-step-3;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__cta {
+    background-color: $main-green;
+    border: toRem(1) solid transparent;
+    border-bottom: none;
+    border-radius: 0 0 $border-radius-step-2 $border-radius-step-2;
+    color: $white;
+    font-size: $font16;
+    font-weight: get-font-weight("bold");
+    letter-spacing: toRem(4);
+    padding: toRem(17.6) $padding-step-2;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $green-btn;
+      border-color: $green-btn;
+      box-shadow: none !important;
+      color: $white;
+    }
+  }
+
+  &__benefit__link {
+    color: $main-green !important;
+    cursor: pointer;
+    display: inline-block;
+    @include font-family-lato;
+    font-size: $font16;
+    letter-spacing: toRem(1.6);
+    line-height: toRem(21);
+    padding-right: $padding-step-2;
+    position: relative;
+    text-transform: uppercase;
+
+    &--small {
+      font-size: $font12;
+    }
+
+    &::before {
+      border: solid $almost-black;
+      border-color: $main-green !important;
+      border-width: toRem(1) toRem(1) 0 0;
+      content: "";
+      padding: toRem(3);
+      position: absolute;
+      right: toRem(1);
+      top: 55%;
+      transform: translateY(-50%) rotate(45deg);
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
+  &__pill {
+    background-color: $celadon-green;
+    border-radius: toRem(16);
+    color: $main-green;
+    display: inline-block;
+    font-size: $font14;
+    font-weight: get-font-weight("bold");
+    line-height: 1.43;
+    padding: toRem(1) $padding-step-1;
+  }
+
+  &--offer {
+    &:hover {
+      border-color: $dark-orange;
+    }
+    #{$parent}__price {
+      color: $dark-orange;
+    }
+    #{$parent}__old-price {
+      background-color: $dark-orange;
+    }
+    #{$parent}__cta {
+      background-color: $dark-orange;
+
+      &:hover {
+        background-color: $dark-orange;
+        border-color: $dark-orange;
+      }
+    }
+    #{$parent}__special-offer {
+      display: block;
+    }
+    #{$parent}__pill {
+      background-color: $light-orange;
+      color: $dark-orange;
+    }
+  }
+  &--elife-plan {
+    // bugfix 709
+    border-width: toRem(1) toRem(1) 0;
+    #{$parent}__header,
+    #{$parent}__body,
+    #{$parent}__price-wrapper {
+      // border: toRem(1) solid transparent;
+      transition: 0.3s;
+    }
+    #{$parent}__header {
+      border-top-left-radius: toRem(8);
+      border-top-right-radius: toRem(8);
+      // border-width: toRem(1) toRem(1) 0;
+    }
+    #{$parent}__body,
+    #{$parent}__price-wrapper {
+      border-width: 0 toRem(1);
+    }
+    &#{$parent}--offer {
+      #{$parent}__footer {
+        border-color: $dark-orange;
+      }
+    }
+    &:hover {
+      // border-color: transparent;
+      #{$parent}__header,
+      #{$parent}__body,
+      #{$parent}__footer,
+      #{$parent}__price-wrapper {
+        border-color: $main-green;
+      }
+      #{$parent}__footer {
+        #{$parent}__price-wrapper {
+          border-color: $main-green;
+        }
+      }
+    }
+    &#{$parent}--offer {
+      &:hover {
+        #{$parent}__header,
+        #{$parent}__body,
+        #{$parent}__footer,
+        #{$parent}__price-wrapper {
+          border-color: $dark-orange;
+        }
+        #{$parent}__footer {
+          #{$parent}__price-wrapper {
+            border-color: $dark-orange;
+          }
+        }
+      }
+    }
+  }
+  &--elife-plan,
+  &--device {
+    #{$parent}__header {
+      &__title {
+        padding: 0;
+        position: relative;
+
+        &__primary {
+          color: $steel-grey;
+          line-height: 1rem;
+        }
+
+        &__secondary {
+          color: $almost-black;
+          overflow: inherit;
+          white-space: inherit;
+        }
+      }
+    }
+  }
+  &--device {
+    #{$parent}__smile-points {
+      font-size: $font16;
+    }
+    #{$parent}__header {
+      &__figure {
+        text-align: center;
+
+        img {
+          padding: toRem(25);
+        }
+      }
+    }
+    #{$parent}__color-list {
+      ul {
+        height: toRem(75);
+
+        li {
+          border-radius: toRem(10);
+          display: inline-block;
+          height: toRem(16);
+          list-style: none;
+          margin-right: toRem(5);
+          overflow: hidden;
+          text-indent: toRem(-999999);
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          width: toRem(16);
+        }
+      }
+      &__gold {
+        background-color: $gold;
+      }
+      &__graphite {
+        background-color: $graphite;
+      }
+      &__sierra-blue {
+        background-color: $blue-sierra;
+      }
+      &__pacific-blue {
+        background-color: $blue-pacific;
+      }
+      &__silver {
+        background-color: $silver-light;
+      }
+      &__red {
+        background-color: $red-light;
+      }
+      &__blue {
+        background-color: $blue-dark;
+      }
+      &__midnight {
+        background-color: $grey-midnight;
+      }
+      &__pink {
+        background-color: $pink-light;
+      }
+      &__starlight {
+        background-color: $grey-starlight;
+      }
+    }
+    #{$parent}__price-from,
+    #{$parent}__price-vat {
+      color: $grey1;
+      font-size: $font12;
+      margin-bottom: $margin-step-0;
+    }
+    #{$parent}__price-vat {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  &--plan {
+    #{$parent}__header {
+      background: $main-green;
+      background: url("/b2c/eshopApp/assets/img/bg-cards/plan-cards-illustration.svg") right center no-repeat,
+        linear-gradient(45deg, $main-green, $almost-black);
+      border-radius: $border-radius-step-2 $border-radius-step-2 0 0;
+      height: 8.75rem;
+      padding: $padding-step-3;
+
+      &__title {
+        color: $white;
+        padding: 0;
+        position: relative;
+
+        &__primary {
+          display: block;
+          margin-top: $margin-step-1;
+        }
+
+        &__secondary {
+          font-size: $font24;
+          line-height: 1.33;
+          overflow: auto;
+          white-space: normal;
+          word-break: break-all;
+        }
+      }
+    }
+    #{$parent}__item-top {
+      border-bottom: none;
+      margin-bottom: $margin-step-0;
+      padding-bottom: $padding-step-0;
+
+      .top-text {
+        color: $almost-black;
+        font-size: $font20;
+        font-weight: get-font-weight("bold");
+        line-height: toRem(28);
+        margin: $margin-step-0;
+
+        &.small {
+          font-size: $font16;
+          line-height: 1;
+        }
+      }
+
+      .bottom-text {
+        color: $steel-grey;
+        font-size: $font14;
+        line-height: toRem(20);
+
+        &.small {
+          font-size: $font12;
+          letter-spacing: toRem(2.4);
+          line-height: 1.42;
+        }
+      }
+
+      .icons {
+        margin-right: $margin-step-1;
+        width: toRem(32);
+      }
+    }
+    #{$parent}__brand-name {
+      color: $grey-dark;
+      @include font-family-lato;
+      font-size: $font12;
+      font-weight: get-font-weight("bold");
+      letter-spacing: toRem(2);
+      line-height: toRem(12);
+      margin-bottom: $margin-step-1;
+      text-transform: uppercase;
+    }
+
+    #{$parent}__progress-container {
+      .progress {
+        height: toRem(7);
+        .progress-bar {
+          background-image: linear-gradient(45deg, $main-green, $green-btn);
+          border: 0;
+          border-radius: toRem(20);
+        }
+      }
+    }
+    &#{$parent}--offer {
+      #{$parent}__header {
+        background: $dark-orange;
+        background: url("/b2c/eshopApp/assets/img/bg-cards/plan-cards-illustration.svg") right center no-repeat,
+          linear-gradient(45deg, $dark-orange, $almost-black);
+      }
+    }
+  }
+  .mt-1 {
+    margin-top: toRem(4) !important;
+  }
+  .my-1 {
+    margin-top: toRem(4);
+    margin-bottom: toRem(4);
+  }
+  .mb-3 {
+    margin-bottom: toRem(16) !important;
+  }
+  .mb-4 {
+    margin-bottom: toRem(24) !important;
+  }
+  .mt-auto {
+    margin-top: auto;
+  }
+  .pt-0 {
+    padding-top: 0 !important;
+  }
+  .py-3 {
+    padding-top: $padding-step-2;
+    padding-bottom: $padding-step-2;
+  }
+  .px-4 {
+    padding-left: toRem(12);
+    padding-right: toRem(12);
+
+    @include respond-to-min($desktop) {
+      padding-left: $padding-step-3;
+      padding-right: $padding-step-3;
+    }
+  }
+
+  hr.dashed {
+    background: url("/b2c/eshopApp/assets/img/nv-etisalat/SVG/divider.png") 0 0 repeat;
+    border: 0;
+    height: toRem(1);
+    width: 100%;
+  }
+}
+.smart-home-elife-slider {
+  &.product-grid-text-section.plans,
+  &.plans {
+    .table-swiper-button-next,
+    .table-swiper-button-prev {
+      margin-right: $margin-step-3;
+      width: toRem(44) !important;
+      background-image: none;
+    }
+  }
+  .table-swiper-button-next,
+  .table-swiper-button-prev {
+    background: $main-green;
+    left: toRem(68);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-radius: 100%;
+    line-height: toRem(44);
+    box-shadow: 0 toRem(2) toRem(6) toRem(2) rgb(0 0 0 / 8%);
+    &:after {
+      transform: rotate(-224deg);
+      border: solid $main-green;
+      left: toRem(15);
+      content: "";
+      display: block;
+      width: toRem(12);
+      border: solid $white;
+      border-width: 0 toRem(2) toRem(2) 0 !important;
+      padding: toRem(7);
+      position: absolute;
+      line-height: 1;
+      transition: all 0.3s ease-in-out;
+      margin: $margin-step-0;
+    }
+    &.swiper-button-disabled {
+      background: $white;
+      pointer-events: auto;
+      cursor: not-allowed;
+      opacity: 1;
+      &:after {
+        content: "";
+        display: block;
+        border-width: 0 toRem(2) toRem(2) 0 !important;
+        padding: toRem(7);
+        position: absolute;
+        line-height: 1;
+        transition: all 0.3s ease-in-out;
+        margin: $margin-step-0;
+        border: solid $main-green;
+      }
+    }
+    @media (max-width: 991px) {
+      display: none;
+    }
+  }
+
+  .table-swiper-button-next {
+    &:after {
+      border: solid $white;
+      transform: rotate(-45deg);
+      left: toRem(9);
+    }
+    &.swiper-button-disabled {
+      &:after {
+        transform: rotate(-45deg);
+        left: toRem(9);
+      }
+    }
+  }
+  .p2 {
+    p {
+      color: $dark-gray;
+    }
+  }
+}
+
+.product-grid-text-section {
+  &.product-device-text,
+  &.smart-home-elife-slider {
+    .main-text-section {
+      padding-left: $padding-step-0 !important;
+      padding-right: $padding-step-0 !important;
+      padding-bottom: $padding-step-3;
+    }
+  }
+}
+[lang="ar"] [dir="rtl"] {
+  .product-grid-text-section {
+    &.smart-home-elife-slider,
+    &.product-device-text,
+    .product-card--device {
+      .product-card__price-vat {
+        display: flex;
+        align-items: center;
+        .product-card__old-price {
+          float: right;
+          margin-left: $margin-step-1;
+          margin-right: $margin-step-0;
+        }
+      }
+      .p2 {
+        p {
+          margin-right: $margin-step-0;
+        }
+      }
+      // nav arrow buttons
+      .table-swiper-button-next,
+      .table-swiper-button-prev {
+        float: right !important;
+      }
+      .table-swiper-button-next {
+        right: toRem(-70) !important;
+        margin-right: 0 !important;
+      }
+      .btn-text:before {
+        left: toRem(-15);
+        transform: translateY(-50%) rotate(135deg);
+      }
+      .product-card__price {
+        @include font-family-Neotech;
+      }
+    }
+    // nav arrow
+    &.plans.product-device-text {
+      .table-swiper-button-next {
+        background-position-x: 100% !important;
+        right: toRem(-54) !important;
+      }
+    }
+    &.product-card--device {
+      .product-card__price-vat {
+        display: block;
+      }
+    }
+  }
+}
+
+.nv-channel-list {
+  margin-top: toRem(12);
+  margin-bottom: toRem(12);
+  text-align: center;
+  border-top: 1px dashed $light-sand-brown;
+  border-bottom: 1px dashed $light-sand-brown;
+  padding: toRem(14) 0;
+  font-size: $font12;
+  letter-spacing: toRem(2);
+  line-height: 1.33;
+  text-transform: uppercase;
+
+  @include respond-to-min($desktop) {
+    font-size: $font14;
+    text-align: left;
+    padding: 0;
+    border-top: none;
+    border-bottom: none;
+    line-height: 20px;
+    margin-top: toRem(8);
+    margin-bottom: toRem(16);
+
+    @include rtlBlock() {
+      text-align: right;
+    }
+  }
+
+  svg {
+    height: toRem(16);
+    line-height: 1;
+    vertical-align: top;
+    margin-right: toRem(8);
+    min-height: auto;
+
+    @include respond-to-min($desktop) {
+      height: toRem(20);
+    }
+  }
+}
+// A11y
+.acc-blue,
+.acc-black,
+.acc-yellow {
+  .product-card,
+  .product-card--offer {
+    $parent: &;
+    border: toRem(1) solid $white;
+    box-shadow: none;
+    &:hover {
+      border-color: $white;
+      .product-card__header,
+      .product-card__footer,
+      .product-card__body,
+      .pr-wrapper {
+        border-color: transparent;
+      }
+    }
+    &__special-offer {
+      color: $blue4;
+      border: toRem(1) solid $blue4;
+      border-top: 0;
+      background-color: $white;
+    }
+    &__header__title__primary,
+    &__header__title__secondary,
+    &__price-from,
+    &__price,
+    &__old-price,
+    &__price-vat,
+    &__color-list--small ul li,
+    &__feature-list--small ul li,
+    &__item-top .package p,
+    &__item-top .package span,
+    &__item-top .package span small {
+      color: $white;
+    }
+    span.product-card__old-price,
+    span.old-price-value {
+      background-color: $white;
+      color: $blue4;
+    }
+    &__smile-points,
+    &__cta {
+      color: $white;
+      background-color: transparent;
+      border-top: toRem(1) solid;
+    }
+    &__cta {
+      border-left: 0;
+      border-right: 0;
+    }
+
+    &__cta:hover {
+      background-color: transparent;
+      border-color: inherit;
+      border-left: 0;
+      border-right: 0;
+      border-top: toRem(1) solid;
+    }
+  }
+  .smart-home-elife-slider.plans {
+    .table-swiper-button-next,
+    .table-swiper-button-prev {
+      background: transparent;
+      &:after {
+        border: solid $white;
+      }
+      &.swiper-button-disabled {
+        &:after {
+          border: solid $white;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+.acc-yellow {
+  .product-card,
+  .product-card--offer {
+    $parent: &;
+    border: toRem(1) solid $yellow-light;
+    &:hover {
+      border-color: $yellow-light;
+    }
+    &__special-offer {
+      background: $yellow-light;
+      color: $black;
+      border: toRem(1) solid $black;
+      border-top: 0;
+    }
+    &__item-top {
+      border-bottom-color: $yellow-light;
+    }
+    &__header__title__primary,
+    &__header__title__secondary,
+    &__price-from,
+    &__price,
+    &__old-price,
+    &__price-vat,
+    &__color-list--small ul li,
+    &__feature-list--small ul li,
+    &__item-top .package p,
+    &__item-top .package span,
+    &__item-top .package span small,
+    &__smile-points {
+      color: $yellow-light;
+    }
+    &__old-price,
+    span.product-card__old-price,
+    span.old-price-value {
+      background-color: $yellow-light;
+      color: $black;
+    }
+    &__cta {
+      color: $yellow-light;
+      border-top-color: $yellow-light;
+      &:hover {
+        border-top-color: $yellow-light;
+      }
+    }
+  }
+  .smart-home-elife-slider.plans {
+    .table-swiper-button-next,
+    .table-swiper-button-prev {
+      &:after {
+        border: solid $yellow-light;
+      }
+      &.swiper-button-disabled {
+        &:after {
+          border: solid $yellow-light;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+.acc-black {
+  .product-card,
+  .product-card--offer {
+    $parent: &;
+    &__special-offer {
+      color: $black;
+      border: toRem(1) solid $black;
+      border-top: 0;
+    }
+    span.product-card__old-price,
+    span.old-price-value {
+      color: $black;
+    }
+  }
+
+  .smart-home-elife-slider.plans {
+    .table-swiper-button-next,
+    .table-swiper-button-prev {
+      &:after {
+        border: solid $white;
+      }
+      &.swiper-button-disabled {
+        &:after {
+          border: solid $white;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+}
+.devicestile.image,
+.producttile.image,
+.elifeplantile.image,
+.elitetile.image {
+  height: 100%;
+}
+.product-card--device,
+.product-card--elife-plan,
+.product-card--elife-lite {
+  &.product-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .link-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+}
+

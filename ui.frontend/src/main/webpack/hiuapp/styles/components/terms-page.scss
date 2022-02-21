@@ -1,0 +1,150 @@
+.hiuapp_terms {
+  background: linear-gradient(to left, $pink-color, $shade-pink);
+
+  .cmp-container:first-child {
+    @extend .container-block;
+  }
+  #termsandconditions {
+    padding: 50px 15px;
+  }
+  .teaser {
+    .cmp-teaser__content {
+      position: relative;
+      .cmp-teaser__pretitle {
+        font-size: toRem(32);
+        color: $white;
+        padding-bottom: 5px;
+        line-height: 100%;
+        @include respond-to-min($tablet) {
+          font-size: toRem(36);
+        }
+      }
+      .cmp-teaser__description {
+        @include respond-to-max($tablet) {
+          margin: 10px 0 20px 0;
+        }
+        p {
+          color: $white;
+          margin-bottom: 15px 0 20px 0;
+        }
+      }
+      .cmp-teaser__action-container {
+        @include respond-to-min($phone) {
+          position: absolute;
+          right: 0;
+        }
+        @include respond-to-max($tablet) {
+          top: 15px;
+        }
+        @include respond-to-min($desktop) {
+          top: 5px;
+        }
+        .cmp-teaser__action-link {
+          @extend .btn;
+          min-width: 155px;
+        }
+      }
+    }
+  }
+}
+
+// Terms page
+.hiuapp_termspage {
+  background: $grey-color;
+  background-image: -webkit-linear-gradient(80deg, $grey-color 55%, $white 45%);
+  position: relative;
+  z-index: 1;
+  background-position: bottom center;
+  background-size: cover;
+  padding-top: 0;
+  &.terms__boxshadow {
+    box-shadow: rgb(0 0 0 / 30%) 0px 20px 30px -20px;
+    margin-bottom: 50px;
+    content: "";
+  }
+
+  .section-banner {
+    min-height: auto;
+  }
+  .hiuapp_pink-rotate-bg {
+    background-image: -webkit-linear-gradient(
+      -80deg,
+      $pink-color 60%,
+      $white 40%
+    );
+    height: 350px;
+    position: relative;
+    z-index: 1;
+    background-position: bottom center;
+    background-size: cover;
+    min-height: 350px;
+    padding: 0 30px 0 15px;
+    .aem-GridColumn.aem-GridColumn--default--6 {
+      width: 100% !important;
+    }
+
+    .cmp-teaser {
+      top: 105px;
+      h2 {
+        margin: 0;
+        color: $white;
+        margin: 0;
+        font-weight: 700;
+
+        @include respond-to-max($phone) {
+          font-size: toRem(35);
+        }
+        @include respond-to-max($phone-xs) {
+          font-size: toRem(30);
+        }
+        @include respond-to-min($tablet) {
+          font-size: toRem(50);
+        }
+      }
+      p {
+        color: $white;
+        margin: 18px 36px 18px 0;
+      }
+      .cmp-teaser__content {
+        @include respond-to-min($desktop) {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  .cmp_container_block {
+    @extend .container-block;
+    float: none !important;
+
+    @include respond-to-min($desktop-wide) {
+      padding: 0 !important;
+    }
+    @include respond-to-max($tablet) {
+      padding: 0 20px !important;
+    }
+    h3 {
+      border-bottom: 2px solid $pink-color;
+      font-size: 2em;
+      color: $black;
+      font-weight: 400;
+      line-height: 1.2;
+      margin: 25px 0 15px 0;
+      display: inline-block
+    }
+
+
+    h4 {
+      color: $black;
+      font-size: toRem(24);
+      font-weight: 400;
+      line-height: 1.2;
+      clear: both;
+    }
+
+    p {
+      margin-bottom: 16px;
+      line-height: 24px;
+      clear: both;
+    }
+  }
+}

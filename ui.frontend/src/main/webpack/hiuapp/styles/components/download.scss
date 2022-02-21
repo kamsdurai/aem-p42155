@@ -1,0 +1,104 @@
+#downloadHiU {
+  padding-top: 100px;
+  @include respond-to-max($tablet) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  @include respond-to-min($desktop) {
+    padding: 100px 0 100px 0;
+  }
+}
+
+.hiuapp_lightblue-rotate-bg {
+  background: $grey-color;
+  background-image: -webkit-linear-gradient(75deg, $grey-color 50%, $white 45%);
+  position: relative;
+  z-index: 1;
+  background-position: bottom center;
+  background-size: cover;
+
+  padding-right: 0;
+  padding-left: 0;
+
+  > .cmp-container:nth-child(1) {
+    @extend .container-block;
+  }
+  .image {
+    @include respond-to-max($tablet) {
+      margin-bottom: 10px;
+    }
+  }
+  .cmp-text {
+    h2 {
+      @include respond-to-min($desktop) {
+        font-size: toRem(45);
+        margin-bottom: toRem(45);
+      }
+      @include respond-to-max($tablet) {
+        font-size: toRem(30);
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.buttonstore {
+  margin-top: 2.75rem;
+}
+
+.cmp_btn {
+  display: flex;
+  @include respond-to-max($phone) {
+    flex-direction: column;
+    .cmp_store_btn {
+      margin-bottom: 10px;
+    }
+  }
+  .cmp_store_btn {
+    border: 1px solid $greyish-white;
+    background-color: $white;
+    padding: 15px 30px;
+    border-radius: toRem(6);
+    box-shadow: 0 10px 30px rgb(0 0 0 / 10%);
+    margin-right: toRem(20);
+    @include respond-to-max($phone) {
+      margin-right: 0;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      i {
+        color: $shade-grey;
+        font-size: toRem(24);
+        margin-right: toRem(15);
+        transition-duration: 500ms;
+      }
+      p {
+        font-size: 16px;
+        line-height: 1;
+        transition-duration: 500ms;
+
+        span {
+          font-size: 12px;
+          display: block;
+        }
+      }
+      &:focus,
+      p,
+      p span {
+        text-decoration: none;
+      }
+    }
+    &:hover {
+      background-color: $pink-color;
+      color: $white;
+      cursor: pointer;
+
+      p,
+      i {
+        color: $white;
+      }
+    }
+  }
+}

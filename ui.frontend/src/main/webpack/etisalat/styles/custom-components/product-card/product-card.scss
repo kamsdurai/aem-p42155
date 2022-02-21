@@ -1,0 +1,185 @@
+.elife-addon-slider {
+  .default-section-title {
+    @include respond-to-max($desktop) {
+      text-align: left;
+    }
+    h3 {
+      text-align: center;
+      font-size: toRem(28);
+      @include respond-to-max($desktop) {
+        font-size: toRem(20);
+        text-align: left;
+      }
+    }
+    .col-center {
+      float: none !important;
+      margin: 0 auto;
+    }
+  }
+}
+
+.elifeaddonstile {
+  .product-grid {
+    &.tile-table {
+      width: 100%;
+      .tile-card {
+        width: 100%;
+        cursor: pointer;
+        position: relative;
+        box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+        border-radius: toRem(10);
+        overflow: hidden;
+        &:hover {
+          .tiles-box-list {
+            border-left: 1px solid $arrow-border-green;
+            border-right: 1px solid $arrow-border-green;
+            transition: all 0.5s ease-in-out;
+            @include respond-to-max($tablet) {
+              border-bottom: 1px solid $arrow-border-green;
+            }
+          }
+        }
+        .tile {
+          position: relative;
+          background-color: $white;
+          text-align: left;
+          display: flex;
+          flex-direction: column;
+          border-radius: toRem(8);
+          box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+          overflow: hidden;
+        }
+        .tiles-box {
+          font-size: toRem(14);
+          position: relative;
+          @include respond-to-min($tablet) {
+            font-size: toRem(16);
+          }
+        }
+        .tiles-box-title {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          padding: toRem(24);
+          height: 10em;
+          max-height: 146px;
+          position: relative;
+          color: $white;
+          width: 101%;
+          background: linear-gradient(45deg, $almost-black, $green-dark-10);
+          .catagory {
+            text-transform: uppercase;
+            font-size: toRem(12);
+            letter-spacing: 3px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 700;
+            @include rtlBlock() {
+              text-align: right;
+            }
+          }
+          h2 {
+            margin: 0;
+            font-size: toRem(24);
+            max-height: 2.6em;
+            overflow: hidden;
+            letter-spacing: 0;
+            color: $white;
+            @include respond-to-min($desktop) {
+              font-size: toRem(28);
+            }
+          }
+        }
+        .tiles-box-list {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+          height: 119px;
+          padding: 1.5rem 1.5rem 1rem;
+          justify-content: flex-end;
+          border-left: 1px solid $white;
+          border-right: 1px solid $white;
+          transition: all 0.5s ease-in-out;
+          @include respond-to-max($desktop) {
+            border-radius: 0 0 10px 10px;
+            border-bottom: 1px solid $sand-white-50;
+          }
+
+          @include respond-to-max($desktop) {
+            padding: 0 1rem;
+          }
+          .detail-info-wrap-pricetag {
+            justify-content: flex-start;
+            align-items: flex-start;
+          }
+          .bottom-text {
+            color: $grey1;
+            font-size: toRem(12);
+            margin-bottom: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: toRem(33);
+            line-height: 2;
+            @include rtlBlock() {
+              text-align: right;
+            }
+          }
+        }
+        .read-more {
+          text-align: center;
+          background-color: $arrow-border-green;
+          text-transform: uppercase;
+          color: $white;
+          font-size: toRem(16);
+          letter-spacing: 4px;
+          padding: 1rem;
+          @include respond-to-max($desktop) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Swiper Buttons
+.elife-addon-slider {
+  .swipebtn {
+    position: absolute;
+    top: 160px;
+    cursor: pointer;
+    &:before {
+      content: " ";
+      display: block;
+      width: toRem(28);
+      height: toRem(28);
+      background: url("../resources/images/angle-left.svg") no-repeat 100%;
+      opacity: 0.3;
+    }
+    &.table-swiper-button-prev {
+      left: -35px;
+    }
+    &.table-swiper-button-next {
+      right: -35px;
+      &:before {
+        transform: scaleX(-1);
+      }
+    }
+    &.swiper-button-disabled {
+      display: none;
+    }
+  }
+
+  .swiper-container-horizontal .swiper-scrollbar {
+    width: 98% !important;
+    @include respond-to-max($tablet) {
+      width: 90% !important;
+      left: 20px !important;
+    }
+    .swiper-scrollbar-drag {
+      background-color: $arrow-border-green;
+    }
+  }
+}

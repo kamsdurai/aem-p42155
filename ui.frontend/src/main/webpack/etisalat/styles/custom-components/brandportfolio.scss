@@ -1,0 +1,100 @@
+// .background-gray{
+//     h3,p{
+//         font-weight: 400;
+//         font-stretch: normal;
+//         font-style: normal;
+//         letter-spacing: normal;
+//     }
+//     h3{
+//         font-size: $font28;
+//         line-height: 1.36;
+//     }
+//     p{
+//         @include font-family-lato();
+//         font-size: $font16;
+//         line-height: 1.5;
+//         color: $dark-gray;
+//         margin-bottom: 2.7rem;
+//     }
+// }
+.brand-portfolio {
+  position: relative;
+
+  @include respond-to-min($desktop) {
+    padding: 0 12px !important;
+  }
+
+  .outlet-wrap {
+    padding: 0 toRem(12);
+    margin: 0 toRem(6);
+
+    @include respond-to-min($desktop) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .swiper-slide {
+    align-items: center;
+    background-color: $white;
+    border-radius: 8px;
+    display: flex;
+    font-size: $font18;
+    justify-content: center;
+    min-height: 161.5px;
+    text-align: center;
+
+    @include respond-to-min($tablet) {
+      min-height: 180px;
+    }
+
+    .image {
+      display: block;
+      height: 100%;
+      width: 100%;
+
+      img {
+        max-height: 100px;
+        max-width: 130px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .table-swiper-scrollbar {
+    background-color: $sand-white;
+    bottom: 3px;
+    height: 4px;
+    left: 1%;
+    margin-top: 1.5rem;
+    opacity: 1;
+    width: 100%;
+    z-index: 1;
+
+    .swiper-scrollbar-drag {
+      background-color: $main-green;
+    }
+  }
+}
+
+// Accessibility
+
+.acc-blue,
+.acc-black {
+  .brand-portfolio {
+   .table-swiper-scrollbar  {
+    background-color: $steel-grey;
+    .swiper-scrollbar-drag {
+    background-color: $white;
+  }
+  }
+  }
+}
+
+.acc-yellow {
+  .brand-portfolio {
+    .table-swiper-scrollbar {
+      background-color: $steel-grey;
+    }
+  }
+}

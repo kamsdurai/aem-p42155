@@ -1,0 +1,120 @@
+.cmp_tabs__vertical_view_nobg {
+  .cmp-text {
+    h2 {
+      font-size: $font34;
+      line-height: toRem(42);
+    }
+
+    h3 {
+      font-size: $font32;
+      line-height: toRem(40);
+    }
+
+    p {
+      color: $steel-grey;
+      font-size: $font14;
+      font-weight: normal;
+      line-height: toRem(24);
+
+      @include font-family-lato;
+    }
+  }
+}
+
+/* text in Teaser start */
+.cmp-rte-text {
+  padding-left: toRem(30);
+
+  .cmp-text h3 {
+    color: $almost-black;
+    margin: 0;
+
+    @include font-family-Neotech;
+  }
+
+  .cmp-text p {
+    color: $steel-grey;
+    font-size: $font14 !important;
+    line-height: toRem(20) !important;
+    margin-bottom: toRem(12);
+
+    @include font-family-lato;
+  }
+
+  @include respond-to-max($desktop-min) {
+    padding-left: 0;
+
+    .cmp-text p {
+      margin-top: toRem(16);
+    }
+  }
+
+  @include respond-to-min($desktop) {
+    .cmp-text h3 {
+      font-size: $font32;
+      line-height: toRem(40);
+    }
+
+    .cmp-text p {
+      font-size: $font16 !important;
+      line-height: toRem(24);
+      margin-bottom: toRem(16);
+      margin-top: toRem(24);
+      width: 100%;
+    }
+  }
+}
+
+/* text in Teaser end */
+
+.cmp-right-rte {
+  .cmp-button--secondary {
+    width: 100%;
+  }
+
+  @include respond-to-min($tablet) {
+    margin-top: toRem(102);
+    padding-right: toRem(35);
+
+    .cmp-button--secondary {
+      float: $floatR;
+      width: 25%;
+    }
+  }
+}
+
+// Accessibility
+.acc-black,
+.acc-blue {
+  .cmp-rte-text {
+    .cmp-text {
+      p,
+      h3 {
+        color: $white;
+      }
+    }
+  }
+
+  .cmp-accordion--text {
+    .cmp-text li {
+      color: $white;
+    }
+  }
+}
+
+.acc-yellow {
+  .cmp-rte-text {
+    .cmp-text {
+      p,
+      h3 {
+        color: $yellow-light;
+      }
+    }
+  }
+
+  .cmp-accordion--text {
+    .cmp-text li {
+      color: $yellow-light;
+    }
+  }
+}

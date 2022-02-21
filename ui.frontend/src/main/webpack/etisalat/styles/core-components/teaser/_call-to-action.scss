@@ -1,0 +1,247 @@
+.hero-banner-section {
+  .cmp-teaser {
+    left: 50% !important;
+    margin-left: -50vw;
+    position: relative !important;
+    width: 100vw;
+
+    .cmp-image__image {
+      height: toRem(363);
+
+      @include respond-to-max($tablet) {
+        height: toRem(324) !important;
+      }
+    }
+
+    .cmp-teaser__title {
+      line-height: toRem(64);
+      margin: 0 0 toRem(16);
+      width: 50%;
+
+      @include respond-to-max($tablet) {
+        font-size: $font22;
+        line-height: normal;
+        margin: 0 0 toRem(8);
+        width: 100%;
+      }
+    }
+
+    .cmp-teaser__content {
+      padding: 0 toRem(12);
+      top: toRem(100);
+
+      @include respond-to-max($tablet) {
+        align-items: flex-start;
+        top: toRem(115);
+      }
+
+      .cmp-teaser__description {
+        p {
+          font-size: $font18;
+          margin-bottom: toRem(12.5);
+
+          @include font-family-lato;
+
+          @include respond-to-max($tablet) {
+            font-size: $font14;
+            line-height: toRem(26);
+          }
+        }
+      }
+    }
+  }
+}
+
+.promotional-min-banner {
+  .cmp-container {
+    min-height: toRem(80);
+    min-width: 100%;
+    position: relative;
+    text-align: center;
+
+    @include respond-to-max($phone) {
+      min-height: 8.5rem;
+      text-align: left;
+    }
+
+    // This media query related to iphone specific
+    /* stylelint-disable-next-line media-feature-name-no-vendor-prefix */
+    @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+      @include respond-to-max($phone) {
+        min-height: 7rem;
+      }
+    }
+  }
+
+  h5 {
+    margin: 0.781rem 0 0.25rem;
+
+    @include respond-to-max($tablet) {
+      font-size: toRem(22);
+      line-height: toRem(24);
+    }
+  }
+
+  .cmp-image {
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+
+    .cmp-image__image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .text {
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    @include respond-to-max($tablet) {
+      padding: toRem(10) 4rem 0 1.4rem !important;
+    }
+  }
+
+  /* stylelint-disable-next-line no-descending-specificity */
+  p {
+    font-size: $font14;
+    margin-top: 0;
+
+    @include respond-to-max($tablet) {
+      font-size: toRem(13);
+      line-height: 1.7rem;
+      margin: 1rem 0 0;
+    }
+  }
+}
+
+.call-to-action-box {
+  position: relative;
+
+  .cmp-text {
+    background: $main-green;
+    border-radius: toRem(5);
+    color: $white;
+    display: block;
+    font-size: $font18;
+    height: toRem(146);
+    left: 0;
+    margin: 0 auto;
+    padding: 1.3rem 0.1rem 1.3rem 1.3rem;
+    position: absolute;
+    right: 0;
+    text-align: left;
+    top: 15rem;
+    width: 100%;
+    z-index: 9;
+
+    @include respond-to-min($desktop) {
+      height: toRem(160);
+      left: unset;
+      max-width: toRem(384);
+      right: toRem(30);
+      top: toRem(208);
+
+      a {
+        margin-top: 2rem;
+      }
+    }
+
+    @include respond-to-max($tablet) {
+      top: toRem(224);
+      width: 97%;
+    }
+
+    @include respond-to-max($phone) {
+      height: toRem(162);
+      width: 94%;
+    }
+
+    h3 {
+      color: $white;
+      font-size: $font20;
+      margin-bottom: toRem(18);
+      margin-left: 0;
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    // Already done the descending order
+    /* stylelint-disable-next-line no-descending-specificity */
+    p {
+      color: #afcd74;
+      font-size: $font14;
+      line-height: toRem(18);
+      padding: 0;
+
+      @include respond-to-max($tablet) {
+        margin-top: 1rem;
+      }
+
+      @include respond-to-max($phone) {
+        margin-top: 0.3rem;
+      }
+    }
+
+    a {
+      color: $white;
+      display: inline-block;
+      font-size: $font14;
+      margin-top: 1rem;
+      text-transform: uppercase;
+
+      @include respond-to-max($phone) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .cmp-teaser--herobanner {
+    overflow: inherit;
+
+    .cmp-teaser {
+      .cmp-image__image {
+        height: toRem(363);
+
+        @include respond-to-max($tablet) {
+          height: toRem(324) !important;
+        }
+      }
+
+      &__title {
+        color: $almost-black;
+        font-size: $font54;
+
+        @include respond-to-max($tablet) {
+          font-size: $font22;
+        }
+      }
+
+      &__content {
+        @include respond-to-max($tablet) {
+          top: toRem(-224);
+        }
+
+        &__description {
+          /* stylelint-disable-next-line no-descending-specificity */
+          p {
+            color: $almost-black;
+            line-height: toRem(26);
+
+            /* stylelint-disable-next-line max-nesting-depth */
+            @include respond-to-max($tablet) {
+              color: $grey1;
+              font-size: $font14;
+              line-height: toRem(26);
+              margin: 0 toRem(16) toRem(8) 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

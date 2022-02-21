@@ -1,0 +1,105 @@
+// Do not change any style in this file all changes are for global containers.
+// We are using important to overwrite existing AEM grid and bootestrap grid CSS
+
+.container {
+  @include clearFix();
+
+  .column {
+    float: left;
+  }
+}
+
+.container-center {
+  @extend %container;
+
+  clear: both !important;
+  max-width: 100% !important;
+}
+
+// Header
+.main-mega-menu-desktop {
+  .container {
+    @extend %container;
+  }
+}
+
+.top-nav-section {
+  height: 48px;
+
+  .container {
+    @extend %container;
+  }
+}
+
+// Header End
+
+// main tect person details
+.main-text-grid-4-0 {
+  .container {
+    @extend %container;
+  }
+}
+
+// Footer
+
+.quick-links-section {
+  background-color: #f7f8f4;
+
+  .container {
+    @extend %container;
+  }
+}
+
+.footer-links-logo-section {
+  &.container {
+    @extend %container;
+  }
+}
+
+// Footer End
+
+.root {
+  &.container {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .container:not(.aem-GridColumn) {
+    padding: 0;
+  }
+}
+
+.container-fix__fluid {
+  left: 50% !important;
+  margin-left: -50vw !important;
+  position: relative !important;
+  width: 100vw !important;
+
+  .cmp-container {
+    @extend %container;
+
+    max-width: 100%;
+  }
+
+  @include rtlBlock() {
+    left: auto !important;
+    margin-left: auto !important;
+    margin-right: -50vw !important;
+    right: 50% !important;
+  }
+}
+
+.container-fix__width {
+  left: 50% !important;
+  margin-left: -50vw !important;
+  max-width: inherit !important;
+  position: relative !important;
+  width: 100vw !important;
+
+  @include rtlBlock() {
+    left: auto !important;
+    margin-left: auto !important;
+    margin-right: -50vw !important;
+    right: 50% !important;
+  }
+}

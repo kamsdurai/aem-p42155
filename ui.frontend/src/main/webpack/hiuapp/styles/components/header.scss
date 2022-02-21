@@ -1,0 +1,35 @@
+header {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+  @include respond-to-min($tablet) {
+    height: 105px;
+  }
+  .cmp-experiencefragment--header {
+    background: $pink-color;
+    .container {
+      padding: 0;
+    }
+    .cmp-container {
+        @extend .container-block;
+        padding: 0;
+      .logo {
+        font-size: toRem(72);
+        font-weight: 700;
+        color: $white;
+        line-height: 1;
+        display: inline-block;
+        font-family: "Cabin", sans-serif;
+
+        @include respond-to-max($desktop-wide) {
+          font-size: toRem(48);
+          padding: 10px 0 0 15px;
+        }
+        @include respond-to-min($desktop-wide) {
+          padding: 20px 0 10px 0;
+        }
+      }
+    }
+  }
+}

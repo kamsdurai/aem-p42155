@@ -1,0 +1,31 @@
+.cmp-embed {
+  height: toRem(300);
+  padding: $padding-step-0 toRem(5);
+
+  @include respond-to-max($tablet) {
+    height: toRem(400);
+    padding: $padding-step-0 0.4rem;
+  }
+
+  @include respond-to-min($desktop) {
+    float: none;
+    height: toRem(450);
+    margin: $margin-step-0 auto;
+    padding: $padding-step-0 1.5rem;
+    width: 75%;
+  }
+
+  @include respond-to-min($desktop-wide) {
+    padding: $padding-step-0;
+  }
+
+  iframe {
+    height: 100%;
+    padding: $padding-step-0 toRem(10);
+    width: 100%;
+
+    @include respond-to-min($tablet) {
+      padding: $padding-step-0 toRem(10);
+    }
+  }
+}

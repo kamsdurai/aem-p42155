@@ -1,0 +1,315 @@
+.ewallet_mobile_view_carousal {
+  z-index: 22;
+
+  @include respond-to-min($tablet) {
+    position: absolute;
+    right: 2.5%;
+    top: toRem(25);
+  }
+
+  @include respond-to-min($desktop) {
+    right: 11.9%;
+    top: toRem(25);
+  }
+
+  @include respond-to-min($desktop-wide) {
+    right: toRem(130);
+    top: toRem(10);
+  }
+
+  @include respond-to-min($desktop-wide-xl) {
+    right: 330px;
+    top: toRem(10);
+  }
+
+  @include respond-to-max($phone) {
+    margin-bottom: 50px;
+    top: toRem(28);
+    z-index: 10;
+  }
+
+  .cmp-carousel__actions {
+    display: none;
+  }
+
+  .cmp-carousel__content {
+    background: url("../resources/images/mobile-frame.png") no-repeat top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 610px;
+    margin-top: 20px;
+    padding-left: 34px;
+    padding-right: 35px;
+    padding-top: 90px;
+    position: relative;
+    text-align: center;
+    width: 335px;
+
+    @include respond-to-max($tablet) {
+      background-size: contain;
+      height: toRem(560);
+      width: toRem(290);
+    }
+
+    @include respond-to-max($phone) {
+      background-size: contain;
+      height: toRem(600);
+      width: toRem(330);
+    }
+
+    @include respond-to-max($desktop-wide) {
+      margin: 0 auto;
+      right: 0;
+      top: 0;
+    }
+
+    .cmp-image__image {
+      height: auto;
+      max-width: 230px;
+    }
+
+    .cmp-carousel__item {
+      height: toRem(460);
+      margin-top: toRem(10);
+
+      @include respond-to-max($tablet) {
+        height: toRem(300);
+        margin: -16px 9px 0;
+      }
+
+      @include respond-to-max($phone) {
+        height: toRem(470);
+        margin-top: 6px;
+      }
+    }
+
+    .cmp-carousel__indicators {
+      margin-top: 40px;
+
+      @include respond-to-max($phone) {
+        margin-top: 40px;
+      }
+
+      @include respond-to-min-max($desktop, $tablet) {
+        margin-top: 140px;
+      }
+    }
+  }
+}
+
+.cmp-carousel__indicator {
+  background: $blue-grey;
+  border-radius: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 14px;
+  margin: 0 5px 0 0;
+  opacity: 1;
+  padding: 0;
+  width: 14px;
+
+  @include respond-to-max($tablet) {
+    margin: 0 10px;
+  }
+
+  &--active {
+    background-color: $white;
+    height: 14px;
+    margin-bottom: -2px;
+    outline: 2px solid $main-green;
+    width: 14px;
+
+    @include respond-to-max($tablet) {
+      margin-top: -5px;
+    }
+
+    @include respond-to-max($phone) {
+      height: 24px;
+      margin-bottom: auto;
+      margin-top: -10px;
+      width: 24px;
+    }
+  }
+}
+
+// Home page Header banner image
+.teaser_img_right {
+  @include respond-to-min($desktop-wide) {
+    height: 380px;
+  }
+
+  .cmp-teaser {
+    align-items: unset;
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include respond-to-min($desktop) {
+      align-items: center;
+      flex-direction: row-reverse;
+    }
+
+    @include respond-to-min($desktop) {
+      .cmp-teaser__description {
+        padding-right: 0;
+      }
+    }
+
+    .cmp-teaser__image {
+      width: 100%;
+
+      @include respond-to-min($desktop) {
+        width: 50%;
+      }
+    }
+
+    .cmp-teaser__pretitle {
+      background-color: rgb(78 87 166 / 60%);
+      border-radius: 3px;
+      color: $white;
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 18px;
+      margin: 5px 0 0 0;
+      padding: 9px 13px;
+      text-transform: uppercase;
+
+      @include respond-to-min($desktop) {
+        margin: 24px 0 0;
+      }
+
+    }
+
+    .cmp-image__image {
+      margin: 0 0 10px;
+      margin: 5px 0;
+      max-width: 100%;
+      width: 100%;
+
+      @include respond-to-min($desktop) {
+        margin: 20px 0 60px;
+      }
+    }
+  }
+
+  .cmp-teaser__content {
+    padding-bottom: 45px;
+    padding-right: 45px;
+
+    @include respond-to-min($desktop) {
+      bottom: 0;
+      left: 0;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-right: 0;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      width: 50%;
+    }
+
+    @include respond-to-max($desktop) {
+      padding-right: 0;
+      padding-bottom: 0;
+    }
+
+    .cmp-teaser__description {
+      h3 {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+      }
+
+      p {
+        color: $black-grey;
+        font-family: Bariol, GE SS Two, Arial, sans-serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+    }
+  }
+}
+
+.teaser_left_align {
+  clear: both;
+
+  .cmp-carousel__content {
+    .cmp-carousel__actions {
+      display: none;
+    }
+
+    ol {
+      display: flex;
+      justify-content: left;
+      padding-left: 12px;
+
+      @include respond-to-min-max($desktop, $tablet) {
+        margin: 0 auto;
+        padding-left: 0;
+        width: toRem(660);
+      }
+
+      @include respond-to-min($desktop) {
+        margin: -60px 0 0;
+      }
+
+      @include respond-to-min($desktop-wide) {
+        margin: -30px 0 0;
+      }
+    }
+
+    .cmp-carousel__indicator {
+      background: $blue-grey;
+      border-radius: 100%;
+      box-sizing: border-box;
+      float: left;
+      height: 14px;
+      margin: 0 5px 0 0;
+      opacity: 1;
+      padding: 0;
+      width: 14px;
+
+      &--active {
+        background-color: $white;
+        height: 14px;
+        margin-bottom: -2px;
+        outline: 2px solid $main-green;
+        width: 14px;
+      }
+    }
+  }
+
+  .cmp-text {
+    h3 {
+      font-size: 36px;
+      line-height: 42px;
+      margin-bottom: 0;
+
+      @include respond-to-max($phone) {
+        font-size: toRem(30);
+      }
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 30px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.teaser_left_align {
+  .cmp-carousel {
+    .cmp-carousel {
+      &__content {
+        @include respond-to-min-max($desktop, $tablet) {
+          margin: 0 auto;
+          width: toRem(660);
+        }
+      }
+    }
+  }
+}

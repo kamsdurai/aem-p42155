@@ -1,2 +1,11 @@
 ../ui.apps/
 ./src/main/webpack/tests/
+/webpack.common.js
+/webpack.dev.js
+/webpack.prod.js
+/src/main/webpack/ewallet/**/*.js
+/src/main/webpack/fivemobile/**/*.js
+/src/main/webpack/gochat/**/*.js
+/src/main/webpack/hiuapp/**/*.js
+/src/main/webpack/etisalat/js/forms/**/*.js
+/src/main/webpack/etisalat/js/custom-components/**/*.js

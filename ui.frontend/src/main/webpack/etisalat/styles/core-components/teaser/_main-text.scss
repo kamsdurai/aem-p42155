@@ -1,0 +1,111 @@
+/* Teaser CSS */
+// center card teaser variant st
+.cmp-center-card {
+  .cmp-teaser {
+    margin-bottom: toRem(40);
+    text-align: center;
+
+    @include respond-to-min($tablet) {
+      padding: 0 toRem(12);
+    }
+
+    @include respond-to-min($desktop) {
+      margin-left: toRem(45);
+      margin-right: toRem(45);
+      max-width: toRem(310);
+      padding: 0;
+    }
+
+    &__image img,
+    svg {
+      height: 4.4375rem;
+      margin-bottom: 2.2rem;
+      width: 4.4375rem;
+    }
+
+    &__content h2 a {
+      color: $almost-black;
+      cursor: auto;
+      font-size: $font24;
+    }
+
+    &__title {
+      font-size: $font24;
+      height: toRem(32);
+      margin-bottom: 0.65rem;
+      margin-top: 0;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__description {
+      height: toRem(54);
+      margin-bottom: 1.65rem;
+
+      p {
+        color: $steel-grey;
+        font-size: $font14;
+        line-height: toRem(24);
+        margin: 0;
+      }
+    }
+
+    &__action-container {
+      bottom: toRem(22);
+      left: (20);
+      margin-top: 0;
+      position: absolute;
+
+      @include rtlBlock() {
+        left: auto;
+      }
+
+      @include respond-to-min($tablet) {
+        margin-top: 2rem;
+      }
+    }
+
+    &__action-link {
+      font-size: $font12;
+      letter-spacing: toRem(2);
+      padding-right: toRem(12);
+      position: relative;
+      text-transform: uppercase;
+
+      @include rtlBlock() {
+        padding-right: 0;
+      }
+
+      @include font-family-lato;
+
+      @include respond-to-min($tablet) {
+        @include ts-step--1;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &::before {
+        @include link-arrow;
+
+        border: solid $arrow-border-green;
+        border-width: 0 1px 1px 0;
+        height: toRem(7);
+        left: auto;
+        padding: toRem(3.5);
+        position: absolute;
+        right: 0;
+        top: toRem(3);
+        width: toRem(7);
+
+        @include rtlBlock() {
+          left: -1rem;
+          right: auto;
+          top: 0.4rem;
+          transform: translateY(-50%) rotate(135deg);
+        }
+      }
+    }
+  }
+}

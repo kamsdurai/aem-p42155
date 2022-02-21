@@ -1,0 +1,2195 @@
+/* stylelint-disable no-descending-specificity */
+// mobile view st
+.tabs {
+  .nav-link-icon {
+    height: toRem(30);
+    padding-right: 0;
+    width: toRem(30);
+  }
+
+  .cmp-tabs {
+    .container {
+      width: auto;
+    }
+  }
+}
+
+// common css st
+.cmp-title {
+  color: $almost-black;
+  font-size: $font28;
+  letter-spacing: normal;
+  line-height: toRem(19.36);
+  margin: 0;
+}
+
+.panel-collapse {
+  font-size: $font16 !important;
+  line-height: toRem(28.8) !important;
+}
+
+.cmp-teaser__description {
+  ul li {
+    color: $dark-gray;
+    font-size: $font20;
+    font-weight: get-font-weight("regular");
+    line-height: toRem(20);
+    margin: 0 0 toRem(8);
+    padding-left: 20px;
+    position: relative;
+
+    @include font-family-lato;
+  }
+
+  li {
+    font-size: $font14;
+  }
+
+  @include rtlBlock() {
+    ul li {
+      font-weight: get-font-weight("light");
+      padding-left: 0;
+      padding-right: toRem(16);
+    }
+  }
+}
+
+// common css en
+
+.cmp_tabs--mobile {
+  .cmp-teaser__action-link {
+    font-size: $font12;
+    font-weight: get-font-weight("medium");
+    letter-spacing: toRem(1.6);
+    line-height: toRem(16);
+    padding: toRem(2.85);
+    position: relative;
+    text-transform: uppercase;
+
+    &::before {
+      border-style: solid;
+      border-width: 0 toRem(1) toRem(1) 0;
+      content: "";
+      line-height: 1;
+      padding: toRem(4);
+      position: absolute;
+      right: toRem(-25);
+      top: 50%;
+      transform: translateY(-50%) rotate(-45deg);
+      transition: all 0.3s ease-in-out;
+
+      @include rtlBlock() {
+        left: toRem(-25);
+        right: auto;
+        transform: translateY(-50%) rotate(135deg);
+      }
+    }
+  }
+
+  &.cmp_tabs--vertical {
+    .panel {
+      background-color: $white;
+    }
+
+    .cmp-teaser__image {
+      @include respond-to-max($phone) {
+        padding: 0 toRem(16);
+      }
+    }
+
+    .cmp-teaser__content {
+      background-color: $sand-white-50;
+    }
+  }
+
+  .panel {
+    background-color: $sand-white-50;
+    border-radius: 0;
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+  }
+
+  .cmp-teaser {
+    &__content {
+      @include respond-to-max($phone) {
+        border-radius: 4px;
+        padding: 0 toRem(16) toRem(32);
+      }
+    }
+
+    &__action-container {
+      @include respond-to-max($phone) {
+        margin-top: toRem(16);
+      }
+    }
+
+    &__title {
+      color: $almost-black;
+      font-size: $font20;
+      line-height: 1.6;
+      margin-bottom: toRem(16);
+      margin-top: 0;
+
+      @include respond-to-max($tablet) {
+        margin-top: toRem(16);
+      }
+
+      @include respond-to-min($desktop) {
+        font-size: $font24;
+        line-height: 1.33;
+      }
+
+      @include rtlBlock {
+        font-weight: get-font-weight("light");
+      }
+    }
+
+    &__description {
+      ol {
+        padding: 0 toRem(35);
+
+        li {
+          padding: 0 toRem(10);
+        }
+      }
+
+      ol li,
+      ul li {
+        font-size: $font16;
+      }
+
+      p {
+        color: $paracolor;
+        font-size: $font14;
+        font-weight: get-font-weight("medium");
+        line-height: toRem(19);
+
+        @include font-family-lato;
+
+        @include rtlBlock() {
+          font-weight: get-font-weight("light");
+        }
+      }
+
+      ul {
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  svg {
+    @include respond-to-max($desktop) {
+      height: toRem(24);
+      width: toRem(24);
+    }
+  }
+
+  .get-more-title-small h3 {
+    color: $almost-black;
+    font-size: toRem(20);
+    letter-spacing: normal;
+    line-height: 1.6;
+    margin: 0;
+  }
+
+  .nav-view-wrapp.panel > a,
+  .nav-view-wrapp.panel > a.collapsed {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    letter-spacing: normal;
+    padding: toRem(18) toRem(16) toRem(18) toRem(16);
+    position: relative;
+  }
+
+  .nav-view-wrapp {
+    &.panel {
+      & > a {
+        color: $main-green;
+        font-size: $font16;
+
+        &::before {
+          border: solid $grey4;
+          border-width: 0 toRem(1) toRem(1) 0;
+          content: "";
+          line-height: 1;
+          padding: 4px !important;
+          position: absolute;
+          right: toRem(20);
+          top: 50%;
+          transform: translateY(-20%) rotate(-135deg);
+          transition: all 0.3s ease-in-out;
+          z-index: 1;
+
+          @include rtlBlock() {
+            left: toRem(18);
+            right: auto;
+          }
+        }
+      }
+    }
+
+    span {
+      display: inline-block;
+      margin-right: toRem(15);
+
+      @include rtlBlock() {
+        margin-left: toRem(15);
+        margin-right: initial;
+      }
+
+      @include respond-to-max($tablet) {
+        @include rtlBlock() {
+          padding-right: auto;
+        }
+      }
+    }
+  }
+
+  .nav-view-wrapp.panel > a.collapsed {
+    color: $dark-gray;
+    font-weight: get-font-weight("regular");
+    padding: toRem(18) 0;
+
+    @include rtlBlock() {
+      font-weight: get-font-weight("light");
+    }
+
+    &::before {
+      right: toRem(3);
+      transform: translateY(-80%) rotate(45deg);
+
+      @include rtlBlock() {
+        left: 0;
+        right: auto;
+      }
+    }
+  }
+
+  .nav-view-wrapp.panel > :not(a.collapsed) {
+    background-color: $sand-white-50;
+    font-size: $font16;
+    margin: 0 toRem(-17);
+
+    @include font-family-lato;
+  }
+
+  .get-more-section {
+    .desktop-body {
+      background-color: $sand-white-50;
+      display: flex;
+      flex-direction: column;
+      padding: 0 toRem(16);
+
+      .get-more-details {
+        -ms-flex-order: 2;
+        order: 2;
+
+        .get-more-title-small {
+          margin-bottom: toRem(16);
+        }
+      }
+    }
+  }
+
+  .learn-more-wrap {
+    font-size: toRem(16);
+    line-height: toRem(16);
+    text-align: left;
+
+    &--tab-cta {
+      padding: toRem(24) toRem(16) 0;
+
+      @include respond-to-min($desktop) {
+        padding: toRem(37) 0 0;
+      }
+
+      .btn-text {
+        @include font-family-lato;
+
+        font-size: $font12;
+        letter-spacing: 1.6px;
+        line-height: 1.33;
+
+        @include respond-to-min($desktop) {
+          font-size: $font16;
+          letter-spacing: 2px;
+          line-height: 1.38;
+        }
+
+        &::before {
+          @include respond-to-max($desktop) {
+            padding: 2.7px;
+          }
+        }
+      }
+    }
+  }
+
+  .get-more-paragraph p {
+    color: $steel-grey;
+    font-size: toRem(14);
+    letter-spacing: normal;
+    line-height: 1.43;
+    margin: 0;
+  }
+
+  .cmp-image__image {
+    border-radius: toRem(5) toRem(5) 0 0;
+    height: toRem(250);
+  }
+
+  &.cmp_tabs--vertical-nobg {
+    .cmp-teaser {
+      &__content {
+        background-color: transparent;
+      }
+    }
+
+    .nav-view-wrapp.panel > :not(a.collapsed) {
+      background-color: transparent;
+    }
+  }
+
+  &.cmp_tabs--vertical-img {
+    .panel-collapse {
+      padding: 0;
+    }
+
+    &.cmp_tabs--mobile {
+      @include respond-to-max($desktop-min) {
+        margin-top: toRem(16);
+      }
+
+      .teaser {
+        .cmp-teaser__content {
+          @include respond-to-max($tablet) {
+            padding-top: toRem(16);
+          }
+        }
+
+        .cmp-teaser__title {
+          @include respond-to-max($tablet) {
+            margin-top: 0;
+          }
+
+          @include respond-to-max($desktop-min) {
+            font-size: $font18;
+          }
+        }
+      }
+
+      h3 {
+        @include respond-to-max($desktop-min) {
+          font-size: $font20;
+        }
+      }
+    }
+
+    .nav-view-wrapp.panel > a,
+    .nav-view-wrapp.panel > a.collapsed,
+    .nav-view-wrapp.panel > :not(a.collapsed) {
+      font-size: $font14;
+
+      &::before {
+        right: toRem(3);
+
+        @include rtlBlock() {
+          left: 0;
+          right: auto;
+        }
+      }
+    }
+
+    .nav-view-wrapp.panel > :not(a.collapsed) {
+      font-size: $font14;
+      margin: 0;
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .cmp-tabs--accordion-view-2 {
+      .cmp-tabs__tabpanel {
+        &--active {
+          @include respond-to-min-max($desktop-min, $tablet) {
+            position: absolute;
+          }
+        }
+      }
+
+      .cmp-teaser {
+        display: block;
+
+        &__image {
+          width: 100%;
+
+          @include respond-to-min($desktop) {
+            width: 50%;
+          }
+
+          @include respond-to-max($desktop - 1) {
+            height: toRem(250);
+          }
+        }
+
+        &__content {
+          width: 100%;
+
+          @include respond-to-min($desktop) {
+            width: 50%;
+          }
+
+          @include respond-to-max($desktop - 1) {
+            height: auto;
+            padding: 1rem 1rem 4rem;
+          }
+        }
+
+        &__title {
+          @include respond-to-max($desktop - 1) {
+            font-size: $font18;
+            font-weight: 700;
+            margin-top: 0;
+
+            @include font-family-lato;
+          }
+        }
+
+        &__action-link {
+          &:hover {
+            text-decoration: underline;
+          }
+
+          @include respond-to-max($desktop - 1) {
+            bottom: toRem(24);
+            font-size: $font12;
+          }
+        }
+
+        @include respond-to-min($desktop) {
+          display: flex;
+        }
+      }
+    }
+
+    .cmp-teaser {
+      border-radius: toRem(4);
+      box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%) !important;
+
+      &__content {
+        background-color: $white;
+      }
+    }
+  }
+
+  &.cmp_tabs--vertical-whitebg {
+    .nav-view-wrapp.panel > a.collapsed {
+      &::before {
+        @include respond-to-max($tablet) {
+          right: toRem(20);
+
+          @include rtlBlock() {
+            left: toRem(16);
+            right: auto;
+          }
+        }
+
+        @include respond-to-max($phone) {
+          right: toRem(3);
+
+          @include rtlBlock() {
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @include rtlBlock() {
+    .nav-link-icon {
+      padding-left: 0 !important;
+    }
+  }
+
+  &.cmp_tabs--vertical-fullbdr {
+    .nav-view-wrapp.panel > :not(a.collapsed) {
+      @include font-family-Neotech;
+
+      font-weight: get-font-weight("light");
+      margin: 0;
+      padding: toRem(24) toRem(8);
+
+      @include respond-to-min($tablet) {
+        padding: toRem(24) toRem(16);
+      }
+
+      .image,
+      .text {
+        @include respond-to-max($tablet - 1) {
+          margin-left: 0;
+          width: 100%;
+        }
+
+        @include respond-to-min-max($desktop, $tablet) {
+          margin-left: 16%;
+          width: 84%;
+        }
+      }
+    }
+
+    .cmp-text {
+      @include respond-to-min-max($desktop, $tablet) {
+        padding-right: toRem(18);
+
+        @include rtlBlock() {
+          padding-left: toRem(18);
+          padding-right: 0;
+        }
+      }
+    }
+
+    .image,
+    .text {
+      @include rtlBlock() {
+        float: right;
+        margin-left: 0;
+        margin-right: 11%;
+      }
+    }
+  }
+}
+
+// mobile en
+
+.benefits-section .benefits-mobile.collapsed .icon circle,
+.benefits-section .benefits-mobile.collapsed .icon path,
+.benefits-section .benefits-mobile.collapsed .icon polygon,
+.benefits-section .benefits-mobile.collapsed .icon polyline {
+  stroke: $gray-fill;
+  stroke-width: toRem(1);
+}
+
+.cmp_tabs--vertical-fullbdr {
+  .nav-view-wrapp.panel > a {
+    border-left: toRem(4) solid $main-green;
+
+    @include font-family-Neotech;
+
+    @include rtlBlock() {
+      border-left: toRem(4) solid transparent;
+      border-right: toRem(4) solid $main-green;
+      padding: toRem(24) toRem(15) toRem(24) toRem(15) !important;
+    }
+  }
+
+  .nav-view-wrapp.panel > a.collapsed {
+    border-bottom: toRem(1) solid $light-sand-brown;
+    border-left: toRem(4) solid transparent;
+    color: $almost-black;
+    padding: toRem(24) toRem(16);
+
+    @include rtlBlock() {
+      border-right: toRem(4) solid transparent;
+    }
+  }
+
+  &.tabs-fullbdr-textOnly {
+    .cmp-tabs {
+      &__tablist {
+        width: 33.33%;
+      }
+
+      &__tabpanel--active {
+        padding-left: 0;
+
+        .cmp-teaser {
+          padding: 0;
+        }
+
+        .table-striped {
+          thead th {
+            letter-spacing: 0;
+          }
+        }
+      }
+    }
+
+    h1,
+    p {
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+
+    .cmp-text {
+      ul {
+        margin-left: toRem(30);
+
+        li {
+          font-size: $font14;
+          font-weight: normal;
+          padding-left: toRem(16);
+        }
+      }
+    }
+
+    .nav-view-wrapp.panel > :not(a.collapsed) {
+      .text {
+        @include respond-to-min-max($desktop - 1, $tablet) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .cmp-teaser {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem;
+    width: 100%;
+
+    @include respond-to-max($tablet) {
+      padding: toRem(0);
+    }
+  }
+
+  .cmp-tabs {
+    display: flex;
+
+    li.cmp-tabs__tab {
+      color: $almost-black;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      padding: toRem(16);
+      text-align: left;
+
+      @include font-family-Neotech;
+    }
+
+    span {
+      img {
+        display: block;
+        height: toRem(24);
+        margin: 0 toRem(10) 0 0;
+        width: toRem(24);
+      }
+    }
+  }
+
+  .cmp-tabs__tablist {
+    display: block;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-left: 0;
+    width: 40%;
+  }
+
+  .cmp-tabs__tab {
+    align-items: center;
+    border-bottom: none;
+    border-left: none;
+    border-left: toRem(4) solid transparent;
+    display: flex;
+    font-size: toRem(20);
+    height: toRem(90);
+    line-height: toRem(25);
+    padding: toRem(0) toRem(0) toRem(0) toRem(22) !important;
+
+    @include font-family-Neotech;
+
+    @include rtlBlock() {
+      border-right: toRem(4) solid transparent;
+      font-weight: get-font-weight("light");
+      padding: 0 toRem(22) 0 0 !important;
+    }
+
+    &--active {
+      align-items: center;
+      border-left: toRem(4) solid $main-green;
+      color: $main-green !important;
+      display: flex;
+      font-size: $font20;
+      height: toRem(90);
+      line-height: toRem(25);
+      padding: 0 0 0 toRem(22) !important;
+
+      @include rtlBlock() {
+        border-left: toRem(4) solid transparent;
+        border-right: toRem(4) solid $main-green;
+        font-weight: get-font-weight("light");
+        padding: 0 toRem(22) 0 0 !important;
+      }
+
+      span {
+        img {
+          margin: 0 toRem(10) 0 0 !important;
+        }
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .cmp-tabs__tabpanel--active {
+    display: block;
+    font-weight: get-font-weight("bold");
+    padding-left: toRem(37);
+    padding-top: toRem(40);
+    width: 68%;
+
+    @include respond-to-min-max($desktop-wide, $desktop) {
+      width: 70%;
+    }
+
+    @include rtlBlock() {
+      font-weight: get-font-weight("light");
+    }
+
+    .container {
+      .cmp-container {
+        .text {
+          @include respond-to-min($desktop) {
+            width: auto !important;
+          }
+        }
+      }
+    }
+  }
+
+  .cmp-teaser__description {
+    h3 {
+      font-size: $font24;
+      line-height: 1.33;
+      margin: 0 0 toRem(24) 0;
+    }
+
+    p {
+      color: $gray;
+      font-size: $font16;
+      line-height: toRem(26);
+      margin-bottom: toRem(20);
+      margin-top: toRem(20);
+
+      @include font-family-lato;
+
+      @include respond-to-max($phone) {
+        color: $grey1;
+        font-size: toRem(14);
+        line-height: toRem(20);
+      }
+    }
+  }
+
+  .cmp-teaser__content {
+    padding: 0 toRem(16) 0 0;
+    width: 100%;
+  }
+
+  .cmp-teaser__image {
+    height: auto;
+    width: 100%;
+  }
+
+  .cmp-image__image {
+    border-radius: toRem(4);
+    height: auto;
+    width: toRem(304);
+
+    @include respond-to-min($tablet) {
+      width: toRem(164.8);
+    }
+  }
+
+  .cmp-teaser__action-link {
+    color: $main-green;
+    cursor: pointer;
+    font-size: toRem(14);
+    font-size: $font14;
+    font-weight: 500;
+    letter-spacing: toRem(2);
+    line-height: 1.25rem;
+    position: relative;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+
+    @include font-family-lato;
+
+    a.cmp-teaser__action-link:hover {
+      text-decoration: underline !important;
+    }
+
+    .cmp-teaser__action-link::before {
+      border: solid $arrow-border;
+      border-style: solid;
+      border-width: 0 toRem(1) toRem(1) 0;
+      content: "";
+      line-height: 1;
+      padding: toRem(3.5);
+      position: absolute;
+      right: toRem(18);
+      top: 50%;
+      transform: translateY(-30%) rotate(-135deg);
+      transition: all 0.3s ease-in-out;
+      z-index: 1;
+
+      @include rtlBlock() {
+        left: toRem(-13);
+        right: auto;
+        transform: translateY(-50%) rotate(135deg);
+      }
+    }
+  }
+
+  .cmp-teaser__action-container {
+    margin-top: toRem(40);
+  }
+
+  h5 {
+    color: $gray;
+    margin: toRem(5) 0 0;
+
+    @include rtlBlock() {
+      font-weight: get-font-weight("light");
+    }
+  }
+
+  .cmp-text {
+    h3 {
+      color: $grey1;
+      font-size: toRem(18) !important;
+      line-height: toRem(18);
+      margin-bottom: toRem(12.5);
+      margin-top: toRem(25);
+
+      @include respond-to-min($tablet) {
+        font-size: toRem(24) !important;
+      }
+
+      @include rtlBlock() {
+        font-weight: get-font-weight("light");
+      }
+    }
+
+    h2 {
+      font-size: toRem(24) !important;
+      line-height: toRem(30) !important;
+      margin-top: toRem(25);
+
+      @include respond-to-max($phone) {
+        color: $grey1;
+        font-size: toRem(18) !important;
+        line-height: 0.5 !important;
+      }
+
+      @include rtlBlock() {
+        font-weight: get-font-weight("light");
+      }
+    }
+
+    p {
+      color: $gray !important;
+      font-size: toRem(16);
+      line-height: 1.625rem;
+      margin: toRem(20) 0;
+
+      @include respond-to-max($phone) {
+        color: $grey1 !important;
+      }
+
+      .font--med {
+        @include respond-to-max($phone) {
+          font-size: $font14;
+          line-height: toRem(20);
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  .text--gray {
+    color: $gray;
+    font-size: toRem(16);
+    letter-spacing: 0;
+
+    @include respond-to-max($phone) {
+      color: $grey1;
+      font-size: toRem(14) !important;
+    }
+  }
+
+  .space-bottom {
+    margin-bottom: 0;
+  }
+
+  .panel {
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .panel-collapse {
+    margin-left: 0;
+
+    @include respond-to-min($tablet) {
+      background: transparent !important;
+      margin-left: 17.6667%;
+    }
+
+    @include respond-to-min($desktop) {
+      margin-left: 0;
+    }
+  }
+
+  .nav-view-wrapp.panel > a::before {
+    border: solid $main-green;
+    border-width: 0 toRem(1) toRem(1) 0;
+    content: "";
+    line-height: 1;
+    padding: toRem(5) !important;
+    position: absolute;
+    right: toRem(2);
+    top: 50%;
+    transform: translateY(-30%) rotate(-135deg);
+    transition: all 0.3s ease-in-out;
+    z-index: 1;
+
+    @include rtlBlock() {
+      left: toRem(2);
+      right: auto;
+    }
+  }
+
+  .nav-view-wrapp.panel > a.collapsed::before {
+    border-color: $almost-black;
+    padding: toRem(5) !important;
+  }
+
+  .cmp_tabs--mobile .nav-view-wrapp.panel > a.collapsed::before {
+    border-color: $almost-black;
+  }
+}
+
+// desktop view st
+
+@media (min-width: 48em) {
+  .cmp_tabs--vertical {
+    .cmp-tabs__tab--active::after {
+      border: solid $main-green;
+      border-radius: toRem(4);
+      border-width: toRem(2);
+      content: "";
+      height: toRem(28);
+      left: 0;
+      line-height: 1;
+      position: absolute;
+      z-index: 1;
+
+      @include rtlBlock() {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    .cmp-teaser {
+      display: flex;
+      flex-direction: row-reverse;
+      padding: 2rem;
+      width: 100%;
+
+      @include respond-to-max($tablet) {
+        padding: 0 toRem(16) toRem(24);
+      }
+
+      @include respond-to-max($desktop) {
+        flex-direction: column;
+      }
+    }
+
+    .cmp-tabs {
+      display: flex;
+
+      li.cmp-tabs__tab {
+        align-items: center;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding: toRem(24);
+        text-align: left;
+
+        @include font-family-lato;
+      }
+
+      span {
+        img {
+          height: toRem(24);
+          margin: 0 toRem(10) 0 0;
+          width: toRem(24);
+        }
+      }
+    }
+
+    .cmp-tabs__tablist {
+      display: block;
+      flex-wrap: wrap;
+      list-style: none;
+      padding-left: 0;
+      width: 37%;
+
+      li:not(.learn-more-wrap):hover {
+        background: $white-gray1;
+      }
+    }
+
+    .cmp-tabs__tab {
+      border-bottom: 0;
+      box-sizing: border-box;
+      color: $steel-grey;
+      cursor: pointer;
+      font-size: $font20;
+      line-height: 1.4;
+      padding: 1.5rem;
+
+      svg,
+      img {
+        height: toRem(40);
+        margin-right: calc(#{$margin-step-1} + 2px);
+        width: toRem(35);
+
+        @include respond-to-min($tablet) {
+          fill: inherit;
+          float: left;
+          height: toRem(30);
+          margin-right: toRem(24);
+          width: toRem(32);
+
+          @include rtlBlock() {
+            margin-left: toRem(24);
+            margin-right: 0;
+          }
+        }
+      }
+
+      .cmp-tabs__default-icon {
+        display: block;
+      }
+
+      .cmp-tabs__active-icon {
+        display: none;
+      }
+
+      &--active {
+        background: $white-gray1;
+        color: $main-green;
+        font-size: $font20;
+        font-weight: get-font-weight("bold");
+        line-height: toRem(29);
+        padding: 1rem 1rem 1rem 1.2rem;
+        position: relative;
+
+        @include font-family-lato;
+
+        .cmp-tabs__active-icon {
+          display: block;
+          margin-right: toRem(24);
+        }
+
+        .cmp-tabs__default-icon {
+          display: none !important;
+        }
+      }
+    }
+
+    .cmp-tabs__tabpanel--active {
+      background: $white-gray1;
+      display: block;
+      width: 70%;
+    }
+
+    .cmp-teaser__description {
+      h3 {
+        font-size: toRem(24);
+        line-height: 1.33;
+        margin-bottom: 1.5rem;
+        margin-left: 0;
+        margin-top: 0;
+
+        @include respond-to-max($tablet) {
+          margin-top: toRem(16);
+        }
+      }
+
+      p {
+        color: $paracolor;
+        font-size: toRem(16);
+        font-weight: normal;
+        line-height: 1.5;
+        padding-right: toRem(16);
+      }
+
+      ul {
+        &:first-of-type {
+          margin-top: 0;
+        }
+      }
+    }
+
+    .cmp-teaser__content {
+      padding: 0 toRem(16) 0 0;
+      width: 100%;
+    }
+
+    .cmp-teaser__image {
+      height: auto;
+      width: 100%;
+    }
+
+    .cmp-image__image {
+      border-radius: toRem(4);
+      height: toRem(230);
+    }
+
+    .cmp-teaser__action-link {
+      color: $main-green;
+      cursor: pointer;
+      font-size: toRem(14);
+      font-size: 0.875rem;
+      font-weight: 500;
+      letter-spacing: toRem(2);
+      letter-spacing: toRem(2);
+      line-height: 1.43;
+      line-height: 1.25rem;
+      position: relative;
+      text-transform: uppercase;
+      transition: all 0.3s ease-in-out;
+
+      @include font-family-lato;
+
+      a.cmp-teaser__action-link:hover {
+        text-decoration: underline !important;
+      }
+
+      .cmp-teaser__action-link::before {
+        border: solid $grey4;
+        border-style: solid;
+        border-width: 0 toRem(1) toRem(1) 0;
+        content: "";
+        line-height: 1;
+        padding: toRem(3.5);
+        position: absolute;
+        right: toRem(18);
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+
+        @include rtlBlock() {
+          left: toRem(-13);
+          right: auto;
+          transform: translateY(-50%) rotate(135deg);
+        }
+      }
+    }
+
+    .cmp-teaser__action-container {
+      margin-top: toRem(24);
+    }
+
+    h2 {
+      a {
+        line-height: 1.3;
+      }
+    }
+
+    &.cmp_tabs--mobile {
+      .nav-view-wrapp.panel > a {
+        color: $dark-gray;
+        font-weight: get-font-weight("regular");
+      }
+
+      .nav-view-wrapp.panel > :not(a.collapsed) {
+        background: $sand-white-50;
+        color: $main-green;
+
+        @include respond-to-max($tablet) {
+          margin: 0 toRem(-17);
+        }
+      }
+
+      .panel {
+        border: 0;
+        box-shadow: none;
+      }
+
+      .cmp-teaser__content {
+        background-color: $sand-white-50;
+      }
+
+      &.cmp_tabs--vertical-nobg {
+        .cmp-teaser__content {
+          background-color: transparent;
+        }
+
+        .nav-view-wrapp.panel > :not(a.collapsed) {
+          background-color: transparent;
+        }
+      }
+    }
+
+    &.cmp_tabs--vertical-whitebg {
+      .cmp-teaser {
+        @include respond-to-max($tablet) {
+          padding: 0;
+        }
+      }
+
+      .cmp-tabs {
+        align-items: flex-start;
+        display: flex;
+      }
+    }
+  }
+
+  // 2nd horiznatal with view  varition st
+  .cmp_tabs--vertical-img {
+    position: relative;
+
+    @include respond-to-min-max($desktop-min, $tablet) {
+      margin-bottom: toRem(16);
+    }
+
+    @include respond-to-min($desktop) {
+      height: toRem(430);
+      margin: toRem(64) 0;
+    }
+
+    h3 {
+      color: $almost-black;
+      margin-bottom: toRem(32);
+      width: 32%;
+
+      @include respond-to-max($desktop-min) {
+        width: 100%;
+      }
+
+      @include font-family-Neotech;
+
+      @include respond-to-max($desktop-min) {
+        position: initial;
+      }
+    }
+
+    .cmp-tabs__tabpanel {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 49%;
+
+      @include rtlBlock() {
+        left: 0;
+        right: auto;
+      }
+    }
+
+    .cmp-teaser__description {
+      h4 {
+        color: $almost-black;
+        font-size: $font26;
+        font-weight: 400;
+        margin-bottom: toRem(16);
+
+        @include font-family-Neotech;
+      }
+    }
+
+    p {
+      color: $paracolor !important;
+      font-size: $font14;
+      line-height: toRem(19);
+
+      @include font-family-lato;
+    }
+
+    .cmp-tabs__tab--active img.cmp-tabs__active-icon {
+      display: none;
+    }
+
+    .cmp-tabs__tab {
+      align-items: center;
+      border: 0;
+      color: $gray-fill;
+      display: flex;
+      flex-direction: row-reverse;
+      font-size: $font18;
+      justify-content: flex-end;
+      line-height: toRem(18);
+      margin: auto 0;
+      padding: toRem(16) 0;
+      text-align: left;
+
+      @include font-family-lato;
+
+      @include rtlBlock() {
+        font-weight: get-font-weight("light");
+      }
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      svg,
+      img {
+        height: toRem(40);
+        margin-right: calc(#{$margin-step-1} + 2px);
+        width: toRem(35);
+
+        @include respond-to-min($tablet) {
+          fill: inherit;
+          float: left;
+          height: toRem(30);
+          margin-right: toRem(36);
+          width: toRem(32);
+
+          @include rtlBlock() {
+            margin-left: toRem(36);
+            margin-right: 0;
+          }
+        }
+      }
+
+      .cmp-tabs__default-icon {
+        display: block;
+      }
+
+      .cmp-tabs__active-icon {
+        display: none;
+      }
+
+      &--active {
+        color: $main-green;
+        font-weight: get-font-weight("bold");
+        position: relative;
+
+        @include font-family-lato;
+
+        @include rtlBlock() {
+          font-weight: get-font-weight("light");
+        }
+
+        .cmp-tabs__active-icon {
+          display: block;
+        }
+
+        .cmp-tabs__default-icon {
+          display: none !important;
+
+          @include rtlBlock() {
+            margin-left: toRem(30);
+            margin-right: 0;
+          }
+        }
+      }
+
+      @include respond-to-max($desktop - 1) {
+        margin: 0;
+      }
+    }
+
+    .cmp-teaser__action-link {
+      bottom: toRem(40);
+      font-size: $font14;
+      letter-spacing: toRem(2);
+      position: absolute;
+      text-transform: uppercase;
+
+      @include font-family-lato;
+    }
+
+    .cmp-tabs__tablist {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      list-style: none;
+      width: 50%;
+    }
+
+    .cmp-teaser {
+      display: flex;
+      width: 100%;
+
+      &__image {
+        height: toRem(428);
+        width: 50%;
+      }
+
+      &__content {
+        background: $white;
+        border-radius: 0 toRem(5) toRem(5) 0;
+        color: $paracolor;
+        font-size: $font14;
+        height: toRem(428);
+        line-height: toRem(19);
+        overflow: hidden;
+        padding: toRem(24) toRem(46) toRem(40) toRem(24);
+        position: relative;
+        width: 50%;
+
+        @include rtlBlock() {
+          padding: toRem(24) toRem(24) toRem(64) toRem(40);
+        }
+
+        @include font-family-lato;
+      }
+    }
+
+    .cmp-image__image {
+      border-radius: toRem(5) 0 0 toRem(5);
+      height: toRem(428);
+      width: 100%;
+    }
+
+    .panel-collapse {
+      @include box-shadow;
+
+      background: $white;
+      border-radius: toRem(4);
+      box-shadow: rgb(0 0 0 / 10%) 0 5px 10px 0;
+      margin: toRem(16) toRem(16) toRem(48);
+      padding: toRem(16);
+
+      .cmp-teaser__action-container {
+        margin: toRem(16) 0;
+      }
+    }
+
+    .cmp-tabs {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  // 2nd vartion en
+}
+
+.cmp_tabs--vertical .cmp-teaser__action-link {
+  @include rtlBlock() {
+    letter-spacing: 0;
+  }
+}
+
+// 3rd varition
+
+// desktop view en
+
+// cmp-without bg
+.cmp_tabs--vertical-nobg {
+  .cmp-tabs__tab--active {
+    background: transparent;
+    padding: 0 toRem(30) toRem(30) 0;
+    position: relative;
+  }
+
+  .cmp-tabs__tab--active::after {
+    border: solid $main-green;
+    border-radius: toRem(4);
+    border-width: toRem(2);
+    content: "";
+    height: toRem(28);
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .cmp-tabs__tabpanel--active {
+    background: transparent;
+  }
+
+  .cmp-text h3 {
+    margin-top: 0;
+  }
+
+  .cmp-text p {
+    color: $gray;
+    font-size: toRem(16);
+    line-height: toRem(26);
+    margin-bottom: toRem(20);
+    margin-top: toRem(20);
+
+    @include font-family-lato;
+  }
+
+  .cmp-tabs__tablist {
+    li:hover {
+      background: transparent;
+    }
+  }
+}
+
+.no-bg {
+  .cmp_tabs--vertical .cmp-tabs__tabpanel--active {
+    background: transparent;
+  }
+
+  .panel-collapse {
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.cmp-teaser__description ul {
+  list-style-type: disc;
+  padding-left: toRem(30);
+
+  @include rtlBlock() {
+    padding-left: 0;
+    padding-right: toRem(30);
+  }
+
+  ul:nth-of-type(1) {
+    margin-top: 2rem;
+  }
+}
+
+.teaser {
+  &.teaser_list {
+    &.list-font-size--12 {
+      ol li,
+      ul li {
+        font-size: $font12;
+      }
+    }
+
+    &.list-font-size--14 {
+      ol li,
+      ul li {
+        font-size: $font14;
+      }
+    }
+
+    &.list-font-size--16 {
+      ol li,
+      ul li {
+        font-size: $font16;
+      }
+    }
+
+    &.list-font-size--20 {
+      ol li,
+      ul li {
+        font-size: $font20;
+      }
+    }
+  }
+}
+
+.teaser_list ul li {
+  color: $dark-gray;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: toRem(28);
+  margin: 0 0 0.5rem;
+  position: relative;
+
+  @include font-family-lato;
+}
+
+.teaser_list ol li {
+  color: $dark-gray;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: toRem(28);
+  list-style: decimal;
+  margin: 0 0 0.5rem;
+  position: relative;
+
+  @include font-family-lato;
+}
+
+.cmp-tabs_noteaser_img {
+  .cmp_tabs--vertical .cmp-teaser__content {
+    width: 100%;
+  }
+}
+
+.cmp_tabs--vertical-whitebg {
+  .cmp-tabs__tablist {
+    li:not(.learn-more-wrap):hover {
+      background: $white;
+    }
+  }
+
+  .cmp-tabs__tab {
+    svg,
+    img {
+      height: toRem(40);
+      width: toRem(35);
+
+      @include respond-to-min($tablet) {
+        fill: inherit;
+        float: left;
+        height: toRem(30);
+        margin-right: toRem(24);
+        width: toRem(32);
+      }
+    }
+  }
+
+  .cmp-tabs__tab--active {
+    background: $white;
+  }
+
+  .cmp-tabs__tabpanel--active {
+    background: $white;
+  }
+
+  &.cmp_tabs--mobile {
+    .nav-view-wrapp.panel > a {
+      background: $sand-white-50;
+      color: $dark-gray;
+      font-weight: get-font-weight("regular");
+    }
+
+    .nav-view-wrapp.panel > a.collapsed {
+      @include respond-to-max($tablet) {
+        padding: toRem(18) toRem(16);
+      }
+
+      @include respond-to-max($phone) {
+        padding: toRem(18) 0;
+      }
+    }
+
+    .nav-view-wrapp.panel > :not(a.collapsed) {
+      background: $white;
+      color: $main-green;
+      margin: 0;
+
+      @include respond-to-max($phone) {
+        margin: 0 toRem(-16);
+      }
+    }
+
+    .panel-collapse {
+      padding: 0;
+    }
+
+    .panel {
+      border: 0;
+      box-shadow: none;
+    }
+
+    .cmp-teaser__content {
+      background-color: $white;
+
+      @include respond-to-max($tablet) {
+        padding: toRem(16) toRem(16) toRem(24);
+      }
+    }
+  }
+
+  .cmp-teaser {
+    box-shadow: none;
+
+    &__description {
+      ol li,
+      ul li {
+        font-size: $font20;
+        margin-bottom: toRem(4);
+
+        @include respond-to-max($tablet) {
+          font-size: $font16;
+        }
+      }
+    }
+  }
+
+  h3 {
+    @include respond-to-max($tablet) {
+      padding: 0 toRem(18);
+    }
+
+    @include respond-to-max($phone) {
+      padding: 0;
+    }
+  }
+}
+
+.tabs-container__panal {
+  .cmp-text {
+    margin: 2rem 0 4rem 2rem;
+
+    @include respond-to-max($tablet) {
+      margin: toRem(16);
+    }
+  }
+}
+
+@include respond-to-max($tablet) {
+  h3 {
+    font: $font20;
+  }
+
+  .cmp-teaser__description h3 {
+    margin-left: 0;
+  }
+}
+
+.container__panal_height {
+  height: toRem(500);
+}
+
+.cmp-text_link {
+  margin: 2rem 0 4rem 2rem;
+
+  @include respond-to-max($tablet) {
+    margin: toRem(16);
+  }
+}
+
+.cmp_tabs--vertical-img .cmp-tabs__tab--active::after {
+  border: none;
+}
+
+@include respond-to-max($tablet) {
+  .cmp_tabs--vertical-img .nav-view-wrapp span img {
+    width: toRem(35);
+  }
+}
+
+//  commenting this as of now it is causing regression pls add it under proper parent class
+
+.tabs + .text {
+  padding: 1rem 1rem 1rem 1.4rem;
+}
+
+// Accessibility
+.acc-black,
+.acc-blue {
+  h2,
+  h3,
+  p,
+  span {
+    color: $white;
+  }
+
+  .cmp_tabs--vertical-img {
+    .cmp-tabs__tab {
+      color: $white;
+
+      &--active {
+        color: $white;
+      }
+    }
+
+    .cmp-teaser {
+      border: toRem(1) solid $white;
+
+      &__content {
+        background-color: $black;
+      }
+
+      &__description {
+        li,
+        p {
+          color: $white !important;
+        }
+      }
+
+      &__action-link {
+        color: $white;
+
+        &::before {
+          border-color: $white;
+        }
+      }
+    }
+  }
+
+  .default--bg {
+    background: $black;
+  }
+
+  .cmp-link__arrow,
+  .cmp-link__arrow_left {
+    color: $white;
+
+    &::before {
+      border-color: $white;
+    }
+  }
+
+  .cmp_tabs--vertical {
+    .cmp-tabs__tab {
+      color: $white;
+
+      &--active {
+        background: $black;
+        color: $white;
+
+        &::after {
+          border-color: $white;
+        }
+      }
+
+      &:hover {
+        background: $black;
+      }
+    }
+
+    .cmp-tabs__tabpanel--active {
+      background-color: $black;
+    }
+
+    .cmp-teaser {
+      &__content {
+        background: $black;
+      }
+
+      &__description {
+        h3 {
+          color: $white;
+        }
+
+        li {
+          color: $white;
+
+          a {
+            color: $white;
+            text-decoration: underline;
+          }
+        }
+
+        p {
+          color: $white;
+        }
+      }
+
+      &__action-link {
+        color: $white;
+
+        &::before {
+          border-color: $white;
+        }
+      }
+    }
+
+    &.cmp_tabs--mobile {
+      .nav-view-wrapp.panel {
+        & > :not(a.collapsed) {
+          background: $black;
+          color: $white;
+        }
+
+        a {
+          background-color: $black;
+          color: $white;
+
+          &::before {
+            border-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .cmp_tabs--mobile {
+    .panel {
+      background-color: $black;
+    }
+
+    .nav-view-wrapp {
+      &.panel {
+        & > :not(a.collapsed) {
+          background-color: $black;
+        }
+
+        & > a {
+          color: $white;
+
+          &.collapsed {
+            color: $white;
+          }
+        }
+
+        a::before {
+          border-color: $white;
+        }
+      }
+    }
+  }
+
+  .cmp_tabs--vertical-fullbdr {
+    .text--gray {
+      color: $white;
+    }
+
+    li {
+      &.cmp-tabs__tab {
+        color: $white;
+      }
+    }
+
+    .cmp-tabs__tab--active {
+      border-left-color: $white !important;
+      color: $white !important;
+    }
+  }
+}
+
+.acc-blue {
+  .cmp_tabs--vertical-img {
+    .cmp-teaser__content {
+      background-color: $blue4;
+    }
+  }
+
+  .default--bg {
+    background: $blue4;
+  }
+
+  .cmp_tabs--vertical {
+    .cmp-tabs__tab {
+      &--active {
+        background: $blue4;
+      }
+
+      &:hover {
+        background: $blue4;
+      }
+    }
+
+    .cmp-tabs__tabpanel--active {
+      background-color: $blue4;
+    }
+
+    .cmp-teaser {
+      &__content {
+        background: $blue4;
+      }
+    }
+
+    &.cmp_tabs--mobile {
+      .nav-view-wrapp.panel {
+        & > :not(a.collapsed) {
+          background: $blue4;
+          color: $white;
+        }
+
+        a {
+          background-color: $blue4;
+          color: $white;
+
+          &::before {
+            border-color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .cmp_tabs--mobile {
+    .panel {
+      background-color: $blue4;
+    }
+
+    .nav-view-wrapp {
+      &.panel {
+        & > :not(a.collapsed) {
+          background-color: $blue4;
+        }
+
+        & > a {
+          color: $white;
+
+          &.collapsed {
+            color: $white;
+          }
+        }
+
+        a::before {
+          border-color: $white;
+        }
+      }
+    }
+  }
+}
+
+.acc-yellow {
+  span {
+    color: $yellow-light;
+  }
+
+  .cmp_tabs--vertical-img {
+    .cmp-tabs__tab {
+      color: $yellow-light;
+
+      &--active {
+        color: $yellow-light;
+      }
+    }
+
+    .cmp-teaser {
+      border: toRem(1) solid $yellow-light;
+
+      &__content {
+        background-color: $black;
+      }
+
+      &__description {
+        li,
+        p {
+          color: $yellow-light !important;
+        }
+      }
+
+      &__action-link {
+        color: $yellow-light;
+
+        &::before {
+          border-color: $yellow-light;
+        }
+      }
+    }
+  }
+
+  .default--bg {
+    background: $black;
+  }
+
+  .cmp-link__arrow,
+  .cmp-link__arrow_left {
+    color: $yellow-light;
+
+    &::before {
+      border-color: $yellow-light;
+    }
+  }
+
+  .cmp_tabs--vertical {
+    .cmp-tabs__tab {
+      color: $yellow-light;
+
+      &--active {
+        background: $black;
+        color: $yellow-light;
+
+        &::after {
+          border-color: $yellow-light;
+        }
+      }
+
+      &:hover {
+        background: $black;
+      }
+    }
+
+    .cmp-tabs__tabpanel--active {
+      background-color: $black;
+    }
+
+    .cmp-teaser {
+      &__content {
+        background: $black;
+      }
+
+      &__description {
+        h3 {
+          color: $yellow-light;
+        }
+
+        li {
+          color: $yellow-light;
+
+          a {
+            text-decoration: underline;
+          }
+        }
+
+        p {
+          color: $yellow-light;
+        }
+      }
+
+      &__action-link {
+        color: $yellow-light;
+
+        &::before {
+          border-color: $yellow-light;
+        }
+      }
+    }
+
+    &.cmp_tabs--mobile {
+      .nav-view-wrapp.panel {
+        & > :not(a.collapsed) {
+          background: $black;
+          color: $yellow-light;
+        }
+
+        a {
+          background-color: $black;
+          color: $yellow-light;
+
+          &::before {
+            border-color: $yellow-light;
+          }
+        }
+      }
+    }
+  }
+
+  .cmp_tabs--mobile {
+    .panel {
+      background-color: $black;
+    }
+
+    .nav-view-wrapp {
+      &.panel {
+        & > :not(a.collapsed) {
+          background-color: $black;
+        }
+
+        & > a {
+          color: $yellow-light;
+
+          &.collapsed {
+            color: $yellow-light;
+          }
+        }
+
+        a::before {
+          border-color: $yellow-light;
+        }
+      }
+    }
+  }
+
+  .cmp_tabs--vertical-fullbdr {
+    .text--gray {
+      color: $yellow-light;
+    }
+
+    li {
+      &.cmp-tabs__tab {
+        color: $yellow-light;
+      }
+    }
+
+    .cmp-tabs__tab--active {
+      border-left-color: $yellow-light !important;
+      color: $yellow-light !important;
+    }
+  }
+}

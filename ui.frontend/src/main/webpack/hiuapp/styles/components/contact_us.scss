@@ -1,0 +1,103 @@
+.hiuapp_contact {
+  box-shadow: rgb(0 0 0 / 30%) 0px 20px 30px -20px;
+  margin-bottom: 50px;
+  background-color: $white;
+  #contact {
+    padding: 50px 15px;
+      @include respond-to-min($tablet) {
+        padding: 100px 15px;
+      }
+  }
+
+  > .cmp-container:nth-child(1) {
+    @extend .container-block;
+  }
+  h2 {
+    color: $pink-color;
+    font-size: toRem(32);
+    @include respond-to-min($desktop) {
+      font-size: toRem(45);
+    }
+    &:after {
+      content: "";
+      display: block;
+      background: $blue-color;
+      height: 4px;
+      width: 80px;
+      margin-top: 15px;
+    }
+  }
+  p {
+    margin-bottom: 50px;
+  }
+  .contact-form {
+    @include respond-to-min($desktop) {
+      padding-left: 30px;
+    }
+    .googlecaptcha {
+      margin-bottom: 10px;
+      .col-md-12 {
+        padding: 0;
+      }
+    }
+    .cmp-form-text {
+      margin-bottom: 1rem;
+    }
+    .cmp-form-text {
+      input {
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        display: block;
+        width: 100%;
+        font-size: toRem(18);
+        padding: 15px;
+        border-radius: toRem(6);
+        line-height: 1.5;
+        color: $shade-gray;
+        background-color: $white;
+        background-image: none;
+        background-clip: padding-box;
+        border: 1px solid $off-white;
+      }
+      textarea {
+        transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+        display: block;
+        width: 100%;
+        font-size: toRem(18);
+        padding: 15px;
+        height: 120px;
+        border-radius: toRem(6);
+        line-height: 1.5;
+        color: $shade-gray;
+        background-color: $white;
+        background-image: none;
+        background-clip: padding-box;
+        border: 1px solid $off-white;
+      }
+    }
+  }
+}
+
+.cmp-form-text__text:focus,
+.cmp-form-text__textarea:focus {
+  color: $shade-gray;
+  background-color: $white;
+  border-color: $shade-blue;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.submit-btn:hover {
+  background: $blue-color;
+  color: $white;
+  transition-duration: 500ms;
+  p {
+    color: $white;
+  }
+}
+
+.cmp-form-button {
+  @extend .btn;
+  background: $title-color;
+  color: $white;
+  border: none;
+}

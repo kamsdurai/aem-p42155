@@ -1,0 +1,164 @@
+/* FAQ */
+
+.search-topics-faq ul {
+  list-style: none;
+
+  li {
+    min-height: 1px;
+    padding: 30px 0;
+    position: relative;
+
+    @include respond-to-min($tablet) {
+      float: left;
+      width: 50%;
+    }
+
+    h3 {
+      color: $gray-primary !important;
+      font-size: toRem(30);
+      line-height: 42px;
+      margin: 10px 0 20px;
+
+      @include respond-to-min($tablet) {
+        font-size: toRem(36);
+      }
+    }
+
+    .offer-text {
+      display: none;
+    }
+
+    a.button {
+      /* stylelint-disable-next-line scss/at-extend-no-missing-placeholder */
+      @extend .btn;
+    }
+  }
+}
+
+.return-link {
+  a {
+    color: $link-color;
+    display: block;
+    font-size: toRem(24);
+    font-weight: 500;
+    line-height: 26px;
+    margin: 0;
+
+    @include respond-to-min($desktop-wide) {
+      margin: 50px 0 30px;
+    }
+  }
+
+  .cmp-text {
+    @include respond-to-max($phone) {
+      padding: 10px 0 0;
+    }
+  }
+}
+
+.ewallet-accordion {
+  .cmp-accordion__item {
+    border-bottom: 1px solid $light-white;
+
+    &:last-child {
+      border-width: 0;
+    }
+
+    .cmp-accordion__title {
+      color: $link-color !important;
+      display: inline-block;
+      font-family: $base-font;
+      font-size: toRem(20);
+      line-height: 20px;
+      line-height: 22px;
+      min-height: 25px;
+      outline: none;
+      width: 100%;
+    }
+
+    .cmp-text {
+      font-family: $base-font;
+      font-size: toRem(20);
+      padding-left: 0;
+      padding-right: 0;
+      padding-top: 0;
+    }
+
+    .cmp-accordion__button {
+      background-color: transparent;
+      border: none;
+      color: $link-color;
+      font-size: toRem(20);
+      font-weight: 700;
+      line-height: 20px;
+
+      @include respond-to-min($desktop) {
+        padding: 30px 25px;
+      }
+
+      @include respond-to-max($tablet) {
+        padding: 30px 0;
+      }
+
+      @include respond-to-max($phone) {
+        padding: 15px 0;
+      }
+    }
+
+    .cmp-accordion__panel--expanded {
+      border: none;
+
+      @include respond-to-min($desktop) {
+        padding: 10px 25px;
+      }
+
+      @include respond-to-max($tablet) {
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+.faq-left-menu {
+  min-height: 1px;
+  position: relative;
+  z-index: 2;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      margin-bottom: 20px;
+
+      @include respond-to-max($phone) {
+        display: none;
+      }
+
+      &.active {
+        display: block;
+        font-weight: bold;
+      }
+
+      h3 {
+        display: none;
+      }
+
+      .left-menu-title a {
+        color: $black-grey;
+        cursor: pointer;
+        font-size: toRem(24);
+      }
+
+      img {
+        float: left;
+        height: 32px;
+        margin-right: 15px;
+        width: 32px;
+      }
+    }
+  }
+}
+
+/* FAQ pages CSS end */

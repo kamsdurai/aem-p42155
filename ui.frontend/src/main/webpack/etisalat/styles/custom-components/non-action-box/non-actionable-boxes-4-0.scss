@@ -1,0 +1,445 @@
+// two cols variations
+.non-action-boxes-two-cols-4-0 {
+  padding: toRem(16) 0;
+
+  &.has-bg {
+    background-color: $module-bg-color;
+  }
+
+  .container {
+    @include respond-to-min($desktop-wide) {
+      width: toRem(1200);
+    }
+
+    @include respond-to-max($desktop-wide) {
+      width: toRem(952);
+    }
+
+    @include respond-to-max($desktop-min) {
+      width: toRem(732);
+    }
+
+    @include respond-to-max($custom-width-tab) {
+      width: 100%;
+    }
+
+    @include respond-to-max($custom-width-tab) {
+      padding-left: toRem(16);
+      padding-right: toRem(16);
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to-min($desktop) {
+      flex-direction: row;
+    }
+
+    .content {
+      width: 100%;
+      margin-bottom: toRem(24);
+
+      @include respond-to-min($desktop) {
+        width: 33.3%;
+        margin-right: toRem(24);
+        max-width: toRem(384);
+        @include rtlBlock() {
+          margin-left: toRem(24);
+        }
+      }
+      ol {
+        @include rtlBlock() {
+          list-style-position: inside;
+        }
+      }
+    }
+
+    .two-cols-wrapper {
+      width: 100%;
+
+      @include respond-to-min($desktop) {
+        width: 66.7%;
+      }
+
+      display: grid;
+      grid-gap: toRem(16);
+      row-gap: toRem(36);
+      grid-template-columns: repeat(auto-fill, minmax(toRem(288), 1fr));
+
+      @include respond-to-min($desktop) {
+        grid-gap: toRem(24);
+        row-gap: toRem(44);
+        grid-template-columns: repeat(auto-fill, minmax(toRem(270), 1fr));
+      }
+
+      .non-action-boxes-4-0 {
+        width: 100%;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        margin-top: 0;
+
+        .nab-wrapper {
+          display: flex;
+          flex-direction: column;
+
+          .nab-content {
+            order: 2;
+            margin: 0;
+            width: 100%;
+          }
+
+          .nab-image {
+            width: 100%;
+            order: 1;
+            margin-bottom: toRem(16);
+            height: toRem(218);
+            position: relative;
+
+            @include respond-to-min($tablet) {
+              margin-bottom: toRem(24);
+              height: toRem(224);
+            }
+
+            .cover {
+              border-radius: toRem(4);
+              width: toRem(385);
+              max-height: toRem(244);
+
+              @include respond-to-max($desktop-min) {
+                width: toRem(358);
+              }
+
+              @include respond-to-min-max($desktop-wide, $desktop) {
+                width: toRem(304);
+              }
+
+              @include respond-to-max($custom-width-tab) {
+                width: 100%;
+                max-height: toRem(218);
+              }
+            }
+            .icon {
+              width: 64px;
+              height: 64px;
+              @media screen and (min-width: 768px) {
+                width: 74px;
+                height: 74px;
+              }
+              @media screen and (min-width: 992px) {
+                width: 64px;
+                height: 64px;
+              }
+              svg, img {
+                width: 64px;
+                height: 64px;
+                @media screen and (min-width: 768px) {
+                    width: 74px;
+                    height: 74px;
+                }
+                @media screen and (min-width: 992px) {
+                    width: 64px;
+                    height: 64px;
+                }
+              }
+            }
+            .youtube-popup-container {
+              position: fixed;
+              z-index: 1062;
+              left: 0;
+
+              @include respond-to-max($desktop-min) {
+                left: 0;
+                top: 0;
+              }
+
+              .modal-dialog {
+                width: 80%;
+                top: 5%;
+                margin: 0 auto;
+                @media (min-width: 992px) {
+                  top: 7%;
+                }
+                .modal-content {
+                  height: 500px;
+                  border: 0;
+                  @media (min-width: 992px) {
+                    height: 720px;
+                  }
+                  iframe {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+            }
+            // youtube video link
+            .youtube-video-link {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              z-index: 5;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          img,
+          .cmp-image__image {
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+/************************************************
+guidelines for main headings h1 to h6
+*************************************************/
+.context-navigation-4-0,
+.non-action-boxes-two-cols-4-0,
+.cta-with-main-text-4-0,
+.media-cta-text-4-0,
+.testimonial-module {
+  .wst-main-headings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: $almost-black;
+      margin: 0;
+      @include font-family-Neotech();
+
+      @include rtlBlock() {
+        font-weight: 300;
+      }
+    }
+
+    h1,
+    h2,
+    h3 {
+      margin-bottom: 1rem;
+
+      @include respond-to-min($desktop) {
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 0.75rem;
+
+      @include respond-to-min($desktop) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      line-height: 40px;
+
+      @include respond-to-min($desktop) {
+        font-size: 3.375rem;
+        line-height: 68px;
+      }
+    }
+
+    h2 {
+      font-size: 30px;
+      line-height: 34px;
+
+      @include respond-to-min($desktop) {
+        font-size: 40px;
+        line-height: 52px;
+      }
+    }
+
+    h3 {
+      font-size: 28px;
+      line-height: 34px;
+
+      @include respond-to-min($desktop) {
+        font-size: 2rem;
+        line-height: 40px;
+      }
+    }
+
+    h4 {
+      font-size: 24px;
+      line-height: 32px;
+
+      @include respond-to-min($desktop) {
+        font-size: 28px;
+        line-height: 34px;
+      }
+    }
+
+    h5 {
+      font-size: 20px;
+      line-height: 28px;
+
+      @include respond-to-min($desktop) {
+        font-size: 24px;
+        line-height: 32px;
+      }
+    }
+
+    h6 {
+      font-size: 16px;
+      line-height: 24px;
+
+      @include respond-to-min($desktop) {
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+  }
+  .ul-list-cms{
+    ul, ol {
+      li {
+        ul, ol {
+          padding-left: toRem(0);
+          @include rtlBlock(){
+            padding-right: toRem(0);
+            li {
+              padding-right: toRem(24);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /************************************************
+guidelines for secondary headings h1 to h4
+*************************************************/
+  .wst-secondary-headings {
+    h2,
+    h3,
+    h4,
+    h5 {
+      color: $gray-text-color;
+      margin: 0;
+      margin-bottom: 4px;
+      letter-spacing: 4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      @include font-family-lato();
+    }
+
+    h2 {
+      font-size: 14px;
+      line-height: 1.25rem;
+
+      @include respond-to-min($desktop) {
+        font-size: 1rem;
+        line-height: 1.5rem;
+      }
+    }
+
+    h3 {
+      font-size: 12px;
+      line-height: 1rem;
+
+      @include respond-to-min($desktop) {
+        font-size: 14px;
+        line-height: 1.25rem;
+      }
+    }
+
+    h4 {
+      font-size: 12px;
+      line-height: 1rem;
+      @include respond-to-min($desktop) {
+        font-size: toRem(14);
+        line-height: toRem(20);
+      }
+    }
+
+    h5 {
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 2px;
+    }
+  }
+
+  /************************************************
+guidelines for sub headings h7 to h8
+*************************************************/
+  .wst-main-headings {
+    .h7,
+    .h8 {
+      color: $almost-black;
+      margin: 0;
+      line-height: 1.25;
+      font-weight: 700;
+      @include font-family-lato();
+    }
+
+    .h7 {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      margin-bottom: 0.75rem;
+
+      @include respond-to-min($desktop) {
+        font-size: 1.25rem;
+        line-height: 28px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .h8 {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      margin-bottom: 0.75rem;
+
+      @include respond-to-min($desktop) {
+        font-size: 1rem;
+        color: $steel-grey;
+        line-height: 1.5rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.context-navigation-4-0,
+.non-action-boxes-two-cols-4-0,
+.cta-with-main-text-4-0,
+.media-cta-text-4-0,
+.testimonial-module {
+  .paragraph-styling {
+    .p1,
+    .p2,
+    .p3,
+    .p4 {
+      p {
+        color: $gray-text-color;
+        @include font-family-lato();
+
+        @include rtlBlock() {
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+
+// arabic language
+*[lang="ar"] {
+  *[dir="rtl"] {
+    @include respond-to-min($desktop) {
+      .non-action-boxes-two-cols-4-0 .content-wrapper .content {
+        margin-left: toRem(24);
+        margin-right: 0;
+      }
+    }
+  }
+}

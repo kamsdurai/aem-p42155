@@ -1,0 +1,304 @@
+// ****************************************************************
+// //////////////  media cta text only 4-0 module  ////////////////
+// ****************************************************************
+.media-cta-text-4-0 {
+  position: relative;
+
+  &.has-bg {
+    padding: toRem(16) 0;
+    background-color: $module-bg-color;
+  }
+
+  .container {
+    @include respond-to-min($desktop-wide) {
+      width: toRem(1200);
+    }
+
+    @include respond-to-max($custom-width-tab) {
+      padding-left: toRem(16);
+      padding-right: toRem(16);
+    }
+  }
+
+  .link-cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+
+  .media-content {
+    display: flex;
+    box-shadow: 0 toRem(5) toRem(10) 0 rgba(0, 0, 0, 0.1);
+    background-color: $white;
+    flex-direction: column;
+    border-radius: toRem(4);
+    overflow: hidden;
+
+    @include respond-to-min($tablet) {
+      flex-direction: row;
+    }
+
+    .img-container {
+      height: toRem(242);
+      position: relative;
+
+      @include respond-to-min($tablet) {
+        height: toRem(250);
+        margin-right: toRem(16);
+        width: 50%;
+        min-width: toRem(360);
+      }
+
+      @include respond-to-min($desktop) {
+        margin-right: toRem(24);
+      }
+
+      .cmp-image__image {
+        position: absolute;
+        left: -9999px;
+        right: -9999px;
+        top: -9999px;
+        bottom: -9999px;
+        margin: auto;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+      }
+    }
+    .body-wrapper {
+      padding: toRem(24) toRem(16);
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @include respond-to-min($tablet) {
+        padding-left: 0;
+        width: 50%;
+      }
+    }
+  }
+
+  &.with-up-down {
+    .media-content {
+      flex-direction: column;
+
+      .img-container {
+        margin: 0;
+        width: 100%;
+      }
+
+      .body-wrapper {
+        margin: 0;
+        width: 100%;
+        padding: toRem(24) toRem(16);
+      }
+    }
+  }
+}
+
+// with main text combination
+.cta-with-main-text-4-0 {
+  position: relative;
+
+  &.has-bg {
+    padding: toRem(16) 0;
+    background-color: $module-bg-color;
+  }
+
+  .container {
+    @include respond-to-min($desktop-wide) {
+      width: toRem(1200);
+    }
+
+    @include respond-to-max($desktop-wide) {
+      width: toRem(952);
+    }
+
+    @include respond-to-max($desktop-min) {
+      width: toRem(732);
+    }
+
+    @include respond-to-max($custom-width-tab) {
+      width: 100%;
+    }
+
+    @include respond-to-max($custom-width-tab) {
+      padding-left: toRem(16);
+      padding-right: toRem(16);
+    }
+  }
+
+  .paragraph-styling p {
+    margin-bottom: toRem(24);
+  }
+
+  .media-cta-text-4-0 {
+    .media-content {
+      width: 100%;
+    }
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include respond-to-min($desktop) {
+      flex-direction: row;
+    }
+
+    .content {
+      width: 100%;
+      margin-bottom: toRem(24);
+
+      @include respond-to-min($desktop) {
+        width: 33.3%;
+        margin-right: toRem(24);
+        max-width: toRem(300);
+        min-width: toRem(300);
+
+        @include rtlBlock() {
+          margin-right: inherit;
+          margin-left: toRem(24);
+        }
+      }
+
+      @include respond-to-min($desktop-wide) {
+        max-width: toRem(384);
+        min-width: toRem(384);
+      }
+    }
+    .cta {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &.with-single-col {
+    .media-cta-text-4-0 .media-content .img-container {
+      @include respond-to-min($tablet) {
+        height: toRem(308);
+      }
+
+      @include respond-to-min($desktop) {
+        height: toRem(332);
+      }
+    }
+  }
+
+  &.with-two-cols {
+    .media-cta-text-4-0 {
+      display: flex;
+
+      .body-wrapper {
+        flex: 1 1 auto;
+      }
+    }
+
+    .content-wrapper {
+      .cta {
+        width: 100%;
+        display: grid;
+        grid-gap: toRem(16);
+        grid-template-columns: repeat(auto-fill, minmax(toRem(288), 1fr));
+
+        @include respond-to-min($desktop) {
+          width: 66.7%;
+          grid-gap: toRem(16);
+          grid-template-columns: repeat(auto-fill, minmax(toRem(270), 1fr));
+        }
+
+        @include respond-to-min($desktop-wide) {
+          grid-gap: toRem(24);
+        }
+      }
+    }
+  }
+
+  &.with-events {
+    .event {
+      display: flex;
+
+      .icon {
+        width: toRem(48);
+        height: toRem(48);
+        margin-right: toRem(16);
+
+        @include rtlBlock() {
+          margin-left: toRem(16);
+          margin-right: inherit;
+        }
+
+        svg,
+        img {
+          width: toRem(48);
+          height: toRem(48);
+        }
+      }
+
+      .draw-details {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: toRem(16);
+
+        .next-draw {
+          font-size: $font14;
+          line-height: 1.43;
+          color: $paracolor;
+          margin: 0;
+
+          @include respond-to-min($desktop) {
+            font-size: $font16;
+            line-height: 1.5;
+          }
+        }
+        .date {
+          font-size: $font14;
+          font-weight: bold;
+          line-height: 1.43;
+          color: $almost-black;
+
+          @include respond-to-min($desktop) {
+            font-size: $font16;
+            line-height: 1.5;
+          }
+        }
+      }
+    }
+  }
+}
+
+// arabic language
+*[lang="ar"] {
+  *[dir="rtl"] {
+    .media-cta-text-4-0 {
+      .media-content {
+        .img-container {
+          @include respond-to-min($tablet) {
+            margin-right: 0;
+            margin-left: toRem(16);
+          }
+
+          @include respond-to-min($desktop) {
+            margin-left: toRem(24);
+          }
+        }
+
+        .body-wrapper {
+          @include respond-to-min($tablet) {
+            padding-left: toRem(16);
+            padding-right: 0;
+          }
+        }
+      }
+    }
+
+    .cta-with-main-text-4-0.with-two-cols .media-cta-text-4-0 .body-wrapper {
+      padding-right: toRem(16) !important;
+    }
+  }
+}

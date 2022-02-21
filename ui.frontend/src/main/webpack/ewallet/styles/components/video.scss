@@ -1,0 +1,73 @@
+.VideoContainer {
+  margin: 20px 0;
+}
+
+.video-wrap {
+  @include respond-to-max($desktop) {
+    margin: 0 20px;
+  }
+
+  @include respond-to-max($tablet) {
+    margin: 0 54px;
+  }
+
+  @include respond-to-max($phone) {
+    margin: 30px 15px 0;
+  }
+
+  .video {
+    height: toRem(365);
+    position: relative;
+
+    @include respond-to-max($tablet - 1) {
+      height: toRem(300);
+    }
+
+    @include respond-to-max($phone) {
+      background-size: contain;
+      height: toRem(202);
+    }
+
+    &__cover-img {
+      img {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+
+        @include respond-to-min($desktop-wide) {
+          width: 95%;
+        }
+      }
+    }
+
+    &__play-icon {
+      bottom: 0;
+      cursor: pointer;
+      height: toRem(102);
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: toRem(102);
+      z-index: 2;
+
+      @include respond-to-max($tablet - 1) {
+        height: toRem(86);
+        width: toRem(86);
+      }
+    }
+
+    &__embed {
+      height: 100%;
+      position: absolute;
+      visibility: hidden;
+      width: 100%;
+
+      &.play {
+        visibility: visible;
+        z-index: 3;
+      }
+    }
+  }
+}

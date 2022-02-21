@@ -1,0 +1,152 @@
+.related-jobs {
+    .wst-main-headings {
+         h1,h2,h3,h4,h5,h6 {
+             margin-bottom: 24px;
+         }
+    }
+    .dynamic-cards .related-jobs-card {
+        position: relative;
+        overflow: hidden;
+        &:before {
+            transform: rotate(90deg);
+            width: toRem(107);
+            height: toRem(115);
+            bottom: toRem(-5);
+            top: auto;
+            transform: scaleY(-1);
+        }
+        .related-jobs-card-actions span {
+            margin-right: toRem(4);
+        }
+    }
+    .related-jobs-card {
+        padding: toRem(19.2);
+        box-shadow: 0 toRem(5) toRem(10) 0 rgb(0 0 0 / 10%);
+        background-color: $white;
+        border-radius: toRem(8);
+        min-height: toRem(200);
+        position: relative;
+        margin-bottom: toRem(32);
+        &:before {
+            background: url("../resources/images/bg-cards/texture_right.png");
+            background-position: 100% 0;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100%;
+            max-width: toRem(110);
+            content: "";
+            display: block;
+        }
+        .related-jobs-card-detail {
+            position: relative;
+            .bookmark {
+                position: absolute;
+                right: toRem(-7);
+                top: toRem(-7);
+                width: toRem(35);
+                height: toRem(40);
+                display: block;
+                background: url("../resources/images/bookmark-green.svg");
+                background-size: contain;
+                img, svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+            h5 {
+                color: $gray-fill;
+                @include font-family-lato;
+                font-size: toRem(12);
+                letter-spacing: toRem(2);
+                line-height: toRem(15);
+                font-weight: 400;
+                text-transform: uppercase;
+                margin-bottom: 0;
+                margin-top: 0;
+            } 
+            h3 {
+                color: $almost-black;
+                font-size: toRem(20);
+                letter-spacing: 0;
+                line-height: toRem(25);
+                font-weight: 400;
+                margin-top: toRem(5);
+                margin-bottom: toRem(16);
+                padding-right: toRem(32);
+            }
+            p {
+                @include font-family-lato;
+                color: $gray-fill;
+                font-size: toRem(16);
+                line-height: toRem(20);
+            }
+        } 
+        .related-jobs-card-actions {
+            display: flex;
+            position: absolute;
+            bottom: toRem(17.6);
+            left: toRem(19.2);
+            width: 100%;
+            span {
+                color: #464545;
+                @include font-family-lato;
+                font-size: toRem(16);
+                letter-spacing: toRem(.58);
+                line-height: toRem(19);
+                margin-right: toRem(24);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+[dir=rtl] {
+    .related-jobs, .related-jobs h3,.related-jobs h4 {
+    font-weight: 300;
+    letter-spacing: 0!important;
+}
+}
+
+[lang=ar] [dir=rtl] .related-jobs .related-jobs-card .related-jobs-card-detail .bookmark {
+    left: toRem(-7);
+    right: auto;
+}
+
+[lang=ar] [dir=rtl] .related-jobs .related-jobs-card .related-jobs-card-detail h3 {
+    padding-left: toRem(32);
+    padding-right: 0;
+}
+[lang=ar] [dir=rtl] .related-jobs .related-jobs-card .related-jobs-card-actions {
+    left: auto;
+    right: toRem(19.2);
+}
+[lang=ar] [dir=rtl] .related-jobs .dynamic-cards .related-jobs-card .related-jobs-card-actions span {
+    margin-right: 0;
+    margin-left: toRem(4);
+}
+[lang=ar] [dir=rtl] .related-jobs .dynamic-cards .related-jobs-card:before {
+    transform: rotate(-180deg)!important;
+    width: toRem(107);
+    height: toRem(115);
+    bottom: toRem(-5);
+    top: auto;
+    background-image: url("../resources/images/bg-cards/texture_right.png");
+}
+[lang=ar] [dir=rtl] .related-jobs .related-jobs-card:before {
+    background-image: url("../resources/images/bg-cards/texture_right.png");
+    background-position: 0 0;
+    transform: scaleX(-1);
+    right: auto;
+    left: 0;
+}
+@media (min-width: 768px) {
+    [lang=ar] [dir=rtl] .related-jobs .col-sm-offset-4 {
+        margin-left: 0;
+        margin-right: 33.33333333%;
+    }
+}

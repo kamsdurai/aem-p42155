@@ -1,0 +1,45 @@
+
+
+.product-detail-text {
+  .btn-text {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+
+    .btn-green::before {
+      border: solid $main-green;
+      border-width: 0 1px 1px 0;
+    }
+  }
+
+  .main-text-section {
+    padding: 3rem 0;
+  }
+
+  .wst-main-headings {
+    //font-family: Lato,GE SS Two,Roboto,Arial,sans-serif;
+    @include font-family-lato;
+
+    h2 {
+      //font-size: 40px;
+      font-size: $font40;
+      line-height: 52px;
+    }
+  }
+
+  .paragraph-styling .p2 a, .paragraph-styling .p2 ol li, .paragraph-styling .p2 p, .paragraph-styling .p2 ul li {
+    font-size: $font16 !important;
+    line-height: 1.5rem !important;
+  }
+
+  .paragraph-styling .p1 p, .paragraph-styling .p2 p, .paragraph-styling .p3 p, .paragraph-styling .p4 p {
+    margin-bottom: 1rem;
+  }
+}
+
+
+.productList {
+  h2 {
+    color: $black;
+    line-height: 1;
+  }
+}

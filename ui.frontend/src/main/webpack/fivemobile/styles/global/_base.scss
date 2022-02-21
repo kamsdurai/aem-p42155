@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* FONT and COLOR */
+html {
+  font-size: toRem(16);
+  scroll-behavior: smooth;
+}
+
+h1 {
+  color: $light-black;
+  font-family: $fontfamily-book;
+  font-size: toRem(40);
+  font-weight: bold;
+  line-height: 1.3333;
+  padding-top: 2rem;
+}
+
+h2 {
+  color: $lime-green;
+  font-family: $fontfamily-bold;
+  font-size: toRem(20);
+  line-height: 25px;
+  margin-bottom: 14px;
+}
+
+p {
+  color: $oslo-gray;
+  font-family: $fontfamily-book;
+  font-size: toRem(16);
+  line-height: 22px;
+  margin: 10px 0;
+
+  &.lead {
+    font-size: toRem(20);
+  }
+
+  &.secondary-lead {
+    font-size: toRem(18);
+    margin-bottom: 35px;
+  }
+}
+
+th {
+  font-family: $fontfamily-bold;
+}
+
+td {
+  font-family: $fontfamily-book;
+}
+
+a {
+  color: $light-purple;
+  font-family: $fontfamily-book;
+  text-decoration: none;
+
+  &:hover {
+    color: $greyish-white;
+    outline: 0;
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+}
+
+h3 {
+  color: $color-black;
+  font: bold 1em/1.5 sans-serif;
+  margin: 10px 0;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background: none;
+  padding-top: 160px;
+
+  @include respond-to-max($desktop) {
+    padding-top: 100px;
+  }
+}
+
+table {
+  background: $white-color;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100% !important;
+}
+
+th,
+td {
+  padding: 12px !important;
+}
+
+ul li {
+  list-style: none;
+}
+
+// main css en
+/* stylelint-disable-next-line no-duplicate-selectors */
+th {
+  background-color: $bg-white;
+  vertical-align: middle;
+}
+
+.table-head center {
+  padding: 12px;
+}
+
+.container {
+  margin: 0 !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  width: 100% !important;
+}
+
+#section-fivecallingcard h1 {
+  padding-top: 50px !important;
+}
+
+#section-takaful h1 {
+  @include respond-to-min($desktop) {
+    padding-top: 38px;
+  }
+}
+
+.font--big {
+  font-size: toRem(25);
+}
+
+.font--med {
+  font-size: toRem(20);
+}
+
+.font--small {
+  font-size: toRem(18);
+}
+
+.font--xsmall {
+  font-size: toRem(12);
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.marginb-10 {
+  margin-bottom: 10px;
+}
+
+.ptop-0 {
+  padding-top: 0;
+}
+
+.t33 th,
+.t33 td {
+  width: 33%;
+}
+
+.t25 th,
+.t25 td {
+  width: 25%;
+}

@@ -1,0 +1,88 @@
+footer {
+  text-align: center;
+  padding: 0 0 70px 0;
+  z-index: -101;
+  position: fixed;
+  bottom: 0px;
+  width: 1903px;
+  .cmp-button__text {
+    display: none;
+  }
+  .button {
+    max-width: 50px;
+    margin-bottom: 18px;
+    display: inline-block;
+  }
+  h2 {
+    color: $pink-color;
+    font-size: 52px !important;
+    font-weight: 700 !important;
+    margin-bottom: 19px;
+  }
+  ul {
+    width: 100%;
+    max-width: 444px;
+    margin-left: auto;
+    margin-right: auto;
+    li {
+      display: inline;
+      list-style-type: none;
+      float: left;
+      margin-bottom: 15px;
+      border-right: 2px solid $font-color;
+      &:last-child{
+        border-width: 0;
+      }
+      a {
+        display: block;
+        padding: 0 7.5px;
+        color: $font-color;
+        @include respond-to-max($phone-xs) {
+          font-size: toRem(14);
+        }
+        &:last-child {
+          border: 0;
+        }
+        &:hover {
+          color: $font-color;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .cmp-text {
+    clear: both;
+    display: inline-block;
+    color: $font-color;
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 15px;
+    &:nth-of-type(2) {
+      margin-top: 10px;
+    }
+  }
+}
+
+.footer-social-icons .cmp-container {
+  display: flex;
+  margin: 0 auto;
+  width: 190px;
+  .cmp-button__icon--fa {
+    color: $pink-color;
+    font-size: 18px !important;
+    height: 40px;
+    width: 40px;
+    padding: 10px 10px;
+    line-height: 40px;
+    border-radius: 3px;
+    margin-right: 15px;
+    flex-wrap: wrap;
+    font-size: inherit;
+    text-rendering: auto;
+    font: normal normal normal 16px/1 FontAwesome;
+    &:hover {
+      background-color: $pink-color;
+      color: $white;
+    }
+  }
+}

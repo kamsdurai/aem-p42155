@@ -1,0 +1,9 @@
+# Ignore artifacts:
+../ui.apps/
+./src/main/webpack/tests/
+.husky
+dist
+node
+report
+node_modules
+target

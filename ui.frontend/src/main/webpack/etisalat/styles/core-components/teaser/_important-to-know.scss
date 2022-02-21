@@ -1,0 +1,347 @@
+.beigebg-container {
+  .rte-bullets {
+    ol,
+    ul {
+      @include font-family-lato;
+
+      font-size: $font14;
+      line-height: toRem(24);
+      list-style: decimal;
+      margin: 0;
+      margin-bottom: toRem(12.5);
+      margin-top: 0;
+      padding: 0;
+    }
+  }
+
+  padding: toRem(32);
+
+  @include respond-to-max($tablet) {
+    padding: toRem(16);
+  }
+
+  @include respond-to-max($phone) {
+    padding: toRem(9.6);
+  }
+
+  p {
+    color: $black;
+
+    @include font-family-lato;
+
+    @include respond-to-max($phone) {
+      color: $gray-text-color;
+      font-size: $font16;
+    }
+  }
+
+  h3 {
+    margin-top: toRem(20);
+  }
+
+  .cmp-text {
+    h3 {
+      font-size: toRem(20);
+
+      @include respond-to-max($phone) {
+        line-height: 27px;
+      }
+
+      @include respond-to-max($tablet) {
+        font-size: $font16;
+      }
+    }
+
+    p {
+      font-size: $font14;
+      margin: 0 0 12.5px;
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .cmp-teaser__content {
+    .cmp-teaser__title {
+      float: left;
+      width: 51%;
+
+      @include respond-to-max($tablet) {
+        float: none;
+        width: 100%;
+      }
+    }
+
+    .cmp-teaser__description {
+      float: left;
+      margin-top: 0.5rem;
+      width: 50%;
+
+      @include respond-to-max($tablet) {
+        float: none;
+        margin-top: 1.8rem;
+        width: 100%;
+      }
+    }
+  }
+
+  .cmp-beigebg_teaser {
+    background: $sand-white-50;
+    border-radius: 4px;
+    margin-bottom: -2rem;
+    min-height: 140px;
+    overflow: hidden;
+    position: relative;
+
+    @include respond-to-max($tablet) {
+      min-height: 117px;
+    }
+  }
+
+  .cmp-teaser__action-container {
+    float: right;
+    margin-top: -3rem;
+  }
+
+  .cmp-teaser {
+    padding-left: 36px;
+    padding-right: 36px;
+
+    @include respond-to-max($tablet) {
+      padding-left: 17px;
+      padding-right: 17px;
+    }
+
+    .cmp-teaser__title {
+      color: $almost-black;
+      font-size: $font28;
+      letter-spacing: 0.5px;
+      margin: 2.2rem 0 1.5rem;
+
+      @include respond-to-max($phone) {
+        margin: 1rem 0;
+      }
+
+      @include respond-to-max($tablet) {
+        font-size: $font28;
+        margin: 1rem 0;
+      }
+
+      a {
+        color: $almost-black;
+      }
+    }
+  }
+
+  ul li {
+    color: $gray-text-color;
+
+    @include font-family-lato;
+
+    line-height: 24px;
+    list-style-type: disc;
+    margin-bottom: 4px;
+    margin-left: 2rem;
+    padding-left: 0.5rem;
+    position: relative;
+  }
+
+  .beigebg-wrapper {
+    background: $sand-white-50;
+    padding-bottom: 2rem;
+    padding-top: 0.4rem;
+
+    .rte-bullets {
+      ol {
+        padding: 2rem 2rem 0;
+      }
+    }
+  }
+
+  .aem-GridColumn.aem-GridColumn--default--6 {
+    padding-left: 2.5rem;
+    padding-right: 2rem;
+
+    @include respond-to-max($tablet) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+
+  .beige-table {
+    margin-top: -1rem;
+    padding-left: 3rem;
+    padding-right: 6rem;
+
+    @include respond-to-max($phone) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    @include respond-to-max($tablet) {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    td {
+      border-bottom: 2px solid $white-2;
+      border-collapse: separate;
+      border-spacing: 2rem 0;
+      color: $steel-grey;
+
+      @include font-family-lato;
+
+      font-size: $font20;
+      font-weight: get-font-weight("regular");
+      line-height: 56px;
+      margin: 0 -2rem;
+      width: 50%;
+
+      @include respond-to-max($phone) {
+        border-bottom: none;
+        font-size: $font14;
+      }
+
+      @include respond-to-max($tablet) {
+        padding: 0 1rem;
+      }
+
+      p {
+        font-size: $font20;
+        line-height: 56px;
+
+        @include respond-to-max($phone) {
+          color: $black;
+          font-size: $font14;
+          line-height: 28px;
+        }
+      }
+    }
+
+    table tbody td {
+      color: $steel-grey;
+      line-height: toRem(56);
+      padding: 0 1rem;
+
+      @include respond-to-max($phone) {
+        color: $steel-grey;
+        font-size: $font14;
+        line-height: toRem(32);
+        padding: 0;
+      }
+    }
+
+    table th {
+      border-bottom: 2px solid $white-2;
+      color: $almost-black;
+
+      @include font-family-lato;
+
+      font-size: $font20;
+      font-weight: get-font-weight("regular");
+      line-height: toRem(56);
+      padding: 0;
+      vertical-align: bottom;
+
+      @include respond-to-max($phone) {
+        border-bottom: none;
+        font-size: $font14;
+      }
+    }
+  }
+
+  .teaser-viewall {
+    color: $almost-black;
+    cursor: pointer;
+    float: right;
+
+    @include font-family-lato;
+
+    font-size: $font14;
+    font-weight: get-font-weight("medium");
+    letter-spacing: toRem(2);
+    line-height: toRem(20);
+    margin-top: toRem(-48);
+    position: relative;
+    text-transform: uppercase;
+    z-index: 3;
+
+    @include respond-to-max($tablet) {
+      float: right;
+      margin-top: toRem(-64);
+    }
+
+    @include respond-to-max($phone) {
+      float: right;
+      margin-top: toRem(-86.4);
+    }
+  }
+}
+
+.sort_asc {
+  background-image: url("../resources/images/sort_asc.png");
+  background-position: right 1px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-left: toRem(13);
+  width: toRem(138);
+}
+
+.sort_desc {
+  background-image: url("../resources/images/sort_desc.png");
+  background-position: right -3px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  padding-left: toRem(13);
+  width: toRem(138);
+}
+
+.cmp-teaser-accordion {
+  background: $sand-white-50;
+  border-radius: toRem(4);
+  margin-bottom: toRem(24);
+  min-height: toRem(140);
+  overflow: hidden;
+  position: relative;
+}
+
+.cmp-teaser-accordion::before {
+  background: url("../resources/images/sectionbg.svg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 0;
+  content: "";
+  height: toRem(360);
+  opacity: 0.1;
+  position: absolute;
+  width: toRem(340);
+  z-index: 1;
+
+  @include respond-to-max($tablet) {
+    background-image: none;
+  }
+}
+
+.cmp-teaser-accordion::after {
+  background: url("../resources/images/sectionbg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: toRem(360);
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(180deg);
+  width: toRem(340);
+  z-index: 1;
+
+  @include respond-to-max($tablet) {
+    height: toRem(145);
+    width: toRem(140);
+  }
+
+  @include respond-to-max($phone) {
+    height: toRem(145);
+    width: toRem(140);
+  }
+}

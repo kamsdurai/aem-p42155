@@ -1,0 +1,294 @@
+// testimonial tile
+.testimonial-tile {
+  border-radius: toRem(8);
+  box-shadow: 0 toRem(5) toRem(10) 0 rgba(0, 0, 0, 0.1);
+  background-color: $white;
+  padding: toRem(16);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @include respond-to-min($desktop) {
+    padding: toRem(24);
+  }
+
+  .qoutes {
+    margin-bottom: toRem(16);
+    height: toRem(25);
+
+    svg {
+      width: toRem(34);
+    }
+  }
+
+  .user-profile {
+    .pic {
+      margin-bottom: toRem(12);
+      width: toRem(48);
+      height: toRem(48);
+      overflow: hidden;
+      border-radius: 50%;
+      position: relative;
+
+      img {
+        width: toRem(48);
+        height: toRem(48);
+      }
+    }
+
+    .name {
+      font-size: $font14;
+      font-weight: 600;
+      color: $dark-gray10;
+      line-height: 2;
+      margin-bottom: toRem(2);
+
+      @include respond-to-min($desktop) {
+        font-size: $font16;
+        line-height: 1.75;
+      }
+    }
+
+    .designation {
+      font-size: $font14;
+      font-weight: 500;
+      line-height: 1.71;
+      letter-spacing: normal;
+      color: $dark-gray;
+
+      @include respond-to-min($desktop) {
+        font-size: $font16;
+        line-height: 1.5;
+      }
+    }
+  }
+}
+
+// tile with image banner
+.with-image-banner {
+  overflow: hidden;
+  border-radius: toRem(8);
+  box-shadow: 0 toRem(5) toRem(10) 0 rgba(0, 0, 0, 0.1);
+  height: 100%;
+  background-color: $white;
+
+  .testimonial-tile {
+    padding-top: toRem(24);
+    padding-bottom: toRem(24);
+    border-radius: 0;
+    box-shadow: none;
+    height: auto;
+    padding-bottom: toRem(78);
+  }
+
+  .img-banner {
+    height: toRem(242);
+    position: relative;
+
+    .cmp-image__image {
+      position: absolute;
+      left: -9999px;
+      right: -9999px;
+      top: -9999px;
+      bottom: -9999px;
+      margin: auto;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+    }
+  }
+
+  .user-profile {
+    position: absolute;
+    bottom: toRem(40);
+
+    @include respond-to-min($tablet) {
+      bottom: toRem(48);
+    }
+  }
+}
+
+// testimonial box with pattern
+.testimonial-box {
+  background-color: $sand-white-50;
+  position: relative;
+  padding: toRem(24) 0;
+  overflow: hidden;
+
+  @include respond-to-min($desktop) {
+    padding: toRem(66) 0;
+  }
+
+  .container {
+    @include respond-to-min($desktop-wide) {
+      width: toRem(1200);
+    }
+
+    @include respond-to-max($desktop-min) {
+      width: toRem(732);
+    }
+
+    @include respond-to-max($custom-width-tab) {
+      width: 100%;
+      padding: 0 toRem(16) !important;
+    }
+  }
+
+  .pattern-wrapper {
+    width: toRem(96);
+    height: toRem(104);
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotate(180deg);
+
+    @include respond-to-min($desktop) {
+      width: toRem(219);
+      height: toRem(237);
+    }
+
+    svg {
+      opacity: 0.08;
+      width: toRem(96);
+      height: toRem(104);
+
+      @include respond-to-min($desktop) {
+        width: toRem(219);
+        height: toRem(237);
+      }
+    }
+  }
+}
+
+//testimonial-module
+.testimonial-module {
+  .paragraph-styling {
+    flex: 1 1 auto;
+    .p1,
+    .p2,
+    .p3,
+    .p4 {
+      p {
+        margin-bottom: toRem(16);
+        color: $dark-gray;
+
+        @include respond-to-min($desktop) {
+          margin-bottom: toRem(24);
+        }
+      }
+    }
+  }
+
+  .col-md-8 {
+    @include respond-to-max($desktop-min) {
+      padding-right: 0;
+    }
+  }
+
+  .controls {
+    display: flex;
+
+    @include respond-to-max($desktop-min) {
+      display: none;
+    }
+
+    .next {
+      margin-left: toRem(12);
+    }
+
+    .next,
+    .prev {
+      cursor: pointer;
+      &.swiper-button-disabled {
+        cursor: auto;
+      }
+    }
+  }
+
+  .swiper-slide {
+    text-align: left;
+    padding-bottom: toRem(24);
+    background-color: transparent;
+    height: auto;
+    width: 100%;
+
+    @include respond-to-max($custom-width-tab) {
+      &:last-child() {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .swiper-scrollbar {
+    height: toRem(4);
+    background-color: $sand-white;
+
+    @include respond-to-max($desktop-min) {
+      margin-right: toRem(12);
+    }
+
+    .swiper-scrollbar-drag {
+      background-color: $main-green;
+    }
+  }
+}
+
+// tile with image banner and single card
+.single-tile {
+  .with-image-banner {
+    @include respond-to-min($desktop) {
+      border-radius: toRem(8);
+      display: flex;
+      .img-banner {
+        order: 2;
+        flex: 1;
+      }
+
+      .testimonial-tile {
+        order: 1;
+        flex: 1;
+      }
+    }
+  }
+
+  .controls,
+  .swiper-scrollbar {
+    display: none !important;
+  }
+
+  .col-md-8 {
+    @include respond-to-max($desktop-min) {
+      padding-right: toRem(12);
+    }
+  }
+}
+
+// arabic language
+*[lang="ar"] *[dir="rtl"] {
+  .testimonial-module .swiper-slide {
+    text-align: right;
+  }
+
+  .testimonial-module .controls .next,
+  .testimonial-module .controls .prev {
+    transform: rotate(180deg);
+  }
+
+  .testimonial-module .controls .next {
+    margin-right: toRem(12);
+    margin-left: 0;
+  }
+
+  .testimonial-box .pattern-wrapper {
+    transform: rotate(90deg);
+    right: auto;
+    left: 0;
+  }
+
+  @include respond-to-min($tablet) {
+    .multiple-buttons .wrapp .btn {
+      margin-right: 0;
+      margin-left: toRem(24);
+    }
+  }
+}

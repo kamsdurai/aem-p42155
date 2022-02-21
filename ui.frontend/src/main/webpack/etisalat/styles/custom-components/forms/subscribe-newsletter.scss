@@ -1,0 +1,274 @@
+.subscribe_newsletter {
+  .cmp-teaser {
+    padding: toRem(24);
+
+    @include respond-to-min($desktop) {
+      padding: toRem(36) toRem(32) 0;
+    }
+
+    &__description {
+      color: $gray-fill;
+      font-size: $font18;
+      line-height: 28px;
+      margin-bottom: toRem(24);
+    }
+
+    &__title {
+      font-size: toRem(28);
+      margin-bottom: toRem(24);
+      margin-top: 0;
+    }
+  }
+
+  .cmp-form {
+    padding: 0 toRem(24);
+    position: relative;
+    z-index: 1;
+
+
+    .aem-GridColumn {
+      padding: 0 toRem(12);
+      @include respond-to-max($phone) {
+        padding: 0;
+      }
+    }
+
+    .aem-GridColumn .aem-GridColumn {
+      padding: 0;
+    }
+  }
+
+  .cmp-form-button {
+    background: transparent;
+    background-color: transparent;
+    border-color: $almost-black;
+    border-radius: 4px;
+    border-width: 1px;
+    box-shadow: none !important;
+    color: $almost-black;
+    font-size: $font14;
+    font-weight: 700;
+    height: 3rem;
+    letter-spacing: 0.14285714em;
+    line-height: 3rem;
+    outline: 0;
+    overflow: hidden;
+    padding: 0 0.5rem;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    z-index: 5;
+
+    &:hover {
+      background-color: transparent !important;
+      border-color: $main-green;
+      box-shadow: none !important;
+      color: $main-green;
+    }
+
+    &:focus {
+      background-color: transparent !important;
+      outline: none;
+    }
+  }
+
+  > .cmp-container {
+    background: $sand-white-50;
+    border-radius: $border-radius-step-1;
+    overflow: hidden;
+    position: relative;
+
+    &::before {
+      background: url("../resources/images/sectionbg.svg");
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: contain;
+      bottom: 0;
+      content: "";
+      height: toRem(280);
+      opacity: 0.1;
+      position: absolute;
+      width: toRem(260);
+
+      @include rtlBlock() {
+        left: 0;
+      }
+    }
+
+    &::after {
+      background: url("../resources/images/sectionbg.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+      height: toRem(280);
+      opacity: 0.1;
+      position: absolute;
+      right: 0;
+      top: 0;
+      transform: rotate(180deg);
+      width: toRem(260);
+    }
+  }
+}
+
+.cmp-experiencefragment--Newsletter-subscription-pop-up {
+  display: none;
+}
+
+// ============== Success popup start ===============
+.success-message {
+  .cmp-container {
+    overflow: hidden;
+    position: relative;
+
+    @include respond-to-max($tablet) {
+      padding: 0 toRem(16);
+      margin: 0 auto;
+    }
+  }
+
+  .cmp-text {
+    align-items: center;
+    border-bottom: 1px solid $light-sand-brown;
+    display: flex;
+    font-size: $font16;
+    justify-content: center;
+    line-height: 22px;
+    margin-top: 0;
+    padding: 2.75rem 0;
+    top: 0;
+
+    h1 {
+      color: $almost-black;
+      font-size: $font24;
+      font-weight: 400;
+      line-height: 2rem;
+      margin: 0;
+      text-align: center;
+
+      @include font-family-Neotech;
+    }
+  }
+
+  .teaser {
+    float: none;
+    margin: 0 auto;
+    width: 66.66666667%;
+
+    .cmp-teaser {
+      .cmp-teaser__image {
+        text-align: center;
+
+        img {
+          width: 300px;
+        }
+      }
+
+      .cmp-teaser__content {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        text-align: center;
+
+        .cmp-teaser__title {
+          color: $main-green;
+          font-size: 1.65rem;
+          margin-bottom: 12.5px;
+          margin-top: 25px;
+        }
+
+        .cmp-teaser__description {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
+          width: 100% !important;
+          @include font-family-lato;
+
+          p {
+            color: $gray-fill;
+            font-size: $font18;
+            line-height: 24px;
+            margin-bottom: 1.5rem;
+            margin-top: 2.5rem;
+
+            @include md {
+              font-size: 16px;
+              margin-top: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// ======= Custem Popup ===
+.cmp-experiencefragment--Newsletter-subscription-pop-up {
+  background: $white;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+
+  @include respond-to-min($desktop) {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .teaser {
+    width: 100% !important;
+
+    @include respond-to-min($desktop) {
+      float: none !important;
+      margin: 0 auto;
+      width: 76% !important;
+    }
+  }
+}
+
+// ============= CLOSE BTN =============
+.form-close {
+  height: toRem(32);
+  position: absolute;
+  right: toRem(32);
+  top: toRem(32);
+  width: toRem(32);
+
+  @include respond-to-min($tablet) {
+    right: toRem(16);
+    top: toRem(38px);
+  }
+
+  &::before,
+  &::after {
+    background-color: $almost-black;
+    content: " ";
+    height: toRem(33);
+    left: toRem(15);
+    position: absolute;
+    width: toRem(2);
+  }
+}
+
+.form-close::before {
+  transform: rotate(45deg);
+}
+
+.form-close::after {
+  transform: rotate(-45deg);
+}
+
+.dynamicEmail {
+  color: $gray-fill;
+  font-size: $font18;
+  line-height: 24px;
+  margin-bottom: 1.5rem;
+  margin-right: 0;
+  margin-top: -5.5rem;
+
+  @include font-family-lato;
+}

@@ -1,0 +1,328 @@
+.offers-main-wrap {
+  margin-top: 65px;
+
+  @include respond-to-min-max($desktop-wide, $desktop) {
+    margin: 65px auto 0;
+  }
+
+  @include respond-to-max($tablet) {
+    margin-top: 15px;
+  }
+
+  @include respond-to-max($phone) {
+    margin-top: 120px;
+  }
+
+  .offer-content {
+    img {
+      border-radius: 8px 8px 0 0;
+      max-width: 100%;
+    }
+
+    a {
+      color: $link-color;
+      display: inline-block;
+      font-size: toRem(18);
+      font-weight: 700;
+      line-height: toRem(20);
+      margin-top: 2px;
+      width: 100%;
+
+      &:hover,
+      &:focus {
+        color: $link-hover-color;
+        text-decoration: none;
+      }
+    }
+
+    label {
+      color: $gray-primary;
+      font-size: toRem(14);
+      font-weight: 500;
+      line-height: toRem(15);
+      margin-bottom: 0;
+      text-transform: uppercase;
+
+      @include respond-to-max($desktop) {
+        font-size: toRem(12);
+        line-height: toRem(13);
+        margin-top: 5px;
+      }
+    }
+  }
+
+  .slider-offer {
+    .small-tiles {
+      .row {
+        display: block;
+        @include respond-to-min($desktop-wide-xl) {
+          .cmp-image__image {
+            max-height: toRem(150);
+          }
+        }
+      }
+    }
+  }
+
+  .single-offer-row {
+    img {
+      border-radius: 8px 8px 0 0;
+      margin-bottom: 14px;
+      max-width: toRem(384);
+      width: 100%;
+    }
+
+    .offer-txt {
+      a {
+        color: $link-color;
+        display: inline-block;
+        font-size: toRem(23);
+        font-weight: 700;
+        line-height: toRem(26);
+        width: 100%;
+
+        @include respond-to-max($desktop) {
+          font-size: toRem(18);
+          line-height: toRem(20);
+        }
+
+        &:hover,
+        &:focus {
+          color: $link-hover-color;
+          text-decoration: none;
+        }
+      }
+
+      label {
+        color: $gray-primary;
+        display: block;
+        font-size: toRem(14);
+        font-weight: 500;
+        line-height: toRem(15);
+        margin-bottom: 0;
+        margin-top: 15px;
+        text-transform: uppercase;
+
+        @include respond-to-max($desktop) {
+          font-size: toRem(12);
+          line-height: toRem(13);
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+
+  .action-head {
+    &::after {
+      margin-bottom: 15px !important;
+    }
+
+    h2 {
+      color: $black-grey;
+      float: left;
+      line-height: toRem(54);
+      margin: 0;
+
+      @include respond-to-max($desktop) {
+        font-size: toRem(40);
+        line-height: toRem(48);
+      }
+    }
+  }
+
+  .btn {
+    float: right;
+
+    @extend .btn;
+  }
+
+  .slider-offer {
+    .action-footer {
+      margin-top: 25px !important;
+    }
+  }
+
+  .cmp-image__image {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .slider-alloffers {
+    .no-swap-desktop-offers {
+      float: left;
+      margin-bottom: 40px;
+      margin-right: 2%;
+      width: 32%;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+
+      @include respond-to-max($desktop) {
+        margin-right: 2%;
+        width: 49%;
+
+        &:nth-child(3n) {
+          margin-right: 2%;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+      }
+
+      @include respond-to-max($phone) {
+        margin-right: 0;
+        width: 100%;
+
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        &:nth-child(2n) {
+          margin-right: 0;
+        }
+
+        .single-offer-row {
+          img {
+            margin-bottom: 10px;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .all-offers {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  @include respond-to-min($tablet) {
+    .col-sm-6 {
+      width: 50%;
+    }
+  }
+
+  @include respond-to-min($desktop-wide-xl) {
+    .col-lg-4 {
+      width: 33.33333333%;
+    }
+
+    .col-lg-5 {
+      width: 41.66666667%;
+    }
+
+    .col-lg-7 {
+      width: 58.33333333%;
+    }
+  }
+}
+
+.bgoffers_blurb {
+  position: relative;
+  top: 40px;
+
+  @include respond-to-min($tablet) {
+    top: 30px;
+  }
+
+  .cmp-container {
+    background: url("../resources/images/img-oval_tcm451-117037.png") 0 0 no-repeat;
+    background-size: contain;
+    height: 444px;
+    position: absolute;
+    right: 40px;
+    width: 453px;
+    z-index: 10;
+
+    @include respond-to-max($desktop) {
+      height: toRem(309);
+      right: toRem(38);
+      top: toRem(-65);
+      width: toRem(316);
+    }
+
+    @include respond-to-max($phone) {
+      left: 0;
+      right: 0;
+      top: toRem(144);
+    }
+
+    @include respond-to-min-max($desktop-wide, $desktop) {
+      height: toRem(413);
+      right: toRem(66);
+      top: toRem(10);
+      width: toRem(422);
+    }
+
+    @include respond-to-min($desktop-wide) {
+      right: toRem(260);
+      top: toRem(-30);
+      width: toRem(422);
+    }
+
+    .text {
+      height: 460px;
+      position: relative;
+      width: 450px;
+
+      @include respond-to-max($phone) {
+        width: 315px;
+      }
+
+      .cmp-text {
+        color: $white;
+        position: absolute;
+
+        @include respond-to-max($desktop) {
+          left: toRem(40);
+          top: toRem(62);
+          width: toRem(250);
+        }
+
+        @include respond-to-min($desktop) {
+          left: toRem(50);
+          top: toRem(125);
+          width: toRem(340);
+        }
+
+        @include respond-to-min($desktop-wide) {
+          left: 60px;
+          top: 140px;
+          width: 350px;
+        }
+
+        h3 {
+          color: $white !important;
+          font-family: Bariol, GE SS Two, Arial, sans-serif;
+          font-size: toRem(32);
+          font-weight: 500;
+          line-height: toRem(44);
+
+          @include respond-to-min($desktop) {
+            font-size: toRem(40);
+            margin-bottom: toRem(10);
+          }
+
+          @include respond-to-max($tablet) {
+            line-height: toRem(35);
+            margin-bottom: toRem(13);
+          }
+        }
+
+        p {
+          color: $white;
+          font-family: Bariol, GE SS Two, Arial, sans-serif;
+          font-size: toRem(24);
+          font-weight: 500;
+          line-height: toRem(34);
+
+          @include respond-to-max($tablet) {
+            font-size: $font20;
+          }
+        }
+      }
+    }
+  }
+}

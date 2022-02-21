@@ -1,0 +1,234 @@
+// arabic
+.cmp_tabs--text {
+  p {
+    @include rtlBlock() {
+      text-align: left;
+    }
+  }
+
+  &.bgpattern {
+    background: linear-gradient(225deg, $white 0%, $white 100%);
+
+    &::after,
+    &::before {
+      left: 0;
+      right: auto;
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.basicpage .cmp_tabs--text {
+  border-radius: toRem(8);
+  box-shadow: 0 toRem(5) toRem(10) 0 rgb(0 0 0 / 10%);
+  margin-bottom: toRem(16);
+  padding: toRem(51.8) toRem(51.8) toRem(35.48) !important;
+  position: relative;
+
+  @include respond-to-max($desktop) {
+    padding: toRem(28.8);
+  }
+
+  @include respond-to-max($tablet) {
+    padding: toRem(1);
+  }
+
+  h2 {
+    color: $almost-black;
+    font-size: $font20;
+    line-height: toRem(28);
+    margin-top: toRem(5);
+
+    @include respond-to-min($desktop) {
+      line-height: 1.4;
+    }
+  }
+
+  .cmp-text h5 {
+    color: $steel-grey;
+    font-size: $font12;
+    line-height: toRem(12);
+    margin: 0;
+
+    @include font-family-lato;
+  }
+
+  h6 {
+    color: $grey-bg;
+    font-size: $font12;
+    letter-spacing: toRem(4);
+    line-height: toRem(12);
+    margin-bottom: 0;
+    margin-top: 0;
+    text-transform: uppercase;
+
+    @include font-family-lato;
+  }
+
+  p.cmp-link__text:first-child {
+    font-size: $font12;
+
+    @include respond-to-min($tablet) {
+      font-size: $font14;
+    }
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .cmp-link__text {
+    align-items: center;
+    color: $main-green;
+    display: flex;
+    font-size: $font14;
+    letter-spacing: toRem(2);
+    line-height: toRem(20);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @include respond-to-min($desktop) {
+      margin-top: toRem(10);
+    }
+
+    @include respond-to-max($tablet) {
+      font-size: $font12;
+    }
+  }
+
+  p {
+    font-size: $font14;
+    margin-right: toRem(17);
+    position: static;
+    right: 0;
+    text-align: right;
+    top: 0;
+    z-index: 1;
+
+    @include respond-to-max($desktop) {
+      margin-bottom: toRem(10);
+      margin-right: 0;
+      position: static;
+      text-align: left;
+    }
+  }
+
+  svg {
+    margin-left: toRem(3.7);
+    position: relative;
+    top: toRem(-4);
+    width: toRem(14);
+
+    @include respond-to-min($desktop) {
+      top: 0;
+    }
+  }
+}
+
+// tab with carosol on desktop
+.product-grid-single {
+  padding: toRem(1.5) 0;
+
+  @include respond-to-min($desktop) {
+    padding: toRem(40) toRem(16);
+
+    .col-md-3 {
+      width: 26%;
+    }
+
+    .col-md-9 {
+      width: 74%;
+    }
+
+    .promotions-title-wrap {
+      padding-top: toRem(28);
+    }
+  }
+
+  h3 {
+    margin-bottom: toRem(24);
+  }
+
+  .product-grid-single .next,
+  .product-grid-single .prev {
+    cursor: pointer;
+    float: left;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    width: toRem(54) !important;
+  }
+
+  .controls {
+    display: none;
+
+    @include respond-to-min($desktop) {
+      display: block;
+      position: absolute;
+    }
+
+    .prev,
+    .next {
+      align-items: center;
+      display: flex;
+      height: toRem(48);
+      justify-content: center;
+      width: toRem(48);
+
+      &.swiper-button-disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+      }
+    }
+  }
+
+  .swiper-slide {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.product-grid-single .next svg,
+.product-grid-single .prev svg {
+  height: 1rem;
+  stroke: $almost-black;
+  width: 1rem;
+}
+
+.product-grid-single .next.swiper-button-disabled svg,
+.product-grid-single .prev.swiper-button-disabled svg {
+  stroke: $gray;
+}
+
+@include respond-to-max($tablet) {
+  .product-promotions-wrraper {
+    .swiper-slide {
+      padding-left: toRem(12);
+      padding-right: toRem(12);
+    }
+  }
+}
+
+// *************************************
+// accessibility black and blue
+// *************************************
+.acc-black,
+.acc-blue {
+  .basicpage {
+    .cmp_tabs--text {
+      box-shadow: 0 toRem(5) toRem(10) 0 rgb(255 255 255 / 10%);
+    }
+  }
+}
+
+// *************************************
+// accessibility black and blue
+// *************************************
+.acc-yellow {
+  .basicpage {
+    .cmp_tabs--text {
+      box-shadow: 0 toRem(5) toRem(10) 0 rgb(255 255 0 / 10%);
+    }
+  }
+}

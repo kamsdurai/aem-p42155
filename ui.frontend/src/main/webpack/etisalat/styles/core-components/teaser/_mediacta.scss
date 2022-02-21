@@ -1,0 +1,63 @@
+.cmp-nobg__teaser {
+  .cmp-teaser {
+    &__action-container {
+      border: 1px solid $darkest-night;
+      border-radius: toRem(4);
+      border-width: toRem(1);
+      float: right;
+      margin-top: toRem(-35);
+      min-width: toRem(180);
+      padding: toRem(10);
+      width: auto;
+
+      a {
+        color: $almost-black;
+        font-size: $font16;
+        line-height: 1.3;
+
+        @include respond-to-max($desktop) {
+          font-size: $font34;
+          letter-spacing: toRem(2.2);
+          text-align: center;
+          text-transform: uppercase;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover {
+          background-color: $white;
+          box-shadow: none;
+          color: $arrow-border-green;
+
+          .cmp-teaser__action-container {
+            border-color: $arrow-border-green;
+          }
+        }
+      }
+    }
+
+    &__container .cmp-teaser {
+      padding: toRem(48);
+    }
+
+    &__title {
+      font-size: $font28;
+
+      @include respond-to-max($desktop) {
+        font-size: $font32;
+      }
+    }
+
+    &__description p {
+      color: $gray-text-color;
+      font-size: $font16;
+      line-height: toRem(20);
+      margin-top: toRem(16);
+
+      @include respond-to-max($desktop) {
+        font-size: $font14;
+        margin-top: toRem(24);
+        width: 70%;
+      }
+    }
+  }
+}

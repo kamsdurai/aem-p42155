@@ -1,0 +1,105 @@
+.backToTop {
+  @include font-family-lato;
+
+  @include respond-to-max($tablet) {
+      
+    svg {
+      display: block;
+      float: left;
+      height: toRem(12);
+      margin-top: toRem(2);
+    }
+
+    & > g {
+      stroke-width: 2;
+    }
+
+    & .cmp-button--secondary {
+      & .space-top {
+        color: $white;
+        float: left;
+        font-size: .755rem;
+        line-height: 1rem;
+        margin-top: .1rem;
+      }
+    }
+  }
+
+  & a {
+    background-color: $green-btn;
+    border-radius: toRem(8);
+    bottom: toRem(30);
+    display: inline-block;
+    height: toRem(97);
+    opacity: 0;
+    padding: 1rem;
+    position: fixed;
+    right: 0;
+    right: toRem(30);
+    text-align: center;
+    visibility: hidden;
+    width: toRem(82);
+    z-index: 1000;
+
+    @include respond-to-max($tablet) {
+      display: block;
+      float: left;
+      height: toRem(32);
+      padding: .5rem;
+      right: 1rem;
+      width: toRem(130);
+    }
+
+    @include rtlBlock() {
+      left: toRem(26);
+      right: auto;
+    } 
+
+    &.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  & .cmp-button--secondary {
+    background-color: transparent;
+    border: none;
+    color: $white;
+    display: block;
+    font-size: $font12pt;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 1rem;
+    padding: 0;
+
+    .space-top {
+      margin-top: toRem(4);
+      color: $white;
+      font-size: toRem(12.08);
+      line-height: toRem(16);
+
+      @include respond-to-max($tablet){
+        margin-top: toRem(1);
+      }
+    }
+
+    &:hover, &:focus {
+      background-color: transparent;
+      color: $white;
+    }
+  }
+
+
+
+
+  [lang="ar"] [dir="rtl"] .backToTop {
+    & a {
+      left: toRem(30);
+      right: auto;
+    }
+  }
+}

@@ -1,0 +1,134 @@
+//class for image on the top for mobile and ipad
+@include respond-to-max($tablet) {
+  .media-cta-flipped .aem-Grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.media-cta-wrapper {
+  border-radius: 4px;
+  box-shadow: 0 5px 10px 0 rgb(0 0 0 / 10%);
+  min-height: 150px;
+  padding: 0 !important;
+  position: relative;
+
+  @include respond-to-min($tablet) {
+    display: block;
+    min-height: auto;
+  }
+
+  h4 {
+    color: $almost-black;
+    font-size: $font18;
+    font-weight: 700;
+    margin-bottom: 1rem;
+
+    @include respond-to-max($tablet) {
+      @include font-family-lato();
+    }
+
+    @include respond-to-min($desktop) {
+      font-size: $font26;
+      font-weight: normal;
+      margin-bottom: 1.4rem;
+      margin-top: 0;
+    }
+  }
+
+  .text {
+    @include respond-to-min($desktop) {
+      padding: 1.5rem 4rem 2.5rem 1.5rem;
+    }
+
+    @include respond-to-max($tablet) {
+      padding: 1rem 1rem 4rem;
+    }
+
+    ul {
+      padding-left: 1rem;
+
+      li {
+        color: $gray-fill;
+        font-size: $font14;
+        line-height: 20px;
+        margin: 0 0 4px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .cmp-text {
+    p {
+      color: $paracolor;
+      font-size: $font14;
+      line-height: 19px;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  p + p {
+    margin-top: 1rem;
+  }
+
+  .video {
+    height: inherit;
+    max-height: inherit;
+    min-height: inherit;
+    position: inherit;
+    top: inherit;
+  }
+
+  .cover-image__with-play-icon {
+    padding-left: 24px;
+
+    @include rtl(padding-left, 24px, 0);
+
+    @include respond-to-max($tablet) {
+      padding-left: 12px;
+    }
+
+    @include respond-to-max($phone) {
+      height: 240px;
+    }
+
+    img {
+      @include respond-to-max($phone) {
+        left: 50%;
+        margin-left: -275px;
+        position: absolute;
+        width: 550px;
+      }
+    }
+  }
+
+  .media-cta-image {
+    @include respond-to-max($phone) {
+      height: 240px;
+      overflow: hidden;
+      position: relative;
+    }
+  }
+
+  .cover-image__with-play-btn-icon {
+    max-height: 260px;
+    overflow: hidden;
+    position: relative;
+
+    @include rtl(margin-left, -13px, 0);
+  }
+
+  .cmp-container {
+    & > div {
+      @include rtlBlock() {
+        display: flex;
+      }
+    }
+
+    .text {
+      @include rtlBlock() {
+        padding-right: $padding-step-3;
+      }
+    }
+  }
+}

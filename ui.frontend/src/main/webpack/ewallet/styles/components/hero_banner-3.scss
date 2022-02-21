@@ -1,0 +1,22 @@
+div.cover {
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+
+  // .cmp-image__image {
+  // 	width: auto;
+  // }
+}
+
+video.cover,
+img.cover {
+  bottom: -9999px;
+  left: -9999px;
+  margin: auto;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  right: -9999px;
+  top: -9999px;
+}

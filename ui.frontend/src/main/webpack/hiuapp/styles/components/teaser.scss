@@ -1,0 +1,104 @@
+.section-banner {
+  padding: 0;
+  @include respond-to-min($desktop) {
+  }
+  .container {
+    padding: 0;
+  }
+  .hiuapp_pink-rotate-bg {
+    min-height: 1000px;
+    background-size: cover;
+    height: 1000px;
+    padding: 0 15px;
+    background-position: bottom center;
+    background-image: -webkit-linear-gradient(
+      -80deg,
+      $pink-color 60%,
+      $white 35%
+    );
+    @include respond-to-min($desktop) {
+      min-height: 900px;
+      padding: 0 30px;
+    }
+
+    @include respond-to-max($tablet) {
+      background-image: -webkit-linear-gradient(
+        -70deg,
+        $pink-color 70%,
+        $white 30%
+      );
+    }
+    @include respond-to-max($phone) {
+      background-image: -webkit-linear-gradient(
+        -74deg,
+        $pink-color 80%,
+        $white 20%
+      );
+      height: 900px;
+      min-height: 900px;
+    }
+    > .cmp-container:nth-child(1) {
+      padding: 0;
+      @extend .container-block;
+    }
+
+    .teaser {
+      position: relative;
+      &.hiuapp_home {
+        @include respond-to-min($tablet) {
+          top: 330px;
+        }
+        @include respond-to-max($tablet) {
+          top: 230px;
+        }
+        @include respond-to-max($phone) {
+          top: 150px;
+        }
+      }
+      .cmp-teaser {
+        position: relative;
+        left: 0;
+        padding: 0;
+
+        .cmp-teaser__content p {
+          padding: 0;
+          line-height: toRem(23);
+          color: $white;
+          font-weight: 300;
+          margin-top: toRem(10);
+          margin-bottom: 1rem;
+        }
+
+        h1 {
+          font-size: toRem(42);
+          @include respond-to-min($tablet) {
+            font-size: toRem(60);
+          }
+        }
+
+        .cmp-teaser__action-container {
+          @include respond-to-max($tablet) {
+            margin-top: 20px;
+          }
+        }
+
+        .cmp-teaser__action-link {
+          @extend .btn;
+        }
+      }
+    }
+    .cmp_img {
+      position: relative;
+      top: 330px;
+      @include respond-to-max($desktop-wide) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-device-width: $desktop-wide) and (orientation: landscape) {
+  .hiuapp_pink-rotate-bg .cmp-image {
+    display: none;
+  }
+}

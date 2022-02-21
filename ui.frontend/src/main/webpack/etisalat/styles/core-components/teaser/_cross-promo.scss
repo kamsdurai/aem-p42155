@@ -1,0 +1,1134 @@
+/* stylelint-disable selector-max-compound-selectors */
+/* stylelint-disable selector-pseudo-element-colon-notation */
+/* stylelint-disable max-nesting-depth */
+/* stylelint-disable order/properties-alphabetical-order */
+/* stylelint-disable no-descending-specificity */
+.carrers-feature {
+  .image-right .cmp-teaser__content {
+    @include respond-to-min($desktop) {
+      padding-left: 0;
+    }
+  }
+
+  .tile-teaser {
+    .cmp-teaser__image {
+      min-width: auto;
+      width: auto;
+
+      .cmp-image__image {
+        min-height: auto;
+      }
+    }
+
+    .cmp-teaser__content {
+      padding-bottom: toRem(32);
+
+      @include respond-to-min($tablet) {
+        padding-right: toRem(16);
+        min-height: toRem(438);
+
+        @include rtlBlock() {
+          padding-right: 0;
+        }
+      }
+
+      @include respond-to-min($desktop) {
+        width: 50% !important;
+        padding-right: toRem(80);
+        padding-top: toRem(64) !important;
+        padding-bottom: toRem(0) !important;
+      }
+    }
+
+    .cmp-teaser__action-container {
+      @include respond-to-max($phone) {
+        margin-left: toRem(176) !important;
+      }
+
+      @include respond-to-max($tablet) {
+        margin-left: toRem(240);
+      }
+    }
+  }
+}
+
+.teaser--pattern__bg.link__arrow {
+  a {
+    @include rtlBlock {
+      @include font-family-Neotech;
+    }
+  }
+}
+
+.text-width-100 {
+  .cmp-teaser {
+    &__content {
+      width: 100% !important;
+    }
+  }
+}
+
+// cross promo banner st
+.cross-promotion-plain {
+  border-radius: toRem(8);
+  position: relative;
+
+  .cmp-teaser {
+    border-radius: toRem(8);
+
+    @include respond-to-min($desktop) {
+      flex-direction: row;
+      padding: toRem(48);
+    }
+
+    @include respond-to-max($desktop) {
+      padding: toRem(24) toRem(16);
+    }
+
+    @include respond-to-max($phone) {
+      padding: toRem(16);
+    }
+
+    &__title {
+      font-size: $font24;
+      line-height: toRem(34);
+      margin: 0 0 1.5rem;
+
+      @include respond-to-max($tablet) {
+        font-size: $font22;
+      }
+    }
+
+    &__description {
+      width: 100%;
+
+      h4 {
+        font-size: $font28;
+        margin-top: 0;
+
+        @include respond-to-max($tablet) {
+          font-size: $font24;
+        }
+      }
+
+      p {
+        font-size: $font16;
+        line-height: 1.5;
+
+        @include font-family-lato;
+
+        @include respond-to-max($desktop) {
+          font-size: $font14;
+          margin-bottom: 1.5rem;
+        }
+      }
+
+      a.cmp-teaser__title-link {
+        font-size: $font24;
+        margin-bottom: toRem(16);
+        margin-top: 0;
+      }
+    }
+
+    &__content {
+      display: block;
+      width: 100%;
+
+      @include respond-to-max($tablet) {
+        display: flex;
+        flex-direction: column;
+      }
+
+      @include respond-to-min($desktop) {
+        width: 50%;
+      }
+
+      @include respond-to-min($desktop-wide) {
+        width: 33%;
+      }
+    }
+
+    &__action-container {
+      position: absolute;
+      right: toRem(102);
+      z-index: 2;
+
+      @include respond-to-max($tablet) {
+        min-width: 100%;
+        position: relative;
+        right: 0;
+        width: 100%;
+      }
+
+      @include rtlBlock {
+        left: 6.375rem;
+        margin-right: 0;
+        right: auto;
+
+        @include respond-to-max($tablet) {
+          left: 0;
+        }
+      }
+
+      &::after {
+        clear: both;
+      }
+    }
+
+    &::before,
+    &::after {
+      background: url("../resources/images/promo_pattern_top.svg") left 0 no-repeat;
+      background-size: contain;
+      content: "";
+      height: 100%;
+      left: 0;
+      opacity: 0.4;
+      position: absolute;
+      top: 0;
+      width: 100%;
+    }
+
+    &::before {
+      @include respond-to-max($phone) {
+        display: none;
+      }
+    }
+
+    &::after {
+      content: "";
+      left: 0;
+      right: auto;
+    }
+
+    * {
+      color: $white;
+    }
+  }
+
+  &.cmp-teaser--default-bg {
+    background: get-background-gredient(default-bg);
+
+    *,
+    a {
+      color: $dark-gray;
+    }
+  }
+
+  &.link__arrow {
+    .cmp-teaser__action-container {
+      @include respond-to-min($desktop) {
+        height: toRem(20);
+        margin-top: toRem(-10);
+        top: 50%;
+      }
+
+      @include respond-to-max($desktop) {
+        position: relative;
+        right: 0;
+      }
+
+      &::after {
+        @include respond-to-max($desktop) {
+          right: auto !important;
+        }
+      }
+    }
+  }
+
+  &.button--transparent,
+  &.button--secondary,
+  &.button--primary {
+    .cmp-teaser__action-container {
+      @include respond-to-min($desktop) {
+        height: toRem(50);
+        margin-top: toRem(-25);
+        top: 50%;
+        width: 280px;
+      }
+
+      @include respond-to-max($desktop) {
+        position: relative;
+        right: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+// cross-promo en
+
+// cross promo full bleed st
+.tile-teaser {
+  // clear: both !important;
+  // left: 50%;
+  // margin-left: -50vw;
+  // position: relative;
+  // width: 100vw !important;
+
+  .cmp-teaser {
+    margin: 0 auto;
+    padding: 0 16px;
+    width: 100%;
+
+    @include respond-to-min($tablet) {
+      padding: 0 12px;
+      width: toRem(756);
+
+      @include rtlBlock {
+        padding: 0 12px;
+      }
+    }
+
+    @include respond-to-min($desktop) {
+      padding: 0 toRem(12);
+      width: toRem(976);
+    }
+
+    @include respond-to-min($desktop-wide) {
+      width: toRem(1224);
+    }
+
+    &__title {
+      font-size: $font32;
+      line-height: toRem(40);
+      margin: 0 0 toRem(24) 0;
+
+      @include respond-to-max($tablet) {
+        font-size: $font28;
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__image {
+      position: relative;
+
+      @include respond-to-min($desktop) {
+        min-height: toRem(426);
+        min-width: toRem(476);
+        width: toRem(476);
+      }
+
+      @include respond-to-min($desktop-wide) {
+        min-width: toRem(690);
+        width: toRem(690);
+      }
+
+      .cmp-image__image {
+        min-height: toRem(170);
+
+        @include respond-to-min($tablet) {
+          min-height: toRem(408);
+        }
+
+        @include respond-to-min($desktop) {
+          bottom: toRem(-9999);
+          left: toRem(-9999);
+          margin: auto;
+          min-height: 100%;
+          min-width: 100%;
+          position: absolute;
+          right: toRem(-9999);
+          top: toRem(-9999);
+        }
+      }
+    }
+
+    &__content {
+      padding: 1rem 0 1.5rem;
+      position: relative;
+      width: 100%;
+
+      @include respond-to-min($desktop) {
+        height: auto;
+        padding: toRem(64) 0;
+        width: 50%;
+      }
+
+      @include respond-to-max($tablet) {
+        width: 100%;
+      }
+
+      &__pretitle {
+        color: $white;
+        display: inline-block;
+        font-size: $font14;
+        font-weight: 700;
+        letter-spacing: toRem(4);
+        line-height: toRem(20);
+        margin-bottom: toRem(4);
+        text-transform: uppercase;
+
+        @include font-family-lato;
+
+        @include respond-to-max($tablet) {
+          font-size: $font12;
+        }
+      }
+    }
+
+    &__description {
+      color: $white;
+      font-size: $font16;
+      line-height: toRem(26);
+      width: 100%;
+
+      a {
+        color: $white;
+        font-size: $font32;
+        line-height: toRem(40);
+        margin-bottom: 1.5rem;
+        margin-top: 0;
+
+        @include respond-to-max($tablet) {
+          font-size: $font28;
+          margin-bottom: 1rem;
+        }
+      }
+
+      p {
+        font-size: $font14;
+        line-height: 1.5rem;
+        margin-bottom: 0.75rem;
+
+        @include font-family-lato;
+
+        @include respond-to-min($desktop) {
+          font-size: $font16;
+        }
+      }
+
+      ul {
+        list-style-type: none;
+        padding: toRem(32) 0 toRem(16) toRem(16);
+        position: relative;
+
+        @include respond-to-min($desktop) {
+          padding: toRem(16) 0 0 toRem(16);
+        }
+
+        @include respond-to-max($tablet) {
+          padding: toRem(12) toRem(16) 0;
+        }
+
+        li {
+          color: $white;
+          font-size: $font16;
+          line-height: toRem(24);
+          margin-bottom: toRem(4);
+          padding-left: 1.5rem;
+          position: relative;
+
+          @include font-family-lato;
+
+          @include respond-to-max($tablet) {
+            font-size: $font14;
+            line-height: toRem(20);
+          }
+
+          @include rtlBlock {
+            font-weight: 300;
+            padding-right: 1.5rem;
+          }
+
+          &::before {
+            background-color: $steel-grey;
+            border-radius: 50%;
+            content: "";
+            display: block;
+            height: toRem(4);
+            left: 0;
+            position: absolute;
+            top: toRem(10);
+            width: toRem(4);
+
+            @include rtlBlock {
+              left: auto;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &__action-container {
+      border: 1px solid $white;
+      border-radius: toRem(4);
+      box-sizing: inherit;
+      cursor: pointer;
+      display: table;
+      font-size: $font14;
+      letter-spacing: toRem(2);
+      line-height: toRem(48);
+      margin: 24px 0;
+      padding: 0 toRem(12);
+      position: relative !important;
+      text-transform: uppercase;
+      white-space: nowrap;
+
+      @include font-family-lato;
+
+      a {
+        color: $white;
+      }
+
+      @include rtlBlock {
+        left: auto;
+        margin-right: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .image-right .cmp-teaser {
+    margin: 0;
+  }
+
+  .image-right {
+    margin-right: 1.5rem;
+
+    @include respond-to-max($tablet) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .cmp-teaser__image {
+      width: 100%;
+
+      @include respond-to-max($tablet) {
+        width: 100%;
+      }
+
+      @include respond-to-min($desktop) {
+        position: relative;
+        width: 60%;
+      }
+
+      img {
+        height: auto;
+        max-width: 100%;
+
+        @include respond-to-max($tablet) {
+          max-width: 100%;
+          position: inherit;
+        }
+
+        @include respond-to-min($desktop) {
+          height: 100%;
+          position: absolute;
+          z-index: 2;
+        }
+      }
+    }
+  }
+
+  .image-left {
+    margin-left: 1rem;
+
+    @include respond-to-max($tablet) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .cmp-teaser__image {
+      width: 100%;
+
+      @include respond-to-min($desktop) {
+        position: relative;
+        width: 60%;
+      }
+
+      @include respond-to-max($tablet) {
+        width: 100%;
+      }
+
+      img {
+        height: auto;
+        max-width: 100%;
+
+        @include respond-to-max($tablet) {
+          max-width: 100%;
+          position: inherit;
+        }
+
+        @include respond-to-min($desktop) {
+          height: 100%;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  .link__arrow {
+    .cmp-teaser__action-container {
+      @include respond-to-min($desktop) {
+        bottom: 0 !important;
+        margin-top: 0 !important;
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+
+  &.button--primary,
+  &.button--transparent,
+  &.button--secondary {
+    .cmp-teaser__action-container {
+      @include respond-to-min($tablet) {
+        max-width: toRem(180);
+        min-width: toRem(180);
+        width: toRem(180);
+      }
+    }
+  }
+
+  * {
+    color: $white;
+  }
+
+  &.teaser--pattern__bg {
+    .cmp-teaser {
+      align-items: flex-end;
+      display: flex;
+      flex-direction: column-reverse;
+
+      @include respond-to-min($tablet) {
+        align-items: flex-end;
+        flex-direction: row-reverse;
+      }
+
+      @include respond-to-min($desktop) {
+        flex-direction: row-reverse;
+      }
+
+      &__image {
+        display: flex;
+        flex-direction: column-reverse;
+      }
+
+      p {
+        font-size: $font16;
+      }
+
+      .cmp-image__image {
+        left: inherit;
+        position: inherit;
+        right: inherit;
+        top: inherit;
+      }
+
+      &__title {
+        margin-top: 50px;
+
+        @include respond-to-max($tablet) {
+          font-size: $font26;
+        }
+      }
+
+      &__content {
+        padding-top: 0;
+
+        @include respond-to-min($tablet) {
+          padding-bottom: 9rem;
+          width: 70%;
+        }
+
+        @include respond-to-min($desktop) {
+          padding-bottom: 7rem;
+        }
+
+        @include respond-to-min($desktop-wide) {
+          padding-bottom: 12rem;
+        }
+      }
+
+      &__action-container {
+        @include respond-to-max($tablet) {
+          float: right;
+          font-size: $font16;
+          font-weight: get-font-weight("bold");
+          letter-spacing: 0;
+          text-transform: inherit;
+
+          &::after {
+            border-width: 0 2px 2px 0;
+          }
+        }
+
+        @include respond-to-max($phone) {
+          margin-bottom: 0;
+          margin-top: 0.8rem;
+        }
+      }
+    }
+  }
+}
+
+// cross promo full bleed en
+
+// teaser background pattern
+.teaser--pattern__bg {
+  flex: 1 1 auto;
+  position: relative;
+
+  &::after,
+  &::before {
+    background: url("../resources/images/promo_pattern_top.svg") left 0 no-repeat;
+    background-size: contain;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    left: 0;
+    right: auto;
+    transform: scaleX(-1);
+  }
+}
+
+.cmp-teaser--default-bg.cross-promotion-plain {
+  .cmp-teaser__action-container {
+    border: 1px solid $dark-gray;
+    width: toRem(282) !important;
+
+    @include secondary-button;
+
+    a {
+      color: $dark-gray;
+    }
+  }
+}
+
+@include respond-to-min($desktop) {
+  .tile-teaser.image-right {
+    .cmp-teaser__image {
+      margin-left: toRem(24);
+
+      @include rtlBlock {
+        margin-left: 0;
+        margin-right: toRem(24);
+      }
+    }
+  }
+
+  .tile-teaser.image-left {
+    .cmp-teaser__image {
+      margin-right: toRem(24);
+
+      @include rtlBlock {
+        margin-left: toRem(24);
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+$prefix: "cmp-teaser";
+
+.cmp-teaser--multicol {
+  @include respond-to-min($desktop) {
+    .aem-Grid .aem-GridColumn {
+      &:first-child {
+        padding-left: 0;
+      }
+
+      &:last-child {
+        padding-right: 0;
+      }
+    }
+  }
+
+  @include respond-to-max($tablet) {
+    .cross-promotion-plain {
+      padding: 0;
+    }
+  }
+  .#{$prefix}--purpal-bg {
+    background: none;
+  }
+  .#{$prefix}--purpal-bg .#{$prefix} {
+    background: get-background-gredient(purpal-bg);
+  }
+  .#{$prefix}--green-bg {
+    background: none;
+  }
+  .#{$prefix}--green-bg .#{$prefix} {
+    background: get-background-gredient(green-bg);
+  }
+  .#{$prefix}--orange-bg {
+    background: none;
+  }
+  .#{$prefix}--orange-bg .#{$prefix} {
+    background: get-background-gredient(orange-bg);
+  }
+  .#{$prefix}--aqua-green-bg {
+    background: none;
+  }
+  .#{$prefix}--aqua-green-bg .#{$prefix} {
+    background: get-background-gredient(aqua-green-bg);
+  }
+  .#{$prefix}--aqua-bg {
+    background: none;
+  }
+  .#{$prefix}--aqua-bg .#{$prefix} {
+    background: get-background-gredient(aqua-bg);
+  }
+
+  .cmp-teaser {
+    position: relative;
+
+    @include respond-to-min($tablet) {
+      padding: toRem(24) toRem(16) toRem(16) toRem(16);
+    }
+
+    @include respond-to-min($desktop) {
+      padding: toRem(32);
+    }
+
+    @include respond-to-min($tablet) {
+      &__content {
+        width: 100%;
+      }
+    }
+
+    &__content {
+      width: 100%;
+
+      @include rtlBlock {
+        width: 100%;
+      }
+    }
+
+    &__action-container {
+      margin-top: 0 !important;
+      max-width: 100%;
+      position: relative;
+      right: 0;
+      top: auto !important;
+
+      @include rtlBlock {
+        left: 0;
+        margin-right: 0;
+        position: relative;
+        right: auto;
+      }
+    }
+
+    &::after {
+      transform: scaleX(-1);
+    }
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .link__arrow {
+    .cmp-teaser__action-container {
+      position: relative;
+    }
+  }
+
+  .button--primary,
+  .button--transparent,
+  .button--secondary {
+    .cmp-teaser__action-container {
+      @include respond-to-min($desktop) {
+        max-width: toRem(240);
+        min-width: toRem(240);
+        width: toRem(240);
+      }
+    }
+  }
+}
+
+// *************************************
+// accessibility black
+// *************************************
+
+.acc-black {
+  .teaser,
+  .tile-teaser,
+  .cross-promotion-plain,
+  .cmp-teaser--mediacta-section,
+  .cmp-teaser--mediacta {
+    background: $black;
+
+    .cmp-teaser {
+      background: transparent;
+      border: toRem(1) solid $white;
+
+      .cmp-teaser__content {
+        .cmp-teaser__pretitle {
+          color: $white;
+        }
+
+        .cmp-teaser__title {
+          color: $white;
+        }
+
+        .cmp-teaser__description {
+          p,
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            color: $white;
+          }
+
+          ul,
+          ol {
+            li {
+              color: $white;
+
+              &:before {
+                background-color: $white;
+              }
+            }
+          }
+        }
+
+        .cmp-teaser__action-container {
+          .cmp-teaser__action-link {
+            color: $white;
+
+            &:after {
+              border-color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .button--transparent,
+  .button--primary,
+  .button--secondary {
+    .cmp-teaser__action-container {
+      background: transparent;
+      border: toRem(1) solid $white;
+      color: $white;
+
+      a {
+        color: $white;
+      }
+
+      &:hover {
+        background: transparent;
+        border: toRem(1) solid $white;
+      }
+    }
+  }
+
+  .tile-teaser {
+    border-top: toRem(1) solid $white;
+    border-bottom: toRem(1) solid $white;
+
+    .cmp-teaser {
+      border: none;
+    }
+  }
+}
+
+// *************************************
+// accessibility blue
+// *************************************
+.acc-blue {
+  .teaser,
+  .tile-teaser,
+  .cross-promotion-plain,
+  .cmp-teaser--mediacta-section,
+  .cmp-teaser--mediacta {
+    background: $blue4;
+
+    .cmp-teaser {
+      background: transparent;
+      border: toRem(1) solid $white;
+
+      .cmp-teaser__content {
+        .cmp-teaser__pretitle {
+          color: $white;
+        }
+
+        .cmp-teaser__title {
+          color: $white;
+        }
+
+        .cmp-teaser__description {
+          p,
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            color: $white;
+          }
+
+          ul,
+          ol {
+            li {
+              color: $white;
+
+              &:before {
+                background-color: $white;
+              }
+            }
+          }
+        }
+
+        .cmp-teaser__action-container {
+          .cmp-teaser__action-link {
+            color: $white;
+
+            &:after {
+              border-color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .button--transparent,
+  .button--primary,
+  .button--secondary {
+    .cmp-teaser__action-container {
+      background: transparent;
+      border: toRem(1) solid $white;
+      color: $white;
+
+      a {
+        color: $white;
+      }
+
+      &:hover {
+        background: transparent;
+        border: toRem(1) solid $white;
+      }
+    }
+  }
+
+  .tile-teaser {
+    border-top: toRem(1) solid $white;
+    border-bottom: toRem(1) solid $white;
+
+    .cmp-teaser {
+      border: none;
+    }
+  }
+}
+
+// *************************************
+// accessibility yellow
+// *************************************
+
+.acc-yellow {
+  .teaser,
+  .tile-teaser,
+  .cross-promotion-plain,
+  .cmp-teaser--mediacta-section,
+  .cmp-teaser--mediacta {
+    background: $black;
+
+    .cmp-teaser {
+      background: transparent;
+      border: toRem(1) solid $yellow-light;
+
+      .cmp-teaser__content {
+        .cmp-teaser__pretitle {
+          color: $yellow-light;
+        }
+
+        .cmp-teaser__title {
+          color: $yellow-light;
+        }
+
+        .cmp-teaser__description {
+          p,
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+            color: $yellow-light;
+          }
+
+          ul,
+          ol {
+            li {
+              color: $yellow-light;
+
+              &:before {
+                background-color: $yellow-light;
+              }
+            }
+          }
+        }
+
+        .cmp-teaser__action-container {
+          .cmp-teaser__action-link {
+            color: $yellow-light;
+
+            &:after {
+              border-color: $yellow-light;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .button--transparent,
+  .button--primary,
+  .button--secondary {
+    .cmp-teaser__action-container {
+      background: transparent;
+      border: toRem(1) solid $yellow-light !important;
+      color: $yellow-light;
+
+      a {
+        color: $yellow-light;
+      }
+
+      &:hover {
+        background: transparent;
+        border: toRem(1) solid $yellow-light;
+      }
+    }
+  }
+
+  .link__arrow {
+    .cmp-teaser__action-container {
+      color: $yellow-light;
+
+      a {
+        color: $yellow-light;
+      }
+
+      &:after {
+        border-color: $yellow-light;
+      }
+    }
+  }
+
+  .tile-teaser {
+    border-top: toRem(1) solid $yellow-light;
+    border-bottom: toRem(1) solid $yellow-light;
+
+    .cmp-teaser {
+      border: none;
+    }
+  }
+}
+
+// *************************************

@@ -1,0 +1,238 @@
+.etisalatbreadcrumb {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: $margin-step-0;
+
+  @include respond-to-max($phone) {
+    display: none;
+  }
+
+  @include respond-to-min-max($desktop-wide, $desktop + 1) {
+    width: toRem(976);
+  }
+
+  li {
+    color: $gray-fill;
+    display: inline-block;
+    font-size: $font12;
+    letter-spacing: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0.375rem 0;
+    text-transform: uppercase;
+
+    @include font-family-lato-withoutge();
+
+    @include rtlBlock {
+      @include font-family-Neotech-ge();
+    }
+
+    a {
+      color: $gray-fill;
+
+      &:hover {
+        color: $main-green;
+        text-decoration: underline;
+      }
+
+      @include rtlBlock() {
+        font-weight: get-font-weight("light");
+      }
+    }
+
+    &::after {
+      color: $gray;
+      content: ">\00a0";
+      cursor: none;
+      padding: 0 0.125rem;
+      text-decoration: none;
+    }
+
+    &:last-child {
+      &::after {
+        display: none;
+      }
+    }
+
+    &.active {
+      font-weight: get-font-weight("semibold");
+
+      @include rtlBlock {
+        font-weight: get-font-weight("semibold");
+      }
+    }
+  }
+}
+
+// starter-header
+.starter-header {
+  padding: toRem(24) toRem(20) !important;
+
+  @include respond-to-min($desktop) {
+    padding: toRem(24) toRem(14) !important;
+  }
+
+  // breadcrumb
+  /* stylelint-disable-next-line no-descending-specificity */
+  li {
+    letter-spacing: toRem(2);
+    line-height: toRem(15);
+    margin-right: calc(#{$margin-step-1}-5px);
+    padding-right: calc(#{$padding-step-1}-2px);
+    text-transform: uppercase;
+
+    @include font-family-lato;
+
+    @include rtlBlock() {
+      margin-left: calc(#{$margin-step-1}-5px);
+      margin-right: $margin-step-0;
+      padding-left: calc(#{$padding-step-1}-2px);
+      padding-right: $padding-step-0;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    &::after {
+      border: solid $arrow-border-green;
+      border-width: 0 $border-step-1 $border-step-1 0;
+      content: "";
+      display: inline-block;
+      padding: toRem(2.6);
+      position: absolute;
+      top: toRem(34);
+
+      @include rtl(transform, rotate(-45deg), rotate(135deg));
+    }
+
+    /* stylelint-disable-next-line no-descending-specificity */
+    a {
+      color: $main-green;
+
+      &:hover {
+        color: $main-green;
+        text-decoration: underline;
+      }
+    }
+
+    &.active {
+      font-weight: get-font-weight("regular");
+
+      @include rtlBlock {
+        font-weight: get-font-weight("regular");
+      }
+    }
+  }
+
+  h3 {
+    margin-bottom: $margin-step-0;
+  }
+
+  .old-price {
+    background-color: $orange;
+
+    @include respond-to-min($desktop) {
+      margin-left: toRem(22);
+      margin-right: $margin-step-0;
+
+      @include rtlBlock {
+        margin-left: $margin-step-0;
+        margin-right: toRem(22);
+      }
+    }
+  }
+
+  .secondary-header1 {
+    margin-top: $margin-step-1;
+  }
+
+  @include respond-to-min($desktop) {
+    .cmp-text {
+      h3 {
+        .text--orange_tag,
+        .text--green {
+          font-size: $font32;
+          line-height: toRem(40);
+          margin-left: toRem(22);
+          margin-top: toRem(8);
+
+          .body-copy4 {
+            margin-left: toRem(-15);
+          }
+        }
+      }
+
+      p {
+        .font--small {
+          font-size: $font14;
+          margin-top: toRem(2);
+        }
+      }
+    }
+  }
+
+  .cmp-button--width_100 {
+    margin-top: toRem(18);
+
+    @include respond-to-min($desktop-wide) {
+      margin-left: toRem(28);
+      min-width: toRem(180);
+      width: auto;
+    }
+
+    @include rtlBlock() {
+      width: 100%;
+    }
+  }
+
+  @include rtlBlock {
+    .text {
+      float: right !important;
+    }
+  }
+}
+
+// accessbility
+.acc-black,
+.acc-blue {
+  .etisalatbreadcrumb {
+    li {
+      color: $white;
+
+      a {
+        color: $white;
+
+        &:hover {
+          color: $white;
+        }
+      }
+
+      &::after {
+        color: $white;
+      }
+    }
+  }
+}
+
+.acc-yellow {
+  .etisalatbreadcrumb {
+    li {
+      color: $yellow-light;
+
+      /* stylelint-disable-next-line no-descending-specificity */
+      a {
+        color: $yellow-light;
+
+        &:hover {
+          color: $yellow-light;
+        }
+      }
+
+      &::after {
+        color: $yellow-light;
+      }
+    }
+  }
+}

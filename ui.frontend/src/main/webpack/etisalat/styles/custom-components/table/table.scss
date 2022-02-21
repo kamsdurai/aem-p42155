@@ -1,0 +1,2209 @@
+/* ----------------- tables ----------------- */
+.table-foot-note {
+  padding-left: 1rem;
+
+  p {
+    color: $steel-grey;
+    font-size: $font16;
+    line-height: 22px;
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  align-items: center;
+  display: flex;
+}
+
+.table-default-section {
+  .dataTables_wrapper {
+    .dataTables_info {
+      padding-left: 1rem;
+    }
+  }
+
+  .dataTables_wrapper + .table-foot-note {
+    margin-top: 4rem;
+  }
+
+  .custom-datatable {
+    .see-less {
+      display: flex;
+    }
+    .see-more {
+      display: none;
+    }
+    &.show-more-less {
+      .see-less {
+        display: none;
+      }
+      .see-more {
+        display: flex;
+      }
+    }
+  }
+
+  .see-more-table {
+    margin-top: $margin-step-3;
+    float: right;
+    .see-less,
+    .see-more {
+      @include font-family-lato();
+      color: $almost-black;
+      font-size: $font14;
+      letter-spacing: 2px;
+      line-height: 18px;
+      text-align: right;
+      text-transform: uppercase;
+    }
+  }
+
+  .input-field {
+    position: relative;
+    & > label {
+      color: $steel-grey;
+      cursor: text;
+      font-size: $font20;
+      font-weight: 400;
+      left: 0;
+      line-height: 24px;
+      overflow: hidden;
+      position: absolute;
+      text-align: initial;
+      text-overflow: ellipsis;
+      top: 0;
+      transform: translateY(10px);
+      transform-origin: 0 100%;
+      transition: transform 0.2s ease-out, color 0.2s ease-out;
+      white-space: nowrap;
+      z-index: 0;
+      @include rtlBlock() {
+        left: auto;
+        right: 0;
+      }
+    }
+    &.search-field {
+      &.cms-search input[type="search"]:not(.browser-default):valid:not([readonly]) {
+        & ~ label {
+          color: #719e19;
+          font-size: 1rem;
+          transform: translateY(-10px) scale(0.8);
+          transform-origin: 0 0;
+          @include rtlBlock() {
+            transform: translateY(-10px) scale(1.005);
+            font-size: $font12pt8;
+          }
+        }
+      }
+    }
+  }
+}
+
+.table {
+  border: 0;
+  font-size: 0.875rem;
+
+  .table-foot-note {
+    margin-top: -0.5rem;
+  }
+
+  caption {
+    color: $almost-black;
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 0.75rem;
+    padding: 1rem 0;
+    text-transform: uppercase;
+
+    @include font-family-lato;
+  }
+
+  &.table-without-title {
+    > tfoot,
+    > thead,
+    > tbody {
+      > tr {
+        > th,
+        > td {
+          border-bottom: 1px solid $light-sand-brown;
+          border-top: 0;
+        }
+      }
+    }
+  }
+
+  &.table-with-action {
+    > tfoot,
+    > thead,
+    > tbody {
+      > tr {
+        &:first-child {
+          > th,
+          > td {
+            border-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.table-striped {
+    @include respond-to-min($desktop) {
+      &.eight-col td {
+        width: 12.5%;
+      }
+
+      &.seven-col td {
+        width: 14.28%;
+      }
+
+      &.six-col td {
+        width: 16.66%;
+      }
+
+      &.five-col td {
+        width: 20%;
+      }
+
+      &.four-col td {
+        width: 25%;
+      }
+
+      &.three-col td {
+        width: 33.33333%;
+      }
+
+      &.two-col td {
+        width: 50%;
+      }
+    }
+
+    table {
+      > tbody > tr:nth-of-type(odd) {
+        background-color: $light-yellow;
+      }
+
+      // Cells
+      > tfoot,
+      > thead,
+      > tbody {
+        > tr {
+          > th,
+          > td {
+            border: 0;
+
+            &:first-child {
+              border-radius: 4px 0 0 4px;
+              padding: 0.625rem 1rem;
+            }
+
+            &:last-child {
+              border-radius: 0 4px 4px 0;
+              padding: 0.625rem 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .discount {
+    .price,
+    td,
+    th {
+      color: $dark-orange !important;
+    }
+  }
+}
+
+/* ----------------- tables for WST variations ----------------- */
+.table-default-section {
+  table {
+    > tfoot,
+    > thead,
+    > tbody {
+      > tr {
+        > th,
+        > td {
+          border-top: 1px solid $light-sand-brown;
+          color: $steel-grey;
+          font-weight: 400;
+          line-height: 14px;
+          padding: 1rem; // please use with specific class
+          vertical-align: middle;
+          word-break: break-word;
+
+          @include font-family-lato;
+
+          p {
+            color: $steel-grey;
+          }
+
+          .price {
+            color: $almost-black;
+            font-weight: 900;
+            margin-right: 4px;
+          }
+
+          &.price-col {
+            text-align: right;
+          }
+
+          &:first-child {
+            padding-left: 0;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+
+        > th.order-shipped,
+        > td.order-shipped {
+          padding: 0 0 0 12% !important;
+        }
+
+        > th {
+          color: $steel-grey;
+          font-weight: 400;
+        }
+      }
+
+      > tr.discount {
+        color: #f5a623;
+
+        .btn-text {
+          &::before {
+            padding: 4.7px;
+          }
+
+          &:hover {
+            &::before {
+              border-color: #f5a623;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.shorter-first-column {
+    table {
+      @media screen and (min-width: 1248px) {
+        thead,
+        tbody {
+          tr {
+            th,
+            td {
+              &:first-child {
+                width: 15%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.table-collapsed {
+    .table-striped tbody > tr td:nth-child(odd) {
+      color: $steel-grey !important;
+      font-weight: 400 !important;
+    }
+
+    .default-section-title {
+      margin-bottom: 2.65rem;
+    }
+
+    table {
+      table-layout: fixed;
+
+      @include respond-to-max($desktop - 1) {
+        display: table;
+
+        tbody,
+        thead {
+          td,
+          tr {
+            display: revert;
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    table tbody tr td,
+    table thead tr th {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .show-less {
+      display: none;
+    }
+
+    a.btn-text {
+      &::before {
+        transform: translateY(-80%) rotate(45deg);
+      }
+    }
+
+    &.show {
+      table tbody tr td,
+      table thead tr th {
+        overflow: hidden;
+        text-overflow: inherit;
+        white-space: inherit;
+      }
+
+      .show-less {
+        display: flex;
+      }
+
+      .show-more {
+        display: none;
+      }
+
+      a.btn-text {
+        &::before {
+          transform: translateY(-50%) rotate(-135deg);
+        }
+      }
+    }
+  }
+
+  &.table-striped {
+    &.scroll {
+      .custom-datatable {
+        height: 480px;
+        overflow: auto;
+        padding-right: 0;
+
+        @include respond-to-min($desktop) {
+          padding-right: toRem(16);
+        }
+      }
+    }
+
+    tbody > tr > td {
+      color: $almost-black !important;
+
+      @include respond-to-max($desktop - 1) {
+        font-size: $font14;
+      }
+
+      &::before {
+        @include font-family-lato;
+      }
+    }
+
+    &.two-col {
+      thead {
+        tr th {
+          @include respond-to-max($desktop - 1) {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    &.three-col {
+      thead {
+        tr th {
+          @include respond-to-max($desktop - 1) {
+            width: 33.33%;
+          }
+        }
+      }
+    }
+
+    &.img-col {
+      .custom-datatable {
+        margin: 0;
+      }
+      thead,
+      tbody {
+        tr {
+          td {
+            &:first-child {
+              padding-left: 38px;
+
+              @include respond-to-min($desktop) {
+                padding-left: $padding-step-7;
+              }
+            }
+          }
+        }
+      }
+
+      &.no-img {
+        tbody tr td:first-child {
+          padding-left: 1rem;
+
+          &::before {
+            margin-left: 0;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          td {
+            position: relative;
+
+            @include respond-to-max($desktop-min) {
+              padding-top: toRem(10) !important;
+              padding-bottom: toRem(10) !important;
+              font-size: $font14;
+            }
+
+            &:first-child {
+              padding-left: 2.4rem !important;
+
+              @include respond-to-max($desktop-min) {
+                padding-bottom: $padding-step-0;
+              }
+
+              @include rtlBlock() {
+                padding-left: 0;
+                padding-right: 2.4rem !important;
+              }
+
+              @include respond-to-min($desktop) {
+                padding-left: 3.5rem !important;
+                @include rtlBlock() {
+                  padding-left: 0;
+                  padding-right: 3.5rem !important;
+                }
+              }
+
+              &::before {
+                @include respond-to-max($desktop-min) {
+                  margin-left: toRem(-22);
+                  @include rtlBlock() {
+                    margin-left: 0;
+                    margin-right: toRem(-24);
+                  }
+                }
+              }
+            }
+
+            svg,
+            img {
+              height: 16px;
+              left: 1rem;
+              max-height: 24px;
+              position: absolute;
+              top: 2.75rem;
+              transform: translateY(-50%);
+              width: toRem(16);
+
+              @include respond-to-min($desktop) {
+                height: toRem(24);
+                top: 50%;
+                width: toRem(24);
+                min-height: toRem(16);
+              }
+
+              @include respond-to-max($desktop-min) {
+                height: toRem(16);
+                top: toRem(44);
+                width: toRem(16);
+                min-height: toRem(16);
+              }
+
+              @include rtlBlock() {
+                right: 1rem;
+                left: 0;
+              }
+            }
+
+            &::before {
+              @include respond-to-max($desktop-min) {
+                line-height: 1.33;
+                margin-bottom: 0.5rem;
+                @include rtlBlock() {
+                  margin-right: toRem(-2);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.four-col {
+      thead {
+        tr th {
+          @include respond-to-max($desktop - 1) {
+            width: 25%;
+          }
+        }
+      }
+    }
+
+    &.five-col {
+      thead {
+        tr th {
+          @include respond-to-max($desktop - 1) {
+            width: 20%;
+          }
+        }
+      }
+    }
+  }
+
+  &.table {
+    @include respond-to-max($desktop - 1) {
+      tbody,
+      thead {
+        td,
+        tr {
+          display: block;
+        }
+      }
+
+      thead {
+        display: none;
+      }
+
+      tbody {
+        tr {
+          td {
+            &::before {
+              color: $almost-black;
+              content: attr(data-label);
+              display: block;
+              font-size: 0.75rem;
+              font-weight: normal;
+              letter-spacing: 2px;
+              line-height: 2rem;
+              text-transform: uppercase;
+              vertical-align: bottom;
+            }
+          }
+        }
+      }
+    }
+
+    &.table-link {
+      a {
+        color: $arrow-border-green;
+        font-size: 0.875rem;
+        font-weight: normal;
+        letter-spacing: 1.6px;
+        line-height: 1.25rem;
+        position: relative;
+        text-transform: uppercase;
+
+        @include font-family-lato;
+
+        &:hover {
+          text-decoration: underline;
+        }
+
+        &::before {
+          border: solid $arrow-border-green;
+          border-width: 0 1px 1px 0;
+          border-width: 0 1px 1px 0;
+          content: "";
+          line-height: 1;
+          padding: 3.5px;
+          position: absolute;
+          right: -15px;
+          top: 50%;
+          -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-20%) rotate(-135deg);
+          transition: all 0.3s ease-in-out;
+        }
+      }
+    }
+
+    &.table-link-no-shevron {
+      a {
+        padding: 0 4px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    thead {
+      th {
+        color: $almost-black;
+        font-size: $font12;
+        letter-spacing: 2px;
+        line-height: 16px;
+        padding-bottom: 16px !important;
+        text-transform: uppercase;
+        vertical-align: bottom;
+
+        @include font-family-lato;
+      }
+    }
+
+    tbody {
+      > tr {
+        > td {
+          color: $steel-grey;
+          font-size: 1rem;
+          font-weight: 700;
+          line-height: 22px;
+
+          @include font-family-lato;
+
+          b {
+            color: $almost-black;
+          }
+
+          .text {
+            color: $gray-fill;
+            font-size: $font14;
+            opacity: 0.9;
+          }
+        }
+      }
+    }
+
+    &.table-no-border {
+      thead {
+        @include respond-to-max($desktop - 1) {
+          display: table-header-group;
+        }
+
+        tr {
+          @include respond-to-max($desktop - 1) {
+            display: table-row;
+          }
+        }
+
+        th {
+          border: none;
+          color: $almost-black;
+          font-size: 0.75rem;
+          font-weight: 900;
+          letter-spacing: 2px;
+          padding: 0;
+          padding-bottom: 34px !important;
+          text-transform: uppercase;
+
+          @include respond-to-max($desktop - 1) {
+            display: table-cell;
+            padding-bottom: 26px !important;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          @include respond-to-max($desktop - 1) {
+            display: table-row;
+          }
+        }
+
+        td {
+          border: none;
+          font-size: 1rem;
+          font-weight: 900;
+          line-height: 1.375rem;
+          padding: 0;
+          padding-bottom: 20px;
+
+          @include font-family-lato;
+
+          @include respond-to-max($desktop - 1) {
+            display: table-cell;
+            font-size: $font14;
+          }
+
+          &:nth-child(1) {
+            @include respond-to-min($desktop) {
+              padding-left: 1rem;
+            }
+          }
+
+          & label {
+            border: none;
+            color: $steel-grey;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.375rem;
+            margin-bottom: 0;
+
+            @include respond-to-max($desktop - 1) {
+              font-size: $font14;
+            }
+          }
+
+          &:last-child {
+            color: $almost-black;
+          }
+        }
+      }
+    }
+
+    &.table-row-border {
+      thead {
+        @include respond-to-max($desktop - 1) {
+          display: table-header-group;
+        }
+
+        tr {
+          @include respond-to-max($desktop - 1) {
+            display: table-row;
+          }
+        }
+
+        th {
+          border: none;
+          color: $almost-black;
+          font-size: 0.75rem;
+          font-weight: 900;
+          letter-spacing: 2px;
+          padding-bottom: 34px !important;
+          padding-left: 0;
+          padding-top: 0;
+          text-transform: uppercase;
+
+          @include respond-to-max($desktop - 1) {
+            display: table-cell;
+            padding-bottom: 26px !important;
+          }
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 2px solid #d2d2d2;
+
+          @include respond-to-max($desktop - 1) {
+            display: table-row;
+          }
+
+          td {
+            padding-top: 20px;
+
+            &:nth-child(1) {
+              @include respond-to-min($desktop) {
+                padding-left: 1rem;
+              }
+            }
+
+            p {
+              margin: 0 0 12.5px;
+            }
+          }
+
+          &:first-child {
+            td {
+              padding-top: 0;
+            }
+          }
+        }
+
+        td {
+          border: none;
+          font-size: 1rem;
+          font-weight: 900;
+          line-height: 1.375rem;
+          padding: 0;
+          vertical-align: middle;
+
+          @include font-family-lato;
+
+          @include respond-to-max($desktop - 1) {
+            display: table-cell;
+            font-size: $font14;
+            vertical-align: top;
+          }
+
+          & label {
+            border: none;
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.375rem;
+          }
+
+          &:last-child {
+            color: $almost-black;
+          }
+        }
+      }
+    }
+
+    &.tableListItem {
+      .custom-datatable {
+        margin: 0;
+      }
+
+      table {
+        tr {
+          td {
+            @include respond-to-min($tablet) {
+              &:first-child {
+                padding-left: toRem(16) !important;
+              }
+            }
+          }
+        }
+      }
+
+      ul {
+        li {
+          border: none;
+          color: $steel-grey;
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 1.375rem;
+          list-style: none;
+          margin-bottom: 0;
+          padding: 0;
+          padding-bottom: 20px;
+
+          @include respond-to-max($desktop - 1) {
+            font-size: $font14;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tablecontainer {
+  .table-default-section {
+    &.table-collapsed {
+      .container {
+        @include respond-to-min-max($desktop-wide, $tablet) {
+          padding-right: toRem(18);
+        }
+      }
+      .default-section-title {
+        display: flex;
+        align-items: center;
+        
+        h3 {
+          font-size: $font20;
+          margin-bottom: 0;
+          @include respond-to-min($desktop) {
+            font-size: $font26;
+          }
+          @media (min-width: 1248px) {
+            font-size: $font30;
+          }
+        }
+        .btn-text {
+          margin-left: auto;
+          @include rtlBlock() {
+            margin-left: 0;
+            margin-right: auto;
+          }
+          @include font-family-lato();
+
+          &::before {
+            padding: toRem(2.7);
+          }
+        }
+      }
+    }
+  }
+}
+
+.cmp-table-default {
+  table {
+    th {
+      @include font-family-lato();
+      font-size: $font12;
+      color: $almost-black;
+      line-height: 12px;
+      font-weight: get-font-weight("heavy");
+      text-transform: uppercase;
+      text-align: left;
+      padding: $padding-step-2 $padding-step-0;
+      border-top: $border-step-1 solid $light-sand-brown;
+      @include rtlBlock() {
+        text-align: right;
+      }
+    }
+    td {
+      &:first-child {
+        text-align: left;
+        @include rtlBlock() {
+          text-align: right;
+        }
+      }
+      @include font-family-lato();
+      padding: $padding-step-2 $padding-step-0;
+      font-size: $font14;
+      font-weight: get-font-weight("regular");
+      border-top: $border-step-1 solid $light-sand-brown;
+      text-align: right;
+      @include rtlBlock() {
+        text-align: left;
+      }
+      .price {
+        font-weight: get-font-weight("heavy");
+        padding-right: 4px;
+      }
+    }
+  }
+}
+
+.channel-lists-section {
+  table {
+    td {
+      padding: $padding-step-2 $padding-step-0;
+      border-bottom: $border-step-1 solid $light-sand-brown;
+      text-align: left;
+      @include rtlBlock() {
+        text-align: right;
+      }
+      @include respond-to-max($desktop-min) {
+        width: 100% !important;
+        display: block;
+        padding: toRem(4) $padding-step-0;
+        border-bottom: $border-step-0;
+      }
+      &:first-child {
+        width: toRem(140);
+        @include respond-to-max($desktop-min) {
+          padding-top: $padding-step-2;
+        }
+        img {
+          width: auto;
+          min-height: toRem(30);
+          height: toRem(30);
+        }
+      }
+      &:nth-child(2) {
+        @include font-family-lato();
+        width: toRem(100);
+        font-size: $font14;
+        color: $steel-grey;
+        font-weight: get-font-weight("bold");
+        letter-spacing: 1.75px;
+      }
+      &:nth-child(3) {
+        @include font-family-Neotech();
+        width: auto;
+        font-size: $font16;
+        letter-spacing: 0.5px;
+        @include respond-to-max($desktop-min) {
+          padding-bottom: $padding-step-2;
+          border-bottom: $border-step-1 solid $light-sand-brown;
+        }
+      }
+    }
+  }
+}
+
+// arabic language
+*[lang="ar"] {
+  *[dir="rtl"] {
+    .table-default-section {
+      .see-more-table {
+        float: left;
+      }
+
+      .table {
+        thead {
+          th {
+            padding-left: 1rem;
+            padding-right: 0;
+          }
+        }
+
+        tbody {
+          td {
+            &:last-child {
+              padding-left: 1rem;
+              padding-right: 1rem;
+            }
+
+            &::before {
+              letter-spacing: 0;
+            }
+          }
+        }
+      }
+
+      .table-striped {
+        &.three-col {
+          tbody {
+            tr {
+              td {
+                &:first-child {
+                  padding-left: 0;
+                  @include respond-to-max($desktop) {
+                    padding-right: toRem(15);
+                  }
+                  padding-right: 3.5rem;
+                }
+
+                svg,
+                img {
+                  left: auto;
+                  right: 1rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .table > tfoot > tr > th .price,
+    .table > thead > tr > th .price,
+    .table > tbody > tr > th .price,
+    .table > tfoot > tr > td .price,
+    .table > thead > tr > td .price,
+    .table > tbody > tr > td .price {
+      margin-left: 4px;
+      margin-right: 0;
+    }
+  }
+}
+
+.charges-table-section {
+  margin-bottom: 2rem;
+
+  tr.footer {
+    background: transparent;
+  }
+
+  table {
+    @include respond-to-min($tablet) {
+      border-collapse: separate;
+      border-spacing: 2rem 0;
+      margin: 0 -2rem;
+    }
+
+    tbody,
+    thead {
+      td,
+      th {
+        border: none;
+        color: $almost-black;
+        font-size: $font20;
+        line-height: 56px;
+        padding: 0;
+        vertical-align: bottom;
+
+        @include respond-to-min($tablet) {
+          border-bottom: 2px solid $white-2;
+        }
+
+        @include respond-to-max($tablet - 1) {
+          font-size: $font14;
+          height: 48px;
+          line-height: 28px;
+          padding: 0.75rem 0;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    thead {
+      th {
+        &:first-child {
+          @include respond-to-min($tablet) {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    tbody {
+      td {
+        color: $steel-grey;
+
+        @include respond-to-min($tablet) {
+          padding: 0 1rem !important;
+        }
+
+        @include respond-to-max($tablet - 1) {
+          &:first-child {
+            min-width: 100px;
+          }
+
+          &:last-child {
+            color: $almost-black;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+
+    &.equal-column {
+      border-spacing: 0;
+      margin: 0;
+
+      tbody {
+        tr {
+        }
+
+        td {
+          border-bottom: 1px solid $white-2;
+          padding-left: 0;
+          width: 50%;
+
+          @include respond-to-min($desktop) {
+            padding-left: 3rem;
+          }
+
+          &:first-child {
+            min-width: 20px;
+            width: 50%;
+
+            @include respond-to-min($desktop) {
+              padding-left: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .table > tbody > tr > td,
+  .table > thead > tr > td,
+  .table > tfoot > tr > td {
+    word-break: keep-all;
+  }
+}
+
+*[lang="ar"] *[dir="rtl"] .table > tfoot > tr > th:first-child,
+*[lang="ar"] *[dir="rtl"] .table > thead > tr > th:first-child,
+*[lang="ar"] *[dir="rtl"] .table > tbody > tr > th:first-child,
+*[lang="ar"] *[dir="rtl"] .table > tfoot > tr > td:first-child,
+*[lang="ar"] *[dir="rtl"] .table > thead > tr > td:first-child,
+*[lang="ar"] *[dir="rtl"] .table > tbody > tr > td:first-child {
+  padding: 1rem;
+
+  //padding-right: 0;
+}
+
+*[lang="ar"] *[dir="rtl"] .table > tfoot > tr > th:last-child,
+*[lang="ar"] *[dir="rtl"] .table > thead > tr > th:last-child,
+*[lang="ar"] *[dir="rtl"] .table > tbody > tr > th:last-child,
+*[lang="ar"] *[dir="rtl"] .table > tfoot > tr > td:last-child,
+*[lang="ar"] *[dir="rtl"] .table > thead > tr > td:last-child,
+*[lang="ar"] *[dir="rtl"] .table > tbody > tr > td:last-child {
+  padding: 1rem;
+  padding-left: 0;
+}
+
+/* css for datatables */
+
+.dataTables_wrapper {
+  .input-field {
+    margin-bottom: 2.5rem;
+    margin-left: 75%;
+    width: 25%;
+
+    > label {
+      left: 0;
+    }
+  }
+
+  .dataTables_paginate {
+    cursor: pointer;
+    float: right;
+    padding-top: 0.25em;
+    text-align: right;
+
+    .paginate_button {
+      color: $steel-grey;
+      font-family: Neotech, Roboto, Arial, sans-serif;
+      font-size: $font16;
+      line-height: 20px;
+      margin: 0 20px;
+      outline: 0;
+      position: relative;
+      text-align: center;
+
+      &.previous,
+      &.next {
+        font-size: $font24;
+      }
+
+      .pagination-previous,
+      .pagination-next {
+        position: absolute;
+        top: 25%;
+      }
+
+      &.disabled {
+        visibility: hidden;
+      }
+
+      &.current {
+        color: $main-green;
+      }
+    }
+  }
+
+  .dataTables_info {
+    clear: both;
+    color: $steel-grey;
+    float: left;
+    font-size: $font14;
+    line-height: 17px;
+    padding-top: 0.755em;
+  }
+}
+
+table {
+  &.dataTable {
+    thead {
+      .sorting,
+      .sorting_asc,
+      .sorting_asc_disabled,
+      .sorting_desc_disabled {
+        span {
+          background-position: center right;
+          background-repeat: no-repeat;
+          cursor: pointer;
+          *cursor: hand;
+          padding-right: 20px;
+          @include rtlBlock() {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.channel-lists-section {
+  ul {
+    li {
+      align-items: center;
+      border-bottom: 1px solid rgba(151, 151, 151, 0.14);
+      display: flex;
+      padding: 1rem 0;
+      width: 100%;
+
+      @include respond-to-max($desktop - 1) {
+        display: block;
+      }
+    }
+  }
+
+  .channel-mg,
+  .channel-number,
+  .channel-description {
+    display: inline-block;
+
+    @include respond-to-max($desktop - 1) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .channel-mg {
+    min-width: 140px;
+    padding-right: 40px;
+    width: 140px;
+
+    svg,
+    img {
+      height: 24px;
+      width: auto;
+    }
+  }
+
+  .channel-number {
+    color: $steel-grey;
+    font-size: $font14;
+    font-weight: 700;
+    letter-spacing: 1.75px;
+    min-width: 100px;
+    width: 100px;
+  }
+
+  .channel-description {
+    color: $almost-black;
+    font-size: $font16;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+  }
+}
+
+.table-default-section {
+  .dataTables_info {
+    @include respond-to-max($desktop - 1) {
+      display: none;
+    }
+  }
+}
+
+// show more less
+.show-more-less {
+  tbody {
+    tr {
+      display: none;
+
+      &:nth-child(-n + 5) {
+        display: table-row;
+      }
+    }
+  }
+}
+
+/* ----------------- out of bundle charges ----------------- */
+.out-of-bundle-charges-title {
+  color: $almost-black;
+  font-size: $font20;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 1.4;
+  margin-top: 3rem;
+
+  @include respond-to-max($desktop - 1) {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+  }
+}
+
+.bundle-charges-wrapper {
+  margin-top: 12px;
+
+  @include respond-to-max($desktop - 1) {
+    margin: 0 12px;
+    margin-top: 0;
+  }
+
+  .bundles {
+    border-bottom: 1px dashed $grey4;
+    display: flex;
+    margin-left: -12px;
+    margin-right: -12px;
+    padding: 1.5rem 0;
+    position: relative;
+
+    @include respond-to-max($desktop - 1) {
+      display: block;
+      padding: 1rem 0;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    .bundle-head,
+    .bundle-body {
+      padding: 0 12px;
+      width: 50%;
+
+      @include respond-to-max($desktop - 1) {
+        width: 100%;
+      }
+    }
+
+    .bundle-head {
+      align-items: flex-start;
+      display: flex;
+
+      @include respond-to-max($desktop - 1) {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .icon {
+        height: 28px;
+        margin-right: 1.5rem;
+        width: 28px;
+
+        @include respond-to-max($desktop - 1) {
+          height: 20px;
+          margin-right: 1rem;
+          width: 20px;
+
+          img,
+          svg {
+            height: 20px;
+          }
+        }
+
+        img,
+        svg {
+          height: 28px;
+          min-height: auto;
+        }
+      }
+
+      .head-title {
+        color: $steel-grey;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: normal;
+        line-height: 1;
+        margin-top: 6px;
+
+        @include respond-to-max($desktop - 1) {
+          font-size: $font14;
+          line-height: 1.43;
+        }
+      }
+    }
+
+    .bundle-body {
+      @include respond-to-max($desktop - 1) {
+        padding-left: 3rem;
+      }
+    }
+  }
+}
+
+.bundles-footer {
+  color: $steel-grey;
+  margin-top: 2.25rem;
+
+  @include respond-to-max($desktop - 1) {
+    font-size: $font14;
+    left: 12px;
+    position: absolute;
+  }
+
+  p,
+  a {
+    font-size: 1rem;
+    line-height: 1.63;
+
+    @include respond-to-max($desktop - 1) {
+      font-size: $font14;
+      line-height: 1.43;
+    }
+  }
+
+  p {
+    color: $gray;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.bundle-list {
+  margin: 0;
+  padding: 0;
+
+  li {
+    color: $steel-grey;
+    font-size: $font14;
+    font-weight: normal;
+    letter-spacing: normal;
+    line-height: 1.43;
+
+    @include respond-to-max($desktop - 1) {
+      font-size: $font12;
+      line-height: 1.33;
+    }
+  }
+}
+
+// arabic language
+*[lang="ar"] {
+  *[dir="rtl"] {
+    .bundle-charges-wrapper .bundles .bundle-head .icon {
+      margin-left: 1.5rem;
+      margin-right: 0;
+    }
+
+    .bundles-footer {
+      @include respond-to-max($desktop - 1) {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    .channel-lists-section {
+      .channel-mg {
+        padding-left: 40px;
+        padding-right: 0;
+      }
+    }
+
+    .table-default-section {
+      .dataTables_wrapper {
+        .dataTables_info {
+          float: right;
+          padding-left: auto;
+          padding-right: 1rem;
+        }
+
+        .dataTables_paginate {
+          float: left;
+        }
+      }
+
+      .table-foot-note {
+        padding-left: auto;
+        padding-right: 1rem;
+      }
+
+      .table.table-link {
+        a::before {
+          left: -15px;
+          right: auto;
+          top: 10px;
+          -webkit-transform: translateY(-50%) rotate(133deg);
+          transform: translateY(-50%) rotate(133deg);
+        }
+      }
+    }
+
+    /// table pagination
+    .dataTables_paginate > span {
+      display: flex;
+    }
+  }
+}
+
+.tables-4-0 {
+  margin: 0;
+  padding: 0;
+
+  @include respond-to-max($tablet - 1) {
+    .container {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  &.has-bg {
+    background-color: $module-bg-color;
+    padding: 16px 0;
+  }
+
+  .foot-notes-section.under-table {
+    margin-bottom: 0;
+    margin-top: 24px;
+
+    @include respond-to-max($desktop - 1) {
+      display: none;
+    }
+  }
+
+  table {
+    width: 100%;
+
+    @media screen and (max-width: 1239px) {
+      /* Force table to not be like tables anymore */
+      table,
+      thead,
+      tbody,
+      th,
+      td,
+      tr {
+        display: block;
+      }
+
+      thead tr {
+        left: -9999px;
+        position: absolute;
+        top: -9999px;
+      }
+
+      tbody {
+        tr {
+          border-top: 1px solid $silver-white;
+          display: flex;
+          flex-wrap: wrap;
+          margin-bottom: -1px;
+          padding: 80px 0 24px;
+          position: relative;
+
+          td {
+            padding: 12px 0;
+            padding-right: 24px;
+            width: 33.2%;
+
+            &::before {
+              color: $blue2;
+              content: attr(data-label);
+              display: block;
+              font-size: $font16;
+              font-weight: 700;
+              letter-spacing: normal;
+              line-height: 1.5;
+              margin-bottom: 4px;
+            }
+
+            &:first-child {
+              font-size: $font14;
+              letter-spacing: 2px;
+              line-height: 1.43;
+              padding: 0;
+              position: absolute;
+              top: 36px;
+              @include rtlBlock() {
+                padding-right: toRem(4);
+              }
+
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include respond-to-max($desktop - 1) {
+      tbody {
+        font-size: $font14;
+        line-height: 20px;
+
+        tr {
+          padding: 52px 0 12px;
+
+          td {
+            &:first-child {
+              line-height: 16px;
+              top: 24px;
+            }
+
+            &::before {
+              font-size: $font14;
+              line-height: 16px;
+            }
+          }
+        }
+      }
+    }
+
+    @include respond-to-max($tablet - 1) {
+      tbody {
+        tr {
+          display: block;
+          padding: 56px 0 16px;
+
+          td {
+            padding: 8px 0;
+            width: 100%;
+
+            &:first-child {
+              color: $blue2;
+              font-size: $font12;
+              font-weight: bold;
+              letter-spacing: 2px;
+              line-height: 16px;
+              text-transform: uppercase;
+              top: 24px;
+            }
+          }
+        }
+      }
+    }
+
+    thead {
+      color: $blue2;
+      font-size: $font16;
+      font-weight: bold;
+      letter-spacing: normal;
+      line-height: 1.13;
+
+      tr {
+        border-bottom: 1px solid $silver-white;
+
+        th {
+          padding-top: 15px;
+          padding-bottom: 15px;
+
+          @include font-family-lato;
+          @include rtlBlock() {
+            font-weight: get-font-weight("bold");
+          }
+        }
+      }
+    }
+
+    tbody {
+      color: $gray-text-color;
+      font-size: $font16;
+      line-height: 1.5;
+
+      tr {
+        border-bottom: 1px solid $silver-white;
+
+        td {
+          padding-bottom: 19px;
+          padding-right: 24px;
+          padding-top: 17px;
+          vertical-align: baseline;
+          @include font-family-lato;
+
+          @include respond-to-max($phone) {
+            padding-bottom: 8px;
+            padding-top: 8px;
+          }
+
+          @include rtlBlock() {
+            padding-right: $padding-step-0;
+            font-weight: get-font-weight("regular");
+            @include respond-to-max($phone) {
+              padding-right: 4px;
+              padding-left: 0;
+            }
+          }
+
+          &:first-child {
+            color: $blue2;
+            font-size: $font12;
+            font-weight: bold;
+            letter-spacing: 2px;
+            line-height: 1.33;
+            text-transform: uppercase;
+          }
+
+          &:last-child {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.six-col,
+  .six-col {
+    @media screen and (min-width: 1248px) {
+      tbody {
+        tr {
+          td {
+            width: 204px;
+
+            &:last-child {
+              width: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.five-col,
+  .five-col {
+    @media screen and (min-width: 1248px) {
+      tbody {
+        tr {
+          td {
+            min-width: 204px;
+            width: 204px;
+
+            &:first-child {
+              min-width: 408px;
+              width: 408px;
+            }
+
+            &:last-child {
+              min-width: 180px;
+              width: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.four-col,
+  .four-col {
+    @media screen and (min-width: 1248px) {
+      tbody {
+        tr {
+          td {
+            min-width: 306px;
+            width: 306px;
+
+            &:last-child {
+              min-width: 282px;
+              width: 282px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.three-col,
+  .three-col {
+    @media screen and (min-width: 1248px) {
+      tbody {
+        tr {
+          td {
+            min-width: 408px;
+            width: 408px;
+
+            &:last-child {
+              min-width: 384px;
+              width: 384px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.two-col,
+  .two-col {
+    @media screen and (min-width: 1248px) {
+      tbody {
+        tr {
+          td {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+  &.two-col,
+  &.three-col,
+  &.four-col,
+  &.five-col,
+  &.six-col {
+    @include respond-to-max($phone) {
+      table thead tr th,
+      table tbody tr td {
+        padding-left: toRem(4);
+        @include rtlBlock() {
+          padding-left: 0;
+          padding-right: toRem(4);
+        }
+      }
+    }
+  }
+}
+
+.dataTables_filter {
+  display: none;
+}
+
+.table-inline {
+  &--search {
+    &.input-field {
+      margin-bottom: 2.5rem;
+      margin-left: 75%;
+      width: 25%;
+
+      .advanced-table-search {
+        @include font-family-lato();
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $grey4;
+        border-radius: 0;
+        box-shadow: none;
+        box-sizing: content-box;
+        color: $blue2;
+        font-size: 1.25rem;
+        height: 2.5rem;
+        margin: 0;
+        outline: none;
+        padding: 0;
+        position: relative;
+        transition: box-shadow 0.3s, border 0.3s;
+        width: 100%;
+        z-index: 1;
+      }
+
+      &::after {
+        background-image: url(../resources/images/icon_search.svg) !important;
+      }
+
+      input[type="search"]:not(.browser-default):focus:not([readonly]) ~ label {
+        color: $arrow-border-green;
+        font-size: 1rem;
+        transform: translateY(-10px) scale(0.8);
+        transform-origin: 0 0;
+      }
+
+      input[type="search"]:not(.browser-default):focus:not([readonly]) {
+        border-bottom: 1px solid $arrow-border-green;
+        box-shadow: 0 1px 0 0 $arrow-border-green;
+        transform-origin: 0 0;
+        z-index: 0;
+      }
+
+      label {
+        @include font-family-lato;
+      }
+    }
+  }
+}
+
+.custom-datatable {
+  margin: 0 -4px;
+
+  @include respond-to-min($tablet) {
+    margin: 0;
+  }
+
+  .dataTables_info {
+    display: none;
+
+    @media (min-width: 1247px) {
+      clear: both;
+      color: $steel-grey;
+      display: block;
+      float: left;
+      font-size: $font14;
+      line-height: 17px;
+      padding-left: 1rem;
+      padding-top: 0.755em;
+
+      @include font-family-lato();
+    }
+    @include rtlBlock() {
+      float: right;
+    }
+  }
+
+  .dataTables_paginate {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    float: right;
+    padding-top: 0.25em;
+    text-align: right;
+    @include rtlBlock() {
+      float: left;
+    }
+
+    .paginate_button {
+      color: $steel-grey;
+      font-family: Neotech, Roboto, Arial, sans-serif;
+      font-size: $font16;
+      line-height: 20px;
+      margin: 0 20px;
+      outline: 0;
+      position: relative;
+      text-align: center;
+
+      &.current {
+        color: $arrow-border-green;
+      }
+
+      &.disabled {
+        visibility: hidden;
+      }
+
+      &.next,
+      &.previous {
+        font-size: $font24;
+      }
+
+      .pagination-previous,
+      .pagination-next {
+        padding-bottom: toRem(2);
+      }
+    }
+  }
+}
+
+.search-input {
+  .check-availability-style {
+    .form-control {
+      font-size: $font16;
+      line-height: 1.6;
+      opacity: 1;
+    }
+
+    .form-control,
+    .search-input .check-availability-style .input-icon {
+      background-color: $sand-white-50 !important;
+
+      @include font-family-lato;
+    }
+  }
+}
+
+.table-with-pagination {
+  .ellipsis {
+    @include font-family-lato();
+  }
+
+  .paginate_button {
+    &.previous {
+      margin-left: 10px;
+    }
+
+    &.next {
+      margin-right: 10px;
+    }
+  }
+}
+
+th {
+  @include rtlBlock() {
+    text-align: right;
+  }
+}
+
+.acc-black,
+.acc-blue,
+.acc-yellow {
+  .table-default-section {
+    table {
+      > tfoot,
+      > thead,
+      > tbody {
+        > tr {
+          > th,
+          > td {
+            color: $white !important;
+            p,
+            .price {
+              color: $white !important;
+            }
+          }
+          > th {
+            color: $white !important;
+          }
+          border-bottom: toRem(1) solid;
+        }
+      }
+      > thead tr {
+        border-bottom: none;
+      }
+      > tr.discount {
+        color: $white !important;
+        .btn-text {
+          &:hover {
+            &::before {
+              border-color: $white;
+            }
+          }
+        }
+      }
+      tbody tr td:before {
+        color: $white !important;
+      }
+    }
+    &.table {
+      &.tableListItem ul li {
+        color: $white;
+      }
+    }
+    .table-inline--search.input-field {
+      .advanced-table-search,
+      label {
+        color: $white;
+        border-bottom-color: $white;
+        &::placeholder {
+          color: $white;
+        }
+        &:not(.browser-default):focus:not([readonly]) {
+          border-bottom-color: $white;
+          box-shadow: none;
+        }
+      }
+      input[type="search"]:not(.browser-default):valid:not([readonly]) ~ label,
+      input[type="search"]:not(.browser-default):focus:not([readonly]) ~ label {
+        color: $white;
+      }
+    }
+  }
+  .channel-lists-section table td:nth-child(2),
+  .cmp-table-default table th {
+    color: $white;
+  }
+  .channel-lists-section table td img {
+    filter: invert(87%) sepia(100%) saturate(0%) hue-rotate(98deg) brightness(103%) contrast(101%);
+  }
+  .table.table-striped table > tbody > tr:nth-of-type(odd) {
+    background-color: transparent;
+  }
+  .data-table__info,
+  .dataTables_info,
+  .custom-datatable .dataTables_paginate .paginate_button,
+  .custom-datatable .dataTables_paginate .paginate_button.current,
+  .see-more-table span {
+    color: $white !important;
+  }
+}
+.acc-yellow {
+  .table-default-section {
+    table {
+      > tfoot,
+      > thead,
+      > tbody {
+        > tr {
+          > th,
+          > td {
+            color: $yellow-light !important;
+            p,
+            .price {
+              color: $yellow-light !important;
+            }
+            border-top-color: $yellow-light;
+          }
+          > th {
+            color: $yellow-light !important;
+          }
+        }
+        > tr.discount {
+          color: $yellow-light !important;
+          .btn-text {
+            &:hover {
+              &::before {
+                border-color: $yellow-light !important;
+              }
+            }
+          }
+        }
+      }
+      tbody tr td:before {
+        color: $yellow-light !important;
+      }
+    }
+    &.table {
+      &.tableListItem ul li {
+        color: $yellow-light;
+      }
+      &.table-row-border tbody tr {
+        border-bottom-color: $yellow-light;
+      }
+    }
+    .table-inline--search.input-field {
+      .advanced-table-search,
+      label {
+        color: $yellow-light;
+        border-bottom-color: $yellow-light;
+        &::placeholder {
+          color: $yellow-light;
+        }
+        &:not(.browser-default):focus:not([readonly]) {
+          border-bottom-color: $yellow-light;
+          box-shadow: none;
+        }
+      }
+      input[type="search"]:not(.browser-default):valid:not([readonly]) ~ label,
+      input[type="search"]:not(.browser-default):focus:not([readonly]) ~ label {
+        color: $yellow-light;
+      }
+    }
+  }
+  .channel-lists-section table td:nth-child(2),
+  .cmp-table-default table th {
+    color: $yellow-light;
+  }
+  .data-table__info,
+  .dataTables_info,
+  .custom-datatable .dataTables_paginate .paginate_button,
+  .custom-datatable .dataTables_paginate .paginate_button.current,
+  .see-more-table span {
+    color: $yellow-light !important;
+  }
+}

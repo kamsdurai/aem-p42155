@@ -1,0 +1,183 @@
+.package-details-4-0 {
+    padding: 16px 0;
+    @media screen and (max-width: 767px) {
+        .container {
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+    }
+    .paragraph-styling p {
+        color: $gray-text-color;
+        @include font-family-lato();
+    }
+
+    .tile-foot-note {
+        text-align: center;
+        .paragraph-styling p {
+            margin-bottom: 0;
+            margin-top: 16px;
+            @media (min-width: 768px) {
+                margin-top: 0;
+            }
+        }
+    }
+    &.with-text {
+        .tile-foot-note {
+            .paragraph-styling p {
+                margin-bottom: 0;
+                margin-top: 32px;
+                @media (min-width: 768px) {
+                    margin-top: 8px;
+                }
+                @media (min-width: 992px) {
+                    margin-top: 24px;
+                } 
+            }
+        }
+    }
+    .package-tiles {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap; 
+        justify-content: center;
+        @media (min-width: 768px) {
+            flex-direction: row;
+        }
+        .tile-wrapper {
+            margin-bottom: 60px;
+            position: relative;
+            @media (max-width: 767px) {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+            @media (min-width: 768px) {
+                margin-bottom: 24px;
+                width: 50%;
+                padding-right: 24px;
+                &:last-child {
+                    padding-right: 0;
+                }
+            }
+            @media (min-width: 992px) {
+                width: 282px;
+                max-width: 282px;
+                
+                margin-bottom: 16px;
+                
+            }
+            .wst-main-headings {
+                h1,h2,h3,h4,h5,h6,.h7,.h8 {
+                    margin-top: 8px;
+                    margin-bottom: 12px;
+                }
+                .h7 {
+                    @include font-family-lato();
+                    font-weight: 700;
+                    font-size: 1.25rem;
+                    line-height: 28px;
+                    color: $almost-black;
+                }
+            }
+            .paragraph-styling p{
+                margin-bottom: 0;
+            }
+
+            .tile-image {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .img {
+                height: 202px;
+                width: auto;
+                position: relative;
+                //background: red;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                overflow: hidden;
+                img, svg {
+                    height: 100%;
+                }
+                .cmp-image {
+                    height: 100%;
+                }
+            }
+
+            .content-wrapper {
+                text-align: center;
+            }
+        }
+
+        .tile-wrapper + .tile-wrapper {
+            .tile-image {
+                &:before {
+                    content: "+";
+                    position: absolute;
+                    font-size: 24px;
+                    line-height: 28px;
+                    z-index: 9;
+
+                    height: 28px;
+                    top: -46px;
+                    width: 100%;
+                    left: 0;
+
+                    font-family: Neotech-medium,GE SS Two,Roboto,Arial,sans-serif;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    @media (min-width: 768px) {
+                        height: 100%;
+                        left: -12px;
+                        width: 24px;
+                        top: 0;
+                    }
+                    @media (min-width: 768px) {
+                        left: -24px;
+                    }
+                }
+            } 
+        }
+    }
+
+    &.with-four-tiles {
+        .package-tiles {
+            .tile-wrapper+.tile-wrapper:nth-child(n+3):nth-child(-n+3) {
+                .tile-image {
+                    &:before {
+                        @media (max-width: 991px) and (min-width: 768px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+} 
+
+
+
+// arabic language
+*[lang="ar"] {
+    *[dir="rtl"] {
+        @media screen and (min-width: 768px) {
+            .package-details-4-0 .package-tiles .tile-wrapper+.tile-wrapper .tile-image:before {
+                left: 0;
+                right: -24px;
+            }
+
+            .package-details-4-0 .package-tiles .tile-wrapper {
+                padding-left: 24px;
+                padding-right: 0;
+                &:last-child {
+                    padding-left: 0;
+                }
+            }
+
+        }
+    }
+}

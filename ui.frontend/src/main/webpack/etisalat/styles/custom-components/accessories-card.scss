@@ -1,0 +1,1065 @@
+// accessories card
+.card-list-wrapper,
+.eti-big-card-list,
+.eti-card-list-wrapper {
+  .accessoriescardtile {
+    width: 100%;
+  }
+}
+.accessoriescardcontainer {
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.card-li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius-step-2;
+  padding-top: $padding-step-1;
+  position: relative;
+  background-color: $white;
+  overflow: hidden;
+  &:hover {
+    &:before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border: $border-step-1 solid $main-green;
+      pointer-events: none;
+      z-index: 3;
+      border-radius: $border-radius-step-2;
+    }
+  }
+  @include respond-to-min($desktop) {
+    padding-top: $padding-step-2;
+  }
+
+  .clickable-tile {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .title {
+    p {
+      margin: $margin-step-0;
+      font-size: $font14;
+      font-weight: get-font-weight("bold");
+      line-height: 1.43;
+      color: $almost-black;
+      margin-bottom: toRem(4);
+      @include respond-to-min($desktop) {
+        font-size: $font16;
+        line-height: 1.5;
+      }
+      @include rtlBlock() {
+        @include font-family-lato();
+        letter-spacing: 0 !important;
+      }
+    }
+  }
+
+  .img {
+    width: toRem(150);
+    height: toRem(104);
+    img {
+      width: 100%;
+      height: toRem(104);
+      object-fit: cover;
+    }
+  }
+
+  .third-action-wrapper {
+    margin-bottom: toRem(24);
+    line-height: 16px;
+    @include respond-to-max($desktop) {
+      display: none;
+    }
+    .link {
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      font-size: $font12 !important;
+      padding-right: $padding-step-1;
+      line-height: 16px;
+      position: relative;
+      &:before {
+        border-width: 0 $border-step-1 $border-step-1 0;
+        padding: toRem(2.6) !important;
+      }
+    }
+  }
+}
+
+.accessories-wrapper {
+  padding: $padding-step-3 $padding-step-0;
+  @include respond-to-max($desktop) {
+    padding-bottom: $padding-step-1;
+  }
+  @include respond-to-min($desktop) {
+    padding: $padding-step-6 $padding-step-0;
+    padding-bottom: $padding-step-4;
+  }
+  &.has-bg {
+    background-color: $sand-white-50;
+  }
+  .container {
+    position: relative;
+    @include respond-to-max($custom-width-tab) {
+      padding-right: $padding-step-0;
+    }
+    .row {
+      @include respond-to-max($desktop) {
+        margin-left: $margin-step-0;
+        margin-right: $margin-step-0;
+      }
+    }
+  }
+  .wst-main-headings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: $margin-step-0;
+      @include respond-to-min($desktop) {
+        margin-bottom: $margin-step-1;
+      }
+    }
+    @include rtlBlock() {
+      h4 {
+        font-weight: get-font-weight("light");
+      }
+    }
+  }
+
+  .card-list-wrapper {
+    display: flex;
+    position: relative;
+    .card-li {
+      flex: 1;
+    }
+
+    .swiper-wrapper {
+      padding: $padding-step-2 $padding-step-0;
+    }
+    .swiper-slide {
+      background-color: transparent !important;
+      padding-left: toRem(4);
+      text-align: center;
+      padding-right: toRem(4);
+      @include respond-to-min($desktop) {
+        padding-left: toRem(12);
+        padding-right: toRem(12);
+      }
+    }
+    .prev,
+    .next {
+      position: absolute;
+      top: 42%;
+      right: -32px;
+
+      background-color: #e6e6e6;
+      width: toRem(48);
+      height: toRem(48);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: toRem(100);
+      @media (max-width: 1199px) {
+        display: none;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .prev {
+      left: -72px;
+      @include rtlBlock() {
+        right: auto;
+      }
+      &:after {
+        border: solid $dark-gray;
+        border-width: $border-step-0 $border-step-2 $border-step-2 $border-step-0;
+        padding: toRem(4);
+        content: "";
+        position: absolute;
+        line-height: 1;
+        top: 45%;
+        transform: translateY(-20%) rotate(135deg);
+        transition: all 0.3s ease-in-out;
+        left: 44%;
+      }
+    }
+    .next {
+      right: -72px;
+      &:after {
+        border: solid $dark-gray;
+        border-width: $border-step-0 $border-step-2 $border-step-2 $border-step-0;
+        padding: toRem(4);
+        content: "";
+        position: absolute;
+        line-height: 1;
+        top: 45%;
+        transform: translateY(-20%) rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .scrollbar {
+    background-color: $sand-white;
+    height: toRem(4);
+    margin-top: toRem(20);
+    margin-bottom: $margin-step-2;
+    @include respond-to-max($desktop) {
+      display: none;
+    }
+    .swiper-scrollbar-drag {
+      background: $main-green;
+    }
+  }
+
+  &.remove-controls {
+    .swiper-slide {
+      @media (min-width: 1200px) {
+        flex: 1;
+      }
+    }
+    .scrollbar,
+    .prev,
+    .next {
+      display: none !important;
+    }
+  }
+}
+
+// etisalat recommendation card
+.eti-card-li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius-step-2;
+  position: relative;
+  background-color: $white;
+  padding: $padding-step-2;
+  padding-top: $padding-step-1;
+  @include respond-to-min($desktop) {
+    padding-top: $padding-step-2;
+  }
+  &:hover {
+    &:before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border: $border-step-1 solid $main-green;
+      pointer-events: none;
+      z-index: 3;
+      border-radius: $border-radius-step-2;
+    }
+  }
+  .clickable-tile {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .title {
+    p {
+      margin: $margin-step-0;
+      font-size: $font14;
+      font-weight: get-font-weight("bold");
+      line-height: 1.43;
+      color: $almost-black;
+      margin-bottom: $margin-step-1;
+      @include respond-to-min($desktop) {
+        font-size: $font20;
+        line-height: 1.25;
+        letter-spacing: 0.31px;
+      }
+      @include rtlBlock() {
+        @include font-family-lato();
+        letter-spacing: 0 !important;
+      }
+    }
+  }
+
+  .img {
+    width: toRem(60);
+    height: toRem(60);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond-to-min($desktop) {
+      margin-bottom: toRem(12);
+      width: toRem(80);
+      height: toRem(80);
+    }
+    img,
+    svg {
+      width: toRem(60);
+      height: toRem(60);
+      @include respond-to-min($desktop) {
+        width: toRem(80);
+        height: toRem(80);
+      }
+    }
+  }
+
+  .third-action-wrapper {
+    margin-bottom: $margin-step-2;
+    line-height: 16px;
+    @include respond-to-max($desktop-min) {
+      display: none;
+    }
+  }
+}
+
+.eti-recommendation-wrapper {
+  padding: $padding-step-3 $padding-step-0;
+  @include respond-to-max($desktop-min) {
+    padding-bottom: $padding-step-1;
+  }
+  @include respond-to-min($desktop) {
+    padding: $padding-step-6 $padding-step-0;
+    padding-bottom: $padding-step-4;
+  }
+  &.has-bg {
+    background-color: $sand-white-50;
+  }
+  .container {
+    position: relative;
+    @include respond-to-max($custom-width-tab) {
+      padding-right: $padding-step-0;
+    }
+    .row {
+      @include respond-to-max($desktop) {
+        margin-left: $margin-step-0;
+        margin-right: $margin-step-0;
+      }
+    }
+  }
+  .wst-main-headings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: $margin-step-0;
+      @include respond-to-min($desktop) {
+        margin-bottom: $margin-step-1;
+      }
+    }
+  }
+  .eti-card-list-wrapper {
+    display: flex;
+    position: relative;
+    .eti-card-li {
+      flex: 1;
+    }
+
+    .swiper-wrapper {
+      padding: $padding-step-2 $padding-step-0;
+    }
+    .swiper-slide {
+      background-color: transparent !important;
+      padding-left: toRem(4);
+      padding-right: toRem(4);
+      @include respond-to-min($desktop) {
+        padding-left: toRem(12);
+        padding-right: toRem(12);
+      }
+    }
+    .prev,
+    .next {
+      position: absolute;
+      top: 41%;
+      right: -32px;
+
+      background-color: #e6e6e6;
+      width: toRem(48);
+      height: toRem(48);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: toRem(100);
+      @media (max-width: 1199px) {
+        display: none;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .prev {
+      left: -72px;
+      @include rtlBlock() {
+        right: auto;
+      }
+      &:after {
+        border: solid $dark-gray;
+        border-width: $border-step-0 $border-step-2 $border-step-2 $border-step-0;
+        padding: toRem(4);
+        content: "";
+        position: absolute;
+        line-height: 1;
+        top: 45%;
+        transform: translateY(-20%) rotate(135deg);
+        transition: all 0.3s ease-in-out;
+        left: 44%;
+      }
+    }
+    .next {
+      right: -72px;
+      &:after {
+        border: solid $dark-gray;
+        border-width: $border-step-0 $border-step-2 $border-step-2 $border-step-0;
+        padding: toRem(4);
+        content: "";
+        position: absolute;
+        line-height: 1;
+        top: 45%;
+        transform: translateY(-20%) rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .scrollbar {
+    background-color: $sand-white;
+    height: toRem(4);
+    margin-top: toRem(20);
+    margin-bottom: $margin-step-2;
+    @include respond-to-max($desktop-min) {
+      display: none;
+    }
+    .swiper-scrollbar-drag {
+      background: $main-green;
+    }
+  }
+
+  &.remove-controls {
+    .swiper-slide {
+      @include respond-to-min($desktop-wide) {
+        flex: 1;
+      }
+    }
+    .scrollbar,
+    .prev,
+    .next {
+      display: none !important;
+    }
+  }
+}
+
+// etisalat recommendation card
+.eti-big-card-li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius-step-2;
+  position: relative;
+  background-color: $white;
+  padding-top: $padding-step-2;
+  overflow: hidden;
+  @include respond-to-min($desktop) {
+    padding-top: $padding-step-4;
+  }
+  &:hover {
+    &:before {
+      content: " ";
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      border: 1px solid $main-green;
+      pointer-events: none;
+      z-index: 3;
+      border-radius: $border-radius-step-2;
+    }
+  }
+
+  .clickable-tile {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .title {
+    p {
+      margin: $margin-step-0;
+      font-size: $font14;
+      font-weight: get-font-weight("bold");
+      line-height: 1.43;
+      color: $almost-black;
+      margin-bottom: toRem(4);
+      @include respond-to-min($desktop) {
+        font-size: $font28;
+        line-height: 1.29;
+        letter-spacing: 0.44px;
+        margin-bottom: $margin-step-1;
+      }
+      @include rtlBlock() {
+        @include font-family-lato();
+        letter-spacing: 0 !important;
+      }
+    }
+  }
+
+  .img {
+    width: toRem(120);
+    height: toRem(120);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include respond-to-min($desktop) {
+      width: toRem(384);
+      height: toRem(272);
+    }
+    img,
+    svg {
+      width: toRem(120);
+      height: toRem(120);
+      @include respond-to-min($desktop) {
+        width: toRem(384);
+        height: toRem(272);
+      }
+    }
+  }
+
+  .third-action-wrapper {
+    margin-bottom: $margin-step-5;
+    line-height: 16px;
+    @include respond-to-max($desktop-min) {
+      display: none;
+    }
+  }
+}
+
+.eti-recommendation-big-card {
+  padding: $padding-step-3 $padding-step-0;
+  @include respond-to-max($desktop-min) {
+    padding-bottom: $padding-step-1;
+  }
+  @include respond-to-min($desktop) {
+    padding: $padding-step-5 $padding-step-0;
+    padding-bottom: $padding-step-4;
+  }
+  &.has-bg {
+    background-color: $sand-white-50;
+  }
+  .container {
+    position: relative;
+    @include respond-to-max($custom-width-tab) {
+      padding-right: $padding-step-0;
+    }
+    .row {
+      @include respond-to-max($desktop) {
+        margin-left: $margin-step-0;
+        margin-right: $margin-step-0;
+      }
+    }
+  }
+
+  .wst-main-headings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: $margin-step-0;
+      @include respond-to-min($desktop) {
+        margin-bottom: $margin-step-1;
+      }
+    }
+    @include rtlBlock() {
+      h4 {
+        font-weight: get-font-weight("light");
+      }
+    }
+  }
+  .eti-big-card-list {
+    display: flex;
+    position: relative;
+    .eti-big-card-li {
+      flex: 1;
+    }
+
+    .swiper-wrapper {
+      padding: $padding-step-2 $padding-step-0;
+    }
+    .swiper-slide {
+      background-color: transparent !important;
+      padding-left: toRem(4);
+      padding-right: toRem(4);
+      @include respond-to-min($desktop) {
+        padding-left: toRem(12);
+        padding-right: toRem(12);
+      }
+    }
+    .prev,
+    .next {
+      position: absolute;
+      top: 45%;
+      right: -32px;
+
+      background-color: #e6e6e6;
+      width: toRem(48);
+      height: toRem(48);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: toRem(100);
+      @media (max-width: 1199px) {
+        display: none;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .prev {
+      left: -72px;
+      @include rtlBlock() {
+        right: auto;
+      }
+      &:after {
+        border: solid $dark-gray;
+        border-width: $border-step-0 $border-step-2 $border-step-2 $border-step-0;
+        padding: toRem(4);
+        content: "";
+        position: absolute;
+        line-height: 1;
+        top: 45%;
+        transform: translateY(-20%) rotate(135deg);
+        transition: all 0.3s ease-in-out;
+        left: 44%;
+      }
+    }
+    .next {
+      right: -72px;
+      &:after {
+        border: solid $dark-gray;
+        border-width: $border-step-0 $border-step-2 $border-step-2 $border-step-0;
+        padding: toRem(4);
+        content: "";
+        position: absolute;
+        line-height: 1;
+        top: 45%;
+        transform: translateY(-20%) rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .scrollbar {
+    background-color: $sand-white;
+    height: toRem(4);
+    margin-top: toRem(20);
+    margin-bottom: $margin-step-2;
+    @include respond-to-max($desktop) {
+      display: none;
+    }
+    .swiper-scrollbar-drag {
+      background: $main-green;
+    }
+  }
+
+  .third-action-wrapper {
+    margin-bottom: $margin-step-5;
+    &.action-btn-default {
+      margin-bottom: $margin-step-2;
+      margin-top: toRem(20);
+    }
+  }
+
+  &.remove-controls {
+    .swiper-slide {
+      @include respond-to-min($desktop-wide) {
+        flex: 1;
+      }
+    }
+    .scrollbar,
+    .prev,
+    .next {
+      display: none !important;
+    }
+  }
+}
+
+// brands logo
+.logo-li {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: $border-radius-step-2;
+  position: relative;
+  background-color: $white;
+  overflow: hidden;
+  height: toRem(68);
+  padding-left: toRem(12);
+  padding-right: toRem(12);
+  @include respond-to-min($desktop) {
+    border: solid $border-step-1 $cold-gray;
+    height: toRem(97);
+    padding-left: $padding-step-3;
+    padding-right: $padding-step-3;
+  }
+  &:hover {
+    border-color: $main-green;
+  }
+  .clickable-tile {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+  }
+
+  .img {
+    display: flex;
+    align-items: center;
+    max-width: toRem(72);
+    img,
+    svg {
+      max-width: toRem(72);
+    }
+    svg {
+      width: auto;
+      height: auto;
+    }
+  }
+}
+
+.brands-logo {
+  padding: $padding-step-3 $padding-step-0;
+  @include respond-to-max($desktop-min) {
+    padding-bottom: $padding-step-1;
+  }
+  @include respond-to-min($desktop) {
+    padding: $padding-step-6 $padding-step-0;
+    padding-bottom: $padding-step-4;
+  }
+  &.has-bg {
+    background-color: $sand-white-50;
+  }
+  .container {
+    position: relative;
+    @include respond-to-max($custom-width-tab) {
+      padding-right: $padding-step-0;
+    }
+    .row {
+      @include respond-to-max($desktop) {
+        margin-left: $margin-step-0;
+        margin-right: $margin-step-0;
+      }
+    }
+  }
+
+  .wst-main-headings {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: $margin-step-0;
+      @include respond-to-min($desktop) {
+        margin-bottom: toRem(20);
+      }
+    }
+    @include rtlBlock() {
+      h4 {
+        font-weight: get-font-weight("light");
+      }
+    }
+  }
+
+  .logo-list {
+    display: flex;
+    position: relative;
+    .eti-big-card-li {
+      flex: 1;
+    }
+
+    .swiper-wrapper {
+      padding: $padding-step-2 $padding-step-0;
+    }
+    .swiper-slide {
+      background-color: transparent !important;
+      padding-left: toRem(4);
+      padding-right: toRem(4);
+      @include respond-to-min($desktop) {
+        padding-left: $padding-step-1;
+        padding-right: $padding-step-1;
+      }
+    }
+    .prev,
+    .next {
+      position: absolute;
+      top: toRem(40);
+      right: -32px;
+
+      background-color: #e6e6e6;
+      width: toRem(48);
+      height: toRem(48);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: toRem(100);
+      @media (max-width: 1199px) {
+        display: none;
+      }
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .prev {
+      left: -72px;
+      @include rtlBlock() {
+        right: auto;
+      }
+      &:after {
+        border: solid $dark-gray;
+        border-width: $border-step-0 $border-step-2 $border-step-2 $border-step-0;
+        padding: toRem(4);
+        content: "";
+        position: absolute;
+        line-height: 1;
+        top: 45%;
+        transform: translateY(-20%) rotate(135deg);
+        transition: all 0.3s ease-in-out;
+        left: 44%;
+      }
+    }
+    .next {
+      right: -72px;
+      &:after {
+        border: solid $dark-gray;
+        border-width: $border-step-0 $border-step-2 $border-step-2 $border-step-0;
+        padding: toRem(4);
+        content: "";
+        position: absolute;
+        line-height: 1;
+        top: 45%;
+        transform: translateY(-20%) rotate(-45deg);
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  }
+  .scrollbar {
+    background-color: $sand-white;
+    height: toRem(4);
+    margin-top: toRem(20);
+    margin-bottom: $margin-step-2;
+    @include respond-to-max($desktop) {
+      display: none;
+    }
+    .swiper-scrollbar-drag {
+      background: $main-green;
+    }
+  }
+
+  .third-action-wrapper {
+    margin-bottom: $margin-step-3;
+    margin-top: $margin-step-1;
+    @include respond-to-min($desktop) {
+      margin-top: toRem(20);
+      margin-bottom: $margin-step-0;
+    }
+  }
+
+  &.remove-controls {
+    .swiper-slide {
+      @include respond-to-min($desktop-wide) {
+        flex: 1;
+      }
+    }
+    .scrollbar,
+    .prev,
+    .next {
+      display: none !important;
+    }
+  }
+}
+
+/************************************************
+general third action link
+*************************************************/
+.third-action-wrapper {
+  &.action-link {
+    line-height: 20px;
+    .link {
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: $font12;
+      padding-right: $padding-step-1;
+      line-height: 16px;
+      position: relative;
+      cursor: pointer;
+      @include respond-to-min($desktop) {
+        font-size: $font14;
+        padding-right: toRem(12);
+        line-height: toRem(20);
+      }
+      @include rtlBlock() {
+        font-weight: get-font-weight("light");
+        @include font-family-lato();
+        letter-spacing: 0 !important;
+      }
+      &:hover {
+        text-decoration: underline;
+        color: $main-green;
+      }
+      &:before {
+        border: solid $main-green;
+        border-width: $border-step-0 $border-step-1 $border-step-1 $border-step-0;
+        padding: toRem(2.6);
+        content: "";
+        position: absolute;
+        line-height: 1;
+        top: 50%;
+        transform: translateY(-20%) rotate(-135deg);
+        transition: all 0.3s ease-in-out;
+        -webkit-transform: translateY(-50%) rotate(-45deg);
+        right: 0;
+        @include respond-to-min($desktop) {
+          padding: 3.25px;
+        }
+        @include rtlBlock() {
+          transform: translateY(-50%) rotate(135deg);
+          -webkit-transform: translateY(-50%) rotate(135deg);
+          left: 0;
+          right: auto;
+        }
+      }
+      @include rtlBlock() {
+        padding-right: $padding-step-0;
+        padding-left: toRem(20);
+      }
+    }
+  }
+  &.transparent {
+    .btn-transparent {
+      background-color: transparent;
+      color: $white;
+    }
+  }
+  &.action-link,
+  &.action-btn-default,
+  &.action-btn-green,
+  &.action-btn-orange {
+    a {
+      @include respond-to-min($desktop) {
+        min-width: toRem(180);
+        width: auto;
+      }
+    }
+  }
+  &.action-btn-default {
+    .btn {
+      height: toRem(50);
+
+      @include rtlBlock() {
+        @include font-family-lato();
+        letter-spacing: 0 !important;
+      }
+    }
+  }
+}
+
+/**accessbility**/
+
+.acc-blue {
+  .brands-logo,
+  .eti-recommendation-wrapper,
+  .card-list-wrapper,
+  .eti-recommendation-big-card {
+    &.has-bg {
+      background-color: $blue4;
+    }
+    h4 {
+      color: $black;
+    }
+  }
+}
+.acc-black {
+  .brands-logo,
+  .eti-recommendation-wrapper,
+  .card-list-wrapper,
+  .eti-recommendation-big-card {
+    &.has-bg {
+      background-color: $black;
+    }
+  }
+}
+.acc-blue,
+.acc-black {
+  .brands-logo,
+  .eti-recommendation-wrapper,
+  .card-list-wrapper,
+  .eti-recommendation-big-card,
+  .scrollbar {
+    background-color: $steel-grey;
+    .swiper-scrollbar-drag {
+    background-color: $white;
+  }
+  }
+  
+  .title p,
+  .third-action-wrapper.action-link .link:before,
+  a.link {
+    color: $almost-black !important;
+  }
+}
+.acc-yellow {
+  .brands-logo,
+  .eti-recommendation-wrapper,
+  .card-list-wrapper,
+  .eti-recommendation-big-card {
+    &.has-bg{
+      background-color: $black;
+    }
+    .scrollbar {
+      background-color: $steel-grey;
+    }
+   
+  }
+  .third-action-wrapper.action-link .link:before {
+    color: $almost-black;
+  }
+}
+.acc-black,
+.acc-blue,
+.acc-yellow{
+  .card-li,
+  .eti-card-li,
+  .eti-big-card-li,
+  .logo-li{
+    &:hover{
+      border-color: transparent;
+    }
+  }
+}

@@ -1,0 +1,140 @@
+body {
+  font-family: Lato, "GE SS Two", Roboto, Arial, sans-serif !important;
+}
+
+.topnav--margin {
+  @include respond-to-min($desktop) {
+    margin-top: 48px;
+  }
+}
+
+.meganavigation--margin {
+  margin-top: 56px;
+
+  @include respond-to-min($desktop) {
+    margin-top: 139px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.sr-only-focusable {
+  &:focus,
+  :active {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+  }
+}
+
+.no-scroll {
+  min-height: 100% !important;
+  position: fixed !important;
+  width: 100% !important;
+}
+
+.freeze {
+  overflow: hidden;
+}
+
+.d-none {
+  display: none !important;
+}
+
+// spacing
+$spacing: 0, 4, 8, 12, 16, 20, 24; // Modify this to generate your spacing classes
+$unit: px; // Modify this to specify your unit eg: em, pt, %.
+
+$directions: (
+  l: left,
+  t: top,
+  r: right,
+  b: bottom,
+  v: top,
+  h: left,
+);
+$breakpoint: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1248px,
+);
+
+@mixin generateSpacing($prop, $short) {
+  @each $space in $spacing {
+    .#{$short}a-#{$space} {
+      #{$prop}: $space + $unit;
+    }
+
+    @each $key, $val in $directions {
+      .#{$short}#{$key}-#{$space} {
+        #{$prop}-#{$val}: $space + $unit;
+
+        @if $key == v {
+          #{$prop}-bottom: $space + $unit;
+        }
+
+        @if $key == h {
+          #{$prop}-right: $space + $unit;
+        }
+      }
+    }
+  }
+}
+
+/* CSS for all  viewports */
+
+@include generateSpacing(padding, p);
+
+@each $key, $val in $breakpoint {
+  /* CSS for devices above 576px  viewports */
+  @if $key == sm {
+    @media (min-width: 576px) {
+      @include generateSpacing(padding, sm-p);
+    }
+  }
+
+  /* CSS for devices above 768px  viewports */
+
+  @if $key == md {
+    @media (min-width: 768px) {
+      @include generateSpacing(padding, md-p);
+    }
+  }
+
+  /* CSS for devices above 992px  viewports */
+
+  @if $key == lg {
+    @media (min-width: 992px) {
+      @include generateSpacing(padding, lg-p);
+    }
+  }
+
+  /* CSS for devices above 1248px  viewports */
+
+  @if $key == xl {
+    @media (min-width: 1248px) {
+      @include generateSpacing(padding, xl-p);
+    }
+  }
+}

@@ -1,0 +1,330 @@
+// form
+%input-base {
+  background-color: transparent;
+  border: 0;
+  border-bottom: $border-step-1 solid $grey4;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: content-box;
+  color: $almost-black;
+  font-size: $font20;
+  margin: 0;
+  min-height: toRem(40);
+  outline: none;
+  padding: 0;
+  position: relative;
+  transition: box-shadow 0.3s, border 0.3s;
+  width: 100%;
+
+  label {
+    content: "";
+    display: block;
+    font-size: $font20;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    transition: 0.2s opacity ease-out, 0.2s color ease-out;
+  }
+
+  &:focus {
+    border-bottom: $border-step-1 solid $main-green;
+    box-shadow: none;
+    transform-origin: 0 0;
+    z-index: 0;
+
+    ~ label {
+      color: $main-green;
+      font-size: $font16;
+      transform: translateY(-10px) scale(0.8);
+
+      @include rtl(transform-origin, 0 0, 100% 0);
+    }
+  }
+}
+
+%label-style {
+  color: $steel-grey;
+  font-size: $font20;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: toRem(24);
+  overflow: hidden;
+  position: absolute;
+  text-overflow: ellipsis;
+  transform: translateY(10px);
+  transform-origin: 0 0;
+  transition: transform 0.2s ease-out, color 0.2s ease-out;
+  white-space: nowrap;
+
+  @include respond-to-max($tablet) {
+    font-size: $font14;
+  }
+}
+
+.cmp-form-options {
+  margin-bottom: $margin-step-4;
+
+  @include respond-to-min($tablet) {
+    margin-bottom: $margin-step-6;
+  }
+
+  &__label {
+    @extend %label-style;
+
+    top: toRem(10);
+    transform: none;
+
+    &.floating-label {
+      @include rtl(transform-origin, 0 0, 100% 0 !important);
+      @include ts-step-0;
+
+      color: $almost-black;
+      transform: translateY(-20px) scale(0.8) !important;
+    }
+  }
+
+  &--drop-down {
+    border: 0;
+    border-bottom: toRem(1) solid $grey4;
+    bottom: 0;
+    font-size: $font14;
+    min-height: toRem(41);
+    padding: 0;
+    position: relative;
+    top: toRem(8);
+    width: 100%;
+
+    @include respond-to-min($desktop-min) {
+      font-size: $font20;
+    }
+
+    .select2-hidden-accessible {
+      display: block;
+    }
+  }
+
+  &--open {
+    border-color: $main-green;
+  }
+
+  &--radio {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    padding-bottom: toRem(27);
+
+    & > label {
+      background-size: toRem(24);
+      color: $almost-black;
+      display: inline-flex;
+      font-weight: get-font-weight("regular");
+      height: toRem(24);
+      width: toRem(24);
+
+      @include rtlProp(margin-right, margin-left, toRem(80));
+    }
+  }
+}
+
+.cmp-form-text {
+  label {
+    @extend %label-style;
+  }
+
+  &__textarea {
+    outline: 0;
+
+    & ~ label {
+      @include rtlProp(padding-left, padding-right, toRem(16));
+      @include rtl(transform-origin, 0 0, 100% 0 !important);
+    }
+
+    &.valid {
+      ~ label {
+        color: $almost-black;
+        font-size: toRem(16);
+        transform: translateY(10px) scale(0.8) !important;
+      }
+    }
+
+    &:focus {
+      ~ label {
+        transform: translateY(10px) scale(0.8) !important;
+      }
+    }
+
+    .is-valid,
+    .has-error-fields & {
+      ~ label {
+        transform: translateY(10px) scale(0.8) !important;
+      }
+    }
+  }
+
+  &__text {
+    color: $almost-black;
+
+    &.valid {
+      ~ label {
+        @include ts-step-0;
+
+        color: $almost-black;
+        transform: translateY(-10px) scale(0.8);
+      }
+    }
+  }
+
+  .error-msg,
+  .valid-msg {
+    @include rtlProp(left, right, 0);
+
+    color: $error-red;
+    position: absolute;
+    top: toRem(48);
+    z-index: $form-error;
+  }
+
+  .valid-msg {
+    color: $almost-black;
+  }
+
+  .floating-label {
+    @include ts-step-0;
+
+    color: $almost-black;
+    transform: translateY(-10px) scale(0.8);
+    transform-origin: 0 0;
+  }
+}
+
+.cmp-form {
+  @include font-family-lato;
+
+  input,
+  textarea {
+    @extend %input-base;
+  }
+
+  .has-error-fields {
+    border-color: $error-red;
+
+    .icon-error,
+    .alert-icon {
+      display: block;
+      position: relative;
+
+      svg {
+        @include rtlProp(right, left, 0);
+
+        fill: $error-red;
+        height: toRem(25);
+        position: absolute;
+        top: 0;
+        width: toRem(25);
+        z-index: $error-svg;
+      }
+    }
+
+    .alert-label {
+      bottom: toRem(-25);
+      color: $error-red;
+      font-size: $font16;
+      height: 1rem;
+      line-height: toRem(16);
+      margin: 0;
+      overflow: hidden;
+      position: absolute;
+      text-overflow: ellipsis;
+      top: auto;
+      white-space: nowrap;
+      width: 100%;
+    }
+
+    label {
+      @include rtl(transform-origin, 0 0, 100% 0);
+
+      color: $error-red;
+      font-size: toRem(16);
+      transform: translateY(-10px) scale(0.8);
+      z-index: $form-label;
+    }
+
+    .intl-error {
+      label {
+        font-size: $font16;
+        transform: translateY(-10px) scale(0.8);
+      }
+    }
+
+    .has-error ~ label {
+      font-size: $font16;
+      transform: translateY(-10px) scale(0.8);
+    }
+
+    .cmp-form-text__text {
+      color: $error-red;
+      -webkit-text-fill-color: $error-red;
+    }
+
+    input,
+    textarea {
+      border-bottom: 1px solid $error-red;
+    }
+  }
+
+  .flag-container {
+    display: none;
+  }
+
+  .iti {
+    &__flag-container {
+      display: none;
+    }
+  }
+
+  .form-group {
+    margin-bottom: $margin-step-6;
+    margin-top: $margin-step-1;
+
+    @include respond-to-max($tablet) {
+      margin-bottom: $margin-step-4;
+    }
+  }
+
+  .has-error {
+    color: $error-red;
+    font-size: $font14;
+    font-weight: get-font-weight("regular");
+    line-height: 1rem;
+    overflow: hidden;
+    position: absolute;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    top: toRem(48);
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .country-code {
+    @include rtlProp(padding-right, padding-left, toRem(24));
+  }
+
+  .default-selected {
+    @include rtlProp(padding-right, padding-left, toRem(24));
+
+    @include respond-to-max($phone) {
+      padding-right: 0;
+    }
+  }
+}
+
+.smb-event {
+  .aem-Grid.aem-Grid--default--12 > .aem-GridColumn.aem-GridColumn--default--6 {
+    padding: 0;
+
+    @include respond-to-min($tablet) {
+      padding: 0 toRem(12);
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+@mixin respond-to-max($width) {
+    @media screen and (max-width: $width) {
+        @content;
+    }
+}
+@mixin respond-to-min($width) {
+    @media screen and (min-width: $width) {
+        @content;
+    }
+}
+//@include respond-to-min($tablet){ }
+//@include respond-to-max($tablet){ }
+//*Break Points
+

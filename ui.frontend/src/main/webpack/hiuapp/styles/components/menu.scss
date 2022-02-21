@@ -1,0 +1,113 @@
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  width: 100%;
+  left: 0;
+  .menu__icon {
+    cursor: pointer;
+    display: block;
+    float: right;
+    position: relative;
+    margin: 10px ​20px 0 0;
+    user-select: none;
+    outline: none;
+    background: transparent;
+    top: 10px;
+    right: 10px;
+    @include respond-to-min($desktop) {
+      display: none;
+    }
+    ::selection {
+      background: none;
+    }
+    .hamburger {
+      background: $color-link;
+      display: block;
+      height: toRem(2);
+      position: relative;
+      width: toRem(34);
+      margin-right: toRem(10);
+      margin-top: toRem(19);
+      &::before,
+      &::after {
+        background: $custom-gray;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        width: 100%;
+      }
+      &::before {
+        top: toRem(8);
+      }
+      &::after {
+        top: toRem(-8);
+      }
+    }
+  }
+  .menu {
+    display: none;
+    background-color: $white;
+    text-align: center;
+    top: 45px;
+    position: relative;
+
+    @include respond-to-max($desktop) {
+      width: 100%;
+      padding: 15px;
+    }
+    li a {
+      font-size: toRem(40);
+      border-right: 1px solid $shade-off-white2;
+      text-decoration: none;
+      font-family: $font-family;
+      font-weight: 500;
+      color: $pink-color;
+      border-width: 0;
+      padding: 5px 15px;
+      display: block;
+      &:hover {
+        color: $blue-color;
+        transition-duration: 500ms;
+      }
+    }
+  }
+}
+
+.menu__checkbox {
+  opacity: 0;
+  display: none;
+}
+
+@include respond-to-min($desktop) {
+  nav a:hover {
+    color: $white;
+  }
+  nav {
+    position: static;
+    .menu {
+      display: block;
+      background: none;
+      clear: none;
+      max-height: none;
+      margin-right: 15px;
+      margin-top: 30px;
+      float: right;
+      padding: 0;
+      top: 0;
+      li {
+        float: left;
+        a {
+          padding: 15px;
+          border: 0;
+          font-size: toRem(16);
+          color: $white;
+          background-color: transparent;
+          border: none;
+          display: block;
+        }
+      }
+    }
+  }
+}

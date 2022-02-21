@@ -1,0 +1,85 @@
+// Typography
+
+// Typographic scale (ts)
+$step--1: px-to-rem(14px);
+$step-0: px-to-rem(16px);
+$step-1: px-to-rem(18px);
+$step-2: px-to-rem(20px);
+$step-3: px-to-rem(24px);
+$step-lg-1: px-to-rem(28px);
+$step-4: px-to-rem(32px);
+$step-lg-2: px-to-rem(34px);
+$step-5: px-to-rem(40px);
+$step-6: px-to-rem(48px);
+$step-7: px-to-rem(64px);
+$step-8: px-to-rem(96px);
+
+@mixin ts-step--1 {
+  font-size: $step--1;
+  line-height: $step-2;
+}
+
+@mixin ts-step--2 {
+  font-size: $step--1;
+  line-height: $step-3;
+}
+
+@mixin ts-step-0 {
+  font-size: $step-0;
+  line-height: $step-3;
+}
+
+@mixin ts-step-1 {
+  font-size: $step-1;
+  line-height: $step-3;
+}
+
+@mixin ts-step-2 {
+  font-size: $step-2;
+  line-height: $step-3;
+}
+
+@mixin ts-step-3 {
+  font-size: $step-3;
+  line-height: $step-4;
+}
+
+@mixin ts-step-4 {
+  font-size: $step-4;
+  line-height: $step-5;
+}
+
+@mixin ts-step-5 {
+  font-size: $step-5;
+  line-height: $step-6;
+}
+
+@mixin ts-step-6 {
+  font-size: $step-6;
+  line-height: 1;
+}
+
+@mixin ts-step-7 {
+  font-size: $step-7;
+  line-height: 1;
+}
+
+@mixin ts-step-8 {
+  font-size: $step-8;
+  line-height: 1;
+}
+
+@mixin step-lg {
+  font-size: $step-lg-1;
+  line-height: $step-lg-2;
+}
+
+@mixin overline-typography {
+  font-size: $step-0;
+  line-height: 1;
+}
+
+@mixin impact-typography {
+  font-size: $step-4;
+  line-height: 1;
+}

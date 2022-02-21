@@ -1,0 +1,133 @@
+// class for image on the top for mobile and ipad
+@include respond-to-max($tablet) {
+  .cmp_text_rte--mediaflipped .aem-Grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.cmp_text_rte--media {
+  border-radius: $border-radius-step-1;
+  box-shadow: 0 toRem(5) toRem(10) 0 rgb(0 0 0 / 10%);
+  min-height: toRem(150);
+  padding: 0 !important;
+  position: relative;
+
+  @include respond-to-min($tablet) {
+    display: block;
+    min-height: auto;
+  }
+
+  h4 {
+    color: $almost-black;
+    font-size: $font18;
+    font-weight: get-font-weight("bold");
+    margin-bottom: toRem(16);
+
+    @include respond-to-max($tablet) {
+      @include font-family-lato();
+    }
+
+    @include respond-to-min($desktop) {
+      font-size: $font26;
+      font-weight: normal;
+      margin-bottom: toRem(22.4);
+      margin-top: 0;
+    }
+  }
+
+  .text {
+    @include respond-to-min($desktop) {
+      padding: toRem(24) toRem(64) toRem(40) toRem(24);
+    }
+
+    @include respond-to-max($tablet) {
+      padding: toRem(16) toRem(16) toRem(64);
+    }
+
+    ul {
+      padding-left: toRem(16);
+
+      @include rtlBlock() {
+        padding-left: 0;
+        padding-right: toRem(16);
+      }
+
+      li {
+        color: $gray-fill;
+        font-size: $font14;
+        line-height: toRem(20);
+        margin: 0 0 toRem(4);
+        padding-left: 0;
+      }
+    }
+  }
+
+  p + p {
+    margin-top: toRem(16);
+  }
+
+  .cmp-text {
+    p {
+      color: $paracolor;
+      font-size: $font14;
+      line-height: toRem(19);
+      margin-bottom: toRem(8);
+    }
+  }
+
+  .video {
+    height: inherit;
+    max-height: inherit;
+    min-height: inherit;
+    position: inherit;
+    top: inherit;
+  }
+
+  .cover-image__with-play-icon {
+    padding-left: toRem(24);
+
+    @include rtl(padding-left, toRem(24), 0);
+
+    @include respond-to-max($tablet) {
+      padding-left: toRem(12);
+    }
+
+    @include respond-to-max($phone) {
+      height: toRem(240);
+    }
+
+    img {
+      @include respond-to-max($phone) {
+        left: 50%;
+        margin-left: toRem(-275);
+        position: absolute;
+        width: toRem(550);
+      }
+    }
+  }
+
+  .media-cta-image {
+    @include respond-to-max($phone) {
+      height: toRem(240);
+      overflow: hidden;
+      position: relative;
+    }
+  }
+
+  .cover-image__with-play-btn-icon {
+    max-height: toRem(260);
+    overflow: hidden;
+    position: relative;
+
+    @include rtl(margin-left, toRem(-13), 0);
+  }
+
+  .cmp-container {
+    .text {
+      @include rtlBlock() {
+        padding-right: $padding-step-3;
+      }
+    }
+  }
+}

@@ -1,0 +1,514 @@
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable no-descending-specificity */
+.cmp-teaser--promo-card-row {
+  .cmp-teaser {
+    border-radius: toRem(4);
+    height: 100%;
+    margin-bottom: toRem(30);
+    min-height: toRem(148);
+    overflow: hidden;
+    position: relative;
+
+    @include respond-to-min($tablet) {
+      min-height: toRem(250);
+    }
+
+    @include respond-to-min($desktop) {
+      min-height: toRem(250);
+    }
+
+    &__content {
+      align-items: end;
+      background: linear-gradient(0deg, $black, transparent);
+      border-radius: toRem(4);
+      bottom: 0;
+      display: flex;
+      height: 100%;
+      min-height: toRem(47);
+      padding: toRem(24);
+      position: absolute;
+      width: 100%;
+      z-index: 9;
+
+      h1 {
+        color: $white;
+        font-size: $font26;
+        letter-spacing: toRem(1.6);
+        line-height: toRem(26);
+        margin-bottom: toRem(25);
+        margin-top: 0;
+
+        @include respond-to-min($tablet) {
+          margin-bottom: toRem(25);
+        }
+      }
+
+      .cont {
+        bottom: toRem(24);
+        position: absolute;
+
+        a.cmp-teaser__action-link {
+          position: relative;
+        }
+      }
+    }
+
+    &__action-container {
+      display: contents;
+      a {
+        color: $white;
+        font-size: $font14;
+        font-weight: get-font-weight("medium");
+        letter-spacing: toRem(2);
+        line-height: toRem(20);
+        position: absolute;
+        text-transform: capitalize;
+
+        @include respond-to-min($desktop-min) {
+          text-transform: uppercase;
+        }
+
+        @include font-family-lato();
+
+        @include rtlBlock() {
+          @include font-family-Neotech-ge();
+
+          font-weight: get-font-weight("light");
+          letter-spacing: 0;
+        }
+
+        &::after {
+          border-right: toRem(1) solid $white;
+          border-top: toRem(1) solid $white;
+          content: "";
+          left: auto;
+          margin-left: toRem(8.8);
+          margin-top: toRem(8);
+          padding: toRem(4);
+          position: absolute;
+          transform: translateY(-50%) rotate(45deg);
+
+          @include rtlBlock() {
+            margin-left: 0;
+            margin-right: toRem(8.8);
+            transform: translateY(-50%) rotate(-135deg);
+          }
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    &__image {
+      border-radius: toRem(4);
+      height: toRem(148);
+
+      @include respond-to-min($desktop) {
+        height: toRem(250);
+      }
+
+      .cmp-image__image {
+        height: 100%;
+        min-height: toRem(250);
+      }
+
+      .cmp-image {
+        height: toRem(148);
+
+        @include respond-to-min($desktop) {
+          height: toRem(250);
+        }
+      }
+    }
+
+    &__title {
+      color: $white;
+      font-size: $font20;
+      margin-bottom:toRem(35.2);
+
+      @include respond-to-min($desktop-min) {
+        font-size: $font26;
+      }
+
+      @include rtlBlock() {
+        font-weight: get-font-weight("light");
+      }
+    }
+  }
+
+  &.container {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  @include respond-to-min($desktop) {
+    .aem-Grid .aem-GridColumn {
+      &:first-child {
+        padding-left: 0;
+
+        @include rtlBlock() {
+          padding-left: toRem(12);
+        }
+      }
+
+      &:last-child {
+        padding-right: 0;
+        
+        @include rtlBlock() {
+          padding-right: toRem(12);
+        }
+      }
+    }
+  }
+}
+
+// new hero card css st
+.cmp-teaser--hero-card {
+  @include respond-to-max($tablet) {
+    margin-bottom: toRem(10);
+  }
+
+  @include respond-to-min($desktop) {
+    margin-bottom: toRem(20);
+
+    .gutter-padding-right {
+      height: toRem(533);
+
+      .cmp-teaser__image {
+        height: toRem(554);
+
+        .cmp-image__image {
+          height: toRem(554);
+        }
+      }
+    }
+
+    .gutter-padding-left {
+      .cmp-teaser__image {
+        height: toRem(553);
+
+        .cmp-image__image {
+          height: toRem(553);
+        }
+      }
+    }
+
+    .image-right {
+      .cmp-teaser__image {
+        height: toRem(264);
+
+        .cmp-image__image {
+          height: toRem(264);
+        }
+      }
+    }
+
+    .cmp_small_tile {
+      &.gutter-padding-right {
+        height: toRem(264);
+      }
+
+      .cmp-teaser__image {
+        height: toRem(264);
+
+        .cmp-image__image {
+          height: toRem(264) !important;
+        }
+      }
+    }
+  }
+
+  .cmp-teaser {
+    border-radius: toRem(4);
+    box-shadow: 0 toRem(5) toRem(15) 0 rgb(0 0 0 / 15%);
+    margin-bottom: toRem(26);
+    overflow: hidden;
+    position: relative;
+
+    &__image {
+      &::after {
+        background: $black;
+        border-radius: toRem(4);
+        content: "";
+        height: 100%;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+      }
+
+      .cmp-image {
+        max-height: toRem(160);
+
+        @include respond-to-min($desktop) {
+          max-height: toRem(559);
+        }
+      }
+
+      img {
+        border-radius: toRem(4);
+        max-width: 100%;
+
+        // height: toRem(150);
+
+        @include respond-to-min($desktop) {
+          height: 100%;
+        }
+      }
+    }
+
+    &__content {
+      bottom: 0;
+      padding: toRem(16);
+      position: absolute;
+      width: 100%;
+      z-index: 2;
+
+      h1 {
+        color: $white;
+        font-size: $font26;
+      }
+
+      @include respond-to-min($desktop) {
+        padding: toRem(36);
+
+        h1 {
+          font-size: $font36;
+          margin: 0;
+          padding-top: 0;
+        }
+      }
+    }
+
+    &__action-container {
+      @extend %teaser-link;
+
+      bottom: toRem(70);
+
+      @include rtlBlock() {
+        padding-right: 0;
+      }
+
+      @include respond-to-min($desktop) {
+        bottom: toRem(110);
+      }
+
+      a {
+        color: $white;
+
+        @include rtlBlock() {
+          @include font-family-Neotech-ge();
+
+          font-weight: get-font-weight("light");
+          letter-spacing: 0;
+        }
+      }
+
+      &::after {
+        border-color: $white !important;
+      }
+    }
+
+    &__title {
+      color: $white;
+    }
+  }
+
+  .image-right {
+    padding: 0;
+
+    @include respond-to-min($desktop) {
+      padding-left: toRem(12);
+      padding-right: toRem(12);
+    }
+
+    .cmp-teaser {
+      display: flex;
+      flex-direction: row-reverse;
+
+      &__content {
+        bottom: 0;
+        left: 0;
+        width: 50%;
+
+        @include rtlBlock {
+          left: auto;
+          right: 0;
+        }
+
+        h1 {
+          color: $almost-black;
+        }
+
+        @include respond-to-min($desktop) {
+          padding: toRem(24);
+
+          h1 {
+            margin: 0;
+            padding-top: 0;
+          }
+        }
+      }
+
+      &__action-container {
+        bottom: toRem(90);
+
+        @include rtlBlock() {
+          padding-right: 0;
+        }
+
+        @include respond-to-min($desktop) {
+          bottom: toRem(130);
+        }
+
+        a {
+          color: $main-green;
+
+          @include rtlBlock() {
+            @include font-family-Neotech-ge();
+
+            font-weight: get-font-weight("light");
+            letter-spacing: 0;
+          }
+        }
+
+        &::after {
+          border-color: $main-green !important;
+          top: toRem(5);
+        }
+      }
+
+      &__image {
+        height: toRem(160);
+        width: 48%;
+
+        img {
+          height: toRem(160);
+        }
+
+        @include respond-to-min($desktop) {
+          height: toRem(264);
+
+          img {
+            height: toRem(264);
+          }
+        }
+      }
+
+      &__title {
+        color: $black !important;
+        font-size: toRem(22);
+        line-height: toRem(33);
+        margin-bottom: 0;
+
+        @include respond-to-min($desktop) {
+          font-size: toRem(26);
+          margin-bottom: toRem(12.5);
+        }
+      }
+    }
+  }
+
+  &.cmp-teaser--promo-card {
+    .cmp-image {
+      max-height: toRem(160);
+
+      @include respond-to-min($desktop) {
+        max-height: toRem(435);
+      }
+
+      @include respond-to-min($desktop-wide) {
+        max-height: toRem(547);
+      }
+    }
+
+    .cmp_small_tile {
+      .cmp-teaser__content {
+        padding: 1rem;
+      }
+    }
+
+    .cmp-teaser__title {
+      color: $white;
+    }
+  }
+}
+
+// new hero card css en
+.gutter-padding-left {
+  padding-left: 0 !important;
+
+  @include respond-to-min($tablet) {
+    padding-left: toRem(12) !important;
+  }
+
+  @include rtlBlock() {
+    padding-right: 0 !important;
+
+    @include respond-to-min($tablet) {
+      padding-right: toRem(12) !important;
+    }
+  }
+}
+
+.gutter-padding-right {
+  padding-right: 0 !important;
+
+  @include respond-to-min($tablet) {
+    padding-right: toRem(12) !important;
+  }
+
+  @include rtlBlock() {
+    padding-left: 0 !important;
+
+    @include respond-to-min($tablet) {
+      padding-left: toRem(12) !important;
+    }
+  }
+}
+
+.cmp_small_tile {
+  .cmp-teaser__action-container {
+    bottom: toRem(70);
+  }
+}
+
+.cmp-teaser--hero-card {
+  @include rtlBlock() {
+    .cmp-teaser__action-container {
+      &::after {
+        left: -0.2rem !important;
+        top: 0.6rem !important;
+      }
+    }
+  }
+}
+
+.cmp-teaser--hero-card {
+  .gutter-padding-left {
+    padding: 0;
+
+    @include respond-to-min($tablet) {
+      padding: 0 toRem(12) !important;
+    }
+  }
+
+  .gutter-padding-right {
+    padding: 0;
+
+    @include respond-to-min($tablet) {
+      padding: 0 toRem(12) !important;
+    }
+  }
+}
+
+.cmp-teaser--promo-card-row {
+  .teaser.aem-GridColumn--xsmall--12 {
+    @include respond-to-max($tablet) {
+      padding: 0 !important;
+    }
+  }
+}

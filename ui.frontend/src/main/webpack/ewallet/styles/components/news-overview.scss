@@ -1,0 +1,225 @@
+/* stylelint-disable declaration-empty-line-before */
+/* stylelint-disable rule-empty-line-before */
+/* stylelint-disable order/properties-alphabetical-order */
+.ewalletnews {
+  padding-bottom: 15px;
+  padding-top: 20px;
+  display: none;
+
+  @include respond-to-min($desktop-wide) {
+    width: toRem(1210);
+  }
+
+  .news-item {
+    padding-bottom: 44px;
+
+    @include respond-to-max($phone) {
+      padding-bottom: 40px;
+
+      .row {
+        display: block;
+      }
+    }
+
+    .news-img {
+      @include respond-to-max($desktop-wide) {
+        padding-right: 30px;
+
+        @include rtlBlock() {
+          padding-right: 15px;
+        }
+      }
+
+      @include respond-to-max($tablet) {
+        padding-right: 0;
+
+        @include rtlBlock() {
+          padding-right: 15px;
+        }
+      }
+
+      @include respond-to-max($phone) {
+        margin-bottom: 20px;
+        min-width: 100%;
+        padding-right: 15px;
+      }
+
+      img {
+        border-radius: 4px;
+        height: auto;
+        max-width: 100%;
+        width: 100%;
+
+        &.cmp-image__image {
+          margin: 0;
+        }
+      }
+    }
+
+    .news-text {
+      @include respond-to-max($desktop-wide) {
+        padding-left: 0;
+      }
+
+      @include respond-to-max($tablet) {
+        padding-left: 25px;
+      }
+
+      @include respond-to-max($phone) {
+        min-width: 100%;
+        padding-left: 15px;
+      }
+
+      h4 {
+        color: $gray-primary;
+        font-size: $font30;
+        margin-bottom: 5px;
+        margin-top: 0;
+
+        @include respond-to-max($phone) {
+          font-size: $font25;
+        }
+      }
+
+      .date {
+        clear: both;
+        color: $gray-primary;
+        display: inline-block;
+        font-size: $font18;
+        font-weight: 500;
+        line-height: toRem(20);
+        margin-bottom: toRem(16);
+        text-transform: uppercase;
+      }
+
+      p {
+        color: $gray-primary;
+        line-height: toRem(25);
+        margin-bottom: 0;
+
+        @include respond-to-max($tablet) {
+          line-height: toRem(24);
+        }
+      }
+    }
+  }
+
+  a {
+    &:hover {
+      .news-text {
+        h4 {
+          color: $link-color;
+        }
+      }
+    }
+  }
+
+  @include respond-to-min($desktop-wide) {
+    .col-md-12,
+    .col-lg-10 {
+      width: 100%;
+    }
+
+    .col-lg-offset-1 {
+      margin-left: 0;
+    }
+  }
+
+  @include respond-to-min($desktop-wide-xl) {
+    .col-lg-10 {
+      width: 83.3333%;
+    }
+
+    .col-lg-offset-1 {
+      margin-left: 8.3333%;
+    }
+
+    .col-lg-offset-right-1 {
+      margin-right: 8.3333%;
+    }
+  }
+}
+
+.articlelist {
+  .loader-container {
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+    .pagination-loader {
+      background-image: url("../resources/images/pagination-loader.svg");
+      background-repeat: no-repeat;
+      background-size: 100px 100px;
+      width: toRem(100);
+      height: toRem(100);
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  .consumerload {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond-to-min($tablet) {
+      width: toRem(690);
+    }
+
+    @include respond-to-min(900px) {
+      width: toRem(890);
+    }
+
+    @include respond-to-min($desktop-wide) {
+      width: toRem(1240);
+    }
+  }
+  .pagination-wrap {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    ul {
+      text-align: center;
+      display: inline-block;
+      li {
+        display: inline-block;
+        float: left;
+        a {
+          color: #73932e;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 18px;
+          text-align: center;
+          border-radius: 100%;
+          width: 48px;
+          height: 48px;
+
+          @media (max-width: 414px) {
+            width: 38px;
+            height: 38px;
+          }
+          display: inline-block;
+          box-sizing: border-box;
+          padding-top: 17px;
+          &:hover {
+            background-color: #f3f5f9;
+            text-decoration: none;
+          }
+          &.active {
+            color: #5a637c;
+            text-decoration: none;
+          }
+        }
+        &.active {
+          color: #5a637c;
+          a {
+            color: #5a637c;
+          }
+        }
+      }
+    }
+  }
+}

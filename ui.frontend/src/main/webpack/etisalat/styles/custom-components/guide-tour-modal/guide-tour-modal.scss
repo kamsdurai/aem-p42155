@@ -1,0 +1,231 @@
+.multi-step {
+  .guide-section {
+    display: none;
+    &.current {
+      display: block;
+    }
+    .content-section {
+      margin-bottom: 1.4375rem;
+      @media (min-width: 768px) {
+        margin-bottom: 1.5rem;
+      }
+      .img-wraper {
+        border-radius: 6px;
+        position: relative;
+        height: 280px;
+        overflow: hidden;
+        @media (min-width: 768px) {
+          height: 482px;
+        }
+      }
+    }
+
+    .img-wrap {
+      border-radius: 6px;
+      position: relative;
+      height: 200px;
+      overflow: hidden;
+      @media (min-width: 768px) {
+        height: 300px;
+      }
+    }
+
+    .wst-main-headings {
+      .h7 {
+        font-weight: normal;
+        margin-bottom: 8px;
+        @media (min-width: 768px) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .paragraph-styling {
+      margin-bottom: 1.5rem;
+      &.get-best {
+        padding-top: 1rem;
+        margin-bottom: 1.5rem;
+        @media (min-width: 768px) {
+          padding-top: 1rem;
+          margin-bottom: 0 !important;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+.wraper {
+  .progress-wrap {
+    margin-bottom: 1rem;
+    @media (min-width: 768px) {
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.guide-tour-modal {
+  z-index: 1060 !important;
+  @media (max-width: 991px) {
+    overflow-y: auto !important;
+  }
+  @media screen and (max-width: 767px) {
+    .row {
+      margin-left: -16px;
+      margin-right: -16px;
+    }
+    .container,
+    .col-xs-12 {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+  }
+
+  .nv-modal-close {
+    @media (max-width: 991px) {
+      width: 16px;
+      height: 16px;
+    }
+    img,
+    svg {
+      position: initial !important;  
+      @media (max-width: 991px) {
+        width: 16px;
+        height: 16px;
+        g,
+        line {
+          stroke: #242424 !important;
+          stroke-width: 1px !important;
+        }
+      }
+    }
+  }
+  .nv-modal-header {
+    margin: 0px 16px;
+    border-bottom: 1px solid #e2e1da;
+    @media (min-width: 992px) {
+      padding: 48px 0 40px;
+    }
+  }
+  .nv-modal-body {
+    @media (min-width: 992px) {
+      max-height: 74vh;
+      overflow: hidden;
+      overflow-y: auto;
+    }
+    max-height: none;
+    overflow: hidden;
+    overflow-y: hidden;
+    padding: 0px 0px 36px 0px !important;
+    .multi-step {
+      .guide-section {
+        .content-section {
+          @media (min-width: 992px) {
+            padding: 24px 0px;
+          }
+          .img-wraper {
+            @media (max-width: 767px) {
+              height: 348px;
+            }
+          }
+          padding: 16px 0px 24px 0px;
+          margin-bottom: 0px;
+          .paragraph-styling {
+            margin-bottom: 16px;
+          }
+          .get-best-main {
+            @media (min-width: 768px) {
+              padding: 8px 0px 6px 0px;
+            }
+            .paragraph-styling {
+              margin-bottom: 24px;
+              .p2 {
+                p {
+                  line-height: 28px !important;
+                  @media (max-width: 767px) {
+                    margin-bottom: 24px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .wraper {
+      .progress-wrap {
+        .progress {
+          overflow: unset;
+          .progress-bar {
+            border-radius: 3.5px;
+            font-size: 0px;
+            box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1), 0 3px 0 0 rgba(0, 0, 0, 0.03);
+          }
+        }
+      }
+    }
+  }
+
+  &.fade.show {
+    opacity: 1;
+  }
+  .nv-modal-body {
+    &::-webkit-scrollbar-thumb {
+      border-radius: 14px;
+      background-color: #719e19;
+    }
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+      background-color: transparent;
+    }
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+  }
+  .progress-wrap {
+    margin-bottom: 1.5rem;
+    .progress {
+      height: 7px;
+      border-radius: 3.5px;
+      margin: 0;
+      .progress-bar {
+        box-shadow: none;
+      }
+    }
+    .progress-bar {
+      background-color: #719e19;
+      background-image: none;
+    }
+  }
+}
+
+.btn-wrap {
+  .btn {
+    width: 136px;
+    @media (min-width: 425px) {
+      width: 180px;
+    }
+    &.back {
+      float: left;
+    }
+    &.next {
+      float: right;
+    }
+    &.started {
+      float: right;
+    }
+  }
+}
+
+*[lang="ar"] {
+  *[dir="rtl"] {
+    .btn-wrap .btn.next,
+    .btn-wrap .btn.started {
+      float: left;
+    }
+    .btn-wrap .btn.back {
+      float: right;
+    }
+  }
+}

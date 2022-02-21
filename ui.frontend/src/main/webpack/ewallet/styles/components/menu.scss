@@ -1,0 +1,256 @@
+/* menu */
+.FullWidth {
+  width: 100% !important;
+}
+
+@include respond-to-max($desktop) {
+  .fixednavigation {
+    position: absolute;
+    top: 0 !important;
+    width: 100% !important;
+  }
+
+  nav {
+    position: static;
+
+    .menu__icon,
+    .menu__checkbox,
+    .hamburger {
+      display: none;
+    }
+
+    .menu__icon {
+      cursor: pointer;
+      display: block;
+      outline: none;
+      position: absolute;
+      right: 0;
+      top: 60px;
+
+      ::selection {
+        background: none;
+      }
+
+      &.CloseBtn {
+        .hamburger {
+          background: transparent;
+
+          &::before {
+            background: $blue-secondary;
+            top: 0;
+            transform: rotate(45deg);
+          }
+
+          &::after {
+            background: $blue-secondary;
+            top: 0;
+            transform: rotate(-45deg);
+          }
+        }
+      }
+
+      .hamburger {
+        background: $white;
+        display: block;
+        height: 1px;
+        margin-right: 17px;
+        margin-top: -13px;
+        position: relative;
+        width: 30px;
+
+        &::before,
+        &::after {
+          background: $white;
+          content: "";
+          display: block;
+          height: 100%;
+          position: absolute;
+          transition: all 0.6s ease-in-out;
+          width: 100%;
+        }
+
+        &::before {
+          top: 9px;
+        }
+
+        &::after {
+          top: -9px;
+        }
+      }
+    }
+
+    .MenuWrapper {
+      display: none;
+
+      @include respond-to-min-max($desktop, $tablet) {
+        background-color: $white;
+        margin-left: -10%;
+        margin-right: -10%;
+      }
+    }
+
+    ul {
+      background-color: $white;
+      transition: max-height 0.2s ease-out;
+
+      @include respond-to-min-max($desktop, $tablet) {
+        margin: 0 auto;
+        width: toRem(650);
+      }
+
+      &.main-nav__list {
+        padding-top: 60px;
+
+        @include respond-to-max($phone) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        li {
+          &:last-child {
+            border-bottom: 0;
+          }
+        }
+      }
+
+      &.secondary-nav__list {
+        padding-top: 40px;
+
+        @include respond-to-max($desktop) {
+          padding-bottom: 10px;
+        }
+
+        @include respond-to-max($phone) {
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+
+        li {
+          border-bottom: 0;
+          display: none;
+
+          &.active {
+            display: block;
+          }
+
+          a {
+            border: 1px solid $gray-primary;
+            border-radius: 4px;
+            font-weight: bold;
+            padding: 8px 15px;
+          }
+        }
+      }
+
+      li {
+        border-bottom: 1px solid $white2;
+        padding: 30px 0;
+
+        &.active a {
+          font-weight: bold;
+        }
+
+        a {
+          color: #5a637c;
+          font-size: 24px;
+          letter-spacing: 0.02px;
+          line-height: 24px;
+          margin: 0;
+          padding: 10px 0;
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to-max($phone) {
+  .menu__icon {
+    right: 0 !important;
+    top: 48px !important;
+  }
+}
+
+@include respond-to-min($desktop) {
+  nav {
+    background: none;
+    margin-top: 6px;
+
+    .menu__checkbox,
+    .menu__icon {
+      display: none;
+      opacity: 0;
+    }
+
+    ul {
+      &.main-nav__list {
+        float: right;
+        margin-left: 0;
+
+        a,
+        a:focus {
+          font-size: toRem(20);
+          padding: 8px 0;
+        }
+
+        li.active-nav {
+          a {
+            border-bottom: 2px solid $white;
+            font-weight: bold;
+            line-height: 28px;
+            padding: 8px 0;
+          }
+        }
+      }
+    }
+
+    ul {
+      float: left;
+      margin-left: -50px;
+
+      li {
+        float: left;
+        margin: 0 15px;
+
+        a,
+        a:focus {
+          border-width: 0;
+          color: $white;
+          display: block;
+          font-size: toRem(24);
+          font-weight: 500;
+          line-height: 30px;
+          outline: 0;
+          padding: 8px 0;
+          text-decoration: none;
+
+          &:hover {
+            border-bottom: 2px solid $white;
+            color: $white;
+            text-decoration: none;
+          }
+        }
+
+        &.active {
+          a {
+            border: 1px solid $white;
+            border-radius: 4px;
+            font-weight: bold;
+            padding: 8px 15px;
+
+            &:hover {
+              border: 1px solid $white;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to-min($desktop-wide) {
+  nav ul {
+    margin-left: -120px;
+  }
+}

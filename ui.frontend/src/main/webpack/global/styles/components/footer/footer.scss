@@ -1,0 +1,1687 @@
+/* stylelint-disable*/
+
+@media (min-width: 992px) {
+  .quick-links-section.flexible-col .links-wrap {
+    display: flex;
+  }
+}
+
+.quick-links-section .quick-links-head {
+  margin-bottom: 1.6rem;
+  position: relative;
+}
+
+.quick-links-section .quick-links-head .links-title {
+  font-size: 20px;
+  font-weight: 550;
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+}
+
+.quick-links-section .quick-links-head .link-title-mob {
+  font-size: 12px;
+  letter-spacing: 1.6px;
+}
+
+.quick-links-section .quick-links-head .adf,
+.quick-links-section .quick-links-head .link-title-mob {
+  color: #353738;
+  display: block;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1248px) {
+  .hidden-lg {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .quick-links-section .quick-links-body.collapse {
+    display: block !important;
+    height: auto !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .quick-links-section .quick-links-body .links-item a {
+    font-size: 14px;
+  }
+}
+
+.quick-links-section .quick-links-body .links-item a {
+  color: #353738;
+  font-family: Lato, GE SS Two, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  width: fit-content;
+
+  &.icon-new-window {
+    &:after,
+    &:before {
+      content: " ";
+      width: toRem(16);
+      height:toRem(16);
+      background:url("../resources/images/new-window.svg") no-repeat 100%;
+    }
+
+    &:after {
+      margin-left:toRem(5);
+      @include rtlBlock() {
+        margin-left:0;
+         margin-right:toRem(5);
+      }
+    }
+
+    &:before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .quick-links-section .quick-links-body .links-item {
+    padding-bottom: 10px;
+    position: relative;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-social-dwonload {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+}
+
+.download-etisalat .icons-wrap {
+  align-items: center;
+  display: flex;
+}
+
+@media (min-width: 768px) {
+  .download-etisalat .icons-wrap .icon {
+    height: 33px;
+    margin-right: 16px;
+    width: 112px;
+  }
+}
+
+.download-etisalat .icons-wrap .icon {
+  height: 48px;
+  margin-right: 12px;
+  width: 162px;
+}
+
+.download-etisalat .icons-wrap .android,
+.download-etisalat .icons-wrap .apple,
+.download-etisalat .icons-wrap .huawei {
+  display: none;
+}
+
+.follow-etisalat .icons-wrap {
+  align-items: center;
+  display: flexbox;
+  display: flex;
+  -ms-flex-align: center;
+}
+
+@media (min-width: 992px) {
+  .follow-etisalat .icons-wrap .icon {
+    height: 40px;
+    margin-right: 16px;
+    width: 40px;
+  }
+
+  .follow-etisalat .icons-wrap .icon img,
+  .follow-etisalat .icons-wrap .icon svg {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+[lang="ar"] [dir="rtl"] .download-etisalat .icons-wrap {
+  flex-direction: row-reverse;
+}
+
+[lang="ar"] [dir="rtl"] .download-etisalat .icons-wrap .icon,
+[lang="ar"] [dir="rtl"] .download-etisalat .icons-wrap .icon:last-child {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+[lang="ar"] [dir="rtl"] .download-etisalat .icons-wrap .icon {
+  @include respond-to-min($tablet) {
+    margin-left: 16px;
+    margin-right: 0;
+  }
+}
+
+.follow-etisalat .icons-wrap .icon {
+  height: 36px;
+  margin-right: 18px;
+  width: 36px;
+}
+
+.follow-etisalat .icons-wrap .icon img,
+.follow-etisalat .icons-wrap .icon svg {
+  height: 36px;
+  width: 36px;
+}
+
+.payment-etisalat .icons-wrap {
+  align-items: center;
+  display: flexbox;
+  display: flex;
+  -ms-flex-align: center;
+}
+
+.payment-etisalat .icons-wrap .icon,
+.payment-etisalat .icons-wrap .icon img,
+.payment-etisalat .icons-wrap .icon svg {
+  height: 40px;
+  width: 40px;
+}
+
+.payment-etisalat .icons-wrap .icon {
+  height: 32px;
+  margin-right: 20px;
+  width: 32px;
+}
+
+@media (min-width: 992px) {
+  .payment-etisalat .icons-wrap .icon,
+  .payment-etisalat .icons-wrap .icon img,
+  .payment-etisalat .icons-wrap .icon svg {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.footer-links-logo-section {
+  background: #fff;
+  font-family: Lato, GE SS Two, Roboto, Arial, sans-serif;
+  margin-bottom: toRem(24) !important;
+  min-height: 100px;
+
+  @include respond-to-min($desktop) {
+    margin-bottom: 0 !important;
+  }
+
+  @include rtlBlock() {
+    margin-bottom: 0;
+
+    @include respond-to-max($tablet) {
+      margin-bottom: toRem(24);
+    }
+  }
+}
+
+.footer-social-nav {
+  padding: 0 0 8px;
+  text-align: center;
+
+  @include respond-to-min($tablet) {
+    padding: 0;
+  }
+
+  @include respond-to-min($desktop) {
+    padding: 0;
+    text-align: left;
+  }
+
+  @include respond-to-max($tablet) {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+    padding-top: 3px;
+    position: relative;
+
+    &:first-child {
+      bottom: 5px;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 2.4px;
+      line-height: 1.5rem;
+      margin-right: toRem(24);
+      text-transform: uppercase;
+
+      @include respond-to-max($desktop) {
+        display: none;
+      }
+
+      @include rtlBlock() {
+        margin-right: 0;
+        margin-left: toRem(8);
+      }
+    }
+
+    svg,
+    img {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
+  }
+}
+
+.footer-links-logo-section .flex-container .footer-links-nav {
+  margin: toRem(12) 0 !important;
+
+  @include respond-to-min($tablet) {
+    margin: toRem(15) 0 toRem(8) !important;
+  }
+
+  @include respond-to-max($tablet) {
+    padding: toRem(10) toRem(8) 0 !important;
+  }
+
+  @include respond-to-min($desktop) {
+    margin: toRem(16) 0 toRem(16) !important;
+    text-align: left;
+
+    @include rtlBlock() {
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-links-logo-section .footer-links-nav li {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.footer-links-logo-section .footer-links-nav li a {
+  border-right: 1px solid #e5e5e5;
+  color: #575757;
+  font-size: 0.85rem;
+  letter-spacing: 0.56px;
+  line-height: 1.1rem;
+  margin-right: 1.5rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 991px) {
+  .footer-links-logo-section .footer-links-nav li a {
+    font-size: 0.75rem;
+    margin-right: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+[lang="ar"] [dir="rtl"] .desktop {
+  @include respond-to-min($desktop) {
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-links-logo-section .etisalat-logo svg {
+    height: 100%;
+    margin-right: 0;
+  }
+}
+
+.quick-links-section .quick-links-head .collapsed + svg {
+  transform: rotate(0deg);
+}
+
+.quick-links-section .quick-links-head svg {
+  height: 7px;
+  width: 14px;
+}
+
+.quick-links-section .quick-links-head svg {
+  position: fixed !important;
+  right: 0;
+  top: 6px;
+  transform: rotate(180deg);
+  transition: all 0.2s ease-in-out;
+}
+
+@media (min-width: 992px) {
+  .quick-links-section.flexible-col .quick-links-body .links-item a img,
+  .quick-links-section.flexible-col .quick-links-body .links-item a svg {
+    height: 16px;
+    width: 16px;
+  }
+}
+
+.quick-links-section.flexible-col .quick-links-body .links-item a img,
+.quick-links-section.flexible-col .quick-links-body .links-item a svg {
+  height: 16px;
+  margin-left: 4px;
+  width: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .footer-links-logo-section img {
+    float: none;
+    height: 74px;
+  }
+
+  .quick-links-section {
+    padding: 1.5rem 2rem !important;
+  }
+
+  .footer-links-logo-section .copyright {
+    text-align: left;
+  }
+
+  .quick-links-section .arrow_accordion {
+    align-items: flex-end;
+    background: transparent;
+    border-right: 0;
+    -webkit-box-align: end;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    display: flexbox;
+    display: box;
+    display: flex;
+    -ms-flex-align: start;
+    flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .quick-links-section .arrow_accordion.collapsed::after {
+    transform: translateY(-80%) rotate(45deg);
+    transform: translateY(-80%) rotate(45deg);
+  }
+
+  .quick-links-section .arrow_accordion::after {
+    border: solid #353738;
+    border-width: 0 1px 1px 0;
+    content: "";
+    display: block;
+    line-height: 1;
+    padding: 5px;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-20%) rotate(-135deg);
+    transform: translateY(-20%) rotate(-135deg);
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 11px;
+  }
+}
+
+*[lang="ar"] *[dir="rtl"] .quick-links-section .arrow_accordion.collapsed::after {
+  left: 0;
+  right: auto;
+}
+
+*[lang="ar"] *[dir="rtl"] .quick-links-section .arrow_accordion::after {
+  left: 0;
+  right: auto;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .HideForMobile {
+    display: block;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .HideForMobile {
+    display: block;
+  }
+}
+
+@include respond-to-min($desktop) {
+  .footer-links-logo-section {
+    img {
+      float: right;
+      height: 74px;
+    }
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (device-pixel-ratio: 3) {
+  .quick-links-section .arrow_accordion {
+    align-items: flex-end;
+    background: transparent;
+    border-right: 0;
+    -webkit-box-align: end;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    display: flexbox;
+    display: box;
+    display: flex;
+    -ms-flex-align: start;
+    flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    right: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .quick-links-section .arrow_accordion.collapsed::after {
+    transform: translateY(-80%) rotate(45deg);
+    transform: translateY(-80%) rotate(45deg);
+  }
+
+  .quick-links-section .arrow_accordion::after {
+    border: solid #353738;
+    border-width: 0 1px 1px 0;
+    content: "";
+    display: block;
+    line-height: 1;
+    padding: 5px;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-20%) rotate(-135deg);
+    transform: translateY(-20%) rotate(-135deg);
+    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    width: 11px;
+  }
+
+  .footer-links-logo-section img {
+    float: none;
+    height: none;
+    margin-right: none;
+    text-align: none;
+    width: 260px;
+  }
+
+  .footer-links-logo-section .copyright {
+    float: inherit;
+    line-height: 2.2;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+}
+
+.quick-links-section .quick-links-head .link-title-mob {
+  font-size: 12px;
+  letter-spacing: 1.6px;
+}
+
+.quick-links-section .quick-links-head .adf,
+.quick-links-section .quick-links-head .link-title-mob {
+  color: #353738;
+  display: block;
+  font-family: Lato, GE SS Two, Roboto, Arial, sans-serif !important;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .follow-etisalat {
+    margin-bottom: 24px;
+  }
+
+  .follow-etisalat .footer-heading {
+    display: none;
+  }
+
+  .payment-etisalat .icons-wrap {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.quick-links-section .arrow_accordion {
+  align-items: flex-end;
+  background: transparent;
+  border-right: 0;
+  -webkit-box-align: end;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  display: flexbox;
+  display: box;
+  display: flex;
+  -ms-flex-align: start;
+  flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+  width: 100%;
+}
+
+.quick-links-section .arrow_accordion.collapsed::after {
+  transform: translateY(-80%) rotate(45deg);
+  transform: translateY(-80%) rotate(45deg);
+}
+
+.quick-links-section .arrow_accordion::after {
+  border: solid #353738;
+  border-width: 0 1px 1px 0;
+  content: "";
+  display: block;
+  line-height: 1;
+  padding: 5px;
+  position: absolute;
+  right: 3px;
+  top: 50%;
+  transform: translateY(-20%) rotate(-135deg);
+  transform: translateY(-20%) rotate(-135deg);
+  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 11px;
+}
+
+.copyright-year {
+  font-family: arial, sans-serif !important;
+}
+
+.footer {
+  background: $white;
+  margin-top: 32px;
+}
+
+.footer .social-icon-wrapper {
+  align-content: center;
+  display: flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  -ms-flex-line-pack: center;
+  -ms-flex-pack: center;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer .social-icon-wrapper .social-icon-spacer {
+  height: 0;
+  width: 100%;
+}
+
+.footer .social-icon-wrapper a {
+  align-items: center;
+  background-color: #dbdad0;
+  border-radius: 50%;
+  display: flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  height: 44px;
+  justify-content: center;
+  width: 44px;
+}
+
+.footer .social-icon-wrapper a svg {
+  fill: $black;
+  max-width: 64px;
+  width: 50%;
+}
+
+.footer .social-icon-wrapper a img {
+  max-height: 50%;
+  width: 50%;
+}
+
+.footer .social-icon-wrapper a:hover {
+  background-color: #719e19;
+}
+
+.footer .social-icon-wrapper a:hover svg,
+.footer .social-icon-wrapper a:hover svg path {
+  fill: $white;
+}
+
+.footer .social-icon-wrapper .social-icon {
+  display: flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-width: 20%;
+}
+
+.footer .social-icon-wrapper .more-less-button {
+  display: none;
+}
+
+.footer .social-icon-wrapper .more-less-button a:hover {
+  background-color: #719e19;
+}
+
+.footer .social-icon-wrapper .more-less-button a:hover svg {
+  fill: $white;
+}
+
+.footer .social-icon-wrapper .show-after {
+  display: flexbox;
+  display: flex;
+  padding-top: 2rem;
+}
+
+.footer .social-icon-wrapper .show-now {
+  display: flexbox;
+  display: flex;
+}
+
+.footer .social-icon-wrapper .more-less-button.active a {
+  background-color: #7a7a7a;
+}
+
+.footer .social-icon-wrapper .more-less-button.active a svg {
+  fill: $white;
+}
+
+.footer .social-icon-wrapper .more-less-button.active a #social-more-img {
+  display: none;
+}
+
+.footer .social-icon-wrapper .more-less-button.active a #social-less-img {
+  display: inherit;
+}
+
+.footer .etisalat-signature {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer .etisalat-signature .etisalat-logo-img {
+  height: 34.1px;
+  width: 136.6px;
+}
+
+.footer .etisalat-signature .copyright {
+  color: #919192;
+  margin-bottom: 50px;
+  padding-top: 26px;
+}
+
+.footer .footer-nav {
+  display: flexbox;
+  display: flex;
+  flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: center;
+  flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0 0 30px;
+  padding: 0;
+}
+
+.footer .footer-nav a {
+  border-left: 2px solid #e5e5e5;
+  color: #7a7a7a;
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1rem;
+  padding-left: 0.68rem;
+  padding-right: 0.68rem;
+  position: relative;
+}
+
+.footer .footer-nav a::after {
+  background-color: #e5e5e5;
+  content: " ";
+  height: 100%;
+  position: absolute;
+  right: -2px;
+  width: 2px;
+}
+
+.footer .footer-nav .active a,
+.footer .footer-nav a:hover {
+  color: #719e19;
+  text-decoration: underline;
+}
+
+.footer .footer-dinaymic-box {
+  display: flexbox;
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+}
+
+.footer .footer-dinaymic-box .row-nav,
+.footer .footer-dinaymic-box .row-social {
+  width: 100%;
+}
+
+.footer .footer-dinaymic-box .row-nav {
+  -ms-flex-order: 1;
+  order: 1;
+}
+
+.footer .footer-dinaymic-box .row-social {
+  -ms-flex-order: 2;
+  order: 2;
+}
+
+.footer-small {
+  margin-top: 0 !important;
+  padding: 40px 0;
+}
+
+@media (max-width: 992px) {
+  .footer-small {
+    padding: 50px 0;
+  }
+}
+
+.footer-small .etisalat-logo-img {
+  height: 100% !important;
+  margin-top: 0 !important;
+  position: relative;
+  top: -10px;
+  width: 200px !important;
+}
+
+@media (max-width: 992px) {
+  .footer-small .etisalat-logo-img {
+    top: 0;
+  }
+}
+
+.footer-small .right-n {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  text-align: right !important;
+}
+
+@media (max-width: 768px) {
+  .footer-small .right-n {
+    text-align: center !important;
+  }
+}
+
+.footer-small .left-n {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .footer-small .left-n {
+    text-align: center !important;
+  }
+}
+
+.footer-small .body-small {
+  font-size: 12px;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.footer-small .footer-nav-small {
+  display: inline-block !important;
+  margin-bottom: 0 !important;
+  margin-top: 15px !important;
+}
+
+@media (max-width: 992px) {
+  .footer-small .footer-nav-small {
+    margin-top: 0 !important;
+  }
+}
+
+.footer-small .footer-nav-small li {
+  display: inline;
+}
+
+@media (max-width: 992px) {
+  .footer-small .footer-nav-small li {
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+}
+
+.footer-small .footer-nav-small li a {
+  border-left: none;
+  border-right: 2px solid #e5e5e5;
+  color: #575757;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media (max-width: 992px) {
+  .footer-small .footer-nav-small li a {
+    margin-bottom: 0 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-small .footer-nav-small li:last-child a {
+    border-right: 0;
+  }
+
+  .footer-small .footer-nav-small li:last-child a::after {
+    display: none;
+  }
+}
+
+.footer-add-cart,
+.selected-items {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .footer {
+    margin-top: 57px;
+  }
+
+  .footer .social-icon-wrapper {
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .footer .social-icon-wrapper a {
+    height: 48px;
+    width: 48px;
+  }
+
+  .footer .social-icon-wrapper .more-less-button {
+    display: none;
+  }
+
+  .footer .social-icon-wrapper .show-after {
+    display: inherit;
+    padding-top: 0;
+  }
+
+  .footer .social-icon-wrapper .social-icon-spacer {
+    display: none;
+  }
+
+  .footer .social-icon-wrapper .social-icon {
+    min-width: 1%;
+  }
+
+  .footer .etisalat-signature {
+    margin-top: 20px;
+  }
+
+  .footer .etisalat-signature .etisalat-logo-img {
+    height: 84px !important;
+    width: 259px !important;
+  }
+
+  .footer .etisalat-signature .copyright {
+    margin-bottom: 53px;
+    padding-top: 24px;
+  }
+
+  .footer .footer-nav {
+    flex-direction: row;
+    flex-direction: row;
+    margin-top: 42px;
+  }
+
+  .footer .footer-nav a {
+    border-left: 1px solid #e5e5e5;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .footer .footer-nav a::after {
+    display: none;
+  }
+
+  .footer .footer-nav li:last-child a {
+    border-right: 1px solid #e5e5e5;
+  }
+
+  .footer .footer-dinaymic-box .row-nav {
+    -ms-flex-order: 2;
+    order: 2;
+  }
+
+  .footer .footer-dinaymic-box .row-social {
+    -ms-flex-order: 1;
+    order: 1;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer {
+    bottom: auto;
+    left: auto;
+    position: relative;
+    right: auto;
+  }
+
+  .footer-small .left-n,
+  .footer-small .right-n {
+    text-align: center !important;
+  }
+
+  .footer-add-cart {
+    background-color: hsl(0deg 0% 100% / 90%);
+    bottom: 0;
+    display: block;
+    padding: 12px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+  }
+}
+
+@media (min-width: 1248px) {
+  .footer {
+    margin-top: 50px;
+  }
+
+  .footer .social-icon-wrapper a {
+    height: 65px;
+    width: 65px;
+  }
+
+  .footer .social-icon-wrapper a img,
+  .footer .social-icon-wrapper a svg {
+    width: 50%;
+  }
+
+  .footer .etisalat-signature {
+    margin-top: 24px;
+  }
+
+  .footer .etisalat-signature .copyright {
+    margin-bottom: 80px;
+    padding-top: 30px;
+  }
+
+  .footer .footer-nav {
+    margin-top: 40px;
+  }
+
+  .footer .footer-nav a {
+    font-size: 0.875rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-links-logo-section {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-links-logo-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.footer-links-logo-section .etisalat-logo {
+  display: block;
+  text-align: right;
+}
+
+.footer-links-logo-section .etisalat-logo svg {
+  width: 260px;
+}
+
+.footer-links-logo-section .footer-links-nav li {
+  display: inline-block;
+}
+
+.footer-links-logo-section .footer-links-nav li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .footer-links-logo-section .footer-links-nav li a {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    margin-right: -4px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.footer-links-logo-section .footer-links-nav li:last-child a {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 991px) {
+  .footer-links-logo-section .footer-links-nav li:last-child a {
+    border-right: 1px solid #e5e5e5;
+    margin-right: -4px;
+    padding-right: 1.5rem;
+  }
+}
+
+.footer-links-logo-section .flex-container {
+  display: block;
+  margin-bottom: toRem(32);
+}
+
+
+.footer-links-logo-section .flex-container .etisalat-logo,
+.footer-links-logo-section .flex-container .footer-links-nav {
+  text-align: center;
+}
+
+.footer-links-logo-section .flex-container .etisalat-logo img,
+.footer-links-logo-section .flex-container .etisalat-logo svg {
+  height: auto;
+  max-width: 100%;
+}
+
+.footer-links-logo-section .flex-container .etisalat-logo svg {
+  stroke: none !important;
+}
+
+@include respond-to-min($desktop) {
+  .footer-links-logo-section .flex-container {
+    align-items: center;
+    display: flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    margin-top: toRem(50);
+  }
+
+  .footer-links-logo-section .flex-container .footer-links-nav {
+    margin-bottom: 1rem;
+    margin-top: toRem(16);
+    text-align: left;
+  }
+
+  .footer-links-logo-section .flex-container .etisalat-logo {
+    text-align: right;
+  }
+}
+
+.footer-links-logo-section .copyright {
+  color: $steel-grey;
+  font-size: 12px;
+  line-height: 1.2;
+  padding-top: toRem(5);
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .footer-links-logo-section .copyright {
+    display: none;
+  }
+}
+
+.footer-links-logo-section .copyright.desktop {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .footer-links-logo-section .copyright.desktop {
+    display: block;
+    text-align: left;
+
+    @include rtlBlock() {
+      text-align: right;
+    }
+  }
+}
+
+.footer-links-logo-section .social-links-section {
+  margin-bottom: 1rem;
+}
+
+.footer-links-logo-section .footer-links-nav li {
+  @include rtlBlock() {
+    &:first-child {
+      a {
+        border-right: 0;
+        margin-right: 0;
+        padding-right: 0;
+      }
+    }
+
+    &:last-child {
+      a {
+      margin-right: 0;
+      }
+    }
+
+    a {
+      border-right: none;
+      margin-left: toRem(16);
+      margin-right: 0;
+      padding-right: 0;
+    }
+  }
+}
+
+[lang="ar"] [dir="rtl"] .footer-links-logo-section li:last-child a {
+  border-left: none;
+}
+
+[lang="ar"] [dir="rtl"] .footer-links-logo-section .flex-container {
+  .footer-links-nav {
+    text-align: right;
+  }
+
+  .footer-social-nav {
+    @include respond-to-min($desktop) {
+      text-align: right;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-links-logo-section .footer-links-nav li a {
+    font-size: 0.75rem;
+    margin-right: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.footer-one-liner {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+}
+
+.footer-one-liner::before {
+  background: url(/b2c/eshopApp/assets/img/buy-get/Icons/SVG/icon-close-grey.svg) no-repeat;
+  background-size: contain;
+  bottom: 0;
+  content: "";
+  height: 360px;
+  opacity: 0.1;
+  position: absolute;
+  right: 0;
+  transform: rotate(180deg);
+  width: 340px;
+  z-index: -1;
+}
+
+.footer-text {
+  background: $white;
+  bottom: 0;
+  color: $steel-grey;
+  font-size: 14px;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-text p {
+  margin-bottom: 0;
+}
+
+.footer-black {
+  background-color: #242424;
+  box-shadow: 0 -2px 4px 0 rgb(0 0 0 / 15%);
+  padding: 13px 0;
+}
+
+.footer-wrapper {
+  display: flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .footer-wrapper {
+    flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.footer-wrapper .action {
+  align-items: center;
+  display: flexbox;
+  display: flex;
+  -ms-flex-align: center;
+}
+
+@media (max-width: 991px) {
+  .footer-wrapper .action {
+    flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-wrapper .action .action-text {
+    -ms-flex-order: 2;
+    order: 2;
+    width: 100%;
+  }
+}
+
+.footer-wrapper .action .action-text span {
+  color: $white;
+}
+
+.footer-wrapper .action .action-btn {
+  margin-left: 1rem;
+}
+
+@media (max-width: 767px) {
+  .footer-wrapper .action .action-btn {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-wrapper .action .action-btn {
+    -ms-flex-order: 1;
+    margin-left: 0;
+    order: 1;
+    width: 100%;
+  }
+}
+
+.footer-wrapper .action .action-btn a.btn {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper .action .action-btn a.btn {
+    width: 232px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-wrapper .price-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+
+.footer-wrapper .price-wrapper .price,
+.footer-wrapper .price-wrapper .small {
+  color: $white;
+}
+
+.footer-wrapper .price-wrapper .small {
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper .price-wrapper .small {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+}
+
+.footer-wrapper .price-wrapper .small.vat {
+  font-size: 12px;
+  line-height: 1.33;
+
+  @include font-family-Neotech-ge;
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper .price-wrapper .small.vat {
+    font-size: 14px;
+    line-height: 1.43;
+  }
+}
+
+.footer-wrapper .price-wrapper .price {
+  align-items: baseline;
+  -ms-flex-align: baseline;
+  font-size: 26px;
+  line-height: 1.23;
+}
+
+@media (min-width: 768px) {
+  .footer-wrapper .price-wrapper .price {
+    font-size: 36px;
+    line-height: 1.28;
+  }
+}
+
+[lang="ar"] [dir="rtl"] .footer-wrapper .action .action-btn {
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
+[lang="ar"] [dir="rtl"] .footer-wrapper .price-wrapper .price {
+  direction: rtl;
+}
+
+.footer-heading {
+  font-size: 12px;
+  letter-spacing: 1.6px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 992px) {
+  .footer-heading {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0;
+    margin-bottom: 16px;
+    text-transform: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .download-etisalat {
+    margin-bottom: 24px;
+  }
+
+  .download-etisalat .footer-heading {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .follow-etisalat {
+    margin-bottom: 24px;
+  }
+
+  .follow-etisalat .footer-heading {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .payment-etisalat .footer-heading {
+    margin-bottom: 4px !important;
+    text-align: center;
+  }
+
+  .needhelp-etisalat .footer-heading {
+    margin-bottom: 4px !important;
+    text-align: center;
+  }
+
+  .needhelp-etisalat {
+    margin-bottom: 24px;
+  }
+
+  .needhelp-etisalat .help-content {
+    text-align: center;
+  }
+}
+
+.footer-social-dwonload {
+  margin-top: 10px;
+
+  svg {
+    stroke: none !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer-social-dwonload {
+    display: flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  .needhelp-etisalat .help-content {
+    font-size: 16px;
+    letter-spacing: 0.57px;
+    line-height: 1.25;
+    margin-top: 11px;
+  }
+}
+
+@media screen and (max-width: 1247px) and (min-width: 992px) {
+  .footer-social-dwonload {
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .follow-etisalat,
+  .needhelp-etisalat,
+  .payment-etisalat {
+    flex-grow: 1;
+    -ms-flex-positive: 1;
+    width: 50%;
+  }
+
+  .follow-etisalat,
+  .payment-etisalat {
+    margin-top: 40px;
+  }
+}
+
+.action-btn {
+  align-items: center;
+  display: flexbox;
+  display: flex;
+  -ms-flex-align: center;
+}
+
+.action-btn svg {
+  height: 30px;
+  width: 50px;
+}
+
+.action-btn a {
+  color: #353738;
+  font-size: 0.875rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.quick-links-section .quick-links-head .adf,
+.quick-links-section .quick-links-head .link-title-mob {
+  @include font-family-Neotech-ge;
+
+  color: #353738;
+  display: block;
+  text-transform: uppercase;
+}
+
+.quick-links-section.flexible-col .quick-links-body .links-item a {
+  align-items: center;
+  display: flexbox;
+  display: flex;
+  -ms-flex-align: center;
+}
+
+.quick-links-section .quick-links-body .links-item {
+  padding-bottom: 1.4rem;
+}
+
+.quick-links-section .quick-links-body .links-item a:hover {
+  text-decoration: underline;
+}
+
+[lang="ar"] [dir="rtl"] .quick-links-section .quick-links-head svg {
+  left: 0;
+  right: auto;
+}
+
+.social-links-section .social-links-head {
+  align-items: center;
+  display: flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.social-links-section .social-links-head span {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  line-height: 1.5rem;
+  margin-right: 1.5rem;
+  text-transform: uppercase;
+}
+
+.social-links-section .social-links-body {
+  height: 1.5rem;
+  margin: 0;
+}
+
+.social-links-section .social-links-body .links-item {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.social-links-section .social-links-body .links-item:last-child {
+  margin-right: 0;
+}
+
+.social-links-section .social-links-body .links-item img,
+.social-links-section .social-links-body .links-item svg {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+[lang="ar"] [dir="rtl"] .social-links-section .social-links-head span {
+  margin-left: 1.5rem;
+  margin-right: 0;
+}
+
+[lang="ar"] [dir="rtl"] .social-links-section .social-links-body .links-item {
+  margin-left: 1rem;
+  margin-right: 0;
+}
+
+.download-etisalat .icons-wrap .icon img,
+.download-etisalat .icons-wrap .icon svg {
+  height: 48px;
+  width: 162px;
+}
+
+.download-etisalat .icons-wrap .icon:last-child {
+  margin-right: 0;
+}
+
+[lang="ar"] [dir="rtl"] .download-etisalat .icons-wrap .icon,
+[lang="ar"] [dir="rtl"] .download-etisalat .icons-wrap .icon:last-child {
+  margin-left: 12px;
+  margin-right: 0;
+}
+
+[lang="ar"] [dir="rtl"] .follow-etisalat .icons-wrap .icon {
+  margin-left: 18px;
+  margin-right: 0;
+}
+
+[lang="ar"] [dir="rtl"] .follow-etisalat .icons-wrap .icon:last-child {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.follow-etisalat .icons-wrap .icon:last-child {
+  margin-right: 0;
+}
+
+.payment-etisalat .icons-wrap .icon:last-child {
+  margin-right: 0;
+}
+
+.needhelp-etisalat .help-content {
+  color: #353738;
+  font-size: 12px;
+  line-height: 1;
+  margin-top: 8px;
+}
+
+.needhelp-etisalat .help-content a {
+  color: #719e19;
+  text-transform: uppercase;
+}
+
+.needhelp-etisalat .help-content a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .quick-links-section > .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .quick-links-section.flexible-col .links-wrap {
+    display: flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+
+  .quick-links-section.flexible-col .links-wrap .links {
+    min-width: 33.33334%;
+  }
+
+  .social-links-section .social-links-head {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  [lang="ar"] [dir="rtl"] .follow-etisalat .icons-wrap .icon {
+    margin-left: 16px;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1248px) {
+  .quick-links-section.flexible-col .links-wrap .links {
+    flex-basis: 0;
+    flex-grow: 1;
+    -ms-flex-positive: 1;
+    -ms-flex-preferred-size: 0;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 991px) {
+  .quick-links-section {
+    padding: 1.5rem 0;
+  }
+
+  .download-etisalat .icons-wrap {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .follow-etisalat .icons-wrap {
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .download-etisalat .icons-wrap .icon img,
+  .download-etisalat .icons-wrap .icon svg {
+    height: 33px;
+    width: 112px;
+  }
+
+  [lang="ar"] [dir="rtl"] .download-etisalat .icons-wrap .icon {
+    margin-left: 16px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1247px) and (min-width: 992px) {
+  .download-etisalat {
+    width: 100%;
+  }
+}
+
+.footer .quick-links-section {
+  padding-bottom: toRem(20);
+  padding-top: toRem(20);
+}

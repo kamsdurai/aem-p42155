@@ -1,0 +1,11 @@
+@import "variables";
+@import "font-awesome.min";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "base";
+@import "../components/**/**/*.scss";
+@import "../components/**/*.scss";
+@import "./styles/*.scss";
+
+.container {
+  padding: 0;
+}

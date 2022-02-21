@@ -1,0 +1,53 @@
+//== Font
+
+$fontfamily-book: "GothamRounded-Book", "Helvetica Neue", sans-serif;
+$fontfamily-bold: "GothamRounded-Bold", "Helvetica Neue", sans-serif;
+$fontfamily-light: "GothamRounded-Light", "Helvetica Neue", sans-serif;
+$font-size: toRem(16);
+$font-height: 1.2;
+
+//== Color
+
+// Normal mode
+$color-violet: #452769;
+$font-color: #726a84;
+$title-color: #fb397d;
+$white-color: #fff;
+$blue-color: #5b32b4;
+$light-grey: #333;
+$light-white: #ddd;
+$light-purple: #9978b5;
+$thick-white: #f4f4f4;
+$greyish-white: #ccc;
+$light-blue: #5e9ed6;
+$pinkbg-pink: #800080;
+$bg-white: #eaeaea;
+$table-gray: #221f1f;
+$oslo-gray: #8c9092;
+$smoke-white: #f3f3f3;
+$lime-green: #b9d532;
+//$purple: #452769;
+$grey-color: #f5f9fc;
+$pink-color: #db4f74;
+$color-black: #000;
+$light-black: #231f20;
+
+
+$color-white: #fff;
+$color-white-light: #ccc;
+$color-white-lightest: #ccc;
+$color-grey-light: #8c9092;
+
+$color-violet-light: #9978b5;
+//$color-violet: #221f1f;
+
+
+//sm
+$phone:             576px;
+//md
+$tablet:            768px;
+//lg
+$desktop:           992px;
+//xl
+$desktop-wide:      1200px;
+

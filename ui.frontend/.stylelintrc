@@ -1,0 +1,38 @@
+{
+  "parser": "postcss-scss",
+  "extends": "stylelint-config-standard-scss",
+  "plugins": ["stylelint-order", "stylelint-scss"],
+  "rules": {
+    "order/properties-alphabetical-order": true,
+    "at-rule-no-unknown": null,
+    "max-nesting-depth": [
+      5,
+      {
+        "ignore": ["blockless-at-rules"]
+      }
+    ],
+    "selector-pseudo-element-no-unknown": [
+      true,
+      {
+        "ignorePseudoElements": ["inactive-selection"]
+      }
+    ],
+    "declaration-block-no-redundant-longhand-properties": [
+      true,
+      {
+        "ignoreShorthands": ["/flex/"]
+      }
+    ],
+    "function-calc-no-unspaced-operator": null,
+    "function-name-case": null,
+    "selector-class-pattern": null,
+    "selector-max-compound-selectors": 6,
+    "scss/at-mixin-pattern": null,
+    "scss/at-mixin-argumentless-call-parentheses": null,
+    "scss/selector-no-redundant-nesting-selector": null,
+    "scss/dollar-variable-pattern": null,
+    "scss/double-slash-comment-whitespace-inside": "always",
+    "scss/at-function-pattern": null
+  },
+  "ignoreFiles": ["src/main/webpack/etisalat/styles/custom-components/**/*.scss"]
+}

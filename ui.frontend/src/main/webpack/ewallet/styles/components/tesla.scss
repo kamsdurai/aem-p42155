@@ -1,0 +1,81 @@
+.ewallet_success {
+  padding-bottom: 130px;
+  text-align: center;
+
+  a {
+    background-color: $white;
+    border: 1px solid $link-color;
+    border-radius: 4px;
+    border-width: 1px;
+    color: $link-color;
+    display: inline-block;
+    font-size: toRem(16);
+    font-weight: 700;
+    height: 57px;
+    line-height: 28px;
+    margin-top: 50px;
+    margin-top: 40px;
+    outline: 0;
+    padding: 0.75rem 0.5rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    width: 318px;
+
+    &:hover {
+      color: $link-color;
+      text-decoration: none;
+    }
+
+    &:focus {
+      background-color: $green-btn;
+      border-color: $green-btn;
+      color: $white;
+      outline: 0;
+    }
+  }
+
+  img {
+    height: 165px;
+    margin: 16px 16px 10px;
+    width: 165px;
+  }
+
+  p {
+    line-height: 30px;
+    margin: 0 0 13px;
+  }
+
+  h2 {
+    line-height: 54px;
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 35px;
+  }
+
+  @include respond-to-min($tablet) {
+    .cmp-text {
+      p {
+        padding: 0 25%;
+      }
+    }
+
+    h2 {
+      font-size: toRem(36);
+      line-height: 42px;
+    }
+
+    a {
+      max-width: 100%;
+    }
+  }
+
+  @include respond-to-min($desktop) {
+    h2 {
+      font-size: toRem(48);
+    }
+  }
+}

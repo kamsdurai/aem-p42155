@@ -1,0 +1,876 @@
+/* stylelint-disable max-nesting-depth */
+/* stylelint-disable no-descending-specificity */
+.cmp-accordion__title {
+  @include rtlBlock() {
+    float: right;
+    text-align: right;
+  }
+}
+
+.cmp-accordion--faqsection {
+  .container {
+    @include clearFix();
+
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  h3 {
+    padding: 0;
+    vertical-align: middle;
+  }
+
+  .cmp-accordion__item {
+    background-color: $sand-white-50;
+    border: 0;
+    box-shadow: none;
+    padding: 1rem 1.5rem;
+
+    &:nth-child(2n) {
+      background-color: $white;
+      margin-top: toRem(5);
+    }
+  }
+
+  .cmp-accordion__title {
+    @include font-family-lato;
+
+    color: $almost-black;
+    font-size: $font16;
+    font-weight: get-font-weight("bold");
+    line-height: 1.5;
+
+    @include rtlBlock() {
+      font-weight: get-font-weight("light");
+    }
+
+    &::after {
+      color: $almost-black;
+      content: " + ";
+      display: table-cell;
+      float: right;
+      font-size: $font30;
+      font-weight: get-font-weight("light");
+      line-height: toRem(12);
+      padding: toRem(5);
+      position: relative;
+      text-align: center;
+      vertical-align: top;
+
+      @include rtlBlock() {
+        @include respond-to-max($tablet) {
+          float: left;
+        }
+
+        @include respond-to-min($desktop) {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+
+  .cmp-text {
+    color: $steel-grey;
+    font-size: $font14;
+    line-height: toRem(20);
+    margin-bottom: 0.8rem;
+    margin-top: 0.8rem;
+
+    @include rtlBlock() {
+      margin-bottom: 0;
+    }
+
+    @include font-family-lato;
+  }
+
+  button:focus {
+    background-color: transparent;
+  }
+
+  .cmp-accordion__button--expanded .cmp-accordion__title {
+    &::after {
+      color: $almost-black;
+      content: " - ";
+      display: table-cell;
+      float: right;
+      font-size: $font64;
+      font-weight: get-font-weight("normal");
+      line-height: toRem(12);
+      padding: toRem(5);
+      position: relative;
+      text-align: center;
+      vertical-align: top;
+    }
+  }
+
+  .cmp-accordion__button {
+    display: grid;
+  }
+}
+
+.faqsection-no-icon {
+  .text,
+  .cmp-rte-text {
+    padding-left: 0;
+    padding-right: toRem(12);
+
+    @include respond-to-max($desktop) {
+      margin-bottom: toRem(12);
+      padding-right: 0;
+    }
+
+    @include rtlBlock() {
+      padding-left: toRem(12);
+      padding-right: 0;
+
+      @include respond-to-max($desktop) {
+        padding-left: 0;
+      }
+    }
+
+    .cmp-text {
+      h1 {
+        font-size: $font28;
+
+        @include respond-to-max($desktop) {
+          font-size: $font20;
+        }
+
+        span {
+          &.space-right {
+            @include rtlBlock() {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      p {
+        margin-bottom: toRem(12);
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin-bottom: toRem(36);
+        margin-top: 0;
+        width: 85%;
+
+        @include respond-to-max($desktop) {
+          margin-bottom: toRem(16);
+        }
+      }
+    }
+  }
+
+  .cmp-accordion--faqsection {
+    padding-left: toRem(12);
+
+    @include respond-to-max($desktop) {
+      padding-left: 0;
+    }
+
+    @include rtlBlock() {
+      padding-left: 0;
+      padding-right: toRem(12);
+
+      @include respond-to-max($desktop) {
+        padding-right: 0;
+      }
+    }
+
+    .text,
+    .cmp-rte-text {
+      margin-bottom: 0;
+      padding-right: 0;
+
+      .cmp-text {
+        color: $gray1;
+        margin-bottom: 0;
+        margin-top: toRem(24);
+
+        @include respond-to-max($desktop) {
+          margin-top: toRem(16);
+        }
+
+        p {
+          font-size: $font14 !important;
+          margin-bottom: 0;
+          margin-top: toRem(12);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    .cmp-accordion {
+      &__item {
+        padding: toRem(24);
+
+        @include respond-to-max($desktop) {
+          padding: toRem(16);
+        }
+      }
+
+      &__title {
+        padding-top: toRem(1);
+
+        @include respond-to-max($desktop) {
+          font-size: $font14;
+        }
+
+        &::after {
+          display: none;
+        }
+      }
+
+      &__button {
+        padding: 0;
+      }
+    }
+
+    .cmp-container {
+      padding: 0 !important;
+    }
+
+    .cmp-accordion__button--expanded {
+      .cmp-accordion__title {
+        &::after {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+// Simple line accordion
+
+.cmp-accordion--text {
+  width: 70% !important;
+
+  .container {
+    @include clearFix();
+
+    padding: 0 !important;
+    width: auto !important;
+  }
+
+  .cmp-accordion__item {
+    border-bottom: 0;
+    display: block;
+  }
+
+  .cmp-accordion__title {
+    color: $black;
+    display: inline-block;
+    font-size: $font16;
+    font-weight: get-font-weight("bold");
+    line-height: 1.5;
+    padding-right: 5.5rem;
+
+    @include font-family-lato;
+
+    @include respond-to-min($desktop) {
+      font-size: $font20;
+      line-height: 1.4;
+      padding: toRem(15) 1.5rem;
+    }
+
+    @include rtlBlock() {
+      padding-left: 5.5rem;
+      padding-right: 0;
+      width: 100%;
+    }
+  }
+
+  .cmp-accordion__itemdesc {
+    color: $dark-gray;
+    font-size: $font16;
+    font-weight: normal;
+    line-height: 1.5;
+    padding-right: 6.5rem;
+
+    @include font-family-lato;
+
+    @include respond-to-min($desktop) {
+      font-size: $font20;
+      padding: toRem(5) 1.5rem;
+    }
+
+    @include rtlBlock() {
+      float: right;
+      font-weight: get-font-weight("light");
+      padding-left: 6.5rem;
+      padding-right: 0;
+      text-align: right;
+    }
+  }
+
+  button:focus {
+    background-color: transparent;
+  }
+
+  .cmp-accordion__icon {
+    border: solid $almost-black;
+    border-width: 0 toRem(2) toRem(2) 0;
+    content: "";
+    display: block;
+    line-height: 1;
+    margin-right: toRem(2);
+    padding: toRem(5);
+    position: absolute;
+    right: toRem(3);
+    top: 50%;
+    transform: translateY(-80%) rotate(45deg);
+    transition: all 0.3s ease-in-out;
+    width: toRem(11);
+
+    @include respond-to-min($desktop) {
+      margin-right: toRem(36);
+    }
+
+    @include rtlBlock() {
+      left: 0;
+      margin-left: toRem(36);
+      margin-right: 0;
+      right: auto;
+
+      @include respond-to-max($tablet) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .cmp-accordion {
+    &__button {
+      border-bottom: toRem(1) solid $light-sand-brown;
+
+      &--expanded {
+        border-bottom: toRem(1) solid $sand-white-50;
+      }
+    }
+  }
+
+  .cmp-accordion__button--expanded .cmp-accordion__icon {
+    transform: translateY(-20%) rotate(-135deg);
+  }
+
+  .cmp-accordion__panel--expanded {
+    background-color: $sand-white-50;
+
+    @include rtlBlock() {
+      left: 0;
+      margin-left: 0;
+      margin-right: -50vw;
+      right: 50%;
+    }
+  }
+
+  .cmp-text {
+    color: $dark-gray;
+    display: block;
+    font-size: $font16;
+    line-height: toRem(28);
+    margin-bottom: toRem(0);
+    margin-left: auto;
+    margin-right: auto;
+    max-width: toRem(1224);
+    padding: 1.5rem 1.375rem 1rem;
+
+    @include font-family-lato;
+
+    @include respond-to-min($desktop) {
+      font-size: $font20;
+      padding: toRem(24) toRem(50) toRem(24) toRem(32);
+    }
+
+    ol {
+      li {
+        padding-left: 0.75rem;
+      }
+    }
+  }
+}
+
+// tab with accordion
+.cmp-accordion--tab {
+  @include font-family-Neotech-roboto;
+
+  .container {
+    @include clearFix();
+
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  .cmp-title {
+    padding: 1.5rem 1rem;
+
+    @include respond-to-min($desktop) {
+      margin-top: toRem(45);
+      padding: 0;
+    }
+  }
+
+  .cmp-accordion__item {
+    border-bottom: toRem(1) solid $light-sand-brown;
+    display: block;
+  }
+
+  .cmp-accordion__button {
+    padding: 0;
+  }
+
+  .cmp-accordion__title {
+    color: $almost-black;
+    display: inline-block;
+    font-size: $font12;
+    line-height: 1.5;
+    padding: 1.25rem toRem(25);
+
+    @include font-family-lato;
+
+    @include respond-to-min($desktop) {
+      font-size: $font16;
+      line-height: 1.4;
+      padding: 1.5rem toRem(25);
+    }
+  }
+
+  button:focus {
+    background-color: transparent;
+  }
+
+  .cmp-accordion__icon {
+    border: solid $almost-black;
+    border-width: 0 toRem(1) toRem(1) 0;
+    content: "";
+    display: block;
+    line-height: 1;
+    margin-right: toRem(3);
+    padding: toRem(5);
+    position: absolute;
+    right: toRem(3);
+    top: 50%;
+    transform: translateY(-80%) rotate(45deg);
+    transition: all 0.3s ease-in-out;
+    width: toRem(11);
+
+    @include respond-to-min($desktop) {
+      border-width: 0 toRem(2) toRem(2) 0;
+    }
+
+    @include rtlBlock() {
+      left: 0;
+      margin-left: toRem(36);
+      margin-right: 0;
+      right: auto;
+
+      @include respond-to-max($tablet) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .cmp-accordion__button--expanded .cmp-accordion__icon {
+    transform: translateY(-20%) rotate(-135deg);
+  }
+
+  .cmp-text {
+    background-color: $sand-white-50;
+    border-top-color: transparent;
+    color: $steel-grey;
+    font-size: $font12;
+    line-height: toRem(20);
+    margin-bottom: 0;
+    padding: 1rem;
+
+    @include font-family-lato;
+
+    @include respond-to-min($desktop) {
+      padding: 1.3rem 1.5rem;
+    }
+  }
+
+  @include respond-to-max($tablet) {
+    .nav-view-wrapp.panel > a,
+    .nav-view-wrapp.panel > a.collapsed {
+      align-items: center;
+      border-bottom: toRem(1) solid $light-sand-brown;
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      letter-spacing: normal;
+      line-height: 1.5;
+      padding: 1.5rem;
+      position: relative;
+    }
+
+    .nav-view-wrapp.panel > a.collapsed {
+      color: $almost-black;
+    }
+
+    .nav-view-wrapp.panel > a::before {
+      border-left: toRem(4) solid $main-green;
+      color: $main-green;
+      content: "";
+      display: block;
+      font-size: $font16;
+      height: 100%;
+      left: toRem(-12);
+      padding: toRem(5);
+      position: absolute;
+      top: 0;
+
+      @include font-family-Neotech-roboto;
+    }
+
+    .nav-view-wrapp.panel > a.collapsed::before {
+      display: none;
+    }
+
+    .nav-view-wrapp.panel > a::after {
+      border: solid $main-green;
+      border-width: 0 toRem(1) toRem(1) 0;
+      content: "";
+      line-height: 1;
+      padding: toRem(5);
+      position: absolute;
+      right: toRem(3);
+      top: 50%;
+      transform: translateY(-30%) rotate(-135deg);
+      transition: all 0.3s ease-in-out;
+      z-index: 1;
+    }
+
+    .nav-view-wrapp.panel > a.collapsed::after {
+      border: solid $almost-black;
+      border-width: 0 toRem(1) toRem(1) 0;
+      transform: translateY(-70%) rotate(45deg);
+    }
+
+    .nav-view-wrapp.panel > a {
+      font-size: $font16;
+    }
+
+    .panel {
+      background-color: $white;
+      margin: toRem(28);
+    }
+
+    .nav-view-wrapp.panel .cmp-title__text {
+      font-size: $font20;
+    }
+  }
+
+  @include respond-to-min($desktop) {
+    h3 {
+      margin: toRem(0);
+    }
+
+    .cmp-tabs {
+      display: flex;
+
+      .cmp-tabs__tab {
+        border-bottom: 0;
+        box-sizing: border-box;
+        color: $almost-black;
+        cursor: pointer;
+        flex-direction: row-reverse;
+        font-size: $font20;
+        justify-content: flex-end;
+        line-height: toRem(90);
+        padding: 0 0 0 toRem(30);
+
+        @include font-family-Neotech-roboto;
+
+        @include rtlBlock() {
+          padding: 0 toRem(30) 0 0;
+
+          @include font-family-Neotech-ge;
+        }
+
+        &--active {
+          border-left: toRem(4) solid $main-green;
+          color: $main-green;
+          display: block;
+          line-height: toRem(90);
+          padding: 0 0 0 toRem(26);
+
+          @include rtlBlock() {
+            border-left: 0;
+            border-right: toRem(4) solid $main-green;
+            padding: 0 toRem(26) 0 0;
+          }
+        }
+      }
+    }
+
+    .cmp-tabs__tablist {
+      display: block;
+      flex-wrap: wrap;
+      list-style: none;
+      margin-left: 9%;
+      padding-left: 0;
+      width: 30%;
+
+      @include rtlBlock() {
+        margin-left: 0;
+      }
+    }
+
+    .cmp-tabs__tabpanel--active {
+      margin-right: 8%;
+      width: 60%;
+    }
+  }
+}
+
+// accordion with child accordion as list
+
+.cmp-accordion--list {
+  width: 100%;
+
+  @include respond-to-min($desktop) {
+    margin-left: auto;
+    margin-right: auto;
+    width: toRem(860);
+  }
+
+  .cmp-list {
+    margin-top: toRem(65);
+  }
+
+  article {
+    border-top: toRem(1) solid $light-sand-brown;
+    display: flex;
+    flex-direction: row;
+  }
+
+  a {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .cmp-list__item-title {
+    color: $main-green;
+    cursor: pointer;
+    display: block;
+    font-size: $font16;
+    line-height: toRem(22);
+    margin: 0;
+    padding: toRem(15) 0;
+
+    @include font-family-lato;
+
+    &::after {
+      border-right: toRem(1.5) solid $main-green;
+      border-top: toRem(1.5) solid $main-green;
+      color: $almost-black;
+      content: "";
+      display: inline;
+      height: toRem(12);
+      margin-left: toRem(10);
+      margin-top: toRem(10);
+      position: absolute;
+      right: inherit;
+      top: inherit;
+      transform: translateY(-50%) rotate(45deg);
+      width: toRem(12);
+
+      @include rtlBlock() {
+        margin-right: toRem(10);
+        transform: translateY(-50%) rotate(-135deg);
+      }
+    }
+  }
+
+  span.more,
+  span.less {
+    color: $almost-black;
+    float: right;
+    font-size: $font14;
+    letter-spacing: toRem(2);
+    line-height: toRem(18);
+    margin-top: toRem(10);
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+
+    @include font-family-lato;
+
+    @include rtlBlock() {
+      float: left;
+      text-align: left;
+    }
+  }
+}
+
+// Accessibility
+.acc-black,
+.acc-blue {
+  .cmp-accordion {
+    background-color: $black;
+  }
+
+  .cmp-accordion--faqsection {
+    .cmp-accordion {
+      &__item {
+        background-color: $black;
+        border-bottom: toRem(1) solid $white;
+      }
+
+      &__title {
+        color: $white;
+
+        &::after {
+          color: $white;
+        }
+      }
+    }
+
+    .cmp-text {
+      color: $white !important;
+    }
+  }
+
+  .cmp-accordion--text {
+    .cmp-accordion {
+      background-color: $black;
+
+      &__title {
+        color: $white;
+      }
+
+      &__icon {
+        border-color: $white;
+      }
+
+      &__panel {
+        &--expanded {
+          background-color: $black;
+        }
+      }
+
+      &__button {
+        border-bottom-color: $white;
+      }
+
+      &__itemdesc {
+        color: $white;
+      }
+
+      .cmp-text {
+        color: $white;
+
+        a {
+          color: $white;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.acc-blue {
+  .cmp-accordion {
+    background-color: $blue4;
+  }
+
+  .cmp-accordion--faqsection {
+    .cmp-accordion {
+      &__item {
+        background-color: $blue4;
+      }
+    }
+  }
+
+  .cmp-accordion--text {
+    .cmp-accordion {
+      background-color: $blue4;
+
+      &__panel {
+        &--expanded {
+          background-color: $blue4;
+        }
+      }
+    }
+  }
+}
+
+.acc-yellow {
+  .cmp-accordion {
+    background-color: $black;
+  }
+
+  .cmp-accordion--faqsection {
+    .cmp-accordion {
+      &__item {
+        background-color: $black;
+        border-bottom: toRem(1) solid $yellow-light;
+      }
+
+      &__title {
+        color: $yellow-light;
+
+        &::after {
+          color: $yellow-light;
+        }
+      }
+    }
+
+    .cmp-text {
+      color: $yellow-light !important;
+    }
+  }
+
+  .cmp-accordion--text {
+    .cmp-accordion {
+      background-color: $black;
+
+      &__title {
+        color: $yellow-light;
+      }
+
+      &__icon {
+        border-color: $yellow-light;
+      }
+
+      &__panel {
+        &--expanded {
+          background-color: $black;
+        }
+      }
+
+      &__button {
+        border-bottom-color: $yellow-light;
+      }
+
+      &__itemdesc {
+        color: $yellow-light;
+      }
+
+      .cmp-text {
+        color: $yellow-light;
+
+        a {
+          color: $yellow-light;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

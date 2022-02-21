@@ -1,0 +1,33 @@
+// overwriting AEM grid in few cases to achive same visual design
+$grid-spacing: 12px;
+
+.cmp-teaser--multicol,
+.cmp-teaser--multicol_media,
+.cmp-teaser--promo-card-row,
+.product-features {
+  @include respond-to-max($tablet) {
+    .aem-GridColumn--phone--12.aem-GridColumn {
+      padding: 0 !important;
+    }
+  }
+
+  .aem-GridColumn {
+    padding: 0 $grid-spacing;
+  }
+
+  .aem-GridColumn--default--12.aem-GridColumn {
+    padding: 0;
+  }
+
+  .aem-GridColumn--default--12 .aem-GridColumn {
+    padding: 0;
+  }
+
+  .aem-GridColumn--phone--12 .aem-GridColumn {
+    padding: 0;
+  }
+
+  &.container {
+    padding: 0;
+  }
+}

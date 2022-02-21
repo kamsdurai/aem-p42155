@@ -1,0 +1,1033 @@
+/* stylelint-disable no-descending-specificity */
+.cmp-carousel--herobanner {
+  .btn-green {
+    @include rtlBlock() {
+      right: 0;
+    }
+  }
+
+  .cmp-carousel {
+    &__actions {
+      display: none;
+
+      @include respond-to-min($desktop) {
+        display: block;
+      }
+    }
+
+    &__action {
+      display: none;
+
+      @include respond-to-min($desktop) {
+        &--next,
+        &--previous {
+          align-items: center;
+          background: rgb(0 0 0 / 42%);
+          border: $border-step-0;
+          border-color: none;
+          border-radius: 50%;
+          cursor: pointer;
+          display: flex;
+          height: toRem(48);
+          justify-content: center;
+          margin: $margin-step-0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: toRem(48);
+          z-index: 2;
+
+          &::after {
+            border-left: $border-step-1 solid $white;
+            border-top: $border-step-1 solid $white;
+            content: "";
+            display: block;
+            height: toRem(11);
+            position: absolute;
+            top: toRem(15);
+            width: toRem(11);
+            z-index: 11;
+          }
+        }
+
+        &--previous {
+          left: toRem(43);
+          right: auto;
+
+          &::after {
+            left: toRem(20);
+            top: auto;
+            transform: rotate(-45deg);
+          }
+        }
+
+        &--next {
+          right: toRem(43);
+
+          &::after {
+            left: toRem(17);
+            top: auto;
+            transform: rotate(135deg);
+          }
+        }
+
+        &-text {
+          display: none;
+        }
+      }
+    }
+
+    &__indicators {
+      margin: $margin-step-2 0;
+
+      @include respond-to-min($desktop) {
+        display: none;
+      }
+    }
+
+    &__indicator {
+      background-color: $light-white-grey;
+      height: toRem(8);
+      width: toRem(8);
+
+      &--active {
+        background-color: $arrow-border-green;
+      }
+    }
+  }
+
+  .hero-heading-big {
+    @include rtlBlock() {
+      right: 0;
+    }
+
+    margin-bottom: $margin-step-1;
+    margin-top: $margin-step-3;
+
+    @include respond-to-max($phone) {
+      padding: 0 toRem(5);
+    }
+
+    @include respond-to-min($desktop) {
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      padding: 0 toRem(12);
+      right: auto;
+      width: toRem(388);
+
+      @include rtlBlock() {
+        left: auto;
+        right: 0;
+      }
+    }
+
+    @include respond-to-min($desktop-wide) {
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      padding: 0 toRem(12);
+      right: auto;
+      width: toRem(560);
+
+      @include rtlBlock() {
+        left: auto;
+        right: toRem(-13);
+      }
+    }
+
+    @include respond-to-max($desktop) {
+      position: relative;
+      top: auto;
+
+      .text--white {
+        color: $almost-black;
+
+        @include respond-to-min($desktop) {
+          color: $white;
+        }
+      }
+    }
+
+    h1 {
+      font-size: $font26;
+      margin: $margin-step-0;
+
+      @include respond-to-min($desktop) {
+        font-size: $font54;
+      }
+    }
+  }
+
+  .video {
+    @include respond-to-min($desktop) {
+      height: 100%;
+      min-height: toRem(550);
+    }
+
+    .video_link {
+      margin-left: toRem(5);
+
+      @include respond-to-min($desktop) {
+        color: $white;
+        left: toRem(10);
+        margin-left: 0;
+
+        @include rtlBlock() {
+          right: 0;
+        }
+      }
+
+      @include respond-to-max($desktop) {
+        color: $main-green;
+      }
+    }
+
+    .cover-image__with-play-icon {
+      @include respond-to-min($desktop) {
+        margin-left: -calc(#{$padding-step-1} + 4px);
+        margin-right: -calc(#{$padding-step-1} + 4px);
+      }
+    }
+
+    .video-wrapper {
+      @include rtlBlock() {
+        right: 0;
+        text-align: right;
+      }
+
+      position: relative;
+      width: 100%;
+
+      @include respond-to-min($desktop) {
+        left: toRem(10);
+        top: toRem(65);
+        width: toRem(200);
+      }
+
+      @include respond-to-max($phone) {
+        margin-bottom: $margin-step-0;
+        margin-top: toRem(8);
+        padding-left: toRem(2);
+      }
+    }
+
+    .video_cover {
+      @include respond-to-min($desktop) {
+        bottom: -9999px;
+        height: auto;
+        left: -9999px;
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
+        position: absolute;
+        right: -9999px;
+        top: -9999px;
+      }
+    }
+
+    .video_ctn {
+      @include respond-to-max($phone) {
+        background: $white-grey;
+        padding: toRem(70) 0;
+      }
+
+      @include respond-to-min($tablet) {
+        left: 0;
+        max-height: toRem(250);
+        overflow: hidden;
+        top: 0;
+        z-index: 1;
+      }
+
+      @include respond-to-min($desktop) {
+        height: toRem(500);
+        max-height: toRem(500);
+      }
+    }
+
+    .youtube-popup-container {
+      left: toRem(20);
+      right: toRem(10);
+      top: toRem(250);
+
+      @include respond-to-min($tablet) {
+        top: toRem(240);
+      }
+
+      @include respond-to-min($desktop) {
+        margin: $margin-step-0 auto;
+        position: relative;
+        right: 0;
+        top: 0;
+        width: toRem(1224);
+      }
+
+      @include respond-to-min($desktop-wide) {
+        left: 0;
+        top: 0;
+
+        @include rtl(right, 0, toRem(28));
+      }
+
+      @include respond-to-max($desktop-min) {
+        @include rtlBlock() {
+          right: toRem(38);
+        }
+      }
+
+      @include respond-to-max($tablet) {
+        @include rtlBlock() {
+          right: toRem(16);
+        }
+      }
+
+      @include respond-to-max($phone) {
+        @include rtlBlock() {
+          right: toRem(13);
+        }
+      }
+
+      .btn-green {
+        left: 0;
+        margin: 0 toRem(5);
+        max-width: 100%;
+        top: auto;
+        width: toRem(351);
+
+        @include respond-to-min($tablet) {
+          margin: toRem(10) 0 0;
+          width: 100%;
+        }
+
+        @include respond-to-min($desktop) {
+          left: toRem(18);
+          margin-top: calc(#{$margin-step-2} + 4px);
+          min-width: toRem(180);
+          top: toRem(336);
+          width: toRem(180);
+
+          @include rtlBlock() {
+            right: toRem(5);
+            width: toRem(180);
+          }
+        }
+      }
+    }
+  }
+
+  .video_link svg polygon {
+    height: toRem(20);
+    stroke: $white;
+    width: toRem(20);
+  }
+
+  .replaced-svg {
+    height: toRem(20);
+    stroke: $white;
+    width: toRem(20);
+  }
+
+  .replaced-svg,
+  a.video_link svg {
+    @include rtlBlock() {
+      float: right;
+      left: 0;
+      margin-left: toRem(12);
+      right: 0;
+      top: 0;
+    }
+
+    @include respond-to-min($desktop) {
+      left: toRem(6);
+      position: relative;
+      top: toRem(3);
+    }
+
+    g g {
+      @include respond-to-max($desktop) {
+        stroke: $main-green !important;
+      }
+
+      @include respond-to-min($tablet) {
+        position: absolute;
+        right: -toRem(32);
+        stroke: $white;
+        top: -toRem(3);
+      }
+    }
+
+    polygon {
+      @include respond-to-max($desktop) {
+        stroke: $main-green !important;
+      }
+
+      @include respond-to-min($tablet) {
+        stroke: $white;
+      }
+    }
+  }
+}
+
+.cmp-teaser--herobanner,
+.plain-hero--banner {
+  max-height: toRem(500);
+  overflow: hidden;
+  position: relative;
+
+  p {
+    @include rtlBlock() {
+      text-align: right;
+    }
+
+    @include font-family-lato();
+
+    color: $black;
+    font-size: $font18;
+    letter-spacing: normal;
+    line-height: toRem(28.8);
+    margin: $margin-step-0 $margin-step-0 calc(#{$margin-step-2} -3.5px) $margin-step-0;
+    text-align: left;
+
+    @include respond-to-min($desktop) {
+      color: $white;
+      font-size: $font18;
+    }
+
+    a {
+      color: $lemon-green;
+      font-size: $font16;
+
+      @include respond-to-min($desktop) {
+        font-size: $font18;
+      }
+    }
+  }
+
+  .cmp-teaser {
+    &__image {
+      height: 100%;
+      width: 100%;
+
+      @include respond-to-max($tablet) {
+        height: 100%;
+      }
+    }
+
+    &__description {
+      @include respond-to-min($desktop) {
+        bottom: 0;
+        left: 0;
+        padding: 0 toRem(12);
+        right: auto;
+        top: 0;
+        width: toRem(388);
+
+        @include rtlBlock() {
+          left: auto;
+          right: 0;
+        }
+
+        p {
+          position: relative;
+          top: toRem(5);
+
+          @include respond-to-max($desktop) {
+            color: $almost-black;
+          }
+
+          &:first-child {
+            line-height: 1.6;
+          }
+
+          @include rtlBlock() {
+            font-weight: get-font-weight("light");
+          }
+        }
+
+        @include respond-to-min($desktop-wide) {
+          bottom: 0;
+          left: 0;
+          padding: 0;
+          right: 0;
+          top: 0;
+          width: toRem(560);
+        }
+
+        .hero-heading-big {
+          font-size: toRem(26);
+          line-height: toRem(33);
+
+          @include respond-to-min($desktop) {
+            color: $white;
+            font-size: toRem(54);
+            line-height: toRem(64);
+          }
+        }
+
+        h3 {
+          @include rtlBlock() {
+            font-weight: get-font-weight("light");
+          }
+        }
+
+        h2 {
+          color: $almost-black;
+        }
+
+        a {
+          color: $lemon-green;
+        }
+      }
+    }
+
+    &__content {
+      align-items: start;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      left: 0;
+      margin-top: toRem(30);
+      padding-left: calc(#{$padding-step-1} +2px);
+      padding-right: calc(#{$padding-step-1} +4px);
+      position: relative;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 100%;
+      z-index: 1;
+
+      @include respond-to-max($tablet) {
+        font-size: $font26;
+        line-height: toRem(33);
+        padding: 0 toRem(10);
+        z-index: 2;
+      }
+
+      @include respond-to-min($desktop) {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        padding: 0 toRem(12);
+        right: 0;
+        top: 0;
+        width: toRem(1224);
+      }
+
+      @include respond-to-min($desktop-wide) {
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        padding: 0 toRem(12);
+        right: 0;
+        top: 0;
+        width: toRem(1224);
+      }
+
+      @include respond-to-max($desktop) {
+        font-size: $font26;
+        left: 0;
+        line-height: toRem(33);
+        padding: 0 toRem(12);
+        position: relative;
+        top: 0;
+        z-index: 2;
+      }
+    }
+
+    &__pretitle {
+      background-image: linear-gradient(270deg, $light-sun, $light-pumpkin);
+      border-radius: toRem(100);
+      color: $white;
+      display: flex;
+      font-size: $font14;
+      font-weight: get-font-weight("bold");
+      letter-spacing: normal;
+      line-height: toRem(20);
+      margin-bottom: toRem(12);
+      max-width: toRem(336);
+      padding: toRem(6) toRem(16);
+
+      @include font-family-lato();
+
+      @include respond-to-min($tablet) {
+        margin-bottom: $margin-step-2;
+      }
+
+      @include respond-to-min($desktop) {
+        font-size: $font16;
+        line-height: toRem(24);
+        max-width: toRem(426);
+      }
+    }
+
+    &__action-container {
+      margin-bottom: $margin-step-0;
+      position: relative;
+      width: 100%;
+
+      @include respond-to-min($tablet) {
+        margin-top: $margin-step-3;
+      }
+
+      @include respond-to-max($desktop) {
+        width: 100%;
+      }
+
+      a {
+        @include font-family-lato();
+
+        background-color: $arrow-border-green;
+        border-color: $arrow-border-green;
+        border-radius: $border-radius-step-1;
+        border-width: $border-step-1;
+        box-shadow: none !important;
+        color: $white;
+        display: inline-block;
+        font-size: $font14;
+        font-weight: get-font-weight("bold");
+        height: toRem(48);
+        letter-spacing: toRem(2.28);
+        line-height: 48px;
+        min-width: toRem(180);
+        outline: 0;
+        padding: toRem(1.6);
+        text-align: center;
+        text-transform: uppercase;
+        transition: all 0.3s ease-in-out;
+        width: 100%;
+
+        @include rtlBlock() {
+          letter-spacing: normal;
+        }
+
+        @include respond-to-min($desktop) {
+          width: auto;
+        }
+
+        &:hover {
+          background-color: $green-btn;
+          border-color: $green-btn;
+          box-shadow: none !important;
+          color: $white;
+        }
+      }
+    }
+
+    h1 {
+      font-size: $font26;
+
+      @include respond-to-min($desktop) {
+        color: $white;
+        font-size: $font54;
+        margin-bottom: toRem(16);
+        margin-top: 0;
+      }
+    }
+
+    &__title {
+      font-size: toRem(26);
+      line-height: toRem(33);
+      padding: 0;
+
+      @include respond-to-min($desktop) {
+        bottom: 0;
+        color: $white;
+        font-size: toRem(54);
+        left: 0;
+        line-height: toRem(64);
+        margin: $margin-step-0 $margin-step-0 toRem(12.5) $margin-step-0;
+        padding: 0 toRem(12);
+        right: auto;
+        top: 0;
+        width: toRem(388);
+
+        @include rtlBlock() {
+          left: auto;
+          right: 0;
+        }
+
+        a {
+          color: $white;
+        }
+      }
+
+      @include respond-to-min($desktop-wide) {
+        bottom: 0;
+        left: 0;
+        padding: 0;
+        right: 0;
+        top: 0;
+        width: toRem(560);
+      }
+
+      @include respond-to-max($desktop) {
+        a {
+          color: $almost-black;
+
+          @include rtlBlock() {
+            color: $almost-black;
+          }
+        }
+      }
+
+      &-link {
+        color: $white;
+      }
+    }
+  }
+
+  .text--white {
+    color: $almost-black;
+
+    @include rtlBlock() {
+      color: $almost-black;
+    }
+
+    @include respond-to-min($desktop) {
+      color: $white;
+
+      @include rtlBlock() {
+        color: $white;
+      }
+    }
+  }
+
+  .cmp-image__image {
+    height: 100% !important;
+    width: 100%;
+    z-index: 1;
+
+    @include respond-to-min($desktop) {
+      height: auto;
+    }
+  }
+}
+
+.hero-banner {
+  &__right_text {
+    @include respond-to-min($desktop) {
+      .cmp-teaser__content {
+        margin-left: 50%;
+        width: 50%;
+
+        @include rtlBlock() {
+          margin-right: 50%;
+        }
+
+        .cmp-teaser__description {
+          p {
+            color: $white;
+          }
+        }
+      }
+
+      .hero-heading-big {
+        left: 50%;
+        margin-left: toRem(-12);
+
+        @include rtlBlock() {
+          left: auto;
+          margin-right: toRem(-12);
+          right: 50%;
+        }
+      }
+
+      .youtube-popup-container .btn-green {
+        left: 50% !important;
+
+        @include rtlBlock() {
+          left: auto;
+          right: 50% !important;
+        }
+      }
+
+      .video-wrapper {
+        left: 50% !important;
+
+        @include rtlBlock() {
+          left: auto;
+          right: 50% !important;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  &__center_text {
+    @include respond-to-min($desktop) {
+      .cmp-teaser__content {
+        align-items: center;
+        width: toRem(1020);
+
+        @include rtlBlock() {
+          align-items: center;
+        }
+
+        .cmp-teaser__title {
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          width: 100%;
+
+          @include rtlBlock() {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+          }
+        }
+
+        .cmp-teaser__description {
+          width: 100%;
+
+          p {
+            text-align: center;
+
+            @include rtlBlock() {
+              text-align: center;
+            }
+          }
+        }
+      }
+
+      .cmp-teaser__action-container {
+        text-align: center;
+      }
+
+      .hero-heading-big {
+        left: 0;
+        margin: auto;
+        right: 0;
+        text-align: center;
+        top: toRem(190);
+
+        @include rtlBlock() {
+          left: 0;
+          margin: auto;
+          right: 0;
+        }
+
+        h1 {
+          @include rtlBlock() {
+            text-align: center;
+          }
+        }
+      }
+
+      .youtube-popup-container .btn-green {
+        left: 0 !important;
+        margin: auto !important;
+        right: 0;
+        width: toRem(180);
+      }
+
+      .video-wrapper {
+        left: 0;
+        margin: auto;
+        right: 0;
+      }
+
+      &.plain-hero--banner {
+        .cmp-teaser {
+          &__content {
+            align-items: center;
+            margin: auto;
+            width: toRem(422);
+          }
+
+          &__title {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.plain-hero--banner {
+  height: toRem(554);
+  max-height: toRem(554);
+  position: relative;
+  width: auto;
+
+  @include respond-to-min($desktop) {
+    max-height: toRem(500);
+  }
+
+  .cmp-teaser__title a {
+    @include respond-to-max($tablet) {
+      color: $white;
+    }
+  }
+}
+
+// Accessibility
+.acc-black,
+.acc-blue {
+  .text--white {
+    color: $white;
+  }
+
+  .cmp-carousel--herobanner {
+    .cmp-carousel__action--previous,
+    .cmp-carousel__action--next {
+      &::after {
+        border-left-color: $white;
+        border-top-color: $white;
+        color: $white;
+      }
+    }
+
+    .video {
+      .video_link {
+        color: $white;
+      }
+    }
+
+    .cmp-teaser__action-container {
+      a {
+        background-color: $black;
+        border: toRem(1) solid $white;
+      }
+    }
+
+    .hero-heading-big {
+      .text--white {
+        color: $white;
+      }
+    }
+  }
+
+  .youtube-popup-container {
+    .btn-green {
+      border-color: $white !important;
+      color: $white;
+    }
+  }
+
+  .cmp-teaser--herobanner {
+    p {
+      color: $white;
+    }
+
+    .cmp-teaser {
+      &__title {
+        a {
+          color: $white;
+        }
+      }
+
+      &__action-container {
+        a {
+          background-color: $black;
+          color: $white;
+        }
+      }
+
+      &__description {
+        h4,
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.acc-blue {
+  .cmp-carousel--herobanner {
+    .cmp-teaser__action-container {
+      a {
+        background-color: $blue4;
+        border: toRem(1) solid $white;
+      }
+    }
+  }
+
+  .cmp-teaser--herobanner {
+    .cmp-teaser {
+      &__action-container {
+        a {
+          background-color: $blue4;
+        }
+      }
+    }
+  }
+}
+
+.acc-yellow {
+  .text--white {
+    color: $yellow-light;
+  }
+
+  .cmp-carousel--herobanner {
+    .cmp-carousel__action--previous,
+    .cmp-carousel__action--next {
+      &::after {
+        border-left-color: $yellow-light;
+        border-top-color: $yellow-light;
+        color: $yellow-light;
+      }
+    }
+
+    .video {
+      .video_link {
+        color: $yellow-light;
+      }
+    }
+
+    .cmp-teaser__action-container {
+      a {
+        background-color: $black;
+        border: toRem(1) solid $yellow-light;
+      }
+    }
+
+    .hero-heading-big {
+      .text--white {
+        color: $yellow-light;
+      }
+    }
+
+    .cmp-carousel__indicator {
+      background-color: $yellow-light;
+    }
+  }
+
+  .youtube-popup-container {
+    .btn-green {
+      border-color: $yellow-light !important;
+      color: $yellow-light;
+    }
+  }
+
+  .cmp-teaser--herobanner {
+    p {
+      color: $yellow-light;
+    }
+
+    .cmp-teaser {
+      &__title {
+        a {
+          color: $yellow-light;
+        }
+      }
+
+      &__action-container {
+        a {
+          background-color: $black;
+          color: $yellow-light;
+        }
+      }
+
+      &__description {
+        h4,
+        a {
+          color: $yellow-light;
+        }
+      }
+    }
+  }
+}
