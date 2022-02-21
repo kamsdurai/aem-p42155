@@ -1,0 +1,2137 @@
+{
+  "data": {
+    "response": {
+      "HeaderContent": [],
+      "endeca:auditInfo": {
+        "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+        "ecr:innerPath": null
+      },
+      "name": "Two-Column Page",
+      "@type": "TwoColumnPage",
+      "MainContent": [
+        {
+          "defaultRefinementsAr": [],
+          "lastRecNum": 15,
+          "records": [
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/consumer/support/home/internet.jsp"
+                ],
+                "document.title": ["Internet"],
+                "document.contentType": ["text/html"],
+                "record.source": ["FAQ"],
+                "document.text": [
+                  ". Plans and add-ons. eLife Home Portal. Al Shamil. Email2SMS. Packages. UAE Wi-Fi by etisalat. Wi-Fi Home Zone. Wi-Fi Connection Speed. View All. View Less. Application forms. Domain Name Registration Application Form. Al Shamil Broadband Application Form - for New Customer. Al Shamil Broadband Application Form - for Existing Customer. eLife. Telephone. VAT. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Services. Services. 5G. UAE Wifi. Home Zone. Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/consumer/support/home/internet.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Finternet.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/consumer/support/home/internet.jsp"
+                    ],
+                    "document.title": ["Internet"],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["FAQ"],
+                    "document.text": [
+                      ". Plans and add-ons. eLife Home Portal. Al Shamil. Email2SMS. Packages. UAE Wi-Fi by etisalat. Wi-Fi Home Zone. Wi-Fi Connection Speed. View All. View Less. Application forms. Domain Name Registration Application Form. Al Shamil Broadband Application Form - for New Customer. Al Shamil Broadband Application Form - for Existing Customer. eLife. Telephone. VAT. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Services. Services. 5G. UAE Wifi. Home Zone. Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Page 1. icon-outline-close-white. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/consumer/support/home/internet.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fconsumer%2Fsupport%2Fhome%2Finternet.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "sku.activePrice": ["50.000000"],
+                "product.browsable": ["1"],
+                "product.category": ["Internet Calling Plan"],
+                "product.flagship": ["false"],
+                "sku.allowFreeLandline": ["1"],
+                "product.type": ["mobileAddons"],
+                "sku.displayName": [
+                  "Monthly Internet Calling Plan for Mobile Postpaid"
+                ],
+                "sku.type": ["mobileAddonsSku"],
+                "product.sellable": ["1"],
+                "sku.allowCashOnDeliveryPaymentMode": ["1"],
+                "sku.listPrice": ["50.000000"],
+                "product.redirectToLeadPage": ["0"],
+                "product.listPriceAll": ["50.000000"],
+                "sku.smallImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/bitmap-522x176.jpg"
+                ],
+                "sku.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/bitmap-522x176.jpg"
+                ],
+                "product.siteId": ["storeSiteDE", "storeSiteUS"],
+                "sku.onSale": ["0"],
+                "product.displayName": ["Internet Calling Plan"],
+                "record.source": ["ProductCatalog"],
+                "product.extraInfos": ["{}"],
+                "product.onlineOnly": ["0"],
+                "product.templateUrl": [
+                  "https://www.etisalat.ae/b2c/eshop/viewProducts?category=mobileAddons&subCategory=cat550027&catName=Postpaid_add-on"
+                ],
+                "product.catalogId": ["catalog100001"],
+                "record.id": [
+                  "mobileAddonsSku-esku3260309..prod2590033.en__AE"
+                ],
+                "product.repositoryId": ["prod2590033"],
+                "sku.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/bitmap-522x176.jpg"
+                ],
+                "sku.longDescription": [
+                  "Subscribe to the Internet Calling Plan and enjoy 250 MB daily for voice and video, using any of the supported apps. To download any of the supported apps, please visit etisalat.ae/internetcallingplans"
+                ],
+                "sku.recurringPrice": ["50.000000"],
+                "product.isPopular": ["false"],
+                "sku.creationDate": ["1556544311574"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=mobileAddonsSku-esku3260309..prod2590033.en__AE"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "sku.activePrice": ["50.000000"],
+                    "sku.backendId": ["RPGSVOIPADDON"],
+                    "product.category": ["Internet Calling Plan"],
+                    "sku.isNew": ["false"],
+                    "sku.activePriceIncVat": ["50.000000"],
+                    "sku.displayName": [
+                      "Monthly Internet Calling Plan for Mobile Postpaid"
+                    ],
+                    "sku.promotionObj": ["{}"],
+                    "sku.learnMoreAr": [
+                      "/ar/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-postpaid.jsp"
+                    ],
+                    "sku.backendDemandId": ["PC0000033"],
+                    "sku.addonSubType": ["0"],
+                    "sku.type": ["mobileAddonsSku"],
+                    "sku.learnMoreEn": [
+                      "/en/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-postpaid.jsp"
+                    ],
+                    "sku.listPrice": ["50.000000"],
+                    "sku.browsable": ["1"],
+                    "sku.displayVatDisclaimer": ["1"],
+                    "product.listPriceAll": ["50.000000"],
+                    "sku.smallImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/bitmap-522x176.jpg"
+                    ],
+                    "sku.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/bitmap-522x176.jpg"
+                    ],
+                    "navigationState": ["N=2944491507+1885890851"],
+                    "sku.onSale": ["0"],
+                    "product.displayName": ["Internet Calling Plan"],
+                    "record.source": ["ProductCatalog"],
+                    "sku.isActivePromo": ["0"],
+                    "sku.displayOrder": ["0"],
+                    "parentCategory.displayName": [
+                      "Internet Calling Plan>cat550042"
+                    ],
+                    "sku.priceIncVat": ["{}"],
+                    "sku.validityType": ["Monthly"],
+                    "sku.itemId": ["esku3260309"],
+                    "sku.vatEligible": ["1"],
+                    "product.templateUrl": [
+                      "https://www.etisalat.ae/b2c/eshop/viewProducts?category=mobileAddons&subCategory=cat550027&catName=Postpaid_add-on"
+                    ],
+                    "sku.tAndcAcceptanceAr": [
+                      "/ar/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-postpaid.jsp"
+                    ],
+                    "sku.termsAndConditions": [
+                      "All data consumption generated by usage of calling apps with the Internet Calling plans will be  deducted from your mobile data package(if any is active).\r\n\r\nOtherwise, it will be charged as per the Pay as you go MB rate of your mobile tariff .\r\n\r\nThe Internet Calling plan will be auto-renewed every billing cycle."
+                    ],
+                    "sku.vipNumberClass": ["SPECIAL"],
+                    "sku.redirectToLeadPage": ["0"],
+                    "sku.validity": ["Monthly subscription"],
+                    "record.id": [
+                      "mobileAddonsSku-esku3260309..prod2590033.en__AE"
+                    ],
+                    "sku.vasIsEligibleForAccountType": ["POSTPAID"],
+                    "product.repositoryId": ["prod2590033"],
+                    "sku.longDescription": [
+                      "Subscribe to the Internet Calling Plan and enjoy 250 MB daily for voice and video, using any of the supported apps. To download any of the supported apps, please visit etisalat.ae/internetcallingplans"
+                    ],
+                    "sku.isPopular": ["false"],
+                    "sku.sellable": ["1"],
+                    "product.displayOrder": ["0"],
+                    "sku.recurringPrice": ["50.000000"],
+                    "sku.creationDate": ["1556544311574"],
+                    "sku.tAndcAcceptanceEn": [
+                      "/en/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-postpaid.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=mobileAddonsSku-esku3260309..prod2590033.en__AE"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "sku.activePrice": ["50.000000"],
+                "product.browsable": ["1"],
+                "product.category": ["Internet calling Plan"],
+                "product.flagship": ["false"],
+                "sku.allowFreeLandline": ["1"],
+                "product.type": ["mobileAddons"],
+                "sku.displayName": [
+                  "Monthly Internet Calling Plan for Mobile Prepaid"
+                ],
+                "sku.type": ["mobileAddonsSku"],
+                "product.sellable": ["1"],
+                "sku.allowCashOnDeliveryPaymentMode": ["1"],
+                "sku.listPrice": ["50.000000"],
+                "product.redirectToLeadPage": ["0"],
+                "product.listPriceAll": ["5.000000", "50.000000"],
+                "sku.smallImage": [
+                  "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                ],
+                "sku.largeImage": [
+                  "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                ],
+                "product.siteId": ["storeSiteDE", "storeSiteUS"],
+                "sku.onSale": ["0"],
+                "product.displayName": ["Internet Calling Plan"],
+                "record.source": ["ProductCatalog"],
+                "product.extraInfos": ["{}"],
+                "product.onlineOnly": ["0"],
+                "product.templateUrl": [
+                  "https://www.etisalat.ae/b2c/eshop/viewProducts?category=mobileAddons&subCategory=cat550028&catName=Prepaid_add-on"
+                ],
+                "product.catalogId": ["catalog100001"],
+                "record.id": ["mobileAddonsSku-sku1280305..prod2590041.en__AE"],
+                "product.repositoryId": ["prod2590041"],
+                "sku.thumbnailImage": [
+                  "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                ],
+                "sku.longDescription": [
+                  "<ul>\n\t<li>Subscribe to the Internet Calling Plan and enjoy 250 MB daily for voice and video, using any of the supported apps. To download any of the supported apps, please visit etisalat.ae/internetcallingplans</li>\n</ul>\n"
+                ],
+                "sku.recurringPrice": ["50.000000"],
+                "product.isPopular": ["false"],
+                "sku.creationDate": ["1591080190483"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=mobileAddonsSku-sku1280305..prod2590041.en__AE"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "sku.activePrice": ["50.000000"],
+                    "sku.backendId": ["RPWSVOIPADDON"],
+                    "product.category": ["Internet calling Plan"],
+                    "sku.isNew": ["false"],
+                    "sku.activePriceIncVat": ["50.000000"],
+                    "sku.displayName": [
+                      "Monthly Internet Calling Plan for Mobile Prepaid"
+                    ],
+                    "sku.promotionObj": ["{}"],
+                    "sku.learnMoreAr": [
+                      "/ar/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-prepaid.jsp"
+                    ],
+                    "sku.backendDemandId": ["PC000951"],
+                    "sku.addonSubType": ["0"],
+                    "sku.type": ["mobileAddonsSku"],
+                    "sku.learnMoreEn": [
+                      "/en/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-prepaid.jsp"
+                    ],
+                    "sku.listPrice": ["50.000000"],
+                    "sku.browsable": ["1"],
+                    "sku.displayVatDisclaimer": ["1"],
+                    "product.listPriceAll": ["5.000000", "50.000000"],
+                    "sku.smallImage": [
+                      "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                    ],
+                    "sku.largeImage": [
+                      "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                    ],
+                    "navigationState": ["N=45740888+3029450647"],
+                    "sku.onSale": ["0"],
+                    "product.displayName": ["Internet Calling Plan"],
+                    "record.source": ["ProductCatalog"],
+                    "sku.isActivePromo": ["0"],
+                    "sku.displayOrder": ["0"],
+                    "parentCategory.displayName": [
+                      "Internet calling Plan>cat580025"
+                    ],
+                    "sku.priceIncVat": ["{}"],
+                    "sku.validityType": ["Monthly"],
+                    "sku.itemId": ["sku1280305"],
+                    "sku.vatEligible": ["1"],
+                    "product.templateUrl": [
+                      "https://www.etisalat.ae/b2c/eshop/viewProducts?category=mobileAddons&subCategory=cat550028&catName=Prepaid_add-on"
+                    ],
+                    "sku.tAndcAcceptanceAr": [
+                      "/ar/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-prepaid.jsp"
+                    ],
+                    "sku.termsAndConditions": [
+                      "All data consumption generated by usage of calling apps with the Internet Calling plans will be  deducted from your mobile data package(if any is active).\r\n\r\nOtherwise, it will be charged as per the Pay as you go MB rate of your mobile tariff.\r\n\r\nThe Internet Calling plan will be auto-renewed."
+                    ],
+                    "sku.vipNumberClass": ["SPECIAL"],
+                    "sku.redirectToLeadPage": ["0"],
+                    "sku.validity": ["Monthly subscription"],
+                    "record.id": [
+                      "mobileAddonsSku-sku1280305..prod2590041.en__AE"
+                    ],
+                    "product.repositoryId": ["prod2590041"],
+                    "sku.longDescription": [
+                      "<ul>\n\t<li>Subscribe to the Internet Calling Plan and enjoy 250 MB daily for voice and video, using any of the supported apps. To download any of the supported apps, please visit etisalat.ae/internetcallingplans</li>\n</ul>\n"
+                    ],
+                    "sku.isPopular": ["false"],
+                    "sku.sellable": ["1"],
+                    "product.displayOrder": ["0"],
+                    "sku.recurringPrice": ["50.000000"],
+                    "sku.creationDate": ["1591080190483"],
+                    "sku.tAndcAcceptanceEn": [
+                      "/en/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-prepaid.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=mobileAddonsSku-sku1280305..prod2590041.en__AE"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 2
+            },
+            {
+              "attributes": {
+                "sku.activePrice": ["100.000000"],
+                "product.browsable": ["1"],
+                "product.category": ["Internet Calling Plan"],
+                "product.flagship": ["false"],
+                "sku.allowFreeLandline": ["1"],
+                "product.type": ["etsProduct"],
+                "sku.displayName": [" Monthly Internet Calling Plan - eLife"],
+                "sku.type": ["mobileAddonsSku"],
+                "product.sellable": ["1"],
+                "sku.allowCashOnDeliveryPaymentMode": ["1"],
+                "sku.listPrice": ["0.000000"],
+                "product.redirectToLeadPage": ["0"],
+                "product.listPriceAll": ["0.000000"],
+                "sku.smallImage": [
+                  "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                ],
+                "sku.largeImage": [
+                  "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                ],
+                "product.siteId": ["storeSiteDE", "storeSiteUS"],
+                "sku.onSale": ["0"],
+                "product.displayName": ["Internet Calling Plan"],
+                "record.source": ["ProductCatalog"],
+                "product.extraInfos": ["{}"],
+                "product.onlineOnly": ["0"],
+                "product.templateUrl": [
+                  "https://www.etisalat.ae/b2c/eshop/viewProducts?category=homeAddons&subCategory=cat550031"
+                ],
+                "sku.description": [
+                  "Subscribe to eLife Internet Calling Plan and enjoy voice and video calls with supported applications. To know more, please visit etisalat.ae/internetcallingplans"
+                ],
+                "product.catalogId": ["catalog100001"],
+                "record.id": [
+                  "mobileAddonsSku-esku3260306..prod2640021.en__AE"
+                ],
+                "product.repositoryId": ["prod2640021"],
+                "sku.thumbnailImage": [
+                  "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                ],
+                "sku.longDescription": [
+                  "<ul><li>Subscribe to eLife Internet Calling Plan and enjoy voice and video calls with supported applications. To know more, please visit etisalat.ae/internetcallingplans</li></ul>"
+                ],
+                "sku.recurringPrice": ["100.000000"],
+                "product.isPopular": ["false"],
+                "sku.creationDate": ["1557067759295"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=mobileAddonsSku-esku3260306..prod2640021.en__AE"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "sku.activePrice": ["100.000000"],
+                    "sku.backendId": ["RPHI2P3PVOIP_2"],
+                    "product.category": ["Internet Calling Plan"],
+                    "sku.isNew": ["false"],
+                    "sku.activePriceIncVat": ["0.000000"],
+                    "sku.displayName": [
+                      " Monthly Internet Calling Plan - eLife"
+                    ],
+                    "sku.promotionObj": ["{}"],
+                    "sku.learnMoreAr": [
+                      "/ar/c/home/add-ons/internet-calling-plans-importand-to-know.jsp"
+                    ],
+                    "sku.backendDemandId": ["RPHI2P3PVOIP_2"],
+                    "sku.addonSubType": ["0"],
+                    "sku.type": ["mobileAddonsSku"],
+                    "sku.learnMoreEn": [
+                      "/en/c/home/add-ons/internet-calling-plans-importand-to-know.jsp"
+                    ],
+                    "sku.listPrice": ["0.000000"],
+                    "sku.browsable": ["1"],
+                    "sku.displayVatDisclaimer": ["1"],
+                    "product.listPriceAll": ["0.000000"],
+                    "sku.smallImage": [
+                      "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                    ],
+                    "sku.largeImage": [
+                      "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                    ],
+                    "navigationState": ["N=1088672633+852244392"],
+                    "sku.onSale": ["0"],
+                    "product.displayName": ["Internet Calling Plan"],
+                    "record.source": ["ProductCatalog"],
+                    "sku.isActivePromo": ["0"],
+                    "sku.displayOrder": ["0"],
+                    "parentCategory.displayName": [
+                      "Internet Calling Plan>cat610019"
+                    ],
+                    "sku.priceIncVat": ["{}"],
+                    "sku.validityType": ["Monthly"],
+                    "sku.itemId": ["esku3260306"],
+                    "sku.vatEligible": ["0"],
+                    "product.templateUrl": [
+                      "https://www.etisalat.ae/b2c/eshop/viewProducts?category=homeAddons&subCategory=cat550031"
+                    ],
+                    "sku.tAndcAcceptanceAr": [
+                      "/ar/c/home/add-ons/internet-calling-plans-terms-and-conditions.jsp"
+                    ],
+                    "sku.termsAndConditions": [
+                      "This Internet Calling plan is to be used with your elife account only. It will renew every billing cycle .\r\n\r\nOnly the supported applications will work with this subscription for App to App calling"
+                    ],
+                    "sku.vipNumberClass": ["SPECIAL"],
+                    "sku.redirectToLeadPage": ["0"],
+                    "sku.validity": ["Monthly subscription"],
+                    "sku.description": [
+                      "Subscribe to eLife Internet Calling Plan and enjoy voice and video calls with supported applications. To know more, please visit etisalat.ae/internetcallingplans"
+                    ],
+                    "record.id": [
+                      "mobileAddonsSku-esku3260306..prod2640021.en__AE"
+                    ],
+                    "product.repositoryId": ["prod2640021"],
+                    "sku.longDescription": [
+                      "<ul><li>Subscribe to eLife Internet Calling Plan and enjoy voice and video calls with supported applications. To know more, please visit etisalat.ae/internetcallingplans</li></ul>"
+                    ],
+                    "sku.isPopular": ["false"],
+                    "sku.sellable": ["1"],
+                    "product.displayOrder": ["0"],
+                    "sku.recurringPrice": ["100.000000"],
+                    "sku.creationDate": ["1557067759295"],
+                    "sku.tAndcAcceptanceEn": [
+                      "/en/c/home/add-ons/internet-calling-plans-terms-and-conditions.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=mobileAddonsSku-esku3260306..prod2640021.en__AE"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "sku.activePrice": ["50.000000"],
+                "product.browsable": ["1"],
+                "product.category": ["Internet Calling Plan"],
+                "product.flagship": ["false"],
+                "sku.allowFreeLandline": ["1"],
+                "product.type": ["mobileAddons"],
+                "sku.displayName": [
+                  "Monthly Internet Calling Plan for Control Line"
+                ],
+                "sku.type": ["mobileAddonsSku"],
+                "product.sellable": ["1"],
+                "sku.allowCashOnDeliveryPaymentMode": ["1"],
+                "sku.listPrice": ["50.000000"],
+                "product.redirectToLeadPage": ["0"],
+                "product.listPriceAll": ["50.000000"],
+                "sku.smallImage": [
+                  "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                ],
+                "sku.largeImage": [
+                  "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                ],
+                "product.siteId": ["storeSiteDE", "storeSiteUS"],
+                "sku.onSale": ["0"],
+                "product.displayName": ["Internet Calling Plan"],
+                "record.source": ["ProductCatalog"],
+                "product.extraInfos": ["{}"],
+                "product.onlineOnly": ["0"],
+                "product.templateUrl": [
+                  "https://www.etisalat.ae/b2c/eshop/viewProducts?category=mobileAddons&subCategory=cat550022&catName=Control_line_add-on"
+                ],
+                "product.catalogId": ["catalog100001"],
+                "record.id": [
+                  "mobileAddonsSku-esku3210327..prod2590054.en__AE"
+                ],
+                "product.repositoryId": ["prod2590054"],
+                "sku.thumbnailImage": [
+                  "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                ],
+                "sku.longDescription": [
+                  "<ul>\n\t<li>Subscribe to the Internet Calling Plan and enjoy 250 MB daily for voice and video, using any of the supported apps. To download any of the supported apps, please visit etisalat.ae/internetcallingplans</li>\n</ul>\n"
+                ],
+                "sku.recurringPrice": ["50.000000"],
+                "product.isPopular": ["false"],
+                "sku.creationDate": ["1556718425390"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=mobileAddonsSku-esku3210327..prod2590054.en__AE"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "sku.activePrice": ["50.000000"],
+                    "sku.backendId": ["RPGSICPHYBRID"],
+                    "product.category": ["Internet Calling Plan"],
+                    "sku.isNew": ["false"],
+                    "sku.activePriceIncVat": ["50.000000"],
+                    "sku.displayName": [
+                      "Monthly Internet Calling Plan for Control Line"
+                    ],
+                    "sku.promotionObj": ["{}"],
+                    "sku.learnMoreAr": [
+                      "/ar/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-prepaid.jsp"
+                    ],
+                    "sku.backendDemandId": ["PC000951"],
+                    "sku.addonSubType": ["0"],
+                    "sku.type": ["mobileAddonsSku"],
+                    "sku.learnMoreEn": [
+                      "/en/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-prepaid.jsp"
+                    ],
+                    "sku.listPrice": ["50.000000"],
+                    "sku.browsable": ["1"],
+                    "sku.displayVatDisclaimer": ["1"],
+                    "product.listPriceAll": ["50.000000"],
+                    "sku.smallImage": [
+                      "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                    ],
+                    "sku.largeImage": [
+                      "http://www.etisalat.ae/en/system/images/atg/nba/NBA_OTHERS.jpg"
+                    ],
+                    "navigationState": ["N=2767812889+3587374692"],
+                    "sku.onSale": ["0"],
+                    "product.displayName": ["Internet Calling Plan"],
+                    "record.source": ["ProductCatalog"],
+                    "sku.isActivePromo": ["0"],
+                    "sku.displayOrder": ["0"],
+                    "parentCategory.displayName": [
+                      "Internet Calling Plan>cat550020"
+                    ],
+                    "sku.priceIncVat": ["{}"],
+                    "sku.validityType": ["Monthly"],
+                    "sku.itemId": ["esku3210327"],
+                    "sku.vatEligible": ["1"],
+                    "product.templateUrl": [
+                      "https://www.etisalat.ae/b2c/eshop/viewProducts?category=mobileAddons&subCategory=cat550022&catName=Control_line_add-on"
+                    ],
+                    "sku.tAndcAcceptanceAr": [
+                      "/ar/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-prepaid.jsp"
+                    ],
+                    "sku.termsAndConditions": [
+                      "All data consumption generated by usage of calling apps with the Internet Calling plans will be  deducted from your mobile data package(if any is active).\r\n\r\nOtherwise, it will be charged as per the Pay as you go MB rate of your mobile tariff.\r\n\r\nThe Internet Calling plan will be auto-renewed."
+                    ],
+                    "sku.vipNumberClass": ["SPECIAL"],
+                    "sku.redirectToLeadPage": ["0"],
+                    "sku.validity": ["Monthly subscription"],
+                    "record.id": [
+                      "mobileAddonsSku-esku3210327..prod2590054.en__AE"
+                    ],
+                    "product.repositoryId": ["prod2590054"],
+                    "sku.longDescription": [
+                      "<ul>\n\t<li>Subscribe to the Internet Calling Plan and enjoy 250 MB daily for voice and video, using any of the supported apps. To download any of the supported apps, please visit etisalat.ae/internetcallingplans</li>\n</ul>\n"
+                    ],
+                    "sku.isPopular": ["false"],
+                    "sku.sellable": ["1"],
+                    "product.displayOrder": ["0"],
+                    "sku.recurringPrice": ["50.000000"],
+                    "sku.creationDate": ["1556718425390"],
+                    "sku.tAndcAcceptanceEn": [
+                      "/en/c/mobile/add-ons/internet-calling-plans-monthly-internet-calling-plan-for-mobile-prepaid.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=mobileAddonsSku-esku3210327..prod2590054.en__AE"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/c/mobile/plans/internet-calling-plans/terms-and-conditions.jsp"
+                ],
+                "document.title": [
+                  "Internet Calling Plans - Terms & Conditions"
+                ],
+                "document.contentType": ["text/html"],
+                "record.source": ["WEB"],
+                "document.text": [
+                  "Terms & Conditions – Internet Calling Plans. The Internet Calling Plan is an add-on service to your existing Etisalat mobile and/or eLife service (the “Service”).. A subscription to the Internet Calling Plan (the “Plan”) is required in the UAE to initiate app-to-app video calls from a compatible smartphone using the supported apps available in the App Store and Google Play Store.. Etisalat reserves the right to add, remove, or otherwise modify the list of supported apps listed on the Etisalat website.. With an Internet Calling Plan subscription, you can make video calls to any other same app user anywhere in the world.. Validity:. For the monthly mobile and eLife Internet Calling Plan:. 30 days for mobile prepaid customers, with auto-renewal. For mobile postpaid and eLife Home customers, the fees will be billed monthly and service shall be automatically renewed and will remain active unless removed.. For the Daily Internet Calling Plan (prepaid mobile users only):. 24 hours from the time of subscription.. Auto-renewal:. For the monthly mobile and eLife Internet Calling Plan:. The Plan will be auto-renewed until you terminate your subscription to the Plan via an unsubscribe request.. For the daily Internet Calling Plan (prepaid mobile customers only):. There is no auto-renewal for this plan.. Unsubscribing:. For the monthly mobile (postpaid and prepaid) and eLife Internet Calling Plans:. Once you unsubscribe from the Plan, the service will be cancelled immediately and you will lose the access, and there will be no refund for the rental fees paid.. With an active subscription to the eLife Internet Calling Plan, calls can be made only when connected to the Wi-Fi network of your home broadband service.. Roaming. For the monthly mobile Internet Calling Plans:. A subscription to Internet Calling Plan for mobile is required to make app-to-app calls when roaming on mobile data. Data will be charged at standard roaming rates or from your data roaming package, if available.. For the daily Internet Calling Plan (prepaid mobile customers only):. This plan is available only inside the UAE. For roaming, we recommend subscribing to the monthly mobile Internet Calling Plan and purchasing a roaming pack.. All mobile Internet Calling Plans (daily or monthly) can be used only from one mobile account (postpaid and/or prepaid).. You acknowledge that due to the nature of the VoIP technology, the quality of the service covered by the Plan may differ from the quality of the “traditional” voice services provided by Etisalat (for example, in terms of voice quality, latency, availability, ease of use and nature of operation). You also acknowledge that it is not possible to make calls outside of the particular app and reach emergency numbers or other numbers that can normally be reached by using the “traditional” voice services.. Limitation of liability. In addition to clause (21) Indemnity & liability of the. General T&C. (Consumer):. Etisalat is not responsible for (i) any material or personal data provided by the Customer (including but not limited to any loss or damage or corruption of any nature) or (ii) any material or personal information contained in the third-party content that is accessible through the Service. The Customer is solely responsible for all content including his/her personal data that it is collected or processed or transmitted through the particular app (whether by electronic communications, voice, video or other means) and for determining the suitability of all accessed content.. The Customer acknowledges and agrees that the Customer data and personal information and data collected, used, processed, or shared in the course of provision of and/or in connection with the Service will be treated in accordance with the terms of Etisalat’s privacy policy, which can be viewed at:. https://www.etisalat.ae/en/privacy-policy.jsp. .. VAT. Unless otherwise stated and provided in these Terms and Conditions, all charges exclude VAT or any similar tax.. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Target: Etisalat.ae Live. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/c/mobile/plans/internet-calling-plans/terms-and-conditions.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fc%2Fmobile%2Fplans%2Finternet-calling-plans%2Fterms-and-conditions.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/c/mobile/plans/internet-calling-plans/terms-and-conditions.jsp"
+                    ],
+                    "document.title": [
+                      "Internet Calling Plans - Terms & Conditions"
+                    ],
+                    "document.contentType": ["text/html"],
+                    "parentCategory.displayName": ["Internet Calling Plans"],
+                    "record.source": ["WEB"],
+                    "document.text": [
+                      "Terms & Conditions – Internet Calling Plans. The Internet Calling Plan is an add-on service to your existing Etisalat mobile and/or eLife service (the “Service”).. A subscription to the Internet Calling Plan (the “Plan”) is required in the UAE to initiate app-to-app video calls from a compatible smartphone using the supported apps available in the App Store and Google Play Store.. Etisalat reserves the right to add, remove, or otherwise modify the list of supported apps listed on the Etisalat website.. With an Internet Calling Plan subscription, you can make video calls to any other same app user anywhere in the world.. Validity:. For the monthly mobile and eLife Internet Calling Plan:. 30 days for mobile prepaid customers, with auto-renewal. For mobile postpaid and eLife Home customers, the fees will be billed monthly and service shall be automatically renewed and will remain active unless removed.. For the Daily Internet Calling Plan (prepaid mobile users only):. 24 hours from the time of subscription.. Auto-renewal:. For the monthly mobile and eLife Internet Calling Plan:. The Plan will be auto-renewed until you terminate your subscription to the Plan via an unsubscribe request.. For the daily Internet Calling Plan (prepaid mobile customers only):. There is no auto-renewal for this plan.. Unsubscribing:. For the monthly mobile (postpaid and prepaid) and eLife Internet Calling Plans:. Once you unsubscribe from the Plan, the service will be cancelled immediately and you will lose the access, and there will be no refund for the rental fees paid.. With an active subscription to the eLife Internet Calling Plan, calls can be made only when connected to the Wi-Fi network of your home broadband service.. Roaming. For the monthly mobile Internet Calling Plans:. A subscription to Internet Calling Plan for mobile is required to make app-to-app calls when roaming on mobile data. Data will be charged at standard roaming rates or from your data roaming package, if available.. For the daily Internet Calling Plan (prepaid mobile customers only):. This plan is available only inside the UAE. For roaming, we recommend subscribing to the monthly mobile Internet Calling Plan and purchasing a roaming pack.. All mobile Internet Calling Plans (daily or monthly) can be used only from one mobile account (postpaid and/or prepaid).. You acknowledge that due to the nature of the VoIP technology, the quality of the service covered by the Plan may differ from the quality of the “traditional” voice services provided by Etisalat (for example, in terms of voice quality, latency, availability, ease of use and nature of operation). You also acknowledge that it is not possible to make calls outside of the particular app and reach emergency numbers or other numbers that can normally be reached by using the “traditional” voice services.. Limitation of liability. In addition to clause (21) Indemnity & liability of the. General T&C. (Consumer):. Etisalat is not responsible for (i) any material or personal data provided by the Customer (including but not limited to any loss or damage or corruption of any nature) or (ii) any material or personal information contained in the third-party content that is accessible through the Service. The Customer is solely responsible for all content including his/her personal data that it is collected or processed or transmitted through the particular app (whether by electronic communications, voice, video or other means) and for determining the suitability of all accessed content.. The Customer acknowledges and agrees that the Customer data and personal information and data collected, used, processed, or shared in the course of provision of and/or in connection with the Service will be treated in accordance with the terms of Etisalat’s privacy policy, which can be viewed at:. https://www.etisalat.ae/en/privacy-policy.jsp. .. VAT. Unless otherwise stated and provided in these Terms and Conditions, all charges exclude VAT or any similar tax.. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Target: Etisalat.ae Live. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/c/mobile/plans/internet-calling-plans/terms-and-conditions.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fc%2Fmobile%2Fplans%2Finternet-calling-plans%2Fterms-and-conditions.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/c/mobile/plans/internet-calling-plans.jsp"
+                ],
+                "document.title": ["Internet Calling Plans"],
+                "document.contentType": ["text/html"],
+                "record.source": ["WEB"],
+                "document.text": [
+                  " .. Get free 250MB data every day for video and voice calls.. Free daily 250MB data with. Connect with family and friends with free daily voice and video calls. Simply download any one of the supported apps and start chatting no matter where you are.. Choose your plan. Whether you’d like to call your family and friends when you’re on-the-go or from your home, we have a package for you. Get both eLife and mobile plans and you can reach them anytime and anywhere.. Internet Calling Plan. Monthly Plan for Postpaid Mobile. Single device. Use with supported apps. free daily 250MB data**. 50. AED/month. 5% VAT excluded. Auto-renewed. BUY NOW. Internet Calling Plan. Monthly Plan for Prepaid Mobile. Single device. Use with supported apps. free daily 250MB data**. 50. AED/month. 5% VAT excluded. Auto-renewed. BUY NOW. Internet Calling Plan. Daily Plan for Prepaid Mobile. 1GB Local data**. Single device. Use with supported apps. 5. AED. 5% VAT excluded. One-time 24-hour pack. BUY NOW. Internet Calling Plan. Daily Plan for Control Line Mobile. 1GB Local data**. Single device. Use with supported apps. 5. AED. 5% VAT excluded. One-time 24-hour pack. BUY NOW. Internet Calling Plan. Monthly Plan for eLife Home Wi-Fi. Multiple devices. Use with supported apps. eLife Wi-Fi required. 100. AED/month. 5% VAT excluded. Auto-renewed. BUY NOW. **ONLY to use with the supported apps.. Supported apps. With a subscription to any of the Etisalat, you can make with any of our supported applications.. GoChat Messenger. HiU Messenger. Voico. C'ME. BOTIM. GoChat Messenger. GoChat Messenger. Stay in touch with family and friends with secure, high quality voice and video calls. Enjoy the convenience of money transfer to your loved ones in UAE and internationally. Also play free games, chat and stay informed with the latest UAE news.. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. HiU Messenger. HiU Messenger. Experience next-level communication with HiU Messenger. Whether on smartphones, tablets or desktops, you can make voice and video calls, send instant messages, or even enjoy. web chats. right from your desktop browser.. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. Voico. Voico. Stay in touch with your loved ones with the crystal-clear audio and video and the superior connection reliability from Voico. Use it on mobile and desktop, share photos and videos, send GIFs and animated stickers, and translate chats into 100+ languages.. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. C'ME. C'ME. Use C’Me calls and messaging to connect with family and friends. Make HD voice or video calls or instant message anyone, anywhere!. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. BOTIM. BOTIM. Share photos, videos, voice messages, locations, SMSs, contacts, web clips and more. Simple, fast and fun, you can also have a group chat with up to 500 people and express yourself with a built-in emoji dashboard.. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. Important to know. The must-know details about this service.. View More. View Less. How to subscribe. eLife Internet Calling Plan:. Simply subscribe by:. Downloading. My app. Texting “EICP” to 1012 (from your registered mobile). Calling IVR 125 from your home telephone. Once you subscribe to the Internet Calling Plan, download any of the supported apps from the App Store or Google Play Store(depending on your device). Enjoy video chats with anyone who has the same app no matter where they live.. All devices connected to the eLife home Wi-Fi will be able to use the supported apps at no extra charge.. Monthly mobile Internet Calling Plan (postpaid and prepaid):. Simply subscribe by:. Downloading. My app. Texting “ICP” to 1012. Dialling *101# (for prepaid customers). Once you subscribe to the Internet Calling Plan, download any of the supported apps from the App Store or Google Play Store(depending on your device). Enjoy video chats with anyone who has the same app no matter where they live.. Daily mobile Internet Calling Plan (prepaid and Control Line):. Simply subscribe via the. My app. , by texting “DICP” to 1012, by dialling *101# or by calling 101.. Once you subscribe to the Internet Calling Plan, download any of the supported apps from the App Store or Google Play Store(depending on your device). Get 1GB of free data valid for 24 hours, and enjoy video chats with anyone who has the same app no matter where they live.. For this service, you are getting 1GB of free data to use with the supported apps, valid for 24 hours. After exhausting the 1GB allowance, the usage of the supported apps will be deducted from any active data package on your account.. How to Unsubscribe. Please follow the steps below to unsubscribe from your Internet Calling Plan. Monthly Mobile Internet Calling Plan. Send CCP to 1012 or Send CFMICP to 1012; or. Use . MyEtisalat App. eLife Internet Calling Plan. Dial 101. Send \"CFEICP\" to 1012 or Send \"C EICP\" to 1012 (from registered mobile number); or. Use . MyEtisalat App. Need more information?. Please read our. terms and conditions. .. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Target: Etisalat.ae Live. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/c/mobile/plans/internet-calling-plans.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fc%2Fmobile%2Fplans%2Finternet-calling-plans.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/c/mobile/plans/internet-calling-plans.jsp"
+                    ],
+                    "document.title": ["Internet Calling Plans"],
+                    "document.contentType": ["text/html"],
+                    "parentCategory.displayName": ["Plans"],
+                    "record.source": ["WEB"],
+                    "document.text": [
+                      " .. Get free 250MB data every day for video and voice calls.. Free daily 250MB data with. Connect with family and friends with free daily voice and video calls. Simply download any one of the supported apps and start chatting no matter where you are.. Choose your plan. Whether you’d like to call your family and friends when you’re on-the-go or from your home, we have a package for you. Get both eLife and mobile plans and you can reach them anytime and anywhere.. Internet Calling Plan. Monthly Plan for Postpaid Mobile. Single device. Use with supported apps. free daily 250MB data**. 50. AED/month. 5% VAT excluded. Auto-renewed. BUY NOW. Internet Calling Plan. Monthly Plan for Prepaid Mobile. Single device. Use with supported apps. free daily 250MB data**. 50. AED/month. 5% VAT excluded. Auto-renewed. BUY NOW. Internet Calling Plan. Daily Plan for Prepaid Mobile. 1GB Local data**. Single device. Use with supported apps. 5. AED. 5% VAT excluded. One-time 24-hour pack. BUY NOW. Internet Calling Plan. Daily Plan for Control Line Mobile. 1GB Local data**. Single device. Use with supported apps. 5. AED. 5% VAT excluded. One-time 24-hour pack. BUY NOW. Internet Calling Plan. Monthly Plan for eLife Home Wi-Fi. Multiple devices. Use with supported apps. eLife Wi-Fi required. 100. AED/month. 5% VAT excluded. Auto-renewed. BUY NOW. **ONLY to use with the supported apps.. Supported apps. With a subscription to any of the Etisalat, you can make with any of our supported applications.. GoChat Messenger. HiU Messenger. Voico. C'ME. BOTIM. GoChat Messenger. GoChat Messenger. Stay in touch with family and friends with secure, high quality voice and video calls. Enjoy the convenience of money transfer to your loved ones in UAE and internationally. Also play free games, chat and stay informed with the latest UAE news.. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. HiU Messenger. HiU Messenger. Experience next-level communication with HiU Messenger. Whether on smartphones, tablets or desktops, you can make voice and video calls, send instant messages, or even enjoy. web chats. right from your desktop browser.. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. Voico. Voico. Stay in touch with your loved ones with the crystal-clear audio and video and the superior connection reliability from Voico. Use it on mobile and desktop, share photos and videos, send GIFs and animated stickers, and translate chats into 100+ languages.. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. C'ME. C'ME. Use C’Me calls and messaging to connect with family and friends. Make HD voice or video calls or instant message anyone, anywhere!. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. BOTIM. BOTIM. Share photos, videos, voice messages, locations, SMSs, contacts, web clips and more. Simple, fast and fun, you can also have a group chat with up to 500 people and express yourself with a built-in emoji dashboard.. DOWNLOAD FROM APP STORE. DOWNLOAD FROM GOOGLE PLAY. Important to know. The must-know details about this service.. View More. View Less. How to subscribe. eLife Internet Calling Plan:. Simply subscribe by:. Downloading. My app. Texting “EICP” to 1012 (from your registered mobile). Calling IVR 125 from your home telephone. Once you subscribe to the Internet Calling Plan, download any of the supported apps from the App Store or Google Play Store(depending on your device). Enjoy video chats with anyone who has the same app no matter where they live.. All devices connected to the eLife home Wi-Fi will be able to use the supported apps at no extra charge.. Monthly mobile Internet Calling Plan (postpaid and prepaid):. Simply subscribe by:. Downloading. My app. Texting “ICP” to 1012. Dialling *101# (for prepaid customers). Once you subscribe to the Internet Calling Plan, download any of the supported apps from the App Store or Google Play Store(depending on your device). Enjoy video chats with anyone who has the same app no matter where they live.. Daily mobile Internet Calling Plan (prepaid and Control Line):. Simply subscribe via the. My app. , by texting “DICP” to 1012, by dialling *101# or by calling 101.. Once you subscribe to the Internet Calling Plan, download any of the supported apps from the App Store or Google Play Store(depending on your device). Get 1GB of free data valid for 24 hours, and enjoy video chats with anyone who has the same app no matter where they live.. For this service, you are getting 1GB of free data to use with the supported apps, valid for 24 hours. After exhausting the 1GB allowance, the usage of the supported apps will be deducted from any active data package on your account.. How to Unsubscribe. Please follow the steps below to unsubscribe from your Internet Calling Plan. Monthly Mobile Internet Calling Plan. Send CCP to 1012 or Send CFMICP to 1012; or. Use . MyEtisalat App. eLife Internet Calling Plan. Dial 101. Send \"CFEICP\" to 1012 or Send \"C EICP\" to 1012 (from registered mobile number); or. Use . MyEtisalat App. Need more information?. Please read our. terms and conditions. .. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Target: Etisalat.ae Live. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/c/mobile/plans/internet-calling-plans.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fc%2Fmobile%2Fplans%2Finternet-calling-plans.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": ["https://etisalat.ae/en/"],
+                "document.title": [
+                  "Devices, Mobile Plans, Internet and TV Packages"
+                ],
+                "document.contentType": ["text/html"],
+                "record.source": ["WEB"],
+                "document.text": [
+                  "Online exclusive Deals. Buy eLife plan & get a chance to win 1 of 5 Samsung 65” QLED Smart TVs. Enjoy up to AED 1,800 worth of free benefits!. Buy now. Online exclusive Deals. Buy eLife Ultra online and enjoy up to AED 3,200 in free benefits. Includes a FREE Expo 2020 Dubai Multi-Day ticket. Subscribe now. More reasons to celebrate. Enjoy up to 55% discounts on devices and accessories. Buy now. Online exclusive Offer. Get FREE Expo 2020 tickets and passes with Etisalat!. Subscribe to an eLife Unlimited, Emirati Freedom, New Freedom plan now.. Subscribe Now. expo_2020_dubai. Get FREE 25GB data for 12 months & more with Emirati Freedom plans!. Available on new subscriptions & prepaid to postpaid migrations.. Buy Now. Emirati_Freedom_Plans. Get FREE 25GB data for 12 months & more with New Freedom plans!. Available on new subscriptions & prepaid to postpaid migrations.. Buy Now. New_Freedom. Buy a Visitor Line. and get a free Expo 2020 Dubai ticket, 22.5GB, 525 minutes and unlimited calling on GoChat. Learn More. Online exclusive Offer. Buy Wasel Prepaid online and enjoy 1GB data. With recharge of AED 30 or more. Buy Now. Explore our services. Buy a device, subscribe to a plan, recharge your account or switch to Etisalat now.. Postpaid Plans. Learn More. TV & Internet. Learn More. Prepaid Plans. Learn More. Quick Pay & Recharge. Learn More. Setup Autopay. Learn More. Switch to Etisalat. Learn More. Load More. Latest offers. Win SAMSUNG QLED 65” TV. Learn More. Up to AED 3,200 in free benefits including Expo tickets. Buy now. FREE 25GB monthly data including Expo tickets. Buy now. 50% More Data Add-ons. Buy now. Free speed boost on eLife Unlimited!. Buy now. Enjoy 1GB data when you get a Prepaid SIM online. Buy now. Shop & View our latest products. Easy Insurance. Get health, travel & car instant insurance polices. Learn More. Xbox All Access. Get an Xbox Series X or Xbox Series S and 24 months of Xbox Game Pass Ultimate. Learn More. Smart Living. Discover smart living with Etisalat and change the way you live your life. Learn More. Wasel Flexi. Dial *101*50# and configure your new plan with promo double data. Learn More. Join over 3 million My app users.. Pay/Recharge,Shop & manage your account. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Target: Etisalat.ae Live. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                ],
+                "record.id": ["https://etisalat.ae/en/"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2F"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": ["https://etisalat.ae/en/"],
+                    "document.title": [
+                      "Devices, Mobile Plans, Internet and TV Packages"
+                    ],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["WEB"],
+                    "document.text": [
+                      "Online exclusive Deals. Buy eLife plan & get a chance to win 1 of 5 Samsung 65” QLED Smart TVs. Enjoy up to AED 1,800 worth of free benefits!. Buy now. Online exclusive Deals. Buy eLife Ultra online and enjoy up to AED 3,200 in free benefits. Includes a FREE Expo 2020 Dubai Multi-Day ticket. Subscribe now. More reasons to celebrate. Enjoy up to 55% discounts on devices and accessories. Buy now. Online exclusive Offer. Get FREE Expo 2020 tickets and passes with Etisalat!. Subscribe to an eLife Unlimited, Emirati Freedom, New Freedom plan now.. Subscribe Now. expo_2020_dubai. Get FREE 25GB data for 12 months & more with Emirati Freedom plans!. Available on new subscriptions & prepaid to postpaid migrations.. Buy Now. Emirati_Freedom_Plans. Get FREE 25GB data for 12 months & more with New Freedom plans!. Available on new subscriptions & prepaid to postpaid migrations.. Buy Now. New_Freedom. Buy a Visitor Line. and get a free Expo 2020 Dubai ticket, 22.5GB, 525 minutes and unlimited calling on GoChat. Learn More. Online exclusive Offer. Buy Wasel Prepaid online and enjoy 1GB data. With recharge of AED 30 or more. Buy Now. Explore our services. Buy a device, subscribe to a plan, recharge your account or switch to Etisalat now.. Postpaid Plans. Learn More. TV & Internet. Learn More. Prepaid Plans. Learn More. Quick Pay & Recharge. Learn More. Setup Autopay. Learn More. Switch to Etisalat. Learn More. Load More. Latest offers. Win SAMSUNG QLED 65” TV. Learn More. Up to AED 3,200 in free benefits including Expo tickets. Buy now. FREE 25GB monthly data including Expo tickets. Buy now. 50% More Data Add-ons. Buy now. Free speed boost on eLife Unlimited!. Buy now. Enjoy 1GB data when you get a Prepaid SIM online. Buy now. Shop & View our latest products. Easy Insurance. Get health, travel & car instant insurance polices. Learn More. Xbox All Access. Get an Xbox Series X or Xbox Series S and 24 months of Xbox Game Pass Ultimate. Learn More. Smart Living. Discover smart living with Etisalat and change the way you live your life. Learn More. Wasel Flexi. Dial *101*50# and configure your new plan with promo double data. Learn More. Join over 3 million My app users.. Pay/Recharge,Shop & manage your account. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Target: Etisalat.ae Live. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                    ],
+                    "record.id": ["https://etisalat.ae/en/"]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2F"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": ["https://etisalat.ae/en/index.jsp"],
+                "document.title": [
+                  "Devices, Mobile Plans, Internet and TV Packages"
+                ],
+                "document.contentType": ["text/html"],
+                "record.source": ["WEB"],
+                "document.text": [
+                  "Online exclusive Deals. Buy eLife plan & get a chance to win 1 of 5 Samsung 65” QLED Smart TVs. Enjoy up to AED 1,800 worth of free benefits!. Buy now. Online exclusive Deals. Buy eLife Ultra online and enjoy up to AED 3,200 in free benefits. Includes a FREE Expo 2020 Dubai Multi-Day ticket. Subscribe now. More reasons to celebrate. Enjoy up to 55% discounts on devices and accessories. Buy now. Online exclusive Offer. Get FREE Expo 2020 tickets and passes with Etisalat!. Subscribe to an eLife Unlimited, Emirati Freedom, New Freedom plan now.. Subscribe Now. expo_2020_dubai. Get FREE 25GB data for 12 months & more with Emirati Freedom plans!. Available on new subscriptions & prepaid to postpaid migrations.. Buy Now. Emirati_Freedom_Plans. Get FREE 25GB data for 12 months & more with New Freedom plans!. Available on new subscriptions & prepaid to postpaid migrations.. Buy Now. New_Freedom. Buy a Visitor Line. and get a free Expo 2020 Dubai ticket, 22.5GB, 525 minutes and unlimited calling on GoChat. Learn More. Online exclusive Offer. Buy Wasel Prepaid online and enjoy 1GB data. With recharge of AED 30 or more. Buy Now. Explore our services. Buy a device, subscribe to a plan, recharge your account or switch to Etisalat now.. Postpaid Plans. Learn More. TV & Internet. Learn More. Prepaid Plans. Learn More. Quick Pay & Recharge. Learn More. Setup Autopay. Learn More. Switch to Etisalat. Learn More. Load More. Latest offers. Win SAMSUNG QLED 65” TV. Learn More. Up to AED 3,200 in free benefits including Expo tickets. Buy now. FREE 25GB monthly data including Expo tickets. Buy now. 50% More Data Add-ons. Buy now. Free speed boost on eLife Unlimited!. Buy now. Enjoy 1GB data when you get a Prepaid SIM online. Buy now. Shop & View our latest products. Easy Insurance. Get health, travel & car instant insurance polices. Learn More. Xbox All Access. Get an Xbox Series X or Xbox Series S and 24 months of Xbox Game Pass Ultimate. Learn More. Smart Living. Discover smart living with Etisalat and change the way you live your life. Learn More. Wasel Flexi. Dial *101*50# and configure your new plan with promo double data. Learn More. Join over 3 million My app users.. Pay/Recharge,Shop & manage your account. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Target: Etisalat.ae Live. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                ],
+                "record.id": ["https://etisalat.ae/en/index.jsp"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Findex.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/index.jsp"
+                    ],
+                    "document.title": [
+                      "Devices, Mobile Plans, Internet and TV Packages"
+                    ],
+                    "document.contentType": ["text/html"],
+                    "record.source": ["WEB"],
+                    "document.text": [
+                      "Online exclusive Deals. Buy eLife plan & get a chance to win 1 of 5 Samsung 65” QLED Smart TVs. Enjoy up to AED 1,800 worth of free benefits!. Buy now. Online exclusive Deals. Buy eLife Ultra online and enjoy up to AED 3,200 in free benefits. Includes a FREE Expo 2020 Dubai Multi-Day ticket. Subscribe now. More reasons to celebrate. Enjoy up to 55% discounts on devices and accessories. Buy now. Online exclusive Offer. Get FREE Expo 2020 tickets and passes with Etisalat!. Subscribe to an eLife Unlimited, Emirati Freedom, New Freedom plan now.. Subscribe Now. expo_2020_dubai. Get FREE 25GB data for 12 months & more with Emirati Freedom plans!. Available on new subscriptions & prepaid to postpaid migrations.. Buy Now. Emirati_Freedom_Plans. Get FREE 25GB data for 12 months & more with New Freedom plans!. Available on new subscriptions & prepaid to postpaid migrations.. Buy Now. New_Freedom. Buy a Visitor Line. and get a free Expo 2020 Dubai ticket, 22.5GB, 525 minutes and unlimited calling on GoChat. Learn More. Online exclusive Offer. Buy Wasel Prepaid online and enjoy 1GB data. With recharge of AED 30 or more. Buy Now. Explore our services. Buy a device, subscribe to a plan, recharge your account or switch to Etisalat now.. Postpaid Plans. Learn More. TV & Internet. Learn More. Prepaid Plans. Learn More. Quick Pay & Recharge. Learn More. Setup Autopay. Learn More. Switch to Etisalat. Learn More. Load More. Latest offers. Win SAMSUNG QLED 65” TV. Learn More. Up to AED 3,200 in free benefits including Expo tickets. Buy now. FREE 25GB monthly data including Expo tickets. Buy now. 50% More Data Add-ons. Buy now. Free speed boost on eLife Unlimited!. Buy now. Enjoy 1GB data when you get a Prepaid SIM online. Buy now. Shop & View our latest products. Easy Insurance. Get health, travel & car instant insurance polices. Learn More. Xbox All Access. Get an Xbox Series X or Xbox Series S and 24 months of Xbox Game Pass Ultimate. Learn More. Smart Living. Discover smart living with Etisalat and change the way you live your life. Learn More. Wasel Flexi. Dial *101*50# and configure your new plan with promo double data. Learn More. Join over 3 million My app users.. Pay/Recharge,Shop & manage your account. Quick Access. Quick Access. Quick Pay. Autopay. Mobile Registration Renewal. 4-digit PIN. Buy Plans. Buy Plans. Emirati Freedom Postpaid. Postpaid Plans. Prepaid/Wasel Flexi. eLife Plans. eLife ANA Emarati. Absher Plan. Switch to Etisalat. Special For you. Special For you. Xbox All Access. Easy Insurance. Data and Credit Transfer. Trade-in Programme. Talking Bill. People of Determination. Takaful Offer. Deals for you. MMS. Thukher card holders. Internet Services. Internet Services. 5G. UAE Wifi. Home Zone Internet. Internet Speed Test. Help & Support. Help & Support. Etisalat Apps. Dial *101#. Information services. Standard roaming rates. Block/unblock websites. Do Not Disturb. Block Promotional SMS. Value Added Tax. Etisalat Mail. Leaving UAE. New to Etisalat. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download My app. Follow Us. Payment Accepted. Target: Etisalat.ae Live. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                    ],
+                    "record.id": ["https://etisalat.ae/en/index.jsp"]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Findex.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "product.repositoryId": [
+                  "https://etisalat.ae/en/enterprise-and-government/go-connected/managed-internet.jsp"
+                ],
+                "document.title": ["Managed Internet"],
+                "document.contentType": ["text/html"],
+                "record.source": ["WEB"],
+                "document.text": [
+                  "Go Mobile. Go Connected. Etisalat Digital. SIGN IN.  .. High speed Internet for steady performance. Business Broadband. Connect your business easily with our affordable asymmetric broadband solutions using a high-speed and secure fibre network. Symmetrical Internet Dedicated Access. Find a solution for your most demanding business requirements in our fully service with dedicated bandwidth and our 24/7 team support.. Cloud Connect – Connectivity to Etisalat OneCloud. Integrate with Etisalat OneCloud over private connectivity in a convenient, rapid and cost-effective way. Give your business the exclusivity of an added layer of security and customisation by selecting Etisalat OneCloud.. Safeguard your on-premises data from security threats, costly downtime and data loss by opting for Cloud Connect.. Cloud Express - Connectivity to Public Cloud Service Providers. Simplify, connect and manage the right public cloud and network technology by creating platforms that empower your business. Ensure that you get secure private connectivity between your corporate network and public cloud by selecting Etisalat Cloud Express.. Read More. Contact Us. Our team is happy to answer your sale queries, send us an inquiry and we will be in touch shortly.. Send Inquiry. Support. Support. Locate Business Centres. VAT / TRN Submission. Billing and Payments. Get Domain Names. Small & Medium Business. Small & Medium Business. Mobile Plans. Internet & Bundles. Internet Calling Plans. Customer Success Stories. Hello Business Hub. Business Blog. Enterprise & Government. Enterprise & Government. Etisalat Digital. Mobile Hub. Managed ICT Solutions. Success Stories. Strategic Projects. Strategic Projects. EXPO 2020 Dubai. Hassantuk. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download Etisalat Business App. Follow Us. Payment Accepted. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                ],
+                "record.id": [
+                  "https://etisalat.ae/en/enterprise-and-government/go-connected/managed-internet.jsp"
+                ]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=https%3A%2F%2Fetisalat.ae%2Fen%2Fenterprise-and-government%2Fgo-connected%2Fmanaged-internet.jsp"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "product.repositoryId": [
+                      "https://etisalat.ae/en/enterprise-and-government/go-connected/managed-internet.jsp"
+                    ],
+                    "document.title": ["Managed Internet"],
+                    "document.contentType": ["text/html"],
+                    "parentCategory.displayName": ["Go Connected"],
+                    "record.source": ["WEB"],
+                    "document.text": [
+                      "Go Mobile. Go Connected. Etisalat Digital. SIGN IN.  .. High speed Internet for steady performance. Business Broadband. Connect your business easily with our affordable asymmetric broadband solutions using a high-speed and secure fibre network. Symmetrical Internet Dedicated Access. Find a solution for your most demanding business requirements in our fully service with dedicated bandwidth and our 24/7 team support.. Cloud Connect – Connectivity to Etisalat OneCloud. Integrate with Etisalat OneCloud over private connectivity in a convenient, rapid and cost-effective way. Give your business the exclusivity of an added layer of security and customisation by selecting Etisalat OneCloud.. Safeguard your on-premises data from security threats, costly downtime and data loss by opting for Cloud Connect.. Cloud Express - Connectivity to Public Cloud Service Providers. Simplify, connect and manage the right public cloud and network technology by creating platforms that empower your business. Ensure that you get secure private connectivity between your corporate network and public cloud by selecting Etisalat Cloud Express.. Read More. Contact Us. Our team is happy to answer your sale queries, send us an inquiry and we will be in touch shortly.. Send Inquiry. Support. Support. Locate Business Centres. VAT / TRN Submission. Billing and Payments. Get Domain Names. Small & Medium Business. Small & Medium Business. Mobile Plans. Internet & Bundles. Internet Calling Plans. Customer Success Stories. Hello Business Hub. Business Blog. Enterprise & Government. Enterprise & Government. Etisalat Digital. Mobile Hub. Managed ICT Solutions. Success Stories. Strategic Projects. Strategic Projects. EXPO 2020 Dubai. Hassantuk. Etisalat Group. Etisalat Group. General Information. About Us. For Investors. Our Impact. News Room. Download Etisalat Business App. Follow Us. Payment Accepted. Page 1. supericon-success. Created with Sketch.. icon-live chat. Created with Sketch.. icon-call us. Created with Sketch.. icon-tweet us. Created with Sketch.. icon-faqs. Created with Sketch."
+                    ],
+                    "record.id": [
+                      "https://etisalat.ae/en/enterprise-and-government/go-connected/managed-internet.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=https%3A%2F%2Fetisalat.ae%2Fen%2Fenterprise-and-government%2Fgo-connected%2Fmanaged-internet.jsp"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "sku.activePrice": ["2960.000000"],
+                "product.browsable": ["1"],
+                "product.category": ["Elife:A0:SAS"],
+                "product.flagship": ["false"],
+                "sku.allowFreeLandline": ["1"],
+                "product.type": ["elifePackage"],
+                "sku.displayName": ["Unlimited Premium 1G"],
+                "sku.type": ["etsElifeSku"],
+                "product.sellable": ["1"],
+                "sku.allowCashOnDeliveryPaymentMode": ["1"],
+                "sku.listPrice": ["0.000000"],
+                "product.redirectToLeadPage": ["0"],
+                "product.listPriceAll": ["0.000000"],
+                "sku.smallImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-premium-1gb-384x226-01.jpg"
+                ],
+                "sku.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-premium-1gb-384x246-01.jpg"
+                ],
+                "product.siteId": ["storeSiteDE", "storeSiteUS"],
+                "sku.onSale": ["0"],
+                "product.displayName": ["eLife"],
+                "record.source": ["ProductCatalog"],
+                "product.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/elife-tariff-cards/elife-tariff-card-premium-1gbps-desktop.jpg"
+                ],
+                "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                "product.extraInfos": ["{}"],
+                "sku.onlineOnly": ["0"],
+                "product.onlineOnly": ["0"],
+                "product.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-premium-1gb-288x146-01.jpg"
+                ],
+                "product.templateUrl": [
+                  "https://www.etisalat.ae/b2c/eshop/viewProducts?category=homePlans&subCategory=cat1100023"
+                ],
+                "product.catalogId": ["catalog100001"],
+                "record.id": [
+                  "etsElifeSku-elifeSASSku-Unlimited1G-nc-1..elifeSASProd-unl-premium1G-1.en__AE"
+                ],
+                "product.repositoryId": ["elifeSASProd-unl-premium1G-1"],
+                "sku.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-premium-1gb-288x146-01.jpg"
+                ],
+                "sku.longDescription": [
+                  "Premium internet with 500Mbps download speed, home phone with unlimited calls to any home phone in UAE and TV with over 200 premium channels with OSN along with free-to-air and eLife basic TV channels. One regional TV add-on included for free (Asiana, Arabia, Pinoy, or Western)."
+                ],
+                "sku.recurringPrice": ["2960.000000"],
+                "product.deviceCapacity": ["1Gbps"],
+                "product.isPopular": ["false"],
+                "sku.creationDate": ["1637569063909"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=etsElifeSku-elifeSASSku-Unlimited1G-nc-1..elifeSASProd-unl-premium1G-1.en__AE"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "sku.activePrice": ["2960.000000"],
+                    "sku.backendId": ["MKTP3P1GBINFPREMIUMN"],
+                    "product.category": ["Elife:A0:SAS"],
+                    "sku.tvChannelsMoreInfo": [
+                      "/elife-unlimited-premium-1g.jsp"
+                    ],
+                    "sku.isNew": ["false"],
+                    "sku.activePriceIncVat": ["0.000000"],
+                    "sku.minQuantity": ["0"],
+                    "sku.displayName": ["Unlimited Premium 1G"],
+                    "sku.maxQuantity": ["0"],
+                    "sku.promotionObj": [
+                      "{\"promoType\":\"INSTALLATION\",\"bannerURL\":\"/buyget-promotion-banner-elife-unlimited-sports-promotions.jsp\",\"message\":\"Free Installation\"}"
+                    ],
+                    "sku.learnMoreAr": [
+                      "/ar/c/home/plans/important-to-know/unlimited-premium-1g.jsp"
+                    ],
+                    "sku.backendDemandId": ["PC000366"],
+                    "sku.type": ["etsElifeSku"],
+                    "sku.learnMoreEn": [
+                      "/en/c/home/plans/important-to-know/unlimited-premium-1g.jsp"
+                    ],
+                    "sku.listPrice": ["0.000000"],
+                    "sku.dynamicAttributesExtendedAr": [
+                      "{\"label\":\"OTT\",\"value\":\"<div class=\\\"nv-freebie-subs-icon-wrapper nv-m-0 nv-md\\\">\\n    <div class=\\\"icon\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/osn.svg\\\">\\n    </div>\\n\\t<div class=\\\"icon\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/starz-play.svg\\\">\\n    </div>\\n</div>\",\"position\":4,\"attributeType\":\"text\"}",
+                      "{\"label\":\"eLife ON\",\"value\":\"Yes\",\"position\":6,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"أكثر من 200 قناة مجانية\",\"value\":\"Yes\",\"position\":3,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"إظهار رقم الطالب\",\"value\":\"Yes\",\"position\":13,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"الإنترنت\",\"value\":\"1 Gbps\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"البريد الصوتي\",\"value\":\"Yes\",\"position\":14,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"القنوات التلفزيونية الأساسية\",\"value\":\"باقة اساسية\",\"position\":2,\"attributeType\":\"text\"}",
+                      "{\"label\":\"باقات التلفاز المتضمنة\",\"value\":\"<div class=\\\"nv-freebie-subs-icon-wrapper nv-m-0 nv-md\\\">\\n    <div class=\\\"icon\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/bein.svg\\\">\\n    </div>\\n    <div class=\\\"icon\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/osn.svg\\\">\\n    </div>\\n\\t<div class=\\\"icon\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/mobile-app-banners/starz-play.svg\\\">\\n    </div>\\n</div>\",\"position\":5,\"attributeType\":\"text\"}",
+                      "{\"label\":\"جهاز استقبال تلفزيوني 4K\",\"value\":\"مع خاصية التسجيل\",\"position\":10,\"attributeType\":\"text\"}",
+                      "{\"label\":\"خدمة الأفلام والبرامج حسب الطلب\",\"value\":\"Yes\",\"position\":7,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"راوتر Wi-Fi\",\"value\":\"Yes\",\"position\":11,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"سرعة الإنترنت\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التنزيل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (1 Gbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-1g.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التحميل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (300 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-300mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"مزايا إضافية لباقة التلفاز (القنوات الآسيوية، والعربية وPinoy والأوروبية) مقابل 10 دراهم/ شهر\",\"value\":\"One included for free\",\"position\":8,\"attributeType\":\"text\"}",
+                      "{\"label\":\"مكالمات مجانية من  الهاتف الثابت إلى الهاتف الثابت داخل الإمارات العربية المتحدة\",\"value\":\"Yes\",\"position\":9,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"هاتف لاسلكي\",\"value\":\"Yes\",\"position\":12,\"attributeType\":\"boolean\"}"
+                    ],
+                    "sku.browsable": ["1"],
+                    "sku.displayVatDisclaimer": ["1"],
+                    "sku.dynamicAttributesExtendedEn": [
+                      "{\"label\":\"1Regional TVPack@AED10pm(3monthsfree)\",\"value\":\"One Regional TV AddOn (Asiana, Arabia, Pinoy, Western) @ AED 10 / Month\",\"position\":8,\"attributeType\":\"text\"}",
+                      "{\"label\":\"200+ Free to Air Channels\",\"value\":\"200+ Free to Air Channels\",\"position\":3,\"attributeType\":\"text\"}",
+                      "{\"label\":\"4K TV Box\",\"value\":\"Recordable\",\"position\":10,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Basic TV Channels\",\"value\":\"Basic TV Channels\",\"position\":2,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Caller ID\",\"value\":\"Yes\",\"position\":13,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"Included TV packages\",\"value\":\"Included TV packages\",\"position\":5,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Internet Speed Comparison\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Download Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (1 Gbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-1g.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Upload Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (300 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-300mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Internet\",\"value\":\"Internet\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"OTT\",\"value\":\"OTT\",\"position\":4,\"attributeType\":\"text\"}",
+                      "{\"label\":\"OnDemand Movies & TV Shows\",\"value\":\"OnDemand Movies & TV Shows\",\"position\":7,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Unlimited UAE Landline to landline calls\",\"value\":\"Unlimited UAE Landline to landline calls\",\"position\":9,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Voicemail box\",\"value\":\"Yes\",\"position\":14,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"WiFi Router\",\"value\":\"Yes\",\"position\":11,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"Wireless Phone\",\"value\":\"Yes\",\"position\":12,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"eLife ON\",\"value\":\"eLife ON\",\"position\":6,\"attributeType\":\"text\"}"
+                    ],
+                    "product.listPriceAll": ["0.000000"],
+                    "sku.dynamicAttributes": [
+                      "{\"label\":\"Additional Benefits\",\"value\":\"One Regional TV ADD ON included (Asiana, Arabia, Pinoy, or Western)\",\"position\":2}",
+                      "{\"label\":\"Commitment Period\",\"value\":\"No Commitment\",\"position\":0}",
+                      "{\"label\":\"Internet Connection\",\"value\":\"Blazing 1 Gbps\",\"position\":1}",
+                      "{\"label\":\"Mobile Streaming\",\"value\":\"eLife ON\",\"position\":6}",
+                      "{\"label\":\"OnDemand\",\"value\":\"Thousands of OnDemand movies, box-sets & shows\",\"position\":5}",
+                      "{\"label\":\"Phone Calls\",\"value\":\"Unlimited Home Telephone to Telephone calls within UAE\",\"position\":7}",
+                      "{\"label\":\"Premium\",\"value\":\"''\",\"position\":4}",
+                      "{\"label\":\"TV Channels\",\"value\":\"Free to air channels, OSN Full Package, STARZPLAY, beIN Sports Full Package + AddOn Sports\",\"position\":3}"
+                    ],
+                    "sku.smallImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-premium-1gb-384x226-01.jpg"
+                    ],
+                    "sku.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-premium-1gb-384x246-01.jpg"
+                    ],
+                    "sku.dynamicAttributesAr": [
+                      "{\"label\":\"الاتصال بالإنترنت\",\"value\":\"سرعة استثنائية 1Gbps\",\"position\":1}",
+                      "{\"label\":\"القنوات التلفزيونية\",\"value\":\"القنوات المجانية، باقة قنوات OSN الكاملة، STARZPLAY، باقة قنوات BeIN Sports مع المزايا الإضافية الرياضية\",\"position\":3}",
+                      "{\"label\":\"المكالمات\",\"value\":\"مكالمات مجانية إلى الهاتف الثابت داخل الإمارات العربية المتحدة\",\"position\":7}",
+                      "{\"label\":\"بث عبر الهاتف المتحرك\",\"value\":\"eLife ON\",\"position\":6}",
+                      "{\"label\":\"حسب الطلب\",\"value\":\"آلاف من قنوات الأفلام حسب الطلب، أجهزة الاستقبال التلفزيوني والبرامج التلفزيونية\",\"position\":5}",
+                      "{\"label\":\"قنوات مميزة\",\"value\":\"''\",\"position\":4}",
+                      "{\"label\":\"مدة الإلتزام\",\"value\":\"بدون التزام\",\"position\":0}",
+                      "{\"label\":\"مميزات إضافية\",\"value\":\"ميزة إضافية واحدة للقنوات التلفزيونية (الباقات الآسيوية، العربية، Pinoy أو الأوروبية) \",\"position\":2}"
+                    ],
+                    "sku.onSale": ["0"],
+                    "product.displayName": ["eLife"],
+                    "record.source": ["ProductCatalog"],
+                    "product.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/elife-tariff-cards/elife-tariff-card-premium-1gbps-desktop.jpg"
+                    ],
+                    "sku.isActivePromo": ["1"],
+                    "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                    "sku.displayOrder": ["1"],
+                    "sku.onlineOnly": ["0"],
+                    "parentCategory.displayName": ["Elife:A0:SAS>cat1230018"],
+                    "sku.priceIncVat": ["{}"],
+                    "sku.itemId": ["elifeSASSku-Unlimited1G-nc-1"],
+                    "sku.vatEligible": ["0"],
+                    "product.templateUrl": [
+                      "https://www.etisalat.ae/b2c/eshop/viewProducts?category=homePlans&subCategory=cat1100023"
+                    ],
+                    "sku.tAndcAcceptanceAr": [
+                      "/unlimited-premium-1g-terms-and-conditions.jsp"
+                    ],
+                    "sku.termsAndConditions": [
+                      "/unlimited-premium-1g-terms-and-conditions.jsp"
+                    ],
+                    "sku.vipNumberClass": ["SPECIAL"],
+                    "sku.redirectToLeadPage": ["0"],
+                    "record.id": [
+                      "etsElifeSku-elifeSASSku-Unlimited1G-nc-1..elifeSASProd-unl-premium1G-1.en__AE"
+                    ],
+                    "product.repositoryId": ["elifeSASProd-unl-premium1G-1"],
+                    "sku.longDescription": [
+                      "Premium internet with 500Mbps download speed, home phone with unlimited calls to any home phone in UAE and TV with over 200 premium channels with OSN along with free-to-air and eLife basic TV channels. One regional TV add-on included for free (Asiana, Arabia, Pinoy, or Western)."
+                    ],
+                    "sku.isPopular": ["false"],
+                    "sku.sellable": ["1"],
+                    "product.displayOrder": ["7"],
+                    "sku.deviceCapacity": ["1Gbps"],
+                    "sku.recurringPrice": ["2960.000000"],
+                    "product.deviceCapacity": ["1Gbps"],
+                    "sku.creationDate": ["1637569063909"],
+                    "sku.tAndcAcceptanceEn": [
+                      "/unlimited-premium-1g-terms-and-conditions.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=etsElifeSku-elifeSASSku-Unlimited1G-nc-1..elifeSASProd-unl-premium1G-1.en__AE"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 2
+            },
+            {
+              "attributes": {
+                "sku.activePrice": ["749.000000"],
+                "product.browsable": ["1"],
+                "product.category": ["Elife:A1:SAS"],
+                "product.flagship": ["false"],
+                "sku.allowFreeLandline": ["1"],
+                "product.type": ["elifePackage"],
+                "sku.displayName": ["eLife Lite 100"],
+                "sku.type": ["etsElifeSku"],
+                "product.sellable": ["0"],
+                "sku.allowCashOnDeliveryPaymentMode": ["1"],
+                "sku.listPrice": ["0.000000"],
+                "product.redirectToLeadPage": ["0"],
+                "product.listPriceAll": ["0.000000"],
+                "sku.smallImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x226.jpg"
+                ],
+                "sku.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x246.jpg"
+                ],
+                "product.siteId": ["storeSiteDE", "storeSiteUS"],
+                "sku.onSale": ["0"],
+                "product.displayName": ["eLife Lite"],
+                "record.source": ["ProductCatalog"],
+                "product.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/elife-tariff-cards/elife-tariff-card-sports-desktop.jpg"
+                ],
+                "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                "product.extraInfos": ["{}"],
+                "sku.onlineOnly": ["0"],
+                "product.onlineOnly": ["0"],
+                "product.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/elife-tariff-cards/elife-tariff-card-sports-desktop.jpg"
+                ],
+                "sku.description": [
+                  "Basic internet with 100 Mbps download speed, home phone with unlimited calls to any home phone in UAE."
+                ],
+                "product.catalogId": ["catalog100001"],
+                "record.id": [
+                  "etsElifeSku-elifeSASSku-ETS-Lite100Mbps2p-1..elifeSASProd-ETS-lite100Mbps2p-1.en__AE"
+                ],
+                "product.repositoryId": ["elifeSASProd-ETS-lite100Mbps2p-1"],
+                "sku.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-288x146.jpg"
+                ],
+                "sku.longDescription": [
+                  "Basic internet with 100 Mbps download speed, home phone with unlimited calls to any home phone in UAE."
+                ],
+                "sku.recurringPrice": ["749.000000"],
+                "product.isPopular": ["false"],
+                "sku.creationDate": ["1637569069374"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=etsElifeSku-elifeSASSku-ETS-Lite100Mbps2p-1..elifeSASProd-ETS-lite100Mbps2p-1.en__AE"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "sku.activePrice": ["749.000000"],
+                    "sku.backendId": ["MKTBSAELIFE2P100MB "],
+                    "product.category": ["Elife:A1:SAS"],
+                    "sku.isNew": ["false"],
+                    "sku.activePriceIncVat": ["0.000000"],
+                    "sku.minQuantity": ["0"],
+                    "sku.displayName": ["eLife Lite 100"],
+                    "sku.maxQuantity": ["0"],
+                    "sku.promotionObj": [
+                      "{\"promoType\":\"INSTALLATION\",\"bannerURL\":\"/buyget-promotion-banner-elife-unlimited-sports-promotions.jsp\",\"message\":\"Free Installation\"}"
+                    ],
+                    "sku.type": ["etsElifeSku"],
+                    "sku.listPrice": ["0.000000"],
+                    "sku.dynamicAttributesExtendedAr": [
+                      "{\"label\":\"Starzplay & TVBox @AED20/Month\",\"value\":\"اختياري\",\"position\":4,\"attributeType\":\"text\"}",
+                      "{\"label\":\"eLife ON\",\"value\":\"Yes\",\"position\":2,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"الإنترنت\",\"value\":\"100 Mbps\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"سرعة الإنترنت\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التنزيل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (100 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-lite-desktop-card-progress-bar-100mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التحميل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (20 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-lite-desktop-card-progress-bar-20mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"مكالمات مجانية من  الهاتف الثابت إلى الهاتف الثابت داخل الإمارات العربية المتحدة\",\"value\":\"Yes\",\"position\":3,\"attributeType\":\"boolean\"}"
+                    ],
+                    "sku.browsable": ["1"],
+                    "sku.displayVatDisclaimer": ["1"],
+                    "sku.dynamicAttributesExtendedEn": [
+                      "{\"label\":\"Internet Speed Comparison\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Download Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (100 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-lite-desktop-card-progress-bar-100mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Upload Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (20 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-lite-desktop-card-progress-bar-20mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Internet\",\"value\":\"100 Mbps\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Starzplay & TVBox @AED20/Month\",\"value\":\"Optional\",\"position\":4,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Unlimited UAE Landline to landline calls\",\"value\":\"Yes\",\"position\":3,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"eLife ON\",\"value\":\"Yes\",\"position\":2,\"attributeType\":\"boolean\"}"
+                    ],
+                    "product.listPriceAll": ["0.000000"],
+                    "sku.dynamicAttributes": [
+                      "{\"label\":\"Devices\",\"value\":\"Wi-Fi router and Home Phone\",\"position\":3}",
+                      "{\"label\":\"Phone Calls\",\"value\":\"Free Calls to UAE landlines\",\"position\":2}",
+                      "{\"label\":\"Unlimited broadband\",\"value\":\"100Mbps\",\"position\":0}",
+                      "{\"label\":\"eLifeON\",\"value\":\"Subscription Included\",\"position\":1}"
+                    ],
+                    "sku.smallImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x226.jpg"
+                    ],
+                    "sku.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x246.jpg"
+                    ],
+                    "sku.dynamicAttributesAr": [
+                      "{\"label\":\" الأجهزة\",\"value\":\"راوتر Wi-Fi وهاتف ثابت\",\"position\":3}",
+                      "{\"label\":\"eLifeON\",\"value\":\"متضمن الاشتراك\",\"position\":1}",
+                      "{\"label\":\"إنترنت غير محدود\",\"value\":\"100Mbps\",\"position\":0}",
+                      "{\"label\":\"المكالمات\",\"value\":\"مكالمات مجانية إلى الهاتف الثابت داخل الإمارات\",\"position\":2}"
+                    ],
+                    "sku.onSale": ["0"],
+                    "product.displayName": ["eLife Lite"],
+                    "record.source": ["ProductCatalog"],
+                    "product.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/elife-tariff-cards/elife-tariff-card-sports-desktop.jpg"
+                    ],
+                    "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                    "sku.displayOrder": ["0"],
+                    "sku.onlineOnly": ["0"],
+                    "parentCategory.displayName": ["Elife:A1:SAS>cat1230017"],
+                    "sku.priceIncVat": ["{}"],
+                    "sku.itemId": ["elifeSASSku-ETS-Lite100Mbps2p-1"],
+                    "sku.vatEligible": ["0"],
+                    "sku.tAndcAcceptanceAr": [
+                      "/elife-lite-100mbps-terms-and-conditions.jsp"
+                    ],
+                    "sku.vipNumberClass": ["SPECIAL"],
+                    "sku.redirectToLeadPage": ["0"],
+                    "sku.description": [
+                      "Basic internet with 100 Mbps download speed, home phone with unlimited calls to any home phone in UAE."
+                    ],
+                    "record.id": [
+                      "etsElifeSku-elifeSASSku-ETS-Lite100Mbps2p-1..elifeSASProd-ETS-lite100Mbps2p-1.en__AE"
+                    ],
+                    "product.repositoryId": [
+                      "elifeSASProd-ETS-lite100Mbps2p-1"
+                    ],
+                    "sku.longDescription": [
+                      "Basic internet with 100 Mbps download speed, home phone with unlimited calls to any home phone in UAE."
+                    ],
+                    "sku.isPopular": ["false"],
+                    "sku.sellable": ["0"],
+                    "product.displayOrder": ["3"],
+                    "sku.recurringPrice": ["749.000000"],
+                    "sku.creationDate": ["1637569069374"],
+                    "sku.tAndcAcceptanceEn": [
+                      "/elife-lite-100mbps-terms-and-conditions.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=etsElifeSku-elifeSASSku-ETS-Lite100Mbps2p-1..elifeSASProd-ETS-lite100Mbps2p-1.en__AE"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            },
+            {
+              "attributes": {
+                "sku.activePrice": ["389.000000"],
+                "product.browsable": ["1"],
+                "product.category": ["Elife:A0:SAS"],
+                "product.flagship": ["false"],
+                "sku.allowFreeLandline": ["1"],
+                "product.type": ["elifePackage"],
+                "sku.displayName": ["Unlimited Starter"],
+                "sku.type": ["etsElifeSku"],
+                "product.sellable": ["1"],
+                "sku.allowCashOnDeliveryPaymentMode": ["1"],
+                "sku.listPrice": ["0.000000"],
+                "product.redirectToLeadPage": ["0"],
+                "product.listPriceAll": ["0.000000"],
+                "sku.smallImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-384x226-01.jpg"
+                ],
+                "sku.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-384x246-01.jpg"
+                ],
+                "product.siteId": ["storeSiteDE", "storeSiteUS"],
+                "sku.onSale": ["0"],
+                "product.displayName": ["eLife"],
+                "record.source": ["ProductCatalog"],
+                "product.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/elife-tariff-cards/elife-tariff-card-starter-desktop.jpg"
+                ],
+                "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                "product.extraInfos": ["{}"],
+                "sku.onlineOnly": ["0"],
+                "product.onlineOnly": ["0"],
+                "product.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-288x146-01.jpg"
+                ],
+                "product.templateUrl": [
+                  "https://www.etisalat.ae/b2c/eshop/viewProducts?category=homePlans&subCategory=cat1100023"
+                ],
+                "product.catalogId": ["catalog100001"],
+                "record.id": [
+                  "etsElifeSku-elifeSASSku-UnlimitedStarter-1..elifeSASProd-unl-starter-1.en__AE"
+                ],
+                "product.repositoryId": ["elifeSASProd-unl-starter-1"],
+                "sku.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-288x146-01.jpg"
+                ],
+                "sku.longDescription": [
+                  "Super-fast internet with 250Mbps download speed, home phone with unlimited calls to any other home phone in UAE and TV with free-to-air and eLife basic TV channels. Also get one regional TV add-on for only AED10/month (Asiana, Arabia, Pinoy, or Western)."
+                ],
+                "sku.recurringPrice": ["389.000000"],
+                "product.deviceCapacity": ["250Mbps"],
+                "product.isPopular": ["false"],
+                "sku.creationDate": ["1637569068874"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=etsElifeSku-elifeSASSku-UnlimitedStarter-1..elifeSASProd-unl-starter-1.en__AE"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "sku.activePrice": ["389.000000"],
+                    "sku.backendId": ["MKTP3P50MBINFSTARTER"],
+                    "product.category": ["Elife:A0:SAS"],
+                    "sku.tvChannelsMoreInfo": ["/elife-unlimited-starter.jsp"],
+                    "sku.isNew": ["false"],
+                    "sku.activePriceIncVat": ["0.000000"],
+                    "sku.minQuantity": ["0"],
+                    "sku.displayName": ["Unlimited Starter"],
+                    "sku.maxQuantity": ["0"],
+                    "sku.promotionObj": [
+                      "{\"promoType\":\"INSTALLATION\",\"bannerURL\":\"/buyget-promotion-banner-elife-unlimited-sports-promotions.jsp\",\"message\":\"Free Installation\"}"
+                    ],
+                    "sku.learnMoreAr": [
+                      "/ar/c/home/plans/important-to-know/unlimited-starter.jsp"
+                    ],
+                    "sku.backendDemandId": ["PC000361"],
+                    "sku.type": ["etsElifeSku"],
+                    "sku.learnMoreEn": [
+                      "/en/c/home/plans/important-to-know/unlimited-starter.jsp"
+                    ],
+                    "sku.listPrice": ["0.000000"],
+                    "sku.dynamicAttributesExtendedAr": [
+                      "{\"label\":\"eLife ON\",\"value\":\"Yes\",\"position\":4,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"أكثر من 200 قناة مجانية\",\"value\":\"Yes\",\"position\":3,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"إظهار رقم الطالب\",\"value\":\"Yes\",\"position\":11,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"الإنترنت\",\"value\":\"250 Mbps\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"البريد الصوتي\",\"value\":\"Yes\",\"position\":12,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"القنوات التلفزيونية الأساسية\",\"value\":\"باقة اساسية\",\"position\":2,\"attributeType\":\"text\"}",
+                      "{\"label\":\"جهاز استقبال تلفزيوني 4K\",\"value\":\"أساسي\",\"position\":8,\"attributeType\":\"text\"}",
+                      "{\"label\":\"خدمة الأفلام والبرامج حسب الطلب\",\"value\":\"Yes\",\"position\":5,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"راوتر Wi-Fi\",\"value\":\"أساسي\",\"position\":9,\"attributeType\":\"text\"}",
+                      "{\"label\":\"سرعة الإنترنت\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التنزيل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (250 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-250mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التحميل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (100 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-100mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"مزايا إضافية لباقة التلفاز (القنوات الآسيوية، والعربية وPinoy والأوروبية) مقابل 10 دراهم/ شهر\",\"value\":\"Yes\",\"position\":6,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"مكالمات مجانية من  الهاتف الثابت إلى الهاتف الثابت داخل الإمارات العربية المتحدة\",\"value\":\"Yes\",\"position\":7,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"هاتف لاسلكي\",\"value\":\"Yes\",\"position\":10,\"attributeType\":\"boolean\"}"
+                    ],
+                    "sku.browsable": ["1"],
+                    "sku.displayVatDisclaimer": ["1"],
+                    "sku.dynamicAttributesExtendedEn": [
+                      "{\"label\":\"1Regional TVPack@AED10pm(3monthsfree)\",\"value\":\"Yes\",\"position\":6,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"200+ Free to Air Channels\",\"value\":\"Yes\",\"position\":3,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"4K TV Box\",\"value\":\"Regular\",\"position\":8,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Basic TV Channels\",\"value\":\"New Basic\",\"position\":2,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Caller ID\",\"value\":\"Yes\",\"position\":11,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"Internet Speed Comparison\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Download Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (250 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-250mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Upload Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (100 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-100mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Internet\",\"value\":\"250 Mbps\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"OnDemand Movies & TV Shows\",\"value\":\"Yes\",\"position\":5,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"Unlimited UAE Landline to landline calls\",\"value\":\"Yes\",\"position\":7,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"Voicemail box\",\"value\":\"Yes\",\"position\":12,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"WiFi Router\",\"value\":\"Regular\",\"position\":9,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Wireless Phone\",\"value\":\"Yes\",\"position\":10,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"eLife ON\",\"value\":\"Yes\",\"position\":4,\"attributeType\":\"boolean\"}"
+                    ],
+                    "product.listPriceAll": ["0.000000"],
+                    "sku.dynamicAttributes": [
+                      "{\"label\":\"Additional Benefits\",\"value\":\"One regional TV add-on (Asiana, Arabia, Pinoy, or Western) for AED10/month\",\"position\":2}",
+                      "{\"label\":\"Commitment Period\",\"value\":\"24 Months\",\"position\":0}",
+                      "{\"label\":\"Internet Connection\",\"value\":\"Superfast 500 Mbps\",\"position\":1}",
+                      "{\"label\":\"Mobile Streaming\",\"value\":\"eLife ON\",\"position\":5}",
+                      "{\"label\":\"OnDemand\",\"value\":\"Thousands of OnDemand movies, box-sets & shows\",\"position\":4}",
+                      "{\"label\":\"Phone Calls\",\"value\":\"Unlimited Home Telephone to Telephone calls within UAE\",\"position\":6}",
+                      "{\"label\":\"TV Channels\",\"value\":\"Free to air channels\",\"position\":3}"
+                    ],
+                    "sku.smallImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-384x226-01.jpg"
+                    ],
+                    "sku.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-384x246-01.jpg"
+                    ],
+                    "sku.dynamicAttributesAr": [
+                      "{\"label\":\"الاتصال بالإنترنت\",\"value\":\"سريع جدًا  500Mbps \",\"position\":1}",
+                      "{\"label\":\"القنوات التلفزيونية\",\"value\":\"القنوات المجانية\",\"position\":3}",
+                      "{\"label\":\"المكالمات\",\"value\":\"مكالمات مجانية إلى الهاتف الثابت داخل الإمارات العربية المتحدة\",\"position\":6}",
+                      "{\"label\":\"بث عبر الهاتف المتحرك\",\"value\":\"eLife ON\",\"position\":5}",
+                      "{\"label\":\"حسب الطلب\",\"value\":\"آلاف من قنوات الأفلام حسب الطلب، أجهزة الاستقبال التلفزيوني والبرامج التلفزيونية\",\"position\":4}",
+                      "{\"label\":\"مدة الإلتزام\",\"value\":\"24 شهرًا\",\"position\":0}",
+                      "{\"label\":\"مميزات إضافية\",\"value\":\"ميزة إضافية واحدة للقنوات التلفزيونية (الباقات الآسيوية، العربية، Pinoy أو الأوروبية) مقابل 10 درهم/ شهر \",\"position\":2}"
+                    ],
+                    "sku.onSale": ["0"],
+                    "product.displayName": ["eLife"],
+                    "record.source": ["ProductCatalog"],
+                    "product.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/elife-tariff-cards/elife-tariff-card-starter-desktop.jpg"
+                    ],
+                    "sku.isActivePromo": ["1"],
+                    "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                    "sku.displayOrder": ["0"],
+                    "sku.onlineOnly": ["0"],
+                    "parentCategory.displayName": ["Elife:A0:SAS>cat1230018"],
+                    "sku.priceIncVat": ["{}"],
+                    "sku.itemId": ["elifeSASSku-UnlimitedStarter-1"],
+                    "sku.vatEligible": ["0"],
+                    "product.templateUrl": [
+                      "https://www.etisalat.ae/b2c/eshop/viewProducts?category=homePlans&subCategory=cat1100023"
+                    ],
+                    "sku.tAndcAcceptanceAr": [
+                      "/unlimited-starter-terms-and-conditions.jsp"
+                    ],
+                    "sku.termsAndConditions": [
+                      "/unlimited-starter-terms-and-conditions.jsp\n\n"
+                    ],
+                    "sku.vipNumberClass": ["SPECIAL"],
+                    "sku.redirectToLeadPage": ["0"],
+                    "record.id": [
+                      "etsElifeSku-elifeSASSku-UnlimitedStarter-1..elifeSASProd-unl-starter-1.en__AE"
+                    ],
+                    "product.repositoryId": ["elifeSASProd-unl-starter-1"],
+                    "sku.longDescription": [
+                      "Super-fast internet with 250Mbps download speed, home phone with unlimited calls to any other home phone in UAE and TV with free-to-air and eLife basic TV channels. Also get one regional TV add-on for only AED10/month (Asiana, Arabia, Pinoy, or Western)."
+                    ],
+                    "sku.isPopular": ["false"],
+                    "sku.sellable": ["1"],
+                    "product.displayOrder": ["5"],
+                    "sku.deviceCapacity": ["250Mbps"],
+                    "sku.recurringPrice": ["389.000000"],
+                    "product.deviceCapacity": ["250Mbps"],
+                    "sku.creationDate": ["1637569068874"],
+                    "sku.tAndcAcceptanceEn": [
+                      "/unlimited-starter-terms-and-conditions.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=etsElifeSku-elifeSASSku-UnlimitedStarter-1..elifeSASProd-unl-starter-1.en__AE"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 2
+            },
+            {
+              "attributes": {
+                "sku.activePrice": ["389.000000"],
+                "product.browsable": ["1"],
+                "product.category": [
+                  "Elife:A0:Ejari",
+                  "Elife:A0:MOBILE2",
+                  "Elife:A0:Portal"
+                ],
+                "product.flagship": ["false"],
+                "sku.allowFreeLandline": ["1"],
+                "product.type": ["elifePackage"],
+                "sku.displayName": ["Unlimited Starter"],
+                "sku.type": ["etsElifeSku"],
+                "product.sellable": ["1"],
+                "sku.allowCashOnDeliveryPaymentMode": ["1"],
+                "sku.listPrice": ["0.000000"],
+                "product.redirectToLeadPage": ["0"],
+                "product.listPriceAll": ["0.000000"],
+                "sku.smallImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-384x226-01.jpg"
+                ],
+                "sku.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-384x246-01.jpg"
+                ],
+                "product.siteId": ["storeSiteDE", "storeSiteUS"],
+                "sku.onSale": ["0"],
+                "product.displayName": ["eLife"],
+                "record.source": ["ProductCatalog"],
+                "product.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/elife-tariff-cards/elife-tariff-card-starter-desktop.jpg"
+                ],
+                "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                "product.extraInfos": ["{}"],
+                "sku.onlineOnly": ["0"],
+                "product.onlineOnly": ["0"],
+                "product.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-288x146-01.jpg"
+                ],
+                "product.templateUrl": [
+                  "https://www.etisalat.ae/b2c/eshop/viewProducts?category=homePlans&subCategory=cat1100023"
+                ],
+                "product.catalogId": ["catalog100001"],
+                "record.id": [
+                  "etsElifeSku-elifeSku-UnlimitedStarter-1..elifeProd-unl-starter-1.en__AE"
+                ],
+                "product.repositoryId": ["elifeProd-unl-starter-1"],
+                "sku.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-288x146-01.jpg"
+                ],
+                "sku.longDescription": [
+                  "Super-fast internet with 250Mbps download speed, home phone with unlimited calls to any other home phone in UAE and TV with free-to-air and eLife basic TV channels. Also get one regional TV add-on for only AED10/month (Asiana, Arabia, Pinoy, or Western)."
+                ],
+                "sku.recurringPrice": ["389.000000"],
+                "product.deviceCapacity": ["250Mbps"],
+                "product.isPopular": ["false"],
+                "sku.creationDate": ["1619515970089"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=etsElifeSku-elifeSku-UnlimitedStarter-1..elifeProd-unl-starter-1.en__AE"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "sku.activePrice": ["389.000000"],
+                    "sku.backendId": ["MKTP3P50MBINFSTARTER"],
+                    "product.category": [
+                      "Elife:A0:Ejari",
+                      "Elife:A0:MOBILE2",
+                      "Elife:A0:Portal"
+                    ],
+                    "sku.tvChannelsMoreInfo": ["/elife-unlimited-starter.jsp"],
+                    "sku.isNew": ["false"],
+                    "sku.activePriceIncVat": ["0.000000"],
+                    "sku.minQuantity": ["0"],
+                    "sku.displayName": ["Unlimited Starter"],
+                    "sku.maxQuantity": ["0"],
+                    "sku.promotionObj": [
+                      "{\"promoType\":\"INSTALLATION\",\"bannerURL\":\"/buyget-promotion-banner-elife-unlimited-sports-promotions.jsp\",\"message\":\"Free Installation\"}"
+                    ],
+                    "sku.learnMoreAr": [
+                      "/ar/c/home/plans/important-to-know/unlimited-starter.jsp"
+                    ],
+                    "sku.backendDemandId": ["PC000361"],
+                    "sku.type": ["etsElifeSku"],
+                    "sku.learnMoreEn": [
+                      "/en/c/home/plans/important-to-know/unlimited-starter.jsp"
+                    ],
+                    "sku.listPrice": ["0.000000"],
+                    "sku.dynamicAttributesExtendedAr": [
+                      "{\"label\":\"eLife ON\",\"value\":\"Yes\",\"position\":4,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"أكثر من 200 قناة مجانية\",\"value\":\"Yes\",\"position\":3,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"إظهار رقم الطالب\",\"value\":\"Yes\",\"position\":11,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"الإنترنت\",\"value\":\"250 Mbps\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"البريد الصوتي\",\"value\":\"Yes\",\"position\":12,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"القنوات التلفزيونية الأساسية\",\"value\":\"باقة اساسية\",\"position\":2,\"attributeType\":\"text\"}",
+                      "{\"label\":\"جهاز استقبال تلفزيوني 4K\",\"value\":\"أساسي\",\"position\":8,\"attributeType\":\"text\"}",
+                      "{\"label\":\"خدمة الأفلام والبرامج حسب الطلب\",\"value\":\"Yes\",\"position\":5,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"راوتر Wi-Fi\",\"value\":\"أساسي\",\"position\":9,\"attributeType\":\"text\"}",
+                      "{\"label\":\"سرعة الإنترنت\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التنزيل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (250 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-250mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التحميل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (100 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-100mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"مزايا إضافية لباقة التلفاز (القنوات الآسيوية، والعربية وPinoy والأوروبية) مقابل 10 دراهم/ شهر\",\"value\":\"Yes\",\"position\":6,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"مكالمات مجانية من  الهاتف الثابت إلى الهاتف الثابت داخل الإمارات العربية المتحدة\",\"value\":\"Yes\",\"position\":7,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"هاتف لاسلكي\",\"value\":\"Yes\",\"position\":10,\"attributeType\":\"boolean\"}"
+                    ],
+                    "sku.browsable": ["1"],
+                    "sku.displayVatDisclaimer": ["1"],
+                    "sku.dynamicAttributesExtendedEn": [
+                      "{\"label\":\"1Regional TVPack@AED10pm(3monthsfree)\",\"value\":\"Yes\",\"position\":6,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"200+ Free to Air Channels\",\"value\":\"Yes\",\"position\":3,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"4K TV Box\",\"value\":\"Regular\",\"position\":8,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Basic TV Channels\",\"value\":\"New Basic\",\"position\":2,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Caller ID\",\"value\":\"Yes\",\"position\":11,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"Internet Speed Comparison\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Download Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (250 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-250mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Upload Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (100 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-unlimited-ultra-giga-desktop-card-progress-bar-100mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Internet\",\"value\":\"250 Mbps\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"OnDemand Movies & TV Shows\",\"value\":\"Yes\",\"position\":5,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"Unlimited UAE Landline to landline calls\",\"value\":\"Yes\",\"position\":7,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"Voicemail box\",\"value\":\"Yes\",\"position\":12,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"WiFi Router\",\"value\":\"Regular\",\"position\":9,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Wireless Phone\",\"value\":\"Yes\",\"position\":10,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"eLife ON\",\"value\":\"Yes\",\"position\":4,\"attributeType\":\"boolean\"}"
+                    ],
+                    "product.listPriceAll": ["0.000000"],
+                    "sku.dynamicAttributes": [
+                      "{\"label\":\"Additional Benefits\",\"value\":\"One regional TV add-on (Asiana, Arabia, Pinoy, or Western) for AED10/month\",\"position\":2}",
+                      "{\"label\":\"Commitment Period\",\"value\":\"24 Months\",\"position\":0}",
+                      "{\"label\":\"Internet Connection\",\"value\":\"Superfast 500 Mbps\",\"position\":1}",
+                      "{\"label\":\"Mobile Streaming\",\"value\":\"eLife ON\",\"position\":5}",
+                      "{\"label\":\"OnDemand\",\"value\":\"Thousands of OnDemand movies, box-sets & shows\",\"position\":4}",
+                      "{\"label\":\"Phone Calls\",\"value\":\"Unlimited Home Telephone to Telephone calls within UAE\",\"position\":6}",
+                      "{\"label\":\"TV Channels\",\"value\":\"Free to air channels\",\"position\":3}"
+                    ],
+                    "sku.smallImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-384x226-01.jpg"
+                    ],
+                    "sku.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/home/plans/elife-unlimited/elife-unlimited-starter-384x246-01.jpg"
+                    ],
+                    "sku.dynamicAttributesAr": [
+                      "{\"label\":\"الاتصال بالإنترنت\",\"value\":\"سريع جدًا  500Mbps \",\"position\":1}",
+                      "{\"label\":\"القنوات التلفزيونية\",\"value\":\"القنوات المجانية\",\"position\":3}",
+                      "{\"label\":\"المكالمات\",\"value\":\"مكالمات مجانية إلى الهاتف الثابت داخل الإمارات العربية المتحدة\",\"position\":6}",
+                      "{\"label\":\"بث عبر الهاتف المتحرك\",\"value\":\"eLife ON\",\"position\":5}",
+                      "{\"label\":\"حسب الطلب\",\"value\":\"آلاف من قنوات الأفلام حسب الطلب، أجهزة الاستقبال التلفزيوني والبرامج التلفزيونية\",\"position\":4}",
+                      "{\"label\":\"مدة الإلتزام\",\"value\":\"24 شهرًا\",\"position\":0}",
+                      "{\"label\":\"مميزات إضافية\",\"value\":\"ميزة إضافية واحدة للقنوات التلفزيونية (الباقات الآسيوية، العربية، Pinoy أو الأوروبية) مقابل 10 درهم/ شهر \",\"position\":2}"
+                    ],
+                    "sku.onSale": ["0"],
+                    "product.displayName": ["eLife"],
+                    "record.source": ["ProductCatalog"],
+                    "product.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/consumer/elife-tariff-cards/elife-tariff-card-starter-desktop.jpg"
+                    ],
+                    "sku.isActivePromo": ["1"],
+                    "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                    "sku.displayOrder": ["0"],
+                    "sku.onlineOnly": ["0"],
+                    "parentCategory.displayName": [
+                      "Elife:A0:Ejari>cat1080021",
+                      "Elife:A0:MOBILE2>cat1010023",
+                      "Elife:A0:Portal>cat1100023"
+                    ],
+                    "sku.priceIncVat": ["{}"],
+                    "sku.itemId": ["elifeSku-UnlimitedStarter-1"],
+                    "sku.vatEligible": ["0"],
+                    "product.templateUrl": [
+                      "https://www.etisalat.ae/b2c/eshop/viewProducts?category=homePlans&subCategory=cat1100023"
+                    ],
+                    "sku.tAndcAcceptanceAr": [
+                      "/ar/portal/unlimited-starter-terms-and-conditions.jsp"
+                    ],
+                    "sku.termsAndConditions": [
+                      "/unlimited-starter-terms-and-conditions.jsp\n\n"
+                    ],
+                    "sku.vipNumberClass": ["SPECIAL"],
+                    "sku.redirectToLeadPage": ["0"],
+                    "record.id": [
+                      "etsElifeSku-elifeSku-UnlimitedStarter-1..elifeProd-unl-starter-1.en__AE"
+                    ],
+                    "product.repositoryId": ["elifeProd-unl-starter-1"],
+                    "sku.longDescription": [
+                      "Super-fast internet with 250Mbps download speed, home phone with unlimited calls to any other home phone in UAE and TV with free-to-air and eLife basic TV channels. Also get one regional TV add-on for only AED10/month (Asiana, Arabia, Pinoy, or Western)."
+                    ],
+                    "sku.isPopular": ["false"],
+                    "sku.sellable": ["1"],
+                    "product.displayOrder": ["5"],
+                    "sku.deviceCapacity": ["250Mbps"],
+                    "sku.recurringPrice": ["389.000000"],
+                    "product.deviceCapacity": ["250Mbps"],
+                    "sku.creationDate": ["1619515970089"],
+                    "sku.tAndcAcceptanceEn": [
+                      "/en/portal/unlimited-starter-terms-and-conditions.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=etsElifeSku-elifeSku-UnlimitedStarter-1..elifeProd-unl-starter-1.en__AE"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 2
+            },
+            {
+              "attributes": {
+                "sku.activePrice": ["399.000000"],
+                "product.browsable": ["1"],
+                "product.category": ["Elife:A5:SAS"],
+                "product.flagship": ["false"],
+                "sku.allowFreeLandline": ["1"],
+                "product.type": ["elifePackage"],
+                "sku.displayName": ["eLife Lite 25"],
+                "sku.type": ["etsElifeSku"],
+                "product.sellable": ["0"],
+                "sku.allowCashOnDeliveryPaymentMode": ["1"],
+                "sku.listPrice": ["0.000000"],
+                "product.redirectToLeadPage": ["0"],
+                "product.listPriceAll": ["0.000000"],
+                "sku.smallImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x226.jpg"
+                ],
+                "sku.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x246.jpg"
+                ],
+                "product.siteId": ["storeSiteDE", "storeSiteUS"],
+                "sku.onSale": ["0"],
+                "product.displayName": ["eLife Lite"],
+                "record.source": ["ProductCatalog"],
+                "product.largeImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x246.jpg"
+                ],
+                "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                "product.extraInfos": ["{}"],
+                "sku.onlineOnly": ["0"],
+                "product.onlineOnly": ["0"],
+                "product.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-288x146.jpg"
+                ],
+                "product.catalogId": ["catalog100001"],
+                "record.id": [
+                  "etsElifeSku-elifeSASSku-Lite25Mbps2p-1..elifeSASProd-life25Mbps2p-1.en__AE"
+                ],
+                "product.repositoryId": ["elifeSASProd-life25Mbps2p-1"],
+                "sku.thumbnailImage": [
+                  "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x226.jpg"
+                ],
+                "sku.longDescription": [
+                  "Super fast Home Internet of 250 Mbps download speed, home telephone with unlimited calls to any landline in UAE, and TV with premium TV channels from OSN and beIN Sports along with the free-to-air and eLife basic TV channels"
+                ],
+                "sku.recurringPrice": ["399.000000"],
+                "product.isPopular": ["false"],
+                "sku.creationDate": ["1637569070393"]
+              },
+              "detailsAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/product",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "recordState": "?A=etsElifeSku-elifeSASSku-Lite25Mbps2p-1..elifeSASProd-life25Mbps2p-1.en__AE"
+              },
+              "records": [
+                {
+                  "attributes": {
+                    "sku.activePrice": ["399.000000"],
+                    "sku.backendId": ["MKTBSAELIFE2P20MB "],
+                    "product.category": ["Elife:A5:SAS"],
+                    "sku.isNew": ["false"],
+                    "sku.activePriceIncVat": ["0.000000"],
+                    "sku.minQuantity": ["0"],
+                    "sku.displayName": ["eLife Lite 25"],
+                    "sku.maxQuantity": ["0"],
+                    "sku.promotionObj": [
+                      "{\"promoType\":\"INSTALLATION\",\"bannerURL\":\"/buyget-promotion-banner-elife-unlimited-sports-promotions.jsp\",\"message\":\"Free Installation\"}"
+                    ],
+                    "sku.type": ["etsElifeSku"],
+                    "sku.listPrice": ["0.000000"],
+                    "sku.dynamicAttributesExtendedAr": [
+                      "{\"label\":\"Starzplay & TVBox @AED20/Month\",\"value\":\"اختياري\",\"position\":4,\"attributeType\":\"text\"}",
+                      "{\"label\":\"eLife ON\",\"value\":\"Yes\",\"position\":2,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"الإنترنت\",\"value\":\"25 Mbps\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"سرعة الإنترنت\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التنزيل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (25 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-lite-desktop-card-progress-bar-25mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">سرعة التحميل</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (7 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-lite-desktop-card-progress-bar-7mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"مكالمات مجانية من  الهاتف الثابت إلى الهاتف الثابت داخل الإمارات العربية المتحدة\",\"value\":\"Yes\",\"position\":3,\"attributeType\":\"boolean\"}"
+                    ],
+                    "sku.browsable": ["1"],
+                    "sku.displayVatDisclaimer": ["1"],
+                    "sku.dynamicAttributesExtendedEn": [
+                      "{\"label\":\"Internet Speed Comparison\",\"value\":\"<div class=\\\"tableview-progress nv-mb-1 nv-mb-lg-2\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Download Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (25 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-lite-desktop-card-progress-bar-25mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\\n\\n<div class=\\\"tableview-progress\\\">\\n    <div class=\\\"nv-title xs nv-mb-0 bold\\\">Upload Speed</div>\\n    <div class=\\\"nv-description xs\\\">\\n        (7 Mbps)\\n    </div>\\n    <div class=\\\"nv-progress hidden-xs hidden-sm nv-mt-2\\\">\\n        <img src=\\\"https://www.etisalat.ae/en/system/wst/assets/img/progress-bar/elife-lite-desktop-card-progress-bar-7mbps.png\\\" class=\\\"img-responsive\\\">\\n    </div>\\n</div>\",\"position\":1,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Internet\",\"value\":\"25 Mbps\",\"position\":0,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Starzplay & TVBox @AED20/Month\",\"value\":\"Optional\",\"position\":4,\"attributeType\":\"text\"}",
+                      "{\"label\":\"Unlimited UAE Landline to landline calls\",\"value\":\"Yes\",\"position\":3,\"attributeType\":\"boolean\"}",
+                      "{\"label\":\"eLife ON\",\"value\":\"Yes\",\"position\":2,\"attributeType\":\"boolean\"}"
+                    ],
+                    "product.listPriceAll": ["0.000000"],
+                    "sku.dynamicAttributes": [
+                      "{\"label\":\"Devices\",\"value\":\"Wi-Fi router and Home Phone\",\"position\":3}",
+                      "{\"label\":\"Phone Calls\",\"value\":\"Free Calls to UAE landlines\",\"position\":2}",
+                      "{\"label\":\"Unlimited broadband\",\"value\":\"25Mbps\",\"position\":0}",
+                      "{\"label\":\"eLifeON\",\"value\":\"Subscription Included\",\"position\":1}"
+                    ],
+                    "sku.smallImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x226.jpg"
+                    ],
+                    "sku.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x246.jpg"
+                    ],
+                    "sku.dynamicAttributesAr": [
+                      "{\"label\":\" الأجهزة\",\"value\":\"راوتر Wi-Fi وهاتف ثابت\",\"position\":3}",
+                      "{\"label\":\"eLifeON\",\"value\":\"متضمن الاشتراك\",\"position\":1}",
+                      "{\"label\":\"إنترنت غير محدود\",\"value\":\"25Mbps\",\"position\":0}",
+                      "{\"label\":\"المكالمات\",\"value\":\"مكالمات مجانية إلى الهاتف الثابت داخل الإمارات\",\"position\":2}"
+                    ],
+                    "sku.onSale": ["0"],
+                    "product.displayName": ["eLife Lite"],
+                    "record.source": ["ProductCatalog"],
+                    "product.largeImage": [
+                      "https://www.etisalat.ae/en/system/wst/assets/img/home/elife/premium250-384x246.jpg"
+                    ],
+                    "sku.productType": ["ELIFE_TRIPLE_PLAY"],
+                    "sku.displayOrder": ["0"],
+                    "sku.onlineOnly": ["0"],
+                    "parentCategory.displayName": ["Elife:A5:SAS>cat1230014"],
+                    "sku.priceIncVat": ["{}"],
+                    "sku.itemId": ["elifeSASSku-Lite25Mbps2p-1"],
+                    "sku.vatEligible": ["0"],
+                    "sku.tAndcAcceptanceAr": [
+                      "/elife-lite-25mbps-terms-and-conditions.jsp"
+                    ],
+                    "sku.termsAndConditions": [
+                      "/elife-lite-25mbps-terms-and-conditions.jsp"
+                    ],
+                    "sku.vipNumberClass": ["SPECIAL"],
+                    "sku.redirectToLeadPage": ["0"],
+                    "record.id": [
+                      "etsElifeSku-elifeSASSku-Lite25Mbps2p-1..elifeSASProd-life25Mbps2p-1.en__AE"
+                    ],
+                    "product.repositoryId": ["elifeSASProd-life25Mbps2p-1"],
+                    "sku.longDescription": [
+                      "Super fast Home Internet of 250 Mbps download speed, home telephone with unlimited calls to any landline in UAE, and TV with premium TV channels from OSN and beIN Sports along with the free-to-air and eLife basic TV channels"
+                    ],
+                    "sku.isPopular": ["false"],
+                    "sku.sellable": ["0"],
+                    "product.displayOrder": ["2"],
+                    "sku.recurringPrice": ["399.000000"],
+                    "sku.creationDate": ["1637569070393"],
+                    "sku.tAndcAcceptanceEn": [
+                      "/elife-lite-25mbps-terms-and-conditions.jsp"
+                    ]
+                  },
+                  "detailsAction": {
+                    "siteRootPath": "/pages",
+                    "contentPath": "/product",
+                    "siteState": {
+                      "siteId": "@error:siteNotFound",
+                      "properties": {},
+                      "validSite": false
+                    },
+                    "recordState": "?R=etsElifeSku-elifeSASSku-Lite25Mbps2p-1..elifeSASProd-life25Mbps2p-1.en__AE"
+                  },
+                  "numRecords": 0
+                }
+              ],
+              "numRecords": 1
+            }
+          ],
+          "@type": "ResultsList",
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "MainContent[0]"
+          },
+          "defaultRefinementsEn": [],
+          "precomputedSorts": [],
+          "recsPerPage": 15,
+          "pagingActionTemplate": {
+            "siteRootPath": "/pages",
+            "contentPath": "/browse",
+            "siteState": {
+              "siteId": "@error:siteNotFound",
+              "properties": {},
+              "validSite": false
+            },
+            "navigationState": "?No=%7Boffset%7D&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Nrpp=%7BrecordsPerPage%7D&Ntt=internet"
+          },
+          "totalNumRecs": 441,
+          "sortOptions": [
+            {
+              "siteRootPath": "/pages",
+              "contentPath": "/browse",
+              "label": "Most Relevant",
+              "siteState": {
+                "siteId": "@error:siteNotFound",
+                "properties": {},
+                "validSite": false
+              },
+              "navigationState": "?Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+              "selected": false
+            },
+            {
+              "siteRootPath": "/pages",
+              "contentPath": "/browse",
+              "label": "recentlyupdated",
+              "siteState": {
+                "siteId": "@error:siteNotFound",
+                "properties": {},
+                "validSite": false
+              },
+              "navigationState": "?Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ns=sku.creationDate%7C1%7C%7Csku.displayName%7C0&Ntt=internet",
+              "selected": false
+            },
+            {
+              "siteRootPath": "/pages",
+              "contentPath": "/browse",
+              "label": "product",
+              "siteState": {
+                "siteId": "@error:siteNotFound",
+                "properties": {},
+                "validSite": false
+              },
+              "navigationState": "?Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ns=sku.displayName%7C0&Ntt=internet",
+              "selected": false
+            }
+          ],
+          "name": "Results List",
+          "firstRecNum": 1
+        },
+        {
+          "@type": "SearchAdjustments",
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "MainContent[1]"
+          },
+          "name": "Search Adjustments",
+          "originalTerms": ["internet"]
+        }
+      ],
+      "SecondaryContent": [
+        {
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "SecondaryContent[0]"
+          },
+          "name": "Navigation Container",
+          "@type": "GuidedNavigation",
+          "navigation": [
+            {
+              "hideAllFilterOption": false,
+              "nameAr": "",
+              "@type": "RefinementMenu",
+              "displayAllFilterOption": false,
+              "displayName": "record.filterType",
+              "endeca:auditInfo": {
+                "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+                "ecr:innerPath": "SecondaryContent[0]/navigation[0]"
+              },
+              "dimensionName": "record.filterType",
+              "whyPrecedenceRuleFired": null,
+              "displayAsButton": false,
+              "displayNamePropertyAlias": "displayName",
+              "refinements": [
+                {
+                  "label": "All",
+                  "navigationState": "Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 441,
+                  "multiSelect": true
+                },
+                {
+                  "label": "Add-ons",
+                  "navigationState": "N=1445056031&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 4,
+                  "properties": {
+                    "DGraph.Spec": "Add-ons",
+                    "DimVal_Id": "1445056031",
+                    "selected": "false"
+                  },
+                  "multiSelect": true
+                },
+                {
+                  "label": "Devices",
+                  "navigationState": "N=1293843148&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 1,
+                  "properties": {
+                    "DGraph.Spec": "Devices",
+                    "DimVal_Id": "1293843148",
+                    "selected": "false"
+                  },
+                  "multiSelect": true
+                },
+                {
+                  "label": "eLife",
+                  "navigationState": "N=2386902385&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 52,
+                  "properties": {
+                    "DGraph.Spec": "eLife",
+                    "DimVal_Id": "2386902385",
+                    "selected": "false"
+                  },
+                  "multiSelect": true
+                },
+                {
+                  "label": "FAQ",
+                  "navigationState": "N=1696908230&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 41,
+                  "properties": {
+                    "DGraph.Spec": "FAQ",
+                    "DimVal_Id": "1696908230",
+                    "selected": "false"
+                  },
+                  "multiSelect": true
+                },
+                {
+                  "label": "Others",
+                  "navigationState": "N=4198847431&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet",
+                  "count": 343,
+                  "properties": {
+                    "DGraph.Spec": "Others",
+                    "DimVal_Id": "4198847431",
+                    "selected": "false"
+                  },
+                  "multiSelect": true
+                }
+              ],
+              "displayAsRadio": false,
+              "name": "Filter Type",
+              "refinementValuesCount": 5,
+              "ancestors": [],
+              "multiSelect": true
+            }
+          ]
+        },
+        {
+          "rangeFilterCrumbs": [],
+          "displayNameProperty": "displayName_en",
+          "searchCrumbs": [
+            {
+              "removeAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/browse",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "navigationState": "?Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29"
+              },
+              "key": "All",
+              "terms": "internet",
+              "matchMode": "ALLPARTIAL"
+            }
+          ],
+          "geoFilterCrumb": null,
+          "@type": "Breadcrumbs",
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "SecondaryContent[1]"
+          },
+          "name": "Breadcrumbs",
+          "removeAllAction": {
+            "siteRootPath": "/pages",
+            "contentPath": "/browse",
+            "siteState": {
+              "siteId": "@error:siteNotFound",
+              "properties": {},
+              "validSite": false
+            },
+            "navigationState": ""
+          },
+          "displayNamePropertyAlias": "displayName",
+          "refinementCrumbs": []
+        }
+      ],
+      "endeca:siteRootPath": "/pages",
+      "endeca:contentPath": "/guidedSearch",
+      "endeca:siteState": {
+        "siteId": "@error:siteNotFound",
+        "properties": {},
+        "validSite": false
+      },
+      "atg:currentSiteProductionURL": "/scp",
+      "endeca:assemblerRequestInformation": {
+        "endeca:contentPath": "/guidedSearch",
+        "@type": "AssemblerRequestEvent",
+        "endeca:numRecords": 441,
+        "endeca:searchKey": "All",
+        "endeca:siteRootPath": "/pages",
+        "endeca:searchMode": "ALLPARTIAL",
+        "endeca:recordNames": ["Internet Calling Plan", "eLife", "eLife Lite"],
+        "endeca:assemblyStartTimestamp": 1639647283562,
+        "endeca:assemblyFinishTimestamp": 1639647283637,
+        "endeca:eneTime": 33,
+        "endeca:searchTerms": "internet",
+        "endeca:relRankStrategy": "stratify,exact,field,freq",
+        "endeca:requestType": "SEARCH_ONLY",
+        "endeca:requestId": "36300",
+        "endeca:sessionId": "fk7Ciq7b_-dpE5jiGOCmlO3Oo8DflbuHiJBjaxLDZ4AazESWOSFm!-359099230!1639646420291"
+      },
+      "atg:searchId": "163964728363758642099793",
+      "canonicalLink": {
+        "siteRootPath": "/pages",
+        "contentPath": "/guidedSearch",
+        "label": "",
+        "siteState": {
+          "siteId": "@error:siteNotFound",
+          "properties": {},
+          "validSite": false
+        },
+        "navigationState": "Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=internet"
+      }
+    }
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "data": {
+    "response": {
+      "HeaderContent": [],
+      "endeca:auditInfo": {
+        "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+        "ecr:innerPath": null
+      },
+      "name": "Two-Column Page",
+      "@type": "TwoColumnPage",
+      "MainContent": [
+        {
+          "defaultRefinementsAr": [],
+          "pagingActionTemplate": {
+            "siteRootPath": "/pages",
+            "contentPath": "/browse",
+            "siteState": {
+              "siteId": "@error:siteNotFound",
+              "properties": {},
+              "validSite": false
+            },
+            "navigationState": "?No=%7Boffset%7D&Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Nrpp=%7BrecordsPerPage%7D&Ntt=yyyyy"
+          },
+          "records": [],
+          "totalNumRecs": 0,
+          "sortOptions": [
+            {
+              "siteRootPath": "/pages",
+              "contentPath": "/browse",
+              "label": "Most Relevant",
+              "siteState": {
+                "siteId": "@error:siteNotFound",
+                "properties": {},
+                "validSite": false
+              },
+              "navigationState": "?Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=yyyyy",
+              "selected": false
+            },
+            {
+              "siteRootPath": "/pages",
+              "contentPath": "/browse",
+              "label": "recentlyupdated",
+              "siteState": {
+                "siteId": "@error:siteNotFound",
+                "properties": {},
+                "validSite": false
+              },
+              "navigationState": "?Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ns=sku.creationDate%7C1%7C%7Csku.displayName%7C0&Ntt=yyyyy",
+              "selected": false
+            },
+            {
+              "siteRootPath": "/pages",
+              "contentPath": "/browse",
+              "label": "product",
+              "siteState": {
+                "siteId": "@error:siteNotFound",
+                "properties": {},
+                "validSite": false
+              },
+              "navigationState": "?Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ns=sku.displayName%7C0&Ntt=yyyyy",
+              "selected": false
+            }
+          ],
+          "@type": "ResultsList",
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "MainContent[0]"
+          },
+          "defaultRefinementsEn": [],
+          "name": "Results List",
+          "precomputedSorts": [],
+          "recsPerPage": 15
+        },
+        {
+          "@type": "SearchAdjustments",
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "MainContent[1]"
+          },
+          "name": "Search Adjustments",
+          "originalTerms": ["yyyyy"]
+        }
+      ],
+      "SecondaryContent": [
+        {
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "SecondaryContent[0]"
+          },
+          "name": "Navigation Container",
+          "@type": "GuidedNavigation",
+          "navigation": []
+        },
+        {
+          "rangeFilterCrumbs": [],
+          "displayNameProperty": "displayName_en",
+          "searchCrumbs": [
+            {
+              "removeAction": {
+                "siteRootPath": "/pages",
+                "contentPath": "/browse",
+                "siteState": {
+                  "siteId": "@error:siteNotFound",
+                  "properties": {},
+                  "validSite": false
+                },
+                "navigationState": "?Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29"
+              },
+              "key": "All",
+              "terms": "yyyyy",
+              "matchMode": "ALLPARTIAL"
+            }
+          ],
+          "geoFilterCrumb": null,
+          "@type": "Breadcrumbs",
+          "endeca:auditInfo": {
+            "ecr:resourcePath": "/pages/storeSiteUS/guidedSearch",
+            "ecr:innerPath": "SecondaryContent[1]"
+          },
+          "name": "Breadcrumbs",
+          "removeAllAction": {
+            "siteRootPath": "/pages",
+            "contentPath": "/browse",
+            "siteState": {
+              "siteId": "@error:siteNotFound",
+              "properties": {},
+              "validSite": false
+            },
+            "navigationState": ""
+          },
+          "displayNamePropertyAlias": "displayName",
+          "refinementCrumbs": []
+        }
+      ],
+      "endeca:siteRootPath": "/pages",
+      "endeca:contentPath": "/guidedSearch",
+      "endeca:siteState": {
+        "siteId": "@error:siteNotFound",
+        "properties": {},
+        "validSite": false
+      },
+      "atg:currentSiteProductionURL": "/scp",
+      "endeca:assemblerRequestInformation": {
+        "endeca:contentPath": "/guidedSearch",
+        "@type": "AssemblerRequestEvent",
+        "endeca:numRecords": 0,
+        "endeca:searchKey": "All",
+        "endeca:siteRootPath": "/pages",
+        "endeca:searchMode": "ALLPARTIAL",
+        "endeca:assemblyStartTimestamp": 1639650856580,
+        "endeca:assemblyFinishTimestamp": 1639650856599,
+        "endeca:eneTime": 12,
+        "endeca:searchTerms": "yyyyy",
+        "endeca:relRankStrategy": "stratify,exact,field,freq",
+        "endeca:requestType": "SEARCH_ONLY",
+        "endeca:requestId": "69821",
+        "endeca:sessionId": "hFrCzhExiUfLScE3NTyBee_S0xYdYl8KOB2TS8xkIRSyCbmUiORB!485815332!1639650839076"
+      },
+      "atg:searchId": "163965085659956895710821",
+      "canonicalLink": {
+        "siteRootPath": "/pages",
+        "contentPath": "/guidedSearch",
+        "label": "",
+        "siteState": {
+          "siteId": "@error:siteNotFound",
+          "properties": {},
+          "validSite": false
+        },
+        "navigationState": "Nr=AND%28product.language%3Aen-AE%2COR%28product.aloneSearchable%3A1%2Ccategory.eligibleForSearch%3A1%29%29&Ntt=yyyyy"
+      }
+    }
+  }
+}
