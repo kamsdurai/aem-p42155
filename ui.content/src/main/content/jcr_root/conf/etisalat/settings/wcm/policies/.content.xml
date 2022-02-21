@@ -1659,7 +1659,7 @@
                   sling:resourceType="wcm/core/components/policy/policy"
                   backgroundColorEnabled="true"
                   backgroundImageEnabled="true"
-                  components="[/apps/etisalat/components/buttonstore,/apps/etisalat/components/carousel,/apps/etisalat/components/container,/apps/etisalat/components/experiencefragment,/apps/etisalat/components/video,/apps/etisalat/components/image,/apps/etisalat/components/teaser,/apps/etisalat/components/text,/apps/etisalat/components/channellistheader,/apps/etisalat/components/imageetisalatviewport,/apps/etisalat/components/etisalatherobanner,/apps/etisalat/components/ewalletherobanner,/apps/etisalat/components/teaseretisalat,/apps/etisalat/components/htmlcodeblock]"
+                  components="[/apps/etisalat/components/buttonstore,/apps/etisalat/components/carousel,/apps/etisalat/components/container,/apps/etisalat/components/experiencefragment,/apps/etisalat/components/image,/apps/etisalat/components/video,/apps/etisalat/components/teaser,/apps/etisalat/components/text,/apps/etisalat/components/channellistheader,/apps/etisalat/components/imageetisalatviewport,/apps/etisalat/components/etisalatherobanner,/apps/etisalat/components/ewalletherobanner,/apps/etisalat/components/teaseretisalat,/apps/etisalat/components/htmlcodeblock]"
                   layout="responsiveGrid"
                   layoutDisabled="false">
                     <jcr:content
@@ -2067,6 +2067,7 @@
                         </item2>
                         <item3
                             cq:styleGroupLabel="Media CTA Layouts"
+                            cq:styleGroupMultiple="true"
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
@@ -2079,10 +2080,16 @@
                                     cq:styleId="1638526511693"
                                     cq:styleLabel="Full Bleed"
                                     jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="media-cta-plan-full-width"
+                                    cq:styleId="1644401008766"
+                                    cq:styleLabel="Media CTA Plan Full Bleed"
+                                    jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item3>
                         <item4
                             cq:styleGroupLabel="Layout"
+                            cq:styleGroupMultiple="true"
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
@@ -2128,19 +2135,29 @@
                                     cq:styleLabel="Feature Watch"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item3
+                                    cq:styleClasses="features-4-0-mobile"
+                                    cq:styleId="1643036514789"
+                                    cq:styleLabel="Feature Mobile"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
                                     cq:styleClasses="cmp_text--feature-watch-flipped"
                                     cq:styleId="1635523315252"
                                     cq:styleLabel="Feature Watch Flipped"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item4
+                                <item5
                                     cq:styleClasses="cmp_flipped"
                                     cq:styleId="1636374914530"
                                     cq:styleLabel="Flipped"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item5
-                                        cq:styleClasses="cmp_text--feature-4-0"
-                                        cq:styleId="1643036544558"
-                                        cq:styleLabel="Feature-4-0"
+                                <item6
+                                    cq:styleClasses="cmp_text--feature-4-0"
+                                    cq:styleId="1643036544558"
+                                    cq:styleLabel="Feature-4-0"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item7
+                                        cq:styleClasses="carrers-feature"
+                                        cq:styleId="1644497535337"
+                                        cq:styleLabel="Image Bottom Feature Section"
                                         jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item5>
@@ -2310,6 +2327,7 @@
                          </item13>
 						 <item14
                             cq:styleGroupLabel="Product Feature"
+							cq:styleGroupMultiple="true"
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
@@ -2321,6 +2339,11 @@
                                     cq:styleClasses="product-features__overview"
                                     cq:styleId="1636546891692"
                                     cq:styleLabel="Product Feature Overview"
+                                    jcr:primaryType="nt:unstructured"/>
+								<item2
+                                    cq:styleClasses="enable-view-more"
+                                    cq:styleId="1644938151680"
+                                    cq:styleLabel="Product Feature with View More"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item14>
@@ -2987,6 +3010,480 @@
                         </item6>
                     </cq:styleGroups>
                 </policy_1642597261274>
+				<policy_1644832436671
+                    cq:styleDefaultClasses="container-center"
+                    jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="HiuApp Page Content"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/etisalat/components/accordion,/apps/etisalat/components/video,/apps/etisalat/components/global/languagenavigation,/apps/etisalat/components/navigation, /apps/etisalat/components/breadcrumb,/apps/etisalat/components/button,/apps/etisalat/components/buttonstore,/apps/etisalat/components/carousel,/apps/etisalat/components/container,/apps/etisalat/components/contentfragment,/apps/etisalat/components/contentfragmentlist,/apps/etisalat/components/download,/apps/etisalat/components/embed,/apps/etisalat/components/experiencefragment,/apps/etisalat/components/image,/apps/etisalat/components/list,/apps/etisalat/components/pdfviewer,/apps/etisalat/components/progressbar,/apps/etisalat/components/separator,/apps/etisalat/components/sharing,/apps/etisalat/components/tabs,/apps/etisalat/components/teaser,/apps/etisalat/components/text,/apps/etisalat/components/title,group:ETISALAT - Form]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:authoring jcr:primaryType="nt:unstructured">
+                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                            <mapping_1575030255082
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="media"
+                                assetMimetype="image/*"
+                                droptarget="image"
+                                resourceType="etisalat/components/image"/>
+                            <mapping_1575030260142
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="content"
+                                assetMimetype="text/html"
+                                droptarget="experiencefragment"
+                                resourceType="etisalat/components/experiencefragment"/>
+                            <mapping_1575030269139
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="media"
+                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
+                                droptarget="contentfragment"
+                                resourceType="etisalat/components/contentfragment"/>
+                        </assetToComponentMapping>
+                    </cq:authoring>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Layout"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="container-center"
+                                    cq:styleId="1629467000435"
+                                    cq:styleLabel="Container Center"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses=" container-fix__width"
+                                    cq:styleId="1633678549852"
+                                    cq:styleLabel="Full Bleed"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="container-fix__fluid"
+                                    cq:styleId="1633678312750"
+                                    cq:styleLabel="Full Bleed Centered"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="container--gutter-12"
+                                    cq:styleId="1633695812723"
+                                    cq:styleLabel="Gutter 12"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1644832436671>
+                <policy_1644835960238
+                    cq:styleDefaultClasses="section-banner"
+                    cq:styleDefaultElement="section"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Hiuapp Hero-banner"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    backgroundImageEnabled="true"
+                    components="[/apps/etisalat/components/buttonstore,/apps/etisalat/components/carousel,/apps/etisalat/components/container,/apps/etisalat/components/experiencefragment,/apps/etisalat/components/video,/apps/etisalat/components/image,/apps/etisalat/components/teaser,/apps/etisalat/components/text]"
+                    layout="responsiveGrid"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Banner"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="hero_banner"
+                                    cq:styleId="1627040822394"
+                                    cq:styleLabel="Hero Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="ewallet_news"
+                                    cq:styleId="1637239825598"
+                                    cq:styleLabel="News Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="ewallet_faq"
+                                    cq:styleId="1627925553572"
+                                    cq:styleLabel="FAQs Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="ewallet_locations"
+                                    cq:styleId="1627926803734"
+                                    cq:styleLabel="Locations Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="ewallet_aboutus"
+                                    cq:styleId="1637239804439"
+                                    cq:styleLabel="About Us Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item5
+                                    cq:styleClasses="ewallet_offers"
+                                    cq:styleId="1627650782982"
+                                    cq:styleLabel="Offers Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item6
+                                    cq:styleClasses="ewallet_hotels"
+                                    cq:styleId="1639037873027"
+                                    cq:styleLabel="Hotels Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Use with Banner"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="landing_page"
+                                    cq:styleId="1638446291710"
+                                    cq:styleLabel="Landing Page"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Action Modal Box"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="call-to-action-box"
+                                    cq:styleId="1632757647598"
+                                    cq:styleLabel="Call Action Box"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
+                        <item3
+                            cq:styleGroupLabel="Layout"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="container-fix__width"
+                                    cq:styleId="1633678428386"
+                                    cq:styleLabel="Full Bleed"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="container-fix__fluid"
+                                    cq:styleId="1633678449093"
+                                    cq:styleLabel="Full Bleed Centered"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item3>
+                    </cq:styleGroups>
+                </policy_1644835960238>
+                <policy_1644836527030
+                    cq:styleDefaultClasses="section-banner"
+                    cq:styleDefaultElement="section"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="FiveMobile Hero-banner"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    backgroundImageEnabled="true"
+                    components="[/apps/etisalat/components/carousel,/apps/etisalat/components/container,/apps/etisalat/components/experiencefragment,/apps/etisalat/components/video,/apps/etisalat/components/image,/apps/etisalat/components/teaser,/apps/etisalat/components/text]"
+                    layout="responsiveGrid"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Banner"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="hero_banner"
+                                    cq:styleId="1627040822394"
+                                    cq:styleLabel="Hero Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="ewallet_news"
+                                    cq:styleId="1637239825598"
+                                    cq:styleLabel="News Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="ewallet_faq"
+                                    cq:styleId="1627925553572"
+                                    cq:styleLabel="FAQs Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="ewallet_locations"
+                                    cq:styleId="1627926803734"
+                                    cq:styleLabel="Locations Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="ewallet_aboutus"
+                                    cq:styleId="1637239804439"
+                                    cq:styleLabel="About Us Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item5
+                                    cq:styleClasses="ewallet_offers"
+                                    cq:styleId="1627650782982"
+                                    cq:styleLabel="Offers Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item6
+                                    cq:styleClasses="ewallet_hotels"
+                                    cq:styleId="1639037873027"
+                                    cq:styleLabel="Hotels Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Use with Banner"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="landing_page"
+                                    cq:styleId="1638446291710"
+                                    cq:styleLabel="Landing Page"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Action Modal Box"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="call-to-action-box"
+                                    cq:styleId="1632757647598"
+                                    cq:styleLabel="Call Action Box"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
+                        <item3
+                            cq:styleGroupLabel="Layout"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="container-fix__width"
+                                    cq:styleId="1633678428386"
+                                    cq:styleLabel="Full Bleed"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="container-fix__fluid"
+                                    cq:styleId="1633678449093"
+                                    cq:styleLabel="Full Bleed Centered"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item3>
+                    </cq:styleGroups>
+                </policy_1644836527030>
+                <policy_1644836601962
+                    cq:styleDefaultClasses="container-center"
+                    jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="Fivemobile Page Content"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/etisalat/components/accordion,/apps/etisalat/components/navigation,/apps/etisalat/components/global/languagenavigation,/apps/etisalat/components/breadcrumb,/apps/etisalat/components/button,/apps/etisalat/components/carousel,/apps/etisalat/components/container,/apps/etisalat/components/contentfragment,/apps/etisalat/components/contentfragmentlist,/apps/etisalat/components/download,/apps/etisalat/components/embed,/apps/etisalat/components/experiencefragment,/apps/etisalat/components/image,/apps/etisalat/components/list,/apps/etisalat/components/pdfviewer,/apps/etisalat/components/progressbar,/apps/etisalat/components/separator,/apps/etisalat/components/sharing,/apps/etisalat/components/tabs,/apps/etisalat/components/teaser,/apps/etisalat/components/text,/apps/etisalat/components/title,group:ETISALAT - Form]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:authoring jcr:primaryType="nt:unstructured">
+                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                            <mapping_1575030255082
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="media"
+                                assetMimetype="image/*"
+                                droptarget="image"
+                                resourceType="etisalat/components/image"/>
+                            <mapping_1575030260142
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="content"
+                                assetMimetype="text/html"
+                                droptarget="experiencefragment"
+                                resourceType="etisalat/components/experiencefragment"/>
+                            <mapping_1575030269139
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="media"
+                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
+                                droptarget="contentfragment"
+                                resourceType="etisalat/components/contentfragment"/>
+                        </assetToComponentMapping>
+                    </cq:authoring>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Layout"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="container-center"
+                                    cq:styleId="1629467000435"
+                                    cq:styleLabel="Container Center"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses=" container-fix__width"
+                                    cq:styleId="1633678549852"
+                                    cq:styleLabel="Full Bleed"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="container-fix__fluid"
+                                    cq:styleId="1633678312750"
+                                    cq:styleLabel="Full Bleed Centered"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="container--gutter-12"
+                                    cq:styleId="1633695812723"
+                                    cq:styleLabel="Gutter 12"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1644836601962>
+                <policy_1644837410074
+                    cq:styleDefaultClasses="container-center"
+                    jcr:description="Allows the page components and defines the component mapping (this configures what components should be automatically created when authors drop assets from the content finder to the page editor)."
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="eWallet Page Content"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    components="[/apps/etisalat/components/accordion,/apps/etisalat/components/navigation,/apps/etisalat/components/global/languagenavigation,/apps/etisalat/components/articlelist,/apps/etisalat/components/breadcrumb,/apps/etisalat/components/button,/apps/etisalat/components/navigation ,/apps/etisalat/components/buttonstore,/apps/etisalat/components/carousel,/apps/etisalat/components/chatbot,/apps/etisalat/components/container,/apps/etisalat/components/contentfragment,/apps/etisalat/components/contentfragmentlist,/apps/etisalat/components/download,/apps/etisalat/components/embed,/apps/etisalat/components/ewalletherobanner,/apps/etisalat/components/ewalletoffertile,/apps/etisalat/components/experiencefragment,/apps/etisalat/components/genericlist,/apps/etisalat/components/video,/apps/etisalat/components/image,/apps/etisalat/components/list,/apps/etisalat/components/locateus,/apps/etisalat/components/pdfviewer,/apps/etisalat/components/progressbar,/apps/etisalat/components/separator,/apps/etisalat/components/sharing,/apps/etisalat/components/swipercontainer,/apps/etisalat/components/tabs,/apps/etisalat/components/teaser,/apps/etisalat/components/text,/apps/etisalat/components/title,group:ETISALAT - Form]"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:authoring jcr:primaryType="nt:unstructured">
+                        <assetToComponentMapping jcr:primaryType="nt:unstructured">
+                            <mapping_1575030255082
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="media"
+                                assetMimetype="image/*"
+                                droptarget="image"
+                                resourceType="etisalat/components/image"/>
+                            <mapping_1575030260142
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="content"
+                                assetMimetype="text/html"
+                                droptarget="experiencefragment"
+                                resourceType="etisalat/components/experiencefragment"/>
+                            <mapping_1575030269139
+                                jcr:primaryType="nt:unstructured"
+                                assetGroup="media"
+                                assetMimetype="[text/html,application/vnd.adobe.contentfragment]"
+                                droptarget="contentfragment"
+                                resourceType="etisalat/components/contentfragment"/>
+                        </assetToComponentMapping>
+                    </cq:authoring>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Layout"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="container-center"
+                                    cq:styleId="1629467000435"
+                                    cq:styleLabel="Container Center"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses=" container-fix__width"
+                                    cq:styleId="1633678549852"
+                                    cq:styleLabel="Full Bleed"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="container-fix__fluid"
+                                    cq:styleId="1633678312750"
+                                    cq:styleLabel="Full Bleed Centered"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="container--gutter-12"
+                                    cq:styleId="1633695812723"
+                                    cq:styleLabel="Gutter 12"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
+                </policy_1644837410074>
+                <policy_1644837765331
+                    cq:styleDefaultClasses="section-banner"
+                    cq:styleDefaultElement="section"
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="eWallet Hero-banner"
+                    sling:resourceType="wcm/core/components/policy/policy"
+                    backgroundColorEnabled="true"
+                    backgroundImageEnabled="true"
+                    components="[/apps/etisalat/components/buttonstore,/apps/etisalat/components/carousel,/apps/etisalat/components/container,/apps/etisalat/components/ewalletherobanner,/apps/etisalat/components/experiencefragment,/apps/etisalat/components/video,/apps/etisalat/components/image,/apps/etisalat/components/teaser,/apps/etisalat/components/text]"
+                    layout="responsiveGrid"
+                    layoutDisabled="false">
+                    <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Banner"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="hero_banner"
+                                    cq:styleId="1627040822394"
+                                    cq:styleLabel="Hero Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="ewallet_news"
+                                    cq:styleId="1637239825598"
+                                    cq:styleLabel="News Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item2
+                                    cq:styleClasses="ewallet_faq"
+                                    cq:styleId="1627925553572"
+                                    cq:styleLabel="FAQs Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item3
+                                    cq:styleClasses="ewallet_locations"
+                                    cq:styleId="1627926803734"
+                                    cq:styleLabel="Locations Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item4
+                                    cq:styleClasses="ewallet_aboutus"
+                                    cq:styleId="1637239804439"
+                                    cq:styleLabel="About Us Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item5
+                                    cq:styleClasses="ewallet_offers"
+                                    cq:styleId="1627650782982"
+                                    cq:styleLabel="Offers Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item6
+                                    cq:styleClasses="ewallet_hotels"
+                                    cq:styleId="1639037873027"
+                                    cq:styleLabel="Hotels Banner"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                        <item1
+                            cq:styleGroupLabel="Use with Banner"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="landing_page"
+                                    cq:styleId="1638446291710"
+                                    cq:styleLabel="Landing Page"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Action Modal Box"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="call-to-action-box"
+                                    cq:styleId="1632757647598"
+                                    cq:styleLabel="Call Action Box"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
+                        <item3
+                            cq:styleGroupLabel="Layout"
+                            cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="container-fix__width"
+                                    cq:styleId="1633678428386"
+                                    cq:styleLabel="Full Bleed"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="container-fix__fluid"
+                                    cq:styleId="1633678449093"
+                                    cq:styleLabel="Full Bleed Centered"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item3>
+                    </cq:styleGroups>
+                </policy_1644837765331>
             </container>
             <teaser jcr:primaryType="nt:unstructured">
                 <policy_1575031387650
@@ -3956,6 +4453,7 @@
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
                         <item0
+						  cq:styleGroupLabel="Accordion Styles"
                           cq:styleGroupMultiple="true"
                           jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
@@ -3991,6 +4489,17 @@
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
+						<item1
+                            cq:styleGroupLabel="Layout"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="cmp_center_block"
+                                    cq:styleId="1645091195522"
+                                    cq:styleLabel="Accordion Center"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
                     </cq:styleGroups>
                 </policy_1625142228972>
                 <policy_1632762042889
@@ -4094,7 +4603,7 @@
                   sling:resourceType="wcm/core/components/policy/policy"
                   autopauseDisabled="false"
                   autoplay="false"
-                  components="[/apps/etisalat/components/container,/apps/etisalat/components/etisalatherobanner,/apps/etisalat/components/video,/apps/etisalat/components/image,/apps/etisalat/components/teaser,/apps/etisalat/components/text,/apps/etisalat/components/imageetisalatviewport,/apps/etisalat/components/teaseretisalat]"
+                  components="[/apps/etisalat/components/container,/apps/etisalat/components/etisalatherobanner,/apps/etisalat/components/image,/apps/etisalat/components/teaser,/apps/etisalat/components/text,/apps/etisalat/components/imageetisalatviewport,/apps/etisalat/components/teaseretisalat]"
                   controlsPrepended="false"
                   delay="5000">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
@@ -4238,6 +4747,17 @@
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item1>
+						<item2
+                            cq:styleGroupLabel="Layout"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="tabs-fullbdr-textOnly"
+                                    cq:styleId="1644816892800"
+                                    cq:styleLabel="Full bleed with text only"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item2>
                     </cq:styleGroups>
                 </policy_1628099967116>
                 <policy_1632747598191
@@ -4720,7 +5240,7 @@
                   jcr:primaryType="nt:unstructured"
                   jcr:title="product-details-container-style"
                   sling:resourceType="wcm/core/components/policy/policy"
-                  components="[/apps/etisalat/components/devicestile,/apps/etisalat/components/elifeplantile,/apps/etisalat/components/elitetile,/apps/etisalat/components/producttile]">
+                  components="[/apps/etisalat/components/devicestile,/apps/etisalat/components/elifeaddonstile,/apps/etisalat/components/elifeplantile,/apps/etisalat/components/elitetile,/apps/etisalat/components/producttile]">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
                         <item0 jcr:primaryType="nt:unstructured">
@@ -4762,7 +5282,7 @@
                 </policy_1634150335069>
             </swipercontainer>
             <table jcr:primaryType="nt:unstructured">
-                <policy_table
+                <policy_table                   
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Table Component Policy"
                     sling:resourceType="wcm/core/components/policy/policy">
@@ -4771,85 +5291,95 @@
                         jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
                         <item0
-                            cq:styleGroupLabel="RTE Stripped Table Styles"
-                            cq:styleGroupMultiple="true"
+                            cq:styleGroupLabel="RTE Striped Table Styles"
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
                                     cq:styleClasses="table-default-section table-striped"
                                     cq:styleId="1643811690094"
-                                    cq:styleLabel="Stripped default"
+                                    cq:styleLabel="default"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item1
                                     cq:styleClasses="table-default-section table-striped two-col "
                                     cq:styleId="1637152594917"
-                                    cq:styleLabel="Stripped Two Col"
+                                    cq:styleLabel="Two Col"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item2
                                     cq:styleClasses="table-default-section table-striped three-col"
                                     cq:styleId="1637152635227"
-                                    cq:styleLabel="Stripped Three Col"
+                                    cq:styleLabel="Three Col"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item3
                                     cq:styleClasses="table-default-section table-striped four-col "
                                     cq:styleId="1637152642562"
-                                    cq:styleLabel="Stripped Four Col"
+                                    cq:styleLabel="Four Col"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item4
                                     cq:styleClasses="table-default-section table-striped five-col"
                                     cq:styleId="1637152651110"
-                                    cq:styleLabel="Stripped Five col"
+                                    cq:styleLabel="Five col"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item5
-                                    cq:styleClasses="scroll"
-                                    cq:styleId="1639478607932"
-                                    cq:styleLabel="Scroll "
-                                    jcr:primaryType="nt:unstructured"/>
-                                <item6
                                     cq:styleClasses="table-default-section table-striped six-col"
                                     cq:styleId="1643811744511"
-                                    cq:styleLabel="Stripped Six col"
+                                    cq:styleLabel="Six col"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item7
+                                <item6
                                     cq:styleClasses="table-default-section table-striped seven-col"
                                     cq:styleId="1643811754893"
-                                    cq:styleLabel="Stripped Seven col"
+                                    cq:styleLabel="Seven col"
                                     jcr:primaryType="nt:unstructured"/>
-                                <item8
+                                <item7
                                     cq:styleClasses="table-default-section table-striped eight-col"
                                     cq:styleId="1643811765344"
-                                    cq:styleLabel="Stripped Eight Col"
+                                    cq:styleLabel="Eight Col"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
                         <item1
-                            cq:styleGroupLabel="Responsive RTE Styles"
+                            cq:styleGroupLabel="Additional Striped Styles"
                             cq:styleGroupMultiple="true"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="img-col"
+                                    cq:styleId="1639476788598"
+                                    cq:styleLabel="First Column Icon"
+                                    jcr:primaryType="nt:unstructured"/>
+                                <item1
+                                    cq:styleClasses="scroll"
+                                    cq:styleId="1645011310437"
+                                    cq:styleLabel="Scroll"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
+                        <item2
+                            cq:styleGroupLabel="Responsive RTE Styles"
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
                                     cq:styleClasses="table-default-section"
                                     cq:styleId="1637295665157"
-                                    cq:styleLabel="Table with  Border"
+                                    cq:styleLabel="Default"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item1
                                     cq:styleClasses="table-default-section shorter-first-column"
                                     cq:styleId="1637295631307"
-                                    cq:styleLabel="Table with Shorter First Column"
+                                    cq:styleLabel="Table with Row Index"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item2
                                     cq:styleClasses="table-default-section table-row-border tableListItem"
                                     cq:styleId="1637153068967"
-                                    cq:styleLabel="Table Thick  Border with Same Desktop and Mobile View"
+                                    cq:styleLabel="Default (Thick Border and Same Responsive view)"
                                     jcr:primaryType="nt:unstructured"/>
                                 <item3
                                     cq:styleClasses="cmp-table-default"
                                     cq:styleId="1639118953049"
-                                    cq:styleLabel="Table with Border with Same Desktop and Mobile View"
+                                    cq:styleLabel="Default (Same Responsive View)"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
-                        </item1>
-                        <item2
+                        </item2>
+                        <item3
                             cq:styleGroupLabel="Tables 4-0"
                             jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
@@ -4879,17 +5409,6 @@
                                     cq:styleLabel="Six Col"
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
-                        </item2>
-					    <item3
-                            cq:styleGroupLabel="Icons"
-                            jcr:primaryType="nt:unstructured">
-                            <cq:styles jcr:primaryType="nt:unstructured">
-                                <item0
-                                    cq:styleClasses="img-col"
-                                    cq:styleId="1639476788598"
-                                    cq:styleLabel="First Col Icon"
-                                    jcr:primaryType="nt:unstructured"/>
-                            </cq:styles>
                         </item3>
                     </cq:styleGroups>
                 </policy_table>
@@ -4916,22 +5435,35 @@
                   jcr:primaryType="nt:unstructured"
                   jcr:title="Etisalat Tile Container Component Policy"
                   sling:resourceType="wcm/core/components/policy/policy"
-                  components="[/apps/etisalat/components/blogtile,/apps/etisalat/components/mediactatile,/apps/etisalat/components/persondetails,/apps/etisalat/components/tile,/apps/etisalat/components/contexttile]"
+                  components="[/apps/etisalat/components/blogtile,/apps/etisalat/components/mediactatile,/apps/etisalat/components/persondetails,/apps/etisalat/components/tile,/apps/etisalat/components/contexttile,/apps/etisalat/components/nonactionboxtile]"
                   layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
 					<cq:styleGroups jcr:primaryType="nt:unstructured">
-                        <item0 jcr:primaryType="nt:unstructured">
+                        <item0
+                                cq:styleGroupLabel="Layout"
+                                jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
-                                    cq:styleClasses="container-fix__width"
-                                    cq:styleId="1638182613673"
-                                    cq:styleLabel="Full Bleed"
-                                    jcr:primaryType="nt:unstructured"/>
+                                        cq:styleClasses="container-fix__width"
+                                        cq:styleId="1638182613673"
+                                        cq:styleLabel="Full Bleed"
+                                        jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
+                        <item1
+                                cq:styleGroupLabel="Swiper with Arrow"
+                                jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                        cq:styleClasses="endless-swiper"
+                                        cq:styleId="1644300437225"
+                                        cq:styleLabel="Endless Swiper"
+                                        jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
                     </cq:styleGroups>
                 </policy_1635863925715>
-				<policy_1642745017242
+				        <policy_1642745017242
                     jcr:primaryType="nt:unstructured"
                     jcr:title="Careers Etisalat Tile Container Component Policy"
                     sling:resourceType="wcm/core/components/policy/policy"
@@ -4939,7 +5471,9 @@
                     layoutDisabled="false">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
                     <cq:styleGroups jcr:primaryType="nt:unstructured">
-                        <item0 jcr:primaryType="nt:unstructured">
+                        <item0 
+							cq:styleGroupLabel="Layout"
+							jcr:primaryType="nt:unstructured">
                             <cq:styles jcr:primaryType="nt:unstructured">
                                 <item0
                                     cq:styleClasses="container-fix__width"
@@ -4948,6 +5482,17 @@
                                     jcr:primaryType="nt:unstructured"/>
                             </cq:styles>
                         </item0>
+						<item1
+                            cq:styleGroupLabel="Swiper with Arrow"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="endless-swiper"
+                                    cq:styleId="1644300437225"
+                                    cq:styleLabel="Endless Swiper"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item1>
                     </cq:styleGroups>
                 </policy_1642745017242>
             </tilecontainer>
@@ -5102,6 +5647,19 @@
                     sling:resourceType="wcm/core/components/policy/policy"
                     components="/apps/etisalat/components/accessoriescardtile">
                     <jcr:content jcr:primaryType="nt:unstructured"/>
+                    <cq:styleGroups jcr:primaryType="nt:unstructured">
+                        <item0
+                            cq:styleGroupLabel="Background Color"
+                            jcr:primaryType="nt:unstructured">
+                            <cq:styles jcr:primaryType="nt:unstructured">
+                                <item0
+                                    cq:styleClasses="default--bg"
+                                    cq:styleId="1644911873020"
+                                    cq:styleLabel="Gray"
+                                    jcr:primaryType="nt:unstructured"/>
+                            </cq:styles>
+                        </item0>
+                    </cq:styleGroups>
                 </policy_1641470568628>
             </accessoriescardcontainer>
             <billexplainertab jcr:primaryType="nt:unstructured">

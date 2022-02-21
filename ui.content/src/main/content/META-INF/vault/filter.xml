@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/etisalat" mode="merge"/>
-    <filter root="/content/etisalat" mode="merge"/>
-    <filter root="/content/dam/etisalat/asset.jpg" mode="merge"/>
-    <filter root="/content/experience-fragments/etisalat" mode="merge"/>
+    <filter root="/conf/etisalat"/>     
+    <filter root="/conf/global/settings/workflow/models/etisalat-content-approval-workflow"/>
+    <filter root="/var/workflow/models/etisalat-content-approval-workflow"/>
+	<filter root="/var/sitemaps/content/etisalat/ae-sitemap-test/custom-ar-atg-b2b-sitemap.xml" mode="merge"/>
 </workspaceFilter>
