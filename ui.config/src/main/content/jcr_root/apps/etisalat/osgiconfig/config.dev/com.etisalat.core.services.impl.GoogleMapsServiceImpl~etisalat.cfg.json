@@ -1,0 +1,9 @@
+{
+  "getGoogleUrl":"https://maps.googleapis.com/maps/api/js?",
+  "getGoogleKey":"key=AIzaSyD3xSlpPxMzhPSRDkvd4dqL9ityhr8WlJ0&libraries=places,geometry",
+  "getGoogleContactUsUrl":"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.0980075175994!2d55.289940714485134!3d25.233623736415133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f42dd60070d09%3A0x7ff32a4002662be3!2sAl+Jafiliya+Station!5e0!3m2!1sen!2sae!4v1542885793417",
+  "getGoogleCaptchaV2EtisalatAppKey":"6Lfc13wUAAAAAPRCOZP6JGhtt52QTlWCmNOikwHW",
+  "getGoogleCaptchaV2HiuAppKey":"6Ld-qcMUAAAAABvS5M6u-NC5yfJRBq34_XVBhQE6",
+  "getGoogleCaptchaV2EwalletAppKey":"6Ld-qcMUAAAAABvS5M6u-NC5yfJRBq34_XVBhQE6",
+  "getGoogleCaptchaInvisibleEtisalatAppKey":"6Ld-qcMUAAAAABvS5M6u-NC5yfJRBq34_XVBhQE6" 
+}

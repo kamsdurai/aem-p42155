@@ -1,0 +1,5 @@
+{
+  "scheduler.name": "Etisalat Sitemap Publish Scheduler",
+  "scheduler.expression": "0 0 2 1/1 * ? *",
+  "searchPath": "/content/etisalat"
+}

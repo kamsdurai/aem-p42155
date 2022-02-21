@@ -1,0 +1,38 @@
+// Configuration created by Apache Sling JCR Installer
+{
+  "supportscredentials":true,
+  "exposedheaders":[
+    "Link",
+    "Etag",
+    "Version",
+    "Revision",
+    "Content-MD5",
+    "Location",
+    "Content-Location",
+    "asset-id",
+    "x-resource-id",
+    "x-medialibrary-version"
+  ],
+  "supportedmethods":[
+    "GET",
+    "HEAD",
+    "POST",
+    "PUT",
+    "DELETE",
+    "PATCH"
+  ],
+  "alloworigin":[
+    ""
+  ],
+  "maxage:Integer":86400,
+  "alloworiginregexp":[
+    "https://.*\\.etisalat\\.ae",
+    "https://.*\\.etisalat.corp\\.ae"
+  ],
+  "allowedpaths":[
+    ".*"
+  ],
+  "supportedheaders":[
+    "*"
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "getContactUsApiUrl":"https://azspringcloudsvc-etisalat-email-sender.azuremicroservices.io/emailapp/sendNotification",
+  "getProxyApiUrl":"http://proxyreport.etisalat.ae/pages/rproxy/r_proxy_ctrl.jsp",
+  "getSetTimeout":"7000"
+}
