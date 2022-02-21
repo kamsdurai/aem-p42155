@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_cote_d'ivoire</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_cote_d'ivoire" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-54" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <path d="M0.37,28 C0.373305679,38.801366 6.67046875,48.6104085 16.49,53.11 L16.49,2.88 C6.66889233,7.38307387 0.371904556,17.1957496 0.37,28 L0.37,28 Z" id="Shape" fill="#F77F00"></path>
+                        <path d="M55.63,28 C55.630604,17.1950138 49.3328217,7.38109991 39.51,2.88 L39.51,53.11 C49.3295312,48.6104085 55.6266943,38.801366 55.63,28 L55.63,28 Z" id="Shape" fill="#009E60"></path>
+                        <path d="M28,0.36 C24.0263615,0.358869893 20.099641,1.21858628 16.49,2.88 L16.49,53.11 C23.792036,56.4539507 32.187964,56.4539507 39.49,53.11 L39.49,2.88 C35.8863851,1.22170662 31.9668593,0.362071725 28,0.36 L28,0.36 Z" id="Shape" fill="#FFFFFF"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_mali</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_mali" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-126" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <path d="M0.37,28 C0.369395963,38.8049862 6.66717832,48.6189001 16.49,53.12 L16.49,2.88 C6.66889233,7.38307387 0.371904556,17.1957496 0.37,28 L0.37,28 Z" id="Shape" fill="#14B53A"></path>
+                        <path d="M55.63,28 C55.6280954,17.1957496 49.3311077,7.38307387 39.51,2.88 L39.51,53.12 C49.3328217,48.6189001 55.630604,38.8049862 55.63,28 L55.63,28 Z" id="Shape" fill="#CE1126"></path>
+                        <path d="M28,0.37 C24.0271007,0.365733501 20.1004136,1.22203103 16.49,2.88 L16.49,53.12 C23.7911632,56.4679506 32.1888368,56.4679506 39.49,53.12 L39.49,2.88 C35.8856141,1.22515145 31.9661216,0.368935077 28,0.37 L28,0.37 Z" id="Shape" fill="#FCD116"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

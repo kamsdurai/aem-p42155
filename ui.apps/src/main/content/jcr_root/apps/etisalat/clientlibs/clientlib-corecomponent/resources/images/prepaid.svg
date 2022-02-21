@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>outline 1pt / mobile devices / mobile_devices_black_64</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="outline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="outline-1pt-/-mobile-devices-/-mobile_devices_black">
+            <path d="M32,56.5518083 C32,58.4483951 30.4118621,60 28.4703448,60 L11.5296552,60 C9.58813793,60 8,58.4483951 8,56.5518083 L8,23.4481917 C8,21.5516049 9.58813793,20 11.5296552,20 L28.4703448,20 C30.4118621,20 32,21.5516049 32,23.4481917 L32,56.5518083 L32,56.5518083 Z" id="Line" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M8,28 L32,28" id="Line" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M8,53 L32,53" id="Line" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M18,24 L23,24" id="Line" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M21.5,56.25 C21.5,56.9402655 20.940211,57.5 20.25,57.5 C19.559789,57.5 19,56.9402655 19,56.25 C19,55.5597345 19.559789,55 20.25,55 C20.940211,55 21.5,55.5597345 21.5,56.25 L21.5,56.25 Z" id="Line" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M20,20 L20,8.1383008 C20,5.86252406 21.8409091,4 24.0909091,4 L51.9090909,4 C54.1590909,4 56,5.86252406 56,8.1383008 L56,47.8625241 C56,50.1383008 54.1590909,52 51.9090909,52 L32,52" id="Line" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Line" stroke="#242424" stroke-linecap="round" stroke-linejoin="round" points="25 20 25 10 50.6 10 50.6 40.7126111 32 40.7099991"></polyline>
+            <path d="M37.75,6 C37.336,6 37,6.33632287 37,6.74962631 C37,7.16367713 37.336,7.5 37.75,7.5 C38.164,7.5 38.5,7.16367713 38.5,6.74962631 C38.5,6.33632287 38.164,6 37.75,6" id="Fill" fill="#242424"></path>
+            <path d="M39.5,46.25 C39.5,46.9400847 38.94,47.5 38.25,47.5 C37.559375,47.5 37,46.9400847 37,46.25 C37,45.5599153 37.559375,45 38.25,45 C38.94,45 39.5,45.5599153 39.5,46.25 L39.5,46.25 Z" id="Line" stroke="#242424" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

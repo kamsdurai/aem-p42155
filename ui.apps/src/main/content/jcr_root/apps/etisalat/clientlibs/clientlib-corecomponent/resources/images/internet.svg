@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>outline 1pt / globe / globe_black_64</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="outline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="outline-1pt-/-globe-/-globe_black" stroke="#242424">
+            <path d="M60,31.8953379 C60,47.4179586 47.4289655,59.9996138 31.9227586,59.9996138 C16.4155862,59.9996138 4,46.9120276 4,31.3903724 C4,16.2761655 15.8575172,4.62816552 30.7969655,4.02375172 C31.2005517,4.00830345 31.6041379,3.99961379 32.0135172,3.99961379 C47.5177931,3.99961379 60,16.3727172 60,31.8953379 L60,31.8953379 Z" id="Line"></path>
+            <path d="M30.7950345,4.02404138 C16.1857931,19.8498345 16.1857931,40.4983862 30.7950345,59.976731" id="Line"></path>
+            <path d="M33.2294897,4.02548966 C47.838731,19.8512828 47.838731,40.4911448 33.2294897,59.9694897" id="Line"></path>
+            <path d="M7.5,45 L56.5,45" id="Line"></path>
+            <path d="M7,19 L56.5,19" id="Line"></path>
+            <path d="M4,32 L60,32" id="Line"></path>
+        </g>
+    </g>
+</svg>
