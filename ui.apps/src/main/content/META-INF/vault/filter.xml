@@ -3,4 +3,7 @@
     <filter root="/apps/etisalat/clientlibs"/>
     <filter root="/apps/etisalat/components"/>
     <filter root="/apps/etisalat/i18n"/>
+    <filter root="/apps/msm/etisalat"/>             
+    <filter root="/apps/workflow/scripts"/>       
+    <filter root="/apps/sling"/>
 </workspaceFilter>

@@ -1,0 +1,17 @@
+function getParticipant() {
+    var workflowData = workItem.getWorkflowData();
+    if (workflowData.getPayloadType() == "JCR_PATH") { 
+        var path = workflowData.getPayload().toString(); 
+        if (path.indexOf("/carrier-and-wholesale/") >= 0) {            
+            return "ae-cws-reviewers";
+        }else if (path.indexOf("/consumer/") >= 0) {            
+            return "ae-consumers-reviewers";
+        }else if (path.indexOf("/smb/") >= 0) {            
+            return "ae-business-reviewers";
+        }else if (path.indexOf("/enterprise-and-government/") >= 0) {            
+            return "ae-eag-reviewers";
+        }else {          
+            return "admin";
+        }
+    }
+}
