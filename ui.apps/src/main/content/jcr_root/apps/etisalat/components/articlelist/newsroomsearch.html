@@ -1,0 +1,92 @@
+<template data-sly-template.newsRoomObj="${ @ properties,newsroom}">
+	<div class="cmp-newsroom-search" 
+	     data-noOf-items="${properties.numberOfItems}" 
+	     data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+	     data-sly-use.templates="core/wcm/components/commons/v1/templates.html" 
+	     data-sly-set.newsRoomList="${newsroom.newsPageItems}" 
+	     id="${component.id}">
+	  <div class="tile-boxes-section-wrapper tile-boxes-large filtering">
+		<div class="container">
+		  <div class="row" data-sly-test="${newsRoomList.size >0}">
+			<div class="col-xs-12 col-md-9">
+			  <h2 data-sly-element="${properties.titleType}" class="set-heading__title" data-sly-test="${properties.articleTitle}">${properties.articleTitle}</h2>
+			</div>
+			<div class="col-xs-12 col-md-3">
+			  <div data-sly-test="${!properties.searchDisabled}" class="main-text-action-wrapper global-map-country-filter category-search">
+				<form class="form wst-form" id="search_${component.id}" data-active="true" novalidate="novalidate">
+				  <sly data-sly-set.totalResults="${properties.searchCategoryResultLbl} (${newsRoomList.size})" />
+				  <div class="row">
+					<div class="form-group floating-label-select floating-label-selected input-field col-xs-12">
+					  <select class="form-control selected select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+						<option value="news-all">${totalResults}</option>
+						<option data-sly-repeat.categoryKey="${newsroom.searchCategories}" value="${categoryKey}">${categoryKey} (${newsroom.searchCategories[categoryKey]})</option>
+					  </select>
+					  <span id="filtering-select" class="select2 select2-container select2-container--default" dir="ltr" style="width: 100%;">
+						<span class="selection">
+						  <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-${newsroom.id}">
+							<span class="select2-selection__rendered" id="select2-${newsroom.id}" title="${totalResults}">${totalResults}</span>
+							<span class="select2-selection__arrow" role="presentation">
+							  <strong role="presentation"></strong>
+							</span>
+						  </span>
+						</span>
+						<span class="dropdown-wrapper" aria-hidden="true"></span>
+					  </span>
+					  <label class="floating-label">${properties.searchCategoryLbl}</label>
+					  <span id="filtering-select--menu" class="select2-container select2-container--default" style="position: absolute; top: 40px; left: 12px;">
+						<span class="select2-dropdown select2-dropdown--below select2-dropdown__width" dir="ltr">
+						  <span class="select2-search select2-search--dropdown select2-search--hide">
+							<input class="select2-search__field" type="search" tabindex="0" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" role="textbox">
+						  </span>
+						  <span class="select2-results">
+							<ul class="select2-results__options" role="tree" id="select2-27kl-results" aria-expanded="true" aria-hidden="false">
+							  <li class="select2-results__option select2-results__option--highlighted" value="news-all">${totalResults} </li>
+							  <li class="select2-results__option" data-sly-repeat.categoryKey="${newsroom.searchCategories}" value="${categoryKey}">${categoryKey} (${newsroom.searchCategories[categoryKey]})</li>
+							</ul>
+						  </span>
+						</span>
+					  </span>
+					</div>
+				  </div>
+				</form>
+			  </div>
+			</div>
+		  </div>
+		</div>
+		<div class="container">
+		  <div class="row" data-sly-test="${newsRoomList.size >0}">
+			<div class="tile-boxes-section" data-sly-set.itemsDisplay="${(properties.numberOfItems && properties.numberOfItems > 0) ? properties.numberOfItems : newsRoomList.size}">
+			  <div class="tileBoxMobCarWrap">
+				<div class="tileboxCarousal">
+				  <div data-sly-list.pageItem="${newsRoomList}" class="swiper-wrapper block filter-news-results">
+					<div class="swiper-slide loading-tile col-xs-12 col-md-4 f-news-room temp ${pageItemList.index < itemsDisplay ? 'active' : ''}" data-cat="${pageItem.category}">
+					  <div class="tile-box-tile">
+						<div class="img-cover">
+						  <div data-sly-test="${pageItem.thumbnailResource}" class="cover lazyloaded" data-sly-resource="${pageItem.thumbnailResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></div>
+						</div>
+						<div class="tile-box-body">
+						  <h5 class="annoucements" data-sly-test="${pageItem.category}"> ${pageItem.category}</h5>
+						  <h2 data-sly-test="${pageItem.title}">${pageItem.title}</h2>
+						  <span data-sly-test="${pageItem.articleDateDisplayString}" class="annoucement-date">${pageItem.articleDateDisplayString}</span>
+						  <div class="paragraph-styling ul-list-cms">
+							<p data-sly-test="${pageItem.description}">${pageItem.description @ context = 'html'}</p>
+						  </div>
+						</div>
+						<a href="${pageItem.path}" class="btn-text btn-green learn-more">${properties.searchLearnMoreLbl}</a>
+					  </div>
+					</div>
+				  </div>
+				  <div class="table-swiper-scrollbar swiper-scrollbar"></div>
+				</div>
+			  </div>
+			</div>
+			<div data-sly-test="${!properties.searchDisabled}" class="col-xs-12 col-sm-4 col-sm-offset-4">
+			  <a href="#" class="btn news-loadmore--btn btn-default ripple-effect" id="NewsloadMore">${properties.loadMore}</a>
+			</div>
+		  </div>
+		</div>
+	  </div>
+	</div>
+	<sly data-sly-call="${templates.placeholder @ isEmpty = newsRoomList.size == 0}"></sly>
+  </template>
+  

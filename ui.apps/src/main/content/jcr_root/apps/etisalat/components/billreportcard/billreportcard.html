@@ -1,0 +1,28 @@
+<sly data-sly-use.billModel="com.etisalat.core.models.BillExplainerModel"
+	 data-sly-use.page="com.adobe.cq.wcm.core.components.models.Page"
+     data-sly-use.templates="core/wcm/components/commons/v1/templates.html"> 
+  <sly data-sly-set.billPageLocale="${page.language && page.language == 'ar' ? '-ar' : ''}"/>
+  <div data-report-type="${properties.reportCard}">
+     <sly data-sly-test="${properties.reportCard && properties.reportCard == 'total-usage-summary'}"
+	        data-sly-use.totalUsageTemplate="total-usage-summary${billPageLocale}.html"
+	        data-sly-call="${totalUsageTemplate.totalUsageReport @ billModel=billModel,properties=properties}">
+	 </sly>
+	 <sly data-sly-test="${properties.reportCard && properties.reportCard == 'bill-history'}"
+	        data-sly-use.billHistoryTemplate="bill-history${billPageLocale}.html"
+	        data-sly-call="${billHistoryTemplate.billHistoryReport @ billModel=billModel,properties=properties}">
+	 </sly>  
+	 <sly data-sly-test="${properties.reportCard && properties.reportCard == 'bill-summary'}"
+	        data-sly-use.billSummaryTemplate="bill-summary${billPageLocale}.html"
+	        data-sly-call="${billSummaryTemplate.billSummaryReport @ billModel=billModel,properties=properties}">
+	 </sly> 
+	 <sly data-sly-test="${properties.reportCard && properties.reportCard == 'bill-breakdown'}"
+	        data-sly-use.billBreakdownTemplate="bill-breakdown.html"
+	        data-sly-call="${billBreakdownTemplate.billBreakDown @ billModel=billModel,properties=properties,billPageLocale=billPageLocale}">
+	 </sly>   
+	 <sly data-sly-test="${properties.reportCard && properties.reportCard == 'usage-and-services-breakdown'}"
+	        data-sly-use.usageServicesTemplate="usage-and-services.html"
+	        data-sly-call="${usageServicesTemplate.usageServices @ billModel=billModel,properties=properties,billPageLocale=billPageLocale}">
+	 </sly>  
+  </div>
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.reportCard}"></sly>

@@ -1,0 +1,20 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.tileModel="com.etisalat.core.models.TileModel"
+     data-panelcontainer="${wcmmode.edit && 'Benefits Tile'}"
+     data-placeholder-text="${wcmmode.edit && 'Please update Benefits Tile' @ i18n}">
+
+    <div data-sly-test="${properties['image/fileReference']}" class="benefits-icon-wrap">
+        <div data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}" alt="${properties.accAltText}">
+        </div>
+    </div>
+    <div class="details">
+        <div  data-sly-test="${tileModel.tiletitle}" class="benefits-secondary-title">
+            <h3>${tileModel.tiletitle}</h3>
+        </div>
+        <div  data-sly-test="${tileModel.text}" class="benefits-description">
+            ${tileModel.text @ context='html'}
+        </div>
+    </div>
+
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !tileModel.tiletitle}"></sly>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Article List"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        granite:class="cmp-tab-dialog-content__editor"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <title
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="A title to display as the headline for the blog search"
+                                                fieldLabel="Title"
+                                                name="./articleTitle"/>
+                                             <titleType
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Title Style"
+                                                name="./titleType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <def
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="(default)"
+                                                        value=""/>
+                                                    <h1
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H1"
+                                                        value="h1"/>
+                                                    <h2
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H2"
+                                                        value="h2"/>
+                                                    <h3
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H3"
+                                                        value="h3"/>
+                                                    <h4
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H4"
+                                                        value="h4"/>
+                                                    <h5
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H5"
+                                                        value="h5"/>
+                                                    <h6
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="H6"
+                                                        value="h6"/>
+                                                </items>
+                                            </titleType>
+                                            <text
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceSuperType="etisalat/components/commons/editor/dialog/rteconfig/text"
+                                                sling:resourceType="cq/gui/components/authoring/dialog/richtext"
+                                                fieldDescription="A description to display as the subheadline for the blog search."
+                                                fieldLabel="Description"
+                                                name="./text"
+                                                useFixedInlineToolbar="{Boolean}true"/>
+                                            <articleListFrom
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldLabel="Build Article List Using"
+                                                name="./articleListFrom">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".articlelist-option-listfrom-showhide-target"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <children                                                        
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Parent page"
+                                                        value="parentPage"/>
+                                                    <static                                                        
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Fixed list"
+                                                        value="static"/>                                                  
+                                                </items>                                                
+                                            </articleListFrom>
+                                             <setParent
+                                                granite:class="articlelist-option-listfrom-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                  <parentpage
+		                                                jcr:primaryType="nt:unstructured"		                                                
+		                                                sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+		                                                fieldDescription="Parent Page Path"
+		                                                fieldLabel="Parent Page Path"
+		                                                name="./parentPath"
+		                                                required="{Boolean}true"
+		                                                rootPath="/content"/>		                                                                                                    
+                                                  </items>
+                                                  <granite:data
+	                                                    jcr:primaryType="nt:unstructured"
+	                                                    showhidetargetvalue="parentPage"/>
+                                              </setParent>                                            
+                                             <setStatic
+                                                granite:class="articlelist-option-listfrom-showhide-target foundation-layout-util-vmargin"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="static"/>
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <heading
+                                                        granite:class="coral-Heading coral-Heading--4"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                        level="{Long}4"
+                                                        text="Options for Fixed List"/>
+                                                    <well
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/well">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <pages
+                                                                granite:class="foundation-layout-util-maximized-alt coral-Form-fieldwrapper"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <multi
+                                                                        granite:class=""
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield">
+                                                                        <field
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            required="{Boolean}true"
+                                                                            sling:resourceType="cq/gui/components/coral/common/form/pagefield"
+                                                                            name="./pages"
+                                                                            rootPath="/content"/>
+                                                                    </multi>
+                                                                </items>
+                                                            </pages>
+                                                        </items>
+                                                    </well>
+                                                </items>
+                                            </setStatic>
+                                            <numberofitems
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"
+                                                fieldLabel="Number of Items to be displayed"
+                                                name="./numberOfItems"
+                                                value="4">                                               
+                                            </numberofitems>
+                                            <numberofitemsTypeHint
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                                                name="./numberOfItems@TypeHint"
+                                                value="Long"/>
+                                            <loadmore
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldLabel="Label for Load More"
+                                                required="{Boolean}true"
+                                                name="./loadMore"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                    <search
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Search"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <searchDisabled
+                                                jcr:primaryType="nt:unstructured"                                                
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/checkbox"
+                                                fieldDescription="When checked, search filter option will disabled for article results"
+                                                name="./searchDisabled"
+                                                text="Disable Search Filter"
+                                                uncheckedValue="{Boolean}false"
+                                                value="{Boolean}true"/>                                               
+                                            <searchtype
+                                                granite:class="cq-dialog-dropdown-showhide cq-dialog-editor-dropdown-tab-showhide"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                fieldDescription="Please choose &quot;Free Text Search&quot; to search blog post and &quot;Search with Category&quot; to&#xa;search newsroom results"
+                                                fieldLabel="Search Type"
+                                                name="./searchType">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <freetextsearch
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Free Text Search"
+                                                        value="freetextsearch"/>
+                                                    <category
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Search With Category"
+                                                        value="searchcategory"/>
+                                                    <ewalletnewssection
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Ewallet News Section"
+                                                        value="ewalletNewsSection"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    cq-dialog-dropdown-showhide-target=".searchtype-showhide-target"/>
+                                            </searchtype>
+                                            <freetypesearch
+                                                granite:class="searchtype-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <label
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Label of this field"
+                                                        fieldLabel="Form Text Field Label"
+                                                        name="./inputLbl"
+                                                        required="{Boolean}true"/>
+                                                    <name
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="The name of the field, which is submitted with the form data."
+                                                        fieldLabel="Form Text Field Name"
+                                                        name="./name"
+                                                        required="{Boolean}true"/>
+                                                    <value
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Default value of the field"
+                                                        fieldLabel="Form Text Field Value"
+                                                        name="./value"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="freetextsearch"/>
+                                            </freetypesearch>
+                                            <searchcategory
+                                                granite:class="searchtype-showhide-target"
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <categorylabel
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Label of this field"
+                                                        fieldLabel="Search Category Label"
+                                                        name="./searchCategoryLbl"
+                                                        required="{Boolean}true"/>
+                                                    <categoryresults
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Search Category Result Label"
+                                                        fieldLabel="Search Category Result Label"
+                                                        name="./searchCategoryResultLbl"
+                                                        required="{Boolean}true"/>
+                                                    <learnmore
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                        fieldDescription="Learn More Label"
+                                                        fieldLabel="Learn More Label"
+                                                        name="./searchLearnMoreLbl"
+                                                        required="{Boolean}true"/>
+                                                </items>
+                                                <granite:data
+                                                    jcr:primaryType="nt:unstructured"
+                                                    showhidetargetvalue="searchcategory"/>
+                                            </searchcategory>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </search>
+                    <searchresults
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Search Results"
+                        granite:class="cq-dialog-editor-showhide-target-tab"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <label
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Search Result Label"                                                
+                                                fieldLabel="Search Result Label"
+                                                name="./searchResultTxt"/>
+                                            <noresulttext
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="No Result Found Message"                                                
+                                                fieldLabel="No Result Label"
+                                                name="./noResultLbl"/>
+                                            <clearsearch
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                fieldDescription="Clear Search Label"                                                
+                                                fieldLabel="Clear Search Label"
+                                                name="./clearSearchLbl"/>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </searchresults>
+                </items>
+            </tabs>
+        </items>
+        <granite:data
+	        jcr:primaryType="nt:unstructured"
+	        tab-dropdown-selector-name="searchType"
+	        tab-target-dropdown-value="freetextsearch"/>
+    </content>
+</jcr:root>

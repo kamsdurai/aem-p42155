@@ -1,0 +1,16 @@
+<template data-sly-template.newsroom="${ @ pageProperties,articleObj}">
+  <div class="hero-image-section  hero-image medium" data-sly-test="${currentPage.properties['image/fileReference']}">
+   <div class="cover">
+     <sly data-sly-resource="${articleObj.thumbnailPageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></sly>
+   </div>
+ </div>
+ <div class="container">
+	<div class="article-detail">
+		<a data-sly-test="${pageProperties.backToBusinessLbl}" href="${articleObj.backToHomeLink}" class="btn-text btn-green mb-40 block back"><span class="">${pageProperties.backToBusinessLbl}</span></a>
+		<h6 data-sly-test="${articleObj.businessCategoryTag}" class="annoucement">${articleObj.businessCategoryTag}</h6>
+		<div data-sly-resource="${'title' @ resourceType='etisalat/components/title'}"></div>
+		<h6 data-sly-test="${articleObj.articleDate}" class="annoucement-date">${articleObj.articleDate}</h6>   	
+	</div>
+</div>
+</template>
+

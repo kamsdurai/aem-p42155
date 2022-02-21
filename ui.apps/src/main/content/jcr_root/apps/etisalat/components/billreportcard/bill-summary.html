@@ -1,0 +1,408 @@
+<template  data-sly-template.billSummaryReport="${ @ billModel,properties}">
+  <div class="billing-report-card-preview">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="dns-prefetch" href="fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+    <sly data-sly-call="${clientlib.all @ categories='cmp.crx.billing.explainer'}" />
+    </sly>
+<div class="exp-report-wrapper exp-bill-summary zooming" id="${properties.reportCard}" data-bill-explainer="${billModel.stepsData}">
+  <!--
+          <button id="startTourBtn" class="btn btn-primary">Start</button> -->
+  <div class="exp-logo-report">
+    <img src="${billModel.billExplainerDAMPath}/etisalat_eng_logo.png" alt="">
+  </div>
+  <div class="exp-report-header">
+    <div class="row">
+      <div class="col-xs-10 col-xs-offset-2">
+        <h2>Abdelaziz Muhammd Hejazi</h2>
+        <div class="row ptb-10">
+          <div class="col-xs-6" id="Step-1">
+            <div class="exp-focus-step">
+              <span>1</span>
+            </div>
+            <p>Mobile number <span>05XXXXXXXX</span></p>
+          </div>
+          <div class="col-xs-6" id="Step-2">
+            <div class="exp-focus-step">
+              <span>2</span>
+            </div>
+            <p>Bill issue date <span>01 Oct 2019 </span></p>
+          </div>
+        </div>
+        <div class="row ptb-10">
+          <div class="col-xs-6" id="Step-3">
+            <div class="exp-focus-step">
+              <span>3</span>
+            </div>
+            <p>Account ID <span>XXXXXXXXX</span></p>
+          </div>
+          <div class="col-xs-6" id="Step-4">
+            <div class="exp-focus-step">
+              <span>4</span>
+            </div>
+            <p>Bill Period <span>01 Sep 2019 - 30 Sep 2019</span></p>
+          </div>
+        </div>
+        <div class="row ptb-10">
+          <div class="col-xs-6">
+          </div>
+          <div class="col-xs-6" id="Step-5">
+            <div class="exp-focus-step">
+              <span>5</span>
+            </div>
+            <p>Bill number<span>XXXXXXXXXXXXX </span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="promo-small-02 exp-report-invoice">
+    <div class="row no-gutter">
+      <div class="content-section">
+        <div class="col-xs-12 col-md-12 col-lg-12 exp-pattern-overlay">
+          <div class="row" id="Step-6">
+            <div class="exp-focus-step">
+              <span>6</span>
+            </div>
+            <span class="lbl">Tax INVOICE</span>
+            <div class="detail-info-wrap detail-info-wrap-pricetag">
+              <div class="detail-price-new">
+                <div class="main-part">
+                  <div dir="ltr" class="price">0.<span>00</span> </div>
+                  <small>AED
+                    <i>incl 5% VAT</i>
+                  </small>
+                </div>
+              </div>
+            </div>
+            <h5>PAY BEFORE 15 OCT 2018</h5>
+          </div>
+          <div class="row" id="Step-7">
+            <div class="exp-focus-step">
+              <span>7</span>
+            </div>
+            <div class="exp-autopay-info">
+              <div class="exp-autopay-icon">
+                <span>
+                  <svg>
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ac-autopay-card"></use>
+                  </svg>
+                </span>
+              </div>
+              <div class="exp-autopay-text relative">
+                <p>This account has autopay
+                  <span>(card ending ****8889 expiry 10/21).</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="exp-pay-online" id="Step-8">
+        <div class="exp-focus-step">
+          <span>8</span>
+        </div>
+        <h4>PAY ONLINE</h4>
+        <a href="#">www.etisalat.ae/quickpay</a>
+      </div>
+    </div>
+  </div>
+  <div class="exp-premium-postpaid">
+    <div class="relative" id="Step-9">
+      <div class="exp-focus-step">
+        <span>9</span>
+      </div>
+      <h2>Premium Postpaid Flexi 500
+      </h2>
+      <h5>Contract period: 01 Aug 2019 - 31 Jul 2020</h5>
+    </div>
+    <div class="exp-premium-postpaid-summary">
+      <h3 class="position-relative" id="Step-10">
+        <div style="top: -8px;" class="exp-focus-step">
+          <span>10</span>
+        </div>
+        Bill Summary <small class="pull-right">AED</small>
+      </h3>
+      <div class="list" id="Step-11">
+        <div class="exp-focus-step">
+          <span>11</span>
+        </div>
+        <p> Plan, Add-ons &amp; Device rentals</p>
+        <span>0.00</span>
+      </div>
+      <div class="list" id="Step-12">
+        <div class="exp-focus-step">
+          <span>12</span>
+        </div>
+        <p> Out of plan usage charges</p>
+        <span>0.00</span>
+      </div>
+      <div class="list" id="Step-13">
+        <div class="exp-focus-step">
+          <span>13</span>
+        </div>
+        <p>One-time charges</p>
+        <span>0.00</span>
+      </div>
+      <div class="list" id="Step-14">
+        <div class="exp-focus-step">
+          <span>14</span>
+        </div>
+        <p>Promotions, Refunds &amp; Adjustments</p>
+        <span>0.00</span>
+      </div>
+      <div class="list" id="Step-15">
+        <div class="exp-focus-step">
+          <span>15</span>
+        </div>
+        <p>Value added services (VAS) &amp; 3rd party charges</p>
+        <span>0.00</span>
+      </div>
+      <div class="list" id="Step-16">
+        <div class="exp-focus-step">
+          <span>16</span>
+        </div>
+        <p> VAT on taxable services</p>
+        <span>0.00</span>
+      </div>
+      <div class="list exp-current-month-summary" id="Step-17">
+        <div class="exp-focus-step">
+          <span>17</span>
+        </div>
+        <h4>Current month charges (including VAT 5%)</h4>
+        <span>0.00</span>
+      </div>
+      <div class="list" id="Step-18">
+        <div class="exp-focus-step">
+          <span>18</span>
+        </div>
+        <p> Balance from your last bill</p>
+        <span>0.00</span>
+      </div>
+      <div class="list" id="Step-19">
+        <div class="exp-focus-step">
+          <span>19</span>
+        </div>
+        <p> Payments received</p>
+        <span>0.00</span>
+      </div>
+      <div class="list exp-current-month-summary" id="Step-20">
+        <h4>Remaining amount from your previous bills (including VAT 5%)
+          <div class="exp-focus-step">
+            <span>20</span>
+          </div>
+        </h4>
+        <span>0.00</span>
+      </div>
+      <div class="list exp-grand-month-summary" id="Step-21">
+        <div class="exp-focus-step">
+          <span>21</span>
+        </div>
+        <h3>Grand total <small>AED
+            <i>(Incl 5% VAT)</i>
+          </small>
+        </h3>
+        <div class="detail-info-wrap detail-info-wrap-pricetag">
+          <div class="detail-price-new">
+            <div class="main-part">
+              <div dir="ltr" class="price">0.<span>00</span></div>
+              <small>AED
+                <i>incl 5% VAT</i>
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="exp-footer">
+    <img src="${billModel.billExplainerDAMPath}/exp-report-footer.png" alt="">
+  </div>
+</div>
+  </div>
+  <style>
+    .billing-report-card-preview .row {
+      position: relative;
+    }
+  </style>
+  <script>
+    var tour_steps = $("#bill-summary").data("bill-explainer");
+    var jq = $.noConflict(true);
+    jq(function () {
+      jq.each(tour_steps, function (i, step) {
+        step['content'] += '<span class="tour-pager">' + (i + 1) + '/' + tour_steps.length + '</span>';
+        var percent = parseInt(((i + 1) / tour_steps.length) * 100);
+      });
+      var tourEnd = false;
+      var tour = new Tour({
+        backdrop: true,
+        storage: false,
+        steps: tour_steps,
+         template: `<div class='exp-popover popover tour'><h3 class='popover-title'></h3><div class='popover-content'></div><nav class='popover-navigation'><div class='btn-group'><button class='btn btn-default prev' data-role='prev'></button><button class='btn btn-default next' data-role='next'> </button></div><button class='btn-end close' data-role='end'></button></nav></div>`,
+        onShow: function () {
+          setTimeout(function () {
+            jq(".popover").append("<div class='zooming-contorls'><button type='button' id='zoom-in'><svg><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#zoomplus'></use></svg></button><button type='button' id='zoom-out'><svg><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#zoomminus'></use></svg></button></div>");
+            jq('#zoom-in').click(function () {
+              updateZoom(0.1);
+            });
+            jq('#zoom-out').click(function () {
+              updateZoom(-0.1);
+            });
+          }, 1000);
+
+        },
+        onEnd: function (tour) {
+          tourEnd = true;
+        }
+      });
+
+      zoomLevel = 0.5;
+      var updateZoom = function (zoom) {
+        zoomLevel += zoom;
+        jq('.zooming').css({ zoom: zoomLevel, '-moz-transform': 'scale(' + zoomLevel + ')' });
+      }
+
+      tour.init();
+      jq('#Step-1').click(function () {
+        gotoSlide(0);
+      });
+      jq('#Step-2').click(function () {
+        gotoSlide(1);
+      });
+      jq('#Step-3').click(function () {
+        gotoSlide(2);
+      });
+      jq('#Step-4').click(function () {
+        gotoSlide(3);
+      });
+      jq('#Step-5').click(function () {
+        gotoSlide(4);
+      });
+      jq('#Step-6').click(function () {
+        gotoSlide(5);
+      });
+      jq('#Step-7').click(function () {
+        gotoSlide(6);
+      });
+      jq('#Step-8').click(function () {
+        gotoSlide(7);
+      });
+      jq('#Step-9').click(function () {
+        gotoSlide(8);
+      });
+      jq('#Step-10').click(function () {
+        gotoSlide(9);
+      });
+      jq('#Step-11').click(function () {
+        tour._options.steps[10].placement = "top";
+        gotoSlide(10);
+      });
+      jq('#Step-12').click(function () {
+        gotoSlide(11);
+      });
+      jq('#Step-13').click(function () {
+        gotoSlide(12);
+      });
+      jq('#Step-14').click(function () {
+        gotoSlide(13);
+      });
+      jq('#Step-15').click(function () {
+        gotoSlide(14);
+      });
+      jq('#Step-16').click(function () {
+        tour._options.steps[15].placement = "top";
+        gotoSlide(15);
+      });
+       jq('#Step-17').click(function () {
+        gotoSlide(16);
+      });
+      jq('#Step-18').click(function () {
+        gotoSlide(17);
+      });
+      jq('#Step-19').click(function () {
+        gotoSlide(18);
+      });
+      jq('#Step-20').click(function () {
+        gotoSlide(19);
+      });
+      jq('#Step-21').click(function () {
+        gotoSlide(20);
+      }); 
+      var gotoSlide = function (slideNum) {
+        if (tourEnd == true) {
+          tour.restart();
+          tourEnd = false;
+        }
+        tour.goTo(slideNum);
+      }
+    });
+  </script>
+
+  <svg id="svg-spritemap" xmlns="http://www.w3.org/2000/svg" style="display: none">
+    <symbol id="etisalat-logo-ar" viewBox="0 0 137.54 44">
+      <path
+        d="M336.4 432.5a3.42 3.42 0 0 1-1.8-.4c-2.3-1.2-4.1-6.9-4.1-12.8 0-3.9 2.5-6 6.1-6a14.29 14.29 0 0 1 6.7 1.9c7.1 3.7 8.9 9.4 4.1 12.8-3.8 2.7-8.2 4.5-11 4.5m-.9-25.1a8.25 8.25 0 0 0-2.8.4c-3.2 1-4.4 3.9-4.2 8.1a46.5 46.5 0 0 0 2.5 11.5c1 3.2 1.8 5.2 3.1 5.8a2.9 2.9 0 0 0 1.4.3 19.78 19.78 0 0 0 5.1-1.2 49.19 49.19 0 0 0 10.8-4.7c3.5-2.2 5.2-4.9 4.2-8.1s-4.6-6.6-9.7-9.2a23.81 23.81 0 0 0-10.4-2.9m-12.8-3.6c-1.8 2.4-1.9 6.3-.7 11.1 1.7 6.8 4.6 13.7 6 18.3 1.6 4.7 1.6 7.1 2.2 7.4h.2c.8 0 2.8-1.3 7.1-2.5 4.5-1.5 11.8-3.1 18.4-5.7 4.6-1.8 7.7-4.1 8.6-6.9-1.5 2-4.1 3.6-7.7 5-6.5 2.5-13.8 4.1-18.4 5.7-4.3 1.3-6.3 2.5-7.1 2.5h-.2c-.6-.3-.6-2.7-2.2-7.4-1.4-4.6-4.3-11.5-6-18.2-.8-3.8-1-7-.2-9.3"
+        transform="translate(-228.3 -399.3)" fill="#beca47" />
+      <path
+        d="M330.5 399.3a12.5 12.5 0 0 0-3.6.5 5.72 5.72 0 0 0-4.1 4 5.67 5.67 0 0 1 3.2-2.1 9.8 9.8 0 0 1 3.6-.5c4.7 0 11.4 2 18.2 5.5 8.8 4.6 15.4 10.3 16.7 14.9a5.83 5.83 0 0 1 .1 3.9 6.09 6.09 0 0 0 .9-5.7c-1.4-4.6-7.9-10.3-16.7-14.9-6.9-3.6-13.6-5.6-18.3-5.6"
+        transform="translate(-228.3 -399.3)" fill="#4c743c" />
+      <path
+        d="M335.4 433.5a3.19 3.19 0 0 1-1.4-.3c-1.3-.7-2-2.7-3.1-5.8a57.78 57.78 0 0 1-2.5-11.5c-.2-4.1 1-7.1 4.2-8.1a8.25 8.25 0 0 1 2.8-.4 23.79 23.79 0 0 1 10.3 2.9c5 2.6 8.7 6.1 9.7 9.2s-.7 5.9-4.2 8.1a54.48 54.48 0 0 1-10.8 4.7 16.88 16.88 0 0 1-5 1.2m-5.9-32.3a12.5 12.5 0 0 0-3.6.5 6 6 0 0 0-3.2 2.1c-.8 2.3-.6 5.5.3 9.2 1.7 6.8 4.6 13.7 6 18.2 1.6 4.7 1.6 7.1 2.2 7.4h.2c.8 0 2.8-1.3 7.1-2.5 4.5-1.5 11.8-3.1 18.4-5.7 3.5-1.4 6.2-3 7.7-5a5.83 5.83 0 0 0-.1-3.9c-1.4-4.6-7.9-10.4-16.7-14.9-6.9-3.4-13.5-5.4-18.3-5.4"
+        transform="translate(-228.3 -399.3)" fill="#78a14a" />
+      <path
+        d="M303.8 425.3v-.4a1.47 1.47 0 0 1-.4.2l-1 .6-1 .5c-.1.1-.3.1-.3.9v8.9h-7.6v-7.8a3.42 3.42 0 0 0-.9-2.6 3.25 3.25 0 0 0-2.7-.7 19.91 19.91 0 0 0-12 4.1l-1 1.1-.3.4-.2-.5a5.88 5.88 0 0 0-1-1.6l-.3-.4a1.24 1.24 0 0 0-.3-.2c0 .4.1 1.2.1 2.4v5.6h-4.3v-19.9l-.4.2-1 .6-1 .5c-.1.1-.3.1-.3 1v17.5a2.89 2.89 0 0 0 .5 2.1 2.39 2.39 0 0 0 2.2 1h4.1v.3a19 19 0 0 1-.8 4 .31.31 0 0 1-.1.2 4.82 4.82 0 0 0 1-.8 10.72 10.72 0 0 0 2-3.4l.1-.2h23.8a3 3 0 0 0 1.9-.5c.8-.6 1.1-1.1 1.1-2.7v-7.2c.1-.4.1-3.2.1-3.2zm-13 10.4h-13.3v-.2c0-.1.8-7.6 11.6-7.9a1.54 1.54 0 0 1 1.3.5 2.47 2.47 0 0 1 .5 1.5v6.1h-.1zM247.9 435.7v-6.3c0-.9.2-1 .3-1l1-.5s1.2-.7 1.3-.7v9.1a2.69 2.69 0 0 1-.8 1.8 2.58 2.58 0 0 1-2 .7h-14.7a4.64 4.64 0 0 1-3.8-2.4 6.4 6.4 0 0 1-.9-3.4 10.6 10.6 0 0 1 .4-2.9 1.76 1.76 0 0 1 .6-1.2v.3a16 16 0 0 0 1.1 4.2c1.2 2.7 4.6 2.5 4.6 2.5h12.8v-.2h.1zm2.8-8.9zM260.9 418.7v-.1c0-.9.2-1 .3-1l1-.5s1.2-.7 1.3-.7v10.5c0 9.1-4.2 11.7-4.5 11.9h-4a15.21 15.21 0 0 0 3.5-3.1l.1-.1v-.2l-4.8-10.6a8.34 8.34 0 0 1-.7-3.1 4.12 4.12 0 0 1 1.4-3.3v.2a12.64 12.64 0 0 0 1 4.2c0 .1 2.9 5.6 4.1 8.4l.3 1.1.2.6.2-.6.1-.3a9.14 9.14 0 0 0 .5-2.6v-10.700000000000001zm2.8-2.7z"
+        transform="translate(-228.3 -399.3)" fill="#65666a" />
+      <path d="M80 33.7v-14.3c0-.9.2-1 .3-1l1-.4 1.4-.8v22.4h-2.7v-5.9z" fill="#65666a" />
+      <path
+        d="M237.6 427.2a1.69 1.69 0 0 0 1.3-.3 1.56 1.56 0 0 0 .3-1.2v-1.3h-1.5a1.05 1.05 0 0 0-1.2 1.2v1.7s.8-.1 1.1-.1zM241.1 427.2a1.69 1.69 0 0 0 1.3-.3 1.56 1.56 0 0 0 .3-1.2v-1.3h-1.5a1 1 0 0 0-1.1 1.2v1.7s.7-.1 1-.1zM298.8 422.6a1.69 1.69 0 0 0 1.3-.3 1.56 1.56 0 0 0 .3-1.2v-1.3h-1.5a1.05 1.05 0 0 0-1.2 1.2v1.7s.8-.1 1.1-.1zM302.2 422.6a1.69 1.69 0 0 0 1.3-.3 1.56 1.56 0 0 0 .3-1.2v-1.3h-1.5a1 1 0 0 0-1.1 1.2v1.7s.8-.1 1-.1z"
+        transform="translate(-228.3 -399.3)" fill="#65666a" />
+    </symbol>
+    <symbol id="etisalat-logo" viewBox="0 0 181 46">
+      <path
+        d="M1.582 5.498c-1.947 2.535-1.995 6.705-.702 11.872 1.816 7.28 4.955 14.636 6.417 19.548 1.684 5.023 1.694 7.602 2.348 7.938.064.033.139.047.232.047.858 0 3.022-1.343 7.599-2.727 4.849-1.652 12.665-3.355 19.654-6.085 4.92-1.926 8.282-4.359 9.253-7.383-1.563 2.114-4.422 3.889-8.198 5.366-6.991 2.73-14.804 4.434-19.656 6.084-4.575 1.387-6.736 2.731-7.596 2.731-.094 0-.171-.018-.236-.051-.652-.336-.663-2.909-2.349-7.938-1.463-4.908-4.597-12.266-6.416-19.547-.991-3.968-1.194-7.351-.35-9.855m13.735 3.813c-1.124 0-2.14.141-3.014.433-3.407 1.047-4.754 4.226-4.491 8.648.265 4.417 1.634 9.001 2.65 12.333 1.119 3.384 1.883 5.518 3.273 6.232.417.216.906.312 1.48.312 1.331 0 3.114-.518 5.497-1.25 3.304-1.1 7.835-2.64 11.591-4.983 3.758-2.342 5.573-5.284 4.456-8.667-1.023-3.33-4.97-7.111-10.377-9.9-3.98-2.056-7.936-3.158-11.065-3.158m.96 26.869c-.78 0-1.445-.125-1.953-.389-2.463-1.273-4.415-7.421-4.381-13.741.017-4.125 2.63-6.397 6.547-6.397 2.091 0 4.557.649 7.195 2.012 7.576 3.911 9.526 10.06 4.382 13.741-4.079 2.927-8.788 4.774-11.79 4.774"
+        fill="#C1CD23" />
+      <path
+        d="M9.908.677c-1.48 0-2.79.182-3.882.553-2.308.7-3.741 2.178-4.444 4.268.798-1.038 1.915-1.802 3.389-2.247 1.096-.375 2.409-.556 3.894-.556 5.082 0 12.176 2.125 19.498 5.906 9.465 4.887 16.452 11.065 17.912 15.975.5 1.486.513 2.861.108 4.132 1.328-1.797 1.72-3.839.945-6.149-1.458-4.908-8.448-11.084-17.91-15.972-7.329-3.785-14.428-5.91-19.51-5.91"
+        fill="#FEFEFE" />
+      <path
+        d="M8.865 2.695c-1.485 0-2.797.18-3.894.556-1.474.445-2.591 1.209-3.389 2.247-.844 2.504-.641 5.886.351 9.855 1.818 7.281 4.952 14.638 6.415 19.546 1.686 5.03 1.697 7.602 2.349 7.939.065.033.143.051.236.051.86 0 3.021-1.345 7.596-2.731 4.852-1.65 12.665-3.354 19.656-6.084 3.776-1.477 6.635-3.253 8.198-5.367.405-1.27.392-2.645-.108-4.132-1.46-4.91-8.447-11.087-17.911-15.974-7.323-3.781-14.416-5.906-19.499-5.906m6.35 34.573c-.574 0-1.062-.096-1.48-.311-1.39-.715-2.154-2.849-3.273-6.232-1.016-3.332-2.384-7.917-2.65-12.334-.263-4.422 1.085-7.601 4.491-8.648.874-.292 1.89-.433 3.014-.433 3.129 0 7.085 1.103 11.065 3.158 5.407 2.79 9.355 6.57 10.377 9.9 1.118 3.384-.698 6.325-4.456 8.667-3.756 2.343-8.287 3.884-11.591 4.984-2.382.732-4.166 1.249-5.497 1.249"
+        fill="#79A22E" />
+      <path
+        d="M68.707 33.029c.994-.113 1.73-.296 2.088-.655.359-.361.321-1.095.084-1.656-.756-1.768-2.795-3.058-5.397-3.058-3.984 0-6.796 2.565-6.796 6.492 0 0 9.527-1.066 10.021-1.123m2.273 2.794l-12.307 1.26c.485 3.885 3.386 5.338 6.475 5.346h7.888c1.123 0 1.869.757 1.869 1.837l-.003 1.577h-9.834c-5.484 0-10.091-3.568-10.091-10.877 0-6.229 4.357-10.466 10.546-10.466 4.446 0 8.057 2.715 9.038 6.81.593 2.49-.75 4.194-3.581 4.513"
+        fill="#807F82" />
+      <path
+        d="M113.931 24.51c1.169 0 2.008.543 2.008 1.711 0 1.173-.839 1.717-2.008 1.717h-8.574c-1.799.136-2.026 1.941-1.879 3.056.049.363.219.668.471.881.56.475 1.531.644 2.539.817l6.521 1.148c3.43.625 4.725 2.365 4.725 5.461 0 4.809-2.965 6.588-7.61 6.588h-10.832l.003-1.713c0-1.17.796-1.715 2.009-1.715h8.57c3.345 0 4.207-1.027 4.203-2.867-.003-1.67-.463-2.281-2.698-2.658l-6.606-1.088c-3.344-.543-4.797-2.301-4.977-4.545-.265-3.289 1.098-6.793 5.606-6.793h8.529zM133.845 38.215c0 3.638-2.049 4.937-5.523 4.937-3.134 0-4.93-1.13-4.93-3.64 0-1.866 1.585-3.072 3.48-3.406 1.895-.336 4.78-.465 6.973-.967v3.076zm3.676-6.187c0-3.721-1.005-7.528-6.52-7.528h-7.737c-1.214 0-2.009.545-2.009 1.713 0 1.174.795 1.718 2.009 1.718h7.192c2.551 0 3.389.586 3.389 2.382v.545c-.149 1.097-1.387 1.357-2.008 1.503-5.168 1.213-12.126-.119-12.126 7.319 0 3.971 3.383 6.314 8.028 6.314.053 0 4.663.227 6.36-2.099l.012.2c.115 1.173.671 1.789 1.872 1.789h1.527l.011-13.856zM161.785 38.215c0 3.638-2.051 4.937-5.523 4.937-3.135 0-4.932-1.13-4.932-3.64 0-1.866 1.587-3.072 3.48-3.406 1.895-.336 4.78-.465 6.975-.967v3.076zm3.678-6.187c0-3.721-1.007-7.528-6.524-7.528h-7.738c-1.211 0-2.006.545-2.006 1.713 0 1.174.795 1.718 2.006 1.718h7.195c2.551 0 3.389.586 3.389 2.382v.545c-.15 1.097-1.386 1.357-2.008 1.503-5.17 1.213-12.126-.119-12.126 7.319 0 3.971 3.384 6.314 8.027 6.314.054 0 4.664.227 6.359-2.099l.014.2c.112 1.173.67 1.789 1.869 1.789h1.531l.012-13.856zM144.808 18.711h-2.06c-1.786 0-1.62 1.62-1.62 1.62v19.857l-.009 5.691 3.689.01v-27.178zM86.9 42.685c-2.801 0-3.842-.125-3.842-2.17v-12.584h3.257c1.169 0 2.005-.543 2.005-1.712 0-1.167-.836-1.712-2.005-1.712h-3.257v-5.674l-1.57-.003c-.313.005-.528.017-.766.044-1.491.162-1.342 1.607-1.342 1.607v4.026h-1.001c-1.167 0-2.008.545-2.008 1.712 0 1.169.841 1.712 2.008 1.712h1.001v13.375c0 4.51 3.135 4.568 7.52 4.568l2.172-.005-.002-1.47c0-1.044-.834-1.714-2.17-1.714M177.963 42.685c-2.8 0-3.84-.125-3.84-2.17v-12.584h3.255c1.171 0 2.005-.543 2.005-1.712 0-1.167-.834-1.712-2.005-1.712h-3.255v-5.674l-1.571-.003c-.314.005-.528.017-.767.044-1.489.162-1.34 1.607-1.34 1.607v4.026h-1.003c-1.165 0-2.006.545-2.006 1.712 0 1.169.841 1.712 2.006 1.712h1.003v13.375c0 4.51 3.133 4.568 7.518 4.568l2.173-.005-.001-1.47c0-1.044-.836-1.714-2.172-1.714"
+        fill="#807F82" />
+      <path
+        d="M95.927 45.883l-.007-21.36-2.058-.011c-1.386.019-1.623.889-1.623 1.638v19.733h3.688zM93.677 20.894c.895 0 1.362.025 1.858-.436.39-.359.392-1.003.392-1.738l-.007-1.879h-2.067c-1.389.021-1.614.879-1.614 1.628l-.007 2.427 1.445-.002"
+        fill="#807F82" />
+    </symbol>
+        <symbol id="ac-autopay-card" width="30px" height="24px" viewBox="0 0 30 24" version="1.1">
+          <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+            <g transform="translate(-65.000000, -1358.000000)">
+              <g transform="translate(64.000000, 1354.000000)">
+                <path
+                  d="M15.1132872,20.3972912 L4.18286669,20.3972912 C2.96657337,20.3972912 2,19.420491 2,18.1893341 L2,6.70795712 C2,5.47768341 2.96657337,4.5 4.18286669,4.5 L25.138387,4.5 C26.3546803,4.5 27.3212536,5.47768341 27.3212536,6.70795712 L27.299457,12.0041972"
+                  id="Stroke-1"></path>
+                <path d="M2,8 L27.3212536,8" id="Stroke-3"></path>
+                <path d="M23.833165,11.5 L19.4674316,11.5" id="Stroke-5"></path>
+                <path d="M14.2249531,11.5 L5.49348633,11.5" id="Stroke-7"></path>
+                <path d="M8.98607304,14 L5.49348633,14" id="Stroke-9"></path>
+                <polyline id="Stroke-5" points="29.0738443 17.4767369 29.0738443 20.5678769 26.4544043 20.5678769">
+                </polyline>
+                <path
+                  d="M19.9665011,22.4869858 C19.9665011,19.7190908 22.1842937,17.4758064 24.9207354,17.4758064 C26.8661062,17.4758064 28.1906697,18.7405242 29.0018229,20.3903098"
+                  id="Stroke-7"></path>
+                <polyline id="Stroke-9" points="20.4655706 26.6707361 20.4655706 24.462779 23.0850106 24.462779">
+                </polyline>
+                <path
+                  d="M29.8588826,22.4665011 C29.8588826,25.233513 27.64109,27.4767974 24.9046483,27.4767974 C22.9584044,27.4767974 21.2758507,26.3436738 20.4655706,24.6930051"
+                  id="Stroke-11"></path>
+              </g>
+            </g>
+          </g>
+        </symbol>
+  </svg>
+</template>

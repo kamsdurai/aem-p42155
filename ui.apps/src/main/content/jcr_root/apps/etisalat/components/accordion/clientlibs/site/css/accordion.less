@@ -13,10 +13,6 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-.cmp-accordion{
-     padding:20px;
-     background-color:#fff;
-}
  .cmp-accordion__item {
      position: relative;
      border-bottom: 1px solid;
@@ -31,8 +27,6 @@
      font: inherit;
      cursor: pointer;
      outline: inherit;
-}
- .cmp-accordion__button {
      display: block;
      width: 100%;
      text-align: left;
@@ -45,7 +39,8 @@
      font-size: 16px;
      line-height: 22px;
 }
- .cmp-accordion{
+.cmp-accordion{
+     background-color:#fff;
      display: block;
      margin: 0;
      padding: 0;
@@ -65,11 +60,6 @@
  .cmp-accordion__title:hover{
      color:#ccc;
 }
- .cmp-accordion__button {
-     display: block;
-     width: 100%;
-     text-align: left;
-}
  .cmp-accordion__panel {
      &--hidden {
          display: none;
@@ -81,7 +71,6 @@
  .signifierPlusIcon .cmp-accordion__button--expanded .cmp-accordion__title:before {
      content: " - ";
      border-radius: 50%;
-     font-size: 10px;
      display: table-cell;
      padding:5px;
      right: 9px;
@@ -100,7 +89,6 @@
  .signifierPlusIcon .cmp-accordion__title:before {
      content: " + ";
      border-radius: 50%;
-     font-size: 10px;
      display: table-cell;
      background: #9978B5;
      padding:5px;

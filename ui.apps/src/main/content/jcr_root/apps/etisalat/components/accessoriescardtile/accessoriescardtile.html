@@ -1,0 +1,34 @@
+<sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+     data-sly-use.tileModel="com.etisalat.core.models.TileModel"
+     data-panelcontainer="${wcmmode.edit && 'Accessories Card'}"
+     data-placeholder-text="${wcmmode.edit && 'Please update Accessories Card tile' @ i18n}">
+
+    <sly data-sly-test.accessoryCard="${tileModel.tileBoxContainerLayout == 'accessoriesCard' ? 'card-li' : ''}"></sly>
+    <sly data-sly-test.brandlogoCard="${tileModel.tileBoxContainerLayout == 'brandLogoCard' ? 'logo-li' : ''}"></sly>
+    <sly data-sly-test.recommbigCard="${tileModel.tileBoxContainerLayout == 'recommBigCard' ? 'eti-big-card-li' : ''}"></sly>
+    <sly data-sly-test.recommCard="${tileModel.tileBoxContainerLayout == 'recommCard' ? 'eti-card-li' : ''}"></sly>
+
+    <div class ="${accessoryCard}${brandlogoCard}${recommbigCard}${recommCard}">
+        <sly data-sly-test.cardLink="${properties.viewCardLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=cardLink}">
+        <a href="${commonlinkmodel.link}" target="${properties.cardtarget?'_blank':'_self'}" class="clickable-tile"></a> </sly>
+
+        <div data-sly-test="${properties.accessoriescardproductTitle}" class="title">
+            <p>${properties.accessoriescardproductTitle}</p>
+        </div>
+
+        <sly data-sly-test.customLink="${properties.viewAllLink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}">
+            <div data-sly-test="${commonlinkmodel.link && properties.viewAllTitle}" class="${!wcmmode.edit ? 'third-action-wrapper' :''}  action-link">
+                <a class="link"
+                   href="${commonlinkmodel.link}"
+                   target="${properties.linktarget?'_blank':'_self'}"
+                   title="${properties.viewAllTitle}">${properties.viewAllTitle}</a>
+            </div>
+        </sly>
+        <div class="img" data-sly-test="${properties['image/fileReference']}">
+            <div data-sly-resource="${tileModel.tileImageResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}" alt="${properties.accAltText}">
+            </div>
+        </div>
+    </div>
+
+</sly>
+<sly data-sly-call="${templates.placeholder @ isEmpty = !properties.accessoriescardproductTitle && !properties.viewAllTitle}"></sly>

@@ -3,7 +3,7 @@
     jcr:primaryType="nt:unstructured"
     jcr:title="Page"
     sling:resourceType="cq/gui/components/authoring/dialog"
-    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,etisalat.article.page.editor]"
+    extraClientlibs="[cq.common.wcm,core.wcm.components.page.v2.editor,cq.wcm.msm.properties,granite.contexthub.configuration,cq.siteadmin.admin.properties,cq.dropdown.dialog.multi.values]"
     helpPath="https://www.adobe.com/go/aem_cmp_page_v2"
     mode="edit"
     trackingFeature="core-components:page:v2">
@@ -18,10 +18,10 @@
                 sling:resourceType="granite/ui/components/coral/foundation/tabs"
                 size="L">
                 <items jcr:primaryType="nt:unstructured">
-                    <blogpost
+                    <articlepage
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/include"
-                        path="/mnt/overlay/etisalat/components/articlepage/tabs/blogpost"/>
+                        path="/mnt/overlay/etisalat/components/articlepage/tabs/articlepage"/>
                 </items>
             </tabs>
         </items>

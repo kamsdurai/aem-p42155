@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    cq:showOnCreate="{Boolean}false"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Article Page"
+    sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+    <items jcr:primaryType="nt:unstructured">
+        <column
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/container">
+            <items jcr:primaryType="nt:unstructured">
+                <articletype
+                    granite:class="cq-dialog-dropdown-showhide"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                    fieldLabel="Article Type"
+                    name="./articleType">
+                    <items jcr:primaryType="nt:unstructured">
+                        <blogpost
+                            jcr:primaryType="nt:unstructured"
+                            text="Blogpost"
+                            value="blogpost"/>
+                        <category
+                            jcr:primaryType="nt:unstructured"
+                            text="Newsroom"
+                            value="newsroom"/>
+                        <newssection
+                            jcr:primaryType="nt:unstructured"
+                            text="News Section"
+                            value="newssection"/>
+                    </items>
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-dialog-dropdown-showhide-target=".searchtype-showhide-target"
+                        cq-msm-lockable="articleType"/>
+                </articletype>
+                <categorytags
+                    granite:class="searchtype-showhide-target"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                        <businesscategory
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="cq/gui/components/coral/common/form/tagfield"
+                            allowBulkEdit="{Boolean}true"
+                            autocreateTag="{Boolean}true"
+                            fieldDescription="Defines the blogpost meta tags for search."
+                            fieldLabel="Business Category Tags"
+                            name="./businessBlogTag"
+                            required="{Boolean}true"
+                            rootPath="/content/cq:tags/etisalat/business/smb/category"/>
+                    </items>
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        cq-msm-lockable="businessBlogTag"
+                        showhidetargetvalue="blogpost"
+                        showhidetargetvalue1="newsroom"/>
+                </categorytags>
+                <datesection
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                        <articledate
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            fieldDescription="Article Date"
+                            fieldLabel="Article Date"
+                            name="./articleDate">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="articleDate"/>
+                        </articledate>
+                    </items>
+                    <granite:data jcr:primaryType="nt:unstructured"/>
+                </datesection>
+                <datetimesection
+                    granite:class="searchtype-showhide-target"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                        <articletime
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/datepicker"
+                            fieldDescription="Article Time"
+                            fieldLabel="Article Time"
+                            name="./articleTime"
+                            type="time">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="articleTime"/>
+                        </articletime>
+                    </items>
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        showhidetargetvalue="blogpost"
+                        showhidetargetvalue1="newsroom"/>
+                </datetimesection>
+                <blogmodelsize
+                    granite:class="searchtype-showhide-target"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                        <blogsize
+                            granite:class="cq-dialog-dropdown-showhide"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                            fieldDescription="Blog Tile Size"
+                            fieldLabel="Blog Tile Size"
+                            name="./blogsize">
+                            <items jcr:primaryType="nt:unstructured">
+                                <small
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Small"
+                                    value="3"/>
+                                <medium
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Medium"
+                                    value="6"/>
+                                <video
+                                    jcr:primaryType="nt:unstructured"
+                                    text="Video"
+                                    value="video"/>
+                            </items>
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-dialog-dropdown-showhide-target=".blogpost-showhide-target"
+                                cq-msm-lockable="blogsize"/>
+                        </blogsize>
+                        <blogpostvideo
+                            granite:class="blogpost-showhide-target"
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/container">
+                            <items jcr:primaryType="nt:unstructured">
+                                <youtubeurl
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                    fieldDescription="Enter the Youtube URL."
+                                    fieldLabel="Youtube Video URL"
+                                    name="./youTubeUrl">
+                                    <granite:data
+                                        jcr:primaryType="nt:unstructured"
+                                        cq-msm-lockable="youTubeUrl"/>
+                                </youtubeurl>
+                                <playicontext
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/foundation/form/textfield"
+                                    fieldDescription="Enter the Video Play Icon Text."
+                                    fieldLabel="Video Play Icon Text"
+                                    name="./playIconText"/>
+                            </items>
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                showhidetargetvalue="video"/>
+                        </blogpostvideo>
+                    </items>
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        showhidetargetvalue="blogpost"/>
+                </blogmodelsize>
+                <backto
+                    granite:class="searchtype-showhide-target"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                    <items jcr:primaryType="nt:unstructured">
+                        <backtobusiness
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                            fieldDescription="Enter Back to Business Blogpost Label"
+                            fieldLabel="Back to Business Label"
+                            name="./backToBusinessLbl"
+                            value="BACK TO BUSINESS BLOG HOME">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="backToBusinessLbl"/>
+                        </backtobusiness>
+                        <backtobusinesslink
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                            fieldDescription="Enter Back to Home Link."
+                            fieldLabel="Back to Home Link"
+                            name="./backToBusinessLink"
+                            rootPath="/content">
+                            <granite:data
+                                jcr:primaryType="nt:unstructured"
+                                cq-msm-lockable="backToBusinessLink"/>
+                        </backtobusinesslink>
+                    </items>
+                    <granite:data
+                        jcr:primaryType="nt:unstructured"
+                        showhidetargetvalue="blogpost"
+                        showhidetargetvalue1="newsroom"/>
+                </backto>
+                <imageresourcehidden
+                    granite:class="js-browse-activator"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/hidden"
+                    name="./image/sling:resourceType"
+                    value="etisalat/components/image"/>
+            </items>
+        </column>
+    </items>
+</jcr:root>

@@ -1,0 +1,391 @@
+<template  data-sly-template.billSummaryReport="${ @ billModel,properties}">
+ <html lang="ar">
+  <body dir="rtl" class="business">
+<div class="billing-report-card-preview">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="dns-prefetch" href="fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+       <sly data-sly-call="${clientlib.all @ categories='cmp.crx.billing.explainer'}" />
+    </sly>
+	<style>
+		.billing-report-card-preview .row{
+		position:relative;
+		}
+	</style>
+<div class="exp-report-wrapper exp-bill-summary zooming" id="${properties.reportCard}" data-bill-explainer="${billModel.stepsData}">
+    <!--
+      <button id="startTourBtn" class="btn btn-primary">Start</button> -->
+    <div class="exp-logo-report">
+        <img src="${billModel.billExplainerDAMPath}/etisalat_eng_logo.png" alt="">
+    </div>
+    <div class="exp-report-header">
+        <div class="row">
+            <div class="col-xs-10 col-xs-offset-right-2 col-xs-offset-0">
+                <h2>محمد احمد</h2>
+                <div class="row ptb-10">
+                    <div class="col-xs-6 pull-right-ar" id="Step-1">
+                        <div class="exp-focus-step">
+                            <span>1</span>
+                        </div>
+                        <p>رقم الهاتف المتحرك
+                            <span>05XXXXXXXX</span>
+                        </p>
+                    </div>
+                    <div class="col-xs-6" id="Step-2">
+                        <div class="exp-focus-step">
+                            <span>2</span>
+                        </div>
+                        <p>تاريخ إصدار الفاتورة
+                            <span>01 Oct 2019 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row ptb-10">
+                    <div class="col-xs-6 pull-right-ar" id="Step-3">
+                        <div class="exp-focus-step">
+                            <span>3</span>
+                        </div>
+                        <p>رقم الحساب
+                            <span>XXXXXXXXX</span>
+                        </p>
+                    </div>
+                    <div class="col-xs-6" id="Step-4">
+                        <div class="exp-focus-step">
+                            <span>4</span>
+                        </div>
+                        <p>فترة الفاتورة
+                            <span>01 Sep 2019 - 30 Sep 2019 </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="row ptb-10">
+                    <div class="col-xs-6">
+                    </div>
+                    <div class="col-xs-6" id="Step-5">
+                            <div class="exp-focus-step">
+                                    <span>5</span>
+                                </div>
+                        <p>رقم الفاتورة
+                            <span>XXXXXXXXXXXXX </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promo-small-02 exp-report-invoice">
+        <div class="row no-gutter">
+            <div class="content-section">
+                <div class="col-xs-12 col-md-12 col-lg-12">
+                    <div class="row" id="Step-6">
+                            <div class="exp-focus-step">
+                                    <span>6</span>
+                                </div>
+                        <span class="lbl">فاتورة ضريبية</span>
+                        <div class="detail-info-wrap detail-info-wrap-pricetag">
+                            <div class="detail-price-new">
+                                <div class="main-part">
+                                    <div dir="rtl" class="price">0.
+                                        <span>00</span>
+                                    </div>
+                                    <small>درهم
+                                        <i>متضمن 5% ضريبة القيمة المضافة</i>
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
+                        <h5> تُدفع قبل 15 أكتوبر 2019</h5>
+                    </div>
+                    <div class="row" id="Step-7">
+                            <div class="exp-focus-step">
+                                    <span>7</span>
+                                </div>
+                        <div class="exp-autopay-info">
+                            <div class="exp-autopay-icon">
+                                <span>
+                                    <svg>
+                                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#ac-autopay-card"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="exp-autopay-text">
+                                <p>
+                                    خدمة الدفع التلقائي مفعّلة على هذا الحساب
+                                    <span> (البطاقة المنتهية بالرقم 8889**** تنتهي بتاريخ 10/21)</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exp-pay-online" id="Step-8">
+                    <div class="exp-focus-step">
+                            <span>8</span>
+                        </div>
+                <h4>الدفع عبر الإنترنت</h4>
+                <a href="#">www.etisalat.ae/quickpay</a>
+            </div>
+        </div>
+    </div>
+    <div class="exp-premium-postpaid">
+        <div class="relative" id="Step-9">
+                <div class="exp-focus-step">
+                        <span>9</span>
+                    </div>
+            <h2>الباقة المفوترة المميزة المرنة 500</h2>
+            <h5>فترة العقد 01 أغسطس 2019 - 31 يوليو 2020
+            </h5>
+        </div>
+        <div class="exp-premium-postpaid-summary">
+            <h3 class="relative" id="Step-10">
+                    <div style="top: -8px;" class="exp-focus-step">
+                            <span>10</span>
+                        </div>
+                ملخص الفاتورة
+                <small class="pull-left">درهم</small>
+            </h3>
+            <div class="list" id="Step-11">
+                    <div class="exp-focus-step">
+                            <span>11</span>
+                        </div>
+                <p> الباقات، المزايا الإضافية ورسوم إيجارالأجهزة</p>
+                <span>0.00 </span>
+            </div>
+            <div class="list" id="Step-12">
+                    <div class="exp-focus-step">
+                            <span>12</span>
+                        </div>
+                <p> رسوم الاستخدام خارج الباقة</p>
+                <span>0.00 </span>
+            </div>
+            <div class="list" id="Step-13">
+                    <div class="exp-focus-step">
+                            <span>13</span>
+                        </div>
+                <p> رسوم تُدفع لمرة واحدة</p>
+                <span>0.00 </span>
+            </div>
+            <div class="list" id="Step-14">
+                    <div class="exp-focus-step">
+                            <span>14</span>
+                        </div>
+                <p> العروض، المستردات والتسويات</p>
+                <span>0.00 </span>
+            </div>
+            <div class="list" id="Step-15">
+                    <div class="exp-focus-step">
+                            <span>15</span>
+                        </div>
+                <p> رسوم خدمات القيمة المضافة والأطراف الأخرى</p>
+                <span>0.00</span>
+            </div>
+            <div class="list" id="Step-16">
+                    <div class="exp-focus-step">
+                            <span>16</span>
+                        </div>
+                <p> ضريبة القيمة المضافة على الخدمات الخاضعة للضريبة</p>
+                <span>0.00 </span>
+            </div>
+            <div class="list exp-current-month-summary" id="Step-17">
+                <div class="exp-focus-step">
+                    <span>17</span>
+                </div>
+                <h4>رسوم الشهر الحالي (متضمن 5% ضريبة القيمة المضافة)</h4>
+                <span>0.00</span>
+            </div>
+            <div class="list" id="Step-18">
+                    <div class="exp-focus-step">
+                            <span>18</span>
+                        </div>
+                <p> رصيد من فاتورتك الماضية</p>
+                <span>0.00 </span>
+            </div>
+            <div class="list" id="Step-19">
+                    <div class="exp-focus-step">
+                            <span>19</span>
+                        </div>
+                <p> الدفعات المستلمة</p>
+                <span>0.00 </span>
+            </div>
+            <div class="list exp-current-month-summary" id="Step-20">
+                <div class="exp-focus-step">
+                    <span>20</span>
+                </div>
+                <h4>المبلغ المتبقي من فواتيرك السابقة (متضمن 5% ضريبة القيمة المضافة)
+                </h4>
+                <span>0.00</span>
+            </div>
+            <div class="list exp-grand-month-summary" id="Step-21">
+                <div class="exp-focus-step">
+                    <span>21</span>
+                </div>
+                <h3>
+                    إجمالي الفاتورة
+                    <small>AED
+                        <i>(متضمن 5% ضريبة القيمة المضافة) </i>
+                    </small>
+                </h3>
+                <div class="detail-info-wrap detail-info-wrap-pricetag">
+                    <div class="detail-price-new">
+                        <div class="main-part">
+                            <div dir="rtl" class="price">0.<span>00</span></div>
+                            <small>درهم
+                                    <i>متضمن 5% ضريبة القيمة المضافة</i>
+                                </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exp-footer">
+        <img src="${billModel.billExplainerDAMPath}/exp-report-footer-ar.png" alt="">
+    </div>
+</div>
+<script>
+     var tour_steps = $("#bill-summary").data("bill-explainer");
+        var jq = $.noConflict(true);
+        jq(function () {
+            jq.each(tour_steps, function (i, step) {
+                step['content'] += '<span class="tour-pager">' + (i + 1) + '/' + tour_steps.length + '</span>';
+                var percent = parseInt(((i + 1) / tour_steps.length) * 100);
+            });
+            var tourEnd = false;
+            var tour = new Tour({
+                backdrop: true,
+                storage: false,
+                steps: tour_steps,
+                 template: `<div class='exp-popover popover tour'><h3 class='popover-title'></h3><div class='popover-content'></div><nav class='popover-navigation'><div class='btn-group'><button class='btn btn-default prev' data-role='prev'></button><button class='btn btn-default next' data-role='next'> </button></div><button class='btn-end close' data-role='end'></button></nav></div>`,
+                onShow: function () {
+                    setTimeout(function () {
+                        jq(".popover").append("<div class='zooming-contorls'><button type='button' id='zoom-in'><svg><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#zoomplus'></use></svg></button><button type='button' id='zoom-out'><svg><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#zoomminus'></use></svg></button></div>");
+                        jq('#zoom-in').click(function () {
+                            updateZoom(0.1);
+                        });
+                        jq('#zoom-out').click(function () {
+                            updateZoom(-0.1);
+                        });
+                    }, 1000);
+                },
+                onEnd: function (tour) {
+                    tourEnd = true;
+                }
+            });
+            zoomLevel = 0.5;
+            var updateZoom = function (zoom) {
+                zoomLevel += zoom;
+                jq('.zooming').css({ zoom: zoomLevel, '-moz-transform': 'scale(' + zoomLevel + ')' });
+            }
+            tour.init();
+            jq('#startTourBtn').click(function () {
+                tour.start();
+            });
+            jq('#startHereBtn').click(function () {
+                tour.goTo(5);
+            });
+            jq('#Step-1').click(function () {
+                gotoSlide(0);
+            });
+            jq('#Step-2').click(function () {
+                gotoSlide(1);
+            });
+            jq('#Step-3').click(function () {
+                gotoSlide(2);
+            });
+            jq('#Step-4').click(function () {
+                gotoSlide(3);
+            });
+            jq('#Step-5').click(function () {
+                gotoSlide(4);
+            });
+            jq('#Step-6').click(function () {
+                gotoSlide(5);
+            });
+            jq('#Step-7').click(function () {
+                gotoSlide(6);
+            });
+            jq('#Step-8').click(function () {
+                gotoSlide(7);
+            });
+            jq('#Step-9').click(function () {
+                gotoSlide(8);
+            });
+            jq('#Step-10').click(function () {
+                gotoSlide(9);
+            });
+            jq('#Step-11').click(function () {
+                gotoSlide(10);
+            });
+            jq('#Step-12').click(function () {
+                gotoSlide(11);
+            });
+            jq('#Step-13').click(function () {
+                gotoSlide(12);
+            });
+            jq('#Step-14').click(function () {
+                gotoSlide(13);
+            });
+            jq('#Step-15').click(function () {
+                gotoSlide(14);
+            });
+            jq('#Step-16').click(function () {
+                gotoSlide(15);
+            });
+            jq('#Step-17').click(function () {
+                gotoSlide(16);
+            });
+            jq('#Step-18').click(function () {
+                gotoSlide(17);
+            });
+            jq('#Step-19').click(function () {
+                gotoSlide(18);
+            });
+            jq('#Step-20').click(function () {
+                gotoSlide(19);
+            });
+            jq('#Step-21').click(function () {
+                gotoSlide(20);
+            });
+            var gotoSlide = function (slideNum) {
+                if (tourEnd == true) {
+                    tour.restart();
+                    tourEnd = false;
+                }
+                tour.goTo(slideNum);
+            }
+    });
+	</script>
+    <svg id="svg-spritemap" xmlns="http://www.w3.org/2000/svg" style="display: none">
+            <symbol id="ac-autopay-card" width="30px" height="24px" viewBox="0 0 30 24" version="1.1">
+                <g stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <g transform="translate(-65.000000, -1358.000000)">
+                        <g transform="translate(64.000000, 1354.000000)">
+                            <path
+                                d="M15.1132872,20.3972912 L4.18286669,20.3972912 C2.96657337,20.3972912 2,19.420491 2,18.1893341 L2,6.70795712 C2,5.47768341 2.96657337,4.5 4.18286669,4.5 L25.138387,4.5 C26.3546803,4.5 27.3212536,5.47768341 27.3212536,6.70795712 L27.299457,12.0041972"
+                                id="Stroke-1"></path>
+                            <path d="M2,8 L27.3212536,8" id="Stroke-3"></path>
+                            <path d="M23.833165,11.5 L19.4674316,11.5" id="Stroke-5"></path>
+                            <path d="M14.2249531,11.5 L5.49348633,11.5" id="Stroke-7"></path>
+                            <path d="M8.98607304,14 L5.49348633,14" id="Stroke-9"></path>
+                            <polyline id="Stroke-5" points="29.0738443 17.4767369 29.0738443 20.5678769 26.4544043 20.5678769">
+                            </polyline>
+                            <path
+                                d="M19.9665011,22.4869858 C19.9665011,19.7190908 22.1842937,17.4758064 24.9207354,17.4758064 C26.8661062,17.4758064 28.1906697,18.7405242 29.0018229,20.3903098"
+                                id="Stroke-7"></path>
+                            <polyline id="Stroke-9" points="20.4655706 26.6707361 20.4655706 24.462779 23.0850106 24.462779">
+                            </polyline>
+                            <path
+                                d="M29.8588826,22.4665011 C29.8588826,25.233513 27.64109,27.4767974 24.9046483,27.4767974 C22.9584044,27.4767974 21.2758507,26.3436738 20.4655706,24.6930051"
+                                id="Stroke-11"></path>
+                        </g>
+                    </g>
+                </g>
+            </symbol>
+            </svg>
+	</div>
+	
+	</body>
+</html>
+</template>

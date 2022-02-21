@@ -1,0 +1,33 @@
+<template data-sly-template.ewalletNewsSection="${ @ properties,newssection}">
+  <div class="consumerload">
+    <div class="loader-container"><em class="pagination-loader"></em></div>
+  </div>
+  <sly data-sly-use.templates="core/wcm/components/commons/v1/templates.html"
+       data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component"
+       id="${component.id}"
+       data-sly-set.itemsDisplay="${(properties.numberOfItems && properties.numberOfItems > 0) ? properties.numberOfItems : 5}"       
+       data-sly-set.newsList="${newssection.ewalletNewsSectionItems}">     
+   <div data-sly-test="${newsList.size >0}" data-sly-repeat.pageItem="${newsList}" class="ewalletnews">
+    <div class="row">
+      <div class="col-md-12 col-lg-10 col-lg-offset-1 col-lg-offset-right-1 news-item">
+        <a href="${pageItem.path}">
+          <div class="row">
+            <div data-sly-test="${pageItem.thumbnailResource}" class="col-xs-5 col-md-4 col-lg-4 news-img">
+              <sly data-sly-resource="${pageItem.thumbnailResource @ resourceType='core/wcm/components/image/v2/image', wcmmode='disabled'}"></sly>
+            </div>
+            <div class="col-xs-7 col-md-8 col-lg-8 news-text">
+              <h4 data-sly-test="${pageItem.title}">${pageItem.title}</h4>
+              <label data-sly-test="${pageItem.articleDateDisplayString}" class="date">${pageItem.articleDateDisplayString}</label>
+                <div data-sly-test="${pageItem.description}"> <p>${pageItem.description @ context='html'}</p></div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+   </div>
+    <input type="hidden" id="current_page" value="0">
+    <input type="hidden" id="show_per_page" value="${itemsDisplay}">
+    <div style="visibility: hidden;" id="page_navigation" class="pagination-wrap"></div>
+  </sly>
+  <sly data-sly-call="${templates.placeholder @ isEmpty = newsList.size == 0}"></sly>
+</template>

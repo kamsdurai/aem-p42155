@@ -1,0 +1,152 @@
+<template  data-sly-template.billHistoryReport="${ @ billModel,properties}">
+	<div class="billing-report-card-preview">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="dns-prefetch" href="fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+		<sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+		<sly data-sly-call="${clientlib.all @ categories='cmp.crx.billing.explainer'}" />
+		</sly>
+
+<div class="exp-report-wrapper exp-bill-usage zooming" id="${properties.reportCard}" data-bill-explainer="${billModel.stepsData}">
+	<table id="Table_01" width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+		<tbody>
+			<tr>
+				<td colspan="2">
+					<img src="${billModel.billExplainerDAMPath}/281723634_01.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<img src="${billModel.billExplainerDAMPath}/281723634_02.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<img src="${billModel.billExplainerDAMPath}/281723634_03.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<img src="${billModel.billExplainerDAMPath}/281723634_04.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" id="Step-1">
+					<div class="exp-focus-step">
+						<span>1</span>
+					</div>
+					<img src="${billModel.billExplainerDAMPath}/281723634_05.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<img src="${billModel.billExplainerDAMPath}/281723634_06.png" alt="">
+				</td>
+			</tr>
+			<tr>
+				<td id="Step-2">
+					<div class="exp-focus-step">
+						<span>2</span>
+					</div>
+					<img src="${billModel.billExplainerDAMPath}/281723634_07.png" alt="">
+				</td>
+				<td id="Step-3">
+					<div class="exp-focus-step">
+						<span>3</span>
+					</div>
+					<img src="${billModel.billExplainerDAMPath}/281723634_08.png" alt="">
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+
+	</div>
+	<style>
+		.billing-report-card-preview .row {
+			position: relative;
+		}
+	
+		table {
+			background-color: #f7f8f4;
+		}
+	</style>
+	<script>
+		var tour_stepsTotalUsage = $("#bill-history").data("bill-explainer");
+		var jq = $.noConflict(true);
+		jq(function () {
+			jq.each(tour_stepsTotalUsage, function (i, step) {
+				step["content"] += '<span class="tour-pager">' + (i + 1) + "/" + tour_stepsTotalUsage.length + "</span>";
+				var percent = parseInt(((i + 1) / tour_stepsTotalUsage.length) * 100);
+			});
+			var tourEnd = false;
+			var tour = new Tour({
+				backdrop: true,
+				storage: false,
+				animation: true,
+				smartPlacement: false,
+				steps: tour_stepsTotalUsage,
+				onNext: function (tour) {
+					tour._options.steps[1].placement = "top";
+					tour._options.steps[2].placement = "top";
+				},
+
+				onPrev: function (tour) {
+					tour._options.steps[1].placement = "top";
+					tour._options.steps[2].placement = "top";
+				},
+
+			         template: `<div class='exp-popover popover tour'><h3 class='popover-title'></h3><div class='popover-content'></div><nav class='popover-navigation'><div class='btn-group'><button class='btn btn-default prev' data-role='prev'></button><button class='btn btn-default next' data-role='next'> </button></div><button class='btn-end close' data-role='end'></button></nav></div>`,
+				onShow: function () {
+					setTimeout(function () {
+						jq(".popover").append(
+							"<div class='zooming-contorls'><button type='button' id='zoom-in'><svg><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#zoomplus'></use></svg></button><button type='button' id='zoom-out'><svg><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#zoomminus'></use></svg></button></div>",
+						);
+						jq("#zoom-in")
+							.off("click")
+							.on("click", function () {
+								updateZoom(0.1);
+							});
+						jq("#zoom-out")
+							.off("click")
+							.on("click", function () {
+								updateZoom(-0.1);
+							});
+					}, 1000);
+				},
+				onEnd: function (tour) {
+					tourEnd = true;
+				},
+			});
+			zoomLevel = 0.5;
+			var updateZoom = function (zoom) {
+				zoomLevel += zoom;
+				jq(".zooming").css({ zoom: zoomLevel, "-moz-transform": "scale(" + zoomLevel + ")", width: "180vw" });
+			};
+			//tour.start();
+			tour.init();
+
+			jq("#Step-1").click(function () {
+				gotoSlide(0);
+			});
+			jq("#Step-2").click(function () {
+				tour._options.steps[1].placement = "top";
+				gotoSlide(1);
+			});
+			jq("#Step-3").click(function () {
+				tour._options.steps[2].placement = "top";
+				gotoSlide(2);
+			});
+			var gotoSlide = function (slideNum) {
+				if (tourEnd == true) {
+					tour.restart();
+					tourEnd = false;
+				}
+				tour.goTo(slideNum);
+			};
+		});
+
+
+	</script>
+</template>

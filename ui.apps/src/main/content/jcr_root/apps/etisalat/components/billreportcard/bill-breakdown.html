@@ -1,0 +1,14 @@
+<template  data-sly-template.billBreakDown="${ @ billModel,properties,billPageLocale}">
+ <sly data-sly-test="${properties.billBreakdownSlideType == 'bill-breakdown-slide1'}"
+	  data-sly-use.breakDownSlideOneTemplate="billbreakdownslides/bill-breakdown-slide1${billPageLocale}.html"
+	  data-sly-call="${breakDownSlideOneTemplate.breakDownSlideOne @ billModel=billModel,properties=properties}"> 
+ </sly> 
+  <sly data-sly-test="${properties.billBreakdownSlideType == 'bill-breakdown-slide2'}"
+	  data-sly-use.breakDownSlideOneTemplate="billbreakdownslides/bill-breakdown-slide2${billPageLocale}.html"
+	  data-sly-call="${breakDownSlideOneTemplate.breakDownSlideOne @ billModel=billModel,properties=properties}"> 
+ </sly> 
+  <sly data-sly-test="${properties.billBreakdownSlideType == 'bill-breakdown-slide3'}"
+	  data-sly-use.breakDownSlideOneTemplate="billbreakdownslides/bill-breakdown-slide3${billPageLocale}.html"
+	  data-sly-call="${breakDownSlideOneTemplate.breakDownSlideOne @ billModel=billModel,properties=properties}"> 
+ </sly> 
+</template>

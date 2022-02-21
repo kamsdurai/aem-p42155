@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Bill Report Card"
+     extraClientlibs="[cq.dropdown.dialog.multi.values]"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <tabs
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/tabs"
+                maximized="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <properties
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Properties"
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        margin="{Boolean}true">
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                                margin="{Boolean}true">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <column
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <reportcardtitle
+							                    granite:class="billexplainer-reportcard-showhide-target"
+							                    jcr:primaryType="nt:unstructured"
+							                    sling:resourceType="granite/ui/components/coral/foundation/container">
+							                    <items jcr:primaryType="nt:unstructured">
+							                       <sectiontitle
+	                                                   jcr:primaryType="nt:unstructured"
+	                                                   sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+	                                                   fieldDescription="A title to display as the headline for the blog search"
+	                                                   fieldLabel="Report Section Title"
+	                                                   name="./sectionTitle"/>
+							                    </items>
+							                     <granite:data
+							                        jcr:primaryType="nt:unstructured"							                        
+							                        showhidetargetvalue="bill-summary"
+							                        showhidetargetvalue1="total-usage-summary"
+							                        showhidetargetvalue2="bill-history"/>
+							                 </reportcardtitle>                                            
+                                            <reportcard
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                defaultValue="default"
+                                                granite:class="cq-dialog-dropdown-showhide"
+                                                fieldLabel="Report Card Type"
+                                                name="./reportCard">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <billsummary
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Bill Summary"
+                                                        value="bill-summary"/>
+                                                    <totalsummary
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Total Usage Summary"
+                                                        value="total-usage-summary"/>
+                                                    <billhistory
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Bill History"
+                                                        value="bill-history"/>
+                                                    <billbreakdown
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Bill Breakdown"
+                                                        value="bill-breakdown"/>
+                                                    <usageservicesbreakdown
+                                                        jcr:primaryType="nt:unstructured"
+                                                        text="Usage and Services Breakdown"
+                                                        value="usage-and-services-breakdown"/>
+                                                </items>
+                                                <granite:data
+							                        jcr:primaryType="nt:unstructured"
+							                        cq-dialog-dropdown-showhide-target=".billexplainer-reportcard-showhide-target"/>							                        
+                                            </reportcard>
+                                            <billBreakGroup
+							                    granite:class="billexplainer-reportcard-showhide-target"
+							                    jcr:primaryType="nt:unstructured"
+							                    sling:resourceType="granite/ui/components/coral/foundation/container">
+							                    <items jcr:primaryType="nt:unstructured">
+							                        <slidedata							                            
+							                            jcr:primaryType="nt:unstructured"
+							                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+							                            fieldDescription="Bill Breakdrown Slide"
+							                            fieldLabel="Bill breakdown slide"
+							                            name="./billBreakdownSlideType">
+							                            <items jcr:primaryType="nt:unstructured">
+							                                <slide1
+							                                    jcr:primaryType="nt:unstructured"
+							                                    text="Bill Breakdown Slide 1"
+							                                    value="bill-breakdown-slide1"/>
+							                                <slide2
+							                                    jcr:primaryType="nt:unstructured"
+							                                    text="Bill Breakdown Slide 2"
+							                                    value="bill-breakdown-slide2"/>
+							                                <slide3
+							                                    jcr:primaryType="nt:unstructured"
+							                                    text="Bill Breakdown Slide 3"
+							                                    value="bill-breakdown-slide3"/>
+							                            </items>							                           
+							                        </slidedata>							                        
+							                    </items>
+							                    <granite:data
+							                        jcr:primaryType="nt:unstructured"
+							                        showhidetargetvalue="bill-breakdown"/>
+							                </billBreakGroup>
+							                <usageServiceGroup
+							                    granite:class="billexplainer-reportcard-showhide-target"
+							                    jcr:primaryType="nt:unstructured"
+							                    sling:resourceType="granite/ui/components/coral/foundation/container">
+							                    <items jcr:primaryType="nt:unstructured">
+							                        <slidedata							                            
+							                            jcr:primaryType="nt:unstructured"
+							                            sling:resourceType="granite/ui/components/coral/foundation/form/select"
+							                            fieldDescription="Bill usage service slide type"
+							                            fieldLabel="Bill usage service slide"
+							                            name="./usageServiceSlideType">
+							                            <items jcr:primaryType="nt:unstructured">
+							                                <slide1
+							                                    jcr:primaryType="nt:unstructured"
+							                                    text="Usage Service Slide 1"
+							                                    value="usage-service-slide1"/>
+							                                <slide2
+							                                    jcr:primaryType="nt:unstructured"
+							                                    text="Usage Service Slide 2"
+							                                    value="usage-service-slide2"/>
+							                                <slide3
+							                                    jcr:primaryType="nt:unstructured"
+							                                    text="Usage Service Slide 3"
+							                                    value="usage-service-slide3"/>
+							                                <slide4
+							                                    jcr:primaryType="nt:unstructured"
+							                                    text="Usage Service Slide 4"
+							                                    value="usage-service-slide4"/>
+							                            </items>							                           
+							                        </slidedata>							                        
+							                    </items>
+							                    <granite:data
+							                        jcr:primaryType="nt:unstructured"
+							                        showhidetargetvalue="usage-and-services-breakdown"/>
+							                </usageServiceGroup>
+                                            <steplist
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/container">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <stepsdata
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        fieldLabel="Step Item(s)">
+                                                        <field
+                                                            granite:class="coral-Well"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/coral/foundation/container"
+                                                            name="./stepItems">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <title
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Title that will appear for the popup"
+                                                                    fieldLabel="Step Title"
+                                                                    maxlength="{Long}150"
+                                                                    name="./title"
+                                                                    required="{Boolean}true"/>
+                                                                <content
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                    fieldDescription="Step Content will appear for the popup."
+                                                                    fieldLabel="Step Content"
+                                                                    maxlength="{Long}250"
+                                                                    name="./content"
+                                                                    required="{Boolean}true"/>
+                                                                <placement
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                                                    fieldLabel="Step Placement"
+                                                                    name="./placement">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <bottom
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            text="Bottom"
+                                                                            value="bottom"/>
+                                                                    </items>
+                                                                </placement>
+                                                            </items>
+                                                        </field>
+                                                    </stepsdata>
+                                                </items>
+                                            </steplist>
+                                        </items>
+                                    </column>
+                                </items>
+                            </columns>
+                        </items>
+                    </properties>
+                </items>
+            </tabs>
+        </items>
+    </content>
+</jcr:root>

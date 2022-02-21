@@ -1,0 +1,115 @@
+<template  data-sly-template.breakDownSlideOne="${ @ billModel,properties}">
+  <div class="billing-report-card-preview">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="dns-prefetch" href="fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="">
+	  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+	  <sly data-sly-use.clientlib="/libs/granite/sightly/templates/clientlib.html">
+	     <sly data-sly-call="${clientlib.all @ categories='cmp.crx.billing.explainer'}" />
+	  </sly>
+	<style>
+		.billing-report-card-preview .row{
+		position:relative;
+	}
+    </style>
+<div class="exp-report-wrapper exp-bill-breakdown zooming" id="${properties.billBreakdownSlideType}" data-bill-explainer="${billModel.stepsData}">
+      <table id="Table_01" width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+          <tbody><tr>
+            <td>
+              <img src="${billModel.billExplainerDAMPath}/report-billbreakdown-logo.png" alt=""></td>
+            <td>
+              <img src="${billModel.billExplainerDAMPath}/report-billbreakdown-step1.png" alt=""></td>
+            <td>
+              <img src="${billModel.billExplainerDAMPath}/report-billbreakdown-bg.png" alt=""></td>
+          </tr>
+          <tr>
+              <td colspan="4">
+                <img src="${billModel.billExplainerDAMPath}/report-billbreakdown-step2.png" height="45" alt=""></td>
+            </tr>
+            <tr>
+              <td colspan="4">
+                <img src="${billModel.billExplainerDAMPath}/report-billbreakdown-slide2-report1.png" alt=""></td>
+            </tr>
+          <tr>
+            <td colspan="4" id="Step-1">
+                <div class="exp-focus-step">
+                    <span>1</span>
+                  </div>
+              <img src="${billModel.billExplainerDAMPath}/report-billbreakdown-slide2-step1.png" alt=""></td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <img src="${billModel.billExplainerDAMPath}/report-billbreakdown-slide2-report2.png" alt=""></td>
+          </tr>
+          <tr>
+            <td colspan="4" id="Step-2">
+                <div class="exp-focus-step">
+                    <span>2</span>
+                  </div>
+              <img src="${billModel.billExplainerDAMPath}/report-billbreakdown-slide2-step2.png" alt=""></td>
+          </tr>
+          <tr>
+            <td colspan="4">
+              <img src="${billModel.billExplainerDAMPath}/report-billbreakdown-slide2-report3.png" alt=""></td>
+          </tr>
+        </tbody></table>
+  </div>
+	<script>
+	     var tour_stepsbillBreakDownSlide2 = $("#bill-breakdown-slide2").data("bill-explainer");
+	      var jq = $.noConflict(true);
+	      jq(function(){
+	        jq.each(tour_stepsbillBreakDownSlide2, function (i, step) {
+	          step['content'] += '<span class="tour-pager">' + (i + 1) + '/' + tour_stepsbillBreakDownSlide2.length + '</span>';
+	          var percent = parseInt(((i + 1) / tour_stepsbillBreakDownSlide2.length) * 100);
+	        });
+	        var tourEnd = false;
+	        var tour = new Tour({
+	          backdrop: true,
+	          storage: false,
+	          steps: tour_stepsbillBreakDownSlide2,
+	          template: `<div class='exp-popover popover tour'><h3 class='popover-title'></h3><div class='popover-content'></div><nav class='popover-navigation'><div class='btn-group'><button class='btn btn-default prev' data-role='prev'></button><button class='btn btn-default next' data-role='next'> </button></div><button class='btn-end close' data-role='end'></button></nav></div>`,
+	          onShow:function(){
+	            setTimeout(function(){
+	              jq(".popover").append("<div class='zooming-contorls'><button type='button' id='zoom-in'><svg><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#zoomplus'></use></svg></button><button type='button' id='zoom-out'><svg><use xmlns:xlink='http://www.w3.org/1999/xlink' xlink:href='#zoomminus'></use></svg></button></div>");
+	              jq('#zoom-in').off('click').on('click', function () {
+	                updateZoom(0.1);
+	              });
+	              jq('#zoom-out').off('click').on('click', function () {
+	                updateZoom(-0.1);
+	              });
+	            },1000);
+	          },
+	          onEnd: function(tour){
+	             tourEnd = true;
+	          }
+	        });
+	          zoomLevel = 0.5;
+	          var updateZoom = function (zoom) {
+	            zoomLevel += zoom;
+	            jq('.zooming').css({ zoom: zoomLevel, '-moz-transform': 'scale(' + zoomLevel + ')', width:'180vw' });
+	          }
+	      //tour.start();
+	      tour.init();
+	        jq('#startTourBtn').click(function () {
+	          tour.start();
+	        });
+	        jq('#startHereBtn').click(function () {
+	          tour.goTo(5);
+	        });
+	        jq('#Step-1').click(function () {
+	          gotoSlide(0);
+	        });
+	        jq('#Step-2').click(function () {
+	          gotoSlide(1);
+	        });
+	        var gotoSlide = function (slideNum){
+	          if(tourEnd == true){
+	              tour.restart();
+	              tourEnd = false;
+	          }
+	          tour.goTo(slideNum);
+	        }
+	      });
+	</script>
+</div>
+</template>
