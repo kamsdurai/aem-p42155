@@ -44,14 +44,14 @@ import org.slf4j.LoggerFactory;
 @ServiceVendor("Adobe")
 public class LoggingFilter implements Filter {
 
-    private final Logger logger = LoggerFactory.getLogger(getClass());
+    private static final Logger LOGGER = LoggerFactory.getLogger(LoggingFilter.class);
 
     @Override
     public void doFilter(final ServletRequest request, final ServletResponse response,
                          final FilterChain filterChain) throws IOException, ServletException {
 
         final SlingHttpServletRequest slingRequest = (SlingHttpServletRequest) request;
-        logger.debug("request for {}, with selector {}", slingRequest
+        LOGGER.debug("request for {}, with selector {}", slingRequest
                 .getRequestPathInfo().getResourcePath(), slingRequest
                 .getRequestPathInfo().getSelectorString());
 
@@ -60,10 +60,12 @@ public class LoggingFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) {
+        // method to initialize the Logging Filter class
     }
 
     @Override
     public void destroy() {
+        // method to stop incoming requests
     }
 
 }
