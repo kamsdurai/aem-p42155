@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_niger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_niger" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-146" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <path d="M28,55.63 C38.8049862,55.630604 48.6189001,49.3328217 53.12,39.51 L2.88,39.51 C7.38307387,49.3311077 17.1957496,55.6280954 28,55.63 L28,55.63 Z" id="Shape" fill="#0DB02B"></path>
+                        <path d="M28,0.36 C17.1957496,0.361904556 7.38307387,6.65889233 2.88,16.48 L53.12,16.48 C48.6169261,6.65889233 38.8042504,0.361904556 28,0.36 L28,0.36 Z" id="Shape" fill="#E05206"></path>
+                        <path d="M0.37,28 C0.366682195,31.9727976 1.22293597,35.899284 2.88,39.51 L53.12,39.51 C56.4626197,32.2076738 56.4626197,23.8123262 53.12,16.51 L2.88,16.51 C1.22635245,20.1147875 0.370194125,24.0340143 0.37,28 L0.37,28 Z" id="Shape" fill="#FFFFFF"></path>
+                        <circle id="Oval" fill="#E05206" cx="28" cy="27.99" r="8.84"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

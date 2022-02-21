@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>outline 1pt / plane / plane_black_64</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="outline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="outline-1pt-/-plane-/-plane_black" stroke="#242424">
+            <path d="M49.0161067,55.2868197 L53.5962098,50.7067541 L44.5975787,25.2965246 L55.2688793,15.1219672 C55.2688793,15.1219672 59.7424897,8.64708197 57.5685702,6.43186885 C55.3524209,4.25796721 48.8774826,8.73154098 48.8774826,8.73154098 L38.7037599,19.4027541 L13.292404,10.4041967 L8.71230092,14.9833443 L30.849925,27.6384262 L17.3519783,41.7944918 L6.58887368,39.1138361 L4,41.7017705 L11.7748834,47.6451148 L11.3222895,48.1188197 C11.3222895,48.1188197 9.84883483,50.2908852 11.7702932,52.2288525 C13.7082763,54.1512131 15.8812777,52.6768525 15.8812777,52.6768525 L16.3549865,52.2251803 L22.2983795,60 L24.8863351,57.4111475 L22.2047394,46.6472131 L36.361839,33.149377 L49.0161067,55.2868197 L49.0161067,55.2868197 Z" id="Line"></path>
+        </g>
+    </g>
+</svg>

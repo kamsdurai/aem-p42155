@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>outline 1pt / bill / bill_black_64</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="outline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="outline-1pt-/-bill-/-bill_black" stroke="#242424">
+            <path d="M19,20 L33,20" id="Line"></path>
+            <path d="M19,28 L29,28" id="Line" transform="translate(24.000000, 28.000000) scale(-1, 1) translate(-24.000000, -28.000000) "></path>
+            <path d="M19,36 L31,36" id="Line"></path>
+            <path d="M19,44 L27,44" id="Line"></path>
+            <path d="M42,20 L45,20" id="Line"></path>
+            <path d="M42,28 L45,28" id="Line"></path>
+            <path d="M42,36 L45,36" id="Line"></path>
+            <path d="M42,44 L45,44" id="Line"></path>
+            <polygon id="Line" points="12 60 17.0442168 55.1373089 22.0004996 59.9151632 27.1286535 55.1373089 31.9990007 59.9151632 36.9992506 55.0948905 41.9995004 59.9151632 46.9997502 55.0948905 52 60 52 4.0848368 46.9997502 8.82027269 41.9995004 4 36.9992506 8.82027269 31.9990007 4 26.9987509 8.82027269 22.0004996 4 17.0002498 8.82027269 12 4.0848368"></polygon>
+        </g>
+    </g>
+</svg>

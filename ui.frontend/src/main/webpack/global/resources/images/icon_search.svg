@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>SVG/icon_search</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="2.-Export-Sprint-02" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icon_search" stroke="#242424">
+            <g id="Icon-/-Outline-/-Search-/-a.-Dark-grey-(#242424)">
+                <path d="M18.4819103,18.4819103 L30.0000483,30.0000483" id="Line"></path>
+                <path d="M21.3103448,11.6551724 C21.3103448,16.9877241 16.9877241,21.3103448 11.6551724,21.3103448 C6.32262069,21.3103448 2,16.9877241 2,11.6551724 C2,6.32310345 6.32262069,2 11.6551724,2 C16.9877241,2 21.3103448,6.32310345 21.3103448,11.6551724 L21.3103448,11.6551724 Z" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>

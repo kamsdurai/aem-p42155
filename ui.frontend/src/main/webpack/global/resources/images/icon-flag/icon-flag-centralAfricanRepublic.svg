@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 49.3 (51167) - http://www.bohemiancoding.com/sketch -->
+    <title>Flag/flag_central_african_republic</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Flag/flag_central_african_republic" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Asset-45" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+            <g id="Layer_2">
+                <g>
+                    <g id="Layer_1-2">
+                        <circle id="Oval" fill="#000000" cx="28" cy="28" r="28"></circle>
+                        <path d="M4.09,41.82 L51.91,41.82 C54.3497823,37.6231363 55.6333799,32.8545022 55.63,28 L0.37,28 C0.368050052,32.8543135 1.65154917,37.6225817 4.09,41.82 L4.09,41.82 Z" id="Shape" fill="#289728"></path>
+                        <path d="M28,55.63 C37.8653441,55.6306892 46.9809023,50.3657014 51.91,41.82 L4.09,41.82 C9.01909766,50.3657014 18.1346559,55.6306892 28,55.63 Z" id="Shape" fill="#FFCE00"></path>
+                        <path d="M0.37,28 L55.63,28 C55.6303435,23.1445823 54.3432789,18.3758872 51.9,14.18 L4.09,14.18 C1.65243516,18.3777872 0.369001526,23.1458122 0.37,28 L0.37,28 Z" id="Shape" fill="#FFFFFF"></path>
+                        <path d="M28,0.37 C18.1352091,0.371374714 9.02060894,5.63580919 4.09,14.18 L51.91,14.18 C46.9809023,5.63429864 37.8653441,0.369310819 28,0.37 L28,0.37 Z" id="Shape" fill="#003082"></path>
+                        <path d="M28,0.37 C25.6674088,0.379259905 23.3454591,0.685044896 21.09,1.28 L21.09,54.73 C25.6173876,55.9386556 30.3826124,55.9386556 34.91,54.73 L34.91,1.28 C32.65452,0.685151236 30.3325838,0.379368039 28,0.37 L28,0.37 Z" id="Shape" fill="#D21034"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
