@@ -1,4 +1,3 @@
 #base=css
 
 etisalat.css
-fonts/fonts.min.css
