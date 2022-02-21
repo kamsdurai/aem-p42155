@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64px" height="64px" viewBox="0 0 64 64" version="1.1" class="replaced-svg">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>outline 1pt / account / account_black_64</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="outline" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="outline-1pt-/-account-/-account_black" stroke="#242424">
+            <path d="M60,32 C60,47.465 47.464,60 32,60 C16.536,60 4,47.465 4,32 C4,16.536 16.536,4 32,4 C47.464,4 60,16.536 60,32 L60,32 Z" id="Line"></path>
+            <path d="M42.4111036,22.0287464 C42.4111036,27.7790321 37.7493536,32.4397464 32.0001036,32.4397464 C26.2498179,32.4397464 21.5891036,27.7790321 21.5891036,22.0287464 C21.5891036,16.2784607 26.2498179,11.6177464 32.0001036,11.6177464 C37.7493536,11.6177464 42.4111036,16.2784607 42.4111036,22.0287464 L42.4111036,22.0287464 Z" id="Line"></path>
+            <path d="M39.2699893,30.2791429 C39.2699893,30.2791429 50.3117393,34.3805714 50.3117393,52.9944286" id="Line"></path>
+            <path d="M24.7300107,30.2791429 C24.7300107,30.2791429 13.6882607,34.3805714 13.6882607,52.9944286" id="Line"></path>
+        </g>
+    </g>
+</svg>
