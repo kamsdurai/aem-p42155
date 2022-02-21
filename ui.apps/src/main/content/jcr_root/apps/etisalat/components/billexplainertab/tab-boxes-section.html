@@ -1,0 +1,33 @@
+<template  data-sly-template.explainerTab="${ @ properties}">
+ <div class="tab-boxes-section">
+  <!-- <div class="md-p-lr"> -->
+    <!-- add spacer if needed here. -->
+    <sly data-sly-test.customLink="${properties.billingCTALink}" data-sly-use.commonlinkmodel="${'com.etisalat.core.models.CommonLinkModel' @link=customLink}" />
+    <a data-sly-test="${properties.billingCTAText && commonlinkmodel.link}" href="${commonlinkmodel.link}" class="btn-text btn-green  learn-more btn-green block back ml-5">
+      <span>${properties.billingCTAText}</span>
+    </a>
+    <div class="row">
+      <div data-sly-use.component="com.adobe.cq.wcm.core.components.models.Component" data-sly-use.tabs="com.adobe.cq.wcm.core.components.models.Tabs" id="tabBoxes-${tabs.id}">
+        <div data-sly-list.tab="${tabs.items}" class="col-xs-12 col-md-4 head-desktop panel hidden-xs hidden-ms hidden-sm">
+          <a class="${tabList.first ? '' :'collapsed'}" data-toggle="collapse" data-parent="#tabBoxes-${tabs.id}" href="#tabBoxes-${component.id}-${tabList.count}"> ${tab.title}</a>
+        </div>
+        <div data-sly-list.tab="${tabs.items}" class="col-xs-12 col-md-8 body-desktop panel no-padding-top billing-explainer  billing-report-wrapper">
+          <a class="${tabList.first ? '' :'collapsed'} head-mobile hidden-md hidden-lg" data-toggle="collapse" data-parent="#tabBoxes-${tabs.id}" href="#tabBoxes-${component.id}-${tabList.count}">${tab.title}</a>
+          <div id="tabBoxes-${component.id}-${tabList.count}" class="section-exp-${tabList.count} collapse ${tabList.first ? 'in' :''}" aria-expanded="false">
+            <div data-sly-set.reportIframePath="${'{0}/{1}' @ format=[resource.path, tab.name]}" data-sly-use.reportCard="${reportIframePath}" class="billing-report-section">
+            <p class="paragraph" data-sly-test="${properties.sectionTitle}">${properties.sectionTitle}</p>                             
+              <div data-sly-test="${reportCard.sling:resourceType != 'etisalat/components/swipercontainer'}" class="billing-report-card billing-report-card-usage">
+                <iframe src="${reportIframePath @ extension='html'}" frameborder="0" height="100%" width="100%"></iframe>
+              </div>             
+              <sly data-sly-test="${reportCard.sling:resourceType == 'etisalat/components/swipercontainer'}" 
+                   data-sly-use.reportSwiperViewTemplate="reportswiperview.html"
+				  data-sly-call="${reportSwiperViewTemplate.swiperView @ reportCard=reportCard,properties=properties}">                
+              </sly>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </div> -->
+</div>
+</template>
