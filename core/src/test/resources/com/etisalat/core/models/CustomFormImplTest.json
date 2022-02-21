@@ -1,0 +1,57 @@
+{
+   "formcontainer":{
+   "jcr:primaryType":"cq:Page",
+   "jcr:createdBy":"admin",
+   "jcr:created":"Thu Aug 12 2021 22:16:19 GMT+0530",
+   "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"formcontainer",
+      "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-template",
+      "jcr:created":"Thu Aug 12 2021 22:16:19 GMT+0530",
+      "cq:lastModified":"Thu Aug 12 2021 22:18:00 GMT+0530",
+      "sling:resourceType":"etisalat/components/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+         "jcr:primaryType":"nt:unstructured",
+         "layout":"responsiveGrid",
+         "sling:resourceType":"etisalat/components/container",
+         "container_1":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+			   "jcr:created":"Thu Jan 20 2022 05:59:58 GMT+0000",
+			   "jcr:lastModifiedBy":"cap04477@adobe.com",
+			   "jcr:createdBy":"cap04477@adobe.com",
+			   "sling:resourceType":"etisalat/components/form/container",
+			   "ootbformType":"false",
+			   "customFormRedirect":"/content/hiuapp/language-master/en/test2",
+			   "formSubmissionOptions":".sendnotification",
+			   "jcr:lastModified":"Thu Jan 20 2022 06:00:34 GMT+0000",
+			   "customFormId":"formid",
+			   "jcr:primaryType":"nt:unstructured"
+			}
+         },
+         "container_2":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+			   "jcr:created":"Thu Jan 20 2022 05:59:58 GMT+0000",
+			   "jcr:lastModifiedBy":"cap04477@adobe.com",
+			   "jcr:createdBy":"cap04477@adobe.com",
+			   "sling:resourceType":"etisalat/components/form/container",
+			   "ootbformType":"false",
+			   "customFormRedirect":"/content/hiuapp/language-master/en/test2",
+			   "formSubmissionOptions":"proxy",
+			   "jcr:lastModified":"Thu Jan 20 2022 06:00:34 GMT+0000",
+			   "customFormId":"formid",
+			   "jcr:primaryType":"nt:unstructured"
+			}
+         }
+      }
+   }
+}
+
+}

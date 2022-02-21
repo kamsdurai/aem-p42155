@@ -1,0 +1,48 @@
+{
+  "notification":{
+  "jcr:primaryType": "cq:Page",
+  "jcr:content": {
+    "jcr:primaryType": "cq:PageContent",
+    "jcr:title": "DigitalNotificationAll",
+    "cq:template": "/conf/etisalat/settings/wcm/templates/etisalat-template",    
+    "sling:resourceType": "etisalat/components/page",
+    "cq:lastModifiedBy": "admin",
+    "root": {
+      "jcr:primaryType": "nt:unstructured",
+      "layout": "responsiveGrid",
+      "sling:resourceType": "etisalat/components/container",
+      "container": {
+        "jcr:primaryType": "nt:unstructured",
+        "layout": "responsiveGrid",
+        "sling:resourceType": "etisalat/components/container",
+        "digitalnotifications": {
+          "jcr:primaryType": "nt:unstructured",
+          "titleLink": "#",
+          "jcr:createdBy": "admin",
+          "modalBehavior": "top",
+          "titleLinkText": "See Alternatives",
+          "linkBehavior": "opennewwindow",
+          "notificationTitle": "1 1 1 MAX - 36 CH MAX - 36 CH MAX - 36 CHS",
+          "actionsEnabled": "false",
+          "jcr:lastModifiedBy": "admin",
+          "fragmentVariationPath": "/content/experience-fragments/etisalat-fragments/consumer/promotile-sample-xf/master",
+          "jcr:created": "Wed Sep 29 2021 01:40:20 GMT+0530",
+          "ctaSameWindowLink": "#",
+          "title": "Learn More",
+          "linkUrl": "/content/etisalat/samplepage",
+          "notificationCTATitle": "pay with me",
+          "notificationCTALink": "https://www.etisalat.ae/en/index.jsp",
+          "displayBehavior": "link",
+          "themeColor": "bg-black",
+          "jcr:lastModified": "Thu Oct 14 2021 22:39:30 GMT+0530",
+          "sling:resourceType": "etisalat/components/digitalnotifications",
+          "ctaNewWindowLink": "#",
+          "textIsRich": "true",
+          "alignment": "top",
+          "displayDigitalBehavior": "learnmore"
+        }
+    }
+  }
+}
+}
+}

@@ -1,0 +1,46 @@
+{
+   "linkdetails":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:content":{
+         "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-template",
+         "pageTitle":"roaming-pack-and-services",
+         "sling:resourceType":"etisalat/components/page",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+               "jcr:primaryType":"nt:unstructured",
+               "layout":"responsiveGrid",
+               "sling:resourceType":"etisalat/components/container",
+               "quicklinkItems":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "item0":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "quickLinkTitle":"Support",
+                     "quicklink":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "item0":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "linkText":"Learn More",
+                           "linkUrl":"https://www.etisalat.ae/b2c/quick-pay.html",
+                           "altText":"ContactAltText",
+                           "linkUrlActive":"true",
+                           "title":"Contact Sales",
+                           "fileReference":"/content/dam/etisalat/ae/en/sample.jpg",
+                           "linkBehavior":"opennewwindow",
+                           "enableIcon":"true",
+                           "image":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "fileReference":"/content/dam/etisalat/ae/en/gaming-desktop_tcm313-225320.jpg",
+                              "sling:resourceType":"etisalat/components/image"
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

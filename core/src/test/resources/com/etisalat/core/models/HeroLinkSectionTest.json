@@ -1,0 +1,44 @@
+{
+  "en":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Thu Aug 12 2021 22:16:19 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"en",
+      "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-template",
+      "sling:resourceType":"etisalat/components/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "layout":"responsiveGrid",
+        "sling:resourceType":"etisalat/components/container",
+        "container":{
+          "jcr:primaryType":"nt:unstructured",
+          "layout":"responsiveGrid",
+          "sling:resourceType":"etisalat/components/container",
+          "pagenavigation":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:createdBy":"admin",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:created":"Thu Aug 12 2021 22:16:49 GMT+0530",
+            "jcr:lastModified":"Thu Aug 12 2021 22:18:00 GMT+0530",
+            "sling:resourceType":"etisalat/components/pagenavigation",
+            "heroLinksSection":{
+              "jcr:primaryType":"nt:unstructured",
+              "item0":{
+                "jcr:primaryType":"nt:unstructured",
+                "iconText":"<p>Quick Pay &amp; Recharge</p>",
+                "iconImage":"/content/dam/etisalat/433/quick-pay-recharge.svg",
+                "iconLink":"/content/etisalat/en",
+                "linkTarget":"_blank"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

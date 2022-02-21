@@ -1,0 +1,3 @@
+,data-filter,Channel No,data-filter,Language,data-filter,Included in,data-filter
+Info Channel,200+unlimited,1,information,English,english,All Plans
+Etisalat Promotions,200+unlimited,2,movies,English,english,All Plans

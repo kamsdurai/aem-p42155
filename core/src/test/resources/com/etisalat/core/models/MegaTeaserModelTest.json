@@ -1,0 +1,41 @@
+{
+   "megateaser":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:title":"Test TabImage",
+         "sling:resourceType":"etisalat/components/page",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+               "jcr:primaryType":"nt:unstructured",
+               "layout":"responsiveGrid",
+               "sling:resourceType":"etisalat/components/container",
+               "teaser": {
+		          "jcr:primaryType": "nt:unstructured",		         
+		          "jcr:title": "Support",
+		          "pretitle": "presampletitle",
+		          "actionsEnabled": "true",
+		          "fileReference": "/content/dam/etisalat/sampletest1.png",		          
+		          "sling:resourceType": "etisalat/components/teaser",
+		          "actions": {
+		            "jcr:primaryType": "nt:unstructured",
+		            "item0": {
+		              "jcr:primaryType": "nt:unstructured",
+		              "link": "https://www.etisalat.ae/b2c/support-guest.html?locale=en",
+		              "text": "Learn More"
+		            }
+		          }
+		        },               
+               "empty":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "sling:resourceType":"etisalat/components/teaser"
+               }
+               
+            }
+         }
+      }
+   }
+}

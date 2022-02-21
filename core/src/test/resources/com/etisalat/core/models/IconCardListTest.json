@@ -1,0 +1,53 @@
+{
+   "iconcardlist":{
+   "jcr:primaryType":"cq:Page",
+   "jcr:createdBy":"admin",
+   "jcr:created":"Thu Aug 12 2021 22:16:19 GMT+0530",
+   "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"iconcardlist",
+      "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-template",
+      "jcr:created":"Thu Aug 12 2021 22:16:19 GMT+0530",
+      "cq:lastModified":"Thu Aug 12 2021 22:18:00 GMT+0530",
+      "sling:resourceType":"etisalat/components/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+         "jcr:primaryType":"nt:unstructured",
+         "layout":"responsiveGrid",
+         "sling:resourceType":"etisalat/components/container",
+         "container":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "iconcardlist":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:createdBy":"admin",
+               "jcr:lastModifiedBy":"admin",
+               "jcr:created":"Thu Aug 12 2021 22:16:49 GMT+0530",
+               "jcr:lastModified":"Thu Aug 12 2021 22:18:00 GMT+0530",
+               "sling:resourceType":"etisalat/components/iconcardlist",
+               "iconCardList":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "item0":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "cardTitle":"Card Title 1",
+                     "cardIcon":"/content/dam/etisalat/internet.svg",
+                     "cardLink":"/content/etisalat/ae/en/carrier-and-wholesale/help",
+                     "linkBehavior":"opennewwindow"
+                  },
+                  "item1":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "cardTitle":"Card Title 2",
+                     "cardIcon":"/content/dam/etisalat/internet.svg",
+                     "cardLink":"/content/etisalat/ae/en/carrier-and-wholesale/index",
+                     "linkBehavior":"opennewwindow"
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+
+}

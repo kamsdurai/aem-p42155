@@ -1,0 +1,93 @@
+{
+   "searchpage":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:title":"Test Search Page",
+         "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-template",
+         "sling:resourceType":"etisalat/components/page",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+               "jcr:primaryType":"nt:unstructured",
+               "layout":"responsiveGrid",
+               "sling:resourceType":"etisalat/components/container",
+               "search1":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "placeholderTxt":"Type here",
+                  "autoSuggestEndpoint":"https://www.etisalat.ae/b2c/autoSuggest.service?locale=en-AE",
+                  "quickLinkTitle":"Quick Links",
+                  "searchNotFoundMsg":"<h4>Sorry!</h4>\r\n<p>Your search for <b>'<span class=\"notFoundTerm\"></span> '</b> didn’t return any results.  Please try entering another keyword.</p>\r\n",
+                  "paymentTitle":"tes",
+                  "searchEndPoint":"https://qacms-uat.etisalat.ae/b2c/guidedSearchRequest.service?locale=en-AE",
+                  "name":"firstName",
+                  "recentSearchTitle":"Recent Searches",
+                  "trendTitle":"Trending Search",
+                  "searchResultTxt":"Quick Links",
+                  "redirectPage":"/content/etisalat/language-master/en/test-search-results-page",
+                  "sling:resourceType":"etisalat/components/search",
+                  "brandTitle":"Trending searches",
+                  "textIsRich":"true",
+                  "quicklinks":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "item0":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "linkUrl":"/content/samplepay.html",
+                        "linkText":"Quick Pay & Recharge"
+                     },
+                     "item1":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "linkUrl":"#",
+                        "linkText":"Internet & TV"
+                     },
+                     "item2":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "linkUrl":"#",
+                        "linkText":"Postpaid Plans"
+                     },
+                     "item3":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "linkUrl":"#",
+                        "linkText":"SIM Registration"
+                     },
+                     "item4":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "linkUrl":"#",
+                        "linkText":"Contact Us"
+                     }
+                  },
+                  "brandItems":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "item0":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "title":"eLife Starter Plan",
+                        "linkUrl":"#",
+                        "linkText":"Learn More"
+                     },
+                     "item1":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "title":"iPhone 12 Pro",
+                        "linkUrl":"#",
+                        "linkText":"Learn More"
+                     },
+                     "item2":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "title":"Emirati Freedom",
+                        "linkUrl":"#",
+                        "linkText":"Learn More"
+                     },
+                     "item3":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "title":"International Calling Add Ons",
+                        "linkUrl":"#",
+                        "linkText":"Learn More"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

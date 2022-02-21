@@ -1,0 +1,171 @@
+{
+   "testtileboxes":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:title":"Test Tile",
+         "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-template",
+         "sling:resourceType":"etisalat/components/page",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+               "jcr:primaryType":"nt:unstructured",
+               "layout":"responsiveGrid",
+               "sling:resourceType":"etisalat/components/container",
+               "tilecontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "tileBoxLayout":"tile-box",
+                  "tileBoxVariation":"3-tile-boxes",
+                  "sling:resourceType":"etisalat/components/tilecontainer",
+                  "tile1":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "modalBehavior":"right",
+                     "tiletitle":"Mobility",
+                     "text":"<p>Keep your workforce connected anytime, anywhere. Ensure constant business accessibility with our bespoke mobility solutions.</p>",
+                     "tileLinkBehavior":"opennewwindow",
+                     "ctatext":"Learn More",
+                     "sling:resourceType":"etisalat/components/tile",
+                     "tileCTALinkNewWindow":"/content/etisalat/ae/en/carrier-and-wholesale",
+                     "textIsRich":"true",
+                     "image":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/elife-tv-gaming-desktop_tcm313-225320.jpg",
+                        "sling:resourceType":"etisalat/components/image"
+                     }
+                  },
+                  "tile2":{
+                     "jcr:primaryType":"nt:unstructured",                     
+                     "tiletitle":"Connectivity",
+                     "text":"<p>Rely on an intelligent, secure, fully-managed networks for your business.</p>\r\n",
+                     "tileLinkBehavior":"opennewwindow",
+                     "ctatext":"Learn More",
+                     "categoryTag":"ETISALAT:BUSINESS/SMB/CATEGORY/PRODUCT-RELATED",
+                     "linkURL":"/content/etisalat/en/tile",
+                     "sling:resourceType":"etisalat/components/tile",
+                     "tileCTALinkNewWindow":"/content/etisalat/ae/en/connectivity",
+                     "textIsRich":"true",
+                     "image":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/wasel-flexi-desktop_tcm313-236311.png",
+                        "sling:resourceType":"etisalat/components/image"
+                     }
+                  },
+                  "tile3":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "modalBehavior":"right-50",
+                     "fragmentVariationPath":"/content/experience-fragments/etisalat-fragments/consumer/free1gbdata/master",
+                     "tiletitle":"Digital",                     
+                     "text":"<p>Enable your business to become smarter through the use of the latest digital solutions.</p>\r\n",
+                     "tileLinkBehavior":"opennewwindow",
+                     "ctatext":"Learn More",
+                     "sling:resourceType":"etisalat/components/tile",
+                     "tileCTALinkNewWindow":"/content/etisalat/ae/en/carrier-and-wholesale",
+                     "textIsRich":"true",
+                     "image":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/smart-living-desktop_tcm313-225319.jpg",
+                        "sling:resourceType":"etisalat/components/image"
+                     }
+                  }
+               },
+			  "tilecontainer1":{
+                  "jcr:primaryType":"nt:unstructured",                  
+                  "sling:resourceType":"etisalat/components/tilecontainer",
+                  "tile1":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "modalBehavior":"right",
+                     "tiletitle":"Mobility",
+                     "text":"<p>Keep your workforce connected anytime, anywhere. Ensure constant business accessibility with our bespoke mobility solutions.</p>",
+                     "tileLinkBehavior":"opennewwindow",
+                     "ctatext":"Learn More",
+                     "sling:resourceType":"etisalat/components/tile",
+                     "tileCTALinkNewWindow":"/content/etisalat/ae/en/carrier-and-wholesale",
+                     "textIsRich":"true",
+                     "image":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/elife-tv-gaming-desktop_tcm313-225320.jpg",
+                        "sling:resourceType":"etisalat/components/image"
+                     }
+                  }
+               },
+               "accessoriescardcontainer":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "sling:resourceType":"etisalat/components/accessoriescardcontainer",
+                  "tileBoxLayout":"recommCard",
+                  "accessoriescardPreTitle":"Recommended Cards Tiles",
+                  "containerViewAllLink":"https://www.etisalat.ae/en/c/devices/smart-home.jsp",
+                  "containerViewAllTitle":"CONTAINER LINK",
+                  "linktarget":"false",
+                  "titleType":"h4",
+                  "accessoriescardtile":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "accessoriescardproductTitle":"Smart Speaker",
+                     "linktarget":"false",
+                     "viewAllLink":"https://www.etisalat.ae/en/c/devices/smart-home.jsp",
+                     "viewAllTitle":"View All",
+                     "sling:resourceType":"etisalat/components/accessoriescardtile",
+                     "image":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/elife-tv-gaming-desktop_tcm313-225320.jpg",
+                        "sling:resourceType":"etisalat/components/image"
+                     }
+                  }
+               },
+               "accessoriescardcontainer1":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "sling:resourceType":"etisalat/components/accessoriescardcontainer",
+                  "accessoriescardPreTitle":"Recommended Cards Tiles",
+                  "containerViewAllLink":"https://www.etisalat.ae/en/c/devices/smart-home.jsp",
+                  "containerViewAllTitle":"CONTAINER LINK",
+                  "linktarget":"false",
+                  "titleType":"h4",
+                  "accessoriescardtile":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "accessoriescardproductTitle":"Smart Speaker",
+                     "linktarget":"false",
+                     "viewAllLink":"https://www.etisalat.ae/en/c/devices/smart-home.jsp",
+                     "viewAllTitle":"View All",
+                     "sling:resourceType":"etisalat/components/accessoriescardtile",
+                     "image":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/elife-tv-gaming-desktop_tcm313-225320.jpg",
+                        "sling:resourceType":"etisalat/components/image"
+                     }
+                  }
+               },
+               "container1": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "layout": "responsiveGrid",
+                  "sling:resourceType": "etisalat/components/container",
+                  "features": {
+                     "jcr:primaryType": "nt:unstructured",
+                     "sling:resourceType": "etisalat/components/features",
+                     "qrimage": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "fileReference": "/content/dam/etisalat/smart-living-desktop_tcm313-225319.jpg",
+                        "sling:resourceType": "etisalat/components/image"
+                     }
+                  }
+               },
+               "gridcontainer": {
+                  "jcr:primaryType": "nt:unstructured",
+                  "layout": "responsiveGrid",
+                  "sling:resourceType": "etisalat/components/gridcontainer",
+                  "numberOfItems": "{Long}3",
+                  "benefitstile": {
+                     "jcr:primaryType": "nt:unstructured",
+                     "sling:resourceType": "etisalat/components/benefitstile",
+                     "image": {
+                        "jcr:primaryType": "nt:unstructured",
+                        "fileReference": "/content/dam/etisalat/smart-living-desktop_tcm313-225319.jpg",
+                        "sling:resourceType": "etisalat/components/image"
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

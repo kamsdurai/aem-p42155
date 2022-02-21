@@ -1,0 +1,52 @@
+{
+   "pagenavigationlist":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:title":"Page Navigation",
+         "sling:resourceType":"etisalat/components/page",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+               "jcr:primaryType":"nt:unstructured",
+               "layout":"responsiveGrid",
+               "sling:resourceType":"etisalat/components/container",
+               "pagenavigation":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "pageTitle":"SHOP WITH ETISALAT",                  
+                  "sling:resourceType":"etisalat/components/pagenavigation",
+                  "pageItems":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "item0":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "navigationLink":"/content/etisalat/ae/en/prepaid",
+                        "navigationTitle":"Prepaid"
+                     },
+                     "item1":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "navigationLink":"/content/etisalat/en/postpaid",
+                        "navigationTitle":"Postpaid"
+                     },
+                     "item2":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "navigationLink":"/content/etisalat/en/control-line",
+                        "navigationTitle":"Control Line"
+                     },
+                     "item3":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "navigationLink":"/content/etisalat/en/visitor-line",
+                        "navigationTitle":"Visitor Line"
+                     }
+                  }
+               },               
+               "empty":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "sling:resourceType":"etisalat/components/pagenavigation"
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,29 @@
+{
+  "carrier-and-wholesale":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-business-blog-template",
+      "businessBlogTag":"etisalat:business/smb/category/business-advice-ideas",
+      "sling:resourceType":"etisalat/components/articlepage"
+    }
+  },
+  "index":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-business-blog-template",
+      "businessBlogTag":"etisalat:business/smb/category/business-advice-ideas",
+      "sling:resourceType":"etisalat/components/articlepage"
+    }
+  },
+  "prepaid":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-business-blog-template",
+      "businessBlogTag":"etisalat:business/smb/category/business-advice-ideas",
+      "sling:resourceType":"etisalat/components/articlepage"
+    }
+  }
+}

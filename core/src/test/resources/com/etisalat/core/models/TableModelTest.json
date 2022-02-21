@@ -1,0 +1,39 @@
+{
+  "en":{
+    "jcr:primaryType":"cq:Page",
+    "jcr:createdBy":"admin",
+    "jcr:created":"Thu Aug 12 2021 22:16:19 GMT+0530",
+    "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"en",
+      "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-template",
+      "sling:resourceType":"etisalat/components/page",
+      "cq:lastModifiedBy":"admin",
+      "root":{
+        "jcr:primaryType":"nt:unstructured",
+        "layout":"responsiveGrid",
+        "sling:resourceType":"etisalat/components/container",
+        "container":{
+          "jcr:primaryType":"nt:unstructured",
+          "layout":"responsiveGrid",
+          "sling:resourceType":"etisalat/components/container",
+          "table":{
+            "jcr:primaryType":"nt:unstructured",
+            "jcr:createdBy":"admin",
+            "tableSource": "rte",
+            "doSorting": "true",
+            "csvPath": "/content/dam/etisalat/csv/channels.csv",
+            "simplecsvPath": "/content/dam/etisalat/csv/simple-table.csv",
+            "filterCsvPath": "/content/dam/etisalat/csv/filters.csv",
+            "jcr:lastModifiedBy":"admin",
+            "jcr:created":"Thu Aug 12 2021 22:16:49 GMT+0530",
+            "jcr:lastModified":"Thu Aug 12 2021 22:18:00 GMT+0530",
+            "sling:resourceType":"etisalat/components/table"
+          }
+        }
+      }
+    }
+  }
+
+}

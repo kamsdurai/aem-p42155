@@ -1,0 +1,193 @@
+{
+   "footerpage":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:title":"Test GenericList",
+         "sling:resourceType":"etisalat/components/page",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+               "jcr:primaryType":"nt:unstructured",
+               "layout":"responsiveGrid",
+               "sling:resourceType":"etisalat/components/container",
+               "footerpromo":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "fileReference":"/content/dam/ewallet/img-hotels-xs-08_tcm451-117068.jpg",
+                  "promoUrl":"/content/etisalat/language-master/carrier-and-wholesale",
+                  "copyrightText":"Etisalat. All Rights Reserved.",
+                  "paymentTitle":"Payment Accepted",
+                  "downloadTitle":"Download My Etisalat UAE app",
+                  "followUsTitle":"Follow Us",
+                  "sling:resourceType":"etisalat/components/global/footer",
+                  "promo":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "fileReference":"/content/dam/etisalat/footer/footer-logo-right.png",
+                     "linkUrl":"https://www.etisalat.ae/en/enterprise-and-government/go-digital/expo-2020.jsp"
+                  }
+               },
+               "footerquicklinks":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "fileReference":"/content/dam/ewallet/img-hotels-xs-08_tcm451-117068.jpg",
+                  "promoUrl":"/content/etisalat/language-master/carrier-and-wholesale",
+                  "copyrightText":"Etisalat. All Rights Reserved.",
+                  "paymentTitle":"Payment Accepted",
+                  "downloadTitle":"Download My Etisalat UAE app",
+                  "followUsTitle":"Follow Us",
+                  "sling:resourceType":"etisalat/components/global/footer",
+                  "quicklinks":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "item0":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "quickLinkTitle":"Support",
+                        "quicklinks":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "item0":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "linkUrl":"https://www.etisalat.ae/b2c/quick-pay.html",
+                              "linkText":"Locate Business Centres",
+                              "enableIcon":"true"
+                           },
+                           "item1":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "linkUrl":"https://www.etisalat.ae/b2c/quick-pay.html",
+                              "linkText":"Contact Sales"
+                           }
+                        }
+                     },
+                     "item1":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "quickLinkTitle":"Small & Medium Business",
+                        "quicklinks":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "item0":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "linkUrl":"https://www.etisalat.ae/b2c/quick-pay.html",
+                              "linkText":"Emirati Freedom Postpaid"
+                           },
+                           "item1":{
+                              "jcr:primaryType":"nt:unstructured",
+                              "linkUrl":"https://www.etisalat.ae/b2c/quick-pay.html",
+                              "linkText":"Postpaid Plans"
+                           }
+                        }
+                     }
+                  }
+               },
+               "footerdownload":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "fileReference":"/content/dam/ewallet/img-hotels-xs-08_tcm451-117068.jpg",
+                  "promoUrl":"/content/etisalat/language-master/carrier-and-wholesale",
+                  "copyrightText":"Etisalat. All Rights Reserved.",
+                  "paymentTitle":"Payment Accepted",
+                  "downloadTitle":"Download My Etisalat UAE app",
+                  "followUsTitle":"Follow Us",
+                  "sling:resourceType":"etisalat/components/global/footer",
+                  "download":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "item0":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/footer/googlestore.png",
+                        "title":"download1",
+                        "linkUrl":"/content/etisalat/sample"
+                     }
+                  }
+               },
+               "footerfollows":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "fileReference":"/content/dam/ewallet/img-hotels-xs-08_tcm451-117068.jpg",
+                  "promoUrl":"/content/etisalat/language-master/carrier-and-wholesale",
+                  "copyrightText":"Etisalat. All Rights Reserved.",
+                  "paymentTitle":"Payment Accepted",
+                  "downloadTitle":"Download My Etisalat UAE app",
+                  "followUsTitle":"Follow Us",
+                  "sling:resourceType":"etisalat/components/global/footer",
+                  "followus":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "item0":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/footer/icon-facebook_tcm313-206701.png",
+                        "title":"icon-facebook",
+                        "linkUrl":"https://www.facebook.com/Etisalat/"
+                     },
+                     "item1":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/footer/icon-instagram_tcm313-206702.png",
+                        "title":"icon-instagram",
+                        "linkUrl":"https://www.instagram.com/etisalat/"
+                     },
+                     "item2":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/footer/icon-linkedin_tcm313-206703.png",
+                        "title":"icon-lnkedin",
+                        "linkUrl":"https://www.linkedin.com/organization-guest/company/etisalat"
+                     }
+                  }
+               },
+               "footerpayment":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "fileReference":"/content/dam/ewallet/img-hotels-xs-08_tcm451-117068.jpg",
+                  "promoUrl":"/content/etisalat/language-master/carrier-and-wholesale",
+                  "copyrightText":"Etisalat. All Rights Reserved.",
+                  "paymentTitle":"Payment Accepted",
+                  "downloadTitle":"Download My Etisalat UAE app",
+                  "followUsTitle":"Follow Us",
+                  "sling:resourceType":"etisalat/components/global/footer",
+                  "payment":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "item0":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/footer/icon-amex-card_tcm313-206699.png",
+                        "title":"icon-amex-card"
+                     },
+                     "item1":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/footer/icon-mastercard_tcm313-206704.png",
+                        "title":"icon-mastercard"
+                     },
+                     "item2":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/footer/icon-visa_tcm313-206706.png",
+                        "title":"icon-visa"
+                     },
+                     "item3":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "fileReference":"/content/dam/etisalat/footer/icon-creditcard-1_tcm313-206680.png",
+                        "title":"icon-creditcard"
+                     }
+                  }
+               },
+               "footer-links":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "fileReference":"/content/dam/ewallet/img-hotels-xs-08_tcm451-117068.jpg",
+                  "promoUrl":"/content/etisalat/language-master/carrier-and-wholesale",
+                  "copyrightText":"Etisalat. All Rights Reserved.",
+                  "paymentTitle":"Payment Accepted",
+                  "downloadTitle":"Download My Etisalat UAE app",
+                  "followUsTitle":"Follow Us",
+                  "sling:resourceType":"etisalat/components/global/footer",
+                  "footerLinks":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "item0":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "linkUrl":"https://www.etisalat.ae/en/footer/about-us.jsp",
+                        "linkText":"About Us"
+                     },
+                     "item1":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "linkUrl":"https://www.etisalat.ae/en/footer/about-us.jsp",
+                        "linkText":"Code of Conduct"
+                     }
+                  }
+               },
+               "empty":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "sling:resourceType":"etisalat/components/global/meganavigation"
+               }
+            }
+         }
+      }
+   }
+}

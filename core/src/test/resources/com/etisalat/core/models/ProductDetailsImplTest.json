@@ -1,0 +1,61 @@
+{
+   "productdetails":{
+   "jcr:primaryType":"cq:Page",
+   "jcr:content":{
+      "jcr:primaryType":"cq:PageContent",
+      "jcr:createdBy":"admin",
+      "jcr:title":"roaming-pack-and-services",
+      "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-template",
+      "jcr:created":"Tue Aug 10 2021 15:08:00 GMT+0530",
+      "cq:lastModified":"Wed Aug 11 2021 16:59:52 GMT+0530",
+      "pageTitle":"roaming-pack-and-services",
+      "sling:resourceType":"etisalat/components/page",
+      "cq:lastModifiedBy":"admin",
+      "navTitle":"roaming-pack-and-services",
+      "root":{
+         "jcr:primaryType":"nt:unstructured",
+         "layout":"responsiveGrid",
+         "sling:resourceType":"etisalat/components/container",
+         "container":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "productdetail":{
+               "jcr:primaryType":"nt:unstructured",
+               "jcr:createdBy":"admin",
+               "actionsEnabled":"false",
+               "jcr:lastModifiedBy":"admin",
+               "jcr:created":"Tue Aug 10 2021 17:13:05 GMT+0530",
+               "mainProductDesc":"Subscribe to a new Business First Plus mobile plan and receive DOUBLE national and or international minutes, every month for three months! You can even carryover any unused minutes for up to three months.",
+               "jcr:lastModified":"Wed Aug 11 2021 16:59:52 GMT+0530",
+               "sling:resourceType":"etisalat/components/productdetail",
+               "textIsRich":[
+                  "true",
+                  "true"
+               ],
+               "mainProductTitle":"Main Title",
+               "productItems":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "item0":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "productSubTitle":"National 110",
+                     "productDesc":"Product Description",
+                     "vatInclude":"5% VAT Include",
+                     "buyNowButton":"Buy now",
+                     "contract":"12 months contract",
+                     "theme":"/content/etisalat/ae/en/consumer",
+                     "buttonLink":"htttp://www.google.com",
+                     "productCurrency":"AED",
+                     "moreInfoDesc":"More Info Description",
+                     "productPrice":"50",
+                     "productTitle":"Business First Plus",
+                     "moreInfoLabel":"More Info",
+                     "offerText":"*Double your minutes for 3 months"
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+}

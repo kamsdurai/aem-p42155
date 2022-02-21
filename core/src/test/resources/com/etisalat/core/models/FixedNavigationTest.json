@@ -1,0 +1,49 @@
+ {
+     "fixednavigation": {
+       "jcr:primaryType": "nt:unstructured",
+       "navTitle":"SampleTest",
+       "sling:resourceType": "etisalat/components/fixednavigation",       
+       "fixedItems": {
+		    "jcr:primaryType": "nt:unstructured",
+		    "item0": {
+		      "jcr:primaryType": "nt:unstructured",
+		      "navigationLink": "#overview",
+		      "navigationTitle": "Overview",
+		      "navigationDesc": "sampledesc",
+		      "navigationImage":"/content/dam/sample.png"
+		    },
+		    "item1": {
+		      "jcr:primaryType": "nt:unstructured",
+		      "navigationLink": "#personal",
+		      "navigationTitle": "Personal",
+		      "navigationDesc": "sampledesc1",
+		      "navigationImage":"/content/dam/sample1.png"
+		    }
+		  }
+     },
+     "empty": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "etisalat/components/fixednavigation"
+     },
+     "with-extension": {
+       "jcr:primaryType": "nt:unstructured",
+       "sling:resourceType": "etisalat/components/fixednavigation",       
+       "fixedItems": {
+		    "jcr:primaryType": "nt:unstructured",
+		    "item0": {
+		      "jcr:primaryType": "nt:unstructured",
+		      "navigationLink": "/content/en",
+		      "navigationTitle": "Overview"
+		    },
+		    "item1": {
+		      "jcr:primaryType": "nt:unstructured",
+		      "navigationLink": "/content/en",
+		      "navigationTitle": "Terms"
+		    }
+		  }
+     },
+     "en": {
+      "jcr:primaryType":"cq:Page"
+     }
+     
+}

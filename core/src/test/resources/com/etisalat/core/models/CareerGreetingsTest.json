@@ -1,0 +1,43 @@
+{
+  "career_greetings": {
+    "jcr:primaryType": "cq:Page",
+    "jcr:createdBy": "admin",
+    "jcr:created": "Thu Aug 12 2021 22:16:19 GMT+0530",
+    "jcr:content": {
+      "jcr:primaryType": "cq:PageContent",
+      "jcr:createdBy": "admin",
+      "jcr:title": "iconcardlist",
+      "cq:template": "/conf/etisalat/settings/wcm/templates/etisalat-template",
+      "jcr:created": "Thu Aug 12 2021 22:16:19 GMT+0530",
+      "cq:lastModified": "Thu Aug 12 2021 22:18:00 GMT+0530",
+      "sling:resourceType": "etisalat/components/page",
+      "cq:lastModifiedBy": "admin",
+      "root": {
+        "jcr:primaryType": "nt:unstructured",
+        "layout": "responsiveGrid",
+        "sling:resourceType": "etisalat/components/container",
+        "container": {
+          "jcr:primaryType": "nt:unstructured",
+          "layout": "responsiveGrid",
+          "sling:resourceType": "etisalat/components/container",
+          "career_greetings": {
+            "preTitle": "SMART HUB DATA CENTER",
+            "textIsRich": "true",
+            "description": "description",
+            "sling:resourceType": "etisalat/components/career-greetings",
+            "title": "Connectivity Services",
+            "jcr:primaryType": "nt:unstructured",
+            "cover": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "https://www.etisalat.ae/en/images/back-image-connectivity-mobile-desktop_tcm313-156090.jpg"
+            },
+            "image": {
+              "jcr:primaryType": "nt:unstructured",
+              "fileReference": "https://www.etisalat.ae/en/images/map-mobile_tcm313-156799.jpg"
+            }
+          }
+        }
+      }
+    }
+  }
+}

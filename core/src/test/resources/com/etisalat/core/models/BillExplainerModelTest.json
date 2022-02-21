@@ -1,0 +1,89 @@
+{
+   "billexplainer":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:createdBy":"admin",
+         "jcr:title":"Test New Tab",
+         "cq:template":"/conf/etisalat/settings/wcm/templates/etisalat-template",
+         "sling:resourceType":"etisalat/components/page",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+               "jcr:primaryType":"nt:unstructured",
+               "layout":"responsiveGrid",
+               "sling:resourceType":"etisalat/components/container",
+               "billexplainertab":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "sling:resourceType":"etisalat/components/billexplainertab",
+                  "billingCTALink":"#",
+                  "billingCTAText":"Billing Support",
+                  "total-summary":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "cq:panelTitle":"Total Usage Summary",
+                     "sectionTitle":" Click on any number below to view details of its corresponding component",
+                     "sling:resourceType":"etisalat/components/billreportcard",
+                     "reportCard":"total-usage-summary",
+                     "stepItems":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "item0":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "title":"Total usage summary",
+                           "content":"Your total consumption throughout the month",
+                           "placement":"bottom"
+                        },
+                        "item1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "title":"Contact information",
+                           "content":"Your contact details registered with Etisalat",
+                           "placement":"bottom"
+                        },
+                        "item2":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "title":"Account information",
+                           "content":"Details of the selected account",
+                           "placement":"bottom"
+                        }
+                     }
+                  },
+                  "bill-history":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "cq:panelTitle":"Bill History",
+                     "sectionTitle":"Click on any number below to view details of its corresponding component",
+                     "sling:resourceType":"etisalat/components/billreportcard",
+                     "reportCard":"bill-history",
+                     "stepItems":{
+                        "jcr:primaryType":"nt:unstructured",
+                        "item0":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "title":"Bill history",
+                           "content":"Your billing trend for the past six months",
+                           "placement":"bottom"
+                        },
+                        "item1":{
+                           "jcr:primaryType":"nt:unstructured",
+                           "title":"Contact information",
+                           "content":"Your contact details registered with Etisalat",
+                           "placement":"bottom"
+                        }
+                     }
+                  },
+                  "item_1641834738981":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "cq:panelTitle":"Bill Breakdown",
+                     "sling:resourceType":"etisalat/components/billreportcard",
+                     "reportCard":"bill-breakdown"
+                  },
+                  "item_1641834740801":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "cq:panelTitle":"Usage and Services Breakdown",
+                     "sling:resourceType":"etisalat/components/billreportcard"
+                  }
+               }
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,44 @@
+{
+   "tabs":{
+      "jcr:primaryType":"cq:Page",
+      "jcr:content":{
+         "jcr:primaryType":"cq:PageContent",
+         "jcr:title":"Test TabImage",
+         "sling:resourceType":"etisalat/components/page",
+         "root":{
+            "jcr:primaryType":"nt:unstructured",
+            "layout":"responsiveGrid",
+            "sling:resourceType":"etisalat/components/container",
+            "container":{
+               "jcr:primaryType":"nt:unstructured",
+               "layout":"responsiveGrid",
+               "sling:resourceType":"etisalat/components/container",
+               "tabImageList":{
+                  "jcr:primaryType":"nt:unstructured",                  
+                  "sling:resourceType":"etisalat/components/tabs",
+                  "imagetab":{
+                     "jcr:primaryType":"nt:unstructured",
+                     "item0": {
+				      "jcr:primaryType": "nt:unstructured",
+				      "linkText": "Tab1",
+		              "linkUrl": "/content/dam/etisalat/sampletest.png",
+					  "linkUrlActive": "/content/dam/etisalat/sampletest1.png"
+				    },
+				    "item1": {
+				      "jcr:primaryType": "nt:unstructured",
+				      "linkText": "Tab2",
+		              "linkUrl": "/content/dam/etisalat/sampletest1.png",
+					  "linkUrlActive": "/content/dam/etisalat/sampleactivetest1.png"
+				    }
+                  }
+               },               
+               "empty":{
+                  "jcr:primaryType":"nt:unstructured",
+                  "sling:resourceType":"etisalat/components/tabs"
+               }
+               
+            }
+         }
+      }
+   }
+}
